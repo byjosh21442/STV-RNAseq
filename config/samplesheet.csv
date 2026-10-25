@@ -1,0 +1,7 @@
+sample,condition,replicate,geo_gsm,run_accession,library_layout,read_length,strandedness,ena_fastq_ftp,ena_fastq_md5
+STV_free_rep1,STV_free,1,GSM4074979,SRR10102791,SINGLE,75,auto,ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/091/SRR10102791/SRR10102791.fastq.gz,b0f6e47d0f0eeb1446f58734031294c1
+STV_free_rep2,STV_free,2,GSM4074980,SRR10102792,SINGLE,75,auto,ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/092/SRR10102792/SRR10102792.fastq.gz,2963114662b147c393b34eb282cf3519
+STV_free_rep3,STV_free,3,GSM4074981,SRR10102793,SINGLE,75,auto,ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/093/SRR10102793/SRR10102793.fastq.gz,122d5fdae38bc48689b5f724dff17425
+STV_infected_rep1,STV_infected,1,GSM4074982,SRR10102794,SINGLE,75,auto,ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/094/SRR10102794/SRR10102794.fastq.gz,3230fe1c5114ad4ec9190cee89107d89
+STV_infected_rep2,STV_infected,2,GSM4074983,SRR10102795,SINGLE,75,auto,ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/095/SRR10102795/SRR10102795.fastq.gz,fbca3d445f6d761e0ad972b40d5f62ff
+STV_infected_rep3,STV_infected,3,GSM4074984,SRR10102796,SINGLE,75,auto,ftp.sra.ebi.ac.uk/vol1/fastq/SRR101/096/SRR10102796/SRR10102796.fastq.gz,78ccfe8c2bba181343905693ea63efc7

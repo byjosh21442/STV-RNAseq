@@ -1,0 +1,93 @@
+# ---------------------------------------------------------------------------
+# STV_GSE137303 - keep code, configs, small metadata and docs; never commit
+# reads, alignments, references/indexes, workflow caches or secrets.
+# ---------------------------------------------------------------------------
+
+# --- Raw sequencing data ---
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+*.sralite
+data/raw/*
+!data/raw/.gitkeep
+
+# --- Alignments ---
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+*.csi
+
+# --- References, annotations and indexes (re-downloadable, large) ---
+reference/*
+!reference/.gitkeep
+!reference/README.md
+*.fa
+*.fa.gz
+*.fasta
+*.fasta.gz
+*.fna
+*.fna.gz
+*.gtf
+*.gtf.gz
+*.gff
+*.gff.gz
+*.gff3
+*.gff3.gz
+*.2bit
+*.ht2
+*.bt2
+*_index/
+
+# --- Nextflow ---
+work/
+.nextflow/
+.nextflow.log*
+.nextflow.pid
+results/pipeline_info/
+
+# --- Large / regenerable results (small final tables and figures stay tracked) ---
+results/qc/fastqc/
+results/qc/**/multiqc_data/
+results/quantification/salmon/
+results/quantification/**/aux_info/
+*.rds
+*.RData
+*.Rhistory
+.Rproj.user/
+
+# --- Environments and caches ---
+.conda/
+conda_envs/
+.venv/
+venv/
+renv/library/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.cache/
+*.sif
+*.img
+
+# --- Temporary / OS / editor files ---
+tmp/
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Credentials and secrets ---
+.env
+.env.*
+*.pem
+*.key
+*.ngc
+.netrc
+.ncbi/
+credentials*
+secrets*
