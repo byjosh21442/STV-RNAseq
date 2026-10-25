@@ -4,6 +4,15 @@
 - Method: read-only commands; nothing installed or modified. Re-run with `bash scripts/bash/env_audit.sh` from the project root inside WSL.
 - Raw output is summarized below (not committed as a log).
 
+## Phase 2 update (2026-10-25)
+
+- Active project moved (D-006): `git clone` of the Phase 1 repository to **`/home/cutza/projects/STV_GSE137303`** (ext4). Branch `main`, history intact (`a12dd22`); the Windows copy `/mnt/c/Users/Cutza/Projects/Proyecto RNASeq Genómica` is unchanged and now behind (its `origin` role: local remote of the WSL clone, nothing pushed).
+- Re-audit from the WSL path: same host values as below (15 GiB RAM, 20 threads, 942 GB free on `/` before downloads).
+- Installed: conda env `stv-rnaseq` (OpenJDK 21.0.10, FastQC 0.13.0, MultiQC 1.35, Salmon 2.7.0, SeqKit 2.14.0, pigz 2.8) and Nextflow 26.10.3 — details in `docs/software_versions.md`. Global conda config and other envs unchanged.
+- WSL git: repository-local `user.name`/`user.email` set in the WSL clone only (same identity as the Windows git used for the Phase 1 commit); global git config untouched.
+- VS Code is still attached to the Windows folder; files for the WSL repo are written through a Windows staging folder and copied in with CRLF→LF conversion (see `docs/run_log.md`). Opening `~/projects/STV_GSE137303` with VS Code Remote-WSL would remove this indirection.
+- Sections below are the original Phase 1 audit (kept for provenance; "MISSING" entries for Java/Nextflow/FastQC/MultiQC/Salmon are now resolved).
+
 ## Host / WSL
 
 | Item | Value | Status |

@@ -15,11 +15,16 @@ One row per biological sample (each sample has exactly one SRA run). Comma-separ
 | `read_length` | integer | 75 | SRA statistics (avg 75, sd 0) | Informs Salmon k-mer choice |
 | `strandedness` | enum | `auto`, `unstranded`, `forward`, `reverse` | — | Currently `auto` = **not verified**; must be resolved empirically (decision D-004) and then replaced by the observed value |
 | `ena_fastq_ftp` | path | ENA `fastq_ftp` value as reported (host/path, no scheme) | ENA | Remote source, not a local path |
-| `ena_fastq_md5` | hex | 32 hex chars | ENA `fastq_md5` | Verify after download |
+| `ena_fastq_md5` | hex | 32 hex chars | ENA `fastq_md5` | Verified after download (`results/qc/raw_fastq_checksums.tsv`) |
+| `fastq_1` | path | `data/raw/<ENA file name>` (`.fastq.gz`), relative to the project root | Basename of `ena_fastq_ftp` | Added in Phase 2 after the MD5-validated download; resolved against the project root by `workflow/main.nf` |
 
 ## Local FASTQ paths
 
-Local paths are intentionally absent until downloads exist. After an approved download, a `fastq_1` column will be added (convention: `data/raw/<run_accession>.fastq.gz`, relative to the project root). There will be no `fastq_2` column/value: the dataset is single-end.
+`fastq_1` points to the ENA file name kept unchanged under `data/raw/` (e.g. `data/raw/SRR10102791.fastq.gz`). There is no `fastq_2` column: the dataset is single-end, and `workflow/main.nf` rejects rows with `library_layout != SINGLE` or a non-empty `fastq_2`.
+
+## Validation in the workflow
+
+`workflow/main.nf` validates the sheet before submitting any task: required columns present, unique `sample` IDs (letters, digits, `_ . -`), `library_layout == SINGLE`, `strandedness` in the allowed set, non-empty `condition`, `fastq_1` ending in `.fastq.gz`/`.fq.gz` and existing on disk.
 
 ## Compatibility note
 

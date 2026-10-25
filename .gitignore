@@ -50,10 +50,11 @@ work/
 results/pipeline_info/
 
 # --- Large / regenerable results (small final tables and figures stay tracked) ---
-results/qc/fastqc/
-results/qc/**/multiqc_data/
+results/qc/fastqc_raw/
+results/qc/**/*_data/
 results/quantification/salmon/
 results/quantification/**/aux_info/
+results/nextflow_validation/
 *.rds
 *.RData
 *.Rhistory

@@ -66,11 +66,12 @@ cut -f1,11,10 "$geo_tmp" | awk -F'\t' -v OFS='\t' '{ print $1, $3, $2 }' | sort 
 diff "$geo_tmp.chk3" "$geo_tmp.chk4" || { echo "ERROR: ENA vs GEO SOFT mismatch" >&2; exit 1; }
 echo "OK: GSM/SRX/BioSample == GEO SOFT"
 
-# 4) Accession-based samplesheet (no local FASTQ paths until downloads exist)
+# 4) Samplesheet: accession fields + fastq_1 = local ENA file name under data/raw/ (written by download_fastq.sh)
 awk -F'\t' -v OFS=',' 'NR==1 { for(i=1;i<=NF;i++) h[$i]=i
-    print "sample","condition","replicate","geo_gsm","run_accession","library_layout","read_length","strandedness","ena_fastq_ftp","ena_fastq_md5"; next }
-  { print $h["sample_id"], $h["condition"], $h["replicate"], $h["geo_gsm"], $h["sra_run"], $h["library_layout"], $h["avg_read_length"],
-          "auto", $h["ena_fastq_ftp"], $h["ena_fastq_md5"] }' "$OUT_TSV" > "$OUT_CSV"
+    print "sample","condition","replicate","geo_gsm","run_accession","library_layout","read_length","strandedness","ena_fastq_ftp","ena_fastq_md5","fastq_1"; next }
+  { n = split($h["ena_fastq_ftp"], parts, "/")
+    print $h["sample_id"], $h["condition"], $h["replicate"], $h["geo_gsm"], $h["sra_run"], $h["library_layout"], $h["avg_read_length"],
+          "auto", $h["ena_fastq_ftp"], $h["ena_fastq_md5"], "data/raw/" parts[n] }' "$OUT_TSV" > "$OUT_CSV"
 
 rm -f "$geo_tmp" "$geo_tmp".chk* "$run_tmp"
 column -t -s$'\t' < <(cut -f1-4,10,22,24,26,27 "$OUT_TSV")

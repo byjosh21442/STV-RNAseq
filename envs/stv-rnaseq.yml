@@ -1,0 +1,15 @@
+# Project tool environment for STV_GSE137303 (Phase 2: QC; Salmon installed but not run on real data yet).
+# Create:  CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-rnaseq.yml
+# Exact resolved packages: envs/stv-rnaseq.linux-64.lock.txt
+name: stv-rnaseq
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - openjdk=21          # Java LTS for Nextflow (requires 17-26) and FastQC
+  - fastqc=0.13.0       # same version as nf-core/modules fastqc
+  - multiqc=1.35        # same version as nf-core/modules multiqc
+  - salmon=2.7.0        # same version as nf-core/modules salmon/quant and salmon/index
+  - seqkit=2.14.0       # lightweight FASTQ sanity checks / read counts
+  - pigz=2.8            # parallel gzip integrity tests
