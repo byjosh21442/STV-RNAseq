@@ -62,6 +62,7 @@ SGN SL4.0 + ITAG4.0 (SHA-256 manifest) → validation                [Phase 3, d
 → sample-structure / outlier diagnostics, primary analysis unchanged [Phase 5, done]
 → Wald-statistic ranking → GO (PLAZA 5.0, ITAG4.0) → fgsea preranked GSEA [Phase 6, done]
 → robustness validation: CAMERA, Cook's, replicate, leave-one-out, ch00 checks [Phase 6B, done]
+→ closure: decision audit; organelle-aware quantification ASSESSED (not run)  [Phase 6B closure, done]
 → MapMan/Mercator4 inputs (manual web step pending); agriGO assessed, not used
 ```
 
@@ -84,6 +85,7 @@ scripts/R/         01_tximport_import.R (validation + gene-level import), 02_des
                    08_functional_posthoc_descriptives.R (Phase 6)
                    09 – 16 functional robustness scripts + functional_robustness_helpers.R (Phase 6B);
                    17_prior_study_locus_lookup.R, 18_functional_ch00_posthoc_identity_diagnostic.R (Phase 6B, post-hoc)
+                   19_organelle_scope_diagnostic.R (Phase 6B closure, post-hoc; D-044)
 envs/              stv-rnaseq.yml, stv-r.yml + linux-64 lock files
 data/metadata/     samples_metadata.tsv + raw source records (sources/)
 data/raw/          ENA FASTQ (git-ignored)
@@ -97,6 +99,7 @@ results/           qc/*.tsv and quantification/*.tsv (tracked summaries); deseq2
                    prespecification); functional/annotation/go_gene_sets.rds git-ignored
                    functional_robustness/ (Phase 6B: prespecification, leading_edge, cooks_sensitivity, camera,
                    comparison, replicate_consistency, loo, ch00, themes, prior_studies)
+                   organelle_assessment/ (Phase 6B closure, D-044: prespecification, blast, provenance, scope tables)
 figures/           deseq2/ PNG figures
                    sample_structure/ PNG figures (Phase 5)
                    functional/ PNG figures and enrichment_curves/ (Phase 6)
@@ -145,7 +148,15 @@ for s in 09_functional_leading_edge_summary 10_functional_cooks_sensitivity 11_f
 bash scripts/bash/download_organelle_reference.sh && bash scripts/bash/ch00_organelle_blast.sh   # BLAST+ from an existing env
 for s in 15_functional_ch00_investigation 14_functional_loo_sensitivity 16_functional_robustness_figures_themes \
          17_prior_study_locus_lookup 18_functional_ch00_posthoc_identity_diagnostic; do Rscript scripts/R/$s.R; done
+# Phase 6B closure (D-044; post-hoc, optional): organelle assessment; 19 checks the frozen criteria in results/organelle_assessment/prespecification/
+bash scripts/bash/organelle_multihsp_blast.sh && Rscript scripts/R/19_organelle_scope_diagnostic.R
+bash scripts/bash/ch00_ncbi_provenance.sh   # network: NCBI Datasets + E-utilities; system python3
 ```
+
+BLAST+ 2.17.0 (bioconda) is expected in a conda env named `rachis-qiime2-2026.4`, and conda is sourced from
+`$HOME/miniconda3`. See [docs/software_versions.md](docs/software_versions.md). The full stage map, with inputs, outputs,
+environments and manual steps, is in [docs/pipeline_execution_map.md](docs/pipeline_execution_map.md). Known limitations
+are in [docs/reproducibility_audit.md](docs/reproducibility_audit.md).
 
 Provenance:
 - SHA-256 for every reference file: `reference/reference_manifest.tsv`.
@@ -167,3 +178,4 @@ Provenance:
 | Sample-structure diagnostics (Phase 5) | Done. STV_free_rep1 is consistently separated in expression-space diagnostics, but no independent technical failure or documented experimental covariate justifies its removal; STV labels supported by STV reads; all six samples kept (D-022) — [docs/sample_structure_investigation.md](docs/sample_structure_investigation.md) |
 | Functional analysis (Phase 6) | Done. Pre-specified preranked GSEA (fgsea 1.36.2) on the DESeq2 Wald ranking (18,238 genes) with PLAZA 5.0 GO for ITAG4.0: significant sets (padj < 0.05) BP 120, MF 51, CC 44. Plant Reactome not run (projected; 3.4 % coverage). MapMan/Mercator4 inputs prepared (manual web step pending). agriGO not suitable (conclusion C). DEG thresholds are not relaxed and nominal p-values are not used for gene lists — [docs/functional_analysis_plan.md](docs/functional_analysis_plan.md) |
 | Functional robustness validation (Phase 6B) | Done; no STOP condition. CAMERA (estimated correlation) 0 significant sets → Tier 1 = Tier 2 = 0, Tier 3 = 210, Tier 4 = 5. Cook's-stable 210/215. Replicate classes: 144 broadly / 69 partially / 2 ambiguous; 0 driven by STV_free_rep1. Leave-one-out maximum sample dependence 47.7 %. ch00-sensitive ≤ 12.5 %. **All themes EXPLORATORY**. Phase 6 outputs byte-identical — [docs/functional_robustness_plan.md](docs/functional_robustness_plan.md) §11, [docs/ch00_functional_investigation.md](docs/ch00_functional_investigation.md), [docs/biological_comparison_prior_studies.md](docs/biological_comparison_prior_studies.md) |
+| Phase 6B closure (decision audit, organelle assessment) | Done; **no result changed**, nothing re-quantified. Decision audit D-033 – D-044: 3 APPROVE, 7 APPROVE WITH CAVEAT; D-042 resolved by the owner as REGENERATE ON DEMAND. SL4.0ch00 (a Salmon decoy) already contains the complete plastome and mitogenome; **Option A approved (D-044): no organelle-aware re-quantification**; no gene-exclusion fgsea. Mercator4 still under maintenance. Phase 7 not started — [docs/phase6b_decision_audit.md](docs/phase6b_decision_audit.md), [docs/organelle_requantification_assessment.md](docs/organelle_requantification_assessment.md), [docs/reproducibility_audit.md](docs/reproducibility_audit.md), [docs/pipeline_execution_map.md](docs/pipeline_execution_map.md) |

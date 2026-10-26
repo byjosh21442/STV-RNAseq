@@ -615,7 +615,7 @@ cited only for what it actually reports or performs.
 | Process | Organelle reference download (`scripts/bash/download_organelle_reference.sh`) and interpretation of SL4.0ch00 |
 | Software + version | NCBI E-utilities `efetch` (`db=nuccore`, `rettype=fasta` and `fasta_cds_aa`); records **NC_007898.3** (*S. lycopersicum* chloroplast, complete genome; 87 CDS proteins) and **NC_035963.1** (*S. lycopersicum* TGRC:LA1421 mitochondrion, complete genome; 39 CDS proteins); SGN `build_4.00/ReleaseNotes.txt` |
 | Parameters | SHA-256, size, first header and retrieval time per file: `results/functional_robustness/ch00/organelle_reference_manifest.tsv` |
-| Methodological rationale | The SL4.0 FASTA contains no organelle genome. The SGN release notes describe ch00 as unplaced contigs, and earlier builds separated or removed organellar contigs (quotes in [`ch00_functional_investigation.md`](ch00_functional_investigation.md) §1) |
+| Methodological rationale | The SL4.0 FASTA contains no organelle genome. The SGN release notes describe ch00 as unplaced contigs, and earlier builds separated or removed organellar contigs (quotes in [`ch00_functional_investigation.md`](ch00_functional_investigation.md) §1). *Correction (D-044): no **labelled** organelle record, but ch00 contains the complete plastome and mitogenome sequence; see §43 and [`organelle_requantification_assessment.md`](organelle_requantification_assessment.md) §4.3* |
 | Official technical documentation | NCBI RefSeq records <https://www.ncbi.nlm.nih.gov/nuccore/NC_007898.3>, <https://www.ncbi.nlm.nih.gov/nuccore/NC_035963.1>; SGN <https://solgenomics.net/ftp/tomato_genome/assembly/build_4.00/ReleaseNotes.txt> |
 | Primary scientific reference | Kahlau et al. (2006) (tomato plastome sequence). No publication is cited for NC_035963.1; the RefSeq record is cited as a data source |
 | DOI | 10.1007/s00239-005-0254-5 |
@@ -637,3 +637,33 @@ cited only for what it actually reports or performs.
 | Provisional APA 7 reference | Sabanadzovic, S., Valverde, R. A., Brown, J. K., Martin, R. R., & Tzanetakis, I. E. (2009). Southern tomato virus: The link between the families *Totiviridae* and *Partitiviridae*. *Virus Research, 140*(1–2), 130–137. https://doi.org/10.1016/j.virusres.2008.11.018 <br> Roossinck, M. J. (2010). Lifestyles of plant viruses. *Philosophical Transactions of the Royal Society B: Biological Sciences, 365*(1548), 1899–1905. https://doi.org/10.1098/rstb.2010.0057 <br> Takahashi, H., Fukuhara, T., Kitazawa, H., & Kormelink, R. (2019). Virus latency and the impact on plants. *Frontiers in Microbiology, 10*, 2764. https://doi.org/10.3389/fmicb.2019.02764 <br> Khankhum, S., Sela, N., Osorno, J. M., & Valverde, R. A. (2016). RNAseq analysis of endornavirus-infected vs. endornavirus-free common bean (*Phaseolus vulgaris*) cultivar Black Turtle Soup. *Frontiers in Microbiology, 7*, 1905. https://doi.org/10.3389/fmicb.2016.01905 <br> Whitham, S. A., Quan, S., Chang, H.-S., Cooper, B., Estes, B., Zhu, T., Wang, X., & Hou, Y.-M. (2003). Diverse RNA viruses elicit the expression of common sets of genes in susceptible *Arabidopsis thaliana* plants. *The Plant Journal, 33*(2), 271–283. https://doi.org/10.1046/j.1365-313x.2003.01625.x |
 | Decision supported | Task 10 – 11 documentation; no decision depends on these sources |
 | Access info | 2026-10-26: abstracts via Europe PMC (Sabanadzovic, Roossinck, Takahashi, Whitham); full text PMC5126043 (Khankhum); Fukuhara et al. abstract via PubMed 31620899 (full text not accessible); Badeli et al. HTML full text |
+
+## 42. Organelle sequence and decoy-aware Salmon indexing (assessment only; D-044)
+
+| Field | Content |
+|---|---|
+| Process | Assessment of whether an organelle-aware re-quantification is needed ([`organelle_requantification_assessment.md`](organelle_requantification_assessment.md) §6 – §8). No index was built |
+| Software + version | Salmon 2.7.0 (primary index, unchanged); BLAST+ 2.17.0+ for the multi-HSP diagnostic (`scripts/bash/organelle_multihsp_blast.sh`) |
+| Parameters | Union-of-HSP coverage at ≥ 98 % identity; near-identical ≥ 80 %, partial 50 – 80 % (frozen §1.4) |
+| Methodological rationale | Official guidance: the whole genome is used as decoy ("as is recommended"). Under the selective-alignment decoy rule, ties between transcript and decoy go to the transcript, and fragments that score strictly better on a decoy are discarded. No source found requires separate organelle records for nuclear plant RNA-seq |
+| Official technical documentation | Salmon "Preparing transcriptome indices (mapping-based mode)" <https://salmon.readthedocs.io/en/latest/salmon.html>; nf-core/rnaseq 3.27.0 usage, "Alignment options" and "Reference genome options" <https://nf-co.re/rnaseq/latest/docs/usage/> |
+| Primary scientific reference | Srivastava et al. (2020); Patro et al. (2017) (see §11) |
+| DOI | 10.1186/s13059-020-02151-8; 10.1038/nmeth.4197 |
+| Provisional APA 7 reference | Srivastava, A., Malik, L., Sarkar, H., Zakeri, M., Almodaresi, F., Soneson, C., Love, M. I., Kingsford, C., & Patro, R. (2020). Alignment and mapping methodology influence transcript abundance estimation. *Genome Biology, 21*, 239. https://doi.org/10.1186/s13059-020-02151-8 <br> Patro et al. (2017): see §11 |
+| Decision supported | D-044 (recommendation A, owner-pending) |
+| Access info | 2026-10-26: Salmon docs and nf-core usage pages (HTML); Srivastava et al. full text via Europe PMC (PMC7487471) and Crossref metadata; Patro et al. citation verified through the Crossref reference list of Srivastava et al. (the direct Crossref request failed) |
+
+## 43. SL4.0 assembly provenance: SGN, NCBI GenBank, Ensembl Plants (assessment only; D-044)
+
+| Field | Content |
+|---|---|
+| Process | Provenance of SL4.0ch00 and its organelle-identical contigs (`scripts/bash/ch00_ncbi_provenance.sh`; [`organelle_requantification_assessment.md`](organelle_requantification_assessment.md) §3) |
+| Software + version | NCBI Datasets v2 REST (`genome/accession/GCA_000188115.5/sequence_reports`), NCBI E-utilities `efetch` (`db=nuccore`, FASTA of the 140 unplaced scaffolds, temp dir only), Python 3 (system) |
+| Parameters | Exact sequence identity (forward or reverse complement) of SGN ch00 segments split at ≥ 100 N vs GenBank scaffold pieces split the same way |
+| Methodological rationale | Establishes whether the organelle-identical ch00 contigs belong to the official SL4.0 assembly or only to the SGN FASTA. Result: plastid-identical contigs are present in both; 12 mito-identical contigs (832,437 bp) are present only in SGN |
+| Official technical documentation | NCBI assembly GCA_000188115.5 <https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_000188115.5/>; Ensembl REST `info/assembly/solanum_lycopersicum_gca000188115v5cm` and `info/assembly/arabidopsis_thaliana` (precedent: TAIR10 Mt/Pt top-level) <https://rest.ensembl.org>; SGN release notes (§40) |
+| Primary scientific reference | Hosmani et al. (2019), bioRxiv preprint (abstract only; full text not retrieved) |
+| DOI | 10.1101/767764 |
+| Provisional APA 7 reference | Hosmani, P. S., Flores-Gonzalez, M., van de Geest, H., Maumus, F., Bakker, L. V., Schijlen, E., van Haarst, J., Cordewener, J., Sanchez-Perez, G., Peters, S., Fei, Z., Giovannoni, J. J., Mueller, L. A., & Saha, S. (2019). *An improved de novo assembly and annotation of the tomato reference genome using single-molecule sequencing, Hi-C proximity ligation and optical maps* [Preprint]. bioRxiv. https://doi.org/10.1101/767764 |
+| Decision supported | D-044 |
+| Access info | 2026-10-26 (retrieval date stored in `results/organelle_assessment/provenance/ncbi_GCA_000188115.5_sequence_report.tsv`); Crossref metadata for 10.1101/767764 |

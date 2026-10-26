@@ -1,0 +1,12 @@
+theme	sets	sets_with_org_near_in_LE	sets_with_org_near_or_partial_in_LE	LE_gene_slots	LE_slots_org_near_or_partial	ch00_sensitive_prespecified	ch00_sensitive_posthoc	share_LE_slots_org
+Other (no theme regex matched)	113	31	31	5379	159	17	20	0.0296
+Ribosome / translation / RNA processing	34	5	5	2453	5	0	1	0.002
+Photosynthesis / plastid / thylakoid	25	6	6	1417	15	0	0	0.0106
+Heme / oxidoreductase	11	1	1	433	3	1	0	0.0069
+Defence / biotic response	8	0	0	316	0	0	0	0
+ATP synthase / proton transport	5	5	5	105	30	4	4	0.2857
+Hormone signalling	5	0	0	71	0	1	0	0
+Carbohydrate binding / cell wall	4	0	0	161	0	1	1	0
+Endoplasmic reticulum / protein folding	4	0	0	491	0	0	0	0
+Glutathione / detoxification	3	0	0	75	0	0	0	0
+Water deprivation / abiotic stress	3	0	0	188	0	0	0	0

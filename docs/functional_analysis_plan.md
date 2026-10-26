@@ -266,3 +266,12 @@ The Phase 6 tables above are byte-identical after Phase 6B. Results:
 - Every theme is **EXPLORATORY**.
 
 The Phase 6 wording above ("positively / negatively enriched in the infected-vs-free ranking") remains correct. It must be read together with this classification.
+
+### 8.6 Phase 6B closure (added 2026-10-26; nothing above changed)
+
+- Decision audit of D-033 – D-044: [phase6b_decision_audit.md](phase6b_decision_audit.md).
+- Organelle-aware re-quantification assessed without running it:
+  [organelle_requantification_assessment.md](organelle_requantification_assessment.md).
+  - SL4.0ch00 already contains the complete plastome and mitogenome, so organelle sequence is in the index.
+  - Recommendation A (no new quantification) is pending owner decision (D-044). **Approved by the owner on 2026-10-26.**
+  - The ATP-synthase caveat stands.

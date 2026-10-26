@@ -1,0 +1,18 @@
+rule	location	class	genes	tested	ranked	in_any_significant_leading_edge
+Phase 6B post-hoc (single HSP identity >= 98 %, coverage >= 50 %; ranked ch00 only)	SL4.0ch00	excluded	42	42	42	14
+Phase 6B pre-specified (single HSP; ch00 only)	SL4.0ch00	mitochondrion-type near-identical	115	3	3	1
+Phase 6B pre-specified (single HSP; ch00 only)	SL4.0ch00	no close organelle similarity	191	5	5	1
+Phase 6B pre-specified (single HSP; ch00 only)	SL4.0ch00	organelle-similar, diverged	136	20	20	8
+Phase 6B pre-specified (single HSP; ch00 only)	SL4.0ch00	plastid-type near-identical	71	19	19	5
+corrected (union of HSPs >= 98 %)	SL4.0ch00	below 50 % organelle-identical coverage	6	0	0	0
+corrected (union of HSPs >= 98 %)	SL4.0ch00	mitochondrion-type near-identical	179	5	5	1
+corrected (union of HSPs >= 98 %)	SL4.0ch00	mitochondrion-type partial (50-80 %)	2	0	0	0
+corrected (union of HSPs >= 98 %)	SL4.0ch00	no organelle hit	168	4	4	1
+corrected (union of HSPs >= 98 %)	SL4.0ch00	plastid-type near-identical	155	38	38	13
+corrected (union of HSPs >= 98 %)	SL4.0ch00	plastid-type partial (50-80 %)	3	0	0	0
+corrected (union of HSPs >= 98 %)	SL4.0ch01-12	below 50 % organelle-identical coverage	69	16	16	2
+corrected (union of HSPs >= 98 %)	SL4.0ch01-12	mitochondrion-type near-identical	46	0	0	0
+corrected (union of HSPs >= 98 %)	SL4.0ch01-12	mitochondrion-type partial (50-80 %)	20	0	0	0
+corrected (union of HSPs >= 98 %)	SL4.0ch01-12	no organelle hit	33366	18208	18169	2838
+corrected (union of HSPs >= 98 %)	SL4.0ch01-12	plastid-type near-identical	42	5	5	2
+corrected (union of HSPs >= 98 %)	SL4.0ch01-12	plastid-type partial (50-80 %)	19	1	1	1

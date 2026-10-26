@@ -1,0 +1,710 @@
+gene_id	transcript_id	chromosome	organelle	coverage	single_hsp_coverage	w_ident	n_hsp	corrected_class	baseMean	stat	padj	tested	ranked	on_ch00	n_significant_sets_in_leading_edge	phase6b_class	phase6b_prespecified_excluded	phase6b_posthoc_excluded	salmon_duplicate_removed	salmon_duplicate_retained_copy
+Solyc00g500064.1	Solyc00g500064.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	697.892493520607	0.956469636669128	0.99990663146592	TRUE	TRUE	TRUE	34	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500140.1	Solyc00g500140.1.1	SL4.0ch00	plastid	1	1	99.254	1	plastid-type near-identical	269.611054024218	1.20640173025606	0.99990663146592	TRUE	TRUE	TRUE	34	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500323.1	Solyc00g500323.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	436.699491247062	1.85729135289736	0.99990663146592	TRUE	TRUE	TRUE	34	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500332.1	Solyc00g500332.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	340.592361117254	1.06333402827876	0.99990663146592	TRUE	TRUE	TRUE	34	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500322.1	Solyc00g500322.1.1	SL4.0ch00	plastid	1	0.7765	100	2	plastid-type near-identical	151.563923832246	0.919393973655644	0.99990663146592	TRUE	TRUE	TRUE	31	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500321.1	Solyc00g500321.1.1	SL4.0ch00	plastid	1	0.6711	100	2	plastid-type near-identical	34.7476868480445	0.572125695233979	0.99990663146592	TRUE	TRUE	TRUE	9	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500335.1	Solyc00g500335.1.1	SL4.0ch00	plastid	1	0.5931	99.432	2	plastid-type near-identical	28.4553764171408	0.522284538414255	0.99990663146592	TRUE	TRUE	TRUE	8	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500212.1	Solyc00g500212.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	10.1709273158722	0.530110044701465	0.99990663146592	TRUE	TRUE	TRUE	6	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500021.1	Solyc00g500021.1.1	SL4.0ch00	plastid	1	0.7654	99.104	2	plastid-type near-identical	123.734094624846	0.336592288863434	0.99990663146592	TRUE	TRUE	TRUE	5	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500049.1	Solyc00g500049.1.1	SL4.0ch00	plastid	1	0.5952	100	2	plastid-type near-identical	47.6785145301289	0.451101216408695	0.99990663146592	TRUE	TRUE	TRUE	5	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500020.1	Solyc00g500020.1.1	SL4.0ch00	plastid	1	0.6414	100	2	plastid-type near-identical	36.0986339348195	0.540977632584511	0.99990663146592	TRUE	TRUE	TRUE	4	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500358.1	Solyc00g500358.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	18.541905528225	0.354268367777088	0.99990663146592	TRUE	TRUE	TRUE	3	mitochondrion-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500023.1	Solyc00g500023.1.1	SL4.0ch00	plastid	1	0.5894	100	3	plastid-type near-identical	31.4403257509225	1.30636512783156	0.99990663146592	TRUE	TRUE	TRUE	1	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500054.1	Solyc00g500054.1.1	SL4.0ch00	plastid	1	0.5834	100	2	plastid-type near-identical	256.113261317435	-0.785419318235186	0.99990663146592	TRUE	TRUE	TRUE	1	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500353.1	Solyc00g500353.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	123.29246130994	-0.805353412820633	0.99990663146592	TRUE	TRUE	TRUE	1	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g005280.1	Solyc00g005280.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g006650.1	Solyc00g006650.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g007330.1	Solyc00g007330.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g007340.1	Solyc00g007340.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g007350.1	Solyc00g007350.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g007450.1	Solyc00g007450.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g007920.1	Solyc00g007920.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g007930.1	Solyc00g007930.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g007940.1	Solyc00g007940.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g011560.1	Solyc00g011560.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g011660.1	Solyc00g011660.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g011670.1	Solyc00g011670.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g012540.1	Solyc00g012540.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g013100.1	Solyc00g013100.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g013110.1	Solyc00g013110.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g013170.1	Solyc00g013170.1.1	SL4.0ch00	mitochondrion	1	1	99.524	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g013180.1	Solyc00g013180.1.1	SL4.0ch00	mitochondrion	1	0.8098	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g014290.1	Solyc00g014290.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g014790.2	Solyc00g014790.2.1	SL4.0ch00	mitochondrion	1	0.6439	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g014800.1	Solyc00g014800.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g014810.1	Solyc00g014810.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g014850.1	Solyc00g014850.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g014860.1	Solyc00g014860.1.1	SL4.0ch00	mitochondrion	0.8017	0.8017	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g015600.1	Solyc00g015600.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g016590.1	Solyc00g016590.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g019730.1	Solyc00g019730.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g019750.1	Solyc00g019750.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g019950.1	Solyc00g019950.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g019970.2	Solyc00g019970.2.1	SL4.0ch00	mitochondrion	1	0.5796	99.891	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g019980.2	Solyc00g019980.2.1	SL4.0ch00	mitochondrion	1	0.6974	99.893	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g019990.1	Solyc00g019990.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g020000.1	Solyc00g020000.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g020010.1	Solyc00g020010.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g020020.2	Solyc00g020020.2.1	SL4.0ch00	mitochondrion	1	0.5669	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g020030.1	Solyc00g020030.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g020040.1	Solyc00g020040.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g021630.1	Solyc00g021630.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g021640.2	Solyc00g021640.2.1	SL4.0ch00	mitochondrion	1	0.8005	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g021650.1	Solyc00g021650.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g021660.1	Solyc00g021660.1.1	SL4.0ch00	mitochondrion	0.8622	0.8622	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g022070.1	Solyc00g022070.1.1	SL4.0ch00	mitochondrion	0.8824	0.8824	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g022080.1	Solyc00g022080.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g022090.1	Solyc00g022090.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g022100.1	Solyc00g022100.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g023570.1	Solyc00g023570.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g023580.1	Solyc00g023580.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g023590.2	Solyc00g023590.2.1	SL4.0ch00	mitochondrion	1	0.5945	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g023600.1	Solyc00g023600.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g023700.2	Solyc00g023700.2.1	SL4.0ch00	mitochondrion	1	0.5645	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g023710.1	Solyc00g023710.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g025290.1	Solyc00g025290.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g025300.1	Solyc00g025300.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g025400.2	Solyc00g025400.2.1	SL4.0ch00	mitochondrion	1	0.7503	100	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g028960.1	Solyc00g028960.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	14.7035012861868	0.573547596034651	0.99990663146592	TRUE	TRUE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g032030.1	Solyc00g032030.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g036520.1	Solyc00g036520.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g036530.1	Solyc00g036530.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g047180.1	Solyc00g047180.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g047190.1	Solyc00g047190.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g047200.1	Solyc00g047200.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g049210.1	Solyc00g049210.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g049220.1	Solyc00g049220.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g052430.2	Solyc00g052430.2.1	SL4.0ch00	mitochondrion	1	0.5492	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g052530.2	Solyc00g052530.2.1	SL4.0ch00	mitochondrion	1	0.7194	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g052540.1	Solyc00g052540.1.1	SL4.0ch00	mitochondrion	1	0.838	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g069880.2	Solyc00g069880.2.1	SL4.0ch00	mitochondrion	1	0.5344	100	5	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g072800.2	Solyc00g072800.2.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g076250.1	Solyc00g076250.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g094520.1	Solyc00g094520.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g094530.1	Solyc00g094530.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g094540.1	Solyc00g094540.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g094550.1	Solyc00g094550.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g112190.2	Solyc00g112190.2.1	SL4.0ch00	mitochondrion	1	0.643	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g118680.2	Solyc00g118680.2.1	SL4.0ch00	mitochondrion	1	0.5574	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g118690.1	Solyc00g118690.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g125980.1	Solyc00g125980.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g125990.1	Solyc00g125990.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g126000.1	Solyc00g126000.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g126010.1	Solyc00g126010.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g142160.1	Solyc00g142160.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g142170.2	Solyc00g142170.2.1	SL4.0ch00	mitochondrion	1	0.4971	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g153980.1	Solyc00g153980.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g164580.1	Solyc00g164580.1.1	SL4.0ch00	mitochondrion	1	0.3727	99.815	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g180440.1	Solyc00g180440.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g181240.1	Solyc00g181240.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g181250.2	Solyc00g181250.2.1	SL4.0ch00	mitochondrion	1	0.806	99.875	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g198360.1	Solyc00g198360.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g210860.1	Solyc00g210860.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g230060.1	Solyc00g230060.1.1	SL4.0ch00	mitochondrion	1	0.6643	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g230070.1	Solyc00g230070.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g230080.1	Solyc00g230080.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g244280.1	Solyc00g244280.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g244290.1	Solyc00g244290.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g244300.1	Solyc00g244300.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g254910.1	Solyc00g254910.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	TRUE
+Solyc00g266110.1	Solyc00g266110.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g277510.1	Solyc00g277510.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	146.657462923684	-1.57193407387059	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g281110.1	Solyc00g281110.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g284510.1	Solyc00g284510.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g308530.1	Solyc00g308530.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g309530.1	Solyc00g309530.1.1	SL4.0ch00	mitochondrion	1	0.6667	98.795	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g316530.1	Solyc00g316530.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g320430.1	Solyc00g320430.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g322630.1	Solyc00g322630.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500001.1	Solyc00g500001.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500002.1	Solyc00g500002.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500003.1	Solyc00g500003.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500004.1	Solyc00g500004.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500005.1	Solyc00g500005.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500006.1	Solyc00g500006.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500007.1	Solyc00g500007.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500008.1	Solyc00g500008.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500009.1	Solyc00g500009.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500010.1	Solyc00g500010.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500011.1	Solyc00g500011.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500012.1	Solyc00g500012.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500013.1	Solyc00g500013.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500014.1	Solyc00g500014.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500015.1	Solyc00g500015.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500016.1	Solyc00g500016.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500017.1	Solyc00g500017.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500018.1	Solyc00g500018.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500019.1	Solyc00g500019.1.1	SL4.0ch00	plastid	0.7796	0.7796	100	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500022.1	Solyc00g500022.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	34.6496797297696	0.163801122428065	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500024.1	Solyc00g500024.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	148.759521539295	-0.0564902884060235	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	TRUE
+Solyc00g500025.1	Solyc00g500025.1.1	SL4.0ch00	plastid	0.9795	0.9795	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500026.1	Solyc00g500026.1.1	SL4.0ch00	plastid	1	0.744	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500027.1	Solyc00g500027.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	39.7077412249024	-0.0619298427048988	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500028.1	Solyc00g500028.1.1	SL4.0ch00	plastid	1	0.7733	100	2	plastid-type near-identical	13.0414098518052	0.12223823967649	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500029.1	Solyc00g500029.1.1	SL4.0ch00	plastid	0.9121	0.9121	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500030.1	Solyc00g500030.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500031.1	Solyc00g500031.1.1	SL4.0ch00	plastid	1	0.5357	100	2	plastid-type near-identical	11.1714068550425	-0.3342356922379	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500032.1	Solyc00g500032.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500033.1	Solyc00g500033.1.1	SL4.0ch00	plastid	0.9527	0.6864	99.783	5	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500034.1	Solyc00g500034.1.1	SL4.0ch00	plastid	1	0.5902	100	2	plastid-type near-identical	14.8172821964573	0.251207829837241	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500035.1	Solyc00g500035.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500036.1	Solyc00g500036.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500037.1	Solyc00g500037.1.1	SL4.0ch00	plastid	1	0.5628	99.985	4	plastid-type near-identical	18.1531907485543	-0.139718210594303	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500038.1	Solyc00g500038.1.1	SL4.0ch00	plastid	1	0.6389	100	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500039.1	Solyc00g500039.1.1	SL4.0ch00	plastid	1	0.6627	99.213	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500040.1	Solyc00g500040.1.1	SL4.0ch00	plastid	1	0.7743	100	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500041.1	Solyc00g500041.1.1	SL4.0ch00	plastid	1	0.5156	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500042.1	Solyc00g500042.1.1	SL4.0ch00	plastid	1	1	99.968	1	plastid-type near-identical	9.91853226601866	-0.0661895671138892	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500043.1	Solyc00g500043.1.1	SL4.0ch00	plastid	0.9827	0.9827	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500044.1	Solyc00g500044.1.1	SL4.0ch00	plastid	1	0.6627	99.213	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500045.1	Solyc00g500045.1.1	SL4.0ch00	plastid	1	0.6389	100	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500046.1	Solyc00g500046.1.1	SL4.0ch00	plastid	1	0.5628	99.985	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500047.1	Solyc00g500047.1.1	SL4.0ch00	plastid	0.9525	0.5051	100	4	plastid-type near-identical	273.924949214711	-0.0235651324391265	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500048.1	Solyc00g500048.1.1	SL4.0ch00	plastid	1	0.6232	100	2	plastid-type near-identical	32.3365446059004	1.1533359581208	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500050.1	Solyc00g500050.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500051.1	Solyc00g500051.1.1	SL4.0ch00	plastid	1	0.5668	100	5	plastid-type near-identical	20.5521533731638	-0.858807675277676	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500052.1	Solyc00g500052.1.1	SL4.0ch00	plastid	1	0.3727	99.98	6	plastid-type near-identical	14.09578341663	0.0826582757499211	0.99990663146592	TRUE	TRUE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	TRUE
+Solyc00g500053.1	Solyc00g500053.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500055.1	Solyc00g500055.1.1	SL4.0ch00	plastid	1	0.8624	100	2	plastid-type near-identical	32.3282366874882	-0.0741177475019245	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	TRUE
+Solyc00g500056.1	Solyc00g500056.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	203.498861969418	-0.607755119957759	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	TRUE
+Solyc00g500057.1	Solyc00g500057.1.1	SL4.0ch00	plastid	1	0.7375	99.949	2	plastid-type near-identical	171.218061108956	-0.300754572364975	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500058.1	Solyc00g500058.1.1	SL4.0ch00	plastid	1	0.6	99.496	3	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500059.1	Solyc00g500059.1.1	SL4.0ch00	plastid	1	0.5233	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500060.1	Solyc00g500060.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500061.1	Solyc00g500061.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	11.3786071094787	-0.133426606218823	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500062.1	Solyc00g500062.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	30.4429693763771	0.562224176532175	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500063.1	Solyc00g500063.1.1	SL4.0ch00	plastid	1	0.8817	100	2	plastid-type near-identical	992.39596458913	-0.89232518764759	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500065.1	Solyc00g500065.1.1	SL4.0ch00	plastid	1	0.943	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500066.1	Solyc00g500066.1.1	SL4.0ch00	plastid	1	0.842	99.718	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500067.1	Solyc00g500067.1.1	SL4.0ch00	plastid	1	0.6414	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500068.1	Solyc00g500068.1.1	SL4.0ch00	plastid	1	0.7654	99.104	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500069.1	Solyc00g500069.1.1	SL4.0ch00	mitochondrion	0.582	0.582	100	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500070.1	Solyc00g500070.1.1	SL4.0ch00	plastid	1	0.5199	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500071.1	Solyc00g500071.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500072.1	Solyc00g500072.1.1	SL4.0ch00	plastid	1	0.744	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500073.1	Solyc00g500073.1.1	SL4.0ch00	plastid	1	0.5468	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500074.1	Solyc00g500074.1.1	SL4.0ch00	plastid	0.9121	0.9121	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500075.1	Solyc00g500075.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500076.1	Solyc00g500076.1.1	SL4.0ch00	plastid	1	0.5357	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500077.1	Solyc00g500077.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500078.1	Solyc00g500078.1.1	SL4.0ch00	plastid	0.9527	0.6864	99.783	5	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500079.1	Solyc00g500079.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500080.1	Solyc00g500080.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500081.1	Solyc00g500081.1.1	SL4.0ch00	plastid	1	0.5628	99.985	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500082.1	Solyc00g500082.1.1	SL4.0ch00	plastid	1	0.6389	100	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500083.1	Solyc00g500083.1.1	SL4.0ch00	plastid	1	0.6627	99.213	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500084.1	Solyc00g500084.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500085.1	Solyc00g500085.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500086.1	Solyc00g500086.1.1	SL4.0ch00	plastid	1	0.521	99.815	2	plastid-type near-identical	22.19508983108	-0.0576337684972728	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	TRUE
+Solyc00g500087.1	Solyc00g500087.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	15.6966680188507	-0.18009642888458	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500088.1	Solyc00g500088.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500089.1	Solyc00g500089.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500090.1	Solyc00g500090.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500091.1	Solyc00g500091.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500092.1	Solyc00g500092.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500093.1	Solyc00g500093.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500094.1	Solyc00g500094.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500095.1	Solyc00g500095.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	39.5182688604655	-0.373438154946422	0.99990663146592	TRUE	TRUE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500096.1	Solyc00g500096.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500097.1	Solyc00g500097.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500098.1	Solyc00g500098.1.1	SL4.0ch00	mitochondrion	1	1	99.914	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500099.1	Solyc00g500099.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500100.1	Solyc00g500100.1.1	SL4.0ch00	mitochondrion	1	0.7858	100	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500101.1	Solyc00g500101.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500102.1	Solyc00g500102.1.1	SL4.0ch00	mitochondrion	1	1	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500103.1	Solyc00g500103.1.1	SL4.0ch00	mitochondrion	1	0.6736	99.885	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500104.1	Solyc00g500104.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500105.1	Solyc00g500105.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500106.1	Solyc00g500106.1.1	SL4.0ch00	mitochondrion	1	0.3085	99.873	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500107.1	Solyc00g500107.1.1	SL4.0ch00	mitochondrion	1	0.5358	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500108.1	Solyc00g500108.1.1	SL4.0ch00	mitochondrion	1	0.5738	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500109.1	Solyc00g500109.1.1	SL4.0ch00	mitochondrion	0.8482	0.637	99.62	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500110.1	Solyc00g500110.1.1	SL4.0ch00	mitochondrion	1	0.2843	99.431	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500111.1	Solyc00g500111.1.1	SL4.0ch00	mitochondrion	1	0.5033	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500112.1	Solyc00g500112.1.1	SL4.0ch00	mitochondrion	0.9404	0.9404	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500113.1	Solyc00g500113.1.1	SL4.0ch00	mitochondrion	0.9638	0.6787	98.747	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500114.1	Solyc00g500114.1.1	SL4.0ch00	mitochondrion	0.1642	0.1642	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500115.1	Solyc00g500115.1.1	SL4.0ch00	mitochondrion	1	1	98.925	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500116.1	Solyc00g500116.1.1	SL4.0ch00	mitochondrion	1	1	99.387	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500117.1	Solyc00g500117.1.1	SL4.0ch00	mitochondrion	1	0.4815	99.829	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500118.1	Solyc00g500118.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500119.1	Solyc00g500119.1.1	SL4.0ch00	mitochondrion	1	1	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500120.1	Solyc00g500120.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500121.1	Solyc00g500121.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500122.1	Solyc00g500122.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500123.1	Solyc00g500123.1.1	SL4.0ch00	plastid	1	0.521	99.815	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500124.1	Solyc00g500124.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500125.1	Solyc00g500125.1.1	SL4.0ch00	plastid	1	0.7448	99.972	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500126.1	Solyc00g500126.1.1	SL4.0ch00	plastid	0.9827	0.9827	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500127.1	Solyc00g500127.1.1	SL4.0ch00	plastid	1	0.6389	100	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500128.1	Solyc00g500128.1.1	SL4.0ch00	plastid	1	0.5628	99.985	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500129.1	Solyc00g500129.1.1	SL4.0ch00	plastid	0.9492	0.6554	99.787	5	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500130.1	Solyc00g500130.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	1097.74905465818	-1.01246938502165	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	TRUE
+Solyc00g500131.1	Solyc00g500131.1.1	SL4.0ch00	plastid	1	0.6232	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500132.1	Solyc00g500132.1.1	SL4.0ch00	plastid	1	0.5952	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500133.1	Solyc00g500133.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500134.1	Solyc00g500134.1.1	SL4.0ch00	plastid	1	0.5816	100	5	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500135.1	Solyc00g500135.1.1	SL4.0ch00	plastid	1	0.3727	99.98	6	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	TRUE	FALSE
+Solyc00g500136.1	Solyc00g500136.1.1	SL4.0ch00	plastid	1	0.5834	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500137.1	Solyc00g500137.1.1	SL4.0ch00	plastid	1	0.8624	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500138.1	Solyc00g500138.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500139.1	Solyc00g500139.1.1	SL4.0ch00	plastid	1	0.8507	99.824	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500141.1	Solyc00g500141.1.1	SL4.0ch00	plastid	0.838	0.838	98.347	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500142.1	Solyc00g500142.1.1	SL4.0ch00	plastid	0.9758	0.9758	99.01	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500143.1	Solyc00g500143.1.1	SL4.0ch00	plastid	1	1	98.863	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500144.1	Solyc00g500144.1.1	SL4.0ch00	plastid	1	0.5233	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500145.1	Solyc00g500145.1.1	SL4.0ch00	plastid	0.7451	0.7451	98.246	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500146.1	Solyc00g500146.1.1	SL4.0ch00	plastid	1	1	99.257	2	plastid-type near-identical	14.6838214342589	0.852249622057853	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500147.1	Solyc00g500147.1.1	SL4.0ch00	plastid	0.489	0.3564	98.433	4	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500148.1	Solyc00g500148.1.1	SL4.0ch00	plastid	0.2285	0.2285	99.127	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500149.1	Solyc00g500149.1.1	SL4.0ch00	plastid	1	0.82	98.575	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500150.1	Solyc00g500150.1.1	SL4.0ch00	plastid	1	0.5736	99.253	6	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500151.1	Solyc00g500151.1.1	SL4.0ch00	plastid	0.9017	0.7436	98.605	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500152.1	Solyc00g500152.1.1	SL4.0ch00	plastid	1	1	98.834	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500153.1	Solyc00g500153.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500154.1	Solyc00g500154.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500155.1	Solyc00g500155.1.1	SL4.0ch00	plastid	1	1	98.645	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500156.1	Solyc00g500156.1.1	SL4.0ch00	plastid	1	1	98.082	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500157.1	Solyc00g500157.1.1	SL4.0ch00	plastid	1	0.5428	98.947	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500158.1	Solyc00g500158.1.1	SL4.0ch00	plastid	1	1	99.429	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500159.1	Solyc00g500159.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500160.1	Solyc00g500160.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500161.1	Solyc00g500161.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500162.1	Solyc00g500162.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500163.1	Solyc00g500163.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500164.1	Solyc00g500164.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500165.1	Solyc00g500165.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500166.1	Solyc00g500166.1.1	SL4.0ch00	mitochondrion	0.7034	0.3793	100	3	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500167.1	Solyc00g500167.1.1	SL4.0ch00	mitochondrion	0.9763	0.5401	99.534	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500168.1	Solyc00g500168.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500169.1	Solyc00g500169.1.1	SL4.0ch00	mitochondrion	1	1	99.948	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500170.1	Solyc00g500170.1.1	SL4.0ch00	mitochondrion	0.8993	0.5861	99.753	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500171.1	Solyc00g500171.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500172.1	Solyc00g500172.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500173.1	Solyc00g500173.1.1	SL4.0ch00	mitochondrion	1	1	99.281	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500174.1	Solyc00g500174.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500175.1	Solyc00g500175.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500176.1	Solyc00g500176.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500177.1	Solyc00g500177.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500178.1	Solyc00g500178.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500179.1	Solyc00g500179.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500180.1	Solyc00g500180.1.1	SL4.0ch00	mitochondrion	0.1753	0.1753	100	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500181.1	Solyc00g500181.1.1	SL4.0ch00	mitochondrion	1	0.6334	99.389	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500182.1	Solyc00g500182.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	14.0180814593414	0.215564956680328	0.99990663146592	TRUE	TRUE	TRUE	0	mitochondrion-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500183.1	Solyc00g500183.1.1	SL4.0ch00	mitochondrion	1	0.5523	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500184.1	Solyc00g500184.1.1	SL4.0ch00	mitochondrion	1	0.6893	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500185.1	Solyc00g500185.1.1	SL4.0ch00	mitochondrion	0.9512	0.4725	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500186.1	Solyc00g500186.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500187.1	Solyc00g500187.1.1	SL4.0ch00	mitochondrion	1	0.4367	100	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	TRUE
+Solyc00g500188.1	Solyc00g500188.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500189.1	Solyc00g500189.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500190.1	Solyc00g500190.1.1	SL4.0ch00	plastid	0.9742	0.496	99.836	6	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500191.1	Solyc00g500191.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500192.1	Solyc00g500192.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500193.1	Solyc00g500193.1.1	SL4.0ch00	plastid	1	0.521	99.815	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500194.1	Solyc00g500194.1.1	SL4.0ch00	plastid	0.8107	0.5103	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500195.1	Solyc00g500195.1.1	SL4.0ch00	plastid	1	0.9284	100	3	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500196.1	Solyc00g500196.1.1	SL4.0ch00	plastid	1	0.8469	100	6	plastid-type near-identical	1275.97641632619	-0.838851224931841	0.99990663146592	TRUE	TRUE	TRUE	0	plastid-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500197.1	Solyc00g500197.1.1	SL4.0ch00	plastid	1	0.6389	100	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500198.1	Solyc00g500198.1.1	SL4.0ch00	plastid	1	0.5628	99.985	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500199.1	Solyc00g500199.1.1	SL4.0ch00	plastid	0.9492	0.6554	99.787	5	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500200.1	Solyc00g500200.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500201.1	Solyc00g500201.1.1	SL4.0ch00	plastid	1	0.6232	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500202.1	Solyc00g500202.1.1	SL4.0ch00	plastid	1	0.5952	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500203.1	Solyc00g500203.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500204.1	Solyc00g500204.1.1	SL4.0ch00	plastid	1	0.5816	100	5	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500205.1	Solyc00g500205.1.1	SL4.0ch00	plastid	1	0.3727	99.98	6	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	TRUE	FALSE
+Solyc00g500206.1	Solyc00g500206.1.1	SL4.0ch00	plastid	1	0.5834	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500207.1	Solyc00g500207.1.1	SL4.0ch00	plastid	1	0.8624	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500208.1	Solyc00g500208.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500209.1	Solyc00g500209.1.1	SL4.0ch00	plastid	1	0.7375	99.949	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500210.1	Solyc00g500210.1.1	SL4.0ch00	plastid	1	0.6	99.496	3	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500211.1	Solyc00g500211.1.1	SL4.0ch00	plastid	1	0.5233	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500213.1	Solyc00g500213.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500214.1	Solyc00g500214.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500215.1	Solyc00g500215.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500216.1	Solyc00g500216.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500217.1	Solyc00g500217.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500218.1	Solyc00g500218.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500219.1	Solyc00g500219.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500220.1	Solyc00g500220.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500221.1	Solyc00g500221.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500222.1	Solyc00g500222.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500223.1	Solyc00g500223.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500224.1	Solyc00g500224.1.1	SL4.0ch00	mitochondrion	1	0.4708	99.668	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500225.1	Solyc00g500225.1.1	SL4.0ch00	mitochondrion	0.868	0.868	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500226.1	Solyc00g500226.1.1	SL4.0ch00	mitochondrion	1	0.5269	99.846	10	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500227.1	Solyc00g500227.1.1	SL4.0ch00	mitochondrion	1	0.664	99.973	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500228.1	Solyc00g500228.1.1	SL4.0ch00	mitochondrion	1	0.5825	99.956	12	mitochondrion-type near-identical	12.4547589849418	-0.159717236189057	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500229.1	Solyc00g500229.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500230.1	Solyc00g500230.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500231.1	Solyc00g500231.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500232.1	Solyc00g500232.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500233.1	Solyc00g500233.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500234.1	Solyc00g500234.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500235.1	Solyc00g500235.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500236.1	Solyc00g500236.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500237.1	Solyc00g500237.1.1	SL4.0ch00	mitochondrion	1	0.8114	99.838	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500238.1	Solyc00g500238.1.1	SL4.0ch00	mitochondrion	1	0.4859	99.846	5	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	TRUE
+Solyc00g500239.1	Solyc00g500239.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500240.1	Solyc00g500240.1.1	SL4.0ch00	mitochondrion	1	0.6108	99.796	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500241.1	Solyc00g500241.1.1	SL4.0ch00	mitochondrion	1	0.4725	100	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500242.1	Solyc00g500242.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	TRUE
+Solyc00g500243.1	Solyc00g500243.1.1	SL4.0ch00	mitochondrion	1	1	100	3	mitochondrion-type near-identical	12.9108522006567	0.0815081692748	0.99990663146592	TRUE	TRUE	TRUE	0	mitochondrion-type near-identical	TRUE	TRUE	FALSE	FALSE
+Solyc00g500244.1	Solyc00g500244.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500245.1	Solyc00g500245.1.1	SL4.0ch00	mitochondrion	1	0.6686	100	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500246.1	Solyc00g500246.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500247.1	Solyc00g500247.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500248.1	Solyc00g500248.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500249.1	Solyc00g500249.1.1	SL4.0ch00	mitochondrion	1	0.7471	99.946	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	TRUE
+Solyc00g500250.1	Solyc00g500250.1.1	SL4.0ch00	mitochondrion	1	0.7862	99.875	8	mitochondrion-type near-identical	9.00992979979036	0.235345012386432	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500251.1	Solyc00g500251.1.1	SL4.0ch00	mitochondrion	1	0.4367	100	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	TRUE	FALSE
+Solyc00g500252.1	Solyc00g500252.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500253.1	Solyc00g500253.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500254.1	Solyc00g500254.1.1	SL4.0ch00	mitochondrion	1	0.7398	99.732	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500255.1	Solyc00g500255.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500256.1	Solyc00g500256.1.1	SL4.0ch00	mitochondrion	1	0.4167	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500257.1	Solyc00g500257.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500258.1	Solyc00g500258.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500259.1	Solyc00g500259.1.1	SL4.0ch00	mitochondrion	0.409	0.183	99.542	4	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500260.1	Solyc00g500260.1.1	SL4.0ch00	mitochondrion	0.9842	0.3487	99.964	8	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500261.1	Solyc00g500261.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500262.1	Solyc00g500262.1.1	SL4.0ch00	mitochondrion	1	0.5269	99.846	10	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500263.1	Solyc00g500263.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500264.1	Solyc00g500264.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500265.1	Solyc00g500265.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500266.1	Solyc00g500266.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500267.1	Solyc00g500267.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500268.1	Solyc00g500268.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	17.192057313876	-0.893794441975044	0.99990663146592	TRUE	TRUE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500269.1	Solyc00g500269.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500270.1	Solyc00g500270.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500271.1	Solyc00g500271.1.1	SL4.0ch00	mitochondrion	1	1	99.914	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500272.1	Solyc00g500272.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500273.1	Solyc00g500273.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500274.1	Solyc00g500274.1.1	SL4.0ch00	mitochondrion	1	0.7858	100	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500275.1	Solyc00g500275.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500276.1	Solyc00g500276.1.1	SL4.0ch00	mitochondrion	1	1	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500277.1	Solyc00g500277.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500278.1	Solyc00g500278.1.1	SL4.0ch00	plastid	0.9827	0.9827	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500279.1	Solyc00g500279.1.1	SL4.0ch00	plastid	0.9532	0.5088	99.396	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500280.1	Solyc00g500280.1.1	SL4.0ch00	plastid	1	0.6377	99.586	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500281.1	Solyc00g500281.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500282.1	Solyc00g500282.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500283.1	Solyc00g500283.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500284.1	Solyc00g500284.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500285.1	Solyc00g500285.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500286.1	Solyc00g500286.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	TRUE	FALSE
+Solyc00g500287.1	Solyc00g500287.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500288.1	Solyc00g500288.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500289.1	Solyc00g500289.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500290.1	Solyc00g500290.1.1	SL4.0ch00	plastid	1	0.8928	99.862	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500291.1	Solyc00g500291.1.1	SL4.0ch00	plastid	1	0.5816	100	5	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500292.1	Solyc00g500292.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500293.1	Solyc00g500293.1.1	SL4.0ch00	plastid	1	0.5043	100	2	plastid-type near-identical	17.3134668245345	0.0991091560502882	0.99990663146592	TRUE	TRUE	TRUE	0	organelle-similar, diverged	FALSE	TRUE	FALSE	FALSE
+Solyc00g500294.1	Solyc00g500294.1.1	SL4.0ch00	plastid	0.6039	0.2037	99.867	5	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500295.1	Solyc00g500295.1.1	SL4.0ch00	plastid	1	0.6232	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500296.1	Solyc00g500296.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500297.1	Solyc00g500297.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500298.1	Solyc00g500298.1.1	SL4.0ch00	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500299.1	Solyc00g500299.1.1	SL4.0ch00	plastid	1	0.4554	100	8	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500300.1	Solyc00g500300.1.1	SL4.0ch00	plastid	1	0.6389	100	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500301.1	Solyc00g500301.1.1	SL4.0ch00	plastid	1	0.6627	99.213	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500302.1	Solyc00g500302.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500303.1	Solyc00g500303.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500304.1	Solyc00g500304.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500305.1	Solyc00g500305.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500306.1	Solyc00g500306.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500307.1	Solyc00g500307.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500308.1	Solyc00g500308.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500309.1	Solyc00g500309.1.1	SL4.0ch00	mitochondrion	0.2171	0.2171	99.74	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500310.1	Solyc00g500310.1.1	SL4.0ch00	mitochondrion	1	1	99.755	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500311.1	Solyc00g500311.1.1	SL4.0ch00	mitochondrion	0.8254	0.8254	99.101	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500312.1	Solyc00g500312.1.1	SL4.0ch00	mitochondrion	1	0.395	99.636	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500313.1	Solyc00g500313.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500314.1	Solyc00g500314.1.1	SL4.0ch00	mitochondrion	1	0.7414	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500315.1	Solyc00g500315.1.1	SL4.0ch00	mitochondrion	1	0.68	98.689	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500316.1	Solyc00g500316.1.1	SL4.0ch00	mitochondrion	1	0.7489	99.857	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500317.1	Solyc00g500317.1.1	SL4.0ch00	mitochondrion	1	1	99.914	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500318.1	Solyc00g500318.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500319.1	Solyc00g500319.1.1	SL4.0ch00	plastid	1	0.4259	99.977	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500320.1	Solyc00g500320.1.1	SL4.0ch00	plastid	1	0.5816	100	5	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500324.1	Solyc00g500324.1.1	SL4.0ch00	plastid	1	1	99.895	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500325.1	Solyc00g500325.1.1	SL4.0ch00	plastid	1	0.6627	99.213	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500326.1	Solyc00g500326.1.1	SL4.0ch00	plastid	1	0.6389	100	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500327.1	Solyc00g500327.1.1	SL4.0ch00	plastid	1	0.5628	99.985	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500328.1	Solyc00g500328.1.1	SL4.0ch00	plastid	0.9835	0.8061	100	3	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500329.1	Solyc00g500329.1.1	SL4.0ch00	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	plastid-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500330.1	Solyc00g500330.1.1	SL4.0ch00	plastid	1	0.6232	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500331.1	Solyc00g500331.1.1	SL4.0ch00	plastid	1	0.5952	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500333.1	Solyc00g500333.1.1	SL4.0ch00	plastid	1	0.7697	99.799	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500334.1	Solyc00g500334.1.1	SL4.0ch00	plastid	1	0.6711	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500336.1	Solyc00g500336.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500337.1	Solyc00g500337.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500338.1	Solyc00g500338.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500339.1	Solyc00g500339.1.1	SL4.0ch00	mitochondrion	0.8483	0.2072	99.859	15	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500340.1	Solyc00g500340.1.1	SL4.0ch00	mitochondrion	1	0.4859	99.846	5	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	TRUE	FALSE
+Solyc00g500341.1	Solyc00g500341.1.1	SL4.0ch00	mitochondrion	1	0.3912	99.61	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500342.1	Solyc00g500342.1.1	SL4.0ch00	mitochondrion	0.9447	0.7166	99.627	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500343.1	Solyc00g500343.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500344.1	Solyc00g500344.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500345.1	Solyc00g500345.1.1	SL4.0ch00	mitochondrion	1	0.609	99.92	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500346.1	Solyc00g500346.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500347.1	Solyc00g500347.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500348.1	Solyc00g500348.1.1	SL4.0ch00	mitochondrion	1	0.7471	99.946	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500349.1	Solyc00g500349.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500350.1	Solyc00g500350.1.1	SL4.0ch00	mitochondrion	1	0.664	99.973	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500351.1	Solyc00g500351.1.1	SL4.0ch00	mitochondrion	1	0.2782	99.951	19	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500352.1	Solyc00g500352.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500354.1	Solyc00g500354.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500355.1	Solyc00g500355.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500356.1	Solyc00g500356.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500357.1	Solyc00g500357.1.1	SL4.0ch00	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500359.1	Solyc00g500359.1.1	SL4.0ch00	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500360.1	Solyc00g500360.1.1	SL4.0ch00	mitochondrion	1	1	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	TRUE	FALSE
+Solyc00g500361.1	Solyc00g500361.1.1	SL4.0ch00	mitochondrion	1	0.5594	99.705	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500362.1	Solyc00g500362.1.1	SL4.0ch00	mitochondrion	1	0.5089	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	FALSE	FALSE
+Solyc00g500363.1	Solyc00g500363.1.1	SL4.0ch00	mitochondrion	0.8765	0.8765	99.531	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	mitochondrion-type near-identical	FALSE	FALSE	FALSE	FALSE
+Solyc00g500364.1	Solyc00g500364.1.1	SL4.0ch00	mitochondrion	1	0.6108	99.796	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	TRUE	0	organelle-similar, diverged	FALSE	FALSE	TRUE	FALSE
+Solyc00g500365.1	Solyc00g500365.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500366.1	Solyc00g500366.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500367.1	Solyc00g500367.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500368.1	Solyc00g500368.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500369.1	Solyc00g500369.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500370.1	Solyc00g500370.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500371.1	Solyc00g500371.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500372.1	Solyc00g500372.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500373.1	Solyc00g500373.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500374.1	Solyc00g500374.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500375.1	Solyc00g500375.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500376.1	Solyc00g500376.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500377.1	Solyc00g500377.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500378.1	Solyc00g500378.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500379.1	Solyc00g500379.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500380.1	Solyc00g500380.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500381.1	Solyc00g500381.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500382.1	Solyc00g500382.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500383.1	Solyc00g500383.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500384.1	Solyc00g500384.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500385.1	Solyc00g500385.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500386.1	Solyc00g500386.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500387.1	Solyc00g500387.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500388.1	Solyc00g500388.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500389.1	Solyc00g500389.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500390.1	Solyc00g500390.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500391.1	Solyc00g500391.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500392.1	Solyc00g500392.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500393.1	Solyc00g500393.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500394.1	Solyc00g500394.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500395.1	Solyc00g500395.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500396.1	Solyc00g500396.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500397.1	Solyc00g500397.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500398.1	Solyc00g500398.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500399.1	Solyc00g500399.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500400.1	Solyc00g500400.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500401.1	Solyc00g500401.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500402.1	Solyc00g500402.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500403.1	Solyc00g500403.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500404.1	Solyc00g500404.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500405.1	Solyc00g500405.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500406.1	Solyc00g500406.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500407.1	Solyc00g500407.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500408.1	Solyc00g500408.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc00g500409.1	Solyc00g500409.1.1	SL4.0ch00	NA	NA	NA	NA	NA	no organelle hit	NA	NA	NA	FALSE	FALSE	TRUE	0	no close organelle similarity	FALSE	FALSE	FALSE	FALSE
+Solyc02g072160.4	Solyc02g072160.4.1	SL4.0ch02	mitochondrion	0.0291	0.0291	98.333	1	below 50 % organelle-identical coverage	2294.41276429396	0.473752839901353	0.99990663146592	TRUE	TRUE	FALSE	2	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g006350.4	Solyc01g006350.4.1	SL4.0ch01	mitochondrion	0.0224	0.0224	100	1	below 50 % organelle-identical coverage	605.086457343513	-0.756955502456983	0.99990663146592	TRUE	TRUE	FALSE	1	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g021290.1	Solyc02g021290.1.1	SL4.0ch02	plastid	0.7821	0.7821	99.18	1	plastid-type partial (50-80 %)	83.2951576605797	-1.07494115310078	0.99990663146592	TRUE	TRUE	FALSE	1	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g061460.3	Solyc09g061460.3.1	SL4.0ch09	plastid	0.9976	0.6738	98.926	4	plastid-type near-identical	19.0655689094245	0.862248689933879	0.99990663146592	TRUE	TRUE	FALSE	1	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g038080.1	Solyc12g038080.1.1	SL4.0ch12	plastid	0.9644	0.9644	98.618	1	plastid-type near-identical	8.11770636837381	-1.35445722690212	0.99990663146592	TRUE	TRUE	FALSE	1	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g010210.1	Solyc01g010210.1.1	SL4.0ch01	mitochondrion	1	1	98.746	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g011020.2	Solyc01g011020.2.1	SL4.0ch01	mitochondrion	0.7358	0.3899	100	4	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g011410.2	Solyc01g011410.2.1	SL4.0ch01	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g017050.1	Solyc01g017050.1.1	SL4.0ch01	plastid	0.6384	0.6384	98.03	2	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g017085.1	Solyc01g017085.1.1	SL4.0ch01	plastid	0.2353	0.2353	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g017145.1	Solyc01g017145.1.1	SL4.0ch01	plastid	0.2488	0.2488	98.113	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g017330.3	Solyc01g017330.3.1	SL4.0ch01	plastid	0.2038	0.2038	98.824	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g017740.2	Solyc01g017740.2.1	SL4.0ch01	plastid	0.9306	0.5347	99.262	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g028807.1	Solyc01g028807.1.1	SL4.0ch01	mitochondrion	0.3368	0.3368	99.66	2	below 50 % organelle-identical coverage	130.095837890727	-1.04883235562525	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g056330.2	Solyc01g056330.2.1	SL4.0ch01	plastid	0.9648	0.9648	98.034	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g056840.1	Solyc01g056840.1.1	SL4.0ch01	mitochondrion	0.6594	0.3768	98.958	3	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g057530.1	Solyc01g057530.1.1	SL4.0ch01	mitochondrion	0.2724	0.2724	100	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g058550.1	Solyc01g058550.1.1	SL4.0ch01	mitochondrion	0.5033	0.5033	99.351	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g067760.1	Solyc01g067760.1.1	SL4.0ch01	plastid	0.4962	0.4962	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g079420.4	Solyc01g079420.4.1	SL4.0ch01	mitochondrion	0.0973	0.0973	100	1	below 50 % organelle-identical coverage	1830.24365641757	-0.637610677351378	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g087770.4	Solyc01g087770.4.1	SL4.0ch01	mitochondrion	0.134	0.134	99.49	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g102770.1	Solyc01g102770.1.1	SL4.0ch01	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc01g150132.1	Solyc01g150132.1.1	SL4.0ch01	mitochondrion	0.2354	0.2354	99.329	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g011920.2	Solyc02g011920.2.1	SL4.0ch02	plastid	0.0514	0.0514	98.333	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g021770.1	Solyc02g021770.1.1	SL4.0ch02	mitochondrion	1	0.8895	99.214	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g036320.2	Solyc02g036320.2.1	SL4.0ch02	plastid	0.847	0.847	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g043950.1	Solyc02g043950.1.1	SL4.0ch02	plastid	0.7193	0.7193	98.78	2	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g050290.1	Solyc02g050290.1.1	SL4.0ch02	mitochondrion	0.9303	0.5182	99.026	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g080275.1	Solyc02g080275.1.1	SL4.0ch02	plastid	0.7932	0.7932	99.761	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g082440.2	Solyc02g082440.2.1	SL4.0ch02	mitochondrion	0.0235	0.0235	98.485	1	below 50 % organelle-identical coverage	93.4423485231759	-0.820407517933462	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc02g083210.2	Solyc02g083210.2.1	SL4.0ch02	mitochondrion	0.8676	0.3783	98.913	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g013600.1	Solyc03g013600.1.1	SL4.0ch03	plastid	1	1	98.117	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g013615.1	Solyc03g013615.1.1	SL4.0ch03	plastid	0.9278	0.9278	98.054	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g033440.1	Solyc03g033440.1.1	SL4.0ch03	mitochondrion	0.9788	0.4364	99.504	5	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g058300.1	Solyc03g058300.1.1	SL4.0ch03	mitochondrion	1	0.8351	98.64	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g062780.1	Solyc03g062780.1.1	SL4.0ch03	plastid	0.3177	0.3177	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g063460.1	Solyc03g063460.1.1	SL4.0ch03	mitochondrion	1	1	98.246	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g080130.1	Solyc03g080130.1.1	SL4.0ch03	plastid	0.8193	0.5394	98.692	3	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g095880.1	Solyc03g095880.1.1	SL4.0ch03	mitochondrion	0.5229	0.5229	98.75	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc03g120370.1	Solyc03g120370.1.1	SL4.0ch03	plastid	0.7455	0.7455	99.317	2	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc04g008245.1	Solyc04g008245.1.1	SL4.0ch04	plastid	0.1168	0.1168	100	1	below 50 % organelle-identical coverage	26.8856787967969	1.18846297047432	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc04g012080.3	Solyc04g012080.3.1	SL4.0ch04	mitochondrion	0.3485	0.2008	100	3	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc04g050840.1	Solyc04g050840.1.1	SL4.0ch04	plastid	0.117	0.117	98.37	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc04g050850.3	Solyc04g050850.3.1	SL4.0ch04	plastid	0.2782	0.2782	99.099	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc04g072470.4	Solyc04g072470.4.1	SL4.0ch04	mitochondrion	0.1004	0.1004	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc04g072680.2	Solyc04g072680.2.1	SL4.0ch04	plastid	0.031	0.031	98.182	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc04g082990.3	Solyc04g082990.3.1	SL4.0ch04	mitochondrion	0.1208	0.1208	98.925	1	below 50 % organelle-identical coverage	56.2727610153522	-0.47057082206342	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g007720.1	Solyc05g007720.1.1	SL4.0ch05	mitochondrion	0.6424	0.6424	98.489	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g016120.2	Solyc05g016120.2.1	SL4.0ch05	plastid	0.6063	0.6063	98.341	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g016713.1	Solyc05g016713.1.1	SL4.0ch05	mitochondrion	0.1211	0.1211	98.485	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g021190.2	Solyc05g021190.2.1	SL4.0ch05	plastid	0.7969	0.7969	99.519	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g023720.1	Solyc05g023720.1.1	SL4.0ch05	plastid	0.9067	0.7371	98.742	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g023725.1	Solyc05g023725.1.1	SL4.0ch05	plastid	1	0.617	99.059	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g024235.1	Solyc05g024235.1.1	SL4.0ch05	plastid	0.1938	0.1938	98.438	1	below 50 % organelle-identical coverage	753.33552420687	0.0107738541167337	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g026200.1	Solyc05g026200.1.1	SL4.0ch05	mitochondrion	0.7346	0.4259	100	2	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g047430.1	Solyc05g047430.1.1	SL4.0ch05	mitochondrion	0.5746	0.5746	100	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g047440.1	Solyc05g047440.1.1	SL4.0ch05	plastid	0.9053	0.9053	98.75	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc05g047670.1	Solyc05g047670.1.1	SL4.0ch05	plastid	0.9633	0.7333	98.621	4	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g008625.1	Solyc06g008625.1.1	SL4.0ch06	mitochondrion	0.2149	0.2149	100	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g009940.1	Solyc06g009940.1.1	SL4.0ch06	plastid	0.8813	0.8813	98.446	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g036210.1	Solyc06g036210.1.1	SL4.0ch06	plastid	0.7607	0.7607	98.876	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g043280.1	Solyc06g043280.1.1	SL4.0ch06	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g051370.1	Solyc06g051370.1.1	SL4.0ch06	plastid	0.6329	0.4595	98.606	4	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g074550.3	Solyc06g074550.3.1	SL4.0ch06	mitochondrion	0.195	0.1182	98.739	4	below 50 % organelle-identical coverage	22.3112258396064	-0.20407651486974	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g074560.1	Solyc06g074560.1.1	SL4.0ch06	mitochondrion	0.9956	0.4298	100	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g074570.2	Solyc06g074570.2.1	SL4.0ch06	mitochondrion	0.6961	0.2357	100	5	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g074580.1	Solyc06g074580.1.1	SL4.0ch06	mitochondrion	0.7529	0.7529	100	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g074585.1	Solyc06g074585.1.1	SL4.0ch06	mitochondrion	0.9978	0.9978	99.926	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g074590.2	Solyc06g074590.2.1	SL4.0ch06	mitochondrion	0.5568	0.2784	100	3	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g074600.2	Solyc06g074600.2.1	SL4.0ch06	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc06g076965.1	Solyc06g076965.1.1	SL4.0ch06	plastid	0.2538	0.2538	98.507	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g007840.3	Solyc07g007840.3.1	SL4.0ch07	mitochondrion	0.0554	0.0554	100	2	below 50 % organelle-identical coverage	88.4119595674453	0.575882273009929	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g019500.2	Solyc07g019500.2.1	SL4.0ch07	mitochondrion	1	0.7013	98.95	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g021570.1	Solyc07g021570.1.1	SL4.0ch07	mitochondrion	0.7961	0.4353	98.671	3	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g022800.1	Solyc07g022800.1.1	SL4.0ch07	mitochondrion	0.5056	0.5056	98.901	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g026910.3	Solyc07g026910.3.1	SL4.0ch07	plastid	0.9338	0.9338	98.174	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g042493.1	Solyc07g042493.1.1	SL4.0ch07	mitochondrion	0.1815	0.1815	98.214	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g061750.4	Solyc07g061750.4.1	SL4.0ch07	mitochondrion	0.0385	0.0385	98.592	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g150102.1	Solyc07g150102.1.1	SL4.0ch07	mitochondrion	0.0667	0.0667	100	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc07g150138.1	Solyc07g150138.1.1	SL4.0ch07	mitochondrion	0.1287	0.1287	98.947	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g014390.1	Solyc08g014390.1.1	SL4.0ch08	plastid	0.7523	0.7523	99.401	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g014565.1	Solyc08g014565.1.1	SL4.0ch08	mitochondrion	0.1098	0.1098	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g016000.2	Solyc08g016000.2.1	SL4.0ch08	plastid	1	1	98.81	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g028870.1	Solyc08g028870.1.1	SL4.0ch08	plastid	0.5316	0.5316	98.413	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g036500.1	Solyc08g036500.1.1	SL4.0ch08	mitochondrion	1	1	98.874	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g036520.2	Solyc08g036520.2.1	SL4.0ch08	mitochondrion	0.823	0.823	98.605	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g036530.1	Solyc08g036530.1.1	SL4.0ch08	mitochondrion	1	1	98.958	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g036533.1	Solyc08g036533.1.1	SL4.0ch08	mitochondrion	0.3356	0.1973	99.294	4	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g036535.1	Solyc08g036535.1.1	SL4.0ch08	mitochondrion	1	1	98.195	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g036537.1	Solyc08g036537.1.1	SL4.0ch08	mitochondrion	0.119	0.119	98.333	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g036550.1	Solyc08g036550.1.1	SL4.0ch08	mitochondrion	1	1	98.851	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g045860.1	Solyc08g045860.1.1	SL4.0ch08	mitochondrion	0.5941	0.5941	98.889	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g045870.3	Solyc08g045870.3.1	SL4.0ch08	mitochondrion	0.984	0.6619	98.782	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g045880.2	Solyc08g045880.2.1	SL4.0ch08	mitochondrion	0.3662	0.3662	99.31	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g065543.1	Solyc08g065543.1.1	SL4.0ch08	mitochondrion	0.1693	0.0891	99.293	3	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g065620.1	Solyc08g065620.1.1	SL4.0ch08	mitochondrion	0.622	0.622	98.366	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g075460.3	Solyc08g075460.3.1	SL4.0ch08	mitochondrion	0.0382	0.0382	100	1	below 50 % organelle-identical coverage	59.5098765862376	1.09786086122143	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g076887.1	Solyc08g076887.1.1	SL4.0ch08	mitochondrion	0.1488	0.1488	100	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc08g078750.4	Solyc08g078750.4.1	SL4.0ch08	plastid	0.0383	0.0383	98.734	1	below 50 % organelle-identical coverage	221.635177966056	-1.20062656962873	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g005280.3	Solyc09g005280.3.1	SL4.0ch09	mitochondrion	0.1255	0.1255	98.049	2	below 50 % organelle-identical coverage	130.920827940855	-0.154614774551987	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g009360.1	Solyc09g009360.1.1	SL4.0ch09	mitochondrion	0.9576	0.9576	98.654	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g011150.1	Solyc09g011150.1.1	SL4.0ch09	mitochondrion	0.6836	0.6836	99.174	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g015145.1	Solyc09g015145.1.1	SL4.0ch09	mitochondrion	0.3545	0.3545	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g015320.3	Solyc09g015320.3.1	SL4.0ch09	plastid	0.2742	0.1804	98.947	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g015850.4	Solyc09g015850.4.1	SL4.0ch09	mitochondrion	1	0.9328	98.397	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g015860.1	Solyc09g015860.1.1	SL4.0ch09	mitochondrion	1	1	98.638	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g015880.4	Solyc09g015880.4.1	SL4.0ch09	mitochondrion	1	0.5199	98.763	5	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g015890.4	Solyc09g015890.4.1	SL4.0ch09	mitochondrion	1	1	99.709	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g015900.1	Solyc09g015900.1.1	SL4.0ch09	mitochondrion	1	1	98.99	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g015910.1	Solyc09g015910.1.1	SL4.0ch09	mitochondrion	1	1	98.762	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g016930.1	Solyc09g016930.1.1	SL4.0ch09	plastid	0.406	0.406	98.765	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g031800.1	Solyc09g031800.1.1	SL4.0ch09	plastid	0.9888	0.9888	98.416	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g031840.1	Solyc09g031840.1.1	SL4.0ch09	plastid	0.9408	0.9408	98.952	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g031850.1	Solyc09g031850.1.1	SL4.0ch09	plastid	0.8116	0.8116	98.427	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g031880.3	Solyc09g031880.3.1	SL4.0ch09	mitochondrion	0.1257	0.0888	98.333	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g050062.1	Solyc09g050062.1.1	SL4.0ch09	plastid	1	0.5428	98.816	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g050063.1	Solyc09g050063.1.1	SL4.0ch09	plastid	1	1	98.082	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	TRUE	FALSE
+Solyc09g050064.1	Solyc09g050064.1.1	SL4.0ch09	plastid	1	1	98.645	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	TRUE	FALSE
+Solyc09g050066.1	Solyc09g050066.1.1	SL4.0ch09	plastid	0.0689	0.0689	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g050067.1	Solyc09g050067.1.1	SL4.0ch09	plastid	0.6063	0.6063	98.122	2	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g050068.1	Solyc09g050068.1.1	SL4.0ch09	plastid	0.1842	0.1842	100	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g050070.1	Solyc09g050070.1.1	SL4.0ch09	plastid	0.1055	0.1055	100	2	below 50 % organelle-identical coverage	98.4221397384869	2.05784637273088	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g055840.1	Solyc09g055840.1.1	SL4.0ch09	plastid	1	1	99.415	2	plastid-type near-identical	9.12053757079153	1.05487045878438	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g055950.2	Solyc09g055950.2.1	SL4.0ch09	plastid	1	1	99.048	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g061465.1	Solyc09g061465.1.1	SL4.0ch09	plastid	0.9838	0.5629	99.581	6	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g061610.1	Solyc09g061610.1.1	SL4.0ch09	mitochondrion	0.234	0.234	98.63	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g061880.2	Solyc09g061880.2.1	SL4.0ch09	mitochondrion	0.1414	0.1414	100	3	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g064400.2	Solyc09g064400.2.1	SL4.0ch09	plastid	1	1	100	1	plastid-type near-identical	21.3271143805881	-0.595206374873763	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g064410.1	Solyc09g064410.1.1	SL4.0ch09	plastid	1	1	100	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g064580.2	Solyc09g064580.2.1	SL4.0ch09	plastid	0.6967	0.6967	98.235	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g065530.2	Solyc09g065530.2.1	SL4.0ch09	plastid	0.3035	0.3035	100	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g091410.2	Solyc09g091410.2.1	SL4.0ch09	plastid	0.8008	0.8008	99.749	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc09g091415.1	Solyc09g091415.1.1	SL4.0ch09	mitochondrion	0.7489	0.4155	99.39	2	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g009160.3	Solyc10g009160.3.1	SL4.0ch10	mitochondrion	0.048	0.048	100	1	below 50 % organelle-identical coverage	61.6191019078587	-0.573617986679375	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g012213.1	Solyc10g012213.1.1	SL4.0ch10	plastid	0.9482	0.9482	99.317	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g012217.1	Solyc10g012217.1.1	SL4.0ch10	plastid	1	1	99.502	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g018610.2	Solyc10g018610.2.1	SL4.0ch10	plastid	0.2479	0.2479	98.319	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g045140.1	Solyc10g045140.1.1	SL4.0ch10	mitochondrion	0.4014	0.4014	99.115	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g048060.2	Solyc10g048060.2.1	SL4.0ch10	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g049590.1	Solyc10g049590.1.1	SL4.0ch10	plastid	0.6506	0.3045	99.029	3	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g055350.1	Solyc10g055350.1.1	SL4.0ch10	mitochondrion	0.2151	0.2151	98.333	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g061880.1	Solyc10g061880.1.1	SL4.0ch10	mitochondrion	0.954	0.954	99.518	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g061887.1	Solyc10g061887.1.1	SL4.0ch10	plastid	1	0.6047	99.565	4	plastid-type near-identical	151.815649236714	2.0975691015465	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g076630.1	Solyc10g076630.1.1	SL4.0ch10	mitochondrion	0.8074	0.8074	98.777	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g080120.1	Solyc10g080120.1.1	SL4.0ch10	mitochondrion	0.5194	0.5194	100	2	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc10g083800.2	Solyc10g083800.2.1	SL4.0ch10	mitochondrion	0.0253	0.0253	98.837	1	below 50 % organelle-identical coverage	319.800521604893	-0.0447800427564978	0.99990663146592	TRUE	TRUE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g006675.1	Solyc11g006675.1.1	SL4.0ch11	plastid	0.415	0.415	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g007260.1	Solyc11g007260.1.1	SL4.0ch11	plastid	0.2701	0.2701	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g018700.3	Solyc11g018700.3.1	SL4.0ch11	plastid	1	1	100	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g020785.1	Solyc11g020785.1.1	SL4.0ch11	plastid	0.2906	0.1539	98.305	2	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g021067.1	Solyc11g021067.1.1	SL4.0ch11	plastid	0.6451	0.5924	98.272	4	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g021190.2	Solyc11g021190.2.1	SL4.0ch11	plastid	0.2783	0.2783	98.305	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g021213.1	Solyc11g021213.1.1	SL4.0ch11	plastid	0.1475	0.1475	98.701	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g021237.1	Solyc11g021237.1.1	SL4.0ch11	plastid	0.591	0.357	98.008	2	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g021260.1	Solyc11g021260.1.1	SL4.0ch11	plastid	0.1117	0.1117	98.507	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g021310.1	Solyc11g021310.1.1	SL4.0ch11	plastid	0.9746	0.6294	98.104	3	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g022610.1	Solyc11g022610.1.1	SL4.0ch11	plastid	0.1788	0.1788	98.305	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g038340.1	Solyc11g038340.1.1	SL4.0ch11	mitochondrion	1	1	99.016	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g038350.2	Solyc11g038350.2.1	SL4.0ch11	mitochondrion	1	0.6494	99.351	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g039350.1	Solyc11g039350.1.1	SL4.0ch11	mitochondrion	1	1	99.688	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g039360.2	Solyc11g039360.2.1	SL4.0ch11	mitochondrion	1	0.648	98.748	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g039370.3	Solyc11g039370.3.1	SL4.0ch11	mitochondrion	0.9897	0.3477	99.584	3	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g039380.1	Solyc11g039380.1.1	SL4.0ch11	mitochondrion	1	1	99.115	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g039970.1	Solyc11g039970.1.1	SL4.0ch11	mitochondrion	1	0.7183	98.465	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g039980.3	Solyc11g039980.3.1	SL4.0ch11	mitochondrion	0.9942	0.9942	99.135	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g044990.1	Solyc11g044990.1.1	SL4.0ch11	plastid	0.3333	0.1917	99.462	3	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g045260.1	Solyc11g045260.1.1	SL4.0ch11	plastid	0.5677	0.5677	98.165	1	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g056260.2	Solyc11g056260.2.1	SL4.0ch11	mitochondrion	1	1	98.765	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g056290.3	Solyc11g056290.3.1	SL4.0ch11	mitochondrion	1	1	99.638	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g062040.1	Solyc11g062040.1.1	SL4.0ch11	plastid	0.763	0.763	98.058	2	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g062050.1	Solyc11g062050.1.1	SL4.0ch11	plastid	0.9929	0.9929	99.643	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063440.3	Solyc11g063440.3.1	SL4.0ch11	mitochondrion	0.3197	0.3197	98.936	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063490.1	Solyc11g063490.1.1	SL4.0ch11	mitochondrion	1	1	98.305	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063530.2	Solyc11g063530.2.1	SL4.0ch11	mitochondrion	1	0.7857	100	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063540.2	Solyc11g063540.2.1	SL4.0ch11	mitochondrion	1	0.5579	100	4	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063550.2	Solyc11g063550.2.1	SL4.0ch11	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063570.1	Solyc11g063570.1.1	SL4.0ch11	mitochondrion	1	1	100	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063573.1	Solyc11g063573.1.1	SL4.0ch11	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063577.1	Solyc11g063577.1.1	SL4.0ch11	mitochondrion	1	1	100	1	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063600.3	Solyc11g063600.3.1	SL4.0ch11	mitochondrion	0.7531	0.7531	98.689	1	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063630.1	Solyc11g063630.1.1	SL4.0ch11	mitochondrion	0.4396	0.4396	98.333	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063640.2	Solyc11g063640.2.1	SL4.0ch11	mitochondrion	1	0.8066	98.515	2	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g063660.1	Solyc11g063660.1.1	SL4.0ch11	mitochondrion	0.3265	0.3265	98.958	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc11g064940.1	Solyc11g064940.1.1	SL4.0ch11	mitochondrion	0.7231	0.4	100	3	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g021320.1	Solyc12g021320.1.1	SL4.0ch12	mitochondrion	0.9874	0.327	99.488	6	mitochondrion-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g027550.2	Solyc12g027550.2.1	SL4.0ch12	plastid	0.9537	0.9537	98.544	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g027820.1	Solyc12g027820.1.1	SL4.0ch12	plastid	1	1	98.83	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g033020.1	Solyc12g033020.1.1	SL4.0ch12	plastid	0.6352	0.6352	98.347	2	plastid-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g033040.1	Solyc12g033040.1.1	SL4.0ch12	plastid	0.1667	0.1667	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g036550.3	Solyc12g036550.3.1	SL4.0ch12	plastid	1	1	99.527	2	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g036710.3	Solyc12g036710.3.1	SL4.0ch12	mitochondrion	0.7231	0.1797	99.568	6	mitochondrion-type partial (50-80 %)	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g039030.1	Solyc12g039030.1.1	SL4.0ch12	plastid	0.9877	0.9877	98.75	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g062810.1	Solyc12g062810.1.1	SL4.0ch12	plastid	1	0.6049	98.855	3	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g096910.1	Solyc12g096910.1.1	SL4.0ch12	plastid	0.8776	0.8776	98.191	1	plastid-type near-identical	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g098090.1	Solyc12g098090.1.1	SL4.0ch12	mitochondrion	0.0828	0.0828	98.165	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE
+Solyc12g099220.1	Solyc12g099220.1.1	SL4.0ch12	mitochondrion	0.0509	0.0509	100	1	below 50 % organelle-identical coverage	NA	NA	NA	FALSE	FALSE	FALSE	0	NA	FALSE	FALSE	FALSE	FALSE

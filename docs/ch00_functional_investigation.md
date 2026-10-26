@@ -23,6 +23,13 @@ The SL4.0 notes do not say whether organelle-derived contigs remain in ch00. In 
 (D-001, D-010) therefore had no organelle genome, either as transcripts or as decoys. Reads from organellar transcripts could be
 assigned to any ITAG4.0 transcript that is (near-)identical to organelle sequence.
 
+> **Correction (2026-10-26, Phase 6B closure, D-044).** The FASTA has no **separate, labelled** plastome or mitogenome
+> record. However, a multi-HSP BLAST of the 177 gap-free ch00 segments shows that SL4.0ch00 itself contains the **complete**
+> plastome and mitogenome sequence at ≥ 98 % identity. One 228,710 bp segment covers the whole plastome. The Salmon index
+> therefore contained organelle sequence: as decoy (ch00) and, for the annotated parts, as ch00 transcript targets. The
+> conclusions of this document are unchanged. Details are in
+> [organelle_requantification_assessment.md](organelle_requantification_assessment.md) §4.3.
+
 ## 2. Methods
 
 | Step | Detail |
@@ -142,6 +149,8 @@ The same 9 sets are lost. The ch00 STOP assessment does not change. Outputs:
 - ch00 contains many gene models whose sequences are (near-)identical to the tomato plastome or mitogenome. This analysis
   cannot tell organellar contigs that remained in the nuclear assembly apart from nuclear insertions of organellar DNA. Both
   would attract reads from organellar transcripts, because the reference has no organelle genome.
+  *Correction (D-044): the reference has no labelled organelle record, but ch00 contains complete organelle sequence; see the
+  note in §1.*
 - The read counts of these genes may therefore reflect organellar transcripts captured despite poly(A) selection. They should
   not be read as expression of nuclear genes.
 - In the Phase 6 results, the sets that contain these genes depend on them: ATP-synthase / proton-transport terms are lost,
@@ -154,6 +163,10 @@ The same 9 sets are lost. The ch00 STOP assessment does not change. Outputs:
   - or treat organelle-identical gene models as a separate feature class.
 
   Either would be a change to the quantification and therefore a new analysis.
+
+  *Update (D-044): the first option was assessed without re-quantification in
+  [organelle_requantification_assessment.md](organelle_requantification_assessment.md). The recommendation is A, no new
+  quantification, pending owner decision. The second option is a reporting choice that needs no re-quantification.*
 
 ## 6. Outputs
 

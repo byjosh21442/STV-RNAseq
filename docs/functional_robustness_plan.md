@@ -124,6 +124,12 @@ Facts available before the run: SGN SL4.0 release notes describe chromosome 0 as
 separated organellar sequences out of the nuclear assembly and removed completely mitochondrial contigs. The SL4.0 FASTA
 contains ch00 – ch12 only (no plastome or mitogenome sequence); ch00 = 9,643,250 bp with 513 ITAG4.0 genes (45 ranked).
 
+> **Correction (2026-10-26, after Phase 6B; D-044; the pre-specified text above is kept unchanged).** "No plastome or
+> mitogenome sequence" is accurate only for **separate, labelled** records. SL4.0ch00 contains the complete plastome and
+> mitogenome sequence at ≥ 98 % identity
+> ([organelle_requantification_assessment.md](organelle_requantification_assessment.md) §4.3). The pre-specified rules and
+> the results of §11 are not affected.
+
 - Organelle references: tomato plastome **NC_007898.3** (155,461 bp) and mitogenome **NC_035963.1** (446,257 bp), NCBI
   RefSeq, downloaded with SHA-256 recorded (git-ignored under `reference/functional/organelle/`).
 - Justification for BLAST: the recurring ch00 leading-edge genes carry plastid-encoded protein names; whether their

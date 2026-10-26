@@ -1,0 +1,7 @@
+organelle_bin	segments	bp	genes	genes_tested	segments_in_ncbi	bp_in_ncbi	segments_absent_from_ncbi	bp_absent_from_ncbi	genes_on_absent	genes_tested_on_absent
+plastid>=90%	4	422896	118	32	4	422896	0	0	0	0
+mito>=90%	17	1122980	182	5	5	290543	12	832437	143	5
+intermediate	3	232117	45	6	3	232117	0	0	0	0
+organelle<10%	153	7847657	168	4	152	7408910	1	438747	4	0
+ALL	177	9625650	513	47	164	8354466	13	1271184	147	5
+#ncbi_unplaced_scaffolds	140	8795813	ncbi_pieces	166	pieces_matched	164

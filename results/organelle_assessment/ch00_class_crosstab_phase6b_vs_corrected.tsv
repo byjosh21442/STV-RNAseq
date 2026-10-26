@@ -1,0 +1,15 @@
+phase6b_class	corrected_class	N
+mitochondrion-type near-identical	mitochondrion-type near-identical	115
+no close organelle similarity	below 50 % organelle-identical coverage	2
+no close organelle similarity	mitochondrion-type near-identical	17
+no close organelle similarity	mitochondrion-type partial (50-80 %)	1
+no close organelle similarity	no organelle hit	165
+no close organelle similarity	plastid-type near-identical	5
+no close organelle similarity	plastid-type partial (50-80 %)	1
+organelle-similar, diverged	below 50 % organelle-identical coverage	4
+organelle-similar, diverged	mitochondrion-type near-identical	47
+organelle-similar, diverged	mitochondrion-type partial (50-80 %)	1
+organelle-similar, diverged	no organelle hit	3
+organelle-similar, diverged	plastid-type near-identical	79
+organelle-similar, diverged	plastid-type partial (50-80 %)	2
+plastid-type near-identical	plastid-type near-identical	71

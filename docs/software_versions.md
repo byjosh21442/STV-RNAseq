@@ -38,7 +38,8 @@ Differences from the Phase 1 plan: Java comes from conda-forge inside the projec
 
 | Tool | Version | Purpose |
 |---|---|---|
-| curl | 8.18.0 | ENA HTTPS download with resume (`-C -`) |
+| curl | 8.18.0 | ENA HTTPS download with resume (`-C -`); NCBI Datasets / E-utilities requests (D-044 provenance) |
+| python3 | 3.14.4 (system) | Exact-sequence comparison in `scripts/bash/ch00_ncbi_provenance.sh` (standard library only; D-044) |
 | md5sum | uutils coreutils 0.8.0 | MD5 validation |
 | gzip / zcat | 1.14 | Reading the first FASTQ records |
 | git | 2.53.0 | Version control (repository-local identity, see `docs/run_log.md`) |
@@ -78,7 +79,13 @@ Differences from the Phase 1 plan: Java comes from conda-forge inside the projec
 
 | Tool | Version | Environment | Purpose |
 |---|---|---|---|
-| BLAST+ (`blastn`, `blastp`, `makeblastdb`) | 2.17.0+ | `rachis-qiime2-2026.4` (pre-existing; used read-only via `conda run`) | SL4.0ch00 organelle-similarity check (Phase 6B, D-038; `scripts/bash/ch00_organelle_blast.sh`) |
+| BLAST+ (`blastn`, `blastp`, `makeblastdb`) | 2.17.0+ (package `blast 2.17.0`, bioconda build `h66d330f_0`) | `rachis-qiime2-2026.4` (pre-existing; used read-only via `conda run`) | SL4.0ch00 organelle-similarity check (Phase 6B, D-038; `scripts/bash/ch00_organelle_blast.sh`) and multi-HSP diagnostic (D-044; `scripts/bash/organelle_multihsp_blast.sh`) |
+
+This environment is not defined in the repository. To reproduce on another machine, provide BLAST+ 2.17.0 from bioconda in
+a conda env named `rachis-qiime2-2026.4`, e.g. `conda create -n rachis-qiime2-2026.4 -c conda-forge -c bioconda
+blast=2.17.0`. Alternatively, edit the `env=` line of the two scripts. Conda is sourced from
+`$HOME/miniconda3/etc/profile.d/conda.sh` ([reproducibility_audit.md](reproducibility_audit.md) R2, R3). No environment was
+changed at the Phase 6B closure.
 
 ## Not installed (by design)
 

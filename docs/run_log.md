@@ -450,3 +450,74 @@ live outside the repository and are not committed. Every reported number comes f
 - CAMERA re-runs per dropped sample; any tuning of CAMERA after results.
 - Re-quantification with organelle genomes in the Salmon index (a new analysis; owner decision).
 - Mercator4 web submission (manual step still pending; no workaround).
+
+## Phase 6B closure — decision audit and organelle-aware quantification assessment (2026-10-26; no result changed)
+
+114. **Task 0 audit (read-only).**
+    - Branch `main`; `HEAD` = `origin/main` = `aee2a9ac27d96a64455abfb17554ea19736d8d9e`, parent `928d763`; tree clean;
+      no stash.
+    - `sha256sum -c results/functional_robustness/phase6_outputs_sha256.txt`: 76/76 OK.
+    - Phase 6 / 6B freeze snapshots OK; final `quant.sf` 6/6 OK against `results/quantification/quant_sf_sha256.tsv`.
+    - Ignored intermediates: `txi_final.rds` `82d1b43e312a4c475cbe92c237760108133e05ee2736d5bd5fefe17a2a620457`,
+      `deseq2_objects.rds` `3975624c0fa6e5ab0f9a3f81694a6bef076d10b526a4b8a1a942b9676482b95f`, `go_gene_sets.rds`
+      `81c6a4b93dd94d456af4637e45318ce482e1214bb2dac5e091e22f1c60869282`; voom table
+      `a10edfcb0e7080f3c7e20f8627a5491f746a4f344807be5030f6e56692d09893` (1,952,291 B).
+115. **Organelle assessment criteria frozen** (§1 of `docs/organelle_requantification_assessment.md`; written
+     2026-10-26T15:17:12Z, frozen 15:18:09Z), before any of the research below.
+    - Command (ad-hoc helper):
+      `cp docs/organelle_requantification_assessment.md results/organelle_assessment/prespecification/organelle_assessment_question_frozen.md`
+    - Its `sha256sum` was written with both UTC times to `prespecification_checksum.tsv`. The Phase 6 and Phase 6B freezes
+      were made the same way.
+116. **Salmon reference reconstruction (read-only).** Sources: `workflow/modules/salmon_index.nf`,
+     `workflow/nextflow.config`, index `info.json`, index log, `duplicate_clusters.tsv` and `meta_info.json`.
+    - 13 decoys (SL4.0ch00 – ch12); 33,976 targets; 99 duplicates removed.
+117. **Provenance research.**
+    - SGN release notes and FASTA headers / gap structure; ITAG4.0 GFF sources and README.
+    - NCBI Datasets v2 sequence report for GCA_000188115.5.
+    - Ensembl REST `info/genomes/taxonomy/4081`, `info/assembly/solanum_lycopersicum_gca000188115v5cm` and
+      `info/assembly/arabidopsis_thaliana`.
+    - Crossref for 10.1101/767764 and 10.1186/s13059-020-02151-8.
+    - Unsuccessful, recorded and not worked around:
+      - Hosmani et al. bioRxiv full text (not retrievable);
+      - Ensembl REST `info/assembly/solanum_lycopersicum` (HTTP 400; the species is registered under the GCA-based
+        name);
+      - Crossref request for 10.1038/nmeth.4197 (no content returned; citation verified via the Srivastava et al.
+        reference list);
+      - rdrr.io page for `?camera` (redirect; the installed limma 3.66.0 help was read instead).
+118. **Method documentation.** Salmon "Preparing transcriptome indices"; Srivastava et al. 2020 full text (PMC7487471);
+     nf-core/rnaseq 3.27.0 usage. No forum sources.
+119. **`scripts/bash/organelle_multihsp_blast.sh`** (BLAST+ 2.17.0+, env `rachis-qiime2-2026.4`, exit 0).
+    - 2,512 HSP rows for 1,061 cDNA queries; 835 rows for the 177 ch00 segments.
+    - The first draft split ch00 at upper-case N only, which missed the gaps: they are lower-case `n`. Fixed to
+      `[Nn]{100,}` before the recorded run.
+120. **`scripts/R/19_organelle_scope_diagnostic.R`** (exit 0).
+    - First run failed: data.table scoping, where a column `genes` shadowed a table of the same name. Fixed by precomputing
+      `total_baseMean`.
+    - Later, the gene table was restricted to ch00 genes + anchored genes with any ≥ 98 % HSP (5.3 MB → 709 rows,
+      126,527 B). After the re-run, all other outputs were byte-identical, and the restricted table equals the matching rows
+      of the full table (SHA-256 compared).
+121. **`scripts/bash/ch00_ncbi_provenance.sh`** (exit 0).
+    - 164 / 177 ch00 segments are exactly present in GenBank SL4.0.
+    - 12 mito-identical segments (832,437 bp) are absent. ch00 segment 15 = AEKE04000081.1 (complete plastome copy).
+    - Before the script, an exploratory ad-hoc check had compared two scaffolds and the scaffold lengths; the script
+      supersedes it.
+122. **Mercator4** official page (<https://www.plabipd.de/mercator_main.html>), checked once on 2026-10-26: Mercator4
+     v8.0, "currently undergoing scheduled maintenance". Nothing was submitted.
+123. **Docs.**
+    - New: `organelle_requantification_assessment.md` §2 – §11, `phase6b_decision_audit.md`,
+      `reproducibility_audit.md`, `pipeline_execution_map.md`.
+    - Updated: `decisions.md` (D-042 update, D-044), `methods_references.md` (§40 correction note, §42, §43),
+      `results_by_process.md` (rows 39 – 42), correction notes in `ch00_functional_investigation.md` and
+      `functional_robustness_plan.md` §7, `functional_analysis_plan.md` (pointer), `software_versions.md`, `README.md`,
+      this log.
+124. **Not executed:** Salmon index / quant, tximport, DESeq2, fgsea, CAMERA, Mercator4 submission, any change to the primary
+     analysis. Phase 7 was not started.
+125. **Owner decisions recorded** (2026-10-26).
+    - D-044 Option A approved.
+    - D-042 REGENERATE ON DEMAND approved.
+    - No gene-exclusion fgsea.
+    - The "organelle-identical feature class" label is allowed, but never as a statement of origin.
+    - Updated: `decisions.md`, `phase6b_decision_audit.md`, `organelle_requantification_assessment.md` §8,
+      `results_by_process.md`, `functional_analysis_plan.md` §8.6, `reproducibility_audit.md` R13, `README.md`.
+    - Pre-commit checks then ran and one commit "Phase 6B closure: decision audit and organelle assessment" was pushed.
+      Hashes and remote verification are in the Phase 7 entries below.

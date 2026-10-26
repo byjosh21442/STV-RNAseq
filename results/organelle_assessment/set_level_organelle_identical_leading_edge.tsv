@@ -1,0 +1,216 @@
+collection	go_id	theme	tier	ch00_sensitive	le_genes	le_org_near	le_org_near_or_partial	le_ch00	posthoc_ch00_sensitive
+BP	GO:0000160	Other (no theme regex matched)	Tier 3	FALSE	15	0	0	0	FALSE
+BP	GO:0000209	Other (no theme regex matched)	Tier 3	FALSE	36	0	0	0	FALSE
+BP	GO:0000470	Ribosome / translation / RNA processing	Tier 3	FALSE	28	0	0	0	FALSE
+BP	GO:0000959	Other (no theme regex matched)	Tier 3	FALSE	18	0	0	0	FALSE
+BP	GO:0001101	Other (no theme regex matched)	Tier 3	FALSE	61	0	0	0	FALSE
+BP	GO:0002181	Ribosome / translation / RNA processing	Tier 3	FALSE	60	0	0	0	FALSE
+BP	GO:0005996	Other (no theme regex matched)	Tier 3	FALSE	34	0	0	0	FALSE
+BP	GO:0006006	Other (no theme regex matched)	Tier 3	FALSE	14	0	0	0	FALSE
+BP	GO:0006091	Other (no theme regex matched)	Tier 3	FALSE	81	0	0	0	FALSE
+BP	GO:0006094	Other (no theme regex matched)	Tier 3	FALSE	14	0	0	0	FALSE
+BP	GO:0006163	Other (no theme regex matched)	Tier 3	FALSE	48	5	5	5	FALSE
+BP	GO:0006164	Other (no theme regex matched)	Tier 3	TRUE	22	5	5	5	TRUE
+BP	GO:0006353	Other (no theme regex matched)	Tier 3	FALSE	21	0	0	0	FALSE
+BP	GO:0006364	Ribosome / translation / RNA processing	Tier 3	FALSE	91	0	0	0	FALSE
+BP	GO:0006399	Ribosome / translation / RNA processing	Tier 3	FALSE	89	0	0	0	FALSE
+BP	GO:0006413	Ribosome / translation / RNA processing	Tier 3	FALSE	41	0	0	0	FALSE
+BP	GO:0006414	Ribosome / translation / RNA processing	Tier 3	FALSE	32	0	0	0	FALSE
+BP	GO:0006575	Other (no theme regex matched)	Tier 3	FALSE	43	0	0	0	FALSE
+BP	GO:0006635	Other (no theme regex matched)	Tier 3	FALSE	15	0	0	0	FALSE
+BP	GO:0006749	Glutathione / detoxification	Tier 3	FALSE	26	0	0	0	FALSE
+BP	GO:0006753	Other (no theme regex matched)	Tier 3	TRUE	69	5	5	5	TRUE
+BP	GO:0006754	ATP synthase / proton transport	Tier 3	TRUE	11	5	5	5	TRUE
+BP	GO:0006778	Other (no theme regex matched)	Tier 3	FALSE	28	0	0	0	FALSE
+BP	GO:0006779	Other (no theme regex matched)	Tier 3	FALSE	24	0	0	0	FALSE
+BP	GO:0006952	Defence / biotic response	Tier 3	FALSE	130	0	0	0	FALSE
+BP	GO:0006979	Water deprivation / abiotic stress	Tier 3	FALSE	38	0	0	0	FALSE
+BP	GO:0008033	Ribosome / translation / RNA processing	Tier 4	FALSE	55	0	0	0	FALSE
+BP	GO:0008037	Other (no theme regex matched)	Tier 3	FALSE	21	0	0	0	FALSE
+BP	GO:0008202	Other (no theme regex matched)	Tier 3	FALSE	22	0	0	0	FALSE
+BP	GO:0009062	Other (no theme regex matched)	Tier 3	FALSE	16	0	0	0	FALSE
+BP	GO:0009117	Other (no theme regex matched)	Tier 3	FALSE	56	5	5	5	FALSE
+BP	GO:0009141	Other (no theme regex matched)	Tier 3	FALSE	61	8	8	8	TRUE
+BP	GO:0009142	Other (no theme regex matched)	Tier 3	TRUE	17	5	5	5	TRUE
+BP	GO:0009144	Other (no theme regex matched)	Tier 3	FALSE	33	5	5	5	FALSE
+BP	GO:0009145	Other (no theme regex matched)	Tier 3	TRUE	15	5	5	5	TRUE
+BP	GO:0009150	Other (no theme regex matched)	Tier 3	FALSE	40	5	5	5	FALSE
+BP	GO:0009152	Other (no theme regex matched)	Tier 3	FALSE	25	7	7	7	TRUE
+BP	GO:0009165	Other (no theme regex matched)	Tier 3	TRUE	31	5	5	5	TRUE
+BP	GO:0009201	Other (no theme regex matched)	Tier 3	TRUE	17	5	5	5	TRUE
+BP	GO:0009205	Other (no theme regex matched)	Tier 3	FALSE	33	5	5	5	FALSE
+BP	GO:0009206	Other (no theme regex matched)	Tier 3	TRUE	15	5	5	5	TRUE
+BP	GO:0009259	Other (no theme regex matched)	Tier 3	FALSE	43	5	5	5	FALSE
+BP	GO:0009260	Other (no theme regex matched)	Tier 3	TRUE	30	7	7	7	TRUE
+BP	GO:0009308	Other (no theme regex matched)	Tier 4	FALSE	12	0	0	0	TRUE
+BP	GO:0009414	Water deprivation / abiotic stress	Tier 3	FALSE	60	0	0	0	FALSE
+BP	GO:0009415	Other (no theme regex matched)	Tier 3	FALSE	61	0	0	0	FALSE
+BP	GO:0009451	Other (no theme regex matched)	Tier 3	FALSE	67	0	0	0	FALSE
+BP	GO:0009607	Defence / biotic response	Tier 3	FALSE	47	0	0	0	FALSE
+BP	GO:0009611	Defence / biotic response	Tier 3	FALSE	10	0	0	0	FALSE
+BP	GO:0009620	Defence / biotic response	Tier 3	FALSE	16	0	0	0	FALSE
+BP	GO:0009628	Water deprivation / abiotic stress	Tier 3	FALSE	90	0	0	0	FALSE
+BP	GO:0009657	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	54	0	0	0	FALSE
+BP	GO:0009658	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	46	0	0	0	FALSE
+BP	GO:0009723	Hormone signalling	Tier 3	FALSE	23	0	0	0	FALSE
+BP	GO:0009765	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	26	0	0	0	FALSE
+BP	GO:0009768	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	13	0	0	0	FALSE
+BP	GO:0009873	Hormone signalling	Tier 3	FALSE	11	0	0	0	FALSE
+BP	GO:0015979	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	80	3	3	3	FALSE
+BP	GO:0015986	Other (no theme regex matched)	Tier 3	TRUE	11	5	5	5	TRUE
+BP	GO:0015995	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	20	0	0	0	FALSE
+BP	GO:0016042	Other (no theme regex matched)	Tier 3	FALSE	38	0	0	0	FALSE
+BP	GO:0016052	Other (no theme regex matched)	Tier 3	FALSE	66	0	0	0	FALSE
+BP	GO:0016072	Ribosome / translation / RNA processing	Tier 3	FALSE	96	0	0	0	FALSE
+BP	GO:0016125	Other (no theme regex matched)	Tier 3	FALSE	25	0	0	0	FALSE
+BP	GO:0019318	Other (no theme regex matched)	Tier 3	FALSE	31	0	0	0	FALSE
+BP	GO:0019319	Other (no theme regex matched)	Tier 3	FALSE	14	0	0	0	FALSE
+BP	GO:0019395	Other (no theme regex matched)	Tier 3	FALSE	15	0	0	0	FALSE
+BP	GO:0019684	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	33	0	0	0	FALSE
+BP	GO:0019693	Other (no theme regex matched)	Tier 3	FALSE	45	5	5	5	FALSE
+BP	GO:0022613	Ribosome / translation / RNA processing	Tier 3	FALSE	170	0	0	0	FALSE
+BP	GO:0030258	Other (no theme regex matched)	Tier 3	FALSE	32	0	0	0	FALSE
+BP	GO:0030488	Ribosome / translation / RNA processing	Tier 3	FALSE	17	0	0	0	TRUE
+BP	GO:0031347	Defence / biotic response	Tier 3	FALSE	13	0	0	0	FALSE
+BP	GO:0032259	Other (no theme regex matched)	Tier 3	FALSE	84	0	0	0	FALSE
+BP	GO:0032502	Other (no theme regex matched)	Tier 3	FALSE	80	0	0	0	FALSE
+BP	GO:0032543	Ribosome / translation / RNA processing	Tier 3	FALSE	17	0	0	0	FALSE
+BP	GO:0033013	Heme / oxidoreductase	Tier 3	FALSE	29	0	0	0	FALSE
+BP	GO:0033014	Heme / oxidoreductase	Tier 3	FALSE	26	0	0	0	FALSE
+BP	GO:0034440	Other (no theme regex matched)	Tier 3	FALSE	14	0	0	0	FALSE
+BP	GO:0035556	Other (no theme regex matched)	Tier 3	FALSE	111	0	0	0	FALSE
+BP	GO:0042254	Ribosome / translation / RNA processing	Tier 3	FALSE	143	0	0	0	FALSE
+BP	GO:0042255	Ribosome / translation / RNA processing	Tier 3	FALSE	27	0	0	0	FALSE
+BP	GO:0042273	Ribosome / translation / RNA processing	Tier 3	FALSE	52	0	0	0	FALSE
+BP	GO:0042274	Ribosome / translation / RNA processing	Tier 3	FALSE	39	0	0	0	FALSE
+BP	GO:0042440	Other (no theme regex matched)	Tier 3	FALSE	35	0	0	0	FALSE
+BP	GO:0042445	Hormone signalling	Tier 3	FALSE	15	0	0	0	FALSE
+BP	GO:0042743	Other (no theme regex matched)	Tier 3	FALSE	21	0	0	0	FALSE
+BP	GO:0042744	Other (no theme regex matched)	Tier 3	FALSE	21	0	0	0	FALSE
+BP	GO:0043207	Defence / biotic response	Tier 3	FALSE	43	0	0	0	FALSE
+BP	GO:0043414	Other (no theme regex matched)	Tier 3	FALSE	45	0	0	0	FALSE
+BP	GO:0044283	Other (no theme regex matched)	Tier 3	FALSE	149	0	0	0	FALSE
+BP	GO:0044419	Other (no theme regex matched)	Tier 3	FALSE	44	0	0	0	FALSE
+BP	GO:0045488	Carbohydrate binding / cell wall	Tier 3	TRUE	20	0	0	0	TRUE
+BP	GO:0046034	ATP synthase / proton transport	Tier 3	FALSE	52	8	8	8	FALSE
+BP	GO:0046148	Other (no theme regex matched)	Tier 3	FALSE	32	0	0	0	FALSE
+BP	GO:0046364	Other (no theme regex matched)	Tier 4	FALSE	11	0	0	0	FALSE
+BP	GO:0046390	Other (no theme regex matched)	Tier 3	FALSE	26	5	5	5	FALSE
+BP	GO:0046395	Other (no theme regex matched)	Tier 3	FALSE	34	0	0	1	FALSE
+BP	GO:0048544	Other (no theme regex matched)	Tier 3	FALSE	21	0	0	0	FALSE
+BP	GO:0048583	Other (no theme regex matched)	Tier 3	FALSE	35	0	0	0	FALSE
+BP	GO:0050793	Other (no theme regex matched)	Tier 3	FALSE	34	0	0	0	FALSE
+BP	GO:0050832	Defence / biotic response	Tier 3	FALSE	14	0	0	0	FALSE
+BP	GO:0051707	Defence / biotic response	Tier 3	FALSE	43	0	0	0	FALSE
+BP	GO:0055086	Other (no theme regex matched)	Tier 3	FALSE	76	5	5	5	TRUE
+BP	GO:0070887	Other (no theme regex matched)	Tier 3	FALSE	83	0	0	0	FALSE
+BP	GO:0071369	Hormone signalling	Tier 3	FALSE	15	0	0	0	FALSE
+BP	GO:0071554	Carbohydrate binding / cell wall	Tier 3	FALSE	58	0	0	0	FALSE
+BP	GO:0072329	Other (no theme regex matched)	Tier 3	FALSE	20	0	0	0	FALSE
+BP	GO:0072521	Other (no theme regex matched)	Tier 3	TRUE	59	5	5	5	TRUE
+BP	GO:0072522	Other (no theme regex matched)	Tier 4	TRUE	27	5	5	5	TRUE
+BP	GO:0072593	Other (no theme regex matched)	Tier 3	FALSE	22	0	0	0	FALSE
+BP	GO:0072596	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	12	0	0	0	FALSE
+BP	GO:0080134	Other (no theme regex matched)	Tier 3	FALSE	18	0	0	0	FALSE
+BP	GO:0098869	Glutathione / detoxification	Tier 3	FALSE	31	0	0	0	FALSE
+BP	GO:0140053	Other (no theme regex matched)	Tier 3	FALSE	27	0	0	0	FALSE
+BP	GO:1901135	Other (no theme regex matched)	Tier 3	FALSE	115	6	6	6	FALSE
+BP	GO:1901137	Other (no theme regex matched)	Tier 3	FALSE	77	7	7	7	FALSE
+BP	GO:1901293	Other (no theme regex matched)	Tier 3	TRUE	43	5	5	5	TRUE
+BP	GO:1901700	Other (no theme regex matched)	Tier 3	FALSE	81	0	0	0	FALSE
+BP	GO:2000022	Hormone signalling	Tier 4	TRUE	7	0	0	0	FALSE
+CC	GO:0005730	Ribosome / translation / RNA processing	Tier 3	FALSE	70	0	0	0	FALSE
+CC	GO:0005783	Endoplasmic reticulum / protein folding	Tier 3	FALSE	187	0	0	0	FALSE
+CC	GO:0005789	Endoplasmic reticulum / protein folding	Tier 3	FALSE	101	0	0	0	FALSE
+CC	GO:0005840	Ribosome / translation / RNA processing	Tier 3	FALSE	240	1	1	1	FALSE
+CC	GO:0005852	Ribosome / translation / RNA processing	Tier 3	FALSE	18	0	0	0	FALSE
+CC	GO:0009521	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	41	2	2	2	FALSE
+CC	GO:0009522	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	20	0	0	0	FALSE
+CC	GO:0009523	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	33	2	2	2	FALSE
+CC	GO:0009526	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	118	0	0	0	FALSE
+CC	GO:0009532	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	53	0	0	0	FALSE
+CC	GO:0009534	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	91	0	0	0	FALSE
+CC	GO:0009535	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	72	0	0	0	FALSE
+CC	GO:0009570	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	49	0	0	0	FALSE
+CC	GO:0009579	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	106	4	4	3	FALSE
+CC	GO:0009654	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	15	0	0	0	FALSE
+CC	GO:0009941	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	60	0	0	0	FALSE
+CC	GO:0015934	Ribosome / translation / RNA processing	Tier 3	FALSE	100	0	0	0	FALSE
+CC	GO:0015935	Ribosome / translation / RNA processing	Tier 3	FALSE	61	1	1	1	FALSE
+CC	GO:0016282	Other (no theme regex matched)	Tier 3	FALSE	15	0	0	0	FALSE
+CC	GO:0016469	ATP synthase / proton transport	Tier 3	TRUE	24	8	8	8	TRUE
+CC	GO:0019867	Other (no theme regex matched)	Tier 3	FALSE	94	0	0	0	FALSE
+CC	GO:0022625	Ribosome / translation / RNA processing	Tier 3	FALSE	87	0	0	0	FALSE
+CC	GO:0022626	Ribosome / translation / RNA processing	Tier 3	FALSE	132	0	0	0	FALSE
+CC	GO:0022627	Ribosome / translation / RNA processing	Tier 3	FALSE	44	0	0	0	FALSE
+CC	GO:0030684	Ribosome / translation / RNA processing	Tier 3	FALSE	46	0	0	0	FALSE
+CC	GO:0031967	Other (no theme regex matched)	Tier 3	FALSE	187	0	0	0	FALSE
+CC	GO:0031968	Other (no theme regex matched)	Tier 3	FALSE	94	0	0	0	FALSE
+CC	GO:0031969	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	40	0	0	0	FALSE
+CC	GO:0031976	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	91	0	0	0	FALSE
+CC	GO:0033290	Other (no theme regex matched)	Tier 3	FALSE	16	0	0	0	FALSE
+CC	GO:0034357	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	84	3	3	3	FALSE
+CC	GO:0034702	Other (no theme regex matched)	Tier 3	TRUE	15	7	7	7	TRUE
+CC	GO:0034703	Other (no theme regex matched)	Tier 3	TRUE	15	7	7	7	TRUE
+CC	GO:0034708	Other (no theme regex matched)	Tier 3	FALSE	12	0	0	0	FALSE
+CC	GO:0042170	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	109	0	0	0	FALSE
+CC	GO:0042175	Endoplasmic reticulum / protein folding	Tier 3	FALSE	101	0	0	0	FALSE
+CC	GO:0042651	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	79	1	1	1	FALSE
+CC	GO:0044391	Ribosome / translation / RNA processing	Tier 3	FALSE	164	1	1	1	FALSE
+CC	GO:0045259	ATP synthase / proton transport	Tier 3	TRUE	11	5	5	5	TRUE
+CC	GO:0048046	Other (no theme regex matched)	Tier 3	FALSE	19	0	0	0	FALSE
+CC	GO:0055035	Photosynthesis / plastid / thylakoid	Tier 3	FALSE	72	0	0	0	FALSE
+CC	GO:0070993	Ribosome / translation / RNA processing	Tier 3	FALSE	16	0	0	0	FALSE
+CC	GO:0098827	Endoplasmic reticulum / protein folding	Tier 3	FALSE	102	0	0	0	FALSE
+CC	GO:1990204	Heme / oxidoreductase	Tier 3	FALSE	24	0	0	0	FALSE
+MF	GO:0003729	Other (no theme regex matched)	Tier 3	FALSE	72	0	0	0	FALSE
+MF	GO:0003735	Ribosome / translation / RNA processing	Tier 3	FALSE	234	1	1	1	FALSE
+MF	GO:0003743	Ribosome / translation / RNA processing	Tier 3	FALSE	41	0	0	0	FALSE
+MF	GO:0003746	Ribosome / translation / RNA processing	Tier 3	FALSE	14	0	0	0	FALSE
+MF	GO:0004176	Other (no theme regex matched)	Tier 3	FALSE	22	1	1	1	FALSE
+MF	GO:0004190	Other (no theme regex matched)	Tier 3	FALSE	30	0	0	0	FALSE
+MF	GO:0004364	Glutathione / detoxification	Tier 3	FALSE	18	0	0	0	FALSE
+MF	GO:0004497	Heme / oxidoreductase	Tier 3	FALSE	65	0	0	0	FALSE
+MF	GO:0004601	Other (no theme regex matched)	Tier 3	FALSE	32	0	0	0	FALSE
+MF	GO:0004674	Other (no theme regex matched)	Tier 3	FALSE	140	0	0	0	FALSE
+MF	GO:0004842	Other (no theme regex matched)	Tier 3	FALSE	101	0	0	0	FALSE
+MF	GO:0005198	Other (no theme regex matched)	Tier 3	FALSE	259	1	1	1	FALSE
+MF	GO:0005319	Other (no theme regex matched)	Tier 3	TRUE	8	0	0	0	FALSE
+MF	GO:0005506	Other (no theme regex matched)	Tier 3	FALSE	75	0	0	0	FALSE
+MF	GO:0005525	Other (no theme regex matched)	Tier 3	FALSE	95	0	0	0	FALSE
+MF	GO:0008168	Other (no theme regex matched)	Tier 3	FALSE	102	0	0	0	FALSE
+MF	GO:0008194	Other (no theme regex matched)	Tier 3	FALSE	68	0	0	0	FALSE
+MF	GO:0015252	Other (no theme regex matched)	Tier 3	TRUE	7	4	4	4	TRUE
+MF	GO:0016209	Other (no theme regex matched)	Tier 3	FALSE	36	0	0	0	FALSE
+MF	GO:0016620	Heme / oxidoreductase	Tier 3	TRUE	12	0	0	0	FALSE
+MF	GO:0016645	Heme / oxidoreductase	Tier 3	FALSE	10	0	0	0	FALSE
+MF	GO:0016684	Heme / oxidoreductase	Tier 3	FALSE	32	0	0	0	FALSE
+MF	GO:0016705	Heme / oxidoreductase	Tier 3	FALSE	75	0	0	0	FALSE
+MF	GO:0016741	Other (no theme regex matched)	Tier 3	FALSE	112	0	0	0	FALSE
+MF	GO:0016755	Other (no theme regex matched)	Tier 3	FALSE	110	0	0	0	FALSE
+MF	GO:0016874	Other (no theme regex matched)	Tier 3	TRUE	78	4	4	4	TRUE
+MF	GO:0016903	Heme / oxidoreductase	Tier 3	FALSE	15	0	0	0	FALSE
+MF	GO:0019001	Other (no theme regex matched)	Tier 3	FALSE	96	0	0	0	FALSE
+MF	GO:0019787	Other (no theme regex matched)	Tier 3	FALSE	107	0	0	0	FALSE
+MF	GO:0019842	Other (no theme regex matched)	Tier 3	FALSE	46	0	0	0	FALSE
+MF	GO:0019843	Ribosome / translation / RNA processing	Tier 3	FALSE	53	1	1	1	FALSE
+MF	GO:0020037	Heme / oxidoreductase	Tier 3	FALSE	73	0	0	0	FALSE
+MF	GO:0030246	Carbohydrate binding / cell wall	Tier 3	FALSE	72	0	0	0	FALSE
+MF	GO:0030247	Carbohydrate binding / cell wall	Tier 3	FALSE	11	0	0	0	FALSE
+MF	GO:0031406	Other (no theme regex matched)	Tier 3	FALSE	29	0	0	0	FALSE
+MF	GO:0031418	Other (no theme regex matched)	Tier 3	FALSE	24	0	0	0	FALSE
+MF	GO:0032561	Other (no theme regex matched)	Tier 3	FALSE	95	0	0	0	FALSE
+MF	GO:0043021	Ribosome / translation / RNA processing	Tier 3	FALSE	26	0	0	0	FALSE
+MF	GO:0043022	Ribosome / translation / RNA processing	Tier 3	FALSE	19	0	0	0	FALSE
+MF	GO:0043177	Other (no theme regex matched)	Tier 3	FALSE	29	0	0	0	FALSE
+MF	GO:0043565	Other (no theme regex matched)	Tier 3	FALSE	96	0	0	0	FALSE
+MF	GO:0046906	Heme / oxidoreductase	Tier 3	FALSE	72	2	3	1	FALSE
+MF	GO:0046933	ATP synthase / proton transport	Tier 3	TRUE	7	4	4	4	TRUE
+MF	GO:0048029	Other (no theme regex matched)	Tier 3	FALSE	28	0	0	0	FALSE
+MF	GO:0061631	Other (no theme regex matched)	Tier 3	FALSE	21	0	0	0	FALSE
+MF	GO:0061650	Other (no theme regex matched)	Tier 3	FALSE	25	0	0	0	FALSE
+MF	GO:0070001	Other (no theme regex matched)	Tier 3	FALSE	30	0	0	0	FALSE
+MF	GO:0106310	Other (no theme regex matched)	Tier 3	FALSE	31	0	0	0	FALSE
+MF	GO:0140101	Ribosome / translation / RNA processing	Tier 3	FALSE	65	0	0	0	FALSE
+MF	GO:0140359	Other (no theme regex matched)	Tier 3	FALSE	28	0	0	0	FALSE
+MF	GO:0180051	Ribosome / translation / RNA processing	Tier 3	FALSE	66	0	0	0	FALSE

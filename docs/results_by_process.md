@@ -125,3 +125,17 @@ Persistent-virus context, applying to all themes and indirect: Roossinck 2010 an
 - **None** of the 215 fgsea-significant GO sets is significant under CAMERA with estimated inter-gene correlation. Directions agree.
 - Under the pre-specified rules, every theme is therefore **EXPLORATORY**: a hypothesis for an adequately replicated experiment, not a finding.
 - No gene is differentially expressed at FDR < 0.05.
+
+## Phase 6B closure (2026-10-26; assessment only, no result changed)
+
+| # | Process | Input | Tool / version | Parameters | Reference pipeline / study | Quantitative result | Technical interpretation | Decision | Evidence / output files |
+|---|---|---|---|---|---|---|---|---|---|
+| 39 | Decision audit D-033 – D-044 | Decisions, plan, outputs | — | Pre-specified vs post-hoc; reproducibility; external support | limma 3.66.0 `?camera`; sources of each decision | APPROVE 3; APPROVE WITH CAVEAT 7; OWNER DECISION REQUIRED 2 (D-042, D-044) | Caveats must travel with Phase 7 reporting | — | [phase6b_decision_audit.md](phase6b_decision_audit.md) |
+| 40 | Salmon reference reconstruction | Workflow code, index metadata | Salmon 2.7.0 (read-only) | — | Salmon docs; nf-core/rnaseq 3.27.0 | 33,976 targets + 13 decoys (SL4.0ch00 – ch12); 99 duplicates removed; no labelled organelle record | Architecture matches the documented full-genome-decoy recommendation | D-044 | [organelle_requantification_assessment.md](organelle_requantification_assessment.md) §2 |
+| 41 | Corrected organelle identity (post-hoc) | ITAG4.0 cDNA, 177 ch00 segments; NC_007898.3, NC_035963.1 | BLAST+ 2.17.0+; R 4.5.3 | All HSPs; union coverage at ≥ 98 % identity; near-identical ≥ 80 %, partial 50 – 80 % (frozen) | Camacho et al. 2009 | ch00 near-identical 334 (plastid 155, mito 179) vs 186 (single HSP). Tested 43 + 6 anchored. ch00 covers 100 % of plastome and mitogenome. Max ch00-sensitive 15.8 %; only the ATP-synthase theme depends | Organelle sequence is already in the index (decoy + ch00 targets); Phase 6B wording corrected | D-044 | §4 – §5; `results/organelle_assessment/` |
+| 42 | SL4.0 provenance (post-hoc) | SGN ch00; GenBank GCA_000188115.5 | NCBI Datasets v2, E-utilities, Python 3.14.4 | Exact sequence identity | Hosmani et al. 2019 (abstract) | 164 / 177 ch00 segments in GenBank; all plastid-identical segments present (Contig195 = full plastome copy); 12 mito-identical segments (832 kb) absent | Organelle-identical contigs are part of the official SL4.0 assembly; origin (contamination vs NUPT/NUMT) not established | D-044 | §3; `results/organelle_assessment/provenance/` |
+
+**Organelle assessment outcome:** recommendation **A, no organelle-aware re-quantification**. This is pending owner
+decision (D-044); details in [organelle_requantification_assessment.md](organelle_requantification_assessment.md) §7 – §8.
+**Owner decisions (2026-10-26):** D-044 Option A approved; D-042 REGENERATE ON DEMAND approved; no gene-exclusion fgsea.
+Phase 6B is closed.
