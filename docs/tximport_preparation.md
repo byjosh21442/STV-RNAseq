@@ -28,10 +28,10 @@ Isolated from the command-line tool env and from every other conda env. Created 
 |---|---|---|
 | R | 4.5.3 | conda-forge |
 | tximport | 1.38.2 | bioconda (Bioconductor 3.22) |
-| DESeq2 | 1.50.2 | bioconda (Bioconductor 3.22), installed, **not run** |
+| DESeq2 | 1.50.2 | bioconda (Bioconductor 3.22); not run in Phase 3, used in Phase 4 (`scripts/R/02_deseq2.R`) |
 | jsonlite | 2.0.0 | conda-forge |
 
-Exact lock (139 packages): [`envs/stv-r.linux-64.lock.txt`](../envs/stv-r.linux-64.lock.txt); 1.7 GB on disk; creation took 180 s. Bioconductor 3.23 is the current release, but bioconda had no 3.23 builds of DESeq2/tximport on 2026-10-26, so 3.22 (the newest available on conda) is used. The versioned vignettes are cited in `docs/methods_references.md`.
+Exact lock (139 packages at Phase 3; current size in `docs/software_versions.md`): [`envs/stv-r.linux-64.lock.txt`](../envs/stv-r.linux-64.lock.txt); 1.7 GB on disk; creation took 180 s. Bioconductor 3.23 is the current release, but bioconda had no 3.23 builds of DESeq2/tximport on 2026-10-26, so 3.22 (the newest available on conda) is used. The versioned vignettes are cited in `docs/methods_references.md`.
 
 ## 3. Import script
 

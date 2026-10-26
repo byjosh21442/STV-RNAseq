@@ -177,3 +177,26 @@ Owner approvals at the start of Phase 3: D-001 = SL4.0 + ITAG4.0 (ITAG4.1 consid
 ## Phase 3 — not executed (stop conditions)
 
 DESeq2 object construction or testing, filtering, DEG thresholds, contrasts, biological interpretation, functional enrichment, `--seqBias`.
+
+## Phase 4 — DESeq2 primary analysis (owner approvals D-013 – D-019)
+
+64. `stv-r` environment: `apeglm=1.32.0`, `r-pheatmap=1.0.13`, `r-ggrepel=0.9.8`, `r-ggplot2` and `r-rcolorbrewer` were added with `CONDA_CHANNEL_PRIORITY=strict … --override-channels -c conda-forge -c bioconda`. `envs/stv-r.yml` was updated and the lock regenerated (139 → 152 packages).
+65. `scripts/R/01_tximport_import.R` now saves `results/quantification/txi_final.rds` (git-ignored, 2.2 MB) after all checks pass. It was re-run with the same validation results as #62.
+66. `Rscript scripts/R/02_deseq2.R`:
+    - The first run stopped on its own assertion: `results(name = …)` writes the coefficient description with spaces, not underscores.
+    - The assertion now checks the description returned by `results(contrast = c("condition", "STV_infected", "STV_free"))`.
+    - The second run finished with exit 0. Log: `results/deseq2/deseq2_run.log`.
+67. Results:
+    - 18,277 / 33,976 genes retained.
+    - Size factors 0.848 – 1.212; parametric dispersion trend (asymptDisp 0.0835, extraPois 5.16, dispPriorVar 0.776); median final dispersion 0.088; 105 dispersion outliers; 0 non-converged genes.
+    - 18,238 genes tested; independent filtering at quantile 0 %.
+    - **padj < 0.05: 0; stringent: 0**; raw p < 0.05: 192 (descriptive only).
+    - 39 genes Cook's-filtered (cutoff 18.0); apeglm converged for all genes.
+    - VST PCA top 500: PC1 49.28 %, PC2 27.17 %. Hierarchical clustering k = 2 = {STV_free_rep1} vs the rest.
+    - Outputs: `results/deseq2/`, `results/deseq2/plot_data/`, `figures/deseq2/` (8 PNG files); `results/deseq2/deseq2_objects.rds` (git-ignored, 12.4 MB).
+68. `docs/decisions.md`: D-013 – D-019 recorded as implemented.
+69. Owner approvals given at the Phase 5 review (2026-10-25):
+    - D-020: pheatmap 1.0.13 and ggrepel 0.9.8 approved as visualization-only dependencies.
+    - D-021: Git result policy. The four Phase 4 TSVs > 1 MB are tracked; FASTQ, indexes, Salmon outputs, `work/`, RDS and SAM files stay ignored.
+    - Docs updated: `README.md` (status, primary result), `docs/software_versions.md`, `docs/tximport_preparation.md`, `docs/methods_references.md` (§8, §15, §17, §18), `docs/results_by_process.md` (new).
+    - Phase 4 was committed separately from, and before, Phase 5; hashes are in the Phase 5 handoff report.

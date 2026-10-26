@@ -117,7 +117,7 @@ Reference hierarchy used for technical decisions: nf-core/rnaseq > Nextflow docs
 |---|---|
 | Process | Pinned, isolated environments `stv-rnaseq` and `stv-r` |
 | Software + version | Miniconda (conda); channels conda-forge + bioconda, strict priority per command |
-| Parameters | `envs/stv-rnaseq.yml` + lock (152 pkgs); `envs/stv-r.yml` + lock (139 pkgs) |
+| Parameters | `envs/stv-rnaseq.yml` + lock (152 pkgs); `envs/stv-r.yml` + lock (152 pkgs: 139 at Phase 3, + 13 in Phase 4 for apeglm/plotting) |
 | Methodological rationale | Exact, rebuildable tool versions without touching global config or other envs |
 | Official technical documentation | <https://bioconda.github.io/> |
 | Primary scientific reference | Grüning et al. (2018) |
@@ -218,19 +218,19 @@ Note: Hosmani et al. (2019) is a preprint (not peer reviewed at the time of acce
 | Decision supported | D-002; import validation (`docs/tximport_preparation.md`) |
 | Access info | 2026-10-25 |
 
-## 15. Differential expression — DESeq2 (installed, not run)
+## 15. Differential expression — DESeq2 (Phase 4, primary analysis)
 
 | Field | Content |
 |---|---|
-| Process | Future gene-level differential expression (`DESeqDataSetFromTximport`) |
+| Process | Gene-level differential expression STV_infected vs STV_free (`DESeqDataSetFromTximport`, `scripts/R/02_deseq2.R`) |
 | Software + version | DESeq2 1.50.2 (Bioconductor 3.22, bioconda) |
-| Parameters | None chosen yet: design, reference level, filtering, thresholds and shrinkage await owner approval |
-| Methodological rationale | Negative-binomial GLM on un-normalized estimated counts with tximport offset; vignette's recommended upstream pipeline is Salmon + tximport |
+| Parameters | Owner-approved D-013 – D-019: design `~ condition`, reference STV_free; pre-filter count ≥ 10 in ≥ 3 samples; Wald test, parametric dispersion fit, `minReplicatesForReplace = 7`; padj < 0.05 (BH), stringent rule adds \|MLE log2FC\| ≥ 1; QC on `vst(blind = TRUE)`, PCA top 500, Euclidean distance, complete linkage |
+| Methodological rationale | Negative-binomial GLM on un-normalized estimated counts with tximport offsets; the vignette's recommended upstream pipeline is Salmon + tximport |
 | Official technical documentation | <https://bioconductor.org/packages/3.22/bioc/vignettes/DESeq2/inst/doc/DESeq2.html>; <https://bioconductor.org/packages/3.22/bioc/html/DESeq2.html> |
 | Primary scientific reference | Love et al. (2014) |
 | DOI | 10.1186/s13059-014-0550-8 |
 | Provisional APA 7 reference | Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology, 15*(12), 550. https://doi.org/10.1186/s13059-014-0550-8 |
-| Decision supported | D-002; D-005 (DESeq2 requires un-normalized counts → GEO table excluded); D-012 (vignette recommends Salmon `--gcBias` unless data are known not to need it → adopted) |
+| Decision supported | D-002; D-005 (DESeq2 requires un-normalized counts → GEO table excluded); D-012 (vignette recommends Salmon `--gcBias` unless data are known not to need it → adopted); D-013 – D-019 |
 | Access info | 2026-10-25 |
 
 ## 16. Statistical environment — R
@@ -246,4 +246,34 @@ Note: Hosmani et al. (2019) is a preprint (not peer reviewed at the time of acce
 | DOI | none |
 | Provisional APA 7 reference | R Core Team. (2026). *R: A language and environment for statistical computing* (Version 4.5.3) [Computer software]. R Foundation for Statistical Computing. https://www.R-project.org/ |
 | Decision supported | R environment isolation |
+| Access info | 2026-10-25 |
+
+## 17. Effect-size shrinkage — apeglm (Phase 4)
+
+| Field | Content |
+|---|---|
+| Process | Shrunken log2 fold changes for ranking and visualization (`lfcShrink(type = "apeglm")`) |
+| Software + version | apeglm 1.32.0 (Bioconductor 3.22) |
+| Parameters | `coef = "condition_STV_infected_vs_STV_free"`; p-values remain the Wald MLE p-values |
+| Methodological rationale | The DESeq2 vignette recommends apeglm for shrinkage; it reduces the noise of low-information MLE log2FC without changing the tests |
+| Official technical documentation | DESeq2 vignette 3.22, "Log fold change shrinkage for visualization and ranking" |
+| Primary scientific reference | Zhu, Ibrahim & Love (2019) |
+| DOI | 10.1093/bioinformatics/bty895 (Crossref-verified 2026-10-25) |
+| Provisional APA 7 reference | Zhu, A., Ibrahim, J. G., & Love, M. I. (2019). Heavy-tailed prior distributions for sequence count data: Removing the noise and preserving large differences. *Bioinformatics, 35*(12), 2084–2092. https://doi.org/10.1093/bioinformatics/bty895 |
+| Decision supported | D-017 |
+| Access info | 2026-10-25 |
+
+## 18. Sample-level QC: VST, sample distances, PCA (Phase 4 primary QC)
+
+| Field | Content |
+|---|---|
+| Process | Sample distances, PCA and hierarchical clustering (Phase 4, `scripts/R/02_deseq2.R`) |
+| Software + version | DESeq2 1.50.2 (`vst`, `plotPCA`), stats `prcomp`/`dist`/`hclust`, pheatmap 1.0.13, ggplot2 4.0.3, ggrepel 0.9.8 (plotting packages approved as visualization-only, D-020) |
+| Parameters | `vst(blind = TRUE)` (seed 20261025); `plotPCA(ntop = 500)`; Euclidean distances on all 18,277 retained genes; complete linkage |
+| Methodological rationale | The vignette uses blind VST + `plotPCA` (`ntop = 500`) + Euclidean sample distances for data-quality assessment |
+| Official technical documentation | DESeq2 vignette 3.22, "Data quality assessment by sample clustering and visualization"; rnaseqGene workflow <https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html> |
+| Primary scientific reference | Love et al. (2014); Love, Anders, Kim & Huber (2015) |
+| DOI | 10.1186/s13059-014-0550-8; 10.12688/f1000research.7035.1 (Crossref-verified 2026-10-25; version 2 exists) |
+| Provisional APA 7 reference | Love, M. I., Anders, S., Kim, V., & Huber, W. (2015). RNA-Seq workflow: Gene-level exploratory analysis and differential expression. *F1000Research, 4*, 1070. https://doi.org/10.12688/f1000research.7035.1 |
+| Decision supported | D-018 |
 | Access info | 2026-10-25 |

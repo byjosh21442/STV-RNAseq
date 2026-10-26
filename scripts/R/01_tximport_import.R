@@ -2,7 +2,9 @@
 # STV_GSE137303 - Phase 3: validate Salmon outputs, sample metadata and tx2gene, then import gene-level estimates
 # with tximport as a smoke test. No differential expression, no filtering, no thresholds, no contrasts.
 # Usage (project root, env stv-r): Rscript scripts/R/01_tximport_import.R
-# Writes: results/quantification/tximport_validation.tsv, results/quantification/tximport_sessionInfo.txt
+# Writes: results/quantification/tximport_validation.tsv, results/quantification/tximport_sessionInfo.txt and,
+#         only when every check passes, results/quantification/txi_final.rds (the unfiltered gene-level tximport
+#         object; git-ignored; input of scripts/R/02_deseq2.R, never modified downstream)
 suppressPackageStartupMessages(library(tximport))
 
 samples_csv <- "results/quantification/salmon/samples.csv"   # index written by the Nextflow workflow
@@ -11,6 +13,7 @@ tx2gene_tsv <- "reference/ITAG4.0_tx2gene.tsv"
 quant_root  <- "results/quantification/salmon"
 out_tsv     <- "results/quantification/tximport_validation.tsv"
 out_session <- "results/quantification/tximport_sessionInfo.txt"
+out_rds     <- "results/quantification/txi_final.rds"
 
 checks <- data.frame(check = character(), value = character(), status = character())
 add <- function(check, value, ok = TRUE) {
@@ -87,3 +90,5 @@ if (any(checks$status == "FAIL")) {
   stop("tximport validation failed: ", paste(checks$check[checks$status == "FAIL"], collapse = ", "))
 }
 cat("tximport validation OK ->", out_tsv, "\n")
+saveRDS(txi, out_rds)
+cat("unfiltered tximport object ->", out_rds, "\n")

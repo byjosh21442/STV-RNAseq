@@ -1,4 +1,4 @@
-# R/Bioconductor environment for STV_GSE137303 (Phase 3: tximport import preparation; DESeq2 installed, not run).
+# R/Bioconductor environment for STV_GSE137303 (Phase 3: tximport import; Phase 4: DESeq2 differential expression).
 # Create:  CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-r.yml
 # Exact resolved packages: envs/stv-r.linux-64.lock.txt
 # Kept separate from stv-rnaseq so R/Bioconductor pins never constrain the command-line tools.
@@ -12,3 +12,8 @@ dependencies:
   - bioconductor-tximport=1.38.2  # newest bioconda build (Bioconductor 3.22)
   - bioconductor-deseq2=1.50.2    # newest bioconda build (Bioconductor 3.22)
   - r-jsonlite                    # tximport reads Salmon aux_info JSON
+  - bioconductor-apeglm=1.32.0    # Phase 4: lfcShrink(type = "apeglm") (Bioconductor 3.22 build)
+  - r-pheatmap=1.0.13             # Phase 4: sample-distance and DEG heatmaps
+  - r-ggrepel=0.9.8               # Phase 4: non-overlapping sample labels on the PCA plot
+  - r-ggplot2                     # Phase 4: PCA and volcano plots (resolved version in the lock file)
+  - r-rcolorbrewer                # Phase 4: heatmap palettes (resolved version in the lock file)
