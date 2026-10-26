@@ -1,0 +1,49 @@
+section	metric	value
+versions	DESeq2	1.50.2
+versions	rrcov	1.7.7
+versions	robustbase	0.99.7
+versions	pcaPP	2.0.5
+versions	ggplot2	4.0.3
+versions	ggrepel	0.9.8
+versions	pheatmap	1.0.13
+versions	RColorBrewer	1.1.3
+versions	R	R version 4.5.3 (2026-03-11)
+input	objects	results/deseq2/deseq2_objects.rds
+input	genes_retained	18277
+input	transform	vst(blind = TRUE) stored by Phase 4 (not recomputed)
+reproducibility	phase4_vst_distances_reproduced	TRUE
+structure	nearest_neighbour	STV_free_rep1->STV_infected_rep1;STV_free_rep2->STV_infected_rep2;STV_free_rep3->STV_infected_rep3;STV_infected_rep1->STV_free_rep3;STV_infected_rep2->STV_free_rep2;STV_infected_rep3->STV_free_rep3
+structure	most_remote_sample_median_euclidean_all	STV_free_rep1
+reproducibility	phase4_pca_top500_reproduced	TRUE
+pca_sensitivity	top100_percent_variance_PC1_to_PC5	52.35,23.94,17.99,4.27,1.44
+pca_sensitivity	top100_most_remote_sample_from_centroid	STV_free_rep1
+pca_sensitivity	top500_percent_variance_PC1_to_PC5	49.28,27.17,16.66,4.39,2.50
+pca_sensitivity	top500_most_remote_sample_from_centroid	STV_free_rep1
+pca_sensitivity	top1000_percent_variance_PC1_to_PC5	47.96,27.95,16.18,4.75,3.17
+pca_sensitivity	top1000_most_remote_sample_from_centroid	STV_free_rep1
+pca_sensitivity	all_retained_percent_variance_PC1_to_PC5	42.96,29.55,16.38,6.59,4.51
+pca_sensitivity	all_retained_most_remote_sample_from_centroid	STV_free_rep1
+cooks	cutoff_qf_0.99_p_m-p	18.0000 (p = 2, m = 6)
+cooks	genes_above_cutoff_per_sample	STV_free_rep1=33;STV_free_rep2=2;STV_free_rep3=1;STV_infected_rep1=12;STV_infected_rep2=1;STV_infected_rep3=10
+cooks	genes_sample_has_max_cooks	STV_free_rep1=5463;STV_free_rep2=2371;STV_free_rep3=2844;STV_infected_rep1=2868;STV_infected_rep2=2560;STV_infected_rep3=2171
+cooks	zero_cooks_values_per_sample	STV_free_rep1=0;STV_free_rep2=0;STV_free_rep3=0;STV_infected_rep1=0;STV_infected_rep2=0;STV_infected_rep3=0
+cooks	filtered_genes_influential_sample	STV_free_rep1=19;STV_free_rep2=2;STV_free_rep3=1;STV_infected_rep1=9;STV_infected_rep2=1;STV_infected_rep3=7
+robust_pca	PcaGrid_on_rlog_blind_k	6
+robust_pca	PcaGrid_on_rlog_blind_h_quan	NA
+robust_pca	PcaGrid_on_rlog_blind_degeneracy	k_equals_n_no_orthogonal_space
+robust_pca	PcaGrid_on_rlog_blind_flagged_outliers	STV_free_rep1
+robust_pca	PcaHubert_on_rlog_blind_k	3
+robust_pca	PcaHubert_on_rlog_blind_h_quan	6
+robust_pca	PcaHubert_on_rlog_blind_degeneracy	h_equals_n_no_robustness
+robust_pca	PcaHubert_on_rlog_blind_flagged_outliers	none
+robust_pca	PcaGrid_on_vst_blind_k	6
+robust_pca	PcaGrid_on_vst_blind_h_quan	NA
+robust_pca	PcaGrid_on_vst_blind_degeneracy	k_equals_n_no_orthogonal_space
+robust_pca	PcaGrid_on_vst_blind_flagged_outliers	STV_free_rep1
+robust_pca	PcaHubert_on_vst_blind_k	3
+robust_pca	PcaHubert_on_vst_blind_h_quan	6
+robust_pca	PcaHubert_on_vst_blind_degeneracy	h_equals_n_no_robustness
+robust_pca	PcaHubert_on_vst_blind_flagged_outliers	none
+parameters	seed	20261025
+parameters	pca_gene_sets	top100=100;top500=500;top1000=1000;all_retained=18277
+parameters	rrcov	PcaGrid(X) and PcaHubert(X), defaults, crit.pca.distances = 0.975; X = samples x genes

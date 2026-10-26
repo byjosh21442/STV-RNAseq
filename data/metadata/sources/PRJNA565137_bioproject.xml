@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<RecordSet><DocumentSummary uid="565137">
+    <Project>
+        <ProjectID>
+            <ArchiveID accession="PRJNA565137" archive="NCBI" id="565137"/>
+            <CenterID center="GEO" id="0">GSE137303</CenterID>
+        </ProjectID>
+        <ProjectDescr>
+            <Name>Effect on tomato plants of asymptomatic infection with southern tomato virus</Name>
+            <Title>Effect on tomato plants of asymptomatic infection with southern tomato virus</Title>
+            <Description>Southern tomato virus (STV) often infects healthy tomato plants (Solanum lycopersicum). In this study, we compared STV-free and STV-infected cultivar M82 plants to determine the effect of STV infection on the host plant. STV-free plants exhibited a short and bushy phenotype, whereas STV-infected plants exhibited increased height. STV-infected plants produced more fruit than STV-free plants, and the germination rate of seeds from STV-infected plants was higher than that of seeds from STV-free plants. This phenotypic difference was also observed in progeny plants (siblings) derived from a single STV-infected plant in which the transmission rate of STV to progeny plants via the seeds was approximately 86%. These results suggest that the interaction between STV and host plants is mutualistic. Transcriptome analyses revealed that STV infection affected gene expressions in host plants, notably evidenced by down-regulation of genes involved in ethylene biosynthesis and signaling. STV-infected tomato plants thus might be artificially selected due to their superior traits as a crop. Overall design: RNA-seq analyses using three 1-month-old STV-infected and three 1-month-old STV-free tomato plants of cv. M82</Description>
+            <ExternalLink label="">
+                <dbXREF db="GEO">
+                    <ID>GSE137303</ID>
+                </dbXREF>
+            </ExternalLink>
+            <Publication date="2019-10-18T00:00:00Z" id="31620899" status="ePublished">
+                <Reference>31620899</Reference>
+                <DbType>ePubmed</DbType>
+            </Publication>
+            <Relevance>
+                <Agricultural>Yes</Agricultural>
+            </Relevance>
+        </ProjectDescr>
+        <ProjectType>
+            <ProjectTypeSubmission>
+                <Target capture="eWhole" material="eTranscriptome" sample_scope="eMultiisolate">
+                    <Organism species="4081" taxID="4081">
+                        <OrganismName>Solanum lycopersicum</OrganismName>
+                        <Supergroup>eEukaryotes</Supergroup>
+                    </Organism>
+                </Target>
+                <Method method_type="eSequencing"/>
+                <Objectives>
+                    <Data data_type="eExpression"/>
+                </Objectives>
+                <ProjectDataTypeSet>
+                    <DataType>Transcriptome or Gene expression</DataType>
+                </ProjectDataTypeSet>
+            </ProjectTypeSubmission>
+        </ProjectType>
+    </Project>
+    <Submission last_update="2019-12-26" submission_id="SUB6737256" submitted="2019-09-12">
+        <Description>
+            <!-- Submitter information has been removed -->
+            <Organization role="owner" type="institute">
+                <Name>Tokyo University of Agriculture and Technology</Name>
+                <!-- Contact information has been removed -->
+            </Organization>
+            <Access>public</Access>
+        </Description>
+        <Action action_id="SUB6737256-gse137303"/>
+    </Submission>
+</DocumentSummary>
+
+</RecordSet>

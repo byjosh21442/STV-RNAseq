@@ -117,7 +117,7 @@ Reference hierarchy used for technical decisions: nf-core/rnaseq > Nextflow docs
 |---|---|
 | Process | Pinned, isolated environments `stv-rnaseq` and `stv-r` |
 | Software + version | Miniconda (conda); channels conda-forge + bioconda, strict priority per command |
-| Parameters | `envs/stv-rnaseq.yml` + lock (152 pkgs); `envs/stv-r.yml` + lock (152 pkgs: 139 at Phase 3, + 13 in Phase 4 for apeglm/plotting) |
+| Parameters | `envs/stv-rnaseq.yml` + lock (152 pkgs); `envs/stv-r.yml` + lock (156 pkgs: 139 at Phase 3, + 13 in Phase 4 for apeglm/plotting, + 4 in Phase 5 for rrcov) |
 | Methodological rationale | Exact, rebuildable tool versions without touching global config or other envs |
 | Official technical documentation | <https://bioconda.github.io/> |
 | Primary scientific reference | Grüning et al. (2018) |
@@ -263,17 +263,107 @@ Note: Hosmani et al. (2019) is a preprint (not peer reviewed at the time of acce
 | Decision supported | D-017 |
 | Access info | 2026-10-25 |
 
-## 18. Sample-level QC: VST, sample distances, PCA (Phase 4 primary QC)
+## 18. Sample-level QC: VST, sample distances, PCA (Phase 4 primary QC; Phase 5 gene-set sensitivity)
 
 | Field | Content |
 |---|---|
-| Process | Sample distances, PCA and hierarchical clustering (Phase 4, `scripts/R/02_deseq2.R`) |
-| Software + version | DESeq2 1.50.2 (`vst`, `plotPCA`), stats `prcomp`/`dist`/`hclust`, pheatmap 1.0.13, ggplot2 4.0.3, ggrepel 0.9.8 (plotting packages approved as visualization-only, D-020) |
-| Parameters | `vst(blind = TRUE)` (seed 20261025); `plotPCA(ntop = 500)`; Euclidean distances on all 18,277 retained genes; complete linkage |
-| Methodological rationale | The vignette uses blind VST + `plotPCA` (`ntop = 500`) + Euclidean sample distances for data-quality assessment |
+| Process | Sample distances, PCA, clustering (Phase 4); correlation, per-sample median distances and PCA with top 100/500/1000/all genes (Phase 5, `scripts/R/03_sample_structure_diagnostics.R`) |
+| Software + version | DESeq2 1.50.2 (`vst`, `plotPCA`), stats `prcomp`/`dist`/`cor`, pheatmap 1.0.13, ggplot2 4.0.3, ggrepel 0.9.8 (plotting packages approved as visualization-only, D-020) |
+| Parameters | `vst(blind = TRUE)` from Phase 4 (not recomputed); `prcomp(center = TRUE, scale. = FALSE)` on the top-n genes ranked by `rowVars`; Pearson and Spearman over all 18,277 retained genes |
+| Methodological rationale | The vignette uses blind VST + `plotPCA` (`ntop = 500`) + Euclidean sample distances for data-quality assessment. Varying `ntop` is an owner-requested **sensitivity diagnostic**: no publication prescribes those set sizes, and no PCA is selected from them. Spearman is an owner-requested rank-based complement with no external threshold |
 | Official technical documentation | DESeq2 vignette 3.22, "Data quality assessment by sample clustering and visualization"; rnaseqGene workflow <https://bioconductor.org/packages/release/workflows/vignettes/rnaseqGene/inst/doc/rnaseqGene.html> |
 | Primary scientific reference | Love et al. (2014); Love, Anders, Kim & Huber (2015) |
 | DOI | 10.1186/s13059-014-0550-8; 10.12688/f1000research.7035.1 (Crossref-verified 2026-10-25; version 2 exists) |
 | Provisional APA 7 reference | Love, M. I., Anders, S., Kim, V., & Huber, W. (2015). RNA-Seq workflow: Gene-level exploratory analysis and differential expression. *F1000Research, 4*, 1070. https://doi.org/10.12688/f1000research.7035.1 |
-| Decision supported | D-018 |
+| Decision supported | D-018 (primary QC); Phase 5 Task 3: PCA structure is independent of gene set (`docs/sample_structure_investigation.md` §4) |
+| Access info | 2026-10-25 |
+
+## 19. Replicate correlation and replicate-quality criteria (Phase 5)
+
+| Field | Content |
+|---|---|
+| Process | Median Pearson/Spearman correlation of each replicate with the other replicates of its condition; framing for option C (leave-one-out) |
+| Software + version | R stats `cor` |
+| Parameters | Statistic reported per sample; **no cut-off applied** |
+| Methodological rationale | **Gierliński et al. (2015)**: median Pearson correlation is one of three bad-replicate criteria, derived from 48 yeast replicates per condition, so their cut-offs do not transfer to n = 3. **Upton et al. (2023)** (plant RNA-seq design review): replicates with poor correlation can be identified, and higher replication supports removing them; ≥ 3 replicates suffice for hypothesis generation but 6 – 12 are advised; randomize library prep and sequencing runs. **Schurch et al. (2016)**: 3 replicates detect 20 – 40 % of significant DE genes; ≥ 6 recommended; "significant minority chance that one or more replicates within each condition should be rejected". **Khorramdelazad et al. (2018)** (lentil, 3 replicates per group): VST + sample distances + PCA; sample 4C clustered with another time point and "was identified as an outlier and was excluded" — a plant-RNA-seq precedent of the practice, not a rule |
+| Official technical documentation | — |
+| Primary scientific reference | Gierliński et al. (2015); Upton et al. (2023); Schurch et al. (2016); Khorramdelazad et al. (2018) |
+| DOI | 10.1093/bioinformatics/btv425; 10.3389/fpls.2023.1135455; 10.1261/rna.053959.115; 10.1186/s12864-018-4488-1 |
+| Provisional APA 7 reference | Gierliński, M., Cole, C., Schofield, P., Schurch, N. J., Sherstnev, A., Singh, V., Wrobel, N., Gharbi, K., Simpson, G., Owen-Hughes, T., Blaxter, M., & Barton, G. J. (2015). Statistical models for RNA-seq data derived from a two-condition 48-replicate experiment. *Bioinformatics, 31*(22), 3625–3630. https://doi.org/10.1093/bioinformatics/btv425 <br> Upton, R. N., Correr, F. H., Lile, J., Reynolds, G. L., Falaschi, K., Cook, J. P., & Lachowiec, J. (2023). Design, execution, and interpretation of plant RNA-seq analyses. *Frontiers in Plant Science, 14*, 1135455. https://doi.org/10.3389/fpls.2023.1135455 <br> Schurch, N. J., Schofield, P., Gierliński, M., Cole, C., Sherstnev, A., Singh, V., Wrobel, N., Gharbi, K., Simpson, G. G., Owen-Hughes, T., Blaxter, M., & Barton, G. J. (2016). How many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use? *RNA, 22*(6), 839–851. https://doi.org/10.1261/rna.053959.115 <br> Khorramdelazad, M., Bar, I., Whatmore, P., Smetham, G., Bhaaskaria, V., Yang, Y., Bai, S. H., Mantri, N., Zhou, Y., & Ford, R. (2018). Transcriptome profiling of lentil (*Lens culinaris*) through the first 24 hours of *Ascochyta lentis* infection reveals key defence response genes. *BMC Genomics, 19*, 108. https://doi.org/10.1186/s12864-018-4488-1 |
+| Decision supported | Phase 5 Task 3 (correlation reported without thresholds); Task 9 option C assessment (n_free = 2, removal tied to higher replication); D-022 (Option A); n = 3 limitation in `docs/results_by_process.md` |
+| Access info | Full texts via Europe PMC/PMC (PMC4754627, PMC4878611, PMC5793396) and Frontiers, 2026-10-25 |
+
+## 20. Count-outlier diagnostics — Cook's distance (Phase 5)
+
+| Field | Content |
+|---|---|
+| Process | Per-sample Cook's distributions, log10 boxplot, the sample with the largest Cook's per gene, counts above the cutoff, table of the 39 Cook's-filtered genes |
+| Software + version | DESeq2 1.50.2 (`assays(dds)[["cooks"]]` from the stored Phase 4 fit) |
+| Parameters | Cutoff `qf(0.99, p = 2, m − p = 4)` = 18.00 (DESeq2 default); `boxplot(log10(cooks), range = 0, las = 2)`; filtering and `minReplicatesForReplace = 7` unchanged |
+| Methodological rationale | Vignette "Approach to count outliers": genes are flagged when a sample's Cook's distance exceeds the cutoff (needs ≥ 3 replicates); replacement only with ≥ 7 replicates; with many outliers, check whether one sample is consistently higher, using a PCA and this boxplot |
+| Official technical documentation | DESeq2 vignette 3.22, "Approach to count outliers" and "Data quality" (quality as fitness for purpose) |
+| Primary scientific reference | Love et al. (2014) |
+| DOI | 10.1186/s13059-014-0550-8 |
+| Provisional APA 7 reference | See §15 |
+| Decision supported | Phase 5 Task 4; Task 9 / D-022 (Cook's burden weighed; filtering never disabled) |
+| Access info | Vignette 3.22 (DESeq2 1.50.2, built 2025-11-13), read 2026-10-25 |
+
+## 21. Robust PCA outlier classification — rrcov (Phase 5; subtask stopped)
+
+| Field | Content |
+|---|---|
+| Process | Objective outlier classification of samples by robust PCA (score and orthogonal distances) |
+| Software + version | rrcov 1.7-7, robustbase 0.99-7, pcaPP 2.0-5 (conda-forge, added to `stv-r` only; lock updated) |
+| Parameters | `PcaGrid(X)`, `PcaHubert(X)` with defaults (`crit.pca.distances = 0.975`, `PcaHubert` alpha 0.75, automatic k); X = samples × 18,277 genes; inputs `rlog(dds, blind = TRUE)` (primary, as in Chen et al.) and the stored VST; seed 20261025 |
+| Methodological rationale | Chen et al. (2020): `PcaGrid` on rlog with default parameters reached 100 % sensitivity/specificity on simulated and composite data; `PcaHubert` and `vst` gave false positives; smallest tested set 3 + 3 + 1 (n = 7). **At n = 6 the fits are degenerate** (`PcaGrid` k = n; `PcaHubert` h = n), so the subtask was stopped and its flag is not used |
+| Official technical documentation | rrcov reference manual (CRAN) |
+| Primary scientific reference | Chen et al. (2020); Todorov & Filzmoser (2009); Croux, Filzmoser & Oliveira (2007); Hubert, Rousseeuw & Vanden Branden (2005) |
+| DOI | 10.1186/s12859-020-03608-0; 10.18637/jss.v032.i03; 10.1016/j.chemolab.2007.01.004; 10.1198/004017004000000563 (all Crossref-verified 2026-10-25) |
+| Provisional APA 7 reference | Chen, X., Zhang, B., Wang, T., Bonni, A., & Zhao, G. (2020). Robust principal component analysis for accurate outlier sample detection in RNA-Seq data. *BMC Bioinformatics, 21*, 269. https://doi.org/10.1186/s12859-020-03608-0 <br> Todorov, V., & Filzmoser, P. (2009). An object-oriented framework for robust multivariate analysis. *Journal of Statistical Software, 32*(3), 1–47. https://doi.org/10.18637/jss.v032.i03 <br> Croux, C., Filzmoser, P., & Oliveira, M. R. (2007). Algorithms for projection–pursuit robust principal component analysis. *Chemometrics and Intelligent Laboratory Systems, 87*(2), 218–225. https://doi.org/10.1016/j.chemolab.2007.01.004 <br> Hubert, M., Rousseeuw, P. J., & Vanden Branden, K. (2005). ROBPCA: A new approach to robust principal component analysis. *Technometrics, 47*(1), 64–79. https://doi.org/10.1198/004017004000000563 |
+| Decision supported | Phase 5 Task 5 (feasibility → stop); Chen et al.'s warning that "removing biological outliers will result in underestimation of the natural biological variance" is weighed in Task 9 and D-022 |
+| Access info | Chen et al. full text PMC7324992, 2026-10-25 |
+
+## 22. STV label support — competitive Salmon mapping (Phase 5)
+
+| Field | Content |
+|---|---|
+| Process | Count STV-derived reads per raw library to check the STV-free / STV-infected labels (`scripts/bash/stv_signal_check.sh`) |
+| Software + version | Salmon 2.7.0 (separate diagnostic index; host quantification untouched) |
+| Parameters | Index: ITAG4.0 cDNA + LC429302.1 + KX949574.1, `-k 31`, no decoys. Quant: `-l U -r <fastq> -p 16 --writeMappings` (STV records kept) |
+| Methodological rationale | Competitive mapping assigns reads to STV only if they fit STV better than any host transcript. `-l U` counts both strands of the dsRNA genome. Interpretation is limited to presence/absence; abundance is not interpreted (Upton et al. 2023: mRNA-focused libraries under-detect non-polyadenylated viral RNA) |
+| Official technical documentation | Salmon docs (§11 – §12); GenBank records <https://www.ncbi.nlm.nih.gov/nuccore/LC429302.1> and <https://www.ncbi.nlm.nih.gov/nuccore/KX949574.1> (flat files archived in `data/metadata/sources/`) |
+| Primary scientific reference | Patro et al. (2017); Alcalá-Briseño et al. (2017) for KX949574.1; LC429302.1 is a direct GenBank submission by Fukuhara, Tabara & Takahashi (2018) |
+| DOI | 10.1038/nmeth.4197; 10.1128/genomea.01374-16 (Crossref-verified 2026-10-25) |
+| Provisional APA 7 reference | Alcalá-Briseño, R. I., Coşkan, S., Londoño, M. A., & Polston, J. E. (2017). Genome sequence of *Southern tomato virus* in asymptomatic tomato 'Sweet Hearts'. *Genome Announcements, 5*(7), e01374-16. https://doi.org/10.1128/genomea.01374-16 <br> Fukuhara, T., Tabara, M., & Takahashi, H. (2018). *Southern tomato virus M82 genomic RNA, complete genome* (GenBank LC429302.1) [Data set]. NCBI Nucleotide. https://www.ncbi.nlm.nih.gov/nuccore/LC429302.1 |
+| Decision supported | Phase 5 Task 2: labels supported; no STOP; D-022 |
+| Access info | NCBI E-utilities efetch, 2026-10-26T04:39:41Z (UTC) |
+
+## 23. Historical processed-data structure check (Phase 5)
+
+| Field | Content |
+|---|---|
+| Process | Sample-structure description of the authors' GEO table — **historical processed-data structure check, not used for differential-expression inference** (`scripts/R/04_geo_historical_structure_check.R`) |
+| Software + version | R 4.5.3 base/stats; ggplot2, ggrepel, pheatmap |
+| Parameters | FPKM and Cuffnorm "count" columns; rows non-zero in ≥ 1 sample (23,838); `log2(x + 1)`; Pearson/Spearman, Euclidean distance, PCA top 500 |
+| Methodological rationale | The values are normalized (D-005), so they are invalid as DESeq2 input but usable to check whether the sample structure exists independently of our pipeline |
+| Official technical documentation | Cuffnorm manual <http://cole-trapnell-lab.github.io/cufflinks/cuffnorm/>; [geo_counts_audit.md](geo_counts_audit.md) |
+| Primary scientific reference | Fukuhara et al. (2020) (see §1) |
+| DOI | 10.1007/s00705-019-04436-1 |
+| Provisional APA 7 reference | See §1 |
+| Decision supported | Phase 5 Task 7: structure present in the authors' processed data; D-022 |
+| Access info | GEO supplementary file retrieved 2026-10-25 (MD5 sidecar) |
+
+## 24. External reanalysis — methods and sample-structure comparison only (Phase 5)
+
+| Field | Content |
+|---|---|
+| Process | Comparison of methods and of observed sample structure ([external_reanalysis_comparison.md](external_reanalysis_comparison.md)); genes/pathways **not** used |
+| Software + version | — |
+| Parameters | — |
+| Methodological rationale | Independent pipeline (Rsubread/featureCounts, SL3.0, DESeq2 1.42.0) observed the same STV−_rep1 separation |
+| Official technical documentation | <https://www.researchsquare.com/article/rs-8823240/v1.html> |
+| Primary scientific reference | Badeli, Kaboosi & Nasrollanejad (2026), **preprint, not peer reviewed** |
+| DOI | 10.21203/rs.3.rs-8823240/v1 (Crossref-verified 2026-10-25; posted 2026-02-17) |
+| Provisional APA 7 reference | Badeli, G., Kaboosi, K., & Nasrollanejad, S. (2026). *Reanalysis of the tomato transcriptome revealed host responses to Southern tomato virus infection* [Preprint]. Research Square. https://doi.org/10.21203/rs.3.rs-8823240/v1 |
+| Decision supported | Phase 5 Task 8; supports that the structure is not pipeline-specific; D-022 |
 | Access info | 2026-10-25 |

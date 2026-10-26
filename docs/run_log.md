@@ -200,3 +200,53 @@ DESeq2 object construction or testing, filtering, DEG thresholds, contrasts, bio
     - D-021: Git result policy. The four Phase 4 TSVs > 1 MB are tracked; FASTQ, indexes, Salmon outputs, `work/`, RDS and SAM files stay ignored.
     - Docs updated: `README.md` (status, primary result), `docs/software_versions.md`, `docs/tximport_preparation.md`, `docs/methods_references.md` (§8, §15, §17, §18), `docs/results_by_process.md` (new).
     - Phase 4 was committed separately from, and before, Phase 5; hashes are in the Phase 5 handoff report.
+
+## Phase 5 — sample-structure diagnostic checkpoint (primary analysis unchanged)
+
+70. Metadata (NCBI E-utilities, retrieved 2026-10-26T04:39:41Z UTC):
+    - BioSample and BioProject XML for PRJNA565137 → `data/metadata/sources/PRJNA565137_{biosamples,bioproject}.xml`.
+    - BioSample attributes are only source_name, cultivar, age, virus infection and tissue. No batch, date, plant or pairing fields.
+    - Fukuhara et al. 2020 full text: subscription-only (Springer redirect; no Europe PMC full text), so its methods are UNKNOWN.
+71. `bash scripts/bash/fastq_header_audit.sh` (env `stv-rnaseq`; the first attempt from another environment failed because `pigz` was missing).
+    - All six libraries: SN679, run 271, flowcell HN3JNBCXY, lanes 1 + 2, 64 tiles each.
+    - Output: `results/qc/sample_structure/fastq_header_lanes.tsv`.
+72. STV references:
+    - LC429302.1 (strain M82, authors' deposit) and KX949574.1 (isolate Florida), fetched with `efetch` (GenBank flat files archived; FASTA in git-ignored `reference/STV/`).
+    - The KX949574.1 publication was resolved through Crossref: 10.1128/genomea.01374-16.
+73. `bash scripts/bash/stv_signal_check.sh` (env `stv-rnaseq`, Salmon 2.7.0):
+    - A short test run first confirmed `-l U` and `--writeMappings` in Salmon 2.7.0.
+    - Competitive index (ITAG4.0 cDNA + 2 STV genomes, k 31) at `reference/STV_diagnostic/` (1.1 GB, git-ignored).
+    - Free libraries: 0 STV reads. Infected libraries: 386 / 580 / 304 STV reads, 97.0 – 98.2 % genome coverage. Labels supported; no STOP.
+    - Expected warnings: `-l U` vs observed SR.
+    - `.gitignore` gained `results/qc/stv_signal/salmon/`.
+74. `rrcov` for robust PCA:
+    - `conda install --dry-run` showed 4 new packages (r-rrcov 1.7-7, r-robustbase 0.99-7, r-pcapp 2.0-5, r-deoptimr 1.2-1) and no updates or removals.
+    - Installed into `stv-r` only (strict priority for that command; global `channel_priority` remains `flexible`).
+    - `envs/stv-r.yml` gained `r-rrcov=1.7_7`; lock regenerated (152 → 156 packages).
+75. `Rscript scripts/R/03_sample_structure_diagnostics.R` (env `stv-r`): exit 0, 0 warnings. Log: `results/qc/sample_structure/sample_structure_run.log`.
+    - Built-in checks: Phase 4 VST distances and top-500 PCA reproduced (tolerance 1e-8); 39 Cook's-filtered genes confirmed.
+    - The script was re-run twice: once after adding the robust-PCA degeneracy columns, once for figure layout (clipped labels). Only `results/qc/sample_structure/` and `figures/sample_structure/` were rewritten.
+76. Robust PCA:
+    - `PcaGrid` picked k = 6 = n (orthogonal distances ≈ 1e-13); `PcaHubert` used h = 6 = n.
+    - Assessed as degenerate at n = 6 → subtask stopped; no parameter tuning. The `PcaGrid` flag on STV_free_rep1 is not used as evidence.
+77. `Rscript scripts/R/04_geo_historical_structure_check.R` (env `stv-r`): exit 0, 0 warnings.
+    - GEO file MD5 matched the sidecar.
+    - Outputs labelled "Historical processed-data structure check - not used for differential-expression inference".
+    - STV_free_rep1 most remote in the FPKM and "count" columns.
+78. Literature:
+    - Full texts read: Chen et al. 2020 (PMC7324992), Gierliński et al. 2015 (PMC4754627), Schurch et al. 2016 (PMC4878611), Upton et al. 2023 (Frontiers), Khorramdelazad et al. 2018 (PMC5793396), DESeq2 vignette 3.22, rnaseqGene workflow, Badeli et al. 2026 (Research Square HTML).
+    - Crossref checks: 10.12688/f1000research.7035.1, 10.18637/jss.v032.i03, 10.1198/004017004000000563, 10.1016/j.chemolab.2007.01.004, 10.21203/rs.3.rs-8823240/v1, 10.1093/bioinformatics/bty895, 10.1128/genomea.01374-16.
+79. Docs:
+    - New: `sample_structure_investigation.md`, `external_reanalysis_comparison.md`, `results_by_process.md`.
+    - Updated: `methods_references.md` (§8 lock sizes, §15 Phase 4, new §17 – §24), `run_log.md`.
+80. Owner decision D-022 (2026-10-25): **Option A approved.**
+    - All six samples kept; the six-sample DESeq2 analysis remains primary; STV_free_rep1 not removed; leave-one-out not run.
+    - The primary-result statement, QC caveat and limitations were added to `README.md`, `docs/results_by_process.md` and `docs/sample_structure_investigation.md`.
+    - `docs/methods_references.md` §19 – §24 now link to D-022; `docs/software_versions.md` gained the rrcov rows.
+81. Commit 2 (Phase 5) followed commit 1 (Phase 4).
+    - Before each commit, staged files were audited: no FASTQ, index, SAM, RDS, credential or helper/staging files; secret-pattern scan run.
+    - Both commits were pushed to `origin/main`, with Windows `gh.exe` as a one-off credential helper (nothing stored in the repo config). Local HEAD = `origin/main` was verified with `git ls-remote`; hashes are in the Phase 5 handoff report.
+
+## Phase 5 — not executed (owner restrictions)
+
+Changes to the primary DESeq2 analysis, removal of STV_free_rep1, design changes, pairing or covariate models, leave-one-out sensitivity, threshold changes or nominal-p gene lists, functional enrichment (GO, agriGO, KEGG, MapMan/Mercator, Plant Reactome), overwriting Phase 4 outputs.

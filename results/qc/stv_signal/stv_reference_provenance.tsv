@@ -1,0 +1,3 @@
+accession	role	length_nt	sha256_fasta	source
+LC429302.1	primary: STV strain M82 deposited by the GSE137303 authors	3376	5134f44b0fd053528feb3f36a43aaed657397603e0d3f86d46b542b8d8fe61cf	https://www.ncbi.nlm.nih.gov/nuccore/LC429302.1
+KX949574.1	cross-check: STV isolate Florida used by the 2026 reanalysis	3433	83a78d49769607a6eecf1d06349fb2a6adb0faba63b5c632a0108daa49b90b50	https://www.ncbi.nlm.nih.gov/nuccore/KX949574.1

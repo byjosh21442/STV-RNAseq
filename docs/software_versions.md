@@ -43,9 +43,10 @@ Differences from the Phase 1 plan: Java comes from conda-forge inside the projec
 | gzip / zcat | 1.14 | Reading the first FASTQ records |
 | git | 2.53.0 | Version control (repository-local identity, see `docs/run_log.md`) |
 
-## R environment `stv-r` (Phase 3 – 4)
+## R environment `stv-r` (Phase 3 – 5)
 
 - Specification: [`envs/stv-r.yml`](../envs/stv-r.yml); exact lock: [`envs/stv-r.linux-64.lock.txt`](../envs/stv-r.linux-64.lock.txt) — 139 packages at Phase 3, 152 after Phase 4 (apeglm and plotting packages).
+- Phase 5 added rrcov and its dependencies (4 packages, no updates or removals): 156 packages.
 - Created with `CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-r.yml` (180 s; 1.7 GB). Additions used `CONDA_CHANNEL_PRIORITY=strict conda install -n stv-r --override-channels -c conda-forge -c bioconda …`. Rebuild exactly: `conda create --name stv-r --file envs/stv-r.linux-64.lock.txt`.
 - Bioconductor 3.22 builds (newest on bioconda on 2026-10-26; Bioconductor 3.23 is current upstream).
 
@@ -60,6 +61,8 @@ Differences from the Phase 1 plan: Java comes from conda-forge inside the projec
 | pheatmap | 1.0.13 | conda-forge | Distance/correlation heatmaps (D-020, visualization only) | used |
 | RColorBrewer | 1.1.3 | conda-forge | Heatmap palettes (D-020, visualization only) | used |
 | jsonlite | 2.0.0 | conda-forge | Salmon JSON metadata | used |
+| rrcov | 1.7-7 | conda-forge | Robust PCA diagnostic (Phase 5) | used; degenerate at n = 6, not used for decisions |
+| robustbase / pcaPP / DEoptimR | 0.99-7 / 2.0-5 / 1.2-1 | conda-forge | rrcov dependencies (Phase 5) | installed |
 
 ## Not installed (by design)
 

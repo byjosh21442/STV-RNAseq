@@ -1,4 +1,5 @@
-# R/Bioconductor environment for STV_GSE137303 (Phase 3: tximport import; Phase 4: DESeq2 differential expression).
+# R/Bioconductor environment for STV_GSE137303 (Phase 3: tximport import; Phase 4: DESeq2 differential expression;
+# Phase 5: sample-structure diagnostics).
 # Create:  CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-r.yml
 # Exact resolved packages: envs/stv-r.linux-64.lock.txt
 # Kept separate from stv-rnaseq so R/Bioconductor pins never constrain the command-line tools.
@@ -17,3 +18,4 @@ dependencies:
   - r-ggrepel=0.9.8               # Phase 4: non-overlapping sample labels on the PCA plot
   - r-ggplot2                     # Phase 4: PCA and volcano plots (resolved version in the lock file)
   - r-rcolorbrewer                # Phase 4: heatmap palettes (resolved version in the lock file)
+  - r-rrcov=1.7_7                 # Phase 5: robust PCA (PcaGrid/PcaHubert) outlier classification, Chen et al. 2020

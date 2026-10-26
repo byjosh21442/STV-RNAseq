@@ -1,0 +1,8 @@
+# Historical processed-data structure check - not used for differential-expression inference
+sample	condition	median_euclidean_all	median_euclidean_same_condition	nearest_sample	median_spearman_same_condition	rank_median_euclidean_all_1_most_remote
+STV_free_rep1	STV_free	101.900551871951	102.468977456207	STV_infected_rep1	0.950241358355055	1
+STV_free_rep2	STV_free	88.4390107345772	93.7997699324893	STV_infected_rep2	0.956706724659592	3
+STV_free_rep3	STV_free	79.8615689423578	94.3681955167455	STV_infected_rep3	0.956320190485637	6
+STV_infected_rep1	STV_infected	88.5989030067063	85.2452397918333	STV_free_rep3	0.964457418075542	2
+STV_infected_rep2	STV_infected	83.6870689030661	87.336002714174	STV_free_rep2	0.963687641442562	4
+STV_infected_rep3	STV_infected	83.6870689030661	81.5963059807254	STV_free_rep3	0.967186075516068	4

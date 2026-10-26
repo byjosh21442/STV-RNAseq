@@ -1,0 +1,28 @@
+metric	source	STV_free_rep1	STV_free_rep2	STV_free_rep3	STV_infected_rep1	STV_infected_rep2	STV_infected_rep3	min_sample	max_sample
+raw_reads	SeqKit/ENA (salmon_qc_summary.tsv)	1.80805e+07	1.62882e+07	1.43184e+07	1.92304e+07	1.68589e+07	1.98625e+07	STV_free_rep3	STV_infected_rep3
+q30_bases_pct	SeqKit stats -a (raw_fastq_sanity.tsv)	     97	     97	     97	     97	     97	     97	STV_free_rep1	STV_free_rep1
+gc_pct_mean	SeqKit (raw_fastq_sanity.tsv)	  42.81	  44.03	  44.14	   43.8	  44.16	  43.78	STV_free_rep1	STV_infected_rep2
+fastqc_per_sequence_gc_flag	FastQC (raw_qc_summary.tsv)	PASS	PASS	WARN	WARN	WARN	WARN		
+max_adapter_pct_any_type	FastQC (raw_qc_summary.tsv)	  0.209	   0.11	  0.144	  0.191	   0.11	  0.156	STV_free_rep2	STV_free_rep1
+duplicate_reads_pct	FastQC via MultiQC, 100 - dedup_pct_remaining	   68.8	  65.41	   64.8	  69.48	  66.64	  67.46	STV_free_rep3	STV_infected_rep1
+fastqc_overrepresented_sequences_n	FastQC (raw_qc_summary.tsv)	      3	      0	      3	      2	      2	      2	STV_free_rep2	STV_free_rep1
+instrument_run_flowcell	FASTQ read names (fastq_header_lanes.tsv)	SN679:271:HN3JNBCXY	SN679:271:HN3JNBCXY	SN679:271:HN3JNBCXY	SN679:271:HN3JNBCXY	SN679:271:HN3JNBCXY	SN679:271:HN3JNBCXY		
+lanes	FASTQ read names (fastq_header_lanes.tsv)	1+2	1+2	1+2	1+2	1+2	1+2		
+lane1_read_fraction	FASTQ read names (fastq_header_lanes.tsv)	0.497185	0.497552	0.496576	0.496775	0.496384	0.496367	STV_infected_rep3	STV_free_rep2
+salmon_percent_mapped	Salmon meta_info (salmon_qc_summary.tsv)	  87.95	  90.24	  89.89	  89.03	  90.26	  89.97	STV_free_rep1	STV_infected_rep2
+salmon_pct_decoy_of_processed	Salmon meta_info (salmon_qc_summary.tsv)	  10.57	   8.45	   8.81	   9.64	   8.47	   8.69	STV_free_rep2	STV_free_rep1
+salmon_SR_compatible_fragment_ratio	Salmon lib_format_counts (salmon_libformat_summary.tsv)	0.992371	0.993944	0.993961	0.993313	0.994267	0.993618	STV_free_rep1	STV_infected_rep2
+salmon_strand_mapping_bias	Salmon lib_format_counts (salmon_libformat_summary.tsv)	0.0213125	0.0167632	0.0172319	0.0209391	0.016521	0.0177083	STV_infected_rep2	STV_free_rep1
+library_size_estimated_counts	tximport (deseq2_sample_qc.tsv)	1.59022e+07	1.4698e+07	1.28714e+07	1.71215e+07	1.5217e+07	1.78711e+07	STV_free_rep3	STV_infected_rep3
+detected_genes_count_gt_0	tximport (deseq2_sample_qc.tsv)	  21995	  21655	  21723	  21826	  21561	  22262	STV_infected_rep2	STV_infected_rep3
+size_factor_counts_over_avgTxLength	DESeq2 (deseq2_sample_qc.tsv)	1.07663	0.998791	0.847673	1.03069	0.924391	1.21205	STV_free_rep3	STV_infected_rep3
+PC1_top500	VST PCA (deseq2_sample_qc.tsv)	-29.6978	17.7251	7.76268	-12.7898	17.8294	-0.829523	STV_free_rep1	STV_infected_rep2
+PC2_top500	VST PCA (deseq2_sample_qc.tsv)	-13.3327	-15.4957	16.9649	 8.3921	-7.65148	11.1228	STV_free_rep2	STV_free_rep3
+median_euclidean_all	this script	93.3587	74.5336	68.9364	76.0203	70.5497	70.5497	STV_free_rep3	STV_free_rep1
+median_euclidean_same_condition	this script	93.5393	83.9423	84.1229	74.6621	74.9325	70.2793	STV_infected_rep3	STV_free_rep1
+median_pearson_same_condition	this script	0.927667	0.941905	0.94054	0.95543	0.955652	0.960487	STV_free_rep1	STV_infected_rep3
+cooks_genes_above_cutoff	this script	     33	      2	      1	     12	      1	     10	STV_free_rep3	STV_free_rep1
+cooks_genes_sample_has_max	this script	   5463	   2371	   2844	   2868	   2560	   2171	STV_infected_rep3	STV_free_rep1
+cooks_filtered_genes_influential_of_39	this script	     19	      2	      1	      9	      1	      7	STV_free_rep3	STV_free_rep1
+stv_reads_salmon	STV signal check (stv_signal_summary.tsv)	      0	      0	      0	    386	    580	    304	STV_free_rep1	STV_infected_rep2
+stv_reads_per_million	STV signal check (stv_signal_summary.tsv)	      0	      0	      0	20.0724	34.4032	15.3053	STV_free_rep1	STV_infected_rep2

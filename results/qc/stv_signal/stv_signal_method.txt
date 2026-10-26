@@ -1,0 +1,4 @@
+salmon 2.7.0
+index: salmon index -t ITAG4.0_cDNA.fasta + LC429302.1 KX949574.1 -k 31 (no decoys)
+quant: salmon quant -i reference/STV_diagnostic/salmon_itag4_cdna_plus_stv_k31 -l U -r <fastq> -p 16 --writeMappings (defaults otherwise; STV records kept)
+stv_numreads_total = NumReads(LC429302.1) + NumReads(KX949574.1) from quant.sf (EM-assigned)

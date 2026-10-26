@@ -45,11 +45,13 @@ SGN SL4.0 + ITAG4.0 (SHA-256 manifest) → validation                [Phase 3, d
 → FINAL Salmon quant (-l SR, --gcBias, SE fragment-length prior 250/25) ×6 → QC   [Phase 3, done]
 → tx2gene (ITAG4.0 GFF) → tximport (gene level, validated)         [Phase 3, done]
 → DESeq2 (~ condition, padj < 0.05, apeglm shrinkage)               [Phase 4, done]
+→ sample-structure / outlier diagnostics, primary analysis unchanged [Phase 5, done]
 → functional analysis                                              [not started]
 ```
 
 - **Architecture:** a small Nextflow DSL2 workflow (`workflow/`, strict syntax, Nextflow 26.10.3) modelled on nf-core/rnaseq 3.27.0 (FastQC, Salmon index/quant, MultiQC modules; same tool versions). It is not a copy of nf-core/rnaseq. Statistics run outside the workflow as R scripts (`scripts/R/`).
 - **Software:** pinned conda environments with lock files: `stv-rnaseq` (FastQC 0.13.0, MultiQC 1.35, Salmon 2.7.0, SeqKit 2.14.0, OpenJDK 21) and `stv-r` (R 4.5.3, tximport 1.38.2, DESeq2 1.50.2, apeglm 1.32.0; plotting: ggplot2, ggrepel, pheatmap, RColorBrewer).
+- Phase 5 added `rrcov` 1.7-7 to `stv-r` for the robust-PCA diagnostic.
 - Details: [docs/nextflow_pipeline.md](docs/nextflow_pipeline.md), [docs/software_versions.md](docs/software_versions.md), [docs/methods_references.md](docs/methods_references.md).
 
 ## Repository structure
@@ -59,6 +61,7 @@ config/            samplesheet.csv (accessions, condition, strandedness, fastq_1
 workflow/          Nextflow pipeline: main.nf, modules/, nextflow.config, bootstrap/, tests/stub/
 scripts/bash/      metadata, download, sanity, QC/Salmon summaries, reference download/validation, tx2gene
 scripts/R/         01_tximport_import.R (validation + gene-level import), 02_deseq2.R (primary DESeq2 analysis)
+                   03_sample_structure_diagnostics.R, 04_geo_historical_structure_check.R (Phase 5 diagnostics)
 envs/              stv-rnaseq.yml, stv-r.yml + linux-64 lock files
 data/metadata/     samples_metadata.tsv + raw source records (sources/)
 data/raw/          ENA FASTQ (git-ignored)
@@ -67,7 +70,9 @@ reference/         reference_manifest.tsv, reference_validation.tsv, ITAG4.0_tx2
                    SGN/ downloads (git-ignored)
 results/           qc/*.tsv and quantification/*.tsv (tracked summaries); deseq2/*.tsv + plot_data/ (tracked);
                    FastQC/MultiQC reports, Salmon outputs, index, pipeline_info, *.rds (git-ignored)
+                   qc/sample_structure/, qc/stv_signal/*.tsv (tracked Phase 5 diagnostics)
 figures/           deseq2/ PNG figures
+                   sample_structure/ PNG figures (Phase 5)
 docs/              audits, decisions, reference validation, Salmon/tximport reports, methods references, run log
 ```
 
@@ -99,6 +104,9 @@ conda activate stv-r && Rscript scripts/R/01_tximport_import.R
 
 # differential expression (Phase 4)
 Rscript scripts/R/02_deseq2.R
+# sample-structure diagnostics (Phase 5)
+conda activate stv-rnaseq && bash scripts/bash/fastq_header_audit.sh && bash scripts/bash/stv_signal_check.sh  # Phase 5
+conda activate stv-r && Rscript scripts/R/03_sample_structure_diagnostics.R && Rscript scripts/R/04_geo_historical_structure_check.R  # Phase 5
 ```
 
 Provenance:
@@ -118,4 +126,5 @@ Provenance:
 | Salmon decoy-aware index + quantification (6 samples) | Done. Exploratory `-l A` run measured `SR` in 6/6 (archived). **Final run: explicit `-l SR` + `--gcBias`** (D-010, D-012); mapping 87.95–90.26 % (identical in both runs), no Salmon diagnostics — [docs/salmon_quantification.md](docs/salmon_quantification.md) |
 | tx2gene + tximport import check (final run) | Done; 33,976 genes × 6 samples, totals = Salmon — [docs/tximport_preparation.md](docs/tximport_preparation.md) |
 | DESeq2 primary analysis (D-013 – D-020) | Done. 18,277 genes tested after the prespecified filter; **0 genes with padj < 0.05; 0 genes with padj < 0.05 and \|log2FC\| ≥ 1**. No statistically significant differential expression was detected under the prespecified DESeq2 model and FDR threshold in this six-sample dataset. Limited power with n = 3 per condition — [docs/results_by_process.md](docs/results_by_process.md) |
+| Sample-structure diagnostics (Phase 5) | Done. STV_free_rep1 is consistently separated in expression-space diagnostics, but no independent technical failure or documented experimental covariate justifies its removal; STV labels supported by STV reads; all six samples kept (D-022) — [docs/sample_structure_investigation.md](docs/sample_structure_investigation.md) |
 | Functional enrichment | **Not started**; DEG thresholds are not relaxed and nominal p-values are not used for gene lists |

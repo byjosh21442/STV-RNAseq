@@ -1,0 +1,17 @@
+# Historical processed-data structure check - not used for differential-expression inference
+section	metric	value
+label	scope	Historical processed-data structure check - not used for differential-expression inference
+input	file	data/processed/original_geo/GSE137303_count.txt.gz
+input	md5	3800ddd08f44eba1f062f034cce4d329
+geo_fpkm	rows_total	30389
+geo_fpkm	rows_nonzero_any_sample_used	23838
+geo_fpkm	transform	log2(x + 1)
+geo_fpkm	most_remote_sample_median_euclidean	STV_free_rep1
+geo_fpkm	nearest_neighbours	STV_free_rep1->STV_infected_rep1;STV_free_rep2->STV_infected_rep2;STV_free_rep3->STV_infected_rep3;STV_infected_rep1->STV_free_rep3;STV_infected_rep2->STV_free_rep2;STV_infected_rep3->STV_free_rep3
+geo_fpkm	pca_top500_percent_variance_PC1_to_PC5	40.00,29.10,15.91,9.63,5.36
+geo_cuffnorm_count	rows_total	30389
+geo_cuffnorm_count	rows_nonzero_any_sample_used	23838
+geo_cuffnorm_count	transform	log2(x + 1)
+geo_cuffnorm_count	most_remote_sample_median_euclidean	STV_free_rep1
+geo_cuffnorm_count	nearest_neighbours	STV_free_rep1->STV_infected_rep1;STV_free_rep2->STV_infected_rep2;STV_free_rep3->STV_infected_rep3;STV_infected_rep1->STV_free_rep3;STV_infected_rep2->STV_free_rep2;STV_infected_rep3->STV_free_rep3
+geo_cuffnorm_count	pca_top500_percent_variance_PC1_to_PC5	43.61,28.07,14.08,9.35,4.90

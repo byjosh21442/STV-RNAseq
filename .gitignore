@@ -59,6 +59,7 @@ results/qc/multiqc_raw/
 results/qc/multiqc_salmon/
 results/qc/multiqc_salmon_libA_exploratory/
 results/qc/**/*_data/
+results/qc/stv_signal/salmon/
 results/quantification/salmon/
 results/quantification/archive/
 results/quantification/**/aux_info/
