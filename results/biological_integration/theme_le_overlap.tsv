@@ -1,0 +1,56 @@
+theme_a	theme_b	n_a	n_b	shared_le_genes	jaccard_le	overlap_coefficient
+Glutathione / detoxification	Water deprivation / abiotic stress	56	124	26	0.1688	0.4643
+Other (no theme regex matched)	Ribosome / translation / RNA processing	2267	569	376	0.1528	0.6608
+Glutathione / detoxification	Heme / oxidoreductase	56	196	28	0.125	0.5
+Heme / oxidoreductase	Water deprivation / abiotic stress	196	124	33	0.115	0.2661
+Defence / biotic response	Hormone signalling	150	45	20	0.1143	0.4444
+Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	2267	290	216	0.0923	0.7448
+Heme / oxidoreductase	Other (no theme regex matched)	196	2267	166	0.0723	0.8469
+Heme / oxidoreductase	Photosynthesis / plastid / thylakoid	196	290	32	0.0705	0.1633
+Other (no theme regex matched)	Water deprivation / abiotic stress	2267	124	109	0.0478	0.879
+Endoplasmic reticulum / protein folding	Hormone signalling	188	45	8	0.0356	0.1778
+Endoplasmic reticulum / protein folding	Heme / oxidoreductase	188	196	12	0.0323	0.0638
+Defence / biotic response	Other (no theme regex matched)	150	2267	74	0.0316	0.4933
+Carbohydrate binding / cell wall	Heme / oxidoreductase	136	196	10	0.0311	0.0735
+Heme / oxidoreductase	Hormone signalling	196	45	7	0.0299	0.1556
+Carbohydrate binding / cell wall	Other (no theme regex matched)	136	2267	69	0.0296	0.5074
+Carbohydrate binding / cell wall	Endoplasmic reticulum / protein folding	136	188	9	0.0286	0.0662
+Glutathione / detoxification	Other (no theme regex matched)	56	2267	56	0.0247	1
+Hormone signalling	Water deprivation / abiotic stress	45	124	4	0.0242	0.0889
+ATP synthase / proton transport	Photosynthesis / plastid / thylakoid	60	290	8	0.0234	0.1333
+ATP synthase / proton transport	Other (no theme regex matched)	60	2267	53	0.0233	0.8833
+Endoplasmic reticulum / protein folding	Other (no theme regex matched)	188	2267	54	0.0225	0.2872
+Defence / biotic response	Water deprivation / abiotic stress	150	124	5	0.0186	0.0403
+Hormone signalling	Other (no theme regex matched)	45	2267	39	0.0172	0.8667
+Defence / biotic response	Endoplasmic reticulum / protein folding	150	188	5	0.015	0.0333
+Carbohydrate binding / cell wall	Defence / biotic response	136	150	4	0.0142	0.0294
+Photosynthesis / plastid / thylakoid	Ribosome / translation / RNA processing	290	569	11	0.013	0.0379
+ATP synthase / proton transport	Heme / oxidoreductase	60	196	3	0.0119	0.05
+Carbohydrate binding / cell wall	Water deprivation / abiotic stress	136	124	3	0.0117	0.0242
+Endoplasmic reticulum / protein folding	Glutathione / detoxification	188	56	2	0.0083	0.0357
+ATP synthase / proton transport	Ribosome / translation / RNA processing	60	569	2	0.0032	0.0333
+Defence / biotic response	Heme / oxidoreductase	150	196	1	0.0029	0.0067
+Heme / oxidoreductase	Ribosome / translation / RNA processing	196	569	1	0.0013	0.0051
+ATP synthase / proton transport	Carbohydrate binding / cell wall	60	136	0	0	0
+ATP synthase / proton transport	Defence / biotic response	60	150	0	0	0
+ATP synthase / proton transport	Endoplasmic reticulum / protein folding	60	188	0	0	0
+ATP synthase / proton transport	Glutathione / detoxification	60	56	0	0	0
+ATP synthase / proton transport	Hormone signalling	60	45	0	0	0
+ATP synthase / proton transport	Water deprivation / abiotic stress	60	124	0	0	0
+Carbohydrate binding / cell wall	Glutathione / detoxification	136	56	0	0	0
+Carbohydrate binding / cell wall	Hormone signalling	136	45	0	0	0
+Carbohydrate binding / cell wall	Photosynthesis / plastid / thylakoid	136	290	0	0	0
+Carbohydrate binding / cell wall	Ribosome / translation / RNA processing	136	569	0	0	0
+Defence / biotic response	Glutathione / detoxification	150	56	0	0	0
+Defence / biotic response	Photosynthesis / plastid / thylakoid	150	290	0	0	0
+Defence / biotic response	Ribosome / translation / RNA processing	150	569	0	0	0
+Endoplasmic reticulum / protein folding	Photosynthesis / plastid / thylakoid	188	290	0	0	0
+Endoplasmic reticulum / protein folding	Ribosome / translation / RNA processing	188	569	0	0	0
+Endoplasmic reticulum / protein folding	Water deprivation / abiotic stress	188	124	0	0	0
+Glutathione / detoxification	Hormone signalling	56	45	0	0	0
+Glutathione / detoxification	Photosynthesis / plastid / thylakoid	56	290	0	0	0
+Glutathione / detoxification	Ribosome / translation / RNA processing	56	569	0	0	0
+Hormone signalling	Photosynthesis / plastid / thylakoid	45	290	0	0	0
+Hormone signalling	Ribosome / translation / RNA processing	45	569	0	0	0
+Photosynthesis / plastid / thylakoid	Water deprivation / abiotic stress	290	124	0	0	0
+Ribosome / translation / RNA processing	Water deprivation / abiotic stress	569	124	0	0	0

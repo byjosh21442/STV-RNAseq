@@ -1,0 +1,111 @@
+theme	gene_id	n_theme_sets_in_LE	stat	padj_gene	description	organelle_identical	on_ch00	rank_in_theme
+ATP synthase / proton transport	Solyc00g500323.1	5	1.85729135289736	0.99990663146592	ATP synthase subunit alpha, chloroplastic	TRUE	TRUE	1
+ATP synthase / proton transport	Solyc00g500140.1	5	1.20640173025606	0.99990663146592	ATP synthase epsilon chain, chloroplastic	TRUE	TRUE	2
+ATP synthase / proton transport	Solyc04g007550.4	5	1.12714438347696	0.99990663146592	ATP synthase subunit beta	FALSE	FALSE	3
+ATP synthase / proton transport	Solyc00g500332.1	5	1.06333402827876	0.99990663146592	ATP synthase subunit alpha, chloroplastic	TRUE	TRUE	4
+ATP synthase / proton transport	Solyc05g050500.1	5	1.04766149382275	0.99990663146592	ATP synthase delta chain chloroplastic-like	FALSE	FALSE	5
+ATP synthase / proton transport	Solyc00g500064.1	5	0.956469636669128	0.99990663146592	Ycf15	TRUE	TRUE	6
+ATP synthase / proton transport	Solyc02g080540.1	5	0.873129864129249	0.99990663146592	ATP synthase gamma chain, chloroplastic	FALSE	FALSE	7
+ATP synthase / proton transport	Solyc06g065990.1	4	1.31356886431017	0.99990663146592	ATP synthase subunit b', chloroplastic	FALSE	FALSE	8
+ATP synthase / proton transport	Solyc00g500322.1	4	0.919393973655644	0.99990663146592	ATP synthase subunit b, chloroplastic	TRUE	TRUE	9
+ATP synthase / proton transport	Solyc06g066000.3	4	0.685996475547055	0.99990663146592	ATP synthase subunit b', chloroplastic	FALSE	FALSE	10
+Carbohydrate binding / cell wall	Solyc03g119240.3	2	-1.75632313772283	0.99990663146592	Protein kinase family protein	FALSE	FALSE	1
+Carbohydrate binding / cell wall	Solyc12g088040.2	2	-1.60079513186976	0.99990663146592	Wall-associated receptor kinase-like 20	FALSE	FALSE	2
+Carbohydrate binding / cell wall	Solyc12g036330.1	2	-1.45597084388149	0.99990663146592	Pkinase domain-containing protein/WAK_assoc domain-containing protein	FALSE	FALSE	3
+Carbohydrate binding / cell wall	Solyc03g083480.4	2	-1.27486113183064	0.99990663146592	LEAF RUST 10 DISEASE-RESISTANCE LOCUS RECEPTOR-LIKE PROTEIN KINASE-like 2.1	FALSE	FALSE	4
+Carbohydrate binding / cell wall	Solyc10g076550.1	2	-1.25732259690568	0.99990663146592	Wall-associated receptor kinase 1	FALSE	FALSE	5
+Carbohydrate binding / cell wall	Solyc03g083470.3	2	-1.25193805244844	0.99990663146592	Receptor-like protein kinase	FALSE	FALSE	6
+Carbohydrate binding / cell wall	Solyc01g079180.4	2	1.2118363200446	0.99990663146592	Pectinesterase	FALSE	FALSE	7
+Carbohydrate binding / cell wall	Solyc02g089440.3	2	1.10386060399691	0.99990663146592	Hexosyltransferase	FALSE	FALSE	8
+Carbohydrate binding / cell wall	Solyc03g111160.3	2	-1.06908034608606	0.99990663146592	Phosphoglucan phosphatase DSP4, chloroplastic	FALSE	FALSE	9
+Carbohydrate binding / cell wall	Solyc11g007830.2	2	-1.05492173931048	0.99990663146592	protein tyrosine phosphatase	FALSE	FALSE	10
+Defence / biotic response	Solyc02g085730.3	8	-1.460342190664	0.99990663146592	allene oxide cyclase	FALSE	FALSE	1
+Defence / biotic response	Solyc02g077060.2	6	-2.92901457685091	0.99990663146592	NB-ARC domains-containing protein	FALSE	FALSE	2
+Defence / biotic response	Solyc07g008620.1	6	-2.3797944385859	0.99990663146592	EIX receptor 1	FALSE	FALSE	3
+Defence / biotic response	Solyc02g082920.4	6	-1.80521203796407	0.99990663146592	acidic extracellular 26 kD chitinase	FALSE	FALSE	4
+Defence / biotic response	Solyc07g044980.3	6	-1.1277407155999	0.99990663146592	NIM1-like protein 2	FALSE	FALSE	5
+Defence / biotic response	Solyc02g090380.4	6	-1.03873067878495	0.99990663146592	Disease resistance protein (CC-NBS-LRR class) family	FALSE	FALSE	6
+Defence / biotic response	Solyc06g005170.3	6	-1.0144692065677	0.99990663146592	mitogen-activated protein kinase 3	FALSE	FALSE	7
+Defence / biotic response	Solyc10g055810.2	6	-0.879678962934146	0.99990663146592	chitinase Z15140	FALSE	FALSE	8
+Defence / biotic response	Solyc01g005430.3	6	-0.871400732300983	0.99990663146592	Plant ubx domain-containing protein 2	FALSE	FALSE	9
+Defence / biotic response	Solyc10g055820.3	6	-0.664896416637431	0.99990663146592	Chitinase	FALSE	FALSE	10
+Endoplasmic reticulum / protein folding	Solyc02g086180.4	4	-2.0873772163384	0.99990663146592	Delta(7)-sterol-C5(6)-desaturase	FALSE	FALSE	1
+Endoplasmic reticulum / protein folding	Solyc06g082980.3	4	-2.06911904847646	0.99990663146592	Emopamil-binding	FALSE	FALSE	2
+Endoplasmic reticulum / protein folding	Solyc09g009040.3	4	-1.58704590892696	0.99990663146592	Delta(14)-sterol reductase	FALSE	FALSE	3
+Endoplasmic reticulum / protein folding	Solyc04g007520.3	4	-1.4574159881829	0.99990663146592	CDP-diacylglycerol--serine O-phosphatidyltransferase 1	FALSE	FALSE	4
+Endoplasmic reticulum / protein folding	Solyc10g012430.3	4	-1.26532833458623	0.99990663146592	Signal peptide peptidase-like 4	FALSE	FALSE	5
+Endoplasmic reticulum / protein folding	Solyc12g042530.2	4	-1.25869281432863	0.99990663146592	Phosphatidylinositol-glycan biosynthesis class F protein	FALSE	FALSE	6
+Endoplasmic reticulum / protein folding	Solyc01g091320.3	4	-1.25859637826187	0.99990663146592	Methylsterol monooxygenase 1-2	FALSE	FALSE	7
+Endoplasmic reticulum / protein folding	Solyc08g081730.4	4	-1.24297021264782	0.99990663146592	Reticulon-like protein	FALSE	FALSE	8
+Endoplasmic reticulum / protein folding	Solyc06g005750.3	4	-1.12876957258493	0.99990663146592	Methylsterol monooxygenase 2-1	FALSE	FALSE	9
+Endoplasmic reticulum / protein folding	Solyc08g078000.3	4	-1.11504606426374	0.99990663146592	Vesicle-associated protein 2-1	FALSE	FALSE	10
+Glutathione / detoxification	Solyc02g068900.3	2	-2.86683792155494	0.99990663146592	Glutathione S-transferase	FALSE	FALSE	1
+Glutathione / detoxification	Solyc01g081250.3	2	-2.45780273263823	0.99990663146592	Glutathione S-transferase	FALSE	FALSE	2
+Glutathione / detoxification	Solyc09g007150.3	2	-1.97663251499233	0.99990663146592	Glutathione S-transferase	FALSE	FALSE	3
+Glutathione / detoxification	Solyc01g081310.3	2	-1.92981132333397	0.99990663146592	glutathione S-transferase T3	FALSE	FALSE	4
+Glutathione / detoxification	Solyc09g011550.3	2	-1.8889436808974	0.99990663146592	Glutathione S-transferase	FALSE	FALSE	5
+Glutathione / detoxification	Solyc01g086680.4	2	-1.84365348101254	0.99990663146592	glutathione S-transferase T1	FALSE	FALSE	6
+Glutathione / detoxification	Solyc05g006750.3	2	-1.37806753149128	0.99990663146592	Glutathione S-transferase	FALSE	FALSE	7
+Glutathione / detoxification	Solyc09g091840.4	2	-1.25593407685643	0.99990663146592	Glutathione reductase	FALSE	FALSE	8
+Glutathione / detoxification	Solyc09g011600.3	2	-1.19233290252794	0.99990663146592	glutathione S-transferase	FALSE	FALSE	9
+Glutathione / detoxification	Solyc06g069040.4	2	-1.09713421386345	0.99990663146592	glutathione S-transferase T4	FALSE	FALSE	10
+Heme / oxidoreductase	Solyc06g061023.1	4	-2.65752842215504	0.99990663146592	Cytochrome	FALSE	FALSE	1
+Heme / oxidoreductase	Solyc04g079730.1	4	-2.22580111863372	0.99990663146592	allene oxide synthase	FALSE	FALSE	2
+Heme / oxidoreductase	Solyc03g095310.3	4	-2.13977826180875	0.99990663146592	Cytochrome P450	FALSE	FALSE	3
+Heme / oxidoreductase	Solyc07g043460.3	4	-2.12449931717267	0.99990663146592	Cytochrome P450	FALSE	FALSE	4
+Heme / oxidoreductase	Solyc09g092640.3	4	-2.09168704388407	0.99990663146592	Cytochrome	FALSE	FALSE	5
+Heme / oxidoreductase	Solyc09g009707.1	4	-2.0553862998615	0.99990663146592	Cytochrome P450	FALSE	FALSE	6
+Heme / oxidoreductase	Solyc03g111290.2	4	-2.04454814001779	0.99990663146592	Cytochrome P450	FALSE	FALSE	7
+Heme / oxidoreductase	Solyc04g071800.3	4	-1.79338661262383	0.99990663146592	Cytochrome P450	FALSE	FALSE	8
+Heme / oxidoreductase	Solyc07g055560.4	4	-1.61966283558744	0.99990663146592	Cytochrome	FALSE	FALSE	9
+Heme / oxidoreductase	Solyc12g006460.2	4	-1.59035969619848	0.99990663146592	Cytochrome P450	FALSE	FALSE	10
+Hormone signalling	Solyc09g089930.3	3	-3.2387205400425	0.99990663146592	ethylene responsive factor E.2	FALSE	FALSE	1
+Hormone signalling	Solyc01g090340.3	3	-1.77408651210649	0.99990663146592	Ethylene-responsive transcription factor 2	FALSE	FALSE	2
+Hormone signalling	Solyc03g123500.4	3	-1.27416505050691	0.99990663146592	GCC box binding protein C.4	FALSE	FALSE	3
+Hormone signalling	Solyc09g075440.4	3	-1.21297415896611	0.99990663146592	Never ripe-2	FALSE	FALSE	4
+Hormone signalling	Solyc02g077370.1	3	-1.1602365027413	0.99990663146592	Ethylene Response Factor  C.5	FALSE	FALSE	5
+Hormone signalling	Solyc11g011740.1	3	-1.15968027654997	0.99990663146592	Ethylene-responsive transcription factor	FALSE	FALSE	6
+Hormone signalling	Solyc04g014530.1	3	-1.00100118115103	0.99990663146592	Ethylene Response Factor C.2	FALSE	FALSE	7
+Hormone signalling	Solyc05g052050.1	3	-0.923728495610932	0.99990663146592	DNA-binding protein Pti4	FALSE	FALSE	8
+Hormone signalling	Solyc11g006180.2	3	-0.895235613401177	0.99990663146592	ethylene receptor homolog (ETR5)	FALSE	FALSE	9
+Hormone signalling	Solyc03g093610.1	3	-0.893508958567509	0.99990663146592	ethylene response factor A.2	FALSE	FALSE	10
+Other (no theme regex matched)	Solyc05g050500.1	33	1.04766149382275	0.99990663146592	ATP synthase delta chain chloroplastic-like	FALSE	FALSE	1
+Other (no theme regex matched)	Solyc02g080540.1	32	0.873129864129249	0.99990663146592	ATP synthase gamma chain, chloroplastic	FALSE	FALSE	2
+Other (no theme regex matched)	Solyc04g007550.4	31	1.12714438347696	0.99990663146592	ATP synthase subunit beta	FALSE	FALSE	3
+Other (no theme regex matched)	Solyc05g008460.4	30	0.67398257836706	0.99990663146592	ATP synthase subunit beta	FALSE	FALSE	4
+Other (no theme regex matched)	Solyc00g500323.1	29	1.85729135289736	0.99990663146592	ATP synthase subunit alpha, chloroplastic	TRUE	TRUE	5
+Other (no theme regex matched)	Solyc00g500140.1	29	1.20640173025606	0.99990663146592	ATP synthase epsilon chain, chloroplastic	TRUE	TRUE	6
+Other (no theme regex matched)	Solyc00g500332.1	29	1.06333402827876	0.99990663146592	ATP synthase subunit alpha, chloroplastic	TRUE	TRUE	7
+Other (no theme regex matched)	Solyc00g500064.1	29	0.956469636669128	0.99990663146592	Ycf15	TRUE	TRUE	8
+Other (no theme regex matched)	Solyc06g065990.1	27	1.31356886431017	0.99990663146592	ATP synthase subunit b', chloroplastic	FALSE	FALSE	9
+Other (no theme regex matched)	Solyc00g500322.1	27	0.919393973655644	0.99990663146592	ATP synthase subunit b, chloroplastic	TRUE	TRUE	10
+Photosynthesis / plastid / thylakoid	Solyc08g067320.3	19	1.62102530678405	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	1
+Photosynthesis / plastid / thylakoid	Solyc09g014520.3	19	0.908640547874502	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	2
+Photosynthesis / plastid / thylakoid	Solyc12g011280.2	18	0.851227053458801	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	3
+Photosynthesis / plastid / thylakoid	Solyc07g063600.3	18	0.42583384411099	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	4
+Photosynthesis / plastid / thylakoid	Solyc12g009200.2	16	1.26202378831485	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	5
+Photosynthesis / plastid / thylakoid	Solyc07g022900.4	16	1.25876912332013	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	6
+Photosynthesis / plastid / thylakoid	Solyc06g069730.3	16	0.630685056820004	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	7
+Photosynthesis / plastid / thylakoid	Solyc04g082930.3	16	0.491616269224625	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	8
+Photosynthesis / plastid / thylakoid	Solyc01g105050.3	15	0.497073962987269	0.99990663146592	Chlorophyll a-b binding protein, chloroplastic	FALSE	FALSE	9
+Photosynthesis / plastid / thylakoid	Solyc02g065400.3	14	1.28969508958883	0.99990663146592	33kDa precursor protein of oxygen-evolving complex	FALSE	FALSE	10
+Ribosome / translation / RNA processing	Solyc01g087730.4	13	1.08526765620414	0.99990663146592	50S ribosomal protein L1	FALSE	FALSE	1
+Ribosome / translation / RNA processing	Solyc03g119360.3	13	0.583665309492093	0.99990663146592	40S ribosomal protein S7	FALSE	FALSE	2
+Ribosome / translation / RNA processing	Solyc06g069090.3	13	0.462000694916316	0.99990663146592	40S ribosomal protein S7	FALSE	FALSE	3
+Ribosome / translation / RNA processing	Solyc11g068420.2	12	0.667327052702966	0.99990663146592	Ribosomal protein	FALSE	FALSE	4
+Ribosome / translation / RNA processing	Solyc01g009520.4	12	0.465586189237112	0.99990663146592	Ribosomal protein	FALSE	FALSE	5
+Ribosome / translation / RNA processing	Solyc12g096220.2	12	0.410648685274809	0.99990663146592	Rop guanine nucleotide exchange factor 14	FALSE	FALSE	6
+Ribosome / translation / RNA processing	Solyc08g075090.4	12	0.407561229676119	0.99990663146592	bHLH transcription factor144	FALSE	FALSE	7
+Ribosome / translation / RNA processing	Solyc05g054810.4	12	0.393187135591292	0.99990663146592	Unknown protein	FALSE	FALSE	8
+Ribosome / translation / RNA processing	Solyc07g008370.4	12	0.372353155319119	0.99990663146592	60S ribosomal protein L7	FALSE	FALSE	9
+Ribosome / translation / RNA processing	Solyc05g054580.3	12	0.364254255915337	0.99990663146592	60S acidic ribosomal protein P0	FALSE	FALSE	10
+Water deprivation / abiotic stress	Solyc12g094620.3	3	-0.634392154057657	0.99990663146592	catalase	FALSE	FALSE	1
+Water deprivation / abiotic stress	Solyc02g080890.3	2	-3.07662506561866	0.99990663146592	WRKY transcription factor 6	FALSE	FALSE	2
+Water deprivation / abiotic stress	Solyc03g116890.3	2	-2.9266692850112	0.99990663146592	WRKY transcription factor 39	FALSE	FALSE	3
+Water deprivation / abiotic stress	Solyc10g009550.3	2	-2.27612289607859	0.99990663146592	WRKY transcription factor 42	FALSE	FALSE	4
+Water deprivation / abiotic stress	Solyc02g077040.4	2	-2.22253687001203	0.99990663146592	phytophthora-inhibited protease 1	FALSE	FALSE	5
+Water deprivation / abiotic stress	Solyc09g014990.4	2	-1.96451386302882	0.99990663146592	WRKY transcription factor 33	FALSE	FALSE	6
+Water deprivation / abiotic stress	Solyc10g011910.4	2	-1.88678087381403	0.99990663146592	WRKY transcription factor 25	FALSE	FALSE	7
+Water deprivation / abiotic stress	Solyc08g006320.4	2	-1.87069071233349	0.99990663146592	WRKY transcription factor 11	FALSE	FALSE	8
+Water deprivation / abiotic stress	Solyc04g078550.3	2	-1.75111441382046	0.99990663146592	WRKY transcription factor 7	FALSE	FALSE	9
+Water deprivation / abiotic stress	Solyc10g086500.1	2	-1.62932849425476	0.99990663146592	steroid 5 alpha reductase DET2	FALSE	FALSE	10

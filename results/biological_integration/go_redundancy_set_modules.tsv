@@ -1,0 +1,216 @@
+collection	go_id	term_name	theme	NES	padj_fgsea	camera_FDR	tier	module
+MF	GO:0004601	peroxidase activity	Other (no theme regex matched)	-1.8250147460549	0.00848667174905804	0.998093973618798	Tier 3	N01
+MF	GO:0016684	oxidoreductase activity, acting on peroxide as acceptor	Heme / oxidoreductase	-1.8250147460549	0.00848667174905804	0.998093973618798	Tier 3	N01
+BP	GO:0006979	response to oxidative stress	Water deprivation / abiotic stress	-1.70950761151132	0.0102861874378933	0.999074162138404	Tier 3	N01
+MF	GO:0016209	antioxidant activity	Other (no theme regex matched)	-1.73110211854711	0.0111312933503029	0.998093973618798	Tier 3	N01
+BP	GO:0042743	hydrogen peroxide metabolic process	Other (no theme regex matched)	-1.74572058963748	0.0173550191577054	0.999074162138404	Tier 3	N01
+BP	GO:0042744	hydrogen peroxide catabolic process	Other (no theme regex matched)	-1.74572058963748	0.0173550191577054	0.999074162138404	Tier 3	N01
+BP	GO:0072593	reactive oxygen species metabolic process	Other (no theme regex matched)	-1.66153928663417	0.0361812100942536	0.999074162138404	Tier 3	N01
+BP	GO:0098869	cellular oxidant detoxification	Glutathione / detoxification	-1.59887897186609	0.04038872021955	0.999074162138404	Tier 3	N01
+MF	GO:0030246	carbohydrate binding	Carbohydrate binding / cell wall	-1.86946849521798	0.000166876772148048	0.998093973618798	Tier 3	N02
+MF	GO:0019842	vitamin binding	Other (no theme regex matched)	-1.86664231264991	0.000553423759610051	0.998093973618798	Tier 3	N02
+MF	GO:0031418	L-ascorbic acid binding	Other (no theme regex matched)	-1.99806712658358	0.00101316786864238	0.998093973618798	Tier 3	N02
+MF	GO:0031406	carboxylic acid binding	Other (no theme regex matched)	-1.66114708751745	0.0176153225162745	0.998093973618798	Tier 3	N02
+MF	GO:0043177	organic acid binding	Other (no theme regex matched)	-1.66114708751745	0.0176153225162745	0.998093973618798	Tier 3	N02
+MF	GO:0048029	monosaccharide binding	Other (no theme regex matched)	-1.74949842499262	0.0176153225162745	0.998093973618798	Tier 3	N02
+BP	GO:0043207	response to external biotic stimulus	Defence / biotic response	-1.78293804005635	0.00432547831416507	0.999074162138404	Tier 3	N03
+BP	GO:0051707	response to other organism	Defence / biotic response	-1.78293804005635	0.00432547831416507	0.999074162138404	Tier 3	N03
+BP	GO:0009607	response to biotic stimulus	Defence / biotic response	-1.74871267438177	0.00655210955083675	0.999074162138404	Tier 3	N03
+BP	GO:0009620	response to fungus	Defence / biotic response	-1.88528541687048	0.013188309356704	0.999074162138404	Tier 3	N03
+BP	GO:0044419	biological process involved in interspecies interaction between organisms	Other (no theme regex matched)	-1.64950079249844	0.0145797811215161	0.999074162138404	Tier 3	N03
+BP	GO:0050832	defense response to fungus	Defence / biotic response	-1.77458971002292	0.041006811693655	0.999074162138404	Tier 3	N03
+BP	GO:0030258	lipid modification	Other (no theme regex matched)	-2.0720947280557	0.000414558098920503	0.999074162138404	Tier 3	N04
+BP	GO:0034440	lipid oxidation	Other (no theme regex matched)	-1.93197895777961	0.00599139533043742	0.999074162138404	Tier 3	N04
+BP	GO:0072329	monocarboxylic acid catabolic process	Other (no theme regex matched)	-1.97578788122687	0.00655210955083675	0.999074162138404	Tier 3	N04
+BP	GO:0009062	fatty acid catabolic process	Other (no theme regex matched)	-1.84328740515878	0.0155361549160599	0.999074162138404	Tier 3	N04
+BP	GO:0006635	fatty acid beta-oxidation	Other (no theme regex matched)	-1.820801077642	0.0232010686255599	0.999074162138404	Tier 3	N04
+BP	GO:0019395	fatty acid oxidation	Other (no theme regex matched)	-1.820801077642	0.0232010686255599	0.999074162138404	Tier 3	N04
+MF	GO:0020037	heme binding	Heme / oxidoreductase	-1.78230606702197	0.000303649346498897	0.998093973618798	Tier 3	N05
+MF	GO:0004497	monooxygenase activity	Heme / oxidoreductase	-1.70475175331165	0.00251403897315946	0.998093973618798	Tier 3	N05
+MF	GO:0046906	tetrapyrrole binding	Heme / oxidoreductase	-1.66771434562489	0.00253213322139024	0.998093973618798	Tier 3	N05
+MF	GO:0005506	iron ion binding	Other (no theme regex matched)	-1.63505181282949	0.0047349664258755	0.998093973618798	Tier 3	N05
+MF	GO:0016705	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	Heme / oxidoreductase	-1.62039000186545	0.00644246598621743	0.998093973618798	Tier 3	N05
+BP	GO:0001101	response to acid chemical	Other (no theme regex matched)	-2.18669202976398	6.10189043260784e-07	0.999074162138404	Tier 3	N06
+BP	GO:0009415	response to water	Other (no theme regex matched)	-2.20137963740288	7.86497311791961e-07	0.999074162138404	Tier 3	N06
+BP	GO:0009414	response to water deprivation	Water deprivation / abiotic stress	-2.17358758169967	1.55259478722657e-06	0.999074162138404	Tier 3	N06
+BP	GO:1901700	response to oxygen-containing compound	Other (no theme regex matched)	-1.66703380469222	0.000991998443776503	0.999074162138404	Tier 3	N06
+BP	GO:0009628	response to abiotic stimulus	Water deprivation / abiotic stress	-1.61464931421593	0.0019698562401323	0.999074162138404	Tier 3	N06
+CC	GO:0005783	endoplasmic reticulum	Endoplasmic reticulum / protein folding	-1.56772540128719	0.000191784682065679	0.997010742778294	Tier 3	N07
+CC	GO:0098827	endoplasmic reticulum subcompartment	Endoplasmic reticulum / protein folding	-1.49257888060557	0.0128393551659901	0.997010742778294	Tier 3	N07
+CC	GO:0005789	endoplasmic reticulum membrane	Endoplasmic reticulum / protein folding	-1.49645738720958	0.0148630254290071	0.997010742778294	Tier 3	N07
+CC	GO:0042175	nuclear outer membrane-endoplasmic reticulum membrane network	Endoplasmic reticulum / protein folding	-1.49645738720958	0.0148630254290071	0.997010742778294	Tier 3	N07
+BP	GO:0009873	ethylene-activated signaling pathway	Hormone signalling	-2.00799307224489	0.00397721047434057	0.999074162138404	Tier 3	N08
+BP	GO:0071369	cellular response to ethylene stimulus	Hormone signalling	-2.01952058004728	0.00397721047434057	0.999074162138404	Tier 3	N08
+BP	GO:0009723	response to ethylene	Hormone signalling	-1.6903253081932	0.0414307085543316	0.999074162138404	Tier 3	N08
+BP	GO:0000160	phosphorelay signal transduction system	Other (no theme regex matched)	-1.6428071739018	0.0438823708669816	0.999074162138404	Tier 3	N08
+BP	GO:0080134	regulation of response to stress	Other (no theme regex matched)	-1.83623969195849	0.00765846582136235	0.999074162138404	Tier 3	N09
+BP	GO:0031347	regulation of defense response	Defence / biotic response	-1.87476317606722	0.0155361549160599	0.999074162138404	Tier 3	N09
+BP	GO:0048583	regulation of response to stimulus	Other (no theme regex matched)	-1.61327072657119	0.0155361549160599	0.999074162138404	Tier 3	N09
+BP	GO:0006749	glutathione metabolic process	Glutathione / detoxification	-1.94874578179849	0.00140773346934435	0.999074162138404	Tier 3	N10
+MF	GO:0004364	glutathione transferase activity	Glutathione / detoxification	-1.89777282906781	0.00633337340070565	0.998093973618798	Tier 3	N10
+BP	GO:0006575	modified amino acid metabolic process	Other (no theme regex matched)	-1.60083719460465	0.0265513875331195	0.999074162138404	Tier 3	N10
+BP	GO:0008037	cell recognition	Other (no theme regex matched)	-2.12807896668115	0.000356435373695421	0.999074162138404	Tier 3	N11
+BP	GO:0048544	recognition of pollen	Other (no theme regex matched)	-2.12807896668115	0.000356435373695421	0.999074162138404	Tier 3	N11
+MF	GO:0106310	protein serine kinase activity	Other (no theme regex matched)	-1.63842542196291	0.0261587788026833	0.998093973618798	Tier 3	N11
+MF	GO:0061650	ubiquitin-like protein conjugating enzyme activity	Other (no theme regex matched)	-1.90451022761388	0.0101217340115928	0.998093973618798	Tier 3	N12
+MF	GO:0061631	ubiquitin conjugating enzyme activity	Other (no theme regex matched)	-1.82077443450885	0.016887933549633	0.998093973618798	Tier 3	N12
+BP	GO:0000209	protein polyubiquitination	Other (no theme regex matched)	-1.69518861499557	0.0260663218740493	0.999074162138404	Tier 3	N12
+MF	GO:0016755	aminoacyltransferase activity	Other (no theme regex matched)	-1.58041258052415	0.0036507366297308	0.998093973618798	Tier 3	N13
+MF	GO:0019787	ubiquitin-like protein transferase activity	Other (no theme regex matched)	-1.5621265864647	0.00644246598621743	0.998093973618798	Tier 3	N13
+MF	GO:0004842	ubiquitin-protein transferase activity	Other (no theme regex matched)	-1.54505766750413	0.0138855920164271	0.998093973618798	Tier 3	N13
+BP	GO:0009611	response to wounding	Defence / biotic response	-1.98512237638621	0.00599139533043742	0.999074162138404	Tier 3	N14
+BP	GO:2000022	regulation of jasmonic acid mediated signaling pathway	Hormone signalling	-1.7655708282424	0.0404131880571671	0.999074162138404	Tier 4	N14
+BP	GO:0042445	hormone metabolic process	Hormone signalling	-1.76098016175462	0.0260434518838215	0.999074162138404	Tier 3	N15
+BP	GO:0009308	amine metabolic process	Other (no theme regex matched)	-1.62631104248534	0.0485962225625319	0.999074162138404	Tier 4	N15
+BP	GO:0008202	steroid metabolic process	Other (no theme regex matched)	-1.72193655499767	0.0155361549160599	0.999074162138404	Tier 3	N16
+BP	GO:0016125	sterol metabolic process	Other (no theme regex matched)	-1.7814224671285	0.0251907243791284	0.999074162138404	Tier 3	N16
+MF	GO:0004190	aspartic-type endopeptidase activity	Other (no theme regex matched)	-1.6573147293214	0.0326670311433461	0.998093973618798	Tier 3	N17
+MF	GO:0070001	aspartic-type peptidase activity	Other (no theme regex matched)	-1.6573147293214	0.0326670311433461	0.998093973618798	Tier 3	N17
+MF	GO:0030247	polysaccharide binding	Carbohydrate binding / cell wall	-1.84957082067537	0.0195523780422123	0.998093973618798	Tier 3	N18
+BP	GO:0006952	defense response	Defence / biotic response	-1.95476674446749	1.1598641655191e-08	0.999074162138404	Tier 3	N19
+MF	GO:0016645	oxidoreductase activity, acting on the CH-NH group of donors	Heme / oxidoreductase	-1.80554870936367	0.0326670311433461	0.998093973618798	Tier 3	N20
+BP	GO:0035556	intracellular signal transduction	Other (no theme regex matched)	-1.57352691516516	0.00402905789683545	0.999074162138404	Tier 3	N21
+BP	GO:0016042	lipid catabolic process	Other (no theme regex matched)	-1.76419022184768	0.00950672353322203	0.999074162138404	Tier 3	N22
+BP	GO:0070887	cellular response to chemical stimulus	Other (no theme regex matched)	-1.45052249360536	0.0290846877673225	0.999074162138404	Tier 3	N23
+BP	GO:0046395	carboxylic acid catabolic process	Other (no theme regex matched)	-1.59393637058572	0.0334588671675404	0.999074162138404	Tier 3	N24
+MF	GO:0043565	sequence-specific DNA binding	Other (no theme regex matched)	-1.57587959069847	0.000943211728535952	0.998093973618798	Tier 3	N25
+MF	GO:0140359	ABC-type transporter activity	Other (no theme regex matched)	-1.83637601550824	0.00682832097563675	0.998093973618798	Tier 3	N26
+MF	GO:0008194	UDP-glycosyltransferase activity	Other (no theme regex matched)	-1.57005863913702	0.00813759337018425	0.998093973618798	Tier 3	N27
+MF	GO:0004674	protein serine/threonine kinase activity	Other (no theme regex matched)	-1.36621712368611	0.0346858484194418	0.998093973618798	Tier 3	N28
+MF	GO:0005319	lipid carrier activity	Other (no theme regex matched)	-1.77096123660493	0.0470849717900496	0.998093973618798	Tier 3	N29
+BP	GO:0009152	purine ribonucleotide biosynthetic process	Other (no theme regex matched)	1.92905542778781	0.00263724014078927	0.999074162138404	Tier 3	P01
+BP	GO:0046390	ribose phosphate biosynthetic process	Other (no theme regex matched)	1.8342477668337	0.00501014897979706	0.999074162138404	Tier 3	P01
+BP	GO:0009145	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	1.91523971355009	0.00655210955083675	0.999074162138404	Tier 3	P01
+BP	GO:0009206	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	1.91523971355009	0.00655210955083675	0.999074162138404	Tier 3	P01
+BP	GO:0009260	ribonucleotide biosynthetic process	Other (no theme regex matched)	1.78230811315024	0.00831487374879506	0.999074162138404	Tier 3	P01
+BP	GO:1901293	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	1.57151879932101	0.00950672353322203	0.999074162138404	Tier 3	P01
+BP	GO:0009201	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	1.84581002006205	0.0115531919331067	0.999074162138404	Tier 3	P01
+BP	GO:0009142	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	1.79294289977461	0.013188309356704	0.999074162138404	Tier 3	P01
+BP	GO:0009165	nucleotide biosynthetic process	Other (no theme regex matched)	1.58454886808848	0.0144372195678945	0.999074162138404	Tier 3	P01
+BP	GO:0006164	purine nucleotide biosynthetic process	Other (no theme regex matched)	1.65456392896107	0.0173550191577054	0.999074162138404	Tier 3	P01
+MF	GO:0015252	proton channel activity	Other (no theme regex matched)	1.88160774593862	0.0215980308192751	0.998093973618798	Tier 3	P01
+MF	GO:0046933	proton-transporting ATP synthase activity, rotational mechanism	ATP synthase / proton transport	1.88160774593862	0.0215980308192751	0.998093973618798	Tier 3	P01
+BP	GO:0006754	ATP biosynthetic process	ATP synthase / proton transport	1.80534041051096	0.0290846877673225	0.999074162138404	Tier 3	P01
+BP	GO:0015986	proton motive force-driven ATP synthesis	Other (no theme regex matched)	1.80534041051096	0.0290846877673225	0.999074162138404	Tier 3	P01
+CC	GO:0045259	proton-transporting ATP synthase complex	ATP synthase / proton transport	1.81739515871414	0.0313250357968939	0.997010742778294	Tier 3	P01
+CC	GO:0016469	proton-transporting two-sector ATPase complex	ATP synthase / proton transport	1.61376808598881	0.0338732729871367	0.997010742778294	Tier 3	P01
+CC	GO:0034702	monoatomic ion channel complex	Other (no theme regex matched)	1.74994880893046	0.0338732729871367	0.997010742778294	Tier 3	P01
+CC	GO:0034703	cation channel complex	Other (no theme regex matched)	1.74994880893046	0.0338732729871367	0.997010742778294	Tier 3	P01
+BP	GO:0072522	purine-containing compound biosynthetic process	Other (no theme regex matched)	1.51176931942072	0.0438823708669816	0.999074162138404	Tier 4	P01
+BP	GO:0009150	purine ribonucleotide metabolic process	Other (no theme regex matched)	1.81355970214764	0.00112177523441208	0.999074162138404	Tier 3	P02
+BP	GO:0019693	ribose phosphate metabolic process	Other (no theme regex matched)	1.74210871887053	0.00112177523441208	0.999074162138404	Tier 3	P02
+BP	GO:0009205	purine ribonucleoside triphosphate metabolic process	Other (no theme regex matched)	1.84767122706547	0.00148592089780604	0.999074162138404	Tier 3	P02
+BP	GO:0009144	purine nucleoside triphosphate metabolic process	Other (no theme regex matched)	1.8142176943364	0.00191002144881425	0.999074162138404	Tier 3	P02
+BP	GO:0009259	ribonucleotide metabolic process	Other (no theme regex matched)	1.72811912024558	0.00191002144881425	0.999074162138404	Tier 3	P02
+BP	GO:0009141	nucleoside triphosphate metabolic process	Other (no theme regex matched)	1.71351585844468	0.00331396327186018	0.999074162138404	Tier 3	P02
+BP	GO:0046034	ATP metabolic process	ATP synthase / proton transport	1.80593953446336	0.00331396327186018	0.999074162138404	Tier 3	P02
+BP	GO:1901135	carbohydrate derivative metabolic process	Other (no theme regex matched)	1.42829662021035	0.00397721047434057	0.999074162138404	Tier 3	P02
+BP	GO:0006163	purine nucleotide metabolic process	Other (no theme regex matched)	1.58212447281029	0.00599139533043742	0.999074162138404	Tier 3	P02
+BP	GO:1901137	carbohydrate derivative biosynthetic process	Other (no theme regex matched)	1.4656721854326	0.00765846582136235	0.999074162138404	Tier 3	P02
+BP	GO:0009117	nucleotide metabolic process	Other (no theme regex matched)	1.49284083135331	0.0111516495904613	0.999074162138404	Tier 3	P02
+BP	GO:0055086	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	1.39087757501521	0.013188309356704	0.999074162138404	Tier 3	P02
+BP	GO:0006753	nucleoside phosphate metabolic process	Other (no theme regex matched)	1.38800926168408	0.0144372195678945	0.999074162138404	Tier 3	P02
+BP	GO:0072521	purine-containing compound metabolic process	Other (no theme regex matched)	1.46165117412449	0.0144372195678945	0.999074162138404	Tier 3	P02
+CC	GO:0009526	plastid envelope	Photosynthesis / plastid / thylakoid	2.26385597312594	4.19437983052439e-11	0.997010742778294	Tier 3	P03
+CC	GO:0009579	thylakoid	Photosynthesis / plastid / thylakoid	2.32877783390809	4.26484140672607e-11	0.997010742778294	Tier 3	P03
+CC	GO:0009534	chloroplast thylakoid	Photosynthesis / plastid / thylakoid	2.38459130762863	1.51870776068306e-10	0.997010742778294	Tier 3	P03
+CC	GO:0031976	plastid thylakoid	Photosynthesis / plastid / thylakoid	2.35491449371111	4.02410044943449e-10	0.997010742778294	Tier 3	P03
+CC	GO:0042651	thylakoid membrane	Photosynthesis / plastid / thylakoid	2.37874569075728	8.35844721795126e-10	0.997010742778294	Tier 3	P03
+CC	GO:0042170	plastid membrane	Photosynthesis / plastid / thylakoid	2.16626972051102	2.03021604631658e-09	0.997010742778294	Tier 3	P03
+CC	GO:0034357	photosynthetic membrane	Photosynthesis / plastid / thylakoid	2.24631569953603	1.04152133880684e-08	0.997010742778294	Tier 3	P03
+CC	GO:0031968	organelle outer membrane	Other (no theme regex matched)	2.09828581398149	3.5279066508776e-08	0.997010742778294	Tier 3	P03
+CC	GO:0009535	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	2.28471026512246	4.02401428950605e-08	0.997010742778294	Tier 3	P03
+CC	GO:0055035	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	2.28471026512246	4.02401428950605e-08	0.997010742778294	Tier 3	P03
+CC	GO:0019867	outer membrane	Other (no theme regex matched)	2.09530519278515	4.3100749730435e-08	0.997010742778294	Tier 3	P03
+CC	GO:0031967	organelle envelope	Other (no theme regex matched)	1.71804304507186	1.80707282431463e-07	0.997010742778294	Tier 3	P03
+BP	GO:0046148	pigment biosynthetic process	Other (no theme regex matched)	1.88943425898545	0.0058749423382075	0.999074162138404	Tier 3	P04
+BP	GO:0033014	tetrapyrrole biosynthetic process	Heme / oxidoreductase	1.9525210236151	0.00655210955083675	0.999074162138404	Tier 3	P04
+BP	GO:0033013	tetrapyrrole metabolic process	Heme / oxidoreductase	1.80619304744088	0.0115531919331067	0.999074162138404	Tier 3	P04
+BP	GO:0015995	chlorophyll biosynthetic process	Photosynthesis / plastid / thylakoid	1.9070978329738	0.013188309356704	0.999074162138404	Tier 3	P04
+BP	GO:0042440	pigment metabolic process	Other (no theme regex matched)	1.76729500229817	0.0135506790737109	0.999074162138404	Tier 3	P04
+BP	GO:0006778	porphyrin-containing compound metabolic process	Other (no theme regex matched)	1.77957312194393	0.014970318525197	0.999074162138404	Tier 3	P04
+BP	GO:0006779	porphyrin-containing compound biosynthetic process	Other (no theme regex matched)	1.87886538682813	0.014970318525197	0.999074162138404	Tier 3	P04
+MF	GO:0180051	translation factor activity	Ribosome / translation / RNA processing	2.05276481510016	0.000166876772148048	0.998093973618798	Tier 3	P05
+BP	GO:0006413	translational initiation	Ribosome / translation / RNA processing	1.73410513207762	0.0144372195678945	0.999074162138404	Tier 3	P05
+CC	GO:0005852	eukaryotic translation initiation factor 3 complex	Ribosome / translation / RNA processing	1.87857184940467	0.0313250357968939	0.997010742778294	Tier 3	P05
+CC	GO:0033290	eukaryotic 48S preinitiation complex	Other (no theme regex matched)	1.82696154360274	0.0338732729871367	0.997010742778294	Tier 3	P05
+CC	GO:0070993	cytosolic translation preinitiation complex	Ribosome / translation / RNA processing	1.82696154360274	0.0338732729871367	0.997010742778294	Tier 3	P05
+MF	GO:0003743	translation initiation factor activity	Ribosome / translation / RNA processing	1.63932843672134	0.0346858484194418	0.998093973618798	Tier 3	P05
+CC	GO:0016282	eukaryotic 43S preinitiation complex	Other (no theme regex matched)	1.79147088618647	0.0398430933034464	0.997010742778294	Tier 3	P05
+CC	GO:0005840	ribosome	Ribosome / translation / RNA processing	2.80084623436518	4.99906512473289e-30	0.997010742778294	Tier 3	P06
+MF	GO:0003735	structural constituent of ribosome	Ribosome / translation / RNA processing	2.79033916440853	7.91569230506504e-29	0.998093973618798	Tier 3	P06
+MF	GO:0005198	structural molecule activity	Other (no theme regex matched)	2.63165500191023	3.55310158269925e-27	0.998093973618798	Tier 3	P06
+CC	GO:0044391	ribosomal subunit	Ribosome / translation / RNA processing	2.83351874563613	3.25594819212342e-22	0.997010742778294	Tier 3	P06
+CC	GO:0022626	cytosolic ribosome	Ribosome / translation / RNA processing	2.91668612278351	2.97729910943935e-21	0.997010742778294	Tier 3	P06
+CC	GO:0015934	large ribosomal subunit	Ribosome / translation / RNA processing	2.69081252808148	1.38570555198776e-14	0.997010742778294	Tier 3	P06
+CC	GO:0022625	cytosolic large ribosomal subunit	Ribosome / translation / RNA processing	2.77532848628689	4.0388061624456e-14	0.997010742778294	Tier 3	P06
+BP	GO:0015979	photosynthesis	Photosynthesis / plastid / thylakoid	2.43890811983402	1.1598641655191e-08	0.999074162138404	Tier 3	P07
+CC	GO:0009523	photosystem II	Photosynthesis / plastid / thylakoid	2.24695404829675	1.89776204300607e-05	0.997010742778294	Tier 3	P07
+CC	GO:0009521	photosystem	Photosynthesis / plastid / thylakoid	2.12995251003012	6.44166041240148e-05	0.997010742778294	Tier 3	P07
+BP	GO:0009765	photosynthesis, light harvesting	Photosynthesis / plastid / thylakoid	2.37522960083874	8.01964210847225e-05	0.999074162138404	Tier 3	P07
+BP	GO:0019684	photosynthesis, light reaction	Photosynthesis / plastid / thylakoid	2.15061353823897	0.000191700673883982	0.999074162138404	Tier 3	P07
+CC	GO:0009522	photosystem I	Photosynthesis / plastid / thylakoid	1.91521863633517	0.00638062856959396	0.997010742778294	Tier 3	P07
+BP	GO:0009768	photosynthesis, light harvesting in photosystem I	Photosynthesis / plastid / thylakoid	1.97138287480697	0.0173550191577054	0.999074162138404	Tier 3	P07
+BP	GO:0019318	hexose metabolic process	Other (no theme regex matched)	1.68589894523779	0.0112110838504329	0.999074162138404	Tier 3	P08
+BP	GO:0005996	monosaccharide metabolic process	Other (no theme regex matched)	1.57431685415165	0.0175966357072983	0.999074162138404	Tier 3	P08
+BP	GO:0006094	gluconeogenesis	Other (no theme regex matched)	1.94550739273917	0.018646996363728	0.999074162138404	Tier 3	P08
+BP	GO:0019319	hexose biosynthetic process	Other (no theme regex matched)	1.94550739273917	0.018646996363728	0.999074162138404	Tier 3	P08
+BP	GO:0006006	glucose metabolic process	Other (no theme regex matched)	1.73986636308859	0.0389090839151424	0.999074162138404	Tier 3	P08
+BP	GO:0046364	monosaccharide biosynthetic process	Other (no theme regex matched)	1.78726290675382	0.042253163914885	0.999074162138404	Tier 4	P08
+MF	GO:0016741	transferase activity, transferring one-carbon groups	Other (no theme regex matched)	1.5384313910165	0.00468598092216852	0.998093973618798	Tier 3	P09
+BP	GO:0032259	methylation	Other (no theme regex matched)	1.49919816680355	0.0144372195678945	0.999074162138404	Tier 3	P09
+MF	GO:0008168	methyltransferase activity	Other (no theme regex matched)	1.44741909646186	0.0215980308192751	0.998093973618798	Tier 3	P09
+BP	GO:0043414	macromolecule methylation	Other (no theme regex matched)	1.62230432165225	0.0232495053203501	0.999074162138404	Tier 3	P09
+BP	GO:0006399	tRNA metabolic process	Ribosome / translation / RNA processing	1.78129004921938	0.000414558098920503	0.999074162138404	Tier 3	P10
+MF	GO:0140101	catalytic activity, acting on a tRNA	Ribosome / translation / RNA processing	1.60163215593123	0.0142479933588352	0.998093973618798	Tier 3	P10
+BP	GO:0009451	RNA modification	Other (no theme regex matched)	1.5045756965452	0.0145797811215161	0.999074162138404	Tier 3	P10
+BP	GO:0008033	tRNA processing	Ribosome / translation / RNA processing	1.52361825167784	0.0314125639414645	0.999074162138404	Tier 4	P10
+BP	GO:0042254	ribosome biogenesis	Ribosome / translation / RNA processing	2.16523087077237	1.38620490596681e-09	0.999074162138404	Tier 3	P11
+BP	GO:0022613	ribonucleoprotein complex biogenesis	Ribosome / translation / RNA processing	1.97879086422567	1.1598641655191e-08	0.999074162138404	Tier 3	P11
+BP	GO:0016072	rRNA metabolic process	Ribosome / translation / RNA processing	1.92435049100816	1.78116069251803e-05	0.999074162138404	Tier 3	P11
+BP	GO:0006364	rRNA processing	Ribosome / translation / RNA processing	1.92545254503873	2.9763966674139e-05	0.999074162138404	Tier 3	P11
+MF	GO:0005525	GTP binding	Other (no theme regex matched)	1.5115950935043	0.0111312933503029	0.998093973618798	Tier 3	P12
+MF	GO:0032561	guanyl ribonucleotide binding	Other (no theme regex matched)	1.5115950935043	0.0111312933503029	0.998093973618798	Tier 3	P12
+MF	GO:0019001	guanyl nucleotide binding	Other (no theme regex matched)	1.48426161421624	0.0160294571144481	0.998093973618798	Tier 3	P12
+CC	GO:0009654	photosystem II oxygen evolving complex	Photosynthesis / plastid / thylakoid	2.355727459589	2.34416541365753e-05	0.997010742778294	Tier 3	P13
+CC	GO:1990204	oxidoreductase complex	Heme / oxidoreductase	1.61553069456372	0.0143258214229882	0.997010742778294	Tier 3	P13
+MF	GO:0016903	oxidoreductase activity, acting on the aldehyde or oxo group of donors	Heme / oxidoreductase	1.71877064712401	0.0215980308192751	0.998093973618798	Tier 3	P14
+MF	GO:0016620	oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor	Heme / oxidoreductase	1.72780096526795	0.0498012803119389	0.998093973618798	Tier 3	P14
+BP	GO:0140053	mitochondrial gene expression	Other (no theme regex matched)	2.13591152810173	0.000991998443776503	0.999074162138404	Tier 3	P15
+BP	GO:0032543	mitochondrial translation	Ribosome / translation / RNA processing	1.993594284358	0.00766267144515484	0.999074162138404	Tier 3	P15
+BP	GO:0009657	plastid organization	Photosynthesis / plastid / thylakoid	2.3328631664953	1.48990268183486e-06	0.999074162138404	Tier 3	P16
+BP	GO:0009658	chloroplast organization	Photosynthesis / plastid / thylakoid	2.33128621845648	7.19113190907912e-06	0.999074162138404	Tier 3	P16
+CC	GO:0009532	plastid stroma	Photosynthesis / plastid / thylakoid	1.95928153542654	6.44166041240148e-05	0.997010742778294	Tier 3	P17
+CC	GO:0009570	chloroplast stroma	Photosynthesis / plastid / thylakoid	1.9411660771248	0.000225312705803196	0.997010742778294	Tier 3	P17
+CC	GO:0009941	chloroplast envelope	Photosynthesis / plastid / thylakoid	1.86494335362658	0.000221482099463641	0.997010742778294	Tier 3	P18
+CC	GO:0031969	chloroplast membrane	Photosynthesis / plastid / thylakoid	1.58719619722444	0.0398430933034464	0.997010742778294	Tier 3	P18
+BP	GO:0042273	ribosomal large subunit biogenesis	Ribosome / translation / RNA processing	2.00941654129816	0.000356435373695421	0.999074162138404	Tier 3	P19
+BP	GO:0000470	maturation of LSU-rRNA	Ribosome / translation / RNA processing	1.7110322108479	0.0406266595857674	0.999074162138404	Tier 3	P19
+BP	GO:0006414	translational elongation	Ribosome / translation / RNA processing	2.11369981088573	0.00124510394427209	0.999074162138404	Tier 3	P20
+MF	GO:0003746	translation elongation factor activity	Ribosome / translation / RNA processing	2.10984239397504	0.0035896578171871	0.998093973618798	Tier 3	P20
+CC	GO:0015935	small ribosomal subunit	Ribosome / translation / RNA processing	2.46307414676021	3.06239890565319e-08	0.997010742778294	Tier 3	P21
+CC	GO:0022627	cytosolic small ribosomal subunit	Ribosome / translation / RNA processing	2.40392673975053	7.05218367471644e-07	0.997010742778294	Tier 3	P21
+MF	GO:0043021	ribonucleoprotein complex binding	Ribosome / translation / RNA processing	1.74720467441325	0.0194552541084801	0.998093973618798	Tier 3	P22
+MF	GO:0043022	ribosome binding	Ribosome / translation / RNA processing	1.7380707443853	0.0326670311433461	0.998093973618798	Tier 3	P22
+BP	GO:0071554	cell wall organization or biogenesis	Carbohydrate binding / cell wall	1.43739429459964	0.0346007267193352	0.999074162138404	Tier 3	P23
+BP	GO:0045488	pectin metabolic process	Carbohydrate binding / cell wall	1.62953594195933	0.0418837930056803	0.999074162138404	Tier 3	P24
+BP	GO:0006353	DNA-templated transcription termination	Other (no theme regex matched)	2.50523956794286	2.37963194469395e-06	0.999074162138404	Tier 3	P25
+BP	GO:0032502	developmental process	Other (no theme regex matched)	1.56101796423889	0.0019698562401323	0.999074162138404	Tier 3	P26
+BP	GO:0006091	generation of precursor metabolites and energy	Other (no theme regex matched)	1.54371433532117	0.00397721047434057	0.999074162138404	Tier 3	P27
+BP	GO:0044283	small molecule biosynthetic process	Other (no theme regex matched)	1.41940171481403	0.00599139533043742	0.999074162138404	Tier 3	P28
+BP	GO:0000959	mitochondrial RNA metabolic process	Other (no theme regex matched)	1.94679630299853	0.00950672353322203	0.999074162138404	Tier 3	P29
+BP	GO:0016052	carbohydrate catabolic process	Other (no theme regex matched)	1.51213729250661	0.0144372195678945	0.999074162138404	Tier 3	P30
+BP	GO:0050793	regulation of developmental process	Other (no theme regex matched)	1.69043061740908	0.0144372195678945	0.999074162138404	Tier 3	P31
+CC	GO:0034708	methyltransferase complex	Other (no theme regex matched)	2.02426472215044	0.00638062856959396	0.997010742778294	Tier 3	P32
+CC	GO:0048046	apoplast	Other (no theme regex matched)	1.62139383857302	0.036871769123606	0.997010742778294	Tier 3	P33
+MF	GO:0003729	mRNA binding	Other (no theme regex matched)	1.90412848082776	8.27680188385834e-05	0.998093973618798	Tier 3	P34
+MF	GO:0004176	ATP-dependent peptidase activity	Other (no theme regex matched)	1.8779171956847	0.0138855920164271	0.998093973618798	Tier 3	P35
+MF	GO:0016874	ligase activity	Other (no theme regex matched)	1.46252262486816	0.016887933549633	0.998093973618798	Tier 3	P36
+BP	GO:0072596	establishment of protein localization to chloroplast	Photosynthesis / plastid / thylakoid	1.98504481874784	0.0144372195678945	0.999074162138404	Tier 3	P37
+BP	GO:0002181	cytoplasmic translation	Ribosome / translation / RNA processing	2.15343947899523	0.000138161400583525	0.999074162138404	Tier 3	P38
+BP	GO:0042255	ribosome assembly	Ribosome / translation / RNA processing	1.81416176337866	0.0144238565720915	0.999074162138404	Tier 3	P39
+BP	GO:0042274	ribosomal small subunit biogenesis	Ribosome / translation / RNA processing	1.75347883625684	0.0191007522104996	0.999074162138404	Tier 3	P40
+BP	GO:0030488	tRNA methylation	Ribosome / translation / RNA processing	1.74872444805812	0.0415993008520865	0.999074162138404	Tier 3	P41
+CC	GO:0030684	preribosome	Ribosome / translation / RNA processing	1.67749080893246	0.0186427715548171	0.997010742778294	Tier 3	P42
+CC	GO:0005730	nucleolus	Ribosome / translation / RNA processing	1.40625975572743	0.0414710843927955	0.997010742778294	Tier 3	P43
+MF	GO:0019843	rRNA binding	Ribosome / translation / RNA processing	2.30697854967278	7.9493832572591e-06	0.998093973618798	Tier 3	P44

@@ -1,0 +1,5 @@
+query_id	query	hit_count	records_saved	retrieved_utc
+Q1_stv	TITLE_ABS:"southern tomato virus"	32	32	2026-10-26T16:23:02Z
+Q2_amalgavirus	(TITLE_ABS:"amalgavirus" OR TITLE_ABS:"amalgaviridae")	67	50	2026-10-26T16:23:02Z
+Q3_tomato_virus_transcriptome	(TITLE:"tomato" AND TITLE_ABS:"virus" AND (TITLE_ABS:"RNA-seq" OR TITLE_ABS:"transcriptome" OR TITLE_ABS:"transcriptomic") AND (TITLE_ABS:"leaf" OR TITLE_ABS:"leaves"))	84	40	2026-10-26T16:23:02Z
+Q4_persistent_virus_host_expression	((TITLE_ABS:"persistent virus" OR TITLE_ABS:"persistent viruses" OR TITLE_ABS:"endornavirus" OR TITLE_ABS:"cryptic virus" OR TITLE_ABS:"partitivirus") AND (TITLE_ABS:"transcriptome" OR TITLE_ABS:"RNA-seq" OR TITLE_ABS:"gene expression") AND TITLE_ABS:"plant")	19	19	2026-10-26T16:23:02Z

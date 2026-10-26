@@ -521,3 +521,48 @@ live outside the repository and are not committed. Every reported number comes f
       `results_by_process.md`, `functional_analysis_plan.md` §8.6, `reproducibility_audit.md` R13, `README.md`.
     - Pre-commit checks then ran and one commit "Phase 6B closure: decision audit and organelle assessment" was pushed.
       Hashes and remote verification are in the Phase 7 entries below.
+
+## Phase 7 — biological integration (2026-10-26; frozen results only)
+
+126. **Phase 6B closure commit.**
+    - Pre-commit audit: 38 staged files, largest 226,202 B; no forbidden path, secret pattern or CRLF; only docs/README
+      modified among tracked files.
+    - Commit `13e87be8c8c03702c90b85438d8794ab39d4d1ed`, pushed with the one-off `gh.exe` credential helper.
+    - `git ls-remote origin refs/heads/main` = local HEAD; working tree clean; no credential stored in the repo config.
+127. **Literature search** (`scripts/bash/literature_search_europepmc.sh`; Europe PMC REST; metadata only).
+    - First run: HTTP 503. The cause was the `sort=RELEVANCE` parameter (curl test: 200 without it, 503 with it); the
+      parameter was removed and retry/backoff added.
+    - Hits: Q1 32, Q2 67, Q3 84, Q4 19.
+    - Abstracts read for 23 records through the API (ad-hoc reader; nothing saved). One targeted query timed out and was
+      repeated successfully.
+    - Full text read: Badeli et al. 2026 (Research Square HTML v1). ICTV *Amalgaviridae* report page read.
+    - A `curl` query passed through PowerShell lost its quotes (wrong hit count); it was repeated from a script file.
+128. **`scripts/R/20_biological_integration.R`** (exit 0; log `logs/phase7_20_biological_integration.log`).
+    - First run failed (`setorder` on an expression); fixed.
+    - The ethylene description regex was first applied to full descriptions and matched UniProt identifiers inside the
+      AHRD tags (e.g. "EIL"). It now matches short descriptions only.
+    - U2 was first coded with LOO alone; revised to also require weak replicate consistency (D-045; disclosed in
+      `biological_integration.md` §2).
+    - Final: 7 EXPLORATORY, 3 UNSUPPORTED.
+129. **`scripts/R/21_go_redundancy_modules.R`** (exit 0).
+    - First run failed because `data.table(key = ...)` treats `key` as an argument; the column was renamed `set_key`.
+    - Result: 73 modules at cut 0.7.
+130. **`scripts/R/22_phase7_figures.R`** (exit 0). F1 – F4.
+    - Layout fixes: wrapped caveats (F3); shorter labels and aligned panels (F4).
+    - One edit was lost to a race between pulling the file and the editor saving it; it was re-applied and verified on
+      disk before syncing.
+131. **Consistency checks.**
+    - Theme-level LOO dependence recomputed from `loo_dependence_by_set.tsv` matches the frozen
+      `loo_dependence_summary.tsv` (e.g. CC STV_infected_rep1 21/44 = 47.7 %). No inconsistency between frozen tables and
+      Phase 6B summaries (STOP 8 not triggered).
+    - Ribosome theme: 26/34 sets depend on STV_infected_rep1. This is not "entirely one sample", and the collection-level
+      dependence was documented in Phase 6B (STOP 7 not triggered). ER: 4/4 on STV_free_rep1, already documented in the
+      Phase 6B evidence table.
+132. **Mercator4** (<https://www.plabipd.de/mercator_main.html>) checked once: v8.0, "currently undergoing scheduled
+     maintenance". Not submitted; Phase 7 does not depend on it.
+133. **Docs.**
+    - New: `biological_integration.md`, `literature_biological_context.md`, `phase7_biological_interpretation.md`.
+    - Updated: `decisions.md` (D-045 – D-048), `methods_references.md` (§44 – §46), `results_by_process.md` (rows
+      43 – 48), `software_versions.md`, `README.md`, this log.
+134. **Not executed:** Salmon, tximport, DESeq2, fgsea, CAMERA, gene-exclusion fgsea (owner: not justified), Mercator4 /
+     MapMan, clean-clone reproducibility audit.

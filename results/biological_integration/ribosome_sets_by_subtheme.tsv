@@ -1,0 +1,35 @@
+collection	go_id	term_name	subtheme	NES	padj_fgsea	camera_FDR	tier	replicate_class	loo_dependent_STV_free_rep1	n_samples_dependent	le_org_identical
+BP	GO:0042254	ribosome biogenesis	ribosome biogenesis / rRNA processing	2.16523087077237	1.38620490596681e-09	0.999074162138404	Tier 3	partially consistent	FALSE	1	0
+BP	GO:0022613	ribonucleoprotein complex biogenesis	ribosome biogenesis / rRNA processing	1.97879086422567	1.1598641655191e-08	0.999074162138404	Tier 3	partially consistent	FALSE	1	0
+BP	GO:0016072	rRNA metabolic process	ribosome biogenesis / rRNA processing	1.92435049100816	1.78116069251803e-05	0.999074162138404	Tier 3	partially consistent	FALSE	1	0
+BP	GO:0006364	rRNA processing	ribosome biogenesis / rRNA processing	1.92545254503873	2.9763966674139e-05	0.999074162138404	Tier 3	partially consistent	FALSE	1	0
+BP	GO:0002181	cytoplasmic translation	translation / peptide biosynthesis	2.15343947899523	0.000138161400583525	0.999074162138404	Tier 3	partially consistent	FALSE	1	0
+BP	GO:0042273	ribosomal large subunit biogenesis	ribosome structure (cytosolic or organellar)	2.00941654129816	0.000356435373695421	0.999074162138404	Tier 3	partially consistent	FALSE	1	0
+BP	GO:0006399	tRNA metabolic process	tRNA / RNA modification	1.78129004921938	0.000414558098920503	0.999074162138404	Tier 3	partially consistent	FALSE	1	0
+BP	GO:0006414	translational elongation	translation / peptide biosynthesis	2.11369981088573	0.00124510394427209	0.999074162138404	Tier 3	partially consistent	FALSE	0	0
+BP	GO:0032543	mitochondrial translation	translation / peptide biosynthesis	1.993594284358	0.00766267144515484	0.999074162138404	Tier 3	partially consistent	TRUE	1	0
+BP	GO:0042255	ribosome assembly	ribosome structure (cytosolic or organellar)	1.81416176337866	0.0144238565720915	0.999074162138404	Tier 3	partially consistent	FALSE	1	0
+BP	GO:0006413	translational initiation	translation / peptide biosynthesis	1.73410513207762	0.0144372195678945	0.999074162138404	Tier 3	partially consistent	TRUE	2	0
+BP	GO:0042274	ribosomal small subunit biogenesis	ribosome structure (cytosolic or organellar)	1.75347883625684	0.0191007522104996	0.999074162138404	Tier 3	partially consistent	FALSE	2	0
+BP	GO:0008033	tRNA processing	tRNA / RNA modification	1.52361825167784	0.0314125639414645	0.999074162138404	Tier 4	partially consistent	FALSE	0	0
+BP	GO:0000470	maturation of LSU-rRNA	ribosome biogenesis / rRNA processing	1.7110322108479	0.0406266595857674	0.999074162138404	Tier 3	ambiguous	FALSE	1	0
+BP	GO:0030488	tRNA methylation	tRNA / RNA modification	1.74872444805812	0.0415993008520865	0.999074162138404	Tier 3	partially consistent	FALSE	0	0
+CC	GO:0005840	ribosome	ribosome structure (cytosolic or organellar)	2.80084623436518	4.99906512473289e-30	0.997010742778294	Tier 3	partially consistent	FALSE	2	1
+CC	GO:0044391	ribosomal subunit	ribosome structure (cytosolic or organellar)	2.83351874563613	3.25594819212342e-22	0.997010742778294	Tier 3	partially consistent	FALSE	2	1
+CC	GO:0022626	cytosolic ribosome	ribosome structure (cytosolic or organellar)	2.91668612278351	2.97729910943935e-21	0.997010742778294	Tier 3	partially consistent	FALSE	2	0
+CC	GO:0015934	large ribosomal subunit	ribosome structure (cytosolic or organellar)	2.69081252808148	1.38570555198776e-14	0.997010742778294	Tier 3	partially consistent	FALSE	2	0
+CC	GO:0022625	cytosolic large ribosomal subunit	ribosome structure (cytosolic or organellar)	2.77532848628689	4.0388061624456e-14	0.997010742778294	Tier 3	partially consistent	FALSE	2	0
+CC	GO:0015935	small ribosomal subunit	ribosome structure (cytosolic or organellar)	2.46307414676021	3.06239890565319e-08	0.997010742778294	Tier 3	partially consistent	FALSE	2	1
+CC	GO:0022627	cytosolic small ribosomal subunit	ribosome structure (cytosolic or organellar)	2.40392673975053	7.05218367471644e-07	0.997010742778294	Tier 3	partially consistent	FALSE	2	0
+CC	GO:0030684	preribosome	ribosome biogenesis / rRNA processing	1.67749080893246	0.0186427715548171	0.997010742778294	Tier 3	ambiguous	FALSE	1	0
+CC	GO:0005852	eukaryotic translation initiation factor 3 complex	translation / peptide biosynthesis	1.87857184940467	0.0313250357968939	0.997010742778294	Tier 3	partially consistent	FALSE	1	0
+CC	GO:0070993	cytosolic translation preinitiation complex	translation / peptide biosynthesis	1.82696154360274	0.0338732729871367	0.997010742778294	Tier 3	partially consistent	FALSE	1	0
+CC	GO:0005730	nucleolus	ribosome biogenesis / rRNA processing	1.40625975572743	0.0414710843927955	0.997010742778294	Tier 3	partially consistent	FALSE	1	0
+MF	GO:0003735	structural constituent of ribosome	ribosome structure (cytosolic or organellar)	2.79033916440853	7.91569230506504e-29	0.998093973618798	Tier 3	partially consistent	FALSE	2	1
+MF	GO:0019843	rRNA binding	ribosome biogenesis / rRNA processing	2.30697854967278	7.9493832572591e-06	0.998093973618798	Tier 3	partially consistent	FALSE	2	1
+MF	GO:0180051	translation factor activity	translation / peptide biosynthesis	2.05276481510016	0.000166876772148048	0.998093973618798	Tier 3	partially consistent	TRUE	2	0
+MF	GO:0003746	translation elongation factor activity	translation / peptide biosynthesis	2.10984239397504	0.0035896578171871	0.998093973618798	Tier 3	partially consistent	FALSE	0	0
+MF	GO:0140101	catalytic activity, acting on a tRNA	tRNA / RNA modification	1.60163215593123	0.0142479933588352	0.998093973618798	Tier 3	partially consistent	FALSE	0	0
+MF	GO:0043021	ribonucleoprotein complex binding	other RNA processing	1.74720467441325	0.0194552541084801	0.998093973618798	Tier 3	partially consistent	TRUE	1	0
+MF	GO:0043022	ribosome binding	ribosome structure (cytosolic or organellar)	1.7380707443853	0.0326670311433461	0.998093973618798	Tier 3	partially consistent	TRUE	1	0
+MF	GO:0003743	translation initiation factor activity	translation / peptide biosynthesis	1.63932843672134	0.0346858484194418	0.998093973618798	Tier 3	partially consistent	TRUE	2	0

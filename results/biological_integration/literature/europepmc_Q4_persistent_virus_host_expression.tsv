@@ -1,0 +1,20 @@
+rank	source	id	pmid	doi	year	journal	pub_type	title
+1	MED	41828524	41828524	10.3390/ijms27052300	2026	Int J Mol Sci	research-article; journal article	Library Preparation Biases Plant Virome Detection: Poly(A) mRNA Enrichment vs. rRNA Depletion in Pepper and Garlic.
+2	MED	42761200	42761200	10.3389/fpls.2026.1933649	2026	Front Plant Sci	journal article	Metatranscriptomic profiling uncovers a distinctive pepper virome in tropical Indonesia.
+3	MED	41830861	41830861	10.1016/j.virol.2026.110851	2026	Virology	comparative study; journal article	Exploring the possible cause of different levels of RNA silencing against BNYVV in transgenic sugar beets: a comparative virus transcriptome study.
+4	MED	42259393	42259393	10.1016/j.virusres.2026.199761	2026	Virus Res	research-article; journal article	Toward in planta studies of persistent fungal viruses in a model plant.
+5	MED	39794435	39794435	10.1038/s41598-025-85281-y	2025	Sci Rep	research support, non-u.s. gov't; research-article; journal article	High-throughput sequencing revealed the symptomatic common bean (Phaseolus vulgaris L.) virome in Iran.
+6	AGR	IND609153087			2025	Gene	journal article	Expansion of the genus Bevemovirus: Novel genome discovery and evidence for virus–host co-segregation
+7	MED	40398647	40398647	10.1016/j.gene.2025.149573	2025	Gene	journal article	Expansion of the genus Bevemovirus: Novel genome discovery and evidence for virus-host co-segregation.
+8	MED	32533330	32533330	10.1007/s00705-020-04670-y	2020	Arch Virol	journal article	Complete genome sequence of a novel partitivirus from a wild brassicaceous plant, Arabidopsis halleri.
+9	AGR	IND607414523		10.1007/s10327-021-01002-z	2021	J Gen Plant Pathol	journal article	Identification of genome sequences of novel partitiviruses in the quinoa (Chenopodium quinoa) transcriptome datasets
+10	MED	36142418	36142418	10.3390/ijms231810507	2022	Int J Mol Sci	research-article; review; journal article	Viromes of 15 Pepper (<i>Capsicum annuum</i> L.) Cultivars.
+11	MED	36298830	36298830	10.3390/v14102276	2022	Viruses	research support, non-u.s. gov't; research-article; journal article	Small RNA Analyses of a <i>Ceratobasidium</i> Isolate Infected with Three Endornaviruses.
+12	MED	27549115	27549115	10.1093/femsec/fiw176	2016	FEMS Microbiol Ecol	research-article; journal article	RNA-Seq reveals virus-virus and virus-plant interactions in nature.
+13	MED	30357428	30357428	10.1007/s00248-018-1271-4	2019	Microb Ecol	journal article	A Survey on Plant Viruses in Natural Brassicaceae Communities Using RNA-Seq.
+14	MED	30103770	30103770	10.1186/s12985-018-1033-4	2018	Virol J	research support, non-u.s. gov't; research-article; journal article	De novo transcriptomic assembly and mRNA expression patterns of Botryosphaeria dothidea infection with mycoviruses chrysovirus 1 (BdCV1) and partitivirus 1 (BdPV1).
+15	AGR	IND606820418		10.1007/s10658-019-01911-y	2020	Eur J Plant Pathol	journal article	The persistent southern tomato virus modifies miRNA expression without inducing symptoms and cell ultra-structural changes
+16	PPR	PPR595460		10.1101/2023.01.11.523546	2023	bioRxiv	preprint	Virome analyses by next-generation sequencing (NGS) in chilli (  <i>Capsicum anuum</i>  L.) presented with diverse symptoms phenotype revealed the association of seven plant viruses
+17	MED	30669373	30669373	10.3390/v11010081	2019	Viruses	research support, non-u.s. gov't; research-article; journal article	Detection and Characterization of <i>Cucumis melo</i> Cryptic Virus, <i>Cucumis melo</i> Amalgavirus 1, and Melon Necrotic Spot Virus in <i>Cucumis melo</i>.
+18	MED	28165016	28165016	10.1038/srep41987	2017	Sci Rep	research support, non-u.s. gov't; research-article; journal article	Transcriptome sequencing identifies novel persistent viruses in herbicide resistant wild-grasses.
+19	MED	26358043	26358043	10.1007/s11103-015-0362-6	2015	Plant Mol Biol	research support, non-u.s. gov't; review; journal article	Virus tolerance and recovery from viral induced-symptoms in plants are associated with transcriptome reprograming.

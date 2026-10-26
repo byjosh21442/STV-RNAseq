@@ -139,3 +139,26 @@ Persistent-virus context, applying to all themes and indirect: Roossinck 2010 an
 decision (D-044); details in [organelle_requantification_assessment.md](organelle_requantification_assessment.md) §7 – §8.
 **Owner decisions (2026-10-26):** D-044 Option A approved; D-042 REGENERATE ON DEMAND approved; no gene-exclusion fgsea.
 Phase 6B is closed.
+
+## Phase 7 — biological integration (2026-10-26; integration of frozen results; no new test)
+
+Gene-level result unchanged: **0 genes at padj < 0.05**. Details: [biological_integration.md](biological_integration.md),
+[literature_biological_context.md](literature_biological_context.md),
+[phase7_biological_interpretation.md](phase7_biological_interpretation.md).
+
+| # | Process | Input | Tool / version | Parameters | Reference pipeline / study | Quantitative result | Technical interpretation | Decision | Evidence / output files |
+|---|---|---|---|---|---|---|---|---|---|
+| 43 | Theme evidence matrix (Tasks 2 – 3) | Frozen Phase 6 / 6B / D-044 tables | R 4.5.3, data.table | Rules U1 – U3; Phase 7 can only keep or lower a class | — | 10 themes: **7 EXPLORATORY, 3 UNSUPPORTED** (ribosome/translation, ER, ATP synthase); 0 ROBUST / SUPPORTED | No theme is CAMERA-supported; the class depends on replicate, LOO and ch00 diagnostics | D-045 | `results/biological_integration/theme_evidence_matrix.tsv`, `theme_set_level_evidence.tsv`; F1, F3 |
+| 44 | Ribosome / translation (Task 9) | 34 sets, 569 leading-edge genes | R | Descriptive | Zorzatto et al. 2015; Prigigallo et al. 2025 | 0/34 broadly consistent; 26/34 depend on STV_infected_rep1; median CAMERA VIF 36.6 | Strongest fgsea signal not defensible | D-045 | `ribosome_*.tsv` |
+| 45 | Photosynthesis / plastid (Task 10) | 25 sets | R | Corrected organelle class (D-044) | Hanssen et al. 2011; He et al. 2024 | 0 ch00-sensitive; 1.1 % organelle-identical leading-edge slots; 15/25 broadly consistent | Tendency persists after the ch00 caveat; exploratory | D-045 | `photosynthesis_sets_organelle_check.tsv` |
+| 46 | Ethylene case study (Task 8) | 120 ethylene-related tested genes; 3 GO sets | R; DESeq2 blind VST (read only) | Fixed selection rule; per-gene pair counts (descriptive) | Fukuhara et al. 2020; Badeli et al. 2026 [preprint] | 0 genes padj < 0.05; ACO1 padj 0.297 (9/9 pairs lower); 3 GO sets NES −2.02 to −1.69, CAMERA FDR 0.999 | Directional, pathway-level, exploratory; not significantly altered | D-045 | `ethylene_case_study.tsv`, `ethylene_go_sets.tsv`; F4 |
+| 47 | GO redundancy (Task 14) | 215 sets | R; ontologyIndex 2.12; pheatmap | Jaccard; GO ancestors; average linkage, cut 0.7 | Jaccard 1912 | 329 pairs full J ≥ 0.5; 353 leading-edge J ≥ 0.5; 369 ancestor pairs; 73 modules (103 / 44 at cut 0.5 / 0.9) | 215 sets ≈ 40 – 100 redundancy groups | D-047 | `go_redundancy_*.tsv`, `go_module_summary.tsv`; F5, F5b |
+| 48 | Literature (Tasks 4 – 7) | Europe PMC Q1 – Q4 + targeted queries; ICTV; Badeli full text | Python 3.14.4 (Europe PMC REST) | Manual selection; abstracts / full text read | 26 sources in the source table | STV: persistent, seed-transmitted, asymptomatic alone; no STV source on photosynthesis, translation or defence; both earlier analyses of these data report lower ethylene-related expression; Badeli et al. also find 0 DEG | Plausibility only (L5) | D-046 | `literature/europepmc_*.tsv`; `curated_theme_literature.tsv` |
+
+**Phase 7 statement for reports:**
+- No gene is differentially expressed at FDR < 0.05.
+- Pathway-level rank analysis shows exploratory directional tendencies: plastid/photosynthesis-related sets rank higher
+  and a partly shared defence-, ethylene- and stress-related set of terms ranks lower in STV-infected leaves.
+- None survived correlation-aware validation.
+- Ribosome/translation, ER and ATP-synthase signals are not supported: they depend on a single sample or on
+  organelle-identical features.

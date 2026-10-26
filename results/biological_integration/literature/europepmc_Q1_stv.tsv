@@ -1,0 +1,33 @@
+rank	source	id	pmid	doi	year	journal	pub_type	title
+1	PPR	PPR1156040		10.21203/rs.3.rs-8823240/v1	2026	Research Square	preprint	Reanalysis of the Tomato Transcriptome Revealed Host Responses to Southern Tomato Virus Infection
+2	MED	41012621	41012621	10.3390/v17091193	2025	Viruses	research-article; journal article	First Detection and Identification of Southern Tomato Virus Infecting Tomatoes in Oklahoma with Complete Genome Characterization and Insights into Global Genetic Diversity.
+3	MED	41820463	41820463	10.1038/s41598-026-41332-6	2026	Sci Rep	research-article; journal article	High-throughput sequencing-based virome analysis reveals genomic diversity and recombination of tomato-infecting viruses in Korea.
+4	AGR	IND609521945			2026	Plant Dis	journal article	Mapping the Enigma of Cryptic Tomato Yellow Stunt Disease: A Synergistic Viral Infection Threatening Global Tomato Health
+5	MED	42420848	42420848	10.1186/s12870-026-09443-4	2026	BMC Plant Biol	research-article; journal article	Virome analysis uncovers the tomato virosphere and a novel recombinant begomovirus-alphasatellite complex causing leaf curl disease in India.
+6	MED	40587188	40587188	10.1094/pdis-04-25-0930-sc	2026	Plant Dis	journal article	Mapping the Enigma of Cryptic Tomato Yellow Stunt Disease: A Synergistic Viral Infection Threatening Global Tomato Health.
+7	MED	37361930	37361930	10.1007/s41348-023-00729-5	2023	J Plant Dis Prot (2006)	brief-report; journal article	Localization of southern tomato virus (STV) in tomato tissues.
+8	MED	41157605	41157605	10.3390/v17101334	2025	Viruses	research-article; journal article	Metagenomics Study of the Commercial Tomato Virome Focused on Virus Species of Epidemiological Interest.
+9	PPR	PPR526208		10.21203/rs.3.rs-1899319/v1	2022	Research Square	preprint	Distribution of southern tomato virus in tomato tissues
+10	MED	32737756	32737756	10.1007/s11262-020-01785-x	2020	Virus Genes	journal article	Geographically distant isolates of the persistent southern tomato virus (STV) show very low genetic diversity in the putative coat protein gene.
+11	MED	38005817	38005817	10.3390/v15112139	2023	Viruses	research-article; journal article	Exploring Tomato Fruit Viromes through Transcriptome Data Analysis.
+12	AGR	IND608051967		10.1094/pdis-02-22-0250-pdn	2023	Plant Dis	journal article	First Report of Southern Tomato Virus from Tomato (Solanum lycopersicum) in Greece
+13	MED	33810543	33810543	10.3390/microorganisms9040689	2021	Microorganisms	research-article; journal article	Persistent Southern Tomato Virus (STV) Interacts with Cucumber Mosaic and/or Pepino Mosaic Virus in Mixed- Infections Modifying Plant Symptoms, Viral Titer and Small RNA Accumulation.
+14	MED	28209810	28209810	10.1128/genomea.01374-16	2017	Genome Announc	brief-report; journal article	Genome Sequence of <i>Southern tomato virus</i> in Asymptomatic Tomato 'Sweet Hearts'.
+15	MED	31620899	31620899	10.1007/s00705-019-04436-1	2020	Arch Virol	comparative study; journal article	Effect of asymptomatic infection with southern tomato virus on tomato plants.
+16	AGR	IND606820418		10.1007/s10658-019-01911-y	2020	Eur J Plant Pathol	journal article	The persistent southern tomato virus modifies miRNA expression without inducing symptoms and cell ultra-structural changes
+17	MED	26722014	26722014	10.1128/genomea.01522-15	2015	Genome Announc	brief-report; journal article	Complete Genome Sequence of Southern tomato virus Naturally Infecting Tomatoes in Bangladesh.
+18	MED	34834658	34834658	10.3390/plants10112295	2021	Plants (Basel)	research-article; journal article	Detection of Persistent Viruses by High-Throughput Sequencing in Tomato and Pepper from Panama: Phylogenetic and Evolutionary Studies.
+19	MED	26494671	26494671	10.1128/genomea.01226-15	2015	Genome Announc	brief-report; journal article	Complete Genome Sequence of Southern tomato virus Identified in China Using Next-Generation Sequencing.
+20	AGR	IND608671781			2024	Plant Dis	journal article	First Report of Potato virus H Infecting Tomato (Solanum lycopersicum) in China
+21	AGR	IND605794818		10.1111/aab.12367	2017	Ann Appl Biol	journal article	Detection of Southern tomato virus by molecular hybridisation
+22	MED	34443753	34443753	10.3390/nano11081922	2021	Nanomaterials (Basel)	research-article; journal article	Identification of Tomato Infecting Viruses That Co-Isolate with Nanovesicles Using a Combined Proteomics and Electron-Microscopic Approach.
+23	MED	27965036	27965036	10.1016/j.jviromet.2016.12.004	2017	J Virol Methods	research support, non-u.s. gov't; journal article	Fast detection of Southern tomato virus by one-step transcription loop-mediated isothermal amplification (RT-LAMP).
+24	MED	33761774	33761774	10.1094/pdis-09-20-1915-re	2021	Plant Dis	journal article	Detection of Four New Tomato Viruses in Serbia Using Post Hoc High-Throughput Sequencing Analysis of Samples From a Large-Scale Field Survey.
+25	AGR	IND606139969		10.1094/pdis-09-17-1499-pdn	2018	Plant Dis	journal article	First Report of Southern tomato virus in Tomato (Solanum lycopersicum) in Korea
+26	MED	29373979	29373979	10.1186/s12985-018-0931-9	2018	Virol J	research support, non-u.s. gov't; research-article; journal article	Identification and genome analysis of tomato chlorotic spot virus and dsRNA viruses from coinfected vegetables in the Dominican Republic by high-throughput sequencing.
+27	MED	29424662	29424662	10.1094/mpmi-12-17-0301-r	2018	Mol Plant Microbe Interact	research support, non-u.s. gov't; journal article	Small RNA-Omics for Virome Reconstruction and Antiviral Defense Characterization in Mixed Infections of Cultivated Solanum Plants.
+28	MED	20721591	20721591	10.1007/s00705-010-0770-5	2010	Arch Virol	research support, non-u.s. gov't; journal article	A novel monopartite dsRNA virus from rhododendron.
+29	AGR	IND44347137			2009	Virus research	journal article	Southern tomato virus: The link between the families Totiviridae and Partitiviridae
+30	MED	19118586	19118586	10.1016/j.virusres.2008.11.018	2009	Virus Res	research support, non-u.s. gov't; journal article	Southern tomato virus: The link between the families Totiviridae and Partitiviridae.
+31	MED	30510545	30510545	10.3389/fmicb.2018.02739	2018	Front Microbiol	research-article; journal article	High-Throughput Sequencing Facilitates Characterization of a "Forgotten" Plant Virus: The Case of a Henbane Mosaic Virus Infecting Tomato.
+32	MED	30722473	30722473	10.1094/pdis-01-13-0017-pdn	2013	Plant Dis	journal article	First Report of Southern tomato virus on Tomatoes in Southwest France.

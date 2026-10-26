@@ -1,0 +1,14 @@
+metric	value
+significant_sets	215
+set_pairs	23005
+pairs_jaccard_full_ge_0.5	329
+pairs_jaccard_le_ge_0.5	353
+pairs_identical_membership	16
+pairs_go_ancestor_relation	369
+sets_with_any_ancestor_or_descendant_among_215	179
+modules_h0.7_positive	44
+modules_h0.7_negative	29
+singleton_modules_h0.7	34
+modules_h0.5_total	103
+modules_h0.9_total	44
+module_cut_height	0.7

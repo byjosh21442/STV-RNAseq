@@ -87,6 +87,11 @@ blast=2.17.0`. Alternatively, edit the `env=` line of the two scripts. Conda is 
 `$HOME/miniconda3/etc/profile.d/conda.sh` ([reproducibility_audit.md](reproducibility_audit.md) R2, R3). No environment was
 changed at the Phase 6B closure.
 
+Phase 7 changed no environment:
+- Scripts 20 – 22 use packages already in `stv-r`: data.table, DESeq2 (read-only), ontologyIndex, pheatmap, ggplot2,
+  ggrepel, cowplot.
+- The literature search uses system `python3` 3.14.4 (standard library) and the Europe PMC REST API.
+
 ## Not installed (by design)
 
 STAR, HISAT2, sra-tools, trimming tools, Docker integration, Apptainer.

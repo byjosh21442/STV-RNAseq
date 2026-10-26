@@ -1,0 +1,6 @@
+locus	name_in_source	source	itag40_gene_id	tested_18277	itag40_description	padj_NA_reason
+Solyc12g009240	Pathogenesis-related (PR)-protein	Badeli 2026 Table 2	Solyc12g009240.1	TRUE	Ethylene-responsive transcription factor (AHRD V3.3 *-* A0A2G3BP26_CAPCH)	NA
+Solyc07g049530	ACC oxidase 1 (ACO1)	Badeli 2026 Table 2	Solyc07g049530.3	TRUE	1-aminocyclopropane-1-carboxylate oxidase 1	NA
+Solyc02g086990	PGIP (Polygalacturonase inhibitor)	Badeli 2026 Table 2	Solyc02g086990.4	TRUE	Cyclic nucleotide-gated ion channel-like protein (AHRD V3.3 *** A0A2K3MW13_TRIPR)	NA
+Solyc07g007770	ERF017 (Ethylene-responsive TF)	Badeli 2026 Table 2	Solyc07g007770.2	FALSE	NA	NA
+Solyc01g095080	NAC1	Badeli 2026 text (gene highlighted by Fukuhara 2020)	Solyc01g095080.3	FALSE	NA	NA

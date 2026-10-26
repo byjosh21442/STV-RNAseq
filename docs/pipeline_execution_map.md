@@ -47,6 +47,10 @@ required to reproduce the primary results. Run everything from the project root 
 | 27 | Multi-HSP BLAST | `organelle_multihsp_blast.sh` | organelle FASTA (SHA-256 checked), ITAG4.0 cDNA, SL4.0 genome | `organelle_assessment/blast/` | external BLAST env | auto | Optional (post-hoc) | D-044 |
 | 28 | Organelle scope diagnostic | `19_organelle_scope_diagnostic.R` (checks the D-044 freeze) | BLAST tables, DESeq2, leading edges, 6B tables, `quant.sf` (read-only), `duplicate_clusters.tsv` | `organelle_assessment/*.tsv` | stv-r | auto | Optional (post-hoc) | D-044 |
 | 29 | GenBank provenance | `ch00_ncbi_provenance.sh` | NCBI Datasets / E-utilities, SL4.0 genome, row 28 output | `organelle_assessment/provenance/` | system python3, curl | auto (network) | Optional (post-hoc) | D-044 |
+| 30 | Literature search (Phase 7) | `literature_search_europepmc.sh` | Europe PMC REST | `biological_integration/literature/` (metadata) | system python3 | auto (network) + manual selection | Optional (interpretation only) | D-046 |
+| 31 | Evidence matrix and deep dives (Phase 7) | `20_biological_integration.R` | Phase 6 / 6B / D-044 tables, `go_gene_sets.rds`, `deseq2_objects.rds`, `curated_theme_literature.tsv` (manual) | `biological_integration/*.tsv` | stv-r | auto | Required for Phase 7 interpretation | D-045 |
+| 32 | GO redundancy (Phase 7) | `21_go_redundancy_modules.R` | row 31 output, `go_gene_sets.rds`, GO OBO | `go_redundancy_*.tsv`, F5, F5b | stv-r | auto | Optional (descriptive) | D-047 |
+| 33 | Phase 7 figures | `22_phase7_figures.R` | rows 31 – 32 | `figures/biological_integration/F1 – F4` | stv-r | auto | Optional | D-048 |
 
 ## Dependency outline
 
@@ -57,6 +61,7 @@ required to reproduce the primary results. Run everything from the project root 
                      │     └→ 9       └→ 13 (→ 13b manual), 14     22 ──→ 23 → 24, 25
                      └──────────────────────────────── 17 (quant.sf), 28 (quant.sf)
                                              26 → 27 → 28 → 29
+          (18 – 25, 28) + 30 (manual literature summary) → 31 → 32 → 33        [Phase 7]
 ```
 
 Not part of any stage: the Windows/WSL editing helpers (`.stv_tools`, staging). They are not needed to reproduce any

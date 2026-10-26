@@ -1,0 +1,895 @@
+set_a	set_b	term_a	term_b	theme_a	theme_b	same_direction	jaccard_full	jaccard_le	go_ancestor_relation
+BP:GO:0006754	CC:GO:0045259	ATP biosynthetic process	proton-transporting ATP synthase complex	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.9375	1	FALSE
+BP:GO:0043207	BP:GO:0051707	response to external biotic stimulus	response to other organism	Defence / biotic response	Defence / biotic response	TRUE	1	1	TRUE
+CC:GO:0005789	CC:GO:0042175	endoplasmic reticulum membrane	nuclear outer membrane-endoplasmic reticulum membrane network	Endoplasmic reticulum / protein folding	Endoplasmic reticulum / protein folding	TRUE	1	1	TRUE
+BP:GO:0001101	BP:GO:0009415	response to acid chemical	response to water	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9847	1	TRUE
+BP:GO:0008037	BP:GO:0048544	cell recognition	recognition of pollen	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+BP:GO:0009205	BP:GO:0009144	purine ribonucleoside triphosphate metabolic process	purine nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9817	1	TRUE
+BP:GO:0009145	BP:GO:0009206	purine nucleoside triphosphate biosynthetic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+BP:GO:0009201	BP:GO:0009142	ribonucleoside triphosphate biosynthetic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9412	1	FALSE
+BP:GO:0042743	BP:GO:0042744	hydrogen peroxide metabolic process	hydrogen peroxide catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+BP:GO:0006094	BP:GO:0019319	gluconeogenesis	hexose biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+BP:GO:0006635	BP:GO:0019395	fatty acid beta-oxidation	fatty acid oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+BP:GO:0006754	BP:GO:0015986	ATP biosynthetic process	proton motive force-driven ATP synthesis	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	1	1	TRUE
+CC:GO:0045259	BP:GO:0015986	proton-transporting ATP synthase complex	proton motive force-driven ATP synthesis	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.9375	1	FALSE
+CC:GO:0031968	CC:GO:0019867	organelle outer membrane	outer membrane	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9946	1	TRUE
+CC:GO:0034702	CC:GO:0034703	monoatomic ion channel complex	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+MF:GO:0016684	MF:GO:0004601	oxidoreductase activity, acting on peroxide as acceptor	peroxidase activity	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	1	1	TRUE
+MF:GO:0005525	MF:GO:0032561	GTP binding	guanyl ribonucleotide binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+MF:GO:0031406	MF:GO:0043177	carboxylic acid binding	organic acid binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+MF:GO:0046933	MF:GO:0015252	proton-transporting ATP synthase activity, rotational mechanism	proton channel activity	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	1	1	TRUE
+MF:GO:0004190	MF:GO:0070001	aspartic-type endopeptidase activity	aspartic-type peptidase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	1	1	TRUE
+CC:GO:0009534	CC:GO:0031976	chloroplast thylakoid	plastid thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.9935	1	TRUE
+CC:GO:0009535	CC:GO:0055035	chloroplast thylakoid membrane	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	1	1	TRUE
+CC:GO:0033290	CC:GO:0070993	eukaryotic 48S preinitiation complex	cytosolic translation preinitiation complex	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	1	1	TRUE
+CC:GO:0098827	CC:GO:0005789	endoplasmic reticulum subcompartment	endoplasmic reticulum membrane	Endoplasmic reticulum / protein folding	Endoplasmic reticulum / protein folding	TRUE	0.9927	0.9902	TRUE
+CC:GO:0098827	CC:GO:0042175	endoplasmic reticulum subcompartment	nuclear outer membrane-endoplasmic reticulum membrane network	Endoplasmic reticulum / protein folding	Endoplasmic reticulum / protein folding	TRUE	0.9927	0.9902	FALSE
+MF:GO:0005525	MF:GO:0019001	GTP binding	guanyl nucleotide binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9744	0.9896	TRUE
+MF:GO:0032561	MF:GO:0019001	guanyl ribonucleotide binding	guanyl nucleotide binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9744	0.9896	TRUE
+BP:GO:0001101	BP:GO:0009414	response to acid chemical	response to water deprivation	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.9771	0.9836	TRUE
+BP:GO:0009415	BP:GO:0009414	response to water	response to water deprivation	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.9922	0.9836	TRUE
+BP:GO:0043207	BP:GO:0044419	response to external biotic stimulus	biological process involved in interspecies interaction between organisms	Defence / biotic response	Other (no theme regex matched)	TRUE	0.9279	0.9773	FALSE
+BP:GO:0051707	BP:GO:0044419	response to other organism	biological process involved in interspecies interaction between organisms	Defence / biotic response	Other (no theme regex matched)	TRUE	0.9279	0.9773	TRUE
+MF:GO:0016755	MF:GO:0019787	aminoacyltransferase activity	ubiquitin-like protein transferase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9808	0.9727	TRUE
+BP:GO:0033013	BP:GO:0006778	tetrapyrrole metabolic process	porphyrin-containing compound metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.963	0.9655	TRUE
+CC:GO:0005840	MF:GO:0003735	ribosome	structural constituent of ribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.9431	0.9587	FALSE
+BP:GO:0019693	BP:GO:0009259	ribose phosphate metabolic process	ribonucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9467	0.9556	TRUE
+BP:GO:0042743	BP:GO:0072593	hydrogen peroxide metabolic process	reactive oxygen species metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8308	0.9545	TRUE
+BP:GO:0042744	BP:GO:0072593	hydrogen peroxide catabolic process	reactive oxygen species metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8308	0.9545	TRUE
+BP:GO:0016072	BP:GO:0006364	rRNA metabolic process	rRNA processing	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.9391	0.9479	TRUE
+MF:GO:0019787	MF:GO:0004842	ubiquitin-like protein transferase activity	ubiquitin-protein transferase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.951	0.9439	TRUE
+CC:GO:0042651	CC:GO:0034357	thylakoid membrane	photosynthetic membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.9041	0.9405	TRUE
+BP:GO:0009062	BP:GO:0006635	fatty acid catabolic process	fatty acid beta-oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8889	0.9375	TRUE
+BP:GO:0009062	BP:GO:0019395	fatty acid catabolic process	fatty acid oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8889	0.9375	FALSE
+CC:GO:0033290	CC:GO:0016282	eukaryotic 48S preinitiation complex	eukaryotic 43S preinitiation complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9412	0.9375	FALSE
+CC:GO:0016282	CC:GO:0070993	eukaryotic 43S preinitiation complex	cytosolic translation preinitiation complex	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.9412	0.9375	TRUE
+BP:GO:0009150	BP:GO:0009259	purine ribonucleotide metabolic process	ribonucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8688	0.9302	TRUE
+CC:GO:0009532	CC:GO:0009570	plastid stroma	chloroplast stroma	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.9684	0.9245	TRUE
+BP:GO:0033014	BP:GO:0006779	tetrapyrrole biosynthetic process	porphyrin-containing compound biosynthetic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.9286	0.9231	TRUE
+MF:GO:0016755	MF:GO:0004842	aminoacyltransferase activity	ubiquitin-protein transferase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9327	0.9182	TRUE
+BP:GO:0043207	BP:GO:0009607	response to external biotic stimulus	response to biotic stimulus	Defence / biotic response	Defence / biotic response	TRUE	0.8803	0.9149	TRUE
+BP:GO:0051707	BP:GO:0009607	response to other organism	response to biotic stimulus	Defence / biotic response	Defence / biotic response	TRUE	0.8803	0.9149	TRUE
+BP:GO:0046148	BP:GO:0042440	pigment biosynthetic process	pigment metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8438	0.9143	TRUE
+BP:GO:0019318	BP:GO:0005996	hexose metabolic process	monosaccharide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.792	0.9118	TRUE
+CC:GO:0042651	CC:GO:0009535	thylakoid membrane	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.9394	0.9114	TRUE
+CC:GO:0042651	CC:GO:0055035	thylakoid membrane	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.9394	0.9114	TRUE
+MF:GO:0016741	MF:GO:0008168	transferase activity, transferring one-carbon groups	methyltransferase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9291	0.9107	TRUE
+MF:GO:0020037	MF:GO:0046906	heme binding	tetrapyrrole binding	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.9062	0.9079	TRUE
+BP:GO:0055086	BP:GO:0006753	nucleobase-containing small molecule metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9341	0.9079	TRUE
+BP:GO:0033014	BP:GO:0033013	tetrapyrrole biosynthetic process	tetrapyrrole metabolic process	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.7778	0.8966	TRUE
+MF:GO:0005198	MF:GO:0003735	structural molecule activity	structural constituent of ribosome	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.8405	0.8962	TRUE
+BP:GO:0009607	BP:GO:0044419	response to biotic stimulus	biological process involved in interspecies interaction between organisms	Defence / biotic response	Other (no theme regex matched)	TRUE	0.824	0.8958	FALSE
+BP:GO:0009150	BP:GO:0019693	purine ribonucleotide metabolic process	ribose phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8225	0.8889	TRUE
+MF:GO:0016684	MF:GO:0016209	oxidoreductase activity, acting on peroxide as acceptor	antioxidant activity	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.7526	0.8889	FALSE
+MF:GO:0004601	MF:GO:0016209	peroxidase activity	antioxidant activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7526	0.8889	TRUE
+BP:GO:0009145	BP:GO:0009201	purine nucleoside triphosphate biosynthetic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8333	0.8824	FALSE
+BP:GO:0009206	BP:GO:0009201	purine ribonucleoside triphosphate biosynthetic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8333	0.8824	TRUE
+BP:GO:0009145	BP:GO:0009142	purine nucleoside triphosphate biosynthetic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7843	0.8824	FALSE
+BP:GO:0009206	BP:GO:0009142	purine ribonucleoside triphosphate biosynthetic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7843	0.8824	FALSE
+BP:GO:0009620	BP:GO:0050832	response to fungus	defense response to fungus	Defence / biotic response	Defence / biotic response	TRUE	0.9259	0.875	TRUE
+CC:GO:0015934	CC:GO:0022625	large ribosomal subunit	cytosolic large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.7762	0.87	TRUE
+BP:GO:0006413	MF:GO:0003743	translational initiation	translation initiation factor activity	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.9429	0.8636	FALSE
+BP:GO:0033014	BP:GO:0006778	tetrapyrrole biosynthetic process	porphyrin-containing compound metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.7407	0.8621	FALSE
+MF:GO:0005198	CC:GO:0005840	structural molecule activity	ribosome	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.7982	0.8619	FALSE
+BP:GO:0098869	MF:GO:0016209	cellular oxidant detoxification	antioxidant activity	Glutathione / detoxification	Other (no theme regex matched)	TRUE	0.8969	0.8611	FALSE
+CC:GO:0009579	CC:GO:0009534	thylakoid	chloroplast thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8407	0.8585	TRUE
+CC:GO:0009579	CC:GO:0031976	thylakoid	plastid thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8462	0.8585	TRUE
+BP:GO:0006163	BP:GO:0009117	purine nucleotide metabolic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8025	0.8571	TRUE
+BP:GO:0006778	BP:GO:0006779	porphyrin-containing compound metabolic process	porphyrin-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.75	0.8571	TRUE
+MF:GO:0031418	MF:GO:0048029	L-ascorbic acid binding	monosaccharide binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8611	0.8571	TRUE
+CC:GO:0034357	CC:GO:0009535	photosynthetic membrane	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8493	0.8571	TRUE
+CC:GO:0034357	CC:GO:0055035	photosynthetic membrane	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8493	0.8571	TRUE
+BP:GO:0046034	BP:GO:0009141	ATP metabolic process	nucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.8319	0.8525	TRUE
+BP:GO:0009657	BP:GO:0009658	plastid organization	chloroplast organization	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8404	0.8519	TRUE
+BP:GO:0046390	BP:GO:0006164	ribose phosphate biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6634	0.8462	FALSE
+BP:GO:0042254	BP:GO:0022613	ribosome biogenesis	ribonucleoprotein complex biogenesis	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.7839	0.8412	TRUE
+MF:GO:0061650	MF:GO:0061631	ubiquitin-like protein conjugating enzyme activity	ubiquitin conjugating enzyme activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.85	0.84	TRUE
+BP:GO:0046390	BP:GO:0009165	ribose phosphate biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7213	0.8387	FALSE
+BP:GO:0009150	BP:GO:0006163	purine ribonucleotide metabolic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7277	0.8333	TRUE
+BP:GO:0009152	BP:GO:0009260	purine ribonucleotide biosynthetic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7439	0.8333	TRUE
+CC:GO:0016282	CC:GO:0005852	eukaryotic 43S preinitiation complex	eukaryotic translation initiation factor 3 complex	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.8421	0.8333	FALSE
+BP:GO:0033013	BP:GO:0006779	tetrapyrrole metabolic process	porphyrin-containing compound biosynthetic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.7222	0.8276	TRUE
+MF:GO:0031418	MF:GO:0031406	L-ascorbic acid binding	carboxylic acid binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6019	0.8276	TRUE
+MF:GO:0031418	MF:GO:0043177	L-ascorbic acid binding	organic acid binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6019	0.8276	TRUE
+BP:GO:0009150	BP:GO:0009205	purine ribonucleotide metabolic process	purine ribonucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7698	0.825	FALSE
+BP:GO:0009150	BP:GO:0009144	purine ribonucleotide metabolic process	purine nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7589	0.825	FALSE
+BP:GO:0019693	BP:GO:0006163	ribose phosphate metabolic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6744	0.8235	FALSE
+BP:GO:0006164	BP:GO:0072522	purine nucleotide biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7407	0.8148	TRUE
+BP:GO:0006163	BP:GO:0072521	purine nucleotide metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7702	0.8136	TRUE
+CC:GO:0009523	CC:GO:0009521	photosystem II	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.7647	0.8049	TRUE
+BP:GO:0019693	BP:GO:0009117	ribose phosphate metabolic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6888	0.8036	FALSE
+MF:GO:0016903	MF:GO:0016620	oxidoreductase activity, acting on the aldehyde or oxo group of donors	oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.7143	0.8	TRUE
+BP:GO:0072329	BP:GO:0009062	monocarboxylic acid catabolic process	fatty acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8182	0.8	TRUE
+CC:GO:0044391	CC:GO:0022626	ribosomal subunit	cytosolic ribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.7489	0.7939	FALSE
+CC:GO:0009579	CC:GO:0034357	thylakoid	photosynthetic membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8022	0.7925	TRUE
+CC:GO:0009534	CC:GO:0009535	chloroplast thylakoid	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8105	0.7912	TRUE
+CC:GO:0031976	CC:GO:0009535	plastid thylakoid	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8052	0.7912	TRUE
+CC:GO:0009534	CC:GO:0055035	chloroplast thylakoid	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8105	0.7912	FALSE
+CC:GO:0031976	CC:GO:0055035	plastid thylakoid	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8052	0.7912	TRUE
+CC:GO:0033290	CC:GO:0005852	eukaryotic 48S preinitiation complex	eukaryotic translation initiation factor 3 complex	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.8	0.7895	FALSE
+CC:GO:0005852	CC:GO:0070993	eukaryotic translation initiation factor 3 complex	cytosolic translation preinitiation complex	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.8	0.7895	FALSE
+BP:GO:0009117	BP:GO:0006753	nucleotide metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7301	0.7857	TRUE
+BP:GO:0009259	BP:GO:0006163	ribonucleotide metabolic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6557	0.7843	FALSE
+BP:GO:0055086	BP:GO:0072521	nucleobase-containing small molecule metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7106	0.7763	FALSE
+BP:GO:0032259	MF:GO:0008168	methylation	methyltransferase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7695	0.7714	FALSE
+BP:GO:0009259	BP:GO:0009117	ribonucleotide metabolic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6723	0.7679	TRUE
+BP:GO:0009205	BP:GO:0009259	purine ribonucleoside triphosphate metabolic process	ribonucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6688	0.7674	FALSE
+BP:GO:0009144	BP:GO:0009259	purine nucleoside triphosphate metabolic process	ribonucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6605	0.7674	FALSE
+CC:GO:0031968	CC:GO:0009535	organelle outer membrane	chloroplast thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6703	0.766	TRUE
+CC:GO:0019867	CC:GO:0009535	outer membrane	chloroplast thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6667	0.766	TRUE
+CC:GO:0031968	CC:GO:0055035	organelle outer membrane	plastid thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6703	0.766	FALSE
+CC:GO:0019867	CC:GO:0055035	outer membrane	plastid thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6667	0.766	FALSE
+BP:GO:0001101	BP:GO:1901700	response to acid chemical	response to oxygen-containing compound	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.451	0.7531	FALSE
+BP:GO:0009415	BP:GO:1901700	response to water	response to oxygen-containing compound	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4542	0.7531	TRUE
+MF:GO:0004497	MF:GO:0016705	monooxygenase activity	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.7349	0.75	FALSE
+BP:GO:0098869	MF:GO:0016684	cellular oxidant detoxification	oxidoreductase activity, acting on peroxide as acceptor	Glutathione / detoxification	Heme / oxidoreductase	TRUE	0.6495	0.75	FALSE
+BP:GO:0046390	BP:GO:0009260	ribose phosphate biosynthetic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.9318	0.75	TRUE
+BP:GO:0072329	BP:GO:0006635	monocarboxylic acid catabolic process	fatty acid beta-oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7273	0.75	TRUE
+BP:GO:0072329	BP:GO:0019395	monocarboxylic acid catabolic process	fatty acid oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7273	0.75	FALSE
+BP:GO:0098869	MF:GO:0004601	cellular oxidant detoxification	peroxidase activity	Glutathione / detoxification	Other (no theme regex matched)	TRUE	0.6495	0.75	FALSE
+MF:GO:0016684	BP:GO:0006979	oxidoreductase activity, acting on peroxide as acceptor	response to oxidative stress	Heme / oxidoreductase	Water deprivation / abiotic stress	TRUE	0.5462	0.75	FALSE
+MF:GO:0004601	BP:GO:0006979	peroxidase activity	response to oxidative stress	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.5462	0.75	FALSE
+CC:GO:0009579	CC:GO:0042651	thylakoid	thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.7253	0.7453	TRUE
+BP:GO:0009152	BP:GO:0006164	purine ribonucleotide biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7625	0.7407	TRUE
+BP:GO:1901700	BP:GO:0009414	response to oxygen-containing compound	response to water deprivation	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.4507	0.7407	TRUE
+BP:GO:0009117	BP:GO:0055086	nucleotide metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6819	0.7368	TRUE
+CC:GO:0009534	CC:GO:0042651	chloroplast thylakoid	thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.7702	0.7347	FALSE
+CC:GO:0031976	CC:GO:0042651	plastid thylakoid	thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.7654	0.7347	FALSE
+BP:GO:0009873	BP:GO:0071369	ethylene-activated signaling pathway	cellular response to ethylene stimulus	Hormone signalling	Hormone signalling	TRUE	0.871	0.7333	TRUE
+BP:GO:0019693	BP:GO:0009205	ribose phosphate metabolic process	purine ribonucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6331	0.7333	FALSE
+BP:GO:0019693	BP:GO:0009144	ribose phosphate metabolic process	purine nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6257	0.7333	FALSE
+BP:GO:0006754	BP:GO:0009145	ATP biosynthetic process	purine nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.8	0.7333	TRUE
+CC:GO:0045259	BP:GO:0009145	proton-transporting ATP synthase complex	purine nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.75	0.7333	FALSE
+BP:GO:0006754	BP:GO:0009206	ATP biosynthetic process	purine ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.8	0.7333	TRUE
+CC:GO:0045259	BP:GO:0009206	proton-transporting ATP synthase complex	purine ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.75	0.7333	FALSE
+BP:GO:0009145	BP:GO:0015986	purine nucleoside triphosphate biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8	0.7333	TRUE
+BP:GO:0009206	BP:GO:0015986	purine ribonucleoside triphosphate biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8	0.7333	TRUE
+BP:GO:0009873	BP:GO:0000160	ethylene-activated signaling pathway	phosphorelay signal transduction system	Hormone signalling	Other (no theme regex matched)	TRUE	0.4355	0.7333	TRUE
+BP:GO:0006754	CC:GO:0034702	ATP biosynthetic process	monoatomic ion channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.8333	0.7333	FALSE
+CC:GO:0045259	CC:GO:0034702	proton-transporting ATP synthase complex	monoatomic ion channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.8824	0.7333	TRUE
+BP:GO:0015986	CC:GO:0034702	proton motive force-driven ATP synthesis	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8333	0.7333	FALSE
+BP:GO:0006754	CC:GO:0034703	ATP biosynthetic process	cation channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.8333	0.7333	FALSE
+CC:GO:0045259	CC:GO:0034703	proton-transporting ATP synthase complex	cation channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.8824	0.7333	TRUE
+BP:GO:0015986	CC:GO:0034703	proton motive force-driven ATP synthesis	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8333	0.7333	FALSE
+CC:GO:0009534	CC:GO:0034357	chloroplast thylakoid	photosynthetic membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.7384	0.7327	FALSE
+CC:GO:0031976	CC:GO:0034357	plastid thylakoid	photosynthetic membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.7341	0.7327	FALSE
+MF:GO:0043021	MF:GO:0043022	ribonucleoprotein complex binding	ribosome binding	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.7857	0.7308	TRUE
+MF:GO:0031406	MF:GO:0048029	carboxylic acid binding	monosaccharide binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5487	0.7273	FALSE
+MF:GO:0043177	MF:GO:0048029	organic acid binding	monosaccharide binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5487	0.7273	FALSE
+BP:GO:0031347	BP:GO:0080134	regulation of defense response	regulation of response to stress	Defence / biotic response	Other (no theme regex matched)	TRUE	0.5185	0.7222	TRUE
+CC:GO:0015935	CC:GO:0022627	small ribosomal subunit	cytosolic small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.7089	0.7213	TRUE
+BP:GO:1901293	BP:GO:0009165	nucleoside phosphate biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6816	0.7209	TRUE
+MF:GO:0016209	BP:GO:0006979	antioxidant activity	response to oxidative stress	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.6124	0.7209	FALSE
+CC:GO:0031968	CC:GO:0042170	organelle outer membrane	plastid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6828	0.7203	FALSE
+CC:GO:0019867	CC:GO:0042170	outer membrane	plastid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6798	0.7203	FALSE
+CC:GO:0009526	CC:GO:0042170	plastid envelope	plastid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.8277	0.7197	TRUE
+BP:GO:0009117	BP:GO:0072521	nucleotide metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6475	0.7164	FALSE
+BP:GO:0009150	BP:GO:0009117	purine ribonucleotide metabolic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.584	0.7143	TRUE
+CC:GO:0031968	CC:GO:0042651	organelle outer membrane	thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6425	0.7129	FALSE
+CC:GO:0019867	CC:GO:0042651	outer membrane	thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6392	0.7129	FALSE
+BP:GO:0009165	BP:GO:0006164	nucleotide biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6557	0.7097	TRUE
+BP:GO:0046390	BP:GO:0072522	ribose phosphate biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5194	0.7097	FALSE
+BP:GO:0006753	BP:GO:0072521	nucleoside phosphate metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6735	0.7067	FALSE
+BP:GO:0032259	MF:GO:0016741	methylation	transferase activity, transferring one-carbon groups	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7165	0.7043	FALSE
+BP:GO:0006749	MF:GO:0004364	glutathione metabolic process	glutathione transferase activity	Glutathione / detoxification	Glutathione / detoxification	TRUE	0.6984	0.6923	FALSE
+BP:GO:0009205	BP:GO:0006163	purine ribonucleoside triphosphate metabolic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5602	0.6875	FALSE
+BP:GO:0009144	BP:GO:0006163	purine nucleoside triphosphate metabolic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5707	0.6875	FALSE
+BP:GO:0009145	BP:GO:0006164	purine nucleoside triphosphate biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5	0.6818	FALSE
+BP:GO:0009206	BP:GO:0006164	purine ribonucleoside triphosphate biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5	0.6818	FALSE
+CC:GO:0031968	CC:GO:0034357	organelle outer membrane	photosynthetic membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.599	0.6792	FALSE
+CC:GO:0019867	CC:GO:0034357	outer membrane	photosynthetic membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5962	0.6792	FALSE
+CC:GO:0009579	CC:GO:0009535	thylakoid	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.6813	0.6792	TRUE
+CC:GO:0009579	CC:GO:0055035	thylakoid	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.6813	0.6792	TRUE
+BP:GO:0009150	BP:GO:0072521	purine ribonucleotide metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5605	0.678	TRUE
+BP:GO:0001101	BP:GO:0009628	response to acid chemical	response to abiotic stimulus	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.4044	0.6778	FALSE
+BP:GO:0009415	BP:GO:0009628	response to water	response to abiotic stimulus	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.4069	0.6778	TRUE
+BP:GO:0019693	BP:GO:0072521	ribose phosphate metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5331	0.6774	FALSE
+BP:GO:0006163	BP:GO:0006753	purine nucleotide metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5859	0.6714	TRUE
+MF:GO:0004497	MF:GO:0005506	monooxygenase activity	iron ion binding	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.644	0.6667	FALSE
+BP:GO:0009414	BP:GO:0009628	response to water deprivation	response to abiotic stimulus	Water deprivation / abiotic stress	Water deprivation / abiotic stress	TRUE	0.4038	0.6667	TRUE
+CC:GO:0005840	CC:GO:0044391	ribosome	ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.6099	0.6626	TRUE
+CC:GO:0042170	CC:GO:0009535	plastid membrane	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.6294	0.6606	TRUE
+CC:GO:0042170	CC:GO:0055035	plastid membrane	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.6294	0.6606	TRUE
+CC:GO:0022626	CC:GO:0022625	cytosolic ribosome	cytosolic large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.6607	0.6591	TRUE
+MF:GO:0016684	BP:GO:0042743	oxidoreductase activity, acting on peroxide as acceptor	hydrogen peroxide metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.6711	0.6562	FALSE
+MF:GO:0016684	BP:GO:0042744	oxidoreductase activity, acting on peroxide as acceptor	hydrogen peroxide catabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.6711	0.6562	FALSE
+BP:GO:0042743	MF:GO:0004601	hydrogen peroxide metabolic process	peroxidase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6711	0.6562	FALSE
+BP:GO:0042744	MF:GO:0004601	hydrogen peroxide catabolic process	peroxidase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6711	0.6562	FALSE
+BP:GO:0046390	BP:GO:0009201	ribose phosphate biosynthetic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5455	0.6538	FALSE
+BP:GO:0046390	BP:GO:0009142	ribose phosphate biosynthetic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5275	0.6538	FALSE
+BP:GO:0071369	BP:GO:0009723	cellular response to ethylene stimulus	response to ethylene	Hormone signalling	Hormone signalling	TRUE	0.5849	0.6522	TRUE
+BP:GO:0009260	BP:GO:0009165	ribonucleotide biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6721	0.6486	TRUE
+MF:GO:0016705	MF:GO:0005506	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	iron ion binding	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.6148	0.6484	FALSE
+BP:GO:0006754	BP:GO:0009201	ATP biosynthetic process	ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.6667	0.6471	TRUE
+CC:GO:0045259	BP:GO:0009201	proton-transporting ATP synthase complex	ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.625	0.6471	FALSE
+BP:GO:0006754	BP:GO:0009142	ATP biosynthetic process	nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.6275	0.6471	TRUE
+CC:GO:0045259	BP:GO:0009142	proton-transporting ATP synthase complex	nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.5882	0.6471	FALSE
+BP:GO:0009201	BP:GO:0015986	ribonucleoside triphosphate biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6667	0.6471	TRUE
+BP:GO:0009142	BP:GO:0015986	nucleoside triphosphate biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6275	0.6471	TRUE
+BP:GO:0009152	BP:GO:0046390	purine ribonucleotide biosynthetic process	ribose phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6932	0.6452	TRUE
+BP:GO:0009259	BP:GO:0072521	ribonucleotide metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5167	0.6452	FALSE
+CC:GO:0044391	MF:GO:0003735	ribosomal subunit	structural constituent of ribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.5928	0.6446	FALSE
+BP:GO:0006399	MF:GO:0140101	tRNA metabolic process	catalytic activity, acting on a tRNA	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.5842	0.6383	FALSE
+CC:GO:0031968	CC:GO:0009534	organelle outer membrane	chloroplast thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5794	0.6372	FALSE
+CC:GO:0019867	CC:GO:0009534	outer membrane	chloroplast thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5767	0.6372	FALSE
+CC:GO:0031968	CC:GO:0031976	organelle outer membrane	plastid thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5767	0.6372	FALSE
+CC:GO:0019867	CC:GO:0031976	outer membrane	plastid thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5741	0.6372	FALSE
+BP:GO:0006754	MF:GO:0046933	ATP biosynthetic process	proton-transporting ATP synthase activity, rotational mechanism	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.6875	0.6364	FALSE
+CC:GO:0045259	MF:GO:0046933	proton-transporting ATP synthase complex	proton-transporting ATP synthase activity, rotational mechanism	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.625	0.6364	FALSE
+MF:GO:0046933	BP:GO:0015986	proton-transporting ATP synthase activity, rotational mechanism	proton motive force-driven ATP synthesis	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.6875	0.6364	FALSE
+MF:GO:0016684	BP:GO:0072593	oxidoreductase activity, acting on peroxide as acceptor	reactive oxygen species metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.6047	0.6364	FALSE
+BP:GO:0072593	MF:GO:0004601	reactive oxygen species metabolic process	peroxidase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6047	0.6364	FALSE
+BP:GO:0006754	MF:GO:0015252	ATP biosynthetic process	proton channel activity	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.6875	0.6364	FALSE
+CC:GO:0045259	MF:GO:0015252	proton-transporting ATP synthase complex	proton channel activity	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.625	0.6364	FALSE
+BP:GO:0015986	MF:GO:0015252	proton motive force-driven ATP synthesis	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6875	0.6364	FALSE
+BP:GO:0042254	BP:GO:0006364	ribosome biogenesis	rRNA processing	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.6801	0.6364	TRUE
+BP:GO:0006163	BP:GO:0055086	purine nucleotide metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5473	0.6316	TRUE
+CC:GO:0031967	CC:GO:0009526	organelle envelope	plastid envelope	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5152	0.631	TRUE
+BP:GO:0140053	BP:GO:0032543	mitochondrial gene expression	mitochondrial translation	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.6389	0.6296	TRUE
+BP:GO:0019693	BP:GO:0006753	ribose phosphate metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5184	0.6286	FALSE
+BP:GO:0009260	BP:GO:0006164	ribonucleotide biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.604	0.625	FALSE
+BP:GO:0009201	BP:GO:0006164	ribonucleoside triphosphate biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4545	0.625	FALSE
+BP:GO:0009142	BP:GO:0006164	nucleoside triphosphate biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4396	0.625	FALSE
+BP:GO:0009152	BP:GO:0072522	purine ribonucleotide biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5648	0.625	TRUE
+BP:GO:1901293	BP:GO:0006753	nucleoside phosphate biosynthetic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5491	0.6232	TRUE
+BP:GO:0008202	BP:GO:0016125	steroid metabolic process	sterol metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7778	0.6207	TRUE
+CC:GO:0042651	CC:GO:0042170	thylakoid membrane	plastid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.6049	0.6207	FALSE
+BP:GO:0006399	BP:GO:0008033	tRNA metabolic process	tRNA processing	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.6477	0.618	TRUE
+BP:GO:0042254	BP:GO:0016072	ribosome biogenesis	rRNA metabolic process	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.6514	0.6149	FALSE
+BP:GO:0009165	BP:GO:0072522	nucleotide biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5333	0.6111	FALSE
+BP:GO:0072593	MF:GO:0016209	reactive oxygen species metabolic process	antioxidant activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6701	0.6111	FALSE
+CC:GO:0044391	CC:GO:0015934	ribosomal subunit	large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.6441	0.6098	TRUE
+BP:GO:0046390	BP:GO:1901293	ribose phosphate biosynthetic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4916	0.6047	FALSE
+BP:GO:0006749	BP:GO:0006575	glutathione metabolic process	modified amino acid metabolic process	Glutathione / detoxification	Other (no theme regex matched)	TRUE	0.5575	0.6047	TRUE
+BP:GO:0098869	BP:GO:0006979	cellular oxidant detoxification	response to oxidative stress	Glutathione / detoxification	Water deprivation / abiotic stress	TRUE	0.5469	0.6047	FALSE
+BP:GO:0009152	BP:GO:0009145	purine ribonucleotide biosynthetic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6557	0.6	FALSE
+BP:GO:0009152	BP:GO:0009206	purine ribonucleotide biosynthetic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6557	0.6	FALSE
+BP:GO:0009259	BP:GO:0006753	ribonucleotide metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4908	0.6	TRUE
+CC:GO:0022626	CC:GO:0015934	cytosolic ribosome	large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.555	0.6	FALSE
+BP:GO:1901700	BP:GO:0009628	response to oxygen-containing compound	response to abiotic stimulus	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.3037	0.5981	FALSE
+CC:GO:0042170	CC:GO:0034357	plastid membrane	photosynthetic membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5734	0.595	FALSE
+BP:GO:0019693	BP:GO:0055086	ribose phosphate metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4842	0.5921	FALSE
+BP:GO:1901293	BP:GO:0072522	nucleoside phosphate biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5769	0.5909	FALSE
+BP:GO:0009205	BP:GO:0009117	purine ribonucleoside triphosphate metabolic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4496	0.5893	FALSE
+BP:GO:0009144	BP:GO:0009117	purine nucleoside triphosphate metabolic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.458	0.5893	FALSE
+MF:GO:0005198	CC:GO:0044391	structural molecule activity	ribosomal subunit	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.5	0.5843	FALSE
+BP:GO:0042743	MF:GO:0016209	hydrogen peroxide metabolic process	antioxidant activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5567	0.5833	FALSE
+BP:GO:0042744	MF:GO:0016209	hydrogen peroxide catabolic process	antioxidant activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5567	0.5833	FALSE
+BP:GO:0071369	BP:GO:0000160	cellular response to ethylene stimulus	phosphorelay signal transduction system	Hormone signalling	Other (no theme regex matched)	TRUE	0.4091	0.5789	FALSE
+BP:GO:0009145	CC:GO:0034702	purine nucleoside triphosphate biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6818	0.5789	FALSE
+BP:GO:0009206	CC:GO:0034702	purine ribonucleoside triphosphate biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6818	0.5789	FALSE
+BP:GO:0009145	CC:GO:0034703	purine nucleoside triphosphate biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6818	0.5789	FALSE
+BP:GO:0009206	CC:GO:0034703	purine ribonucleoside triphosphate biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6818	0.5789	FALSE
+BP:GO:0072593	BP:GO:0006979	reactive oxygen species metabolic process	response to oxidative stress	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.5439	0.5789	FALSE
+BP:GO:0019693	BP:GO:0046390	ribose phosphate metabolic process	ribose phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5207	0.5778	TRUE
+BP:GO:0046390	BP:GO:0009145	ribose phosphate biosynthetic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4545	0.5769	FALSE
+BP:GO:0046390	BP:GO:0009206	ribose phosphate biosynthetic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4545	0.5769	FALSE
+BP:GO:0042440	BP:GO:0006778	pigment metabolic process	porphyrin-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6111	0.575	FALSE
+BP:GO:0006779	BP:GO:0015995	porphyrin-containing compound biosynthetic process	chlorophyll biosynthetic process	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.6154	0.5714	TRUE
+BP:GO:0009768	CC:GO:0009522	photosynthesis, light harvesting in photosystem I	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5	0.5714	FALSE
+BP:GO:0009260	BP:GO:0009201	ribonucleotide biosynthetic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5854	0.5667	FALSE
+BP:GO:0009260	BP:GO:0009142	ribonucleotide biosynthetic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5647	0.5667	FALSE
+BP:GO:0009259	BP:GO:0055086	ribonucleotide metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4585	0.5658	TRUE
+BP:GO:1901293	BP:GO:0055086	nucleoside phosphate biosynthetic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5129	0.5658	TRUE
+BP:GO:0006094	BP:GO:0046364	gluconeogenesis	monosaccharide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.68	0.5625	TRUE
+BP:GO:0019319	BP:GO:0046364	hexose biosynthetic process	monosaccharide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.68	0.5625	TRUE
+BP:GO:0006006	BP:GO:0046364	glucose metabolic process	monosaccharide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3778	0.5625	FALSE
+CC:GO:0031968	CC:GO:0009579	organelle outer membrane	thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5103	0.5625	FALSE
+CC:GO:0019867	CC:GO:0009579	outer membrane	thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5082	0.5625	FALSE
+CC:GO:0009534	CC:GO:0042170	chloroplast thylakoid	plastid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5487	0.5625	FALSE
+CC:GO:0031976	CC:GO:0042170	plastid thylakoid	plastid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5463	0.5625	FALSE
+BP:GO:1901135	BP:GO:1901137	carbohydrate derivative metabolic process	carbohydrate derivative biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6285	0.561	TRUE
+BP:GO:0033013	BP:GO:0042440	tetrapyrrole metabolic process	pigment metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.5946	0.561	FALSE
+BP:GO:0009205	BP:GO:0072521	purine ribonucleoside triphosphate metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4315	0.5593	FALSE
+BP:GO:0009144	BP:GO:0072521	purine nucleoside triphosphate metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4395	0.5593	FALSE
+BP:GO:0009150	BP:GO:0006753	purine ribonucleotide metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4264	0.5571	TRUE
+BP:GO:0009152	BP:GO:0009201	purine ribonucleotide biosynthetic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5797	0.5556	FALSE
+BP:GO:0009152	BP:GO:0009142	purine ribonucleotide biosynthetic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5556	0.5556	FALSE
+BP:GO:0009152	BP:GO:0009165	purine ribonucleotide biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5	0.5556	TRUE
+BP:GO:0046148	BP:GO:0006779	pigment biosynthetic process	porphyrin-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5763	0.5556	FALSE
+BP:GO:0009145	BP:GO:0072522	purine nucleoside triphosphate biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3704	0.5556	FALSE
+BP:GO:0009206	BP:GO:0072522	purine ribonucleoside triphosphate biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3704	0.5556	FALSE
+BP:GO:0009117	BP:GO:0009165	nucleotide metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5126	0.5536	TRUE
+BP:GO:0042743	BP:GO:0006979	hydrogen peroxide metabolic process	response to oxidative stress	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.4474	0.5526	FALSE
+BP:GO:0042744	BP:GO:0006979	hydrogen peroxide catabolic process	response to oxidative stress	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.4474	0.5526	FALSE
+BP:GO:0006413	MF:GO:0180051	translational initiation	translation factor activity	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.6226	0.5507	FALSE
+MF:GO:0180051	MF:GO:0003743	translation factor activity	translation initiation factor activity	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.6505	0.5507	TRUE
+CC:GO:0005840	CC:GO:0022626	ribosome	cytosolic ribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.4615	0.55	TRUE
+BP:GO:0009201	BP:GO:0009165	ribonucleoside triphosphate biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3934	0.5484	FALSE
+BP:GO:0009142	BP:GO:0009165	nucleoside triphosphate biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.418	0.5484	FALSE
+CC:GO:0031968	CC:GO:0009526	organelle outer membrane	plastid envelope	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5784	0.5474	FALSE
+CC:GO:0019867	CC:GO:0009526	outer membrane	plastid envelope	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.5762	0.5474	FALSE
+BP:GO:0009205	BP:GO:0009141	purine ribonucleoside triphosphate metabolic process	nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8992	0.541	FALSE
+BP:GO:0009144	BP:GO:0009141	purine nucleoside triphosphate metabolic process	nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.8843	0.541	FALSE
+BP:GO:0009260	BP:GO:0072522	ribonucleotide biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4729	0.5405	FALSE
+CC:GO:0005783	CC:GO:0098827	endoplasmic reticulum	endoplasmic reticulum subcompartment	Endoplasmic reticulum / protein folding	Endoplasmic reticulum / protein folding	TRUE	0.5502	0.5372	TRUE
+BP:GO:0032259	BP:GO:0043414	methylation	macromolecule methylation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4691	0.5357	TRUE
+BP:GO:0022613	BP:GO:0006364	ribonucleoprotein complex biogenesis	rRNA processing	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.5331	0.5353	TRUE
+BP:GO:0009259	BP:GO:0046390	ribonucleotide metabolic process	ribose phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.494	0.5333	FALSE
+BP:GO:0033014	BP:GO:0015995	tetrapyrrole biosynthetic process	chlorophyll biosynthetic process	Heme / oxidoreductase	Photosynthesis / plastid / thylakoid	TRUE	0.5714	0.5333	TRUE
+CC:GO:0005783	CC:GO:0005789	endoplasmic reticulum	endoplasmic reticulum membrane	Endoplasmic reticulum / protein folding	Endoplasmic reticulum / protein folding	TRUE	0.5462	0.5319	TRUE
+CC:GO:0005783	CC:GO:0042175	endoplasmic reticulum	nuclear outer membrane-endoplasmic reticulum membrane network	Endoplasmic reticulum / protein folding	Endoplasmic reticulum / protein folding	TRUE	0.5462	0.5319	FALSE
+BP:GO:0019693	BP:GO:0072522	ribose phosphate metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3781	0.5319	FALSE
+CC:GO:0044391	CC:GO:0022625	ribosomal subunit	cytosolic large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.5	0.5305	TRUE
+BP:GO:0033014	BP:GO:0046148	tetrapyrrole biosynthetic process	pigment biosynthetic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.5484	0.5263	FALSE
+BP:GO:0009150	BP:GO:0055086	purine ribonucleotide metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3983	0.5263	TRUE
+BP:GO:0034440	BP:GO:0006635	lipid oxidation	fatty acid beta-oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6857	0.5263	TRUE
+BP:GO:0034440	BP:GO:0019395	lipid oxidation	fatty acid oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6857	0.5263	TRUE
+BP:GO:0033014	BP:GO:0042440	tetrapyrrole biosynthetic process	pigment metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.493	0.525	FALSE
+CC:GO:0022626	MF:GO:0003735	cytosolic ribosome	structural constituent of ribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.4472	0.525	FALSE
+BP:GO:0009201	CC:GO:0034702	ribonucleoside triphosphate biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5769	0.5238	FALSE
+BP:GO:0009142	CC:GO:0034702	nucleoside triphosphate biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5455	0.5238	FALSE
+BP:GO:0009201	CC:GO:0034703	ribonucleoside triphosphate biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5769	0.5238	FALSE
+BP:GO:0009142	CC:GO:0034703	nucleoside triphosphate biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5455	0.5238	FALSE
+BP:GO:1901293	BP:GO:0009117	nucleoside phosphate biosynthetic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.458	0.5231	FALSE
+BP:GO:0009150	BP:GO:0072522	purine ribonucleotide metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3955	0.5227	FALSE
+BP:GO:0019693	BP:GO:0009165	ribose phosphate metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4406	0.52	FALSE
+BP:GO:0022613	BP:GO:0016072	ribonucleoprotein complex biogenesis	rRNA metabolic process	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.5153	0.52	FALSE
+BP:GO:0046034	BP:GO:0009205	ATP metabolic process	purine ribonucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.9252	0.5179	TRUE
+BP:GO:0046034	BP:GO:0009144	ATP metabolic process	purine nucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.9083	0.5179	TRUE
+CC:GO:0031967	CC:GO:0042170	organelle envelope	plastid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.4264	0.5179	TRUE
+BP:GO:0009201	BP:GO:0072522	ribonucleoside triphosphate biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3448	0.5172	FALSE
+BP:GO:0009142	BP:GO:0072522	nucleoside triphosphate biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3361	0.5172	FALSE
+BP:GO:1901135	BP:GO:0055086	carbohydrate derivative metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4657	0.5159	FALSE
+BP:GO:0080134	BP:GO:0048583	regulation of response to stress	regulation of response to stimulus	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3942	0.5143	TRUE
+BP:GO:0098869	BP:GO:0072593	cellular oxidant detoxification	reactive oxygen species metabolic process	Glutathione / detoxification	Other (no theme regex matched)	TRUE	0.617	0.5143	FALSE
+BP:GO:0042440	BP:GO:0006779	pigment metabolic process	porphyrin-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4928	0.5128	FALSE
+BP:GO:0009765	BP:GO:0019684	photosynthesis, light harvesting	photosynthesis, light reaction	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5238	0.5128	TRUE
+BP:GO:0015979	CC:GO:0009521	photosynthesis	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.536	0.5125	FALSE
+BP:GO:1901293	BP:GO:0006164	nucleoside phosphate biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4469	0.5116	TRUE
+CC:GO:0009526	CC:GO:0009941	plastid envelope	chloroplast envelope	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5252	0.5085	TRUE
+CC:GO:0009579	CC:GO:0042170	thylakoid	plastid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.4921	0.5035	FALSE
+MF:GO:0020037	MF:GO:0004497	heme binding	monooxygenase activity	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.5179	0.5	FALSE
+BP:GO:0009145	BP:GO:0009260	purine nucleoside triphosphate biosynthetic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4878	0.5	FALSE
+BP:GO:0009206	BP:GO:0009260	purine ribonucleoside triphosphate biosynthetic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4878	0.5	FALSE
+BP:GO:0046148	BP:GO:0006778	pigment biosynthetic process	porphyrin-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4722	0.5	FALSE
+BP:GO:0034440	BP:GO:0009062	lipid oxidation	fatty acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6316	0.5	FALSE
+BP:GO:0006754	BP:GO:0006164	ATP biosynthetic process	purine nucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4	0.5	TRUE
+CC:GO:0045259	BP:GO:0006164	proton-transporting ATP synthase complex	purine nucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.375	0.5	FALSE
+BP:GO:0006164	BP:GO:0015986	purine nucleotide biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4	0.5	TRUE
+BP:GO:0006163	BP:GO:0072522	purine nucleotide metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4238	0.5	FALSE
+CC:GO:0016469	CC:GO:0034702	proton-transporting two-sector ATPase complex	monoatomic ion channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4762	0.5	FALSE
+CC:GO:0016469	CC:GO:0034703	proton-transporting two-sector ATPase complex	cation channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4762	0.5	FALSE
+BP:GO:0006778	BP:GO:0015995	porphyrin-containing compound metabolic process	chlorophyll biosynthetic process	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.4615	0.5	TRUE
+BP:GO:0009765	BP:GO:0009768	photosynthesis, light harvesting	photosynthesis, light harvesting in photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5758	0.5	TRUE
+CC:GO:0009526	CC:GO:0009535	plastid envelope	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.521	0.4961	TRUE
+CC:GO:0009526	CC:GO:0055035	plastid envelope	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.521	0.4961	TRUE
+BP:GO:0019693	BP:GO:1901293	ribose phosphate metabolic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.392	0.4915	FALSE
+BP:GO:0009259	BP:GO:0009260	ribonucleotide metabolic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5125	0.4898	TRUE
+BP:GO:0009260	BP:GO:1901293	ribonucleotide biosynthetic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4581	0.4898	TRUE
+BP:GO:0009259	BP:GO:0072522	ribonucleotide metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3535	0.4894	FALSE
+MF:GO:0019842	MF:GO:0031418	vitamin binding	L-ascorbic acid binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.378	0.4894	TRUE
+BP:GO:0019693	BP:GO:0006164	ribose phosphate metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3681	0.4889	FALSE
+CC:GO:0034357	CC:GO:0009521	photosynthetic membrane	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.4658	0.4881	TRUE
+BP:GO:0033013	BP:GO:0046148	tetrapyrrole metabolic process	pigment biosynthetic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.4595	0.4878	FALSE
+CC:GO:0009521	CC:GO:0009522	photosystem	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.4706	0.4878	TRUE
+BP:GO:0009259	BP:GO:0009141	ribonucleotide metabolic process	nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.7012	0.4857	FALSE
+BP:GO:0098869	BP:GO:0042743	cellular oxidant detoxification	hydrogen peroxide metabolic process	Glutathione / detoxification	Other (no theme regex matched)	TRUE	0.5	0.4857	FALSE
+BP:GO:0098869	BP:GO:0042744	cellular oxidant detoxification	hydrogen peroxide catabolic process	Glutathione / detoxification	Other (no theme regex matched)	TRUE	0.5	0.4857	FALSE
+BP:GO:0009150	BP:GO:0009141	purine ribonucleotide metabolic process	nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.72	0.4853	FALSE
+BP:GO:0033013	BP:GO:0015995	tetrapyrrole metabolic process	chlorophyll biosynthetic process	Heme / oxidoreductase	Photosynthesis / plastid / thylakoid	TRUE	0.4444	0.4848	TRUE
+BP:GO:0009145	BP:GO:0009165	purine nucleoside triphosphate biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3279	0.4839	FALSE
+BP:GO:0009206	BP:GO:0009165	purine ribonucleoside triphosphate biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3279	0.4839	FALSE
+BP:GO:0009152	CC:GO:0034702	purine ribonucleotide biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4615	0.4815	FALSE
+BP:GO:0009152	CC:GO:0034703	purine ribonucleotide biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4615	0.4815	FALSE
+BP:GO:0009259	BP:GO:0009165	ribonucleotide metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4171	0.48	FALSE
+BP:GO:0009873	BP:GO:0009723	ethylene-activated signaling pathway	response to ethylene	Hormone signalling	Hormone signalling	TRUE	0.5094	0.4783	TRUE
+BP:GO:0009150	BP:GO:0006164	purine ribonucleotide metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3861	0.4762	FALSE
+MF:GO:0005198	CC:GO:0022626	structural molecule activity	cytosolic ribosome	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.377	0.4755	FALSE
+BP:GO:0006094	BP:GO:0006006	gluconeogenesis	glucose metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4595	0.4737	TRUE
+BP:GO:0019319	BP:GO:0006006	hexose biosynthetic process	glucose metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4595	0.4737	FALSE
+BP:GO:0019693	BP:GO:0009141	ribose phosphate metabolic process	nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6647	0.4722	FALSE
+BP:GO:1901135	BP:GO:0006753	carbohydrate derivative metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4424	0.472	FALSE
+BP:GO:0019693	BP:GO:0009260	ribose phosphate metabolic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4852	0.4706	TRUE
+BP:GO:0009205	BP:GO:0009201	purine ribonucleoside triphosphate metabolic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3596	0.4706	FALSE
+BP:GO:0009144	BP:GO:0009201	purine nucleoside triphosphate metabolic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3534	0.4706	FALSE
+BP:GO:0009205	BP:GO:0009142	purine ribonucleoside triphosphate metabolic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3504	0.4706	FALSE
+BP:GO:0009144	BP:GO:0009142	purine nucleoside triphosphate metabolic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3445	0.4706	FALSE
+MF:GO:0019842	MF:GO:0031406	vitamin binding	carboxylic acid binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3692	0.4706	FALSE
+MF:GO:0019842	MF:GO:0043177	vitamin binding	organic acid binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3692	0.4706	FALSE
+CC:GO:0009941	CC:GO:0031969	chloroplast envelope	chloroplast membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.576	0.4706	TRUE
+CC:GO:0009526	CC:GO:0042651	plastid envelope	thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5041	0.4701	FALSE
+BP:GO:0009451	BP:GO:0008033	RNA modification	tRNA processing	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.4603	0.4699	FALSE
+BP:GO:0030258	BP:GO:0006635	lipid modification	fatty acid beta-oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4138	0.4688	TRUE
+BP:GO:0030258	BP:GO:0019395	lipid modification	fatty acid oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4138	0.4688	TRUE
+BP:GO:0009150	BP:GO:0046390	purine ribonucleotide metabolic process	ribose phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3758	0.4667	FALSE
+MF:GO:0046933	BP:GO:0009145	proton-transporting ATP synthase activity, rotational mechanism	purine nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.55	0.4667	FALSE
+MF:GO:0046933	BP:GO:0009206	proton-transporting ATP synthase activity, rotational mechanism	purine ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.55	0.4667	FALSE
+MF:GO:0046933	CC:GO:0034702	proton-transporting ATP synthase activity, rotational mechanism	monoatomic ion channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.5556	0.4667	FALSE
+MF:GO:0046933	CC:GO:0034703	proton-transporting ATP synthase activity, rotational mechanism	cation channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.5556	0.4667	FALSE
+BP:GO:0009145	MF:GO:0015252	purine nucleoside triphosphate biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.55	0.4667	FALSE
+BP:GO:0009206	MF:GO:0015252	purine ribonucleoside triphosphate biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.55	0.4667	FALSE
+CC:GO:0034702	MF:GO:0015252	monoatomic ion channel complex	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5556	0.4667	FALSE
+CC:GO:0034703	MF:GO:0015252	cation channel complex	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5556	0.4667	FALSE
+BP:GO:0046390	BP:GO:0009117	ribose phosphate biosynthetic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3697	0.4643	FALSE
+BP:GO:0046034	BP:GO:0009150	ATP metabolic process	purine ribonucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.7122	0.4603	TRUE
+BP:GO:0006754	CC:GO:0016469	ATP biosynthetic process	proton-transporting two-sector ATPase complex	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.5424	0.4583	FALSE
+CC:GO:0045259	CC:GO:0016469	proton-transporting ATP synthase complex	proton-transporting two-sector ATPase complex	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.5085	0.4583	TRUE
+BP:GO:0006163	BP:GO:0006164	purine nucleotide metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4188	0.4583	TRUE
+CC:GO:0016469	BP:GO:0015986	proton-transporting two-sector ATPase complex	proton motive force-driven ATP synthesis	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.5424	0.4583	FALSE
+BP:GO:0009259	BP:GO:1901293	ribonucleotide metabolic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3725	0.4576	FALSE
+BP:GO:0072521	BP:GO:0072522	purine-containing compound metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4355	0.4576	TRUE
+MF:GO:0004497	MF:GO:0046906	monooxygenase activity	tetrapyrrole binding	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.477	0.4574	FALSE
+BP:GO:0009205	BP:GO:0006753	purine ribonucleoside triphosphate metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3282	0.4571	TRUE
+BP:GO:0009144	BP:GO:0006753	purine nucleoside triphosphate metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3344	0.4571	TRUE
+BP:GO:0009205	BP:GO:0009145	purine ribonucleoside triphosphate metabolic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3738	0.4545	FALSE
+BP:GO:0009144	BP:GO:0009145	purine nucleoside triphosphate metabolic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.367	0.4545	TRUE
+BP:GO:0009205	BP:GO:0009206	purine ribonucleoside triphosphate metabolic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3738	0.4545	TRUE
+BP:GO:0009144	BP:GO:0009206	purine nucleoside triphosphate metabolic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.367	0.4545	TRUE
+BP:GO:0030258	BP:GO:0009062	lipid modification	fatty acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3934	0.4545	FALSE
+CC:GO:0009523	CC:GO:0009654	photosystem II	photosystem II oxygen evolving complex	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3462	0.4545	TRUE
+CC:GO:0009526	CC:GO:0034357	plastid envelope	photosynthetic membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.4826	0.4532	FALSE
+BP:GO:0019318	BP:GO:0006006	hexose metabolic process	glucose metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3737	0.4516	TRUE
+CC:GO:0009526	CC:GO:0009534	plastid envelope	chloroplast thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.4755	0.4514	FALSE
+CC:GO:0009526	CC:GO:0031976	plastid envelope	plastid thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.4737	0.4514	FALSE
+MF:GO:0020037	MF:GO:0016705	heme binding	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.4448	0.451	FALSE
+BP:GO:0046390	BP:GO:0006163	ribose phosphate biosynthetic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3223	0.451	FALSE
+MF:GO:0020037	MF:GO:0005506	heme binding	iron ion binding	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.4851	0.451	FALSE
+MF:GO:0019842	MF:GO:0048029	vitamin binding	monosaccharide binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3563	0.451	FALSE
+BP:GO:0006753	BP:GO:0009165	nucleoside phosphate metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3742	0.4493	TRUE
+BP:GO:0009150	BP:GO:0009152	purine ribonucleotide metabolic process	purine ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4388	0.4444	TRUE
+BP:GO:0009259	BP:GO:0006164	ribonucleotide metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3408	0.4444	FALSE
+BP:GO:0046148	BP:GO:0015995	pigment biosynthetic process	chlorophyll biosynthetic process	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.4444	0.4444	TRUE
+CC:GO:1990204	CC:GO:0009654	oxidoreductase complex	photosystem II oxygen evolving complex	Heme / oxidoreductase	Photosynthesis / plastid / thylakoid	TRUE	0.2022	0.4444	TRUE
+CC:GO:0031968	CC:GO:0031967	organelle outer membrane	organelle envelope	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4004	0.441	TRUE
+CC:GO:0019867	CC:GO:0031967	outer membrane	organelle envelope	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3996	0.441	FALSE
+BP:GO:0006754	BP:GO:0009152	ATP biosynthetic process	purine ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.5246	0.44	TRUE
+CC:GO:0045259	BP:GO:0009152	proton-transporting ATP synthase complex	purine ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4918	0.44	FALSE
+BP:GO:0009152	BP:GO:0015986	purine ribonucleotide biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5246	0.44	TRUE
+BP:GO:0046034	BP:GO:0009259	ATP metabolic process	ribonucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.6188	0.4394	TRUE
+CC:GO:0005852	MF:GO:0003743	eukaryotic translation initiation factor 3 complex	translation initiation factor activity	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2836	0.439	FALSE
+BP:GO:0030258	BP:GO:0034440	lipid modification	lipid oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.6034	0.4375	TRUE
+BP:GO:0006414	MF:GO:0003746	translational elongation	translation elongation factor activity	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.7368	0.4375	FALSE
+BP:GO:1901135	BP:GO:0009117	carbohydrate derivative metabolic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3936	0.437	FALSE
+BP:GO:0009141	BP:GO:0006163	nucleoside triphosphate metabolic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5347	0.4342	FALSE
+BP:GO:0009205	BP:GO:0055086	purine ribonucleoside triphosphate metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3066	0.4342	TRUE
+BP:GO:0009144	BP:GO:0055086	purine nucleoside triphosphate metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3123	0.4342	TRUE
+BP:GO:0009117	BP:GO:0072522	nucleotide metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3463	0.431	FALSE
+BP:GO:0031347	BP:GO:2000022	regulation of defense response	regulation of jasmonic acid mediated signaling pathway	Defence / biotic response	Hormone signalling	TRUE	0.4667	0.4286	FALSE
+BP:GO:0009150	BP:GO:0009260	purine ribonucleotide metabolic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3899	0.4286	FALSE
+BP:GO:0009205	BP:GO:0072522	purine ribonucleoside triphosphate metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2952	0.4286	FALSE
+BP:GO:0009144	BP:GO:0072522	purine nucleoside triphosphate metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2917	0.4286	FALSE
+CC:GO:0042651	CC:GO:0009521	thylakoid membrane	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3699	0.4286	FALSE
+BP:GO:0042273	BP:GO:0000470	ribosomal large subunit biogenesis	maturation of LSU-rRNA	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.4767	0.4286	TRUE
+BP:GO:0046034	BP:GO:0019693	ATP metabolic process	ribose phosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.5858	0.4265	TRUE
+BP:GO:0015979	CC:GO:0034357	photosynthesis	photosynthetic membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.4286	0.4261	FALSE
+BP:GO:0000209	MF:GO:0061631	protein polyubiquitination	ubiquitin conjugating enzyme activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4265	0.425	FALSE
+BP:GO:0006754	BP:GO:0046390	ATP biosynthetic process	ribose phosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3636	0.4231	TRUE
+CC:GO:0045259	BP:GO:0046390	proton-transporting ATP synthase complex	ribose phosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3409	0.4231	FALSE
+BP:GO:0046390	BP:GO:0015986	ribose phosphate biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3636	0.4231	TRUE
+BP:GO:0006164	CC:GO:0034702	purine nucleotide biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3571	0.4231	FALSE
+BP:GO:0006164	CC:GO:0034703	purine nucleotide biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3571	0.4231	FALSE
+BP:GO:0009150	BP:GO:0009165	purine ribonucleotide metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3182	0.42	FALSE
+MF:GO:0004364	BP:GO:0006575	glutathione transferase activity	modified amino acid metabolic process	Glutathione / detoxification	Other (no theme regex matched)	TRUE	0.3894	0.4186	FALSE
+BP:GO:0009611	BP:GO:2000022	response to wounding	regulation of jasmonic acid mediated signaling pathway	Defence / biotic response	Hormone signalling	TRUE	0.3793	0.4167	FALSE
+BP:GO:0009259	BP:GO:0009152	ribonucleotide metabolic process	purine ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3812	0.4167	TRUE
+BP:GO:0034440	BP:GO:0072329	lipid oxidation	monocarboxylic acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5455	0.4167	FALSE
+BP:GO:0009152	BP:GO:1901293	purine ribonucleotide biosynthetic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3408	0.4167	TRUE
+CC:GO:0005840	CC:GO:0015934	ribosome	large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.3929	0.4167	TRUE
+BP:GO:1901135	BP:GO:0072521	carbohydrate derivative metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3491	0.4146	FALSE
+MF:GO:0046906	MF:GO:0016705	tetrapyrrole binding	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.4143	0.4135	FALSE
+MF:GO:0046906	MF:GO:0005506	tetrapyrrole binding	iron ion binding	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.4495	0.4135	FALSE
+BP:GO:0015979	BP:GO:0019684	photosynthesis	photosynthesis, light reaction	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.5081	0.4125	TRUE
+BP:GO:0015979	CC:GO:0009523	photosynthesis	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.408	0.4125	FALSE
+BP:GO:1901137	BP:GO:1901293	carbohydrate derivative biosynthetic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3506	0.4118	FALSE
+MF:GO:0046933	BP:GO:0009201	proton-transporting ATP synthase activity, rotational mechanism	ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4583	0.4118	FALSE
+MF:GO:0046933	BP:GO:0009142	proton-transporting ATP synthase activity, rotational mechanism	nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4314	0.4118	FALSE
+BP:GO:0005996	BP:GO:0006006	monosaccharide metabolic process	glucose metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.296	0.4118	TRUE
+BP:GO:0009201	MF:GO:0015252	ribonucleoside triphosphate biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4583	0.4118	FALSE
+BP:GO:0009142	MF:GO:0015252	nucleoside triphosphate biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4314	0.4118	FALSE
+BP:GO:0006163	BP:GO:0009165	purine nucleotide metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.355	0.4107	FALSE
+BP:GO:0042440	BP:GO:0015995	pigment metabolic process	chlorophyll biosynthetic process	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.375	0.4103	TRUE
+BP:GO:0009141	BP:GO:0009117	nucleoside triphosphate metabolic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.5	0.4096	FALSE
+CC:GO:0009526	CC:GO:0009579	plastid envelope	thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.4334	0.4088	FALSE
+BP:GO:0046034	BP:GO:0006163	ATP metabolic process	purine nucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.5183	0.4085	TRUE
+BP:GO:0055086	BP:GO:0009165	nucleobase-containing small molecule metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3496	0.4079	TRUE
+BP:GO:0009723	BP:GO:0000160	response to ethylene	phosphorelay signal transduction system	Hormone signalling	Other (no theme regex matched)	TRUE	0.3068	0.4074	FALSE
+BP:GO:0006754	BP:GO:0072522	ATP biosynthetic process	purine-containing compound biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2963	0.4074	TRUE
+CC:GO:0045259	BP:GO:0072522	proton-transporting ATP synthase complex	purine-containing compound biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2778	0.4074	FALSE
+BP:GO:0015986	BP:GO:0072522	proton motive force-driven ATP synthesis	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2963	0.4074	TRUE
+BP:GO:0009150	BP:GO:1901293	purine ribonucleotide metabolic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2927	0.4068	FALSE
+BP:GO:0140053	BP:GO:0000959	mitochondrial gene expression	mitochondrial RNA metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3953	0.4062	FALSE
+BP:GO:0009260	CC:GO:0034702	ribonucleotide biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3488	0.4062	FALSE
+BP:GO:0009260	CC:GO:0034703	ribonucleotide biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3488	0.4062	FALSE
+BP:GO:0030258	BP:GO:0072329	lipid modification	monocarboxylic acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3582	0.4054	FALSE
+BP:GO:1901135	BP:GO:0006163	carbohydrate derivative metabolic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3512	0.4052	FALSE
+CC:GO:0015934	MF:GO:0003735	large ribosomal subunit	structural constituent of ribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.3855	0.4034	FALSE
+BP:GO:0019693	BP:GO:0009152	ribose phosphate metabolic process	purine ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3609	0.4	TRUE
+BP:GO:0006163	BP:GO:1901293	purine nucleotide metabolic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3262	0.4	FALSE
+BP:GO:0043414	MF:GO:0008168	macromolecule methylation	methyltransferase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3457	0.4	FALSE
+BP:GO:0009259	BP:GO:0009201	ribonucleotide metabolic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3	0.3953	FALSE
+BP:GO:1901293	BP:GO:0009201	nucleoside phosphate biosynthetic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2682	0.3953	TRUE
+BP:GO:0009259	BP:GO:0009142	ribonucleotide metabolic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3025	0.3953	FALSE
+BP:GO:1901293	BP:GO:0009142	nucleoside phosphate biosynthetic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2849	0.3953	FALSE
+CC:GO:0009535	CC:GO:0009521	chloroplast thylakoid membrane	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3521	0.3951	FALSE
+CC:GO:0055035	CC:GO:0009521	plastid thylakoid membrane	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3521	0.3951	FALSE
+BP:GO:0009768	CC:GO:0009523	photosynthesis, light harvesting in photosystem I	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3654	0.3939	FALSE
+CC:GO:0016469	BP:GO:0009145	proton-transporting two-sector ATPase complex	purine nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4776	0.3929	FALSE
+CC:GO:0016469	BP:GO:0009206	proton-transporting two-sector ATPase complex	purine ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4776	0.3929	FALSE
+BP:GO:0009117	BP:GO:0006164	nucleotide metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3361	0.3929	TRUE
+CC:GO:0034357	CC:GO:0009523	photosynthetic membrane	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3562	0.3929	TRUE
+BP:GO:0019693	BP:GO:1901135	ribose phosphate metabolic process	carbohydrate derivative metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.365	0.3913	TRUE
+BP:GO:0009150	BP:GO:0009201	purine ribonucleotide metabolic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2808	0.3902	FALSE
+BP:GO:0009150	BP:GO:0009142	purine ribonucleotide metabolic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2838	0.3902	FALSE
+CC:GO:0033290	MF:GO:0003743	eukaryotic 48S preinitiation complex	translation initiation factor activity	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.2537	0.3902	FALSE
+CC:GO:0070993	MF:GO:0003743	cytosolic translation preinitiation complex	translation initiation factor activity	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2537	0.3902	FALSE
+BP:GO:1901137	BP:GO:0009260	carbohydrate derivative biosynthetic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2818	0.3896	TRUE
+MF:GO:0030246	MF:GO:0048029	carbohydrate binding	monosaccharide binding	Carbohydrate binding / cell wall	Other (no theme regex matched)	TRUE	0.3956	0.3889	TRUE
+BP:GO:0009260	BP:GO:0009117	ribonucleotide biosynthetic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3445	0.3871	TRUE
+CC:GO:0009579	CC:GO:0009521	thylakoid	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3736	0.3868	TRUE
+BP:GO:0000209	MF:GO:0061650	protein polyubiquitination	ubiquitin-like protein conjugating enzyme activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3919	0.3864	FALSE
+BP:GO:0009451	BP:GO:0043414	RNA modification	macromolecule methylation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3109	0.3827	FALSE
+BP:GO:0015979	CC:GO:0042651	photosynthesis	thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3545	0.3826	FALSE
+BP:GO:0009141	BP:GO:0072521	nucleoside triphosphate metabolic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.417	0.3793	FALSE
+BP:GO:0019693	BP:GO:0009201	ribose phosphate metabolic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.284	0.3778	FALSE
+BP:GO:0019693	BP:GO:0009142	ribose phosphate metabolic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2865	0.3778	FALSE
+BP:GO:0043414	BP:GO:0030488	macromolecule methylation	tRNA methylation	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.3187	0.3778	TRUE
+BP:GO:0009152	BP:GO:0006163	purine ribonucleotide biosynthetic process	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3194	0.3774	TRUE
+BP:GO:0046390	BP:GO:0006753	ribose phosphate biosynthetic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2699	0.3768	FALSE
+BP:GO:0009150	BP:GO:0009145	purine ribonucleotide metabolic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2878	0.375	FALSE
+BP:GO:0009150	BP:GO:0009206	purine ribonucleotide metabolic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2878	0.375	FALSE
+BP:GO:0009205	BP:GO:0006164	purine ribonucleoside triphosphate metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2721	0.375	FALSE
+BP:GO:0009144	BP:GO:0006164	purine nucleoside triphosphate metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2685	0.375	FALSE
+BP:GO:0009259	BP:GO:1901135	ribonucleotide metabolic process	carbohydrate derivative metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3456	0.3739	TRUE
+BP:GO:0098869	BP:GO:0070887	cellular oxidant detoxification	cellular response to chemical stimulus	Glutathione / detoxification	Other (no theme regex matched)	TRUE	0.2719	0.3735	TRUE
+BP:GO:0072521	BP:GO:0006164	purine-containing compound metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3226	0.3729	TRUE
+BP:GO:0043207	BP:GO:0009620	response to external biotic stimulus	response to fungus	Defence / biotic response	Defence / biotic response	TRUE	0.2621	0.3721	TRUE
+BP:GO:0051707	BP:GO:0009620	response to other organism	response to fungus	Defence / biotic response	Defence / biotic response	TRUE	0.2621	0.3721	TRUE
+BP:GO:0009205	BP:GO:0046390	purine ribonucleoside triphosphate metabolic process	ribose phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2662	0.3721	FALSE
+BP:GO:0009144	BP:GO:0046390	purine nucleoside triphosphate metabolic process	ribose phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2628	0.3721	FALSE
+BP:GO:0006413	CC:GO:0005852	translational initiation	eukaryotic translation initiation factor 3 complex	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2571	0.3721	FALSE
+CC:GO:0044391	CC:GO:0015935	ribosomal subunit	small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.3559	0.372	TRUE
+BP:GO:0031347	BP:GO:0048583	regulation of defense response	regulation of response to stimulus	Defence / biotic response	Other (no theme regex matched)	TRUE	0.2044	0.3714	TRUE
+BP:GO:0006753	BP:GO:0072522	nucleoside phosphate metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3191	0.3714	FALSE
+BP:GO:0046390	BP:GO:0072521	ribose phosphate biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2537	0.371	FALSE
+BP:GO:0006163	BP:GO:0009260	purine nucleotide metabolic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2938	0.3684	FALSE
+BP:GO:0015979	CC:GO:0009579	photosynthesis	thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3722	0.3676	FALSE
+BP:GO:0046034	BP:GO:0009117	ATP metabolic process	nucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.416	0.3671	TRUE
+BP:GO:0006754	BP:GO:0009260	ATP biosynthetic process	ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3902	0.3667	TRUE
+CC:GO:0045259	BP:GO:0009260	proton-transporting ATP synthase complex	ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3659	0.3667	FALSE
+CC:GO:0016469	BP:GO:0009201	proton-transporting two-sector ATPase complex	ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4267	0.3667	FALSE
+CC:GO:0016469	BP:GO:0009142	proton-transporting two-sector ATPase complex	nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.4103	0.3667	FALSE
+BP:GO:0009260	BP:GO:0015986	ribonucleotide biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3902	0.3667	TRUE
+BP:GO:0046390	CC:GO:0034702	ribose phosphate biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3261	0.3667	FALSE
+BP:GO:0046390	CC:GO:0034703	ribose phosphate biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3261	0.3667	FALSE
+CC:GO:0009654	CC:GO:0009521	photosystem II oxygen evolving complex	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2647	0.3659	TRUE
+CC:GO:0016282	MF:GO:0003743	eukaryotic 43S preinitiation complex	translation initiation factor activity	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.2388	0.3659	FALSE
+BP:GO:0043414	MF:GO:0016741	macromolecule methylation	transferase activity, transferring one-carbon groups	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3218	0.3652	FALSE
+MF:GO:0005198	CC:GO:0015934	structural molecule activity	large ribosomal subunit	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.3247	0.365	FALSE
+BP:GO:0009620	BP:GO:0044419	response to fungus	biological process involved in interspecies interaction between organisms	Defence / biotic response	Other (no theme regex matched)	TRUE	0.2432	0.3636	TRUE
+CC:GO:0005840	CC:GO:0022625	ribosome	cytosolic large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.3049	0.3625	TRUE
+CC:GO:0016469	BP:GO:0009152	proton-transporting two-sector ATPase complex	purine ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3636	0.3611	FALSE
+BP:GO:1901293	BP:GO:0072521	nucleoside phosphate biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3344	0.36	FALSE
+CC:GO:0033290	BP:GO:0006413	eukaryotic 48S preinitiation complex	translational initiation	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.2464	0.3571	FALSE
+BP:GO:0006413	CC:GO:0070993	translational initiation	cytosolic translation preinitiation complex	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2464	0.3571	FALSE
+BP:GO:0055086	BP:GO:0072522	nucleobase-containing small molecule metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3095	0.3553	FALSE
+BP:GO:0006754	BP:GO:0009165	ATP biosynthetic process	nucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2623	0.3548	TRUE
+CC:GO:0045259	BP:GO:0009165	proton-transporting ATP synthase complex	nucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2459	0.3548	FALSE
+BP:GO:0009165	BP:GO:0015986	nucleotide biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2623	0.3548	TRUE
+BP:GO:0072522	CC:GO:0034702	purine-containing compound biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2679	0.3548	FALSE
+BP:GO:0072522	CC:GO:0034703	purine-containing compound biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2679	0.3548	FALSE
+BP:GO:0046034	BP:GO:0072521	ATP metabolic process	purine-containing compound metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3992	0.3537	TRUE
+BP:GO:0009611	BP:GO:0031347	response to wounding	regulation of defense response	Defence / biotic response	Defence / biotic response	TRUE	0.3333	0.3529	FALSE
+BP:GO:0009765	CC:GO:0009522	photosynthesis, light harvesting	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3542	0.3529	FALSE
+BP:GO:0070887	MF:GO:0016209	cellular response to chemical stimulus	antioxidant activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2636	0.3523	FALSE
+BP:GO:0016042	BP:GO:0009062	lipid catabolic process	fatty acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2872	0.35	TRUE
+BP:GO:0072329	BP:GO:0046395	monocarboxylic acid catabolic process	carboxylic acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3173	0.35	TRUE
+BP:GO:0042445	BP:GO:0009308	hormone metabolic process	amine metabolic process	Hormone signalling	Other (no theme regex matched)	TRUE	0.2439	0.35	FALSE
+BP:GO:0009205	BP:GO:0009152	purine ribonucleoside triphosphate metabolic process	purine ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3125	0.3488	FALSE
+BP:GO:0009144	BP:GO:0009152	purine nucleoside triphosphate metabolic process	purine ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3077	0.3488	FALSE
+BP:GO:0009259	BP:GO:0009145	ribonucleotide metabolic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.25	0.3488	FALSE
+BP:GO:0009259	BP:GO:0009206	ribonucleotide metabolic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.25	0.3488	FALSE
+BP:GO:0009145	BP:GO:1901293	purine nucleoside triphosphate biosynthetic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2235	0.3488	TRUE
+BP:GO:0009206	BP:GO:1901293	purine ribonucleoside triphosphate biosynthetic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2235	0.3488	TRUE
+CC:GO:0022625	MF:GO:0003735	cytosolic large ribosomal subunit	structural constituent of ribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2997	0.3487	FALSE
+BP:GO:0009150	BP:GO:1901135	purine ribonucleotide metabolic process	carbohydrate derivative metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3002	0.3478	TRUE
+CC:GO:0009534	CC:GO:0009521	chloroplast thylakoid	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3155	0.3469	FALSE
+CC:GO:0031976	CC:GO:0009521	plastid thylakoid	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3136	0.3469	FALSE
+BP:GO:0015979	CC:GO:0009535	photosynthesis	chloroplast thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3262	0.3451	FALSE
+BP:GO:0015979	CC:GO:0055035	photosynthesis	plastid thylakoid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3262	0.3451	FALSE
+BP:GO:0009165	BP:GO:0072521	nucleotide biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2847	0.3433	FALSE
+BP:GO:0046390	BP:GO:0055086	ribose phosphate biosynthetic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2521	0.3421	FALSE
+CC:GO:0031967	CC:GO:0009535	organelle envelope	chloroplast thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2684	0.342	TRUE
+CC:GO:0031967	CC:GO:0055035	organelle envelope	plastid thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2684	0.342	TRUE
+BP:GO:0009765	CC:GO:0009523	photosynthesis, light harvesting	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3281	0.3409	FALSE
+BP:GO:0009607	BP:GO:0009620	response to biotic stimulus	response to fungus	Defence / biotic response	Defence / biotic response	TRUE	0.2308	0.3404	TRUE
+BP:GO:0009205	BP:GO:0009260	purine ribonucleoside triphosphate metabolic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.277	0.3404	FALSE
+BP:GO:0009144	BP:GO:0009260	purine nucleoside triphosphate metabolic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2733	0.3404	FALSE
+BP:GO:0009141	BP:GO:0006753	nucleoside triphosphate metabolic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.365	0.3402	FALSE
+BP:GO:1901137	BP:GO:0006753	carbohydrate derivative biosynthetic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2618	0.3394	FALSE
+BP:GO:0046390	BP:GO:1901137	ribose phosphate biosynthetic process	carbohydrate derivative biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3024	0.3377	TRUE
+BP:GO:0042254	BP:GO:0042273	ribosome biogenesis	ribosomal large subunit biogenesis	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.3162	0.3356	TRUE
+BP:GO:0006754	BP:GO:0009205	ATP biosynthetic process	purine ribonucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2991	0.3333	TRUE
+CC:GO:0045259	BP:GO:0009205	proton-transporting ATP synthase complex	purine ribonucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2804	0.3333	FALSE
+BP:GO:0006754	BP:GO:0009144	ATP biosynthetic process	purine nucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2936	0.3333	TRUE
+CC:GO:0045259	BP:GO:0009144	proton-transporting ATP synthase complex	purine nucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2752	0.3333	FALSE
+BP:GO:0019693	BP:GO:0009145	ribose phosphate metabolic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2367	0.3333	FALSE
+BP:GO:0019693	BP:GO:0009206	ribose phosphate metabolic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2367	0.3333	FALSE
+BP:GO:0009205	BP:GO:1901293	purine ribonucleoside triphosphate metabolic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2119	0.3333	FALSE
+BP:GO:0009144	BP:GO:1901293	purine nucleoside triphosphate metabolic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2101	0.3333	FALSE
+BP:GO:0009205	BP:GO:0009165	purine ribonucleoside triphosphate metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2181	0.3333	FALSE
+BP:GO:0009144	BP:GO:0009165	purine nucleoside triphosphate metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2158	0.3333	FALSE
+BP:GO:1901137	BP:GO:0009165	carbohydrate derivative biosynthetic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2906	0.3333	FALSE
+BP:GO:0009205	BP:GO:0015986	purine ribonucleoside triphosphate metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2991	0.3333	TRUE
+BP:GO:0009144	BP:GO:0015986	purine nucleoside triphosphate metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2936	0.3333	TRUE
+MF:GO:0030246	MF:GO:0031418	carbohydrate binding	L-ascorbic acid binding	Carbohydrate binding / cell wall	Other (no theme regex matched)	TRUE	0.3407	0.3333	TRUE
+CC:GO:0042651	CC:GO:0009523	thylakoid membrane	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2778	0.3333	FALSE
+BP:GO:0009451	BP:GO:0006399	RNA modification	tRNA metabolic process	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.352	0.3333	FALSE
+CC:GO:0016282	BP:GO:0006413	eukaryotic 43S preinitiation complex	translational initiation	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.2319	0.3333	FALSE
+CC:GO:0022626	CC:GO:0022627	cytosolic ribosome	cytosolic small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.3333	0.3333	TRUE
+BP:GO:0008033	MF:GO:0140101	tRNA processing	catalytic activity, acting on a tRNA	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.306	0.3333	FALSE
+CC:GO:0042170	CC:GO:0031969	plastid membrane	chloroplast membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3655	0.3304	TRUE
+BP:GO:0009141	BP:GO:0055086	nucleoside triphosphate metabolic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.341	0.3301	FALSE
+CC:GO:0031967	CC:GO:0042651	organelle envelope	thylakoid membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2638	0.33	FALSE
+BP:GO:0070887	BP:GO:0006979	cellular response to chemical stimulus	response to oxidative stress	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.235	0.3297	FALSE
+BP:GO:0009152	BP:GO:0009117	purine ribonucleotide biosynthetic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2563	0.3279	TRUE
+BP:GO:1901135	BP:GO:1901293	carbohydrate derivative metabolic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2663	0.3277	FALSE
+BP:GO:0006163	BP:GO:0009201	purine nucleotide metabolic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2071	0.3265	FALSE
+BP:GO:0006163	BP:GO:0009142	purine nucleotide metabolic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.21	0.3265	FALSE
+BP:GO:0046034	BP:GO:0016052	ATP metabolic process	carbohydrate catabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.31	0.3258	FALSE
+BP:GO:0043207	BP:GO:0050832	response to external biotic stimulus	defense response to fungus	Defence / biotic response	Defence / biotic response	TRUE	0.2427	0.3256	TRUE
+BP:GO:0051707	BP:GO:0050832	response to other organism	defense response to fungus	Defence / biotic response	Defence / biotic response	TRUE	0.2427	0.3256	TRUE
+BP:GO:0015979	CC:GO:0009534	photosynthesis	chloroplast thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3066	0.3256	FALSE
+BP:GO:0015979	CC:GO:0031976	photosynthesis	plastid thylakoid	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3052	0.3256	FALSE
+BP:GO:0016042	BP:GO:0006635	lipid catabolic process	fatty acid beta-oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2553	0.325	TRUE
+BP:GO:0016042	BP:GO:0019395	lipid catabolic process	fatty acid oxidation	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2553	0.325	FALSE
+BP:GO:0015979	BP:GO:0009765	photosynthesis	photosynthesis, light harvesting	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2661	0.325	TRUE
+BP:GO:0009152	BP:GO:1901137	purine ribonucleotide biosynthetic process	carbohydrate derivative biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2096	0.3247	TRUE
+BP:GO:0006414	MF:GO:0180051	translational elongation	translation factor activity	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2478	0.3243	FALSE
+CC:GO:0031967	CC:GO:0009534	organelle envelope	chloroplast thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2577	0.3238	FALSE
+CC:GO:0031967	CC:GO:0031976	organelle envelope	plastid thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2571	0.3238	FALSE
+BP:GO:0005996	BP:GO:0046364	monosaccharide metabolic process	monosaccharide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2	0.3235	TRUE
+CC:GO:0031967	CC:GO:0034357	organelle envelope	photosynthetic membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2588	0.322	FALSE
+CC:GO:0031967	CC:GO:0009941	organelle envelope	chloroplast envelope	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2706	0.3209	TRUE
+BP:GO:0009260	BP:GO:0006753	ribonucleotide biosynthetic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2515	0.32	TRUE
+BP:GO:1901137	BP:GO:0055086	carbohydrate derivative biosynthetic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2549	0.319	FALSE
+BP:GO:0006753	BP:GO:0006164	nucleoside phosphate metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2454	0.3188	TRUE
+BP:GO:0072329	BP:GO:0016042	monocarboxylic acid catabolic process	lipid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2959	0.3182	FALSE
+BP:GO:0050832	BP:GO:0044419	defense response to fungus	biological process involved in interspecies interaction between organisms	Defence / biotic response	Other (no theme regex matched)	TRUE	0.2252	0.3182	TRUE
+MF:GO:0046933	BP:GO:0006164	proton-transporting ATP synthase activity, rotational mechanism	purine nucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.275	0.3182	FALSE
+BP:GO:0006164	MF:GO:0015252	purine nucleotide biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.275	0.3182	FALSE
+BP:GO:0042274	CC:GO:0022627	ribosomal small subunit biogenesis	cytosolic small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2604	0.3175	FALSE
+CC:GO:0016469	BP:GO:0009260	proton-transporting two-sector ATPase complex	ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2936	0.3171	FALSE
+BP:GO:0009768	CC:GO:0009521	photosynthesis, light harvesting in photosystem I	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2794	0.3171	FALSE
+BP:GO:2000022	BP:GO:0080134	regulation of jasmonic acid mediated signaling pathway	regulation of response to stress	Hormone signalling	Other (no theme regex matched)	TRUE	0.25	0.3158	FALSE
+MF:GO:0005198	CC:GO:0022625	structural molecule activity	cytosolic large ribosomal subunit	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.2524	0.3156	FALSE
+CC:GO:0016469	BP:GO:0006164	proton-transporting two-sector ATPase complex	purine nucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2991	0.3143	FALSE
+BP:GO:0009165	CC:GO:0034702	nucleotide biosynthetic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2381	0.3143	FALSE
+BP:GO:0009165	CC:GO:0034703	nucleotide biosynthetic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2381	0.3143	FALSE
+BP:GO:0006163	BP:GO:0009145	purine nucleotide metabolic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2094	0.3125	FALSE
+BP:GO:0006163	BP:GO:0009206	purine nucleotide metabolic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2094	0.3125	FALSE
+BP:GO:0009152	BP:GO:0072521	purine ribonucleotide biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.246	0.3125	TRUE
+MF:GO:0030246	MF:GO:0031406	carbohydrate binding	carboxylic acid binding	Carbohydrate binding / cell wall	Other (no theme regex matched)	TRUE	0.278	0.3117	FALSE
+MF:GO:0030246	MF:GO:0043177	carbohydrate binding	organic acid binding	Carbohydrate binding / cell wall	Other (no theme regex matched)	TRUE	0.278	0.3117	FALSE
+CC:GO:0009579	CC:GO:0009523	thylakoid	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2857	0.3113	TRUE
+BP:GO:0042273	CC:GO:0022625	ribosomal large subunit biogenesis	cytosolic large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.239	0.3113	FALSE
+CC:GO:0031968	CC:GO:0009521	organelle outer membrane	photosystem	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2463	0.3107	FALSE
+CC:GO:0019867	CC:GO:0009521	outer membrane	photosystem	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2451	0.3107	FALSE
+BP:GO:0006091	BP:GO:0019684	generation of precursor metabolites and energy	photosynthesis, light reaction	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2128	0.3103	TRUE
+BP:GO:0008033	BP:GO:0030488	tRNA processing	tRNA methylation	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2544	0.3091	TRUE
+BP:GO:0009260	BP:GO:0072521	ribonucleotide biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2313	0.3088	FALSE
+MF:GO:0016684	BP:GO:0070887	oxidoreductase activity, acting on peroxide as acceptor	cellular response to chemical stimulus	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.1909	0.3068	FALSE
+BP:GO:0070887	MF:GO:0004601	cellular response to chemical stimulus	peroxidase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1909	0.3068	FALSE
+BP:GO:0009117	BP:GO:0009201	nucleotide metabolic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2017	0.3036	FALSE
+BP:GO:0009117	BP:GO:0009142	nucleotide metabolic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2143	0.3036	FALSE
+CC:GO:0031967	CC:GO:0009579	organelle envelope	thylakoid	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2456	0.3022	FALSE
+BP:GO:0046034	BP:GO:0006753	ATP metabolic process	nucleoside phosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3037	0.3011	TRUE
+BP:GO:0008037	MF:GO:0106310	cell recognition	protein serine kinase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1613	0.3	FALSE
+BP:GO:0048544	MF:GO:0106310	recognition of pollen	protein serine kinase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1613	0.3	FALSE
+BP:GO:0009607	BP:GO:0050832	response to biotic stimulus	defense response to fungus	Defence / biotic response	Defence / biotic response	TRUE	0.2137	0.2979	TRUE
+BP:GO:0019693	BP:GO:1901137	ribose phosphate metabolic process	carbohydrate derivative biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.25	0.2979	FALSE
+BP:GO:0009205	CC:GO:0034702	purine ribonucleoside triphosphate metabolic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2703	0.2973	FALSE
+BP:GO:0009144	CC:GO:0034702	purine nucleoside triphosphate metabolic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2655	0.2973	FALSE
+BP:GO:0009205	CC:GO:0034703	purine ribonucleoside triphosphate metabolic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2703	0.2973	FALSE
+BP:GO:0009144	CC:GO:0034703	purine nucleoside triphosphate metabolic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2655	0.2973	FALSE
+CC:GO:0009535	CC:GO:0009523	chloroplast thylakoid membrane	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2571	0.2963	FALSE
+CC:GO:0055035	CC:GO:0009523	plastid thylakoid membrane	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2571	0.2963	FALSE
+BP:GO:0009141	BP:GO:0016052	nucleoside triphosphate metabolic process	carbohydrate catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2818	0.2959	FALSE
+CC:GO:0022626	CC:GO:0015935	cytosolic ribosome	small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2932	0.2953	FALSE
+BP:GO:0019684	CC:GO:0009523	photosynthesis, light reaction	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3529	0.2941	FALSE
+BP:GO:0046034	BP:GO:0055086	ATP metabolic process	nucleobase-containing small molecule metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2837	0.2929	TRUE
+BP:GO:0009260	BP:GO:0055086	ribonucleotide biosynthetic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.235	0.2927	TRUE
+CC:GO:0009523	CC:GO:0009522	photosystem II	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2537	0.2927	FALSE
+BP:GO:0006952	BP:GO:0009607	defense response	response to biotic stimulus	Defence / biotic response	Defence / biotic response	TRUE	0.2569	0.292	FALSE
+CC:GO:0016469	MF:GO:0046933	proton-transporting two-sector ATPase complex	proton-transporting ATP synthase activity, rotational mechanism	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.3729	0.2917	FALSE
+MF:GO:0046906	BP:GO:0042743	tetrapyrrole binding	hydrogen peroxide metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.1832	0.2917	FALSE
+MF:GO:0046906	BP:GO:0042744	tetrapyrrole binding	hydrogen peroxide catabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.1832	0.2917	FALSE
+CC:GO:0016469	MF:GO:0015252	proton-transporting two-sector ATPase complex	proton channel activity	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3729	0.2917	FALSE
+BP:GO:0055086	BP:GO:0006164	nucleobase-containing small molecule metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2292	0.2895	TRUE
+MF:GO:0043565	BP:GO:0009414	sequence-specific DNA binding	response to water deprivation	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.1091	0.2893	FALSE
+CC:GO:0031968	BP:GO:0015979	organelle outer membrane	photosynthesis	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.246	0.2889	FALSE
+CC:GO:0019867	BP:GO:0015979	outer membrane	photosynthesis	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.245	0.2889	FALSE
+CC:GO:0030684	CC:GO:0005730	preribosome	nucleolus	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.3163	0.2889	FALSE
+BP:GO:0009765	CC:GO:0009521	photosynthesis, light harvesting	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2625	0.2885	FALSE
+MF:GO:0020037	BP:GO:0042743	heme binding	hydrogen peroxide metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.2017	0.2877	FALSE
+MF:GO:0020037	BP:GO:0042744	heme binding	hydrogen peroxide catabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.2017	0.2877	FALSE
+MF:GO:0046906	BP:GO:0072593	tetrapyrrole binding	reactive oxygen species metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.1758	0.2877	FALSE
+BP:GO:0009205	BP:GO:1901135	purine ribonucleoside triphosphate metabolic process	carbohydrate derivative metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2311	0.287	FALSE
+BP:GO:0009144	BP:GO:1901135	purine nucleoside triphosphate metabolic process	carbohydrate derivative metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2354	0.287	FALSE
+BP:GO:0001101	MF:GO:0043565	response to acid chemical	sequence-specific DNA binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1084	0.2869	FALSE
+BP:GO:0009415	MF:GO:0043565	response to water	sequence-specific DNA binding	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1089	0.2869	FALSE
+BP:GO:1901137	BP:GO:0006164	carbohydrate derivative biosynthetic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2244	0.2857	FALSE
+BP:GO:0019318	BP:GO:0006094	hexose metabolic process	gluconeogenesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1717	0.2857	TRUE
+BP:GO:0019318	BP:GO:0019319	hexose metabolic process	hexose biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1717	0.2857	TRUE
+MF:GO:0046906	MF:GO:0016684	tetrapyrrole binding	oxidoreductase activity, acting on peroxide as acceptor	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.192	0.284	FALSE
+MF:GO:0046906	MF:GO:0004601	tetrapyrrole binding	peroxidase activity	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.192	0.284	FALSE
+MF:GO:0020037	BP:GO:0072593	heme binding	reactive oxygen species metabolic process	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.1928	0.2838	FALSE
+BP:GO:0022613	BP:GO:0042273	ribonucleoprotein complex biogenesis	ribosomal large subunit biogenesis	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2478	0.2832	TRUE
+CC:GO:0016469	BP:GO:0046390	proton-transporting two-sector ATPase complex	ribose phosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2783	0.2821	FALSE
+BP:GO:0009062	BP:GO:0046395	fatty acid catabolic process	carboxylic acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2596	0.2821	TRUE
+BP:GO:0009141	BP:GO:0009260	nucleoside triphosphate metabolic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3137	0.2817	FALSE
+BP:GO:0035556	MF:GO:0004674	intracellular signal transduction	protein serine/threonine kinase activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2536	0.2806	FALSE
+MF:GO:0020037	MF:GO:0016684	heme binding	oxidoreductase activity, acting on peroxide as acceptor	Heme / oxidoreductase	Heme / oxidoreductase	TRUE	0.2103	0.2805	FALSE
+MF:GO:0020037	MF:GO:0004601	heme binding	peroxidase activity	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.2103	0.2805	FALSE
+CC:GO:0042170	CC:GO:0009941	plastid membrane	chloroplast envelope	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3529	0.2803	FALSE
+MF:GO:0046933	BP:GO:0009152	proton-transporting ATP synthase activity, rotational mechanism	purine ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3607	0.28	FALSE
+BP:GO:0009152	MF:GO:0015252	purine ribonucleotide biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3607	0.28	FALSE
+BP:GO:1901137	BP:GO:0009117	carbohydrate derivative biosynthetic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2245	0.2788	FALSE
+BP:GO:0009141	BP:GO:0009201	nucleoside triphosphate metabolic process	ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4034	0.2787	FALSE
+BP:GO:0009141	BP:GO:0009142	nucleoside triphosphate metabolic process	nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.4286	0.2787	TRUE
+CC:GO:0009535	CC:GO:0009522	chloroplast thylakoid membrane	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.248	0.2778	FALSE
+CC:GO:0055035	CC:GO:0009522	plastid thylakoid membrane	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.248	0.2778	FALSE
+BP:GO:0042273	CC:GO:0015934	ribosomal large subunit biogenesis	large ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.199	0.2773	FALSE
+BP:GO:0009259	BP:GO:1901137	ribonucleotide metabolic process	carbohydrate derivative biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2356	0.2766	FALSE
+BP:GO:0009141	BP:GO:1901135	nucleoside triphosphate metabolic process	carbohydrate derivative metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2516	0.2754	FALSE
+BP:GO:0006754	BP:GO:0009150	ATP biosynthetic process	purine ribonucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2302	0.275	TRUE
+CC:GO:0045259	BP:GO:0009150	proton-transporting ATP synthase complex	purine ribonucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2158	0.275	FALSE
+BP:GO:0009150	BP:GO:0015986	purine ribonucleotide metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2302	0.275	TRUE
+CC:GO:0016469	BP:GO:0072522	proton-transporting two-sector ATPase complex	purine-containing compound biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.237	0.275	FALSE
+MF:GO:0043565	BP:GO:0009628	sequence-specific DNA binding	response to abiotic stimulus	Other (no theme regex matched)	Water deprivation / abiotic stress	TRUE	0.1081	0.274	FALSE
+BP:GO:0009611	BP:GO:0080134	response to wounding	regulation of response to stress	Defence / biotic response	Other (no theme regex matched)	TRUE	0.2	0.2727	FALSE
+BP:GO:0019318	BP:GO:0046364	hexose metabolic process	monosaccharide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1589	0.2727	FALSE
+CC:GO:0042170	CC:GO:0009521	plastid membrane	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2383	0.2712	FALSE
+MF:GO:0046906	MF:GO:0016209	tetrapyrrole binding	antioxidant activity	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.1767	0.2706	FALSE
+BP:GO:0009152	BP:GO:0006753	purine ribonucleotide biosynthetic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1871	0.2703	TRUE
+MF:GO:0046933	BP:GO:0046390	proton-transporting ATP synthase activity, rotational mechanism	ribose phosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.25	0.2692	FALSE
+BP:GO:0046390	MF:GO:0015252	ribose phosphate biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.25	0.2692	FALSE
+BP:GO:1901137	BP:GO:0072522	carbohydrate derivative biosynthetic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2128	0.2683	FALSE
+CC:GO:0044391	CC:GO:0022627	ribosomal subunit	cytosolic small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2523	0.2683	TRUE
+BP:GO:0009145	BP:GO:0009117	purine nucleoside triphosphate biosynthetic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1681	0.2679	FALSE
+BP:GO:0009206	BP:GO:0009117	purine ribonucleoside triphosphate biosynthetic process	nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1681	0.2679	FALSE
+MF:GO:0020037	MF:GO:0016209	heme binding	antioxidant activity	Heme / oxidoreductase	Other (no theme regex matched)	TRUE	0.192	0.2674	FALSE
+BP:GO:0016072	CC:GO:0005730	rRNA metabolic process	nucleolus	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2979	0.2672	FALSE
+BP:GO:0046034	CC:GO:0016469	ATP metabolic process	proton-transporting two-sector ATPase complex	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.2742	0.2667	FALSE
+BP:GO:0009201	BP:GO:0072521	ribonucleoside triphosphate biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1608	0.2667	FALSE
+BP:GO:0009142	BP:GO:0072521	nucleoside triphosphate biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1634	0.2667	FALSE
+CC:GO:1990204	CC:GO:0009523	oxidoreductase complex	photosystem II	Heme / oxidoreductase	Photosynthesis / plastid / thylakoid	TRUE	0.1463	0.2667	FALSE
+BP:GO:0042274	CC:GO:0015935	ribosomal small subunit biogenesis	small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2203	0.2658	FALSE
+CC:GO:0009534	CC:GO:0009523	chloroplast thylakoid	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2349	0.2653	FALSE
+CC:GO:0031976	CC:GO:0009523	plastid thylakoid	photosystem II	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2335	0.2653	FALSE
+MF:GO:0046906	BP:GO:0006979	tetrapyrrole binding	response to oxidative stress	Heme / oxidoreductase	Water deprivation / abiotic stress	TRUE	0.1688	0.2644	FALSE
+BP:GO:0006353	BP:GO:0009658	DNA-templated transcription termination	chloroplast organization	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.2062	0.2642	FALSE
+BP:GO:0005996	BP:GO:0006094	monosaccharide metabolic process	gluconeogenesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.136	0.2632	TRUE
+BP:GO:0005996	BP:GO:0019319	monosaccharide metabolic process	hexose biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.136	0.2632	TRUE
+BP:GO:0034440	BP:GO:0046395	lipid oxidation	carboxylic acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2087	0.2632	FALSE
+BP:GO:0006952	BP:GO:0043207	defense response	response to external biotic stimulus	Defence / biotic response	Defence / biotic response	TRUE	0.2247	0.2628	FALSE
+BP:GO:0006952	BP:GO:0051707	defense response	response to other organism	Defence / biotic response	Defence / biotic response	TRUE	0.2247	0.2628	FALSE
+MF:GO:0020037	BP:GO:0006979	heme binding	response to oxidative stress	Heme / oxidoreductase	Water deprivation / abiotic stress	TRUE	0.1828	0.2614	FALSE
+BP:GO:0006952	BP:GO:0044419	defense response	biological process involved in interspecies interaction between organisms	Defence / biotic response	Other (no theme regex matched)	TRUE	0.2203	0.2609	FALSE
+BP:GO:0015979	CC:GO:0042170	photosynthesis	plastid membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2394	0.26	FALSE
+MF:GO:0046933	BP:GO:0072522	proton-transporting ATP synthase activity, rotational mechanism	purine-containing compound biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2037	0.2593	FALSE
+BP:GO:0072522	MF:GO:0015252	purine-containing compound biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2037	0.2593	FALSE
+BP:GO:0032259	BP:GO:0009451	methylation	RNA modification	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2068	0.2583	FALSE
+BP:GO:0006364	CC:GO:0005730	rRNA processing	nucleolus	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2877	0.2578	FALSE
+BP:GO:0009141	BP:GO:0072522	nucleoside triphosphate metabolic process	purine-containing compound biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2753	0.2571	FALSE
+BP:GO:0006635	BP:GO:0046395	fatty acid beta-oxidation	carboxylic acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2308	0.2564	TRUE
+BP:GO:0019395	BP:GO:0046395	fatty acid oxidation	carboxylic acid catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2308	0.2564	FALSE
+BP:GO:0006754	BP:GO:0009259	ATP biosynthetic process	ribonucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2	0.2558	TRUE
+CC:GO:0045259	BP:GO:0009259	proton-transporting ATP synthase complex	ribonucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.1875	0.2558	FALSE
+BP:GO:0006754	BP:GO:1901293	ATP biosynthetic process	nucleoside phosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.1788	0.2558	TRUE
+CC:GO:0045259	BP:GO:1901293	proton-transporting ATP synthase complex	nucleoside phosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.1676	0.2558	FALSE
+BP:GO:0009259	BP:GO:0015986	ribonucleotide metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2	0.2558	TRUE
+BP:GO:1901293	BP:GO:0015986	nucleoside phosphate biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1788	0.2558	TRUE
+CC:GO:0015935	MF:GO:0003735	small ribosomal subunit	structural constituent of ribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2135	0.2553	FALSE
+BP:GO:0009145	BP:GO:0072521	purine nucleoside triphosphate biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1613	0.2542	FALSE
+BP:GO:0009206	BP:GO:0072521	purine ribonucleoside triphosphate biosynthetic process	purine-containing compound metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1613	0.2542	FALSE
+BP:GO:0019684	CC:GO:0009521	photosynthesis, light reaction	photosystem	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.31	0.2542	FALSE
+CC:GO:0005840	CC:GO:0015935	ribosome	small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.217	0.2542	TRUE
+CC:GO:0009526	CC:GO:0031969	plastid envelope	chloroplast membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3025	0.254	TRUE
+BP:GO:0009451	BP:GO:0030488	RNA modification	tRNA methylation	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.179	0.2537	TRUE
+CC:GO:0042651	CC:GO:0009522	thylakoid membrane	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2331	0.2532	FALSE
+BP:GO:0006091	BP:GO:0006163	generation of precursor metabolites and energy	purine nucleotide metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2455	0.2524	FALSE
+BP:GO:0006163	BP:GO:1901137	purine nucleotide metabolic process	carbohydrate derivative biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1785	0.25	FALSE
+CC:GO:0016469	BP:GO:0009165	proton-transporting two-sector ATPase complex	nucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2148	0.25	FALSE
+BP:GO:0009150	CC:GO:0034702	purine ribonucleotide metabolic process	monoatomic ion channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2098	0.25	FALSE
+BP:GO:0009150	CC:GO:0034703	purine ribonucleotide metabolic process	cation channel complex	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2098	0.25	FALSE
+BP:GO:0015979	CC:GO:0009522	photosynthesis	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2581	0.25	FALSE
+BP:GO:0009152	BP:GO:0055086	purine ribonucleotide biosynthetic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1748	0.2469	TRUE
+BP:GO:0042254	BP:GO:0042274	ribosome biogenesis	ribosomal small subunit biogenesis	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.239	0.2466	TRUE
+BP:GO:0009152	BP:GO:0009141	purine ribonucleotide biosynthetic process	nucleoside triphosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2857	0.2464	FALSE
+BP:GO:0009201	BP:GO:0006753	ribonucleoside triphosphate biosynthetic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1472	0.2464	TRUE
+BP:GO:0046034	BP:GO:1901135	ATP metabolic process	carbohydrate derivative metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2138	0.2463	TRUE
+BP:GO:0009141	BP:GO:0009145	nucleoside triphosphate metabolic process	purine nucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3361	0.2459	FALSE
+BP:GO:0009141	BP:GO:0009206	nucleoside triphosphate metabolic process	purine ribonucleoside triphosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3361	0.2459	FALSE
+BP:GO:0042254	CC:GO:0005730	ribosome biogenesis	nucleolus	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2789	0.2456	FALSE
+BP:GO:0006364	CC:GO:0030684	rRNA processing	preribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2921	0.2455	FALSE
+BP:GO:0006754	BP:GO:0019693	ATP biosynthetic process	ribose phosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.1893	0.2444	TRUE
+BP:GO:0019693	BP:GO:0015986	ribose phosphate metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1893	0.2444	TRUE
+BP:GO:0009141	BP:GO:0046390	nucleoside triphosphate metabolic process	ribose phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.3019	0.2429	FALSE
+BP:GO:0046034	CC:GO:0034702	ATP metabolic process	monoatomic ion channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2913	0.2407	FALSE
+BP:GO:0046034	CC:GO:0034703	ATP metabolic process	cation channel complex	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2913	0.2407	FALSE
+CC:GO:0016469	BP:GO:0009205	proton-transporting two-sector ATPase complex	purine ribonucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2576	0.2391	FALSE
+CC:GO:0016469	BP:GO:0009144	proton-transporting two-sector ATPase complex	purine nucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2537	0.2391	FALSE
+BP:GO:0009141	BP:GO:1901293	nucleoside triphosphate metabolic process	nucleoside phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2521	0.2381	FALSE
+CC:GO:0034357	CC:GO:0009522	photosynthetic membrane	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2192	0.2381	TRUE
+BP:GO:0006364	BP:GO:0042274	rRNA processing	ribosomal small subunit biogenesis	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2563	0.2381	FALSE
+BP:GO:0016072	CC:GO:0030684	rRNA metabolic process	preribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2757	0.2348	FALSE
+MF:GO:0046933	BP:GO:0009260	proton-transporting ATP synthase activity, rotational mechanism	ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2683	0.2333	FALSE
+BP:GO:0009260	MF:GO:0015252	ribonucleotide biosynthetic process	proton channel activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2683	0.2333	FALSE
+BP:GO:0006754	BP:GO:0006163	ATP biosynthetic process	purine nucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.1675	0.2292	TRUE
+BP:GO:0006163	BP:GO:0015986	purine nucleotide metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1675	0.2292	TRUE
+BP:GO:0006364	BP:GO:0000470	rRNA processing	maturation of LSU-rRNA	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2216	0.2268	TRUE
+BP:GO:0009141	BP:GO:0009165	nucleoside triphosphate metabolic process	nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2684	0.2267	FALSE
+BP:GO:1901135	BP:GO:0046390	carbohydrate derivative metabolic process	ribose phosphate biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1901	0.2261	TRUE
+BP:GO:0009201	BP:GO:0055086	ribonucleoside triphosphate biosynthetic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1375	0.2237	TRUE
+BP:GO:0009141	BP:GO:0006164	nucleoside triphosphate metabolic process	purine nucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2516	0.2206	FALSE
+BP:GO:0009145	BP:GO:0006753	purine nucleoside triphosphate biosynthetic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1227	0.2174	TRUE
+BP:GO:0009206	BP:GO:0006753	purine ribonucleoside triphosphate biosynthetic process	nucleoside phosphate metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1227	0.2174	TRUE
+BP:GO:0016072	BP:GO:0000470	rRNA metabolic process	maturation of LSU-rRNA	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2081	0.2157	TRUE
+MF:GO:0180051	MF:GO:0003746	translation factor activity	translation elongation factor activity	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2718	0.2121	TRUE
+BP:GO:0046034	BP:GO:0006754	ATP metabolic process	ATP biosynthetic process	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.3232	0.2115	TRUE
+BP:GO:0046034	CC:GO:0045259	ATP metabolic process	proton-transporting ATP synthase complex	ATP synthase / proton transport	ATP synthase / proton transport	TRUE	0.303	0.2115	FALSE
+BP:GO:0046034	BP:GO:0015986	ATP metabolic process	proton motive force-driven ATP synthesis	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.3232	0.2115	TRUE
+BP:GO:0042254	CC:GO:0030684	ribosome biogenesis	preribosome	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.2518	0.2115	FALSE
+BP:GO:0046034	BP:GO:0009201	ATP metabolic process	ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2895	0.2105	FALSE
+BP:GO:0046034	BP:GO:0009142	ATP metabolic process	nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2821	0.2105	FALSE
+BP:GO:0019684	BP:GO:0009768	photosynthesis, light reaction	photosynthesis, light harvesting in photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.3016	0.2105	TRUE
+BP:GO:1901135	BP:GO:0009260	carbohydrate derivative metabolic process	ribonucleotide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1771	0.2083	TRUE
+BP:GO:0022613	BP:GO:0042274	ribonucleoprotein complex biogenesis	ribosomal small subunit biogenesis	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.1873	0.2081	TRUE
+BP:GO:0009205	BP:GO:0016052	purine ribonucleoside triphosphate metabolic process	carbohydrate catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2981	0.2073	FALSE
+BP:GO:0009144	BP:GO:0016052	purine nucleoside triphosphate metabolic process	carbohydrate catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2952	0.2073	FALSE
+BP:GO:0046034	BP:GO:0009152	ATP metabolic process	purine ribonucleotide biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.25	0.2031	FALSE
+BP:GO:0032259	BP:GO:0030488	methylation	tRNA methylation	Other (no theme regex matched)	Ribosome / translation / RNA processing	TRUE	0.1495	0.2024	TRUE
+BP:GO:2000022	BP:GO:0048583	regulation of jasmonic acid mediated signaling pathway	regulation of response to stimulus	Hormone signalling	Other (no theme regex matched)	TRUE	0.1168	0.2	TRUE
+BP:GO:0009145	BP:GO:0055086	purine nucleoside triphosphate biosynthetic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1146	0.1974	TRUE
+BP:GO:0009206	BP:GO:0055086	purine ribonucleoside triphosphate biosynthetic process	nucleobase-containing small molecule metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1146	0.1974	TRUE
+BP:GO:0046034	BP:GO:0009145	ATP metabolic process	purine nucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2991	0.1964	FALSE
+BP:GO:0046034	BP:GO:0009206	ATP metabolic process	purine ribonucleoside triphosphate biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2991	0.1964	FALSE
+BP:GO:0006754	BP:GO:0009117	ATP biosynthetic process	nucleotide metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.1345	0.1964	TRUE
+BP:GO:0009117	BP:GO:0015986	nucleotide metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1345	0.1964	TRUE
+BP:GO:0019684	CC:GO:0034357	photosynthesis, light reaction	photosynthetic membrane	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.2515	0.1939	FALSE
+BP:GO:0009150	BP:GO:0016052	purine ribonucleotide metabolic process	carbohydrate catabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2583	0.191	FALSE
+BP:GO:0006399	BP:GO:0030488	tRNA metabolic process	tRNA methylation	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.1648	0.191	TRUE
+CC:GO:0042651	CC:GO:0009654	thylakoid membrane	photosystem II oxygen evolving complex	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.1364	0.1899	TRUE
+BP:GO:0042254	BP:GO:0042255	ribosome biogenesis	ribosome assembly	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.1654	0.1888	TRUE
+CC:GO:0009579	CC:GO:0009522	thylakoid	photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.1758	0.1887	TRUE
+BP:GO:0006754	BP:GO:0072521	ATP biosynthetic process	purine-containing compound metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.129	0.1864	TRUE
+BP:GO:0072521	BP:GO:0015986	purine-containing compound metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.129	0.1864	TRUE
+CC:GO:0005840	CC:GO:0022627	ribosome	cytosolic small ribosomal subunit	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.1538	0.1833	TRUE
+CC:GO:0031967	CC:GO:0031969	organelle envelope	chloroplast membrane	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.1558	0.1823	TRUE
+BP:GO:0071369	BP:GO:0070887	cellular response to ethylene stimulus	cellular response to chemical stimulus	Hormone signalling	Other (no theme regex matched)	TRUE	0.0969	0.1807	TRUE
+BP:GO:0006754	BP:GO:0009141	ATP biosynthetic process	nucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2689	0.1803	TRUE
+CC:GO:0045259	BP:GO:0009141	proton-transporting ATP synthase complex	nucleoside triphosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.2521	0.1803	FALSE
+BP:GO:0009141	BP:GO:0015986	nucleoside triphosphate metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2689	0.1803	TRUE
+CC:GO:0034357	CC:GO:0009654	photosynthetic membrane	photosystem II oxygen evolving complex	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.1233	0.1786	TRUE
+BP:GO:0009152	BP:GO:1901135	purine ribonucleotide biosynthetic process	carbohydrate derivative metabolic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1317	0.1765	TRUE
+BP:GO:0006091	BP:GO:0009765	generation of precursor metabolites and energy	photosynthesis, light harvesting	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.1115	0.1758	TRUE
+MF:GO:0019787	MF:GO:0061650	ubiquitin-like protein transferase activity	ubiquitin-like protein conjugating enzyme activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1307	0.1681	TRUE
+MF:GO:0016755	MF:GO:0061650	aminoacyltransferase activity	ubiquitin-like protein conjugating enzyme activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1282	0.1638	TRUE
+BP:GO:0015979	BP:GO:0009768	photosynthesis	photosynthesis, light harvesting in photosystem I	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.1532	0.1625	TRUE
+MF:GO:0004842	MF:GO:0061631	ubiquitin-protein transferase activity	ubiquitin conjugating enzyme activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1168	0.1619	TRUE
+BP:GO:0006754	BP:GO:0006753	ATP biosynthetic process	nucleoside phosphate metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.0982	0.1594	TRUE
+BP:GO:0006753	BP:GO:0015986	nucleoside phosphate metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.0982	0.1594	TRUE
+BP:GO:0022613	BP:GO:0042255	ribonucleoprotein complex biogenesis	ribosome assembly	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.1297	0.1588	TRUE
+MF:GO:0019787	MF:GO:0061631	ubiquitin-like protein transferase activity	ubiquitin conjugating enzyme activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1111	0.1532	TRUE
+MF:GO:0030246	MF:GO:0030247	carbohydrate binding	polysaccharide binding	Carbohydrate binding / cell wall	Carbohydrate binding / cell wall	TRUE	0.1703	0.1528	TRUE
+MF:GO:0016755	MF:GO:0061631	aminoacyltransferase activity	ubiquitin conjugating enzyme activity	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.109	0.1491	TRUE
+BP:GO:0042254	BP:GO:0000470	ribosome biogenesis	maturation of LSU-rRNA	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.1507	0.1477	TRUE
+BP:GO:1901700	BP:GO:0070887	response to oxygen-containing compound	cellular response to chemical stimulus	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.2531	0.1469	FALSE
+BP:GO:0006754	BP:GO:0055086	ATP biosynthetic process	nucleobase-containing small molecule metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.0917	0.1447	TRUE
+BP:GO:0055086	BP:GO:0015986	nucleobase-containing small molecule metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.0917	0.1447	TRUE
+BP:GO:0006754	BP:GO:1901137	ATP biosynthetic process	carbohydrate derivative biosynthetic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.11	0.1429	TRUE
+BP:GO:1901137	BP:GO:0015986	carbohydrate derivative biosynthetic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.11	0.1429	TRUE
+CC:GO:0009579	CC:GO:0009654	thylakoid	photosystem II oxygen evolving complex	Photosynthesis / plastid / thylakoid	Photosynthesis / plastid / thylakoid	TRUE	0.0989	0.1415	TRUE
+BP:GO:0035556	BP:GO:0000160	intracellular signal transduction	phosphorelay signal transduction system	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.1962	0.1351	TRUE
+BP:GO:0009873	BP:GO:0070887	ethylene-activated signaling pathway	cellular response to chemical stimulus	Hormone signalling	Other (no theme regex matched)	TRUE	0.0844	0.1325	TRUE
+BP:GO:0022613	BP:GO:0000470	ribonucleoprotein complex biogenesis	maturation of LSU-rRNA	Ribosome / translation / RNA processing	Ribosome / translation / RNA processing	TRUE	0.1182	0.125	TRUE
+BP:GO:0006952	BP:GO:0050832	defense response	defense response to fungus	Defence / biotic response	Defence / biotic response	TRUE	0.0654	0.1077	TRUE
+BP:GO:0009873	BP:GO:0035556	ethylene-activated signaling pathway	intracellular signal transduction	Hormone signalling	Other (no theme regex matched)	TRUE	0.0854	0.0991	TRUE
+BP:GO:0006754	BP:GO:1901135	ATP biosynthetic process	carbohydrate derivative metabolic process	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.0691	0.0957	TRUE
+BP:GO:1901135	BP:GO:0015986	carbohydrate derivative metabolic process	proton motive force-driven ATP synthesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.0691	0.0957	TRUE
+MF:GO:0046933	MF:GO:0016874	proton-transporting ATP synthase activity, rotational mechanism	ligase activity	ATP synthase / proton transport	Other (no theme regex matched)	TRUE	0.1089	0.0897	TRUE
+BP:GO:0044283	BP:GO:0006094	small molecule biosynthetic process	gluconeogenesis	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.0443	0.0867	TRUE
+BP:GO:0044283	BP:GO:0019319	small molecule biosynthetic process	hexose biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.0443	0.0867	TRUE
+BP:GO:0044283	BP:GO:0046364	small molecule biosynthetic process	monosaccharide biosynthetic process	Other (no theme regex matched)	Other (no theme regex matched)	TRUE	0.0651	0.0738	TRUE
+BP:GO:0006091	BP:GO:0009768	generation of precursor metabolites and energy	photosynthesis, light harvesting in photosystem I	Other (no theme regex matched)	Photosynthesis / plastid / thylakoid	TRUE	0.0642	0.0682	TRUE

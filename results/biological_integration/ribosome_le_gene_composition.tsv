@@ -1,0 +1,6 @@
+gene_category	n_genes	median_stat	organelle_identical
+other	176	0.475	0
+cytosolic ribosomal protein	166	0.518	0
+translation factor / tRNA-related	121	0.522	0
+organellar ribosomal protein (plastid/mitochondrial)	55	0.748	1
+biogenesis / RNA processing factor	51	0.554	0
