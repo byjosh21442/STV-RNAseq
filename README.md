@@ -23,41 +23,47 @@ Verified sample table: [data/metadata/samples_metadata.tsv](data/metadata/sample
 | STV_free (intended reference level) | 3 | STV_free_rep1–3 |
 | STV_infected | 3 | STV_infected_rep1–3 |
 
-## Intended workflow (pending approvals — see [docs/decisions.md](docs/decisions.md))
+## Intended workflow (D-002 approved; D-001 reference pending — see [docs/decisions.md](docs/decisions.md))
 
 ```text
-ENA FASTQ (MD5-checked) → FastQC → MultiQC → [trimming only if QC justifies]
+ENA FASTQ (MD5-checked) → FastQC → MultiQC → [trimming only if QC justifies — not needed so far]
 → Salmon (decoy-aware index) → tximport → DESeq2 → plant functional analysis
 ```
 
-Nextflow will automate FASTQ → QC → quantification; tximport/DESeq2/functional analysis run as R scripts.
+Nextflow (`workflow/`) automates FASTQ → QC → quantification; tximport/DESeq2/functional analysis will run as R scripts.
+
+## Working location
+
+Active copy: **`~/projects/STV_GSE137303`** on the WSL filesystem (D-006). Activate the tools with `conda activate stv-rnaseq` ([docs/software_versions.md](docs/software_versions.md)).
 
 ## Directory structure
 
 ```text
-config/            samplesheet.csv (accession-based, generated)
-workflow/          Nextflow pipeline (empty: Nextflow not installed yet)
-scripts/bash/      audit, metadata and GEO-file scripts
+config/            samplesheet.csv (generated; accessions + fastq_1)
+workflow/          Nextflow DSL2 pipeline: main.nf, modules/, nextflow.config, bootstrap/, tests/stub/
+scripts/bash/      audit, metadata, download, sanity-check, FastQC-summary, Nextflow-install scripts
 scripts/R/         tximport / DESeq2 / functional analysis (later)
+envs/              stv-rnaseq.yml (pinned) + linux-64 lock file
 data/metadata/     samples_metadata.tsv + raw source records (sources/)
-data/raw/          FASTQ (git-ignored, not downloaded yet)
+data/raw/          six ENA FASTQ.gz, MD5-validated (git-ignored)
 data/processed/    original_geo/GSE137303_count.txt.gz (authors' table, audit only)
-reference/         genome/annotation/indexes (git-ignored, not downloaded yet)
-results/           qc/, quantification/, deseq2/, functional/
-figures/, envs/    final figures; environment definitions (later)
-docs/              audits, design, decisions, run log
+reference/         genome/annotation/indexes (git-ignored; nothing downloaded — D-001)
+results/           qc/ (checksum, sanity and QC summary TSVs tracked; FastQC/MultiQC reports ignored),
+                   quantification/, deseq2/, functional/, pipeline_info/
+figures/           final figures (later)
+docs/              audits, design, sources, decisions, validation, QC assessment, run log
 ```
 
-## Current status (Phase 1, 2026-10-25)
+## Current status (Phase 2, 2026-10-25)
 
-- Done: environment audit, dataset audit (six-sample mapping verified across GEO/SRA/ENA), GEO count-file audit, reference and pipeline research, samplesheet, docs.
-- Key findings: data are **single-end 75 nt**; strandedness **unknown**; the GEO "count" table is keyed by **NCBI RefSeq R102 IDs (not ITAG2.4)** and looks **library-size normalized** → not usable for DESeq2.
-- Not done (stop conditions): Nextflow/Java/R/tool installation, FASTQ or reference download, any quantification or DESeq2.
-- Blocking decisions: reference version (D-001), quantification strategy (D-002).
+- Phase 1: environment/dataset/GEO-table audits, reference and pipeline research.
+- Phase 2 done: WSL-native clone; `stv-rnaseq` env (FastQC 0.13.0, MultiQC 1.35, Salmon 2.7.0, SeqKit, pigz, OpenJDK 21) + Nextflow 26.10.3; bootstrap and `-resume` validated; six FASTQ downloaded from ENA (5.72 GB) with **6/6 MD5 PASS**; sanity checks 6/6 PASS (read counts = ENA, all 75 nt); raw FastQC + MultiQC via the workflow; QC conclusion **A — no preprocessing appears necessary** ([docs/raw_qc_assessment.md](docs/raw_qc_assessment.md)).
+- Not done (stop conditions): reference download, Salmon index/quantification, tximport, DESeq2, trimming, interpretation.
+- Blocking: reference version **D-001**. To confirm: **D-009** (no trimming).
 
-## Reproduce the completed Phase 1 steps
+## Reproduce
 
-From the project root, inside WSL (Ubuntu), with `bash`, `curl`, `awk`, `zcat`:
+Phase 1 (any bash with `curl`, `awk`, `zcat`):
 
 ```bash
 bash scripts/bash/env_audit.sh                      # read-only environment report
@@ -69,9 +75,21 @@ bash scripts/bash/verify_geo_counts_annotation.sh   # streams NCBI SL2.50 GFF (8
 
 Remote records can change over time; the copies used for this phase are committed in `data/metadata/sources/`.
 
+Phase 2 (WSL, project root):
+
+```bash
+CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-rnaseq.yml   # or: conda create -n stv-rnaseq --file envs/stv-rnaseq.linux-64.lock.txt
+conda activate stv-rnaseq
+bash scripts/bash/install_nextflow.sh && conda deactivate && conda activate stv-rnaseq
+nextflow run workflow/bootstrap/main.nf -w work/bootstrap && nextflow run workflow/bootstrap/main.nf -w work/bootstrap -resume
+bash scripts/bash/download_fastq.sh        # ENA download, resume, size+MD5 validation
+bash scripts/bash/check_raw_fastq.sh       # gzip/structure/length/read-count checks
+nextflow run workflow/main.nf -resume      # FastQC + MultiQC (Salmon off)
+bash scripts/bash/summarize_fastqc.sh      # results/qc/raw_qc_summary.tsv
+```
+
 ## Next steps
 
-1. Approve or amend D-001 … D-008 in [docs/decisions.md](docs/decisions.md).
-2. Clone to the WSL filesystem: `git clone "/mnt/c/Users/Cutza/Projects/Proyecto RNASeq Genómica" ~/projects/STV_GSE137303`.
-3. Install Java + Nextflow as described in [docs/environment_audit.md](docs/environment_audit.md); then build the trivial Nextflow bootstrap test.
-4. After approval: download FASTQ from ENA with MD5 checks, run FastQC/MultiQC, decide on trimming, infer strandedness.
+1. Decide **D-001** (reference: SL4.0+ITAG4.1 recommended; alternatives SL2.50+ITAG2.4 / SL2.50+NCBI R102) and confirm **D-009** (no trimming).
+2. After D-001: download the approved genome + transcript FASTA + annotation into `reference/`, build the decoy-aware Salmon index (`--run_quant true`), run Salmon with `-l A`, inspect `lib_format_counts.json` of all six samples (D-004).
+3. Then tximport → DESeq2 in `scripts/R/` (design and thresholds need approval).

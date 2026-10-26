@@ -51,6 +51,7 @@ results/pipeline_info/
 
 # --- Large / regenerable results (small final tables and figures stay tracked) ---
 results/qc/fastqc_raw/
+results/qc/multiqc_raw/
 results/qc/**/*_data/
 results/quantification/salmon/
 results/quantification/**/aux_info/

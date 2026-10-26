@@ -1,0 +1,7 @@
+sample	total_sequences	poor_quality	sequence_length	gc_pct	min_mean_base_quality	min_lower_quartile	per_seq_quality_mode	max_n_content_pct	max_adapter_pct	max_adapter_type	dedup_pct_remaining	n_overrepresented	flag:Basic Statistics	flag:Per base sequence quality	flag:Per tile sequence quality	flag:Per sequence quality scores	flag:Per base sequence content	flag:Per sequence GC content	flag:Per base N content	flag:Sequence Length Distribution	flag:Sequence Duplication Levels	flag:Overrepresented sequences	flag:Adapter Content
+STV_free_rep1	18080482	NA	75	42	33.5	34.0	39	0.041	0.209	PolyA	31.20	3	PASS	PASS	PASS	PASS	FAIL	PASS	PASS	PASS	FAIL	WARN	PASS
+STV_free_rep2	16288249	NA	75	44	33.5	34.0	39	0.042	0.110	PolyA	34.59	0	PASS	PASS	PASS	PASS	FAIL	PASS	PASS	PASS	FAIL	PASS	PASS
+STV_free_rep3	14318362	NA	75	44	33.5	34.0	39	0.041	0.144	PolyA	35.20	3	PASS	PASS	PASS	PASS	FAIL	WARN	PASS	PASS	FAIL	WARN	PASS
+STV_infected_rep1	19230359	NA	75	43	33.5	34.0	39	0.041	0.191	PolyA	30.52	2	PASS	PASS	PASS	PASS	FAIL	WARN	PASS	PASS	FAIL	WARN	PASS
+STV_infected_rep2	16858900	NA	75	44	33.5	34.0	39	0.041	0.110	PolyA	33.36	2	PASS	PASS	PASS	PASS	FAIL	WARN	PASS	PASS	FAIL	WARN	PASS
+STV_infected_rep3	19862460	NA	75	43	33.5	34.0	39	0.041	0.156	PolyA	32.54	2	PASS	PASS	PASS	PASS	FAIL	WARN	PASS	PASS	FAIL	WARN	PASS

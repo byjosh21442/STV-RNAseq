@@ -2,7 +2,7 @@
 
 Small DSL2 workflow for this six-sample, **single-end** dataset. Architecture modelled on nf-core/rnaseq 3.27.0 and the Nextflow RNAseq training (sources: `docs/pipeline_sources.md`); it is not a copy of nf-core/rnaseq.
 
-Status (Phase 2): samplesheet validation, FastQC and MultiQC run on real data; Salmon index/quant are implemented and stub-tested but **disabled** until the reference decision (D-001) is approved.
+Status (Phase 2): samplesheet validation, FastQC and MultiQC have run on the six real samples (86 s; `-resume` fully cached; `docs/raw_qc_assessment.md`); Salmon index/quant are implemented and stub-tested but **disabled** until the reference decision (D-001) is approved.
 
 ## Diagram
 
@@ -78,8 +78,8 @@ Before any task is submitted, `readSamplesheet()` checks required columns, uniqu
 | Output | Path | Git |
 |---|---|---|
 | FastQC HTML + ZIP | `results/qc/fastqc_raw/<sample>_fastqc.{html,zip}` | ignored |
-| MultiQC | `results/qc/multiqc_raw/multiqc_report.html`, `multiqc_report_data/` | report tracked, data ignored |
-| Salmon (future) | `results/quantification/salmon/<sample>/` + `samples.csv` index | ignored / index tracked later |
+| MultiQC | `results/qc/multiqc_raw/multiqc_report.html`, `multiqc_report_data/` | ignored (2.4 MB, regenerable in ~90 s); small TSV summaries in `results/qc/*.tsv` are tracked |
+| Salmon (future) | `results/quantification/salmon/<sample>/` + `samples.csv` index | ignored (with `run_quant=false` an empty `samples.csv` is still written by the output index) |
 | Run reports | `results/pipeline_info/` (report, timeline, trace, `software_versions.tsv`) | ignored |
 
 ## Resources (personal WSL2 machine: 15 GiB RAM, 20 threads)
