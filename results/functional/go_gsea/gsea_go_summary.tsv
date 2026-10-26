@@ -1,0 +1,4 @@
+collection	sets_with_ranked_genes	sets_tested_15_500	sets_expected_from_catalog	significant_fdr05	significant_positive_NES	significant_negative_NES	all_positive_NES	all_negative_NES	min_padj	min_pval	NES_range	na_pval_or_NES	log2err_NA	warnings_total	warnings_material	rerun_same_seed_identical	seed_diag_significance_calls_changed	seed_diag_max_abs_log10_pval_diff	le_jaccard_pairs_significant	le_jaccard_pairs_ge_0.5	le_jaccard_max
+BP	3464	952	952	120	75	45	464	488	1.38620490596681e-09	1.45609759030127e-12	-2.201 to 2.505	0	0	0	0	TRUE	15	0.618150698025059	7140	193	1
+MF	2239	459	459	51	21	30	179	280	7.91569230506504e-29	1.7245517004499e-31	-1.998 to 2.79	0	0	0	0	TRUE	0	0.709766824169787	1275	28	1
+CC	801	237	237	44	40	4	132	105	4.99906512473289e-30	2.10931017921219e-32	-1.568 to 2.917	0	0	0	0	TRUE	0	0.585574538152704	946	79	1

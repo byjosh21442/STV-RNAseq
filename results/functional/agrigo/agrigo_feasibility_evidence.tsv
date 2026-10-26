@@ -1,0 +1,16 @@
+resource	value	source	accessed_utc
+agriGO_version	2.0 (site "Last maintain: 2021-04-04"; news items to 2026-04-10)	https://systemsbiology.cau.edu.cn/agriGOv2/	2026-10-26
+agriGO_GO_datasets	GO Consortium mySQL 2009-10 (31,437 terms) and 2016-8 (45,110 terms)	https://systemsbiology.cau.edu.cn/agriGOv2/download.php	2026-10-26
+tomato_background	Transcript ID (ITG3.2 version); GO 2016; 3,947 terms; 20,036 IDs; Sol Genomics Network	download.php	2026-10-26
+tomato_background	gene ID (ITG3.2 version); GO 2016; 3,497 terms; 20,036 IDs; Sol Genomics Network	download.php	2026-10-26
+tomato_background	Transcript ID (ITAG4.0 version); GO 2016; 19,343 terms; 25,407 IDs; source "User defined" (provenance and evidence not documented)	download.php	2026-10-26
+tomato_background	loci / transcript ID iTAG2.4 (SGN); GO 2010; 6,300 terms; 19,662 IDs	download.php	2026-10-26
+tomato_background	locus ID iTAG2.3 (phytozome); GO 2010; 5,008 terms; 16,941 IDs	download.php	2026-10-26
+tomato_background	locus ID (Gramene Release 50); GO 2016; 6,647 terms; 20,933 IDs	download.php	2026-10-26
+tomato_background	locus ID (PLAZA3.0); GO 2016; 8,130 terms; 26,757 IDs	download.php	2026-10-26
+tomato_background	Entry identifier (UniProt 2016); GO 2016; 7,172 terms; 23,252 IDs	download.php	2026-10-26
+SEA_input	list of IDs (supported species) or IDs with GO accessions (customized); background suggested / customized / customized annotated; hypergeometric, Fisher or chi-square; FDR / Yekutieli / Bonferroni / Hochberg / Hommel / Holm	https://systemsbiology.cau.edu.cn/agriGOv2/manual.php	2026-10-26
+PAGE_input	identifiers plus >= 1 numeric column ("fold change (FC) or log2-transformed FC value (latter preferred)"); Z-score based on the Central Limit Theorem (Kim & Volsky 2005); own GO annotation file allowed, "limited to 4MB"; GO full or plant GO slim	manual.php	2026-10-26
+job_retention	"results of your jobs will be stored on our server for THREE DAYS. After 7 days all information of the job will be deleted"	manual.php	2026-10-26
+project_annotation_size	PLAZA primary direct GO after GO-version mapping: 103,133 gene-term pairs (would fit 4 MB as ID<TAB>GO lines, but agriGO would place it on its 2016-08 ontology)	results/functional/functional_annotation_summary.tsv	2026-10-26
+project_id_mapping	ITAG4.0 gene ID -> ITAG4.0 transcript ID is 1:1 (reference/ITAG4.0_tx2gene.tsv); ID mapping is not the limiting factor	reference/ITAG4.0_tx2gene.tsv	2026-10-26

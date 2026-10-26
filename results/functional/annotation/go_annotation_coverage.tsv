@@ -1,0 +1,8 @@
+source	tested_genes_covered	tested_universe	pct_tested	ranked_genes_covered	ranked_universe	pct_ranked
+PLAZA5.0 primary direct GO after GO-version mapping (USED)	15147	18277	82.87	15115	18238	82.88
+PLAZA5.0 BP after propagation (non-root)	10708	18277	58.59	10686	18238	58.59
+PLAZA5.0 MF after propagation (non-root)	12227	18277	66.9	12202	18238	66.9
+PLAZA5.0 CC after propagation (non-root)	10285	18277	56.27	10272	18238	56.32
+PLAZA5.0 any source incl. orthology projections (not used)	16292	18277	89.14	16258	18238	89.14
+SGN ITAG4.0_goterms exact gene ID (not used)	460	18277	2.52	459	18238	2.52
+SGN ITAG4.1_goterms exact transcript + identical protein (not used)	8327	18277	45.56	8311	18238	45.57

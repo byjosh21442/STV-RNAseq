@@ -1,0 +1,30 @@
+collection	direction	order	go_id	term_name	NES	padj	figure_file
+BP	positive	1	GO:0042254	ribosome biogenesis	2.16523087077237	1.38620490596681e-09	figures/functional/enrichment_curves/BP_positive_1_GO_0042254.png
+BP	positive	2	GO:0015979	photosynthesis	2.43890811983402	1.1598641655191e-08	figures/functional/enrichment_curves/BP_positive_2_GO_0015979.png
+BP	positive	3	GO:0022613	ribonucleoprotein complex biogenesis	1.97879086422567	1.1598641655191e-08	figures/functional/enrichment_curves/BP_positive_3_GO_0022613.png
+BP	positive	4	GO:0009657	plastid organization	2.3328631664953	1.48990268183486e-06	figures/functional/enrichment_curves/BP_positive_4_GO_0009657.png
+BP	positive	5	GO:0006353	DNA-templated transcription termination	2.50523956794286	2.37963194469395e-06	figures/functional/enrichment_curves/BP_positive_5_GO_0006353.png
+BP	negative	1	GO:0006952	defense response	-1.95476674446749	1.1598641655191e-08	figures/functional/enrichment_curves/BP_negative_1_GO_0006952.png
+BP	negative	2	GO:0001101	response to acid chemical	-2.18669202976398	6.10189043260784e-07	figures/functional/enrichment_curves/BP_negative_2_GO_0001101.png
+BP	negative	3	GO:0009415	response to water	-2.20137963740288	7.86497311791961e-07	figures/functional/enrichment_curves/BP_negative_3_GO_0009415.png
+BP	negative	4	GO:0009414	response to water deprivation	-2.17358758169967	1.55259478722657e-06	figures/functional/enrichment_curves/BP_negative_4_GO_0009414.png
+BP	negative	5	GO:0008037	cell recognition	-2.12807896668115	0.000356435373695421	figures/functional/enrichment_curves/BP_negative_5_GO_0008037.png
+MF	positive	1	GO:0003735	structural constituent of ribosome	2.79033916440853	7.91569230506504e-29	figures/functional/enrichment_curves/MF_positive_1_GO_0003735.png
+MF	positive	2	GO:0005198	structural molecule activity	2.63165500191023	3.55310158269925e-27	figures/functional/enrichment_curves/MF_positive_2_GO_0005198.png
+MF	positive	3	GO:0019843	rRNA binding	2.30697854967278	7.9493832572591e-06	figures/functional/enrichment_curves/MF_positive_3_GO_0019843.png
+MF	positive	4	GO:0003729	mRNA binding	1.90412848082776	8.27680188385834e-05	figures/functional/enrichment_curves/MF_positive_4_GO_0003729.png
+MF	positive	5	GO:0180051	translation factor activity	2.05276481510016	0.000166876772148048	figures/functional/enrichment_curves/MF_positive_5_GO_0180051.png
+MF	negative	1	GO:0030246	carbohydrate binding	-1.86946849521798	0.000166876772148048	figures/functional/enrichment_curves/MF_negative_1_GO_0030246.png
+MF	negative	2	GO:0020037	heme binding	-1.78230606702197	0.000303649346498897	figures/functional/enrichment_curves/MF_negative_2_GO_0020037.png
+MF	negative	3	GO:0019842	vitamin binding	-1.86664231264991	0.000553423759610051	figures/functional/enrichment_curves/MF_negative_3_GO_0019842.png
+MF	negative	4	GO:0043565	sequence-specific DNA binding	-1.57587959069847	0.000943211728535952	figures/functional/enrichment_curves/MF_negative_4_GO_0043565.png
+MF	negative	5	GO:0031418	L-ascorbic acid binding	-1.99806712658358	0.00101316786864238	figures/functional/enrichment_curves/MF_negative_5_GO_0031418.png
+CC	positive	1	GO:0005840	ribosome	2.80084623436518	4.99906512473289e-30	figures/functional/enrichment_curves/CC_positive_1_GO_0005840.png
+CC	positive	2	GO:0044391	ribosomal subunit	2.83351874563613	3.25594819212342e-22	figures/functional/enrichment_curves/CC_positive_2_GO_0044391.png
+CC	positive	3	GO:0022626	cytosolic ribosome	2.91668612278351	2.97729910943935e-21	figures/functional/enrichment_curves/CC_positive_3_GO_0022626.png
+CC	positive	4	GO:0015934	large ribosomal subunit	2.69081252808148	1.38570555198776e-14	figures/functional/enrichment_curves/CC_positive_4_GO_0015934.png
+CC	positive	5	GO:0022625	cytosolic large ribosomal subunit	2.77532848628689	4.0388061624456e-14	figures/functional/enrichment_curves/CC_positive_5_GO_0022625.png
+CC	negative	1	GO:0005783	endoplasmic reticulum	-1.56772540128719	0.000191784682065679	figures/functional/enrichment_curves/CC_negative_1_GO_0005783.png
+CC	negative	2	GO:0098827	endoplasmic reticulum subcompartment	-1.49257888060557	0.0128393551659901	figures/functional/enrichment_curves/CC_negative_2_GO_0098827.png
+CC	negative	3	GO:0005789	endoplasmic reticulum membrane	-1.49645738720958	0.0148630254290071	figures/functional/enrichment_curves/CC_negative_3_GO_0005789.png
+CC	negative	4	GO:0042175	nuclear outer membrane-endoplasmic reticulum membrane network	-1.49645738720958	0.0148630254290071	figures/functional/enrichment_curves/CC_negative_4_GO_0042175.png

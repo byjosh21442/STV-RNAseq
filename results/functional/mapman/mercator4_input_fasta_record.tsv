@@ -1,0 +1,2 @@
+file	sha256	bytes	records	terminal_stop_records	internal_stop_records	nonstandard_character_records	sequence_type	source
+reference/SGN/ITAG4.0/ITAG4.0_proteins.fasta	84c15ec4bb6bbb5091c9b96838d9ed59f0efb93ba4d5760caf517439dc76f4bb	12380140	34075	32522	334	0	protein	SGN ITAG4.0 release (reference/reference_manifest.tsv)

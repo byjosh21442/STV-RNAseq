@@ -1,0 +1,824 @@
+pathway_id	pathway_name	gene_id
+R-SLY-1119260.1	Cardiolipin biosynthesis	Solyc04g009580.3
+R-SLY-1119260.1	Cardiolipin biosynthesis	Solyc04g049550.3
+R-SLY-1119260.1	Cardiolipin biosynthesis	Solyc07g055980.3
+R-SLY-1119260.1	Cardiolipin biosynthesis	Solyc07g064960.2
+R-SLY-1119260.1	Cardiolipin biosynthesis	Solyc09g083330.3
+R-SLY-1119260.1	Cardiolipin biosynthesis	Solyc12g011020.2
+R-SLY-1119261.1	Salicylate biosynthesis	Solyc05g056170.3
+R-SLY-1119261.1	Salicylate biosynthesis	Solyc06g071030.3
+R-SLY-1119261.1	Salicylate biosynthesis	Solyc10g086180.2
+R-SLY-1119262.1	Threonine biosynthesis from homoserine	Solyc03g121910.1
+R-SLY-1119263.1	Arginine biosynthesis	Solyc02g092260.3
+R-SLY-1119263.1	Arginine biosynthesis	Solyc04g080610.3
+R-SLY-1119263.1	Arginine biosynthesis	Solyc05g012270.3
+R-SLY-1119263.1	Arginine biosynthesis	Solyc08g076970.3
+R-SLY-1119263.1	Arginine biosynthesis	Solyc08g076990.3
+R-SLY-1119263.1	Arginine biosynthesis	Solyc08g080370.3
+R-SLY-1119263.1	Arginine biosynthesis	Solyc11g005620.1
+R-SLY-1119265.1	Tetrahydrofolate biosynthesis I	Solyc01g109830.3
+R-SLY-1119265.1	Tetrahydrofolate biosynthesis I	Solyc04g007560.3
+R-SLY-1119265.1	Tetrahydrofolate biosynthesis I	Solyc11g012100.2
+R-SLY-1119267.1	Phenylalanine degradation III	Solyc10g076510.2
+R-SLY-1119271.1	Threonine degradation	Solyc04g009960.3
+R-SLY-1119273.1	Lysine biosynthesis I	Solyc03g044660.3
+R-SLY-1119273.1	Lysine biosynthesis I	Solyc05g014470.3
+R-SLY-1119273.1	Lysine biosynthesis I	Solyc06g064550.3
+R-SLY-1119273.1	Lysine biosynthesis I	Solyc10g005510.3
+R-SLY-1119273.1	Lysine biosynthesis I	Solyc11g040390.2
+R-SLY-1119274.1	Monoterpene biosynthesis	Solyc08g007310.3
+R-SLY-1119276.1	Choline biosynthesis III	Solyc05g010440.2
+R-SLY-1119276.1	Choline biosynthesis III	Solyc06g068090.3
+R-SLY-1119278.1	PRPP biosynthesis I	Solyc07g056330.3
+R-SLY-1119278.1	PRPP biosynthesis I	Solyc10g024410.2
+R-SLY-1119281.1	Aspartate biosynthesis I	Solyc04g054710.3
+R-SLY-1119281.1	Aspartate biosynthesis I	Solyc07g055210.3
+R-SLY-1119281.1	Aspartate biosynthesis I	Solyc08g041870.3
+R-SLY-1119283.1	Lysine biosynthesis II	Solyc03g044660.3
+R-SLY-1119283.1	Lysine biosynthesis II	Solyc05g014470.3
+R-SLY-1119283.1	Lysine biosynthesis II	Solyc06g064550.3
+R-SLY-1119283.1	Lysine biosynthesis II	Solyc10g005510.3
+R-SLY-1119283.1	Lysine biosynthesis II	Solyc11g040390.2
+R-SLY-1119286.1	Cholesterol biosynthesis II (via 24,25-dihydrolanosterol)	Solyc01g110290.3
+R-SLY-1119286.1	Cholesterol biosynthesis II (via 24,25-dihydrolanosterol)	Solyc06g005750.3
+R-SLY-1119286.1	Cholesterol biosynthesis II (via 24,25-dihydrolanosterol)	Solyc06g082980.3
+R-SLY-1119287.1	Vitamin E biosynthesis	Solyc03g005230.3
+R-SLY-1119287.1	Vitamin E biosynthesis	Solyc07g045050.3
+R-SLY-1119287.1	Vitamin E biosynthesis	Solyc09g065730.3
+R-SLY-1119289.1	Arginine degradation	Solyc02g068640.3
+R-SLY-1119289.1	Arginine degradation	Solyc06g071000.3
+R-SLY-1119293.1	Glutamine biosynthesis I	Solyc01g080280.3
+R-SLY-1119295.1	Homoserine biosynthesis	Solyc06g064550.3
+R-SLY-1119295.1	Homoserine biosynthesis	Solyc11g040390.2
+R-SLY-1119297.1	Beta-alanine biosynthesis III	Solyc10g047630.2
+R-SLY-1119297.1	Beta-alanine biosynthesis III	Solyc11g064920.2
+R-SLY-1119298.1	Glutathione redox reactions II	Solyc09g065900.3
+R-SLY-1119300.1	Glycolipid desaturation	Solyc01g006430.3
+R-SLY-1119300.1	Glycolipid desaturation	Solyc04g040120.1
+R-SLY-1119300.1	Glycolipid desaturation	Solyc04g040130.1
+R-SLY-1119300.1	Glycolipid desaturation	Solyc06g051400.3
+R-SLY-1119300.1	Glycolipid desaturation	Solyc07g005510.3
+R-SLY-1119304.1	Putrescine biosynthesis II	Solyc11g068540.2
+R-SLY-1119311.1	Glycine biosynthesis I	Solyc01g104000.3
+R-SLY-1119312.1	Photorespiration	Solyc01g111630.3
+R-SLY-1119312.1	Photorespiration	Solyc02g063150.3
+R-SLY-1119312.1	Photorespiration	Solyc02g068740.3
+R-SLY-1119312.1	Photorespiration	Solyc02g080810.3
+R-SLY-1119312.1	Photorespiration	Solyc03g034220.3
+R-SLY-1119312.1	Photorespiration	Solyc03g122140.3
+R-SLY-1119312.1	Photorespiration	Solyc05g013380.3
+R-SLY-1119312.1	Photorespiration	Solyc05g053300.3
+R-SLY-1119312.1	Photorespiration	Solyc06g061070.3
+R-SLY-1119312.1	Photorespiration	Solyc08g007040.3
+R-SLY-1119312.1	Photorespiration	Solyc08g065220.3
+R-SLY-1119312.1	Photorespiration	Solyc12g099100.2
+R-SLY-1119312.1	Photorespiration	Solyc12g099930.2
+R-SLY-1119314.1	Cellulose biosynthesis	Solyc01g087210.3
+R-SLY-1119314.1	Cellulose biosynthesis	Solyc02g072240.3
+R-SLY-1119314.1	Cellulose biosynthesis	Solyc07g005840.2
+R-SLY-1119314.1	Cellulose biosynthesis	Solyc08g061100.3
+R-SLY-1119314.1	Cellulose biosynthesis	Solyc09g075550.3
+R-SLY-1119316.1	Phenylpropanoid biosynthesis	Solyc01g107590.3
+R-SLY-1119316.1	Phenylpropanoid biosynthesis	Solyc03g116910.3
+R-SLY-1119316.1	Phenylpropanoid biosynthesis	Solyc03g117600.3
+R-SLY-1119316.1	Phenylpropanoid biosynthesis	Solyc10g078240.2
+R-SLY-1119317.1	Spermine biosynthesis	Solyc03g007240.3
+R-SLY-1119318.1	Proline biosynthesis V (from arginine)	Solyc02g068640.3
+R-SLY-1119318.1	Proline biosynthesis V (from arginine)	Solyc04g080610.3
+R-SLY-1119321.1	Glycerol degradation I	Solyc07g006780.3
+R-SLY-1119322.1	Leucodelphinidin biosynthesis	Solyc02g083860.3
+R-SLY-1119325.1	Sphingolipid metabolism	Solyc01g010860.3
+R-SLY-1119325.1	Sphingolipid metabolism	Solyc01g108230.3
+R-SLY-1119325.1	Sphingolipid metabolism	Solyc02g079030.3
+R-SLY-1119325.1	Sphingolipid metabolism	Solyc03g006630.3
+R-SLY-1119325.1	Sphingolipid metabolism	Solyc05g007460.3
+R-SLY-1119325.1	Sphingolipid metabolism	Solyc05g010280.3
+R-SLY-1119325.1	Sphingolipid metabolism	Solyc06g054330.3
+R-SLY-1119331.1	Cysteine biosynthesis I	Solyc02g082850.3
+R-SLY-1119331.1	Cysteine biosynthesis I	Solyc07g065340.1
+R-SLY-1119331.1	Cysteine biosynthesis I	Solyc08g014340.3
+R-SLY-1119331.1	Cysteine biosynthesis I	Solyc09g082060.3
+R-SLY-1119331.1	Cysteine biosynthesis I	Solyc10g006040.1
+R-SLY-1119331.1	Cysteine biosynthesis I	Solyc12g008780.2
+R-SLY-1119332.1	Jasmonic acid biosynthesis	Solyc02g085730.3
+R-SLY-1119332.1	Jasmonic acid biosynthesis	Solyc03g122340.3
+R-SLY-1119332.1	Jasmonic acid biosynthesis	Solyc07g007870.3
+R-SLY-1119332.1	Jasmonic acid biosynthesis	Solyc07g014730.3
+R-SLY-1119334.1	Ethylene biosynthesis from methionine	Solyc02g036350.3
+R-SLY-1119334.1	Ethylene biosynthesis from methionine	Solyc07g049530.3
+R-SLY-1119334.1	Ethylene biosynthesis from methionine	Solyc07g049550.3
+R-SLY-1119334.1	Ethylene biosynthesis from methionine	Solyc12g005940.2
+R-SLY-1119337.1	Proline degradation	Solyc02g089620.3
+R-SLY-1119337.1	Proline degradation	Solyc02g089630.3
+R-SLY-1119337.1	Proline degradation	Solyc03g114150.3
+R-SLY-1119337.1	Proline degradation	Solyc09g090700.1
+R-SLY-1119341.1	Galactosylcyclitol biosynthesis	Solyc02g070400.3
+R-SLY-1119341.1	Galactosylcyclitol biosynthesis	Solyc08g029170.3
+R-SLY-1119341.1	Galactosylcyclitol biosynthesis	Solyc11g013490.2
+R-SLY-1119343.1	Spermidine biosynthesis	Solyc03g007240.3
+R-SLY-1119344.1	Hydroxycinnamic acid serotonin amides biosynthesis	Solyc07g054280.1
+R-SLY-1119349.1	S-methylmethionine cycle	Solyc01g102940.3
+R-SLY-1119351.1	Mitochondrial pyruvate metabolism	Solyc05g053300.3
+R-SLY-1119351.1	Mitochondrial pyruvate metabolism	Solyc12g099100.2
+R-SLY-1119353.1	Linear furanocoumarin biosynthesis	Solyc04g009600.3
+R-SLY-1119354.1	Asparagine biosynthesis III	Solyc04g055200.3
+R-SLY-1119365.1	Lysine degradation II	Solyc04g011350.3
+R-SLY-1119365.1	Lysine degradation II	Solyc07g017610.3
+R-SLY-1119365.1	Lysine degradation II	Solyc07g064800.3
+R-SLY-1119365.1	Lysine degradation II	Solyc11g065240.2
+R-SLY-1119365.1	Lysine degradation II	Solyc12g005080.2
+R-SLY-1119367.1	Polyisoprenoid biosynthesis	Solyc04g056390.3
+R-SLY-1119367.1	Polyisoprenoid biosynthesis	Solyc05g055760.3
+R-SLY-1119367.1	Polyisoprenoid biosynthesis	Solyc07g061990.3
+R-SLY-1119370.1	Sterol biosynthesis	Solyc01g009310.3
+R-SLY-1119370.1	Sterol biosynthesis	Solyc01g087560.3
+R-SLY-1119370.1	Sterol biosynthesis	Solyc01g110290.3
+R-SLY-1119370.1	Sterol biosynthesis	Solyc01g111830.3
+R-SLY-1119370.1	Sterol biosynthesis	Solyc06g082980.3
+R-SLY-1119370.1	Sterol biosynthesis	Solyc09g009040.3
+R-SLY-1119370.1	Sterol biosynthesis	Solyc10g055680.1
+R-SLY-1119370.1	Sterol biosynthesis	Solyc10g080150.2
+R-SLY-1119374.1	Abscisic acid biosynthesis	Solyc04g071940.3
+R-SLY-1119374.1	Abscisic acid biosynthesis	Solyc07g056570.1
+R-SLY-1119374.1	Abscisic acid biosynthesis	Solyc08g016720.1
+R-SLY-1119379.1	Flavin biosynthesis	Solyc01g094500.3
+R-SLY-1119379.1	Flavin biosynthesis	Solyc01g105560.3
+R-SLY-1119379.1	Flavin biosynthesis	Solyc02g079100.3
+R-SLY-1119379.1	Flavin biosynthesis	Solyc04g008990.3
+R-SLY-1119379.1	Flavin biosynthesis	Solyc08g015660.3
+R-SLY-1119379.1	Flavin biosynthesis	Solyc11g010300.2
+R-SLY-1119384.1	NAD biosynthesis I (from aspartate)	Solyc03g112060.3
+R-SLY-1119384.1	NAD biosynthesis I (from aspartate)	Solyc05g008180.3
+R-SLY-1119388.1	IAA biosynthesis VI (via indole-3-acetamide)	Solyc10g086170.1
+R-SLY-1119389.1	Phenylalanine biosynthesis I	Solyc02g080620.3
+R-SLY-1119389.1	Phenylalanine biosynthesis I	Solyc07g053710.3
+R-SLY-1119389.1	Phenylalanine biosynthesis I	Solyc07g053720.3
+R-SLY-1119389.1	Phenylalanine biosynthesis I	Solyc10g007110.3
+R-SLY-1119393.1	Asparagine degradation I	Solyc03g114790.3
+R-SLY-1119393.1	Asparagine degradation I	Solyc04g078460.3
+R-SLY-1119393.1	Asparagine degradation I	Solyc05g048770.3
+R-SLY-1119394.1	Pantothenate and coenzyme A biosynthesis III	Solyc03g112910.3
+R-SLY-1119394.1	Pantothenate and coenzyme A biosynthesis III	Solyc06g065570.3
+R-SLY-1119394.1	Pantothenate and coenzyme A biosynthesis III	Solyc09g061680.3
+R-SLY-1119394.1	Pantothenate and coenzyme A biosynthesis III	Solyc10g074580.2
+R-SLY-1119395.1	Maackiain biosynthesis	Solyc10g052490.2
+R-SLY-1119400.1	Methionine biosynthesis II	Solyc07g053710.3
+R-SLY-1119400.1	Methionine biosynthesis II	Solyc07g053720.3
+R-SLY-1119400.1	Methionine biosynthesis II	Solyc10g007110.3
+R-SLY-1119400.1	Methionine biosynthesis II	Solyc10g081510.2
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc01g104880.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc01g109370.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc02g067930.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc03g063880.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc04g007520.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc04g016330.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc05g008580.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc07g064960.2
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc08g082340.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc09g083330.3
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc10g079110.2
+R-SLY-1119402.1	Phospholipid biosynthesis I	Solyc11g065890.2
+R-SLY-1119403.1	Removal of superoxide radicals	Solyc01g067740.3
+R-SLY-1119403.1	Removal of superoxide radicals	Solyc02g021140.3
+R-SLY-1119403.1	Removal of superoxide radicals	Solyc03g095180.3
+R-SLY-1119403.1	Removal of superoxide radicals	Solyc06g049080.3
+R-SLY-1119403.1	Removal of superoxide radicals	Solyc11g066390.2
+R-SLY-1119407.1	Ureide biosynthesis	Solyc01g080940.3
+R-SLY-1119407.1	Ureide biosynthesis	Solyc10g079500.2
+R-SLY-1119407.1	Ureide biosynthesis	Solyc11g065920.2
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc01g097340.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc01g106450.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc02g063220.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc03g096730.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc04g014800.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc05g048760.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc06g051270.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc06g060100.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc08g008670.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc09g011220.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc09g082990.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc10g079470.3
+R-SLY-1119410.1	Ascorbate biosynthesis	Solyc11g012410.2
+R-SLY-1119415.1	Leucopelargonidin and leucocyanidin biosynthesis	Solyc02g083860.3
+R-SLY-1119418.1	Suberin biosynthesis	Solyc03g097030.3
+R-SLY-1119418.1	Suberin biosynthesis	Solyc03g117870.3
+R-SLY-1119418.1	Suberin biosynthesis	Solyc05g056170.3
+R-SLY-1119418.1	Suberin biosynthesis	Solyc10g086180.2
+R-SLY-1119418.1	Suberin biosynthesis	Solyc12g042460.2
+R-SLY-1119419.1	Lysine biosynthesis VI	Solyc03g044660.3
+R-SLY-1119419.1	Lysine biosynthesis VI	Solyc06g064550.3
+R-SLY-1119419.1	Lysine biosynthesis VI	Solyc06g073280.3
+R-SLY-1119419.1	Lysine biosynthesis VI	Solyc11g040390.2
+R-SLY-1119420.1	Glutamate biosynthesis V	Solyc03g063560.3
+R-SLY-1119424.1	Plastid glycolysis	Solyc02g020940.3
+R-SLY-1119424.1	Plastid glycolysis	Solyc04g009030.3
+R-SLY-1119424.1	Plastid glycolysis	Solyc04g081400.3
+R-SLY-1119424.1	Plastid glycolysis	Solyc04g082630.3
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc02g069580.3
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc03g118270.1
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc04g011400.3
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc05g050990.1
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc07g006220.2
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc07g043550.3
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc10g018260.1
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc12g006420.2
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc12g010540.1
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	Solyc12g088880.2
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc01g067750.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc01g091190.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc02g094420.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc04g051860.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc04g074480.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc05g050980.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc06g061020.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc08g007120.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc08g077460.3
+R-SLY-1119430.1	Chorismate biosynthesis	Solyc11g009080.2
+R-SLY-1119431.1	UDP-D-glucuronate biosynthesis (from myo-inositol)	Solyc06g062430.3
+R-SLY-1119431.1	UDP-D-glucuronate biosynthesis (from myo-inositol)	Solyc10g005400.3
+R-SLY-1119434.1	Phytic acid biosynthesis (lipid-independent)	Solyc03g097150.3
+R-SLY-1119434.1	Phytic acid biosynthesis (lipid-independent)	Solyc04g014800.3
+R-SLY-1119434.1	Phytic acid biosynthesis (lipid-independent)	Solyc06g072740.1
+R-SLY-1119434.1	Phytic acid biosynthesis (lipid-independent)	Solyc08g005130.1
+R-SLY-1119434.1	Phytic acid biosynthesis (lipid-independent)	Solyc08g015630.3
+R-SLY-1119434.1	Phytic acid biosynthesis (lipid-independent)	Solyc11g012410.2
+R-SLY-1119436.1	Peptidoglycan biosynthesis I	Solyc11g006340.2
+R-SLY-1119437.1	Glutathione redox reactions I	Solyc09g064850.3
+R-SLY-1119437.1	Glutathione redox reactions I	Solyc09g065900.3
+R-SLY-1119437.1	Glutathione redox reactions I	Solyc12g056240.2
+R-SLY-1119438.1	Secologanin and strictosidine biosynthesis	Solyc02g082900.3
+R-SLY-1119438.1	Secologanin and strictosidine biosynthesis	Solyc05g025810.3
+R-SLY-1119438.1	Secologanin and strictosidine biosynthesis	Solyc07g054280.1
+R-SLY-1119438.1	Secologanin and strictosidine biosynthesis	Solyc11g071800.2
+R-SLY-1119439.1	Cholesterol biosynthesis III (via desmosterol)	Solyc01g110290.3
+R-SLY-1119439.1	Cholesterol biosynthesis III (via desmosterol)	Solyc06g005750.3
+R-SLY-1119439.1	Cholesterol biosynthesis III (via desmosterol)	Solyc06g082980.3
+R-SLY-1119443.1	Ammonia assimilation cycle	Solyc01g080280.3
+R-SLY-1119443.1	Ammonia assimilation cycle	Solyc03g063560.3
+R-SLY-1119444.1	Canavanine biosynthesis	Solyc04g080610.3
+R-SLY-1119444.1	Canavanine biosynthesis	Solyc05g012270.3
+R-SLY-1119444.1	Canavanine biosynthesis	Solyc11g006350.1
+R-SLY-1119445.1	Beta-alanine biosynthesis II	Solyc04g054890.3
+R-SLY-1119445.1	Beta-alanine biosynthesis II	Solyc08g068390.3
+R-SLY-1119445.1	Beta-alanine biosynthesis II	Solyc10g076600.2
+R-SLY-1119445.1	Beta-alanine biosynthesis II	Solyc10g085200.2
+R-SLY-1119449.1	Carotenoid biosynthesis	Solyc01g097810.3
+R-SLY-1119449.1	Carotenoid biosynthesis	Solyc03g031860.3
+R-SLY-1119449.1	Carotenoid biosynthesis	Solyc04g040190.1
+R-SLY-1119449.1	Carotenoid biosynthesis	Solyc04g051610.3
+R-SLY-1119449.1	Carotenoid biosynthesis	Solyc10g079480.1
+R-SLY-1119450.1	Homocysteine biosynthesis	Solyc01g109720.3
+R-SLY-1119451.1	Xylose degradation	Solyc04g077030.3
+R-SLY-1119451.1	Xylose degradation	Solyc04g077040.3
+R-SLY-1119452.1	Galactose degradation II	Solyc01g058390.3
+R-SLY-1119452.1	Galactose degradation II	Solyc02g081300.3
+R-SLY-1119452.1	Galactose degradation II	Solyc05g054060.3
+R-SLY-1119452.1	Galactose degradation II	Solyc07g042550.3
+R-SLY-1119452.1	Galactose degradation II	Solyc08g082440.3
+R-SLY-1119452.1	Galactose degradation II	Solyc11g011960.2
+R-SLY-1119453.1	Medicarpin biosynthesis	Solyc10g052490.2
+R-SLY-1119456.1	Brassinosteroid biosynthesis II	Solyc05g054490.3
+R-SLY-1119456.1	Brassinosteroid biosynthesis II	Solyc10g086500.1
+R-SLY-1119456.1	Brassinosteroid biosynthesis II	Solyc11g006270.2
+R-SLY-1119456.1	Brassinosteroid biosynthesis II	Solyc11g006290.2
+R-SLY-1119456.1	Brassinosteroid biosynthesis II	Solyc11g006300.2
+R-SLY-1119458.1	Glutamate degradation	Solyc01g005000.3
+R-SLY-1119458.1	Glutamate degradation	Solyc03g098240.3
+R-SLY-1119458.1	Glutamate degradation	Solyc04g025530.3
+R-SLY-1119458.1	Glutamate degradation	Solyc07g043310.3
+R-SLY-1119458.1	Glutamate degradation	Solyc09g090700.1
+R-SLY-1119458.1	Glutamate degradation	Solyc11g011920.2
+R-SLY-1119458.1	Glutamate degradation	Solyc12g006450.2
+R-SLY-1119458.1	Glutamate degradation	Solyc12g006470.2
+R-SLY-1119460.1	Isoleucine biosynthesis from threonine	Solyc03g043870.3
+R-SLY-1119460.1	Isoleucine biosynthesis from threonine	Solyc05g053540.3
+R-SLY-1119460.1	Isoleucine biosynthesis from threonine	Solyc09g008670.3
+R-SLY-1119460.1	Isoleucine biosynthesis from threonine	Solyc09g018750.3
+R-SLY-1119460.1	Isoleucine biosynthesis from threonine	Solyc10g076510.2
+R-SLY-1119460.1	Isoleucine biosynthesis from threonine	Solyc12g010840.2
+R-SLY-1119460.1	Isoleucine biosynthesis from threonine	Solyc12g043020.2
+R-SLY-1119464.1	Methylerythritol phosphate pathway	Solyc01g009010.3
+R-SLY-1119464.1	Methylerythritol phosphate pathway	Solyc01g098710.3
+R-SLY-1119464.1	Methylerythritol phosphate pathway	Solyc01g109300.3
+R-SLY-1119464.1	Methylerythritol phosphate pathway	Solyc03g114340.3
+R-SLY-1119464.1	Methylerythritol phosphate pathway	Solyc08g066950.3
+R-SLY-1119464.1	Methylerythritol phosphate pathway	Solyc08g081570.3
+R-SLY-1119464.1	Methylerythritol phosphate pathway	Solyc10g044740.2
+R-SLY-1119464.1	Methylerythritol phosphate pathway	Solyc11g069380.2
+R-SLY-1119465.1	Sucrose biosynthesis	Solyc02g081300.3
+R-SLY-1119465.1	Sucrose biosynthesis	Solyc03g006870.3
+R-SLY-1119465.1	Sucrose biosynthesis	Solyc04g045340.3
+R-SLY-1119465.1	Sucrose biosynthesis	Solyc07g007790.3
+R-SLY-1119465.1	Sucrose biosynthesis	Solyc07g042550.3
+R-SLY-1119465.1	Sucrose biosynthesis	Solyc08g042000.3
+R-SLY-1119465.1	Sucrose biosynthesis	Solyc09g092130.3
+R-SLY-1119465.1	Sucrose biosynthesis	Solyc10g081660.2
+R-SLY-1119473.1	Cytokinins-O-glucoside biosynthesis	Solyc03g043870.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc01g109790.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc02g071040.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc02g080570.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc02g088000.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc03g006870.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc04g045340.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc04g082400.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc05g026490.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc07g019440.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc07g056140.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc07g064270.3
+R-SLY-1119477.1	Starch biosynthesis	Solyc07g064830.3
+R-SLY-1119479.1	Valine degradation	Solyc01g028900.3
+R-SLY-1119479.1	Valine degradation	Solyc02g022930.3
+R-SLY-1119479.1	Valine degradation	Solyc04g063350.3
+R-SLY-1119479.1	Valine degradation	Solyc05g056480.3
+R-SLY-1119479.1	Valine degradation	Solyc06g059850.2
+R-SLY-1119479.1	Valine degradation	Solyc07g021630.3
+R-SLY-1119479.1	Valine degradation	Solyc11g069180.2
+R-SLY-1119479.1	Valine degradation	Solyc12g088220.2
+R-SLY-1119484.1	Folate polyglutamylation II	Solyc07g062270.3
+R-SLY-1119484.1	Folate polyglutamylation II	Solyc07g062280.3
+R-SLY-1119486.1	IAA biosynthesis I	Solyc03g112460.3
+R-SLY-1119486.1	IAA biosynthesis I	Solyc07g054280.1
+R-SLY-1119486.1	IAA biosynthesis I	Solyc08g068160.2
+R-SLY-1119486.1	IAA biosynthesis I	Solyc10g076510.2
+R-SLY-1119486.1	IAA biosynthesis I	Solyc11g068730.2
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc01g098550.3
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc02g076760.3
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc03g111850.3
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc04g025540.3
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc06g006100.3
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc06g071550.3
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc07g064280.3
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc10g006400.3
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc12g010180.2
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc12g035190.2
+R-SLY-1119494.1	Tryptophan biosynthesis	Solyc12g096190.2
+R-SLY-1119495.1	Citrulline biosynthesis	Solyc02g089620.3
+R-SLY-1119495.1	Citrulline biosynthesis	Solyc02g089630.3
+R-SLY-1119495.1	Citrulline biosynthesis	Solyc03g115630.3
+R-SLY-1119495.1	Citrulline biosynthesis	Solyc04g055200.3
+R-SLY-1119496.1	Pantothenate biosynthesis I	Solyc03g043870.3
+R-SLY-1119496.1	Pantothenate biosynthesis I	Solyc09g007130.3
+R-SLY-1119496.1	Pantothenate biosynthesis I	Solyc09g061680.3
+R-SLY-1119498.1	Phylloquinone biosynthesis	Solyc01g010760.3
+R-SLY-1119498.1	Phylloquinone biosynthesis	Solyc02g067460.3
+R-SLY-1119498.1	Phylloquinone biosynthesis	Solyc03g058920.3
+R-SLY-1119498.1	Phylloquinone biosynthesis	Solyc03g113210.3
+R-SLY-1119498.1	Phylloquinone biosynthesis	Solyc05g005180.3
+R-SLY-1119501.1	S-adenosyl-L-methionine cycle	Solyc10g081510.2
+R-SLY-1119502.1	Allantoin degradation	Solyc02g068380.3
+R-SLY-1119502.1	Allantoin degradation	Solyc08g077840.3
+R-SLY-1119502.1	Allantoin degradation	Solyc10g076510.2
+R-SLY-1119506.1	tyrosine degradation I	Solyc01g066480.3
+R-SLY-1119506.1	tyrosine degradation I	Solyc04g054710.3
+R-SLY-1119506.1	tyrosine degradation I	Solyc07g045050.3
+R-SLY-1119506.1	tyrosine degradation I	Solyc07g053710.3
+R-SLY-1119506.1	tyrosine degradation I	Solyc07g053720.3
+R-SLY-1119506.1	tyrosine degradation I	Solyc10g007110.3
+R-SLY-1119506.1	tyrosine degradation I	Solyc11g012160.2
+R-SLY-1119506.1	tyrosine degradation I	Solyc12g014100.2
+R-SLY-1119509.1	Histidine biosynthesis I	Solyc02g071890.3
+R-SLY-1119509.1	Histidine biosynthesis I	Solyc04g009350.3
+R-SLY-1119509.1	Histidine biosynthesis I	Solyc09g076020.3
+R-SLY-1119509.1	Histidine biosynthesis I	Solyc10g005930.2
+R-SLY-1119516.1	Trehalose biosynthesis I	Solyc03g083960.3
+R-SLY-1119516.1	Trehalose biosynthesis I	Solyc04g025940.3
+R-SLY-1119516.1	Trehalose biosynthesis I	Solyc05g005750.3
+R-SLY-1119516.1	Trehalose biosynthesis I	Solyc07g006500.3
+R-SLY-1119516.1	Trehalose biosynthesis I	Solyc07g062140.3
+R-SLY-1119519.1	Calvin cycle	Solyc01g097460.3
+R-SLY-1119519.1	Calvin cycle	Solyc01g106010.3
+R-SLY-1119519.1	Calvin cycle	Solyc02g020940.3
+R-SLY-1119519.1	Calvin cycle	Solyc02g063150.3
+R-SLY-1119519.1	Calvin cycle	Solyc03g034220.3
+R-SLY-1119519.1	Calvin cycle	Solyc03g115820.3
+R-SLY-1119519.1	Calvin cycle	Solyc03g118640.3
+R-SLY-1119519.1	Calvin cycle	Solyc04g009030.3
+R-SLY-1119519.1	Calvin cycle	Solyc05g007260.3
+R-SLY-1119519.1	Calvin cycle	Solyc05g008600.3
+R-SLY-1119519.1	Calvin cycle	Solyc06g005490.3
+R-SLY-1119519.1	Calvin cycle	Solyc07g065900.3
+R-SLY-1119519.1	Calvin cycle	Solyc08g076220.3
+R-SLY-1119519.1	Calvin cycle	Solyc09g009260.3
+R-SLY-1119519.1	Calvin cycle	Solyc09g011810.3
+R-SLY-1119519.1	Calvin cycle	Solyc10g086720.2
+R-SLY-1119523.1	Tetrahydrofolate biosynthesis II	Solyc01g006280.3
+R-SLY-1119523.1	Tetrahydrofolate biosynthesis II	Solyc01g109830.3
+R-SLY-1119523.1	Tetrahydrofolate biosynthesis II	Solyc04g007560.3
+R-SLY-1119528.1	Beta-alanine betaine biosynthesis	Solyc10g085830.2
+R-SLY-1119529.1	Sulfate activation for sulfonation	Solyc03g005260.3
+R-SLY-1119529.1	Sulfate activation for sulfonation	Solyc09g082860.3
+R-SLY-1119531.1	Flavonoid biosynthesis	Solyc02g083860.3
+R-SLY-1119532.1	CMP-KDO biosynthesis II (from D-arabinose 5-phosphate)	Solyc11g072690.2
+R-SLY-1119533.1	TCA cycle (plant)	Solyc01g007910.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc02g005350.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc02g082860.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc02g093680.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc04g011350.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc05g053300.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc06g009820.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc06g083790.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc07g064800.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc08g013860.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc08g077920.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc09g075450.3
+R-SLY-1119533.1	TCA cycle (plant)	Solyc10g074500.2
+R-SLY-1119533.1	TCA cycle (plant)	Solyc12g005080.2
+R-SLY-1119533.1	TCA cycle (plant)	Solyc12g014180.2
+R-SLY-1119533.1	TCA cycle (plant)	Solyc12g099100.2
+R-SLY-1119534.1	Pyridoxal 5'-phosphate salvage pathway	Solyc03g113770.3
+R-SLY-1119534.1	Pyridoxal 5'-phosphate salvage pathway	Solyc03g113780.3
+R-SLY-1119534.1	Pyridoxal 5'-phosphate salvage pathway	Solyc06g063290.3
+R-SLY-1119539.1	Ornithine biosynthesis	Solyc02g092260.3
+R-SLY-1119539.1	Ornithine biosynthesis	Solyc08g076970.3
+R-SLY-1119539.1	Ornithine biosynthesis	Solyc08g076990.3
+R-SLY-1119539.1	Ornithine biosynthesis	Solyc08g080370.3
+R-SLY-1119539.1	Ornithine biosynthesis	Solyc11g005620.1
+R-SLY-1119540.1	Leucine biosynthesis	Solyc02g082860.3
+R-SLY-1119540.1	Leucine biosynthesis	Solyc03g043870.3
+R-SLY-1119540.1	Leucine biosynthesis	Solyc06g053400.3
+R-SLY-1119540.1	Leucine biosynthesis	Solyc06g060790.1
+R-SLY-1119540.1	Leucine biosynthesis	Solyc08g014130.3
+R-SLY-1119540.1	Leucine biosynthesis	Solyc08g077920.3
+R-SLY-1119540.1	Leucine biosynthesis	Solyc10g074500.2
+R-SLY-1119544.1	Pantothenate biosynthesis II	Solyc03g043870.3
+R-SLY-1119544.1	Pantothenate biosynthesis II	Solyc09g007130.3
+R-SLY-1119544.1	Pantothenate biosynthesis II	Solyc09g061680.3
+R-SLY-1119545.1	Geranylgeranyldiphosphate biosynthesis II (plastidic)	Solyc06g073390.3
+R-SLY-1119553.1	Asparagine biosynthesis	Solyc04g054710.3
+R-SLY-1119553.1	Asparagine biosynthesis	Solyc04g055200.3
+R-SLY-1119553.1	Asparagine biosynthesis	Solyc07g055210.3
+R-SLY-1119553.1	Asparagine biosynthesis	Solyc08g041870.3
+R-SLY-1119556.1	Choline biosynthesis I	Solyc04g071140.3
+R-SLY-1119556.1	Choline biosynthesis I	Solyc08g006740.3
+R-SLY-1119556.1	Choline biosynthesis I	Solyc08g066260.3
+R-SLY-1119556.1	Choline biosynthesis I	Solyc08g066820.3
+R-SLY-1119556.1	Choline biosynthesis I	Solyc08g068600.3
+R-SLY-1119556.1	Choline biosynthesis I	Solyc12g040790.2
+R-SLY-1119559.1	Cholesterol biosynthesis I	Solyc01g110290.3
+R-SLY-1119559.1	Cholesterol biosynthesis I	Solyc06g005750.3
+R-SLY-1119559.1	Cholesterol biosynthesis I	Solyc06g082980.3
+R-SLY-1119563.1	UDP-D-xylose biosynthesis	Solyc04g011400.3
+R-SLY-1119567.1	Beta-alanine biosynthesis I	Solyc01g087590.3
+R-SLY-1119567.1	Beta-alanine biosynthesis I	Solyc05g013440.3
+R-SLY-1119567.1	Beta-alanine biosynthesis I	Solyc05g018880.1
+R-SLY-1119567.1	Beta-alanine biosynthesis I	Solyc07g039310.1
+R-SLY-1119568.1	Pantothenate biosynthesis III	Solyc09g061680.3
+R-SLY-1119569.1	Kievitone biosynthesis	Solyc12g015860.2
+R-SLY-1119570.1	Cytosolic glycolysis	Solyc05g014470.3
+R-SLY-1119570.1	Cytosolic glycolysis	Solyc09g009260.3
+R-SLY-1119573.1	Dolichyl-diphosphooligosaccharide biosynthesis	Solyc02g083260.3
+R-SLY-1119573.1	Dolichyl-diphosphooligosaccharide biosynthesis	Solyc04g016520.3
+R-SLY-1119573.1	Dolichyl-diphosphooligosaccharide biosynthesis	Solyc07g006330.2
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc02g069580.3
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc04g005330.3
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc04g051200.2
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc05g012070.3
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc05g052790.3
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc06g069550.1
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc07g043550.3
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc08g060940.1
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc12g006420.2
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	Solyc12g006500.1
+R-SLY-1119579.1	Glycine betaine biosynthesis III	Solyc03g113800.3
+R-SLY-1119579.1	Glycine betaine biosynthesis III	Solyc06g071290.3
+R-SLY-1119580.1	IAA biosynthesis II	Solyc03g121270.3
+R-SLY-1119580.1	IAA biosynthesis II	Solyc10g079640.2
+R-SLY-1119581.1	Thiosulfate disproportionation III (rhodanese)	Solyc07g066580.3
+R-SLY-1119582.1	Phenylpropanoid biosynthesis, initial reactions	Solyc05g056170.3
+R-SLY-1119582.1	Phenylpropanoid biosynthesis, initial reactions	Solyc10g086180.2
+R-SLY-1119586.1	Cyanate degradation	Solyc02g086820.3
+R-SLY-1119586.1	Cyanate degradation	Solyc09g009830.3
+R-SLY-1119586.1	Cyanate degradation	Solyc09g090430.3
+R-SLY-1119586.1	Cyanate degradation	Solyc10g083890.2
+R-SLY-1119593.1	Oleoresin monoterpene volatiles biosynthesis	Solyc08g007310.3
+R-SLY-1119594.1	Pyridoxal 5'-phosphate biosynthesis	Solyc03g113770.3
+R-SLY-1119594.1	Pyridoxal 5'-phosphate biosynthesis	Solyc03g113780.3
+R-SLY-1119594.1	Pyridoxal 5'-phosphate biosynthesis	Solyc06g063290.3
+R-SLY-1119594.1	Pyridoxal 5'-phosphate biosynthesis	Solyc08g066950.3
+R-SLY-1119595.1	Mannose degradation	Solyc11g065220.2
+R-SLY-1119596.1	Glutamate biosynthesis I	Solyc03g122140.3
+R-SLY-1119600.1	Valine biosynthesis	Solyc05g053540.3
+R-SLY-1119600.1	Valine biosynthesis	Solyc09g018750.3
+R-SLY-1119600.1	Valine biosynthesis	Solyc10g076510.2
+R-SLY-1119600.1	Valine biosynthesis	Solyc12g010840.2
+R-SLY-1119600.1	Valine biosynthesis	Solyc12g043020.2
+R-SLY-1119601.1	Trehalose degradation II	Solyc04g081400.3
+R-SLY-1119601.1	Trehalose degradation II	Solyc11g065220.2
+R-SLY-1119602.1	Phytyl-PP biosynthesis	Solyc03g115980.1
+R-SLY-1119605.1	Chlorophyll a biosynthesis II	Solyc03g115980.1
+R-SLY-1119609.1	Phaseic acid biosynthesis	Solyc08g005610.3
+R-SLY-1119610.1	Biotin biosynthesis II	Solyc04g009960.3
+R-SLY-1119610.1	Biotin biosynthesis II	Solyc06g073470.3
+R-SLY-1119610.1	Biotin biosynthesis II	Solyc07g006810.3
+R-SLY-1119610.1	Biotin biosynthesis II	Solyc07g043310.3
+R-SLY-1119610.1	Biotin biosynthesis II	Solyc11g019960.2
+R-SLY-1119610.1	Biotin biosynthesis II	Solyc12g006450.2
+R-SLY-1119610.1	Biotin biosynthesis II	Solyc12g006470.2
+R-SLY-1119612.1	Cysteine degradation	Solyc02g094120.3
+R-SLY-1119612.1	Cysteine degradation	Solyc07g061960.3
+R-SLY-1119612.1	Cysteine degradation	Solyc07g066580.3
+R-SLY-1119612.1	Cysteine degradation	Solyc12g011440.2
+R-SLY-1119615.1	Mevalonate pathway	Solyc01g098840.3
+R-SLY-1119615.1	Mevalonate pathway	Solyc02g082260.3
+R-SLY-1119615.1	Mevalonate pathway	Solyc04g015100.3
+R-SLY-1119615.1	Mevalonate pathway	Solyc04g056390.3
+R-SLY-1119615.1	Mevalonate pathway	Solyc05g055760.3
+R-SLY-1119615.1	Mevalonate pathway	Solyc08g007790.3
+R-SLY-1119615.1	Mevalonate pathway	Solyc08g080170.3
+R-SLY-1119615.1	Mevalonate pathway	Solyc11g007020.2
+R-SLY-1119615.1	Mevalonate pathway	Solyc12g056450.2
+R-SLY-1119617.1	Folate polyglutamylation I	Solyc01g006280.3
+R-SLY-1119618.1	13-LOX and 13-HPL pathway	Solyc03g122340.3
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc02g069580.3
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc03g118270.1
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc04g011400.3
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc05g050990.1
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc07g006070.1
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc07g006220.2
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc07g043550.3
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc10g018260.1
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc12g006420.2
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc12g010540.1
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	Solyc12g088880.2
+R-SLY-1119622.1	Arginine biosynthesis II (acetyl cycle)	Solyc02g092260.3
+R-SLY-1119622.1	Arginine biosynthesis II (acetyl cycle)	Solyc05g012270.3
+R-SLY-1119622.1	Arginine biosynthesis II (acetyl cycle)	Solyc08g080370.3
+R-SLY-1119622.1	Arginine biosynthesis II (acetyl cycle)	Solyc11g005620.1
+R-SLY-1119623.1	Acyl-CoA synthetase pathway	Solyc07g045290.3
+R-SLY-1119623.1	Acyl-CoA synthetase pathway	Solyc11g018580.2
+R-SLY-1119628.1	GDP-mannose metabolism	Solyc02g063220.3
+R-SLY-1119628.1	GDP-mannose metabolism	Solyc05g048760.3
+R-SLY-1119628.1	GDP-mannose metabolism	Solyc06g060100.3
+R-SLY-1119628.1	GDP-mannose metabolism	Solyc08g008670.3
+R-SLY-1119628.1	GDP-mannose metabolism	Solyc11g065220.2
+R-SLY-1119629.1	Thiamine biosynthesis	Solyc08g066950.3
+R-SLY-1119631.1	Proline biosynthesis I	Solyc02g068640.3
+R-SLY-3899351.1	Abscisic acid (ABA) mediated signaling	Solyc01g108280.3
+R-SLY-3899351.1	Abscisic acid (ABA) mediated signaling	Solyc03g096670.3
+R-SLY-3899351.1	Abscisic acid (ABA) mediated signaling	Solyc06g076400.3
+R-SLY-3899351.1	Abscisic acid (ABA) mediated signaling	Solyc08g016500.3
+R-SLY-3899351.1	Abscisic acid (ABA) mediated signaling	Solyc08g079770.3
+R-SLY-3899351.1	Abscisic acid (ABA) mediated signaling	Solyc10g074570.2
+R-SLY-4827054.1	Tetrapyrrole biosynthesis I	Solyc04g009200.3
+R-SLY-4827054.1	Tetrapyrrole biosynthesis I	Solyc07g066470.3
+R-SLY-5225756.1	Ethylene mediated signaling	Solyc06g053710.3
+R-SLY-5225756.1	Ethylene mediated signaling	Solyc11g006180.2
+R-SLY-5608118.1	Auxin signalling	Solyc01g103050.3
+R-SLY-5608118.1	Auxin signalling	Solyc02g037530.3
+R-SLY-5608118.1	Auxin signalling	Solyc02g077560.3
+R-SLY-5608118.1	Auxin signalling	Solyc03g118290.3
+R-SLY-5608118.1	Auxin signalling	Solyc03g118740.3
+R-SLY-5608118.1	Auxin signalling	Solyc04g007690.3
+R-SLY-5608118.1	Auxin signalling	Solyc04g074980.3
+R-SLY-5608118.1	Auxin signalling	Solyc06g008590.3
+R-SLY-5608118.1	Auxin signalling	Solyc06g053830.3
+R-SLY-5608118.1	Auxin signalling	Solyc06g075150.3
+R-SLY-5608118.1	Auxin signalling	Solyc09g064530.3
+R-SLY-5608118.1	Auxin signalling	Solyc09g074520.3
+R-SLY-5608118.1	Auxin signalling	Solyc09g083290.3
+R-SLY-5608118.1	Auxin signalling	Solyc10g078370.2
+R-SLY-5608118.1	Auxin signalling	Solyc10g080880.2
+R-SLY-5608118.1	Auxin signalling	Solyc11g069500.2
+R-SLY-5608118.1	Auxin signalling	Solyc12g007230.2
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc01g011340.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc01g034020.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc01g073650.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc01g100050.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc02g063010.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc02g063070.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc02g067980.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc03g006070.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc03g019900.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc03g034180.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc03g114720.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc03g121410.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc04g076060.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc04g079980.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc05g006590.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc05g014340.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc05g054980.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc07g062260.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc07g065020.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc08g076030.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc09g074320.3
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc11g010470.2
+R-SLY-5632095.1	Brassinosteroid signaling	Solyc12g009390.2
+R-SLY-5633340.1	Citrulline-nitric oxide cycle	Solyc05g012270.3
+R-SLY-5654909.1	Xylan biosynthesis	Solyc04g076920.3
+R-SLY-5654909.1	Xylan biosynthesis	Solyc11g071230.2
+R-SLY-5655010.1	Xylogalacturonan biosynthesis	Solyc05g016320.2
+R-SLY-5655101.1	Xyloglucan biosynthesis	Solyc02g092210.1
+R-SLY-5655101.1	Xyloglucan biosynthesis	Solyc03g115740.2
+R-SLY-5679411.1	Gibberellin signaling	Solyc01g005060.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc01g098390.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc02g063010.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc03g098070.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc03g121660.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc04g079980.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc04g080130.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc05g054030.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc06g008880.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc06g062670.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc06g072360.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc07g062260.3
+R-SLY-5679411.1	Gibberellin signaling	Solyc09g074270.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc01g095580.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc01g100050.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc02g088910.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc04g005380.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc04g014530.1
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc05g018320.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc05g050280.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc05g050560.1
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc05g051200.1
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc07g007870.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc08g076030.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc08g076930.1
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc09g091440.3
+R-SLY-6787011.1	Jasmonic acid signaling	Solyc10g011660.3
+R-SLY-6788019.1	Salicylic acid signaling	Solyc01g008730.3
+R-SLY-6788019.1	Salicylic acid signaling	Solyc02g032850.3
+R-SLY-6788019.1	Salicylic acid signaling	Solyc02g069310.3
+R-SLY-6788019.1	Salicylic acid signaling	Solyc06g071030.3
+R-SLY-6788019.1	Salicylic acid signaling	Solyc07g040690.3
+R-SLY-6788019.1	Salicylic acid signaling	Solyc07g044980.3
+R-SLY-6788019.1	Salicylic acid signaling	Solyc10g080780.2
+R-SLY-6788019.1	Salicylic acid signaling	Solyc12g096350.2
+R-SLY-8858053.1	Polar auxin transport	Solyc08g083060.3
+R-SLY-8858053.1	Polar auxin transport	Solyc10g078370.2
+R-SLY-8858053.1	Polar auxin transport	Solyc10g080880.2
+R-SLY-8868949.1	Intracellular auxin transport	Solyc02g037550.3
+R-SLY-8868949.1	Intracellular auxin transport	Solyc02g082450.3
+R-SLY-8868949.1	Intracellular auxin transport	Solyc02g091240.1
+R-SLY-8868949.1	Intracellular auxin transport	Solyc04g082830.3
+R-SLY-8868949.1	Intracellular auxin transport	Solyc10g074790.2
+R-SLY-8868949.1	Intracellular auxin transport	Solyc12g095750.2
+R-SLY-8879007.1	Response to cold temperature	Solyc08g007820.1
+R-SLY-8933811.1	Circadian rhythm	Solyc02g064700.3
+R-SLY-8933811.1	Circadian rhythm	Solyc03g081240.3
+R-SLY-8933811.1	Circadian rhythm	Solyc03g115770.3
+R-SLY-8933811.1	Circadian rhythm	Solyc06g061000.3
+R-SLY-8933811.1	Circadian rhythm	Solyc08g061130.3
+R-SLY-8933811.1	Circadian rhythm	Solyc08g081990.3
+R-SLY-8933811.1	Circadian rhythm	Solyc09g090100.3
+R-SLY-8933811.1	Circadian rhythm	Solyc10g005080.3
+R-SLY-8933811.1	Circadian rhythm	Solyc10g011690.3
+R-SLY-8933811.1	Circadian rhythm	Solyc12g005950.2
+R-SLY-8933811.1	Circadian rhythm	Solyc12g057040.2
+R-SLY-8934036.1	Long day regulated expression of florigens	Solyc02g089520.2
+R-SLY-8934036.1	Long day regulated expression of florigens	Solyc02g089540.3
+R-SLY-8934036.1	Long day regulated expression of florigens	Solyc09g074560.3
+R-SLY-8934108.1	Short day regulated expression of florigens	Solyc01g107940.3
+R-SLY-8934108.1	Short day regulated expression of florigens	Solyc02g089520.2
+R-SLY-8934108.1	Short day regulated expression of florigens	Solyc02g089540.3
+R-SLY-8934108.1	Short day regulated expression of florigens	Solyc05g018390.3
+R-SLY-8934108.1	Short day regulated expression of florigens	Solyc07g018270.3
+R-SLY-8934108.1	Short day regulated expression of florigens	Solyc09g074560.3
+R-SLY-8934108.1	Short day regulated expression of florigens	Solyc12g088740.2
+R-SLY-8934257.1	Transition from vegetative to reproductive shoot apical meristem	Solyc01g008840.3
+R-SLY-8934257.1	Transition from vegetative to reproductive shoot apical meristem	Solyc02g063070.3
+R-SLY-8934257.1	Transition from vegetative to reproductive shoot apical meristem	Solyc03g034180.3
+R-SLY-8986768.1	Anther and pollen development	Solyc09g013130.3
+R-SLY-8986768.1	Anther and pollen development	Solyc12g088670.2
+R-SLY-9025727.1	Iron uptake and transport in root vascular system	Solyc08g083060.3
+R-SLY-9030557.1	Lateral root initiation	Solyc06g008590.3
+R-SLY-9030557.1	Lateral root initiation	Solyc06g053830.3
+R-SLY-9030557.1	Lateral root initiation	Solyc09g074520.3
+R-SLY-9030557.1	Lateral root initiation	Solyc09g083290.3
+R-SLY-9030654.1	Primary root development	Solyc05g015220.3
+R-SLY-9030654.1	Primary root development	Solyc05g047460.3
+R-SLY-9030654.1	Primary root development	Solyc06g008590.3
+R-SLY-9030654.1	Primary root development	Solyc06g050430.3
+R-SLY-9030654.1	Primary root development	Solyc06g053830.3
+R-SLY-9030654.1	Primary root development	Solyc07g016180.3
+R-SLY-9030654.1	Primary root development	Solyc09g083290.3
+R-SLY-9030654.1	Primary root development	Solyc09g090840.3
+R-SLY-9030654.1	Primary root development	Solyc11g044480.2
+R-SLY-9030654.1	Primary root development	Solyc12g013880.2
+R-SLY-9030680.1	Crown root development	Solyc02g068560.3
+R-SLY-9030680.1	Crown root development	Solyc11g008670.2
+R-SLY-9607185.1	Generation of superoxide radicals	Solyc08g081690.3
+R-SLY-9608575.1	Reproductive meristem phase change	Solyc01g009070.3
+R-SLY-9608575.1	Reproductive meristem phase change	Solyc02g092070.3
+R-SLY-9608575.1	Reproductive meristem phase change	Solyc04g009820.3
+R-SLY-9608575.1	Reproductive meristem phase change	Solyc09g074520.3
+R-SLY-9609102.1	Flower development	Solyc02g063070.3
+R-SLY-9609102.1	Flower development	Solyc03g034180.3
+R-SLY-9609352.1	Lycopene catabolism	Solyc01g087250.3
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	Solyc01g008770.3
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	Solyc01g067740.3
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	Solyc06g076040.3
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	Solyc07g020800.3
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	Solyc07g049180.3
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	Solyc11g064880.2
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	Solyc11g066040.2
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	Solyc12g007210.2
+R-SLY-9618218.1	Arsenic uptake and detoxification	Solyc02g071920.3
+R-SLY-9618218.1	Arsenic uptake and detoxification	Solyc03g013340.3
+R-SLY-9618218.1	Arsenic uptake and detoxification	Solyc06g011350.3
+R-SLY-9618218.1	Arsenic uptake and detoxification	Solyc08g006880.3
+R-SLY-9618218.1	Arsenic uptake and detoxification	Solyc08g013730.3
+R-SLY-9618218.1	Arsenic uptake and detoxification	Solyc11g069430.2
+R-SLY-9639136.1	Response to Aluminum stress	Solyc01g008420.3
+R-SLY-9639136.1	Response to Aluminum stress	Solyc01g087150.3
+R-SLY-9639136.1	Response to Aluminum stress	Solyc01g106900.3
+R-SLY-9639136.1	Response to Aluminum stress	Solyc06g068600.3
+R-SLY-9639136.1	Response to Aluminum stress	Solyc10g085950.2
+R-SLY-9639861.1	Development of root hair	Solyc01g108280.3
+R-SLY-9639861.1	Development of root hair	Solyc01g109860.3
+R-SLY-9639861.1	Development of root hair	Solyc06g082910.3
+R-SLY-9639861.1	Development of root hair	Solyc08g014430.3
+R-SLY-9640760.1	G1 phase	Solyc01g107730.3
+R-SLY-9640760.1	G1 phase	Solyc02g092980.3
+R-SLY-9640760.1	G1 phase	Solyc04g072880.3
+R-SLY-9640760.1	G1 phase	Solyc04g076040.3
+R-SLY-9640760.1	G1 phase	Solyc04g078470.3
+R-SLY-9640760.1	G1 phase	Solyc05g006050.3
+R-SLY-9640760.1	G1 phase	Solyc05g051410.3
+R-SLY-9640760.1	G1 phase	Solyc08g081280.3
+R-SLY-9640760.1	G1 phase	Solyc11g070140.2
+R-SLY-9640760.1	G1 phase	Solyc12g088650.2
+R-SLY-9640760.1	G1 phase	Solyc12g095860.2
+R-SLY-9640882.1	Assembly of pre-replication complex	Solyc01g094760.3
+R-SLY-9640882.1	Assembly of pre-replication complex	Solyc05g007450.3
+R-SLY-9640882.1	Assembly of pre-replication complex	Solyc06g073510.3
+R-SLY-9640882.1	Assembly of pre-replication complex	Solyc12g013880.2
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc01g094760.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc01g110130.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc01g111550.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc02g082180.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc02g093300.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc03g115050.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc05g007450.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc05g014540.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc06g073510.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc07g018300.3
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc09g059440.1
+R-SLY-9645850.1	Activation of pre-replication complex	Solyc12g013880.2
+R-SLY-9675304.1	Lateral root emergence	Solyc02g077560.3
+R-SLY-9675508.1	Root elongation	Solyc06g005170.3
+R-SLY-9675508.1	Root elongation	Solyc12g019460.2
+R-SLY-9675782.1	Maturation	Solyc02g093300.3
+R-SLY-9675782.1	Maturation	Solyc03g063340.3
+R-SLY-9675782.1	Maturation	Solyc05g014540.3
+R-SLY-9675782.1	Maturation	Solyc06g076660.3
+R-SLY-9675782.1	Maturation	Solyc09g091450.3
+R-SLY-9675782.1	Maturation	Solyc11g066370.2
+R-SLY-9675815.1	Leading strand synthesis	Solyc01g020440.3
+R-SLY-9675815.1	Leading strand synthesis	Solyc02g093300.3
+R-SLY-9675815.1	Leading strand synthesis	Solyc03g063340.3
+R-SLY-9675815.1	Leading strand synthesis	Solyc05g014540.3
+R-SLY-9675815.1	Leading strand synthesis	Solyc06g060150.3
+R-SLY-9675815.1	Leading strand synthesis	Solyc06g076660.3
+R-SLY-9675815.1	Leading strand synthesis	Solyc07g005880.3
+R-SLY-9675815.1	Leading strand synthesis	Solyc09g091450.3
+R-SLY-9675815.1	Leading strand synthesis	Solyc11g012820.2
+R-SLY-9675824.1	DNA replication Initiation	Solyc01g110130.3
+R-SLY-9675824.1	DNA replication Initiation	Solyc02g082180.3
+R-SLY-9675824.1	DNA replication Initiation	Solyc02g093300.3
+R-SLY-9675824.1	DNA replication Initiation	Solyc05g014540.3
+R-SLY-9675824.1	DNA replication Initiation	Solyc09g008630.3
+R-SLY-9675824.1	DNA replication Initiation	Solyc09g059440.1
+R-SLY-9675824.1	DNA replication Initiation	Solyc11g065900.2
+R-SLY-9675885.1	Lagging strand synthesis	Solyc02g093300.3
+R-SLY-9675885.1	Lagging strand synthesis	Solyc03g063340.3
+R-SLY-9675885.1	Lagging strand synthesis	Solyc05g014540.3
+R-SLY-9675885.1	Lagging strand synthesis	Solyc06g076660.3
+R-SLY-9675885.1	Lagging strand synthesis	Solyc09g091450.3
+R-SLY-9766881.1	TF network involved in salinity response	Solyc02g088180.3
+R-SLY-9766881.1	TF network involved in salinity response	Solyc04g005610.3
+R-SLY-9766881.1	TF network involved in salinity response	Solyc04g016260.3
+R-SLY-9766881.1	TF network involved in salinity response	Solyc05g007770.3
+R-SLY-9766881.1	TF network involved in salinity response	Solyc06g005170.3
+R-SLY-9766881.1	TF network involved in salinity response	Solyc06g060230.3
+R-SLY-9766881.1	TF network involved in salinity response	Solyc10g079300.2
+R-SLY-9766881.1	TF network involved in salinity response	Solyc11g017470.2
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc01g095630.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc01g102340.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc02g088180.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc03g116890.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc03g119540.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc04g007210.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc04g081020.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc05g009310.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc06g005310.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc06g005330.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc06g035700.1
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc06g068460.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc06g073920.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc08g008280.3
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc11g071810.2
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc11g073120.2
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	Solyc12g089240.2
+R-SLY-9924451.1	Shoot (tiller) formation and regulation of tiller angle	Solyc12g009390.2
+R-SLY-9924511.1	Strigolactone-mediated axillary bud dormancy and suppression of tillering	Solyc03g095310.3
+R-SLY-9924511.1	Strigolactone-mediated axillary bud dormancy and suppression of tillering	Solyc12g010900.1
+R-SLY-9928831.1	Severe drought	Solyc01g104650.3
+R-SLY-9928831.1	Severe drought	Solyc02g063070.3
+R-SLY-9928831.1	Severe drought	Solyc03g034180.3
+R-SLY-9928831.1	Severe drought	Solyc04g071510.3
+R-SLY-9928946.1	Drought escape (DE) via ABA-independent pathway	Solyc02g089520.2
+R-SLY-9928946.1	Drought escape (DE) via ABA-independent pathway	Solyc02g089540.3
+R-SLY-9928995.1	Drought escape (DE) via ABA-dependent pathway	Solyc03g115770.3
+R-SLY-9928995.1	Drought escape (DE) via ABA-dependent pathway	Solyc04g078840.3
+R-SLY-9928995.1	Drought escape (DE) via ABA-dependent pathway	Solyc09g065670.3

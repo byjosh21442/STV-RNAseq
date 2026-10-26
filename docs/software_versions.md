@@ -43,10 +43,11 @@ Differences from the Phase 1 plan: Java comes from conda-forge inside the projec
 | gzip / zcat | 1.14 | Reading the first FASTQ records |
 | git | 2.53.0 | Version control (repository-local identity, see `docs/run_log.md`) |
 
-## R environment `stv-r` (Phase 3 – 5)
+## R environment `stv-r` (Phase 3 – 6)
 
 - Specification: [`envs/stv-r.yml`](../envs/stv-r.yml); exact lock: [`envs/stv-r.linux-64.lock.txt`](../envs/stv-r.linux-64.lock.txt) — 139 packages at Phase 3, 152 after Phase 4 (apeglm and plotting packages).
 - Phase 5 added rrcov and its dependencies (4 packages, no updates or removals): 156 packages.
+- Phase 6 added fgsea and ontologyIndex with their dependencies (5 new packages: fgsea, ontologyIndex, data.table, fastmatch, cowplot; dry run showed no updates or removals): **161 packages**.
 - Created with `CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-r.yml` (180 s; 1.7 GB). Additions used `CONDA_CHANNEL_PRIORITY=strict conda install -n stv-r --override-channels -c conda-forge -c bioconda …`. Rebuild exactly: `conda create --name stv-r --file envs/stv-r.linux-64.lock.txt`.
 - Bioconductor 3.22 builds (newest on bioconda on 2026-10-26; Bioconductor 3.23 is current upstream).
 
@@ -63,6 +64,11 @@ Differences from the Phase 1 plan: Java comes from conda-forge inside the projec
 | jsonlite | 2.0.0 | conda-forge | Salmon JSON metadata | used |
 | rrcov | 1.7-7 | conda-forge | Robust PCA diagnostic (Phase 5) | used; degenerate at n = 6, not used for decisions |
 | robustbase / pcaPP / DEoptimR | 0.99-7 / 2.0-5 / 1.2-1 | conda-forge | rrcov dependencies (Phase 5) | installed |
+| fgsea | 1.36.2 | bioconda (Bioconductor 3.22) | Preranked GSEA, `fgseaMultilevel` (Phase 6, D-027) | used |
+| BiocParallel | 1.44.0 | bioconda | `SerialParam()` for deterministic fgsea runs (already present as a DESeq2 dependency) | used |
+| data.table | 1.18.6.1 | conda-forge | fgsea dependency; table I/O in Phase 6 scripts | used |
+| fastmatch / cowplot | 1.1-8 / 1.2.0 | conda-forge | fgsea dependencies | installed |
+| ontologyIndex | 2.12 | conda-forge | GO OBO parsing, alt_id/obsolete handling, is_a + part_of ancestors (Phase 6, D-025) | used |
 
 ## Not installed (by design)
 

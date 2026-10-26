@@ -367,3 +367,144 @@ Note: Hosmani et al. (2019) is a preprint (not peer reviewed at the time of acce
 | Provisional APA 7 reference | Badeli, G., Kaboosi, K., & Nasrollanejad, S. (2026). *Reanalysis of the tomato transcriptome revealed host responses to Southern tomato virus infection* [Preprint]. Research Square. https://doi.org/10.21203/rs.3.rs-8823240/v1 |
 | Decision supported | Phase 5 Task 8; supports that the structure is not pipeline-specific; D-022 |
 | Access info | 2026-10-25 |
+
+---
+
+# Phase 6 — functional analysis (pathway level)
+
+Sections 25 – 33 cover Phase 6. Pre-specification: [`functional_analysis_plan.md`](functional_analysis_plan.md). Decisions D-023 – D-032. All DOIs were checked against Crossref on 2026-10-26.
+
+## 25. Ranking metric for preranked GSEA — DESeq2 Wald statistic
+
+| Field | Content |
+|---|---|
+| Process | Freeze the gene ranking for GSEA (`scripts/R/05_functional_ranking_annotation.R`, Task 1) |
+| Software + version | DESeq2 1.50.2 (stored primary fit; direction check only); R 4.5.3, data.table 1.18.6.1 |
+| Parameters | `stat` (= MLE log2FC / lfcSE) for STV_infected vs STV_free; universe = finite stat with a DESeq2 p-value (18,238); 39 Cook's-filtered genes excluded; no ties |
+| Methodological rationale | The Wald statistic combines effect sign and precision. Ranking by padj loses the sign; ranking only significant genes is impossible (0 DEGs); apeglm LFC is reserved for visualization (D-017) |
+| Official technical documentation | DESeq2 1.50.2 vignette ("p-values and adjusted p-values", "Approach to count outliers"); fgsea vignette (example ranks are t-like statistics) |
+| Primary scientific reference | Love et al. (2014). Workflow precedent: Kelsey, Kalekar & Sedivy (2025), TE-Seq ("ranked by their Wald statistic (produced by DESeq2)"). Plant precedents: Tomaszewski et al. (2026) (*Physalis*, Solanaceae; fgsea; "pre-ranked by the DESeq2 Wald statistic (sign-consistent with the contrast)") and Li et al. (2026) (PSTVd-infected potato; Wald-statistic ranking; 10 – 500 genes; BH q < 0.05) |
+| DOI | 10.1186/s13059-014-0550-8; 10.1186/s13100-025-00381-w; 10.3389/fpls.2026.1733427; 10.3390/plants15182842 |
+| Provisional APA 7 reference | Kelsey, M. M. G., Kalekar, R. L., & Sedivy, J. M. (2025). TE-Seq: A transposable element annotation and RNA-Seq pipeline. *Mobile DNA, 16*(1), 44. https://doi.org/10.1186/s13100-025-00381-w <br> Tomaszewski, E., Reem, N., Boham, E. T., Swiler, V., & Van Eck, J. (2026). At the breaking point: Developmental and molecular insights into *Physalis grisea* fruit abscission. *Frontiers in Plant Science, 17*, 1733427. https://doi.org/10.3389/fpls.2026.1733427 <br> Li, G., Hussain, W., Pan, T., Chen, Y., Li, J., Zeng, Y., Zhou, Y., & Lv, D. (2026). Integrated transcriptomic and phytohormone metabolomic analyses reveal distinct molecular states associated with PSTVd-induced potato tuber cracking and knob-like protuberances at tuber eyes. *Plants, 15*(18), 2842. https://doi.org/10.3390/plants15182842 |
+| Decision supported | D-023 |
+| Access info | Full texts PMC12659357, PMC12950737, PMC13610134 (Europe PMC), 2026-10-26 |
+
+## 26. GO annotation source for ITAG4.0 — PLAZA 5.0 (SGN files audited)
+
+| Field | Content |
+|---|---|
+| Process | Build the gene → GO mapping for the tested genes (Task 2) |
+| Software + version | PLAZA 5.0 dicots data file `GO/go.sly.csv.gz` (instance `dicots_05`, generated 2021-09-20; assembly/annotation ITAG4.0; provider solgenomics.net); `scripts/bash/download_functional_annotation.sh` |
+| Parameters | `go_source = primary` (UniProt-GOA, InterProScan, GO-Consortium imports); `is_propagated_from_child_term = 0`. Projections (`from_iortho`, `from_family_enrichment`, `from_tree`) excluded. Exact gene IDs; no version stripping |
+| Methodological rationale | Same gene models as the quantification. Per-row evidence code and provider are recorded. Coverage is 82.88 % of ranked genes, compared with SGN `ITAG4.0_goterms.txt` (2.52 %; version-mismatched IDs) and SGN `ITAG4.1_goterms.txt` (45.57 %; other release) |
+| Official technical documentation | PLAZA download area <https://ftp.psb.ugent.be/pub/plaza/plaza_public_dicots_05/>; SGN ITAG releases <https://solgenomics.net/ftp/tomato_genome/annotation/> (ITAG4.0, ITAG4.1 README) |
+| Primary scientific reference | Van Bel et al. (2022) (PLAZA 5.0); Hosmani et al. (2019) (SL4.0 / ITAG4.0, **preprint**) |
+| DOI | 10.1093/nar/gkab1024; 10.1101/767764 |
+| Provisional APA 7 reference | Van Bel, M., Silvestri, F., Weitz, E. M., Kreft, L., Botzki, A., Coppens, F., & Vandepoele, K. (2022). PLAZA 5.0: Extending the scope and power of comparative and functional genomics in plants. *Nucleic Acids Research, 50*(D1), D1468–D1474. https://doi.org/10.1093/nar/gkab1024 <br> Hosmani, P. S., Flores-Gonzalez, M., van de Geest, H., Maumus, F., Bakker, L. V., Schijlen, E., van Haarst, J., Cordewener, J., Sanchez-Perez, G., Peters, S., Fei, Z., Giovannoni, J. J., Mueller, L. A., & Saha, S. (2019). *An improved de novo assembly and annotation of the tomato reference genome using single-molecule sequencing, Hi-C proximity ligation and optical maps* [Preprint]. bioRxiv. https://doi.org/10.1101/767764 |
+| Decision supported | D-024 |
+| Access info | Files retrieved 2026-10-26 (sha256 in `results/functional/annotation_sources_manifest.tsv`) |
+
+## 27. Gene Ontology version handling and propagation
+
+| Field | Content |
+|---|---|
+| Process | Map PLAZA GO IDs to a dated ontology, propagate, split into BP/MF/CC and build gene sets (Tasks 2 – 3) |
+| Software + version | GO `go-basic.obo`, release 2026-08-05 (`data-version releases/2026-07-26`); ontologyIndex 2.12 (`get_ontology(..., propagate_relationships = c("is_a","part_of"))`) |
+| Parameters | `alt_id` → primary; obsolete → single `replaced_by`, otherwise dropped; is_a + part_of only; roots excluded; ranked universe; 15 – 500 genes |
+| Methodological rationale | GO docs: go-basic is acyclic and "annotations can safely be propagated up the graph"; is_a and part_of are safe for grouping; grouping over `regulates` "changes the relationship between the GO term and the gene product" |
+| Official technical documentation | <https://geneontology.org/docs/download-ontology/>; <https://geneontology.org/docs/ontology-relations/>; release archive <https://release.geneontology.org/2026-08-05/> |
+| Primary scientific reference | Ashburner et al. (2000); Gene Ontology Consortium (2023); Greene, Richardson & Turro (2017) (ontologyX/ontologyIndex) |
+| DOI | 10.1038/75556; 10.1093/genetics/iyad031; 10.1093/bioinformatics/btw763 |
+| Provisional APA 7 reference | Ashburner, M., Ball, C. A., Blake, J. A., Botstein, D., Butler, H., Cherry, J. M., Davis, A. P., Dolinski, K., Dwight, S. S., Eppig, J. T., Harris, M. A., Hill, D. P., Issel-Tarver, L., Kasarskis, A., Lewis, S., Matese, J. C., Richardson, J. E., Ringwald, M., Rubin, G. M., & Sherlock, G. (2000). Gene Ontology: Tool for the unification of biology. *Nature Genetics, 25*(1), 25–29. https://doi.org/10.1038/75556 <br> Gene Ontology Consortium. (2023). The Gene Ontology knowledgebase in 2023. *Genetics, 224*(1), iyad031. https://doi.org/10.1093/genetics/iyad031 <br> Greene, D., Richardson, S., & Turro, E. (2017). ontologyX: A suite of R packages for working with ontological data. *Bioinformatics, 33*(7), 1104–1106. https://doi.org/10.1093/bioinformatics/btw763 |
+| Decision supported | D-025, D-026 |
+| Access info | 2026-10-26 |
+
+## 28. Preranked gene-set enrichment — fgsea multilevel
+
+| Field | Content |
+|---|---|
+| Process | Primary pathway-level test on GO BP, MF, CC (`scripts/R/06_functional_gsea.R`, Tasks 5 – 6) |
+| Software + version | fgsea 1.36.2 (Bioconductor 3.22, bioconda), BiocParallel 1.44.0, data.table 1.18.6.1; repository <https://github.com/ctlab/fgsea/> (package DESCRIPTION) and <https://bioconductor.org/packages/fgsea/> |
+| Parameters | `fgseaMultilevel(minSize = 15, maxSize = 500, eps = 0, nPermSimple = 10000, sampleSize = 101, scoreType = "std", gseaParam = 1, BPPARAM = SerialParam())`; `set.seed(20261025)`; BH within collection; padj < 0.05 |
+| Methodological rationale | Threshold-free competitive test on the full ranking. Multilevel Monte-Carlo gives accurate small p-values (`eps = 0`). The 15 – 500 size range and the 5 % FDR follow the GSEA User Guide for gene-set permutation with few samples |
+| Official technical documentation | fgsea vignette "Using fgsea package" (Bioconductor release); GSEA User Guide <https://docs.gsea-msigdb.org/#GSEA/GSEA_User_Guide/> (gene-set size defaults, GSEAPreranked best practices, FDR) |
+| Primary scientific reference | Subramanian et al. (2005); Korotkevich et al. (2016/2021, **preprint**); Benjamini & Hochberg (1995) |
+| DOI | 10.1073/pnas.0506580102; 10.1101/060012; 10.1111/j.2517-6161.1995.tb02031.x |
+| Provisional APA 7 reference | Subramanian, A., Tamayo, P., Mootha, V. K., Mukherjee, S., Ebert, B. L., Gillette, M. A., Paulovich, A., Pomeroy, S. L., Golub, T. R., Lander, E. S., & Mesirov, J. P. (2005). Gene set enrichment analysis: A knowledge-based approach for interpreting genome-wide expression profiles. *Proceedings of the National Academy of Sciences, 102*(43), 15545–15550. https://doi.org/10.1073/pnas.0506580102 <br> Korotkevich, G., Sukhov, V., Budin, N., Shpak, B., Artyomov, M. N., & Sergushichev, A. (2016). *Fast gene set enrichment analysis* [Preprint]. bioRxiv. https://doi.org/10.1101/060012 <br> Benjamini, Y., & Hochberg, Y. (1995). Controlling the false discovery rate: A practical and powerful approach to multiple testing. *Journal of the Royal Statistical Society: Series B (Methodological), 57*(1), 289–300. https://doi.org/10.1111/j.2517-6161.1995.tb02031.x |
+| Decision supported | D-026, D-027, D-031 |
+| Access info | 2026-10-26 |
+
+## 29. Interpretation caveat — competitive tests and inter-gene correlation
+
+| Field | Content |
+|---|---|
+| Process | Interpretation of preranked GSEA (and of PAGE, §33) |
+| Software + version | — |
+| Parameters | — |
+| Methodological rationale | Gene-permutation (competitive) nulls treat genes as independent. Co-expressed sets therefore receive optimistic p-values. This is reported as a limitation (plan §8.4); no correlation-adjusted test was run in Phase 6 |
+| Official technical documentation | GSEA User Guide ("gene_set permutation … less stringent assessment of significance") |
+| Primary scientific reference | Tamayo et al. (2016); Wu & Smyth (2012) |
+| DOI | 10.1177/0962280212460441; 10.1093/nar/gks461 |
+| Provisional APA 7 reference | Tamayo, P., Steinhardt, G., Liberzon, A., & Mesirov, J. P. (2016). The limitations of simple gene set enrichment analysis assuming gene independence. *Statistical Methods in Medical Research, 25*(1), 472–487. https://doi.org/10.1177/0962280212460441 <br> Wu, D., & Smyth, G. K. (2012). Camera: A competitive gene set test accounting for inter-gene correlation. *Nucleic Acids Research, 40*(17), e133. https://doi.org/10.1093/nar/gks461 |
+| Decision supported | D-027 (stricter FDR), D-030 (PAGE adds no protection), plan §8.4 |
+| Access info | 2026-10-26 |
+
+## 30. clusterProfiler (framework considered, not used)
+
+| Field | Content |
+|---|---|
+| Process | — (alternative GSEA front end) |
+| Software + version | Not installed. Bioconductor <https://bioconductor.org/packages/clusterProfiler/>; repository <https://github.com/YuLab-SMU/clusterProfiler> |
+| Parameters | — |
+| Methodological rationale | Widely used for GO GSEA with custom gene sets. fgsea is called directly so that every parameter is explicit and versioned |
+| Official technical documentation | clusterProfiler book/vignette (YuLab) |
+| Primary scientific reference | Yu et al. (2012); Wu et al. (2021); Xu et al. (2024) |
+| DOI | 10.1089/omi.2011.0118; 10.1016/j.xinn.2021.100141; 10.1038/s41596-024-01020-z |
+| Provisional APA 7 reference | Yu, G., Wang, L.-G., Han, Y., & He, Q.-Y. (2012). clusterProfiler: An R package for comparing biological themes among gene clusters. *OMICS, 16*(5), 284–287. https://doi.org/10.1089/omi.2011.0118 <br> Wu, T., Hu, E., Xu, S., Chen, M., Guo, P., Dai, Z., Feng, T., Zhou, L., Tang, W., Zhan, L., Fu, X., Liu, S., Bo, X., & Yu, G. (2021). clusterProfiler 4.0: A universal enrichment tool for interpreting omics data. *The Innovation, 2*(3), 100141. https://doi.org/10.1016/j.xinn.2021.100141 <br> Xu, S., Hu, E., Cai, Y., Xie, Z., Luo, X., Zhan, L., Tang, W., Wang, Q., Liu, B., Wang, R., Xie, W., Wu, T., Xie, L., & Yu, G. (2024). Using clusterProfiler to characterize multiomics data. *Nature Protocols, 19*(11), 3292–3320. https://doi.org/10.1038/s41596-024-01020-z |
+| Decision supported | D-027 |
+| Access info | 2026-10-26 |
+
+## 31. Plant Reactome (tomato pathways audited; GSEA not run)
+
+| Field | Content |
+|---|---|
+| Process | Tomato pathway-membership audit and exact mapping (Task 4) |
+| Software + version | Plant Reactome current download `gene_ids_by_pathway_and_species.tab` (site: Version 24, Gramene r68/r69; file Last-Modified 2026-07-08; sha256 in manifest) |
+| Parameters | `Solanum lycopersicum` rows; exact ITAG4.0 gene IDs only |
+| Methodological rationale | Tomato pathways are orthology projections of 351 curated rice pathways (Ensembl Compara; ≥ 30 % reciprocal identity for dicots). The docs call them "not data, but hypotheses". Coverage: 3.41 % of ranked genes; 5 testable pathways → STOP for collection D |
+| Official technical documentation | Plant Reactome "Computational Inference" <https://plantreactome.gramene.org/index.php?option=com_content&view=article&id=68&Itemid=270&lang=en>; Release Summary V24; download area <https://plantreactome.gramene.org/download/current/> |
+| Primary scientific reference | Gupta et al. (2024); Naithani et al. (2020) |
+| DOI | 10.1093/nar/gkad1052; 10.1093/nar/gkz996 |
+| Provisional APA 7 reference | Gupta, P., Elser, J., Hooks, E., D'Eustachio, P., Jaiswal, P., & Naithani, S. (2024). Plant Reactome Knowledgebase: Empowering plant pathway exploration and OMICS data analysis. *Nucleic Acids Research, 52*(D1), D1538–D1547. https://doi.org/10.1093/nar/gkad1052 <br> Naithani, S., Gupta, P., Preece, J., D'Eustachio, P., Elser, J. L., Garg, P., Dikeman, D. A., Kiff, J., Cook, J., Olson, A., Wei, S., Tello-Ruiz, M. K., Mundo, A. F., Munoz-Pomer, A., Mohammed, S., Cheng, T., Bolton, E., Papatheodorou, I., Stein, L., … Jaiswal, P. (2020). Plant Reactome: A knowledgebase and resource for comparative pathway analysis. *Nucleic Acids Research* (published online 2019-11-04; volume/pages to be checked). https://doi.org/10.1093/nar/gkz996 |
+| Decision supported | D-028 |
+| Access info | 2026-10-26 |
+
+## 32. MapMan4 / Mercator4 (preparation only)
+
+| Field | Content |
+|---|---|
+| Process | Prepare Mercator4 input and a MapMan expression table (`scripts/R/07_mapman_mercator_prep.R`, Task 7) |
+| Software + version | Mercator4 **v8.0** web service (version shown on <https://www.plabipd.de/mercator_main.html>, 2026-10-26; "scheduled maintenance" notice); MapMan desktop (version to be recorded at use) |
+| Parameters | Unmodified ITAG4.0 protein FASTA (34,075 records); sequence type protein; Swiss-Prot option not selected; display value apeglm log2FC (D-017) |
+| Methodological rationale | MapMan4 bins give a plant-specific functional framework. With 0 FDR-significant DEGs, visualization of continuous effect estimates is descriptive; no bin ORA |
+| Official technical documentation | Mercator4 web page (job submission: protein or cDNA FASTA; FASTA validation; optional Swiss-Prot annotation); `results/functional/mapman/MERCATOR4_SUBMISSION.md` |
+| Primary scientific reference | Schwacke et al. (2019); Bolger, Schwacke & Usadel (2021) |
+| DOI | 10.1016/j.molp.2019.01.003; 10.1007/978-1-0716-1609-3_9 |
+| Provisional APA 7 reference | Schwacke, R., Ponce-Soto, G. Y., Krause, K., Bolger, A. M., Arsova, B., Hallab, A., Gruden, K., Stitt, M., Bolger, M. E., & Usadel, B. (2019). MapMan4: A refined protein classification and annotation framework applicable to multi-omics data analysis. *Molecular Plant, 12*(6), 879–892. https://doi.org/10.1016/j.molp.2019.01.003 <br> Bolger, M., Schwacke, R., & Usadel, B. (2021). MapMan visualization of RNA-Seq data using Mercator4 functional annotations. In *Solanum tuberosum: Methods and protocols* (Methods in Molecular Biology, pp. 195–212). Humana. https://doi.org/10.1007/978-1-0716-1609-3_9 |
+| Decision supported | D-029 |
+| Access info | 2026-10-26 (Springer chapter full text not accessible: login redirect) |
+
+## 33. agriGO v2 / PAGE (feasibility only; not used)
+
+| Field | Content |
+|---|---|
+| Process | Feasibility assessment (Task 8; [`agrigo_feasibility.md`](agrigo_feasibility.md)) |
+| Software + version | agriGO v2.0 web server (site "Last maintain: 2021-04-04"); internal GO datasets 2009-10 and 2016-8 |
+| Parameters | — (no job submitted) |
+| Methodological rationale | SEA needs a DEG list (none). PAGE would run on agriGO's 2016 ontology with an undocumented ITAG4.0 background or a ≤ 4 MB upload, cannot be re-executed reproducibly, and tests the same competitive question as fgsea → conclusion C |
+| Official technical documentation | <https://systemsbiology.cau.edu.cn/agriGOv2/manual.php>; <https://systemsbiology.cau.edu.cn/agriGOv2/download.php> |
+| Primary scientific reference | Tian et al. (2017); Kim & Volsky (2005) |
+| DOI | 10.1093/nar/gkx382; 10.1186/1471-2105-6-144 |
+| Provisional APA 7 reference | Tian, T., Liu, Y., Yan, H., You, Q., Yi, X., Du, Z., Xu, W., & Su, Z. (2017). agriGO v2.0: A GO analysis toolkit for the agricultural community, 2017 update. *Nucleic Acids Research, 45*(W1), W122–W129. https://doi.org/10.1093/nar/gkx382 <br> Kim, S.-Y., & Volsky, D. J. (2005). PAGE: Parametric analysis of gene set enrichment. *BMC Bioinformatics, 6*, 144. https://doi.org/10.1186/1471-2105-6-144 |
+| Decision supported | D-030 |
+| Access info | 2026-10-26 |

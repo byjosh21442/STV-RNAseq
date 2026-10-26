@@ -1,0 +1,10 @@
+software	version
+R	4.5.3
+fgsea	1.36.2
+BiocParallel	1.44.0
+data.table	1.18.6.1
+fastmatch	1.1.8
+cowplot	1.2.0
+ggplot2	4.0.3
+ontologyIndex	2.12
+DESeq2	1.50.2

@@ -250,3 +250,76 @@ DESeq2 object construction or testing, filtering, DEG thresholds, contrasts, bio
 ## Phase 5 — not executed (owner restrictions)
 
 Changes to the primary DESeq2 analysis, removal of STV_free_rep1, design changes, pairing or covariate models, leave-one-out sensitivity, threshold changes or nominal-p gene lists, functional enrichment (GO, agriGO, KEGG, MapMan/Mercator, Plant Reactome), overwriting Phase 4 outputs.
+
+## Phase 6 — functional analysis at the pathway level (2026-10-26; primary DESeq2 result unchanged)
+
+All times UTC.
+
+82. **Read-only investigation** (outside the repo, `/tmp/p6`):
+    - SGN `ITAG4.0_goterms.txt`: 33,562 rows; 5,845 with GO; only 1,458 GO-bearing IDs are current ITAG4.0 gene IDs; 21,311 IDs carry other versions.
+    - SGN ITAG4.1 GO and proteins: 12,410 GO transcripts match ITAG4.0 exactly, with identical proteins.
+    - PLAZA 5.0 dicots tomato GO: ITAG4.0, exact IDs.
+    - Plant Reactome tomato files.
+    - The ITAG4.0 protein FASTA: 34,075 records, 32,522 terminal and 334 internal stops.
+    - The 39 Cook's-filtered genes.
+83. **References verified.**
+    - Crossref:
+      - 10.1093/nar/gkab1024, 10.1177/0962280212460441, 10.1093/nar/gks461, 10.1093/bioinformatics/btw763;
+      - 10.1101/767764, 10.1111/j.2517-6161.1995.tb02031.x, 10.3390/plants15182842, 10.3389/fpls.2026.1733427;
+      - 10.1186/s13100-025-00381-w, 10.1093/nar/gkz996, 10.1007/978-1-0716-1609-3_9, 10.1101/060012;
+      - plus the DOIs listed in the earlier Phase 6 Crossref query: Subramanian 2005, Yu 2012, Wu 2021, Xu 2024, Schwacke 2019, Tian 2017, Kim & Volsky 2005, Ashburner 2000, GO Consortium 2023, Gupta 2024.
+    - Full texts (Europe PMC): Tomaszewski et al. 2026 (PMC12950737), Li et al. 2026 (PMC13610134), Kelsey et al. 2025 (PMC12659357).
+    - Technical documentation:
+      - GSEA User Guide; fgsea vignette (Bioc release); fgsea 1.36.2 source (warning texts);
+      - GO "Download the ontology" and "Relations" pages;
+      - Plant Reactome "Computational Inference" and Release Summary V24;
+      - agriGO v2 home/manual/download pages;
+      - Mercator4 page (v8.0; maintenance notice; FAQ/version pages 404).
+84. **`stv-r` environment.**
+    - Dry run: 5 new packages, no updates or removals.
+    - Install: `CONDA_CHANNEL_PRIORITY=strict conda install -n stv-r --override-channels -c conda-forge -c bioconda … "bioconductor-fgsea=1.36.2" "r-ontologyindex=2.12"` (plus the existing pins).
+    - Added: fgsea 1.36.2, ontologyIndex 2.12, data.table 1.18.6.1, fastmatch 1.1-8, cowplot 1.2.0. Lock regenerated: 156 → 161 packages.
+    - Global `channel_priority` is still `flexible`.
+85. `bash scripts/bash/download_functional_annotation.sh`, first run 06:13:30Z.
+    - Downloaded into git-ignored `reference/functional/` (86 MB): PLAZA `go.sly.csv.gz`; GO `go-basic.obo` release 2026-08-05 (`data-version releases/2026-07-26`); Plant Reactome `gene_ids_by_pathway_and_species.tab`; ITAG4.1 GO, proteins and README.
+    - The first run exited 141: SIGPIPE from `zcat | head` under `pipefail`, after all downloads. Fixed.
+    - Re-run 06:16:28Z: sizes verified; `results/functional/annotation_sources_manifest.tsv` written with sha256 and Last-Modified.
+86. `Rscript scripts/R/05_functional_ranking_annotation.R` (Tasks 1 – 4; no enrichment test).
+    - The first run stopped with the STOP check "GO terms with unknown namespace": `get_ontology` also returns 5 `[Typedef]` relation stanzas. The check was restricted to `GO:` IDs.
+    - Second run exit 0 (06:16:36 – 06:16:59Z). Third run at 06:22 – 06:24Z to fix a clipped figure title; the ranking, catalog and mapping tables were sha256-identical.
+    - Results: 18,238 ranked genes; GO coverage 82.88 %; tested sets BP 952 / MF 459 / CC 237; Plant Reactome 622 ranked genes (3.41 %), 5 testable pathways → collection D stopped (D-028).
+87. **Pre-specification.**
+    - `docs/functional_analysis_plan.md` §1 – §7 and `docs/decisions.md` D-023 – D-032 were written before any enrichment test.
+    - Frozen copies and sha256 are in `results/functional/prespecification/`: plan `e30d60f6b418aaa642b36d01ca93e654271b8342bdcfd021139f4f3e91d66b12`, decisions `c4fcff5c87de917d8cfafff13b405ec8d5980750fffa9a6db1c15412ba1413b7`, frozen 2026-10-26T06:24:15Z.
+88. `Rscript scripts/R/06_functional_gsea.R`.
+    - Launches at 06:22:46Z and 06:23:27Z stopped at the pre-specification guard before any test: `fread` parsed the timestamp as a date-time. Fixed with `colClasses = "character"`.
+    - **Primary run**: 06:24:15 – 06:25:07Z, exit 0 (local log `logs/phase6_06_gsea_run1.log`; `logs/` is git-ignored).
+    - Results:
+      - significant sets (padj < 0.05): BP 120 (75 positive / 45 negative NES), MF 51 (21 / 30), CC 44 (40 / 4);
+      - 0 warnings, 0 NA; same-seed rerun identical;
+      - seed-diagnostic changes: BP 15, MF 0, CC 0;
+      - 29 enrichment curves by the fixed rule.
+89. **Output-only re-run of `06_functional_gsea.R`** (06:26:47 – 06:27:39Z).
+    - Changes: added `gsea_go_*_seed_diagnostic.tsv` and shortened curve titles.
+    - `sha256sum -c` confirmed that all primary tables were unchanged: `gsea_go_*_all.tsv`, `*_significant_fdr05.tsv`, summary, leading-edge tables, figure selection.
+    - The 15 BP calls that differ under seed 20261026 all have primary padj 0.031 – 0.070.
+90. `Rscript scripts/R/07_mapman_mercator_prep.R` (06:32:50Z), exit 0.
+    - Mercator4 input manifest and FASTA record (sha256 `84c15ec4…f4bb`, unmodified).
+    - MapMan expression table (18,277 rows; apeglm, MLE, Wald) and `MERCATOR4_SUBMISSION.md`. The manual web submission is **pending**.
+91. `Rscript scripts/R/08_functional_posthoc_descriptives.R` — **post-hoc, not pre-specified**, descriptive only.
+    - 15 of 2,858 leading-edge genes are on SL4.0ch00.
+    - They form ≥ 10 % of the leading edge in 27 of 215 significant sets.
+92. **Docs.**
+    - New: `docs/functional_analysis_plan.md` (§8 outcome appended after the run), `docs/agrigo_feasibility.md` (conclusion C).
+    - Updated: `docs/decisions.md` (D-023 – D-032), `docs/methods_references.md` (§25 – §33), `docs/results_by_process.md` (rows 21 – 29), `docs/software_versions.md`, `envs/stv-r.yml`, `README.md`, this log.
+93. **Git:** nothing committed or pushed (owner review required). The policy for the new tables > 1 MB is proposed as D-032.
+
+## Phase 6 — not executed (by design / owner restrictions)
+
+- Changes to the DESeq2 analysis; nominal-p or relaxed DEG lists; ORA (agriGO SEA, Mercator4/MapMan enrichment, `enrichGO`).
+- Plant Reactome GSEA; PLAZA projected GO; KEGG.
+- Sensitivity runs with other sizes, metrics or permutation settings.
+- agriGO jobs.
+- Mercator4 web submission (manual step pending).
+- Leave-one-out.
+- Commit/push.

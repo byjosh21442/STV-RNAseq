@@ -1,0 +1,223 @@
+pathway_id	pathway_name	n_members	n_exact_itag40	n_ranked	in_size_range_15_500
+R-SLY-5632095.1	Brassinosteroid signaling	41	24	23	TRUE
+R-SLY-5608118.1	Auxin signalling	31	17	17	TRUE
+R-SLY-9826782.1	Regulation of seed germination and coleoptile growth under submergence and normal gravity environment	52	29	17	TRUE
+R-SLY-1119519.1	Calvin cycle	26	16	16	TRUE
+R-SLY-1119533.1	TCA cycle (plant)	24	18	16	TRUE
+R-SLY-6787011.1	Jasmonic acid signaling	31	19	14	FALSE
+R-SLY-1119312.1	Photorespiration	19	15	13	FALSE
+R-SLY-1119410.1	Ascorbate biosynthesis	18	15	13	FALSE
+R-SLY-5679411.1	Gibberellin signaling	17	13	13	FALSE
+R-SLY-1119402.1	Phospholipid biosynthesis I	18	12	12	FALSE
+R-SLY-1119477.1	Starch biosynthesis	24	12	12	FALSE
+R-SLY-9645850.1	Activation of pre-replication complex	21	12	12	FALSE
+R-SLY-1119494.1	Tryptophan biosynthesis	13	11	11	FALSE
+R-SLY-1119620.1	GDP-L-fucose biosynthesis I (from GDP-D-mannose)	18	14	11	FALSE
+R-SLY-8933811.1	Circadian rhythm	22	11	11	FALSE
+R-SLY-9640760.1	G1 phase	18	12	11	FALSE
+R-SLY-1119428.1	GDP-D-rhamnose biosynthesis	17	13	10	FALSE
+R-SLY-1119430.1	Chorismate biosynthesis	16	10	10	FALSE
+R-SLY-1119574.1	UDP-L-arabinose biosynthesis and transport	25	13	10	FALSE
+R-SLY-9030654.1	Primary root development	19	12	10	FALSE
+R-SLY-1119615.1	Mevalonate pathway	14	9	9	FALSE
+R-SLY-9675815.1	Leading strand synthesis	14	10	9	FALSE
+R-SLY-1119370.1	Sterol biosynthesis	14	10	8	FALSE
+R-SLY-1119458.1	Glutamate degradation	10	8	8	FALSE
+R-SLY-1119464.1	Methylerythritol phosphate pathway	11	8	8	FALSE
+R-SLY-1119465.1	Sucrose biosynthesis	10	8	8	FALSE
+R-SLY-1119479.1	Valine degradation	16	8	8	FALSE
+R-SLY-1119506.1	tyrosine degradation I	14	9	8	FALSE
+R-SLY-6788019.1	Salicylic acid signaling	21	11	8	FALSE
+R-SLY-9611432.1	Recognition of fungal and bacterial pathogens and immunity response	13	9	8	FALSE
+R-SLY-9766881.1	TF network involved in salinity response	19	11	8	FALSE
+R-SLY-1119263.1	Arginine biosynthesis	11	7	7	FALSE
+R-SLY-1119325.1	Sphingolipid metabolism	14	7	7	FALSE
+R-SLY-1119460.1	Isoleucine biosynthesis from threonine	15	9	7	FALSE
+R-SLY-1119540.1	Leucine biosynthesis	12	7	7	FALSE
+R-SLY-1119610.1	Biotin biosynthesis II	14	8	7	FALSE
+R-SLY-8934108.1	Short day regulated expression of florigens	11	7	7	FALSE
+R-SLY-9675824.1	DNA replication Initiation	13	7	7	FALSE
+R-SLY-1119260.1	Cardiolipin biosynthesis	8	6	6	FALSE
+R-SLY-1119331.1	Cysteine biosynthesis I	6	6	6	FALSE
+R-SLY-1119379.1	Flavin biosynthesis	8	6	6	FALSE
+R-SLY-1119434.1	Phytic acid biosynthesis (lipid-independent)	9	8	6	FALSE
+R-SLY-1119452.1	Galactose degradation II	9	6	6	FALSE
+R-SLY-1119556.1	Choline biosynthesis I	16	7	6	FALSE
+R-SLY-3899351.1	Abscisic acid (ABA) mediated signaling	14	6	6	FALSE
+R-SLY-8868949.1	Intracellular auxin transport	9	6	6	FALSE
+R-SLY-9618218.1	Arsenic uptake and detoxification	14	10	6	FALSE
+R-SLY-9675782.1	Maturation	13	7	6	FALSE
+R-SLY-1119273.1	Lysine biosynthesis I	16	5	5	FALSE
+R-SLY-1119283.1	Lysine biosynthesis II	16	5	5	FALSE
+R-SLY-1119300.1	Glycolipid desaturation	12	6	5	FALSE
+R-SLY-1119314.1	Cellulose biosynthesis	9	6	5	FALSE
+R-SLY-1119365.1	Lysine degradation II	7	5	5	FALSE
+R-SLY-1119403.1	Removal of superoxide radicals	8	7	5	FALSE
+R-SLY-1119418.1	Suberin biosynthesis	16	6	5	FALSE
+R-SLY-1119449.1	Carotenoid biosynthesis	8	5	5	FALSE
+R-SLY-1119456.1	Brassinosteroid biosynthesis II	6	5	5	FALSE
+R-SLY-1119486.1	IAA biosynthesis I	21	15	5	FALSE
+R-SLY-1119498.1	Phylloquinone biosynthesis	5	5	5	FALSE
+R-SLY-1119516.1	Trehalose biosynthesis I	6	5	5	FALSE
+R-SLY-1119539.1	Ornithine biosynthesis	8	5	5	FALSE
+R-SLY-1119600.1	Valine biosynthesis	10	7	5	FALSE
+R-SLY-1119628.1	GDP-mannose metabolism	8	6	5	FALSE
+R-SLY-9639136.1	Response to Aluminum stress	9	6	5	FALSE
+R-SLY-9675885.1	Lagging strand synthesis	10	6	5	FALSE
+R-SLY-1119316.1	Phenylpropanoid biosynthesis	10	6	4	FALSE
+R-SLY-1119332.1	Jasmonic acid biosynthesis	4	4	4	FALSE
+R-SLY-1119334.1	Ethylene biosynthesis from methionine	14	10	4	FALSE
+R-SLY-1119337.1	Proline degradation	5	4	4	FALSE
+R-SLY-1119389.1	Phenylalanine biosynthesis I	10	5	4	FALSE
+R-SLY-1119394.1	Pantothenate and coenzyme A biosynthesis III	5	5	4	FALSE
+R-SLY-1119400.1	Methionine biosynthesis II	10	6	4	FALSE
+R-SLY-1119419.1	Lysine biosynthesis VI	10	5	4	FALSE
+R-SLY-1119424.1	Plastid glycolysis	7	4	4	FALSE
+R-SLY-1119438.1	Secologanin and strictosidine biosynthesis	10	7	4	FALSE
+R-SLY-1119445.1	Beta-alanine biosynthesis II	6	4	4	FALSE
+R-SLY-1119495.1	Citrulline biosynthesis	5	4	4	FALSE
+R-SLY-1119509.1	Histidine biosynthesis I	6	4	4	FALSE
+R-SLY-1119553.1	Asparagine biosynthesis	5	4	4	FALSE
+R-SLY-1119567.1	Beta-alanine biosynthesis I	10	4	4	FALSE
+R-SLY-1119586.1	Cyanate degradation	7	4	4	FALSE
+R-SLY-1119594.1	Pyridoxal 5'-phosphate biosynthesis	5	4	4	FALSE
+R-SLY-1119612.1	Cysteine degradation	8	4	4	FALSE
+R-SLY-1119622.1	Arginine biosynthesis II (acetyl cycle)	7	4	4	FALSE
+R-SLY-9030557.1	Lateral root initiation	6	4	4	FALSE
+R-SLY-9608575.1	Reproductive meristem phase change	11	5	4	FALSE
+R-SLY-9639861.1	Development of root hair	16	7	4	FALSE
+R-SLY-9640882.1	Assembly of pre-replication complex	5	4	4	FALSE
+R-SLY-9928831.1	Severe drought	6	6	4	FALSE
+R-SLY-1119261.1	Salicylate biosynthesis	11	3	3	FALSE
+R-SLY-1119265.1	Tetrahydrofolate biosynthesis I	6	3	3	FALSE
+R-SLY-1119281.1	Aspartate biosynthesis I	4	3	3	FALSE
+R-SLY-1119286.1	Cholesterol biosynthesis II (via 24,25-dihydrolanosterol)	7	4	3	FALSE
+R-SLY-1119287.1	Vitamin E biosynthesis	6	3	3	FALSE
+R-SLY-1119341.1	Galactosylcyclitol biosynthesis	5	4	3	FALSE
+R-SLY-1119367.1	Polyisoprenoid biosynthesis	4	3	3	FALSE
+R-SLY-1119374.1	Abscisic acid biosynthesis	6	3	3	FALSE
+R-SLY-1119393.1	Asparagine degradation I	5	3	3	FALSE
+R-SLY-1119407.1	Ureide biosynthesis	6	3	3	FALSE
+R-SLY-1119437.1	Glutathione redox reactions I	6	3	3	FALSE
+R-SLY-1119439.1	Cholesterol biosynthesis III (via desmosterol)	7	4	3	FALSE
+R-SLY-1119444.1	Canavanine biosynthesis	3	3	3	FALSE
+R-SLY-1119496.1	Pantothenate biosynthesis I	5	3	3	FALSE
+R-SLY-1119502.1	Allantoin degradation	6	5	3	FALSE
+R-SLY-1119523.1	Tetrahydrofolate biosynthesis II	8	3	3	FALSE
+R-SLY-1119534.1	Pyridoxal 5'-phosphate salvage pathway	4	3	3	FALSE
+R-SLY-1119544.1	Pantothenate biosynthesis II	5	3	3	FALSE
+R-SLY-1119559.1	Cholesterol biosynthesis I	7	4	3	FALSE
+R-SLY-1119573.1	Dolichyl-diphosphooligosaccharide biosynthesis	3	3	3	FALSE
+R-SLY-8858053.1	Polar auxin transport	8	5	3	FALSE
+R-SLY-8934036.1	Long day regulated expression of florigens	8	3	3	FALSE
+R-SLY-8934257.1	Transition from vegetative to reproductive shoot apical meristem	4	3	3	FALSE
+R-SLY-9928995.1	Drought escape (DE) via ABA-dependent pathway	9	3	3	FALSE
+R-SLY-1119276.1	Choline biosynthesis III	10	3	2	FALSE
+R-SLY-1119278.1	PRPP biosynthesis I	4	2	2	FALSE
+R-SLY-1119289.1	Arginine degradation	4	2	2	FALSE
+R-SLY-1119295.1	Homoserine biosynthesis	6	2	2	FALSE
+R-SLY-1119297.1	Beta-alanine biosynthesis III	3	2	2	FALSE
+R-SLY-1119318.1	Proline biosynthesis V (from arginine)	3	2	2	FALSE
+R-SLY-1119351.1	Mitochondrial pyruvate metabolism	2	2	2	FALSE
+R-SLY-1119384.1	NAD biosynthesis I (from aspartate)	5	2	2	FALSE
+R-SLY-1119431.1	UDP-D-glucuronate biosynthesis (from myo-inositol)	6	2	2	FALSE
+R-SLY-1119443.1	Ammonia assimilation cycle	5	3	2	FALSE
+R-SLY-1119451.1	Xylose degradation	3	2	2	FALSE
+R-SLY-1119484.1	Folate polyglutamylation II	4	2	2	FALSE
+R-SLY-1119529.1	Sulfate activation for sulfonation	3	2	2	FALSE
+R-SLY-1119570.1	Cytosolic glycolysis	8	2	2	FALSE
+R-SLY-1119579.1	Glycine betaine biosynthesis III	2	2	2	FALSE
+R-SLY-1119580.1	IAA biosynthesis II	4	2	2	FALSE
+R-SLY-1119582.1	Phenylpropanoid biosynthesis, initial reactions	11	2	2	FALSE
+R-SLY-1119601.1	Trehalose degradation II	3	2	2	FALSE
+R-SLY-1119623.1	Acyl-CoA synthetase pathway	3	2	2	FALSE
+R-SLY-4827054.1	Tetrapyrrole biosynthesis I	4	2	2	FALSE
+R-SLY-5225756.1	Ethylene mediated signaling	4	3	2	FALSE
+R-SLY-5654909.1	Xylan biosynthesis	6	2	2	FALSE
+R-SLY-5655101.1	Xyloglucan biosynthesis	9	4	2	FALSE
+R-SLY-8986768.1	Anther and pollen development	5	2	2	FALSE
+R-SLY-9030680.1	Crown root development	3	2	2	FALSE
+R-SLY-9609102.1	Flower development	6	2	2	FALSE
+R-SLY-9675508.1	Root elongation	4	2	2	FALSE
+R-SLY-9924511.1	Strigolactone-mediated axillary bud dormancy and suppression of tillering	10	5	2	FALSE
+R-SLY-9928946.1	Drought escape (DE) via ABA-independent pathway	4	2	2	FALSE
+R-SLY-1119262.1	Threonine biosynthesis from homoserine	3	1	1	FALSE
+R-SLY-1119267.1	Phenylalanine degradation III	5	3	1	FALSE
+R-SLY-1119271.1	Threonine degradation	2	1	1	FALSE
+R-SLY-1119274.1	Monoterpene biosynthesis	2	2	1	FALSE
+R-SLY-1119293.1	Glutamine biosynthesis I	3	2	1	FALSE
+R-SLY-1119298.1	Glutathione redox reactions II	2	1	1	FALSE
+R-SLY-1119304.1	Putrescine biosynthesis II	4	1	1	FALSE
+R-SLY-1119311.1	Glycine biosynthesis I	1	1	1	FALSE
+R-SLY-1119317.1	Spermine biosynthesis	1	1	1	FALSE
+R-SLY-1119321.1	Glycerol degradation I	3	1	1	FALSE
+R-SLY-1119322.1	Leucodelphinidin biosynthesis	2	1	1	FALSE
+R-SLY-1119343.1	Spermidine biosynthesis	1	1	1	FALSE
+R-SLY-1119344.1	Hydroxycinnamic acid serotonin amides biosynthesis	5	3	1	FALSE
+R-SLY-1119349.1	S-methylmethionine cycle	3	2	1	FALSE
+R-SLY-1119353.1	Linear furanocoumarin biosynthesis	3	1	1	FALSE
+R-SLY-1119354.1	Asparagine biosynthesis III	1	1	1	FALSE
+R-SLY-1119388.1	IAA biosynthesis VI (via indole-3-acetamide)	1	1	1	FALSE
+R-SLY-1119395.1	Maackiain biosynthesis	4	3	1	FALSE
+R-SLY-1119415.1	Leucopelargonidin and leucocyanidin biosynthesis	2	1	1	FALSE
+R-SLY-1119420.1	Glutamate biosynthesis V	1	1	1	FALSE
+R-SLY-1119436.1	Peptidoglycan biosynthesis I	4	1	1	FALSE
+R-SLY-1119450.1	Homocysteine biosynthesis	2	1	1	FALSE
+R-SLY-1119453.1	Medicarpin biosynthesis	4	3	1	FALSE
+R-SLY-1119473.1	Cytokinins-O-glucoside biosynthesis	6	1	1	FALSE
+R-SLY-1119501.1	S-adenosyl-L-methionine cycle	3	1	1	FALSE
+R-SLY-1119528.1	Beta-alanine betaine biosynthesis	1	1	1	FALSE
+R-SLY-1119531.1	Flavonoid biosynthesis	1	1	1	FALSE
+R-SLY-1119532.1	CMP-KDO biosynthesis II (from D-arabinose 5-phosphate)	1	1	1	FALSE
+R-SLY-1119545.1	Geranylgeranyldiphosphate biosynthesis II (plastidic)	2	1	1	FALSE
+R-SLY-1119563.1	UDP-D-xylose biosynthesis	5	1	1	FALSE
+R-SLY-1119568.1	Pantothenate biosynthesis III	1	1	1	FALSE
+R-SLY-1119569.1	Kievitone biosynthesis	3	1	1	FALSE
+R-SLY-1119581.1	Thiosulfate disproportionation III (rhodanese)	2	1	1	FALSE
+R-SLY-1119593.1	Oleoresin monoterpene volatiles biosynthesis	2	2	1	FALSE
+R-SLY-1119595.1	Mannose degradation	1	1	1	FALSE
+R-SLY-1119596.1	Glutamate biosynthesis I	3	2	1	FALSE
+R-SLY-1119602.1	Phytyl-PP biosynthesis	1	1	1	FALSE
+R-SLY-1119605.1	Chlorophyll a biosynthesis II	1	1	1	FALSE
+R-SLY-1119609.1	Phaseic acid biosynthesis	1	1	1	FALSE
+R-SLY-1119617.1	Folate polyglutamylation I	3	1	1	FALSE
+R-SLY-1119618.1	13-LOX and 13-HPL pathway	1	1	1	FALSE
+R-SLY-1119629.1	Thiamine biosynthesis	3	1	1	FALSE
+R-SLY-1119631.1	Proline biosynthesis I	1	1	1	FALSE
+R-SLY-5633340.1	Citrulline-nitric oxide cycle	2	1	1	FALSE
+R-SLY-5655010.1	Xylogalacturonan biosynthesis	6	3	1	FALSE
+R-SLY-8879007.1	Response to cold temperature	8	4	1	FALSE
+R-SLY-9025727.1	Iron uptake and transport in root vascular system	8	4	1	FALSE
+R-SLY-9607185.1	Generation of superoxide radicals	8	4	1	FALSE
+R-SLY-9609352.1	Lycopene catabolism	1	1	1	FALSE
+R-SLY-9675304.1	Lateral root emergence	1	1	1	FALSE
+R-SLY-9924451.1	Shoot (tiller) formation and regulation of tiller angle	9	4	1	FALSE
+R-SLY-1119284.1	Coumarin biosynthesis (via 2-coumarate)	2	1	0	FALSE
+R-SLY-1119291.1	Nitrate assimilation	3	1	0	FALSE
+R-SLY-1119292.1	Cytokinins 7-N-glucoside biosynthesis	4	0	0	FALSE
+R-SLY-1119294.1	Gibberellin biosynthesis III (early C-13 hydroxylation)	3	0	0	FALSE
+R-SLY-1119303.1	Pyridoxamine anabolism	1	0	0	FALSE
+R-SLY-1119308.1	Momilactone biosynthesis	2	1	0	FALSE
+R-SLY-1119319.1	Alanine biosynthesis III	1	0	0	FALSE
+R-SLY-1119323.1	Lipid-A-precursor biosynthesis	1	0	0	FALSE
+R-SLY-1119342.1	Gamma-glutamyl cycle	2	0	0	FALSE
+R-SLY-1119348.1	Ent-kaurene biosynthesis	1	1	0	FALSE
+R-SLY-1119360.1	Fructan biosynthesis	2	0	0	FALSE
+R-SLY-1119375.1	Cytokinins 9-N-glucoside biosynthesis	4	0	0	FALSE
+R-SLY-1119386.1	UDP-N-acetylgalactosamine biosynthesis	2	0	0	FALSE
+R-SLY-1119412.1	Chlorophyll a biosynthesis I	1	0	0	FALSE
+R-SLY-1119417.1	Stachyose biosynthesis	2	0	0	FALSE
+R-SLY-1119440.1	Anthocyanin biosynthesis (pelargonidin 3-O-glucoside, cyanidin 3-O-glucoside)	1	0	0	FALSE
+R-SLY-1119447.1	Putrescine biosynthesis I	2	0	0	FALSE
+R-SLY-1119483.1	Glutathione biosynthesis	1	0	0	FALSE
+R-SLY-1119492.1	Lactucaxanthin biosynthesis	1	0	0	FALSE
+R-SLY-1119514.1	Anthocyanin biosynthesis (delphinidin 3-O-glucoside)	1	0	0	FALSE
+R-SLY-1119535.1	Glutamate biosynthesis IV	1	0	0	FALSE
+R-SLY-1119557.1	GA12 biosynthesis	2	1	0	FALSE
+R-SLY-1119624.1	Methionine salvage pathway	11	6	0	FALSE
+R-SLY-1119625.1	Gibberellin biosynthesis I (non C-3, non C-13 hydroxylation)	3	0	0	FALSE
+R-SLY-5367729.1	Strigolactone biosynthesis	3	2	0	FALSE
+R-SLY-5654894.1	UDP-D-apiose biosynthesis	3	0	0	FALSE
+R-SLY-9025754.1	Mugineic acid biosynthesis	1	0	0	FALSE
+R-SLY-9609573.1	Tricin biosynthesis	1	0	0	FALSE
+R-SLY-9924494.1	Gravity sensing and statolith sedimentation	1	1	0	FALSE

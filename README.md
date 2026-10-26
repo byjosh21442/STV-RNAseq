@@ -6,6 +6,12 @@ Reproducible RNA-seq reanalysis of the transcriptomic response of *Solanum lycop
 
 Which leaf genes of tomato cv. M82 differ in expression between plants infected with Southern tomato virus (STV) and STV-free plants? STV is a double-stranded RNA virus of the genus *Amalgavirus*. This repository re-quantifies the public raw reads with a current reference and a current, documented workflow. **Primary result:** no statistically significant differential expression was detected under the prespecified DESeq2 model and FDR threshold in this six-sample dataset (3 vs 3). This is not evidence that STV has no transcriptomic effect, and no biological conclusion is drawn here.
 
+**Pathway level (Phase 6):** this is a separate, pre-specified question, tested with preranked GSEA on the DESeq2 Wald statistic.
+- GO gene sets were found enriched toward both ends of the infected-vs-free ranking, at padj < 0.05:
+  - positively: e.g. ribosome/translation, photosynthesis, plastid;
+  - negatively: e.g. defence/stress-response, endoplasmic reticulum.
+- These are coordinated small shifts across many genes, not differentially expressed genes. See [docs/functional_analysis_plan.md](docs/functional_analysis_plan.md).
+
 ## Dataset
 
 | | |
@@ -46,12 +52,14 @@ SGN SL4.0 + ITAG4.0 (SHA-256 manifest) → validation                [Phase 3, d
 → tx2gene (ITAG4.0 GFF) → tximport (gene level, validated)         [Phase 3, done]
 → DESeq2 (~ condition, padj < 0.05, apeglm shrinkage)               [Phase 4, done]
 → sample-structure / outlier diagnostics, primary analysis unchanged [Phase 5, done]
-→ functional analysis                                              [not started]
+→ Wald-statistic ranking → GO (PLAZA 5.0, ITAG4.0) → fgsea preranked GSEA [Phase 6, done; awaiting owner review]
+→ MapMan/Mercator4 inputs (manual web step pending); agriGO assessed, not used
 ```
 
 - **Architecture:** a small Nextflow DSL2 workflow (`workflow/`, strict syntax, Nextflow 26.10.3) modelled on nf-core/rnaseq 3.27.0 (FastQC, Salmon index/quant, MultiQC modules; same tool versions). It is not a copy of nf-core/rnaseq. Statistics run outside the workflow as R scripts (`scripts/R/`).
 - **Software:** pinned conda environments with lock files: `stv-rnaseq` (FastQC 0.13.0, MultiQC 1.35, Salmon 2.7.0, SeqKit 2.14.0, OpenJDK 21) and `stv-r` (R 4.5.3, tximport 1.38.2, DESeq2 1.50.2, apeglm 1.32.0; plotting: ggplot2, ggrepel, pheatmap, RColorBrewer).
 - Phase 5 added `rrcov` 1.7-7 to `stv-r` for the robust-PCA diagnostic.
+- Phase 6 added `fgsea` 1.36.2 and `ontologyIndex` 2.12 to `stv-r`.
 - Details: [docs/nextflow_pipeline.md](docs/nextflow_pipeline.md), [docs/software_versions.md](docs/software_versions.md), [docs/methods_references.md](docs/methods_references.md).
 
 ## Repository structure
@@ -62,17 +70,22 @@ workflow/          Nextflow pipeline: main.nf, modules/, nextflow.config, bootst
 scripts/bash/      metadata, download, sanity, QC/Salmon summaries, reference download/validation, tx2gene
 scripts/R/         01_tximport_import.R (validation + gene-level import), 02_deseq2.R (primary DESeq2 analysis)
                    03_sample_structure_diagnostics.R, 04_geo_historical_structure_check.R (Phase 5 diagnostics)
+                   05_functional_ranking_annotation.R, 06_functional_gsea.R, 07_mapman_mercator_prep.R,
+                   08_functional_posthoc_descriptives.R (Phase 6)
 envs/              stv-rnaseq.yml, stv-r.yml + linux-64 lock files
 data/metadata/     samples_metadata.tsv + raw source records (sources/)
 data/raw/          ENA FASTQ (git-ignored)
 data/processed/    original_geo/ authors' count table (audit only)
 reference/         reference_manifest.tsv, reference_validation.tsv, ITAG4.0_tx2gene*.tsv (tracked);
-                   SGN/ downloads (git-ignored)
+                   SGN/ and functional/ downloads (git-ignored)
 results/           qc/*.tsv and quantification/*.tsv (tracked summaries); deseq2/*.tsv + plot_data/ (tracked);
                    FastQC/MultiQC reports, Salmon outputs, index, pipeline_info, *.rds (git-ignored)
                    qc/sample_structure/, qc/stv_signal/*.tsv (tracked Phase 5 diagnostics)
+                   functional/ (Phase 6: ranking, annotation, go_gsea, plant_reactome_gsea, mapman, agrigo,
+                   prespecification); functional/annotation/go_gene_sets.rds git-ignored
 figures/           deseq2/ PNG figures
                    sample_structure/ PNG figures (Phase 5)
+                   functional/ PNG figures and enrichment_curves/ (Phase 6)
 docs/              audits, decisions, reference validation, Salmon/tximport reports, methods references, run log
 ```
 
@@ -107,6 +120,10 @@ Rscript scripts/R/02_deseq2.R
 # sample-structure diagnostics (Phase 5)
 conda activate stv-rnaseq && bash scripts/bash/fastq_header_audit.sh && bash scripts/bash/stv_signal_check.sh  # Phase 5
 conda activate stv-r && Rscript scripts/R/03_sample_structure_diagnostics.R && Rscript scripts/R/04_geo_historical_structure_check.R  # Phase 5
+# functional analysis (Phase 6); 06 requires the frozen pre-specification in results/functional/prespecification/
+bash scripts/bash/download_functional_annotation.sh
+Rscript scripts/R/05_functional_ranking_annotation.R && Rscript scripts/R/06_functional_gsea.R
+Rscript scripts/R/07_mapman_mercator_prep.R && Rscript scripts/R/08_functional_posthoc_descriptives.R
 ```
 
 Provenance:
@@ -117,7 +134,7 @@ Provenance:
 - Every executed step: [docs/run_log.md](docs/run_log.md).
 - Remote metadata can change; the copies used are committed in `data/metadata/sources/`.
 
-## Status (2026-10-25)
+## Status (2026-10-26)
 
 | Step | Status |
 |---|---|
@@ -127,4 +144,4 @@ Provenance:
 | tx2gene + tximport import check (final run) | Done; 33,976 genes × 6 samples, totals = Salmon — [docs/tximport_preparation.md](docs/tximport_preparation.md) |
 | DESeq2 primary analysis (D-013 – D-020) | Done. 18,277 genes tested after the prespecified filter; **0 genes with padj < 0.05; 0 genes with padj < 0.05 and \|log2FC\| ≥ 1**. No statistically significant differential expression was detected under the prespecified DESeq2 model and FDR threshold in this six-sample dataset. Limited power with n = 3 per condition — [docs/results_by_process.md](docs/results_by_process.md) |
 | Sample-structure diagnostics (Phase 5) | Done. STV_free_rep1 is consistently separated in expression-space diagnostics, but no independent technical failure or documented experimental covariate justifies its removal; STV labels supported by STV reads; all six samples kept (D-022) — [docs/sample_structure_investigation.md](docs/sample_structure_investigation.md) |
-| Functional enrichment | **Not started**; DEG thresholds are not relaxed and nominal p-values are not used for gene lists |
+| Functional analysis (Phase 6) | Done, **awaiting owner review (not committed)**. Pre-specified preranked GSEA (fgsea 1.36.2) on the DESeq2 Wald ranking (18,238 genes) with PLAZA 5.0 GO for ITAG4.0: significant sets (padj < 0.05) BP 120, MF 51, CC 44. Plant Reactome not run (projected; 3.4 % coverage). MapMan/Mercator4 inputs prepared (manual web step pending). agriGO not suitable (conclusion C). DEG thresholds are not relaxed and nominal p-values are not used for gene lists — [docs/functional_analysis_plan.md](docs/functional_analysis_plan.md) |
