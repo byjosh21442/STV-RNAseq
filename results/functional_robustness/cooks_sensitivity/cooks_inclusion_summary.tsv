@@ -1,0 +1,4 @@
+collection	sets_tested_primary	sets_tested_inclusion	primary_significant	retained	supported	lost	new_significant_inclusion_only	spearman_NES_common_sets	material_warnings
+BP	952	953	120	116	4	0	9	0.9962	0
+MF	459	459	51	51	0	0	1	0.9942	0
+CC	237	237	44	43	1	0	0	0.9998	0

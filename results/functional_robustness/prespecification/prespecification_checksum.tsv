@@ -1,0 +1,4 @@
+file	sha256	frozen_utc	source
+results/functional_robustness/prespecification/functional_robustness_plan_frozen.md	e7b9b261895034bb35b549426e9f537b67dbd672bd328fae410fb8925c16f6b2	2026-10-26T07:36:28Z	docs/functional_robustness_plan.md
+results/functional_robustness/prespecification/cooks_gsea_decision_frozen.md	52b3ab6ea905eaadf988273113cd59351da9084fa5ccf8c6203ee76418976e16	2026-10-26T07:36:28Z	docs/cooks_gsea_decision.md
+results/functional_robustness/prespecification/decisions_frozen.md	d75538ae46b896a99064e3cef6cf56550203630e52a3e2a3b297711fc6ecc603	2026-10-26T07:36:28Z	docs/decisions.md

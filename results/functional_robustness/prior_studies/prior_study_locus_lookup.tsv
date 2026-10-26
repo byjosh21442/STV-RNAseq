@@ -1,0 +1,10 @@
+locus	name_in_source	source	itag40_gene_id	tested_18277	itag40_description	baseMean	log2FC_MLE	log2FC_apeglm	wald_stat	rank_of_18238	pvalue	padj	padj_NA_reason	significant_sets_with_gene_in_leading_edge	themes_of_those_sets	tiers_of_those_sets
+Solyc12g009240	Pathogenesis-related (PR)-protein	Badeli 2026 Table 2	Solyc12g009240.1	TRUE	Ethylene-responsive transcription factor (AHRD V3.3 *-* A0A2G3BP26_CAPCH)	880.1	-1.25	-1.104	-4.405	18238	1.06e-05	0.193		1	Defence / biotic response	Tier 3
+Solyc07g049530	ACC oxidase 1 (ACO1)	Badeli 2026 Table 2	Solyc07g049530.3	TRUE	1-aminocyclopropane-1-carboxylate oxidase 1	414.8	-1.814	-1.556	-4.061	18236	4.89e-05	0.297		8	Carbohydrate binding / cell wall; Heme / oxidoreductase; Other (no theme regex matched)	Tier 3
+Solyc08g067160	Uncharacterized protein (DUF247)	Badeli 2026 Table 2	Solyc08g067160.3	TRUE	Alpha/beta-Hydrolases superfamily protein (AHRD V3.3 *** A0A2U1QI56_ARTAN)	458.7	-1.507	0	-3.653	18234	0.00026	0.825		0		
+Solyc04g008330	beta-Galactosidase 4-like	Badeli 2026 Table 2	Solyc04g008330.1	TRUE	Glycosyltransferase (AHRD V3.3 *** A0A0A1WCD6_NICAT)	121.3	-1.83	-1.261	-3.077	18223	0.00209	1		1	Other (no theme regex matched)	Tier 3
+Solyc02g086990	PGIP (Polygalacturonase inhibitor)	Badeli 2026 Table 2	Solyc02g086990.4	TRUE	Cyclic nucleotide-gated ion channel-like protein (AHRD V3.3 *** A0A2K3MW13_TRIPR)	9.092	-0.619	0	-0.651	15398	0.515	1		0		
+Solyc07g007770	ERF017 (Ethylene-responsive TF)	Badeli 2026 Table 2	Solyc07g007770.2	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Solyc02g031950	Glyoxalase II (GLO2)	Badeli 2026 Table 2	Solyc02g031950.3	TRUE	pathogenesis-related family protein (AHRD V3.3 *** AT1G78780.5)	27.06	1.345	0	2.316	6	0.0206	1		0		
+Solyc01g109010	GMP synthase [glutamine-hydrolyzing]	Badeli 2026 Table 2	Solyc01g109010.3	TRUE	phox domain-containing protein (AHRD V3.3 *-* AT2G15900.1)	40.76	1.976	1.092	2.864	1	0.00418	1		0		
+Solyc01g095080	NAC1	Badeli 2026 text (gene highlighted by Fukuhara 2020)	Solyc01g095080.3	FALSE	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA

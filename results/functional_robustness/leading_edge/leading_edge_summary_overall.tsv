@@ -1,0 +1,7 @@
+metric	value
+unique_leading_edge_genes	2858
+positive_stat	1639
+negative_stat	1219
+gene_padj_lt_0.05	0
+median_abs_stat_unique_genes	0.704
+top_gene_share_max_all_sets	0.228

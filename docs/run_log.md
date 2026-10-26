@@ -323,3 +323,130 @@ All times UTC.
 - Mercator4 web submission (manual step pending).
 - Leave-one-out.
 - Commit/push.
+
+## Phase 6B — functional robustness validation (2026-10-26; primary DESeq2 and Phase 6 GSEA results unchanged)
+
+All times UTC. Scripts write logs to the git-ignored `logs/phase6b_*.log`. Ad-hoc helpers (file transfer, runners, look-ups)
+live outside the repository and are not committed. Every reported number comes from a tracked script or table.
+
+94. **Owner decisions recorded** (Phase 6B instruction):
+    - D-024 approved (PLAZA 5.0 as the GO source; SGN remains the genome/transcriptome reference);
+    - D-032 approved (track the five Phase 6 tables > 1 MB);
+    - D-029: Mercator4 is not blocking; manual submission pending; no unofficial API or workaround;
+    - D-030 approved (agriGO evaluated and rejected);
+    - D-023 left to an audit, which is resolved by D-033.
+95. **Task 1 — `p6_le.R` incident.**
+    - Background. In Phase 6 the leading-edge summary in `functional_analysis_plan.md` §8.3 was computed by untracked ad-hoc
+      helpers outside the repository. `p6_le.R` was rewritten on disk with `sed -i` while an editor buffer held an edited
+      copy, so the editor's save failed ("newer on disk").
+    - Findings:
+      - The file on disk kept the original code, without the `as.numeric()` fix.
+      - Its two runs (`p6_le.out`, `p6_le2.out`) stopped with a data.table integer/double type error; `p6_le3.out` is empty.
+      - The reported numbers came from `p6_le_v2.R`, run read-only from a `/tmp` copy via `p6_le_v3.sh`.
+      - No helper wrote into the repository.
+      - The primary GSEA tables were written 06:24 – 06:27Z, before the incident, and are covered by the checksums of entry 96.
+    - Resolution (D-041): `scripts/R/09_functional_leading_edge_summary.R` (07:44Z, exit 0) reproduces every number from
+      tracked tables:
+      - 2,858 unique leading-edge genes (1,639 positive / 1,219 negative statistic);
+      - median \|stat\| 0.704; maximum single-gene share 0.228;
+      - median leading-edge fraction 0.417 / 0.387 / 0.581;
+      - unique genes BP 1,695, MF 1,460, CC 863; sets with padj < 0.01: 59 / 23 / 28.
+    - Lesson: read typed columns with `colClasses` and never edit one helper from two tools.
+96. **Task 2 — checksums before validation.**
+    - `results/functional_robustness/phase6_outputs_sha256.txt`: SHA-256 of the 76 Phase 6 primary outputs (ranking,
+      annotation, gene-set catalog, GSEA tables, leading edges, figures).
+    - The Phase 6 versions of the shared docs, README and env files were saved outside the repository for the two-commit split.
+97. **D-023 audit** → [`cooks_gsea_decision.md`](cooks_gsea_decision.md).
+    - Sources: DESeq2 vignette, Love et al. 2014, fgsea 1.36.2 source, TE-Seq code, Cook 1977.
+    - No method paper was found, so the evidence is ambiguous → primary unchanged, inclusion sensitivity (D-033).
+98. **`stv-r` environment.**
+    - Dry run: 3 new packages, no updates or removals.
+    - Install: `CONDA_CHANNEL_PRIORITY=strict conda install -n stv-r --override-channels -c conda-forge -c bioconda` with the
+      existing pins plus `"bioconductor-limma=3.66.0" "bioconductor-edger=4.8.2"` → limma 3.66.0, edgeR 4.8.2, statmod 1.5.2.
+    - Lock regenerated (161 → 164 packages); `envs/stv-r.yml` updated.
+99. **Pre-specification frozen at 2026-10-26T07:36:28Z**, before any CAMERA, sensitivity or leave-one-out output existed.
+    - Frozen: `docs/functional_robustness_plan.md` §1 – §10, `docs/cooks_gsea_decision.md` and `docs/decisions.md` (D-033 – D-041).
+    - Snapshots and SHA-256 are in `results/functional_robustness/prespecification/`.
+    - Every Phase 6B R script re-checks them (`fr_check_frozen()`).
+100. **`10_functional_cooks_sensitivity.R`** (07:44Z, exit 0).
+    - Helper validation against Phase 6: max \|Δp\| 5.6 × 10⁻¹⁶, max \|ΔNES\| 5.3 × 10⁻¹⁵, identical leading edges.
+    - Rebuilt gene sets are identical to `go_gene_sets.rds`.
+    - Inclusion run (18,277 genes): 210 sets retained, 5 supported, 0 lost, 10 sensitivity-only; 0 material warnings.
+101. **`11_functional_camera.R`** (07:45Z, exit 0).
+    - `quant.sf` SHA-256 matched.
+    - tximport `lengthScaledTPM`: 33,976 × 6.
+    - TMM factors 0.920 – 1.061; voom weights 0.58 – 12.9; limma prior df 3.56; 0 genes at adj. P < 0.05.
+    - Spearman ρ(limma t, Wald) 0.9626.
+    - CAMERA `inter.gene.cor = NA`: **0 significant sets** (BP/MF/CC), minimum FDR 0.997 – 0.999.
+    - Secondary 0.01: 40 / 7 / 26.
+102. **`12_functional_method_comparison.R`** (07:45Z, exit 0).
+    - Tier 1 = 0, Tier 2 = 0, Tier 3 = 210, Tier 3C = 0, Tier 4 = 5.
+    - Direction agreement 100 % for the fgsea-significant sets; signed-significance ρ 0.923 / 0.914 / 0.893.
+    - No STOP.
+103. **`13_functional_replicate_consistency.R`** (07:46Z, exit 0).
+    - 144 sets broadly consistent, 69 partially consistent, 2 ambiguous, 0 strongly influenced by STV_free_rep1.
+    - F2 figures contain diagnostic examples only, because Tier 1 is empty.
+104. **`bash scripts/bash/download_organelle_reference.sh`** (07:46Z).
+    - Downloaded NC_007898.3 and NC_035963.1 (genome + CDS proteins) into the git-ignored `reference/functional/organelle/`.
+    - Manifest with SHA-256 written.
+105. **`bash scripts/bash/ch00_organelle_blast.sh`** (07:46Z, BLAST+ 2.17.0+ from `rachis-qiime2-2026.4`).
+    - Queries: 513 ch00 genes; blastn hits for 1,061 ITAG4.0 cDNAs; 222 blastp rows.
+    - Warning "Examining 5 or more matches is recommended" is harmless (two subjects).
+106. **`15_functional_ch00_investigation.R`** (07:47Z, exit 0).
+    - 186 of 513 ch00 genes are near-identical to an organelle genome; 22 ranked genes were excluded.
+    - ch00-sensitive sets: 15 / 5 / 4 (12.5 / 9.8 / 9.1 %). No STOP.
+107. **`14_functional_loo_sensitivity.R`** (07:47 – 07:49Z, exit 0).
+    - Six five-sample fits ran with 0 material fgsea warnings.
+    - Maximum sample-dependent share 47.7 % (CC, STV_infected_rep1). No STOP.
+108. **`16_functional_robustness_figures_themes.R`** (07:55Z, exit 0).
+    - Every theme is EXPLORATORY.
+    - Figures F1, F3, F4, F5 written.
+109. **Integrity checks.**
+    - `sha256sum -c results/functional_robustness/phase6_outputs_sha256.txt`: 76/76 OK.
+    - `git diff` of tracked Phase 1 – 5 results, figures, config, data and scripts: empty.
+    - Freeze snapshots unchanged.
+    - New files > 1 MB: only `camera/voom_limma_gene_statistics.tsv` (1.9 MB), now git-ignored (D-042).
+110. **Corrections and post-hoc additions** (plan §11.3, D-043).
+    - Fact: "45 ranked ch00 genes" corrected to 47.
+    - BLAST `-max_hsps 1` limitation: `18_functional_ch00_posthoc_identity_diagnostic.R` (08:11Z, exit 0) excluded 42 genes;
+      ch00-sensitive sets 19 / 3 / 4; STOP assessment unchanged.
+    - `17_prior_study_locus_lookup.R` (08:09Z, exit 0): prior-study loci in the primary results.
+111. **Literature and references** (2026-10-26).
+    - Crossref REST checks: 10.1186/gb-2014-15-2-r29, 10.1093/nar/gkv007, 10.1186/gb-2010-11-3-r25,
+      10.12688/f1000research.7563.2, 10.12688/f1000research.9005.3, 10.2307/1268249 (→ 10.1080/00401706.1977.10489493),
+      10.1093/bioinformatics/btm051, 10.1186/1471-2105-10-421, 10.1093/hr/uhac251, 10.1007/s00705-019-04436-1,
+      10.1016/j.virusres.2008.11.018, 10.1098/rstb.2010.0057, 10.1046/j.1365-313x.2003.01625.x, 10.1093/nar/gkaf018,
+      10.1007/s00239-005-0254-5.
+    - Europe PMC records: 10.3389/fmicb.2019.02764 and 10.3389/fmicb.2016.01905.
+    - Full texts read: Liu et al. 2023 (PMC9832971), Khankhum et al. 2016 (PMC5126043), Badeli et al. 2026 (Research Square HTML).
+    - Abstracts read: Fukuhara et al. 2020 (PubMed), Sabanadzovic 2009, Roossinck 2010, Takahashi 2019, Whitham 2003,
+      Goeman & Bühlmann 2007.
+    - Tomato–virus transcriptome search (two Europe PMC queries): no suitable open-access study; none cited.
+112. **Docs.**
+    - New: `functional_robustness_plan.md` (+ §11 outcome), `cooks_gsea_decision.md`, `ch00_functional_investigation.md`,
+      `biological_comparison_prior_studies.md`.
+    - Updated: `decisions.md` (D-023/24/29/30/32 approvals, D-033 – D-043), `methods_references.md` (§34 – §41),
+      `results_by_process.md` (rows 30 – 38 and the evidence table), `functional_analysis_plan.md` (pointer to 6B),
+      `agrigo_feasibility.md` (owner decision), `software_versions.md`, `envs/stv-r.yml`, `.gitignore`, `README.md`, this log.
+113. **Pre-commit audit and Git.**
+    - The audit was read-only:
+      - 76/76 Phase 6 checksums OK and freeze snapshots intact;
+      - no diff in tracked Phase 1 – 5 results, figures, config, data, scripts or workflow;
+      - the only candidate files > 1 MB are the five tables approved under D-032;
+      - no FASTQ/FASTA/RDS/log/helper/staging path; no secret pattern; no CRLF;
+      - all relative Markdown links resolve.
+    - Absolute paths appear only in R `sessionInfo` BLAS lines and in earlier log entries, as in the committed Phase 4/5 files.
+    - Commit 1 "Phase 6: threshold-free functional enrichment analysis": the Phase 6 scripts, results and figures, with the
+      shared docs and env files restored to their saved end-of-Phase-6 versions (SHA-256 checked).
+    - Commit 2 "Phase 6B: functional robustness validation": everything else, with the final versions of the shared files.
+    - Both commits are pushed to `origin/main` with the Windows `gh.exe` one-off credential helper; nothing is stored in the
+      repo config.
+    - Commit hashes and the `HEAD == origin/main` check (`git ls-remote`) are in the Phase 6B handoff report.
+
+## Phase 6B — not executed (by design / owner restrictions)
+
+- Changes to the primary DESeq2 analysis or to the Phase 6 GSEA results; removal of STV_free_rep1; FDR relaxation; DEG lists;
+  nominal-p ORA.
+- CAMERA re-runs per dropped sample; any tuning of CAMERA after results.
+- Re-quantification with organelle genomes in the Salmon index (a new analysis; owner decision).
+- Mercator4 web submission (manual step still pending; no workaround).

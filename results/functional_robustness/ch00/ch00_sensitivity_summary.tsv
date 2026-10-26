@@ -1,0 +1,4 @@
+collection	excluded_genes	primary_significant	retained	supported	lost	ch00_sensitive	new_significant	spearman_NES	material_warnings	fraction_ch00_sensitive
+BP	22	120	105	12	3	15	3	0.9982	0	0.125
+MF	22	51	46	3	2	5	0	0.9943	0	0.098
+CC	22	44	40	0	4	4	0	0.9953	0	0.0909

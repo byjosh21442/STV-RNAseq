@@ -2,6 +2,8 @@
 
 **Conclusion: C — agriGO is not suitable for this dataset/version and should not be used.** No agriGO job was run. agriGO was not forced into the analysis because it appeared in the original proposal.
 
+**Owner decision (2026-10-26, Phase 6B instruction):** conclusion C accepted. agriGO stays documented as a tool that was originally proposed, then evaluated and rejected for the documented methodological reasons (D-030).
+
 Evidence table: [`results/functional/agrigo/agrigo_feasibility_evidence.tsv`](../results/functional/agrigo/agrigo_feasibility_evidence.tsv). Sources:
 - agriGO v2 home, manual and download pages, accessed 2026-10-26;
 - Tian et al. 2017 (doi:10.1093/nar/gkx382);

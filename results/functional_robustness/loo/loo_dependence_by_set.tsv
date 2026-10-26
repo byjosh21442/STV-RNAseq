@@ -1,0 +1,216 @@
+collection	go_id	term_name	STV_free_rep1	STV_free_rep2	STV_free_rep3	STV_infected_rep1	STV_infected_rep2	STV_infected_rep3	dependent_on_STV_free_rep1	dependent_on_STV_free_rep2	dependent_on_STV_free_rep3	dependent_on_STV_infected_rep1	dependent_on_STV_infected_rep2	dependent_on_STV_infected_rep3
+BP	GO:0000160	phosphorelay signal transduction system	supported	lost	supported	supported	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0000209	protein polyubiquitination	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0000470	maturation of LSU-rRNA	lost	lost	retained	lost	retained	supported	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0000959	mitochondrial RNA metabolic process	lost	lost	retained	lost	retained	supported	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0001101	response to acid chemical	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0002181	cytoplasmic translation	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0005996	monosaccharide metabolic process	lost	supported	retained	retained	retained	lost	TRUE	FALSE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0006006	glucose metabolic process	supported	supported	supported	retained	supported	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006091	generation of precursor metabolites and energy	retained	lost	supported	lost	supported	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0006094	gluconeogenesis	retained	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006163	purine nucleotide metabolic process	supported	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006164	purine nucleotide biosynthetic process	supported	lost	retained	supported	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006353	DNA-templated transcription termination	retained	retained	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006364	rRNA processing	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0006399	tRNA metabolic process	lost	lost	retained	lost	retained	supported	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0006413	translational initiation	lost	supported	retained	lost	retained	retained	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0006414	translational elongation	supported	retained	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006575	modified amino acid metabolic process	lost	lost	retained	supported	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0006635	fatty acid beta-oxidation	supported	lost	supported	lost	retained	supported	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0006749	glutathione metabolic process	supported	supported	retained	supported	retained	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006753	nucleoside phosphate metabolic process	supported	lost	retained	retained	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0006754	ATP biosynthetic process	supported	lost	retained	retained	supported	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006778	porphyrin-containing compound metabolic process	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0006779	porphyrin-containing compound biosynthetic process	lost	lost	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006952	defense response	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0006979	response to oxidative stress	lost	retained	retained	lost	retained	retained	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0008033	tRNA processing	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0008037	cell recognition	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0008202	steroid metabolic process	lost	retained	retained	retained	supported	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009062	fatty acid catabolic process	supported	lost	retained	lost	retained	supported	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0009117	nucleotide metabolic process	supported	lost	retained	supported	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009141	nucleoside triphosphate metabolic process	retained	lost	retained	retained	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009142	nucleoside triphosphate biosynthetic process	supported	lost	retained	retained	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009144	purine nucleoside triphosphate metabolic process	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009145	purine nucleoside triphosphate biosynthetic process	supported	lost	retained	retained	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009150	purine ribonucleotide metabolic process	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009152	purine ribonucleotide biosynthetic process	supported	lost	retained	retained	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009165	nucleotide biosynthetic process	supported	lost	retained	supported	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0009201	ribonucleoside triphosphate biosynthetic process	supported	lost	retained	supported	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009205	purine ribonucleoside triphosphate metabolic process	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009206	purine ribonucleoside triphosphate biosynthetic process	supported	lost	retained	retained	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009259	ribonucleotide metabolic process	retained	lost	retained	supported	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009260	ribonucleotide biosynthetic process	supported	lost	retained	supported	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009308	amine metabolic process	lost	supported	supported	retained	lost	lost	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009414	response to water deprivation	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009415	response to water	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009451	RNA modification	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009607	response to biotic stimulus	supported	supported	retained	lost	supported	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0009611	response to wounding	lost	supported	retained	supported	supported	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009620	response to fungus	retained	lost	retained	supported	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009628	response to abiotic stimulus	lost	lost	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009657	plastid organization	supported	retained	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009658	chloroplast organization	supported	retained	retained	retained	retained	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0009723	response to ethylene	retained	lost	retained	supported	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0009765	photosynthesis, light harvesting	retained	retained	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0009768	photosynthesis, light harvesting in photosystem I	retained	lost	supported	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0009873	ethylene-activated signaling pathway	retained	supported	retained	supported	retained	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0015979	photosynthesis	retained	supported	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0015986	proton motive force-driven ATP synthesis	supported	lost	retained	retained	supported	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0015995	chlorophyll biosynthetic process	lost	lost	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0016042	lipid catabolic process	lost	lost	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0016052	carbohydrate catabolic process	supported	lost	retained	retained	supported	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0016072	rRNA metabolic process	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0016125	sterol metabolic process	lost	retained	retained	retained	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0019318	hexose metabolic process	lost	supported	retained	retained	retained	supported	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0019319	hexose biosynthetic process	retained	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0019395	fatty acid oxidation	supported	lost	supported	lost	retained	supported	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0019684	photosynthesis, light reaction	retained	supported	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0019693	ribose phosphate metabolic process	retained	lost	retained	retained	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0022613	ribonucleoprotein complex biogenesis	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0030258	lipid modification	retained	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0030488	tRNA methylation	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0031347	regulation of defense response	lost	lost	retained	supported	supported	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0032259	methylation	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0032502	developmental process	retained	supported	supported	lost	supported	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0032543	mitochondrial translation	lost	supported	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0033013	tetrapyrrole metabolic process	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0033014	tetrapyrrole biosynthetic process	lost	lost	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0034440	lipid oxidation	supported	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0035556	intracellular signal transduction	retained	lost	retained	supported	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0042254	ribosome biogenesis	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0042255	ribosome assembly	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0042273	ribosomal large subunit biogenesis	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0042274	ribosomal small subunit biogenesis	supported	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0042440	pigment metabolic process	supported	lost	retained	supported	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0042445	hormone metabolic process	lost	retained	retained	retained	retained	supported	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0042743	hydrogen peroxide metabolic process	retained	retained	supported	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0042744	hydrogen peroxide catabolic process	retained	retained	supported	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0043207	response to external biotic stimulus	supported	lost	retained	lost	supported	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0043414	macromolecule methylation	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0044283	small molecule biosynthetic process	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0044419	biological process involved in interspecies interaction between organisms	supported	lost	retained	lost	supported	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0045488	pectin metabolic process	lost	lost	retained	retained	supported	lost	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0046034	ATP metabolic process	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0046148	pigment biosynthetic process	lost	lost	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0046364	monosaccharide biosynthetic process	supported	supported	supported	supported	supported	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0046390	ribose phosphate biosynthetic process	supported	lost	retained	supported	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0046395	carboxylic acid catabolic process	lost	supported	supported	retained	retained	supported	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0048544	recognition of pollen	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0048583	regulation of response to stimulus	retained	lost	retained	supported	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0050793	regulation of developmental process	lost	retained	supported	retained	lost	retained	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE
+BP	GO:0050832	defense response to fungus	retained	lost	supported	lost	supported	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0051707	response to other organism	supported	lost	retained	lost	supported	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+BP	GO:0055086	nucleobase-containing small molecule metabolic process	supported	lost	retained	retained	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0070887	cellular response to chemical stimulus	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0071369	cellular response to ethylene stimulus	retained	supported	retained	supported	retained	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0071554	cell wall organization or biogenesis	supported	lost	retained	retained	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:0072329	monocarboxylic acid catabolic process	supported	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0072521	purine-containing compound metabolic process	supported	lost	retained	supported	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0072522	purine-containing compound biosynthetic process	lost	lost	retained	supported	supported	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0072593	reactive oxygen species metabolic process	supported	retained	lost	supported	retained	retained	FALSE	FALSE	TRUE	FALSE	FALSE	FALSE
+BP	GO:0072596	establishment of protein localization to chloroplast	lost	supported	retained	retained	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0080134	regulation of response to stress	lost	supported	retained	retained	supported	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0098869	cellular oxidant detoxification	lost	supported	supported	supported	supported	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:0140053	mitochondrial gene expression	lost	supported	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+BP	GO:1901135	carbohydrate derivative metabolic process	supported	lost	retained	retained	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:1901137	carbohydrate derivative biosynthetic process	supported	lost	retained	supported	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+BP	GO:1901293	nucleoside phosphate biosynthetic process	supported	lost	retained	retained	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:1901700	response to oxygen-containing compound	supported	lost	retained	retained	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+BP	GO:2000022	regulation of jasmonic acid mediated signaling pathway	lost	lost	retained	supported	supported	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0005730	nucleolus	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0005783	endoplasmic reticulum	lost	retained	retained	retained	supported	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0005789	endoplasmic reticulum membrane	lost	retained	retained	supported	lost	supported	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE
+CC	GO:0005840	ribosome	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0005852	eukaryotic translation initiation factor 3 complex	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0009521	photosystem	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0009522	photosystem I	retained	lost	lost	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0009523	photosystem II	retained	supported	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0009526	plastid envelope	retained	lost	retained	retained	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0009532	plastid stroma	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0009534	chloroplast thylakoid	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0009535	chloroplast thylakoid membrane	retained	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0009570	chloroplast stroma	retained	lost	retained	supported	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0009579	thylakoid	retained	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0009654	photosystem II oxygen evolving complex	retained	retained	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0009941	chloroplast envelope	supported	lost	retained	supported	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0015934	large ribosomal subunit	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0015935	small ribosomal subunit	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0016282	eukaryotic 43S preinitiation complex	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0016469	proton-transporting two-sector ATPase complex	supported	lost	supported	retained	supported	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+CC	GO:0019867	outer membrane	retained	supported	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0022625	cytosolic large ribosomal subunit	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0022626	cytosolic ribosome	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0022627	cytosolic small ribosomal subunit	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0030684	preribosome	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0031967	organelle envelope	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0031968	organelle outer membrane	retained	supported	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0031969	chloroplast membrane	lost	lost	retained	supported	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	TRUE
+CC	GO:0031976	plastid thylakoid	retained	supported	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0033290	eukaryotic 48S preinitiation complex	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0034357	photosynthetic membrane	retained	lost	retained	supported	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0034702	monoatomic ion channel complex	lost	lost	supported	retained	supported	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0034703	cation channel complex	lost	lost	supported	retained	supported	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0034708	methyltransferase complex	lost	supported	retained	lost	retained	retained	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0042170	plastid membrane	retained	lost	retained	retained	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0042175	nuclear outer membrane-endoplasmic reticulum membrane network	lost	retained	retained	supported	lost	supported	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE
+CC	GO:0042651	thylakoid membrane	retained	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0044391	ribosomal subunit	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0045259	proton-transporting ATP synthase complex	supported	lost	supported	retained	retained	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0048046	apoplast	retained	lost	retained	supported	supported	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0055035	plastid thylakoid membrane	retained	supported	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+CC	GO:0070993	cytosolic translation preinitiation complex	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+CC	GO:0098827	endoplasmic reticulum subcompartment	lost	retained	retained	supported	lost	supported	TRUE	FALSE	FALSE	FALSE	TRUE	FALSE
+CC	GO:1990204	oxidoreductase complex	retained	lost	supported	supported	supported	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+MF	GO:0003729	mRNA binding	lost	retained	retained	lost	retained	retained	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0003735	structural constituent of ribosome	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0003743	translation initiation factor activity	lost	supported	retained	lost	supported	retained	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0003746	translation elongation factor activity	supported	retained	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0004176	ATP-dependent peptidase activity	lost	supported	retained	lost	retained	retained	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0004190	aspartic-type endopeptidase activity	lost	supported	lost	lost	lost	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0004364	glutathione transferase activity	supported	lost	retained	lost	retained	supported	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0004497	monooxygenase activity	lost	retained	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0004601	peroxidase activity	supported	retained	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0004674	protein serine/threonine kinase activity	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0004842	ubiquitin-protein transferase activity	retained	lost	retained	supported	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+MF	GO:0005198	structural molecule activity	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0005319	lipid carrier activity	retained	supported	supported	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0005506	iron ion binding	lost	supported	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0005525	GTP binding	lost	retained	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0008168	methyltransferase activity	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0008194	UDP-glycosyltransferase activity	lost	lost	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0015252	proton channel activity	lost	lost	supported	supported	supported	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0016209	antioxidant activity	supported	retained	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0016620	oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor	supported	lost	supported	lost	supported	lost	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0016645	oxidoreductase activity, acting on the CH-NH group of donors	lost	supported	supported	lost	supported	lost	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0016684	oxidoreductase activity, acting on peroxide as acceptor	supported	retained	retained	supported	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0016705	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	lost	retained	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0016741	transferase activity, transferring one-carbon groups	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0016755	aminoacyltransferase activity	retained	lost	retained	supported	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+MF	GO:0016874	ligase activity	lost	lost	retained	lost	retained	supported	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0016903	oxidoreductase activity, acting on the aldehyde or oxo group of donors	supported	lost	supported	supported	supported	supported	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0019001	guanyl nucleotide binding	lost	retained	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0019787	ubiquitin-like protein transferase activity	retained	lost	retained	supported	retained	lost	FALSE	TRUE	FALSE	FALSE	FALSE	TRUE
+MF	GO:0019842	vitamin binding	lost	retained	retained	retained	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0019843	rRNA binding	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0020037	heme binding	supported	retained	retained	retained	retained	retained	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0030246	carbohydrate binding	supported	retained	retained	lost	retained	retained	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0030247	polysaccharide binding	retained	lost	retained	lost	retained	retained	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0031406	carboxylic acid binding	lost	retained	retained	supported	retained	supported	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0031418	L-ascorbic acid binding	lost	retained	retained	retained	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0032561	guanyl ribonucleotide binding	lost	retained	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0043021	ribonucleoprotein complex binding	lost	retained	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0043022	ribosome binding	lost	retained	retained	supported	retained	supported	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0043177	organic acid binding	lost	retained	retained	supported	retained	supported	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0043565	sequence-specific DNA binding	retained	lost	retained	supported	retained	retained	FALSE	TRUE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0046906	tetrapyrrole binding	lost	retained	retained	retained	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0046933	proton-transporting ATP synthase activity, rotational mechanism	lost	lost	supported	supported	supported	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0048029	monosaccharide binding	lost	retained	retained	supported	retained	retained	TRUE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0061631	ubiquitin conjugating enzyme activity	lost	lost	retained	lost	retained	supported	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0061650	ubiquitin-like protein conjugating enzyme activity	lost	lost	retained	lost	retained	supported	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0070001	aspartic-type peptidase activity	lost	supported	lost	lost	lost	supported	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0106310	protein serine kinase activity	retained	lost	retained	lost	retained	supported	FALSE	TRUE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0140101	catalytic activity, acting on a tRNA	lost	lost	retained	lost	retained	lost	FALSE	FALSE	FALSE	FALSE	FALSE	FALSE
+MF	GO:0140359	ABC-type transporter activity	retained	lost	lost	lost	retained	supported	FALSE	FALSE	FALSE	TRUE	FALSE	FALSE
+MF	GO:0180051	translation factor activity	lost	retained	retained	lost	retained	retained	TRUE	FALSE	FALSE	TRUE	FALSE	FALSE

@@ -1,0 +1,4 @@
+collection	excluded_genes	primary_significant	retained	supported	lost	ch00_sensitive	new_significant	spearman_NES	material_warnings	fraction_ch00_sensitive	note
+BP	42	120	101	16	3	19	12	0.9977	0	0.1583	post-hoc diagnostic; not pre-specified; classification unchanged
+MF	42	51	48	1	2	3	0	0.9928	0	0.0588	post-hoc diagnostic; not pre-specified; classification unchanged
+CC	42	44	40	0	4	4	0	0.9916	0	0.0909	post-hoc diagnostic; not pre-specified; classification unchanged

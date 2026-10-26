@@ -1,0 +1,4 @@
+collection	significant_sets	leading_edge_size_median	leading_edge_fraction_median	median_abs_stat_median	max_abs_stat_max	top_gene_share_max	unique_leading_edge_genes	sets_padj_lt_0.01	median_size_significant_sets
+BP	120	32	0.417	0.919	4.405	0.225	1695	59	71.5
+MF	51	41	0.387	0.838	4.178	0.228	1460	23	103
+CC	44	65.5	0.581	0.673	2.409	0.158	863	28	117.5

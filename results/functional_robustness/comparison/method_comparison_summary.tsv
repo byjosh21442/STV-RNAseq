@@ -1,0 +1,4 @@
+collection	sets_tested	significant_fgsea	significant_camera	significant_both	fgsea_only	camera_only	both_concordant	both_discordant	overlap_jaccard	overlap_fraction_of_fgsea	direction_agreement_all_sets	direction_agreement_fgsea_significant	spearman_signed_significance	spearman_signed_significance_cor001	camera_cor001_significant	camera_cor001_significant_and_fgsea	tier1	tier2	tier3	tier3C	tier4	median_correlation_fgsea_significant	median_VIF_fgsea_significant	median_correlation_all
+BP	952	120	0	0	120	0	0	0	0	0	0.8971	1	0.9232	0.9452	40	39	0	0	115	0	5	0.056	5.556	0.0457
+MF	459	51	0	0	51	0	0	0	0	0	0.8867	1	0.9141	0.9297	7	7	0	0	51	0	0	0.065	5.384	0.0394
+CC	237	44	0	0	44	0	0	0	0	0	0.8945	1	0.8932	0.9429	26	26	0	0	44	0	0	0.091	14.51	0.0773

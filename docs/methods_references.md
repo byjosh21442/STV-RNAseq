@@ -508,3 +508,132 @@ Sections 25 – 33 cover Phase 6. Pre-specification: [`functional_analysis_plan.
 | Provisional APA 7 reference | Tian, T., Liu, Y., Yan, H., You, Q., Yi, X., Du, Z., Xu, W., & Su, Z. (2017). agriGO v2.0: A GO analysis toolkit for the agricultural community, 2017 update. *Nucleic Acids Research, 45*(W1), W122–W129. https://doi.org/10.1093/nar/gkx382 <br> Kim, S.-Y., & Volsky, D. J. (2005). PAGE: Parametric analysis of gene set enrichment. *BMC Bioinformatics, 6*, 144. https://doi.org/10.1186/1471-2105-6-144 |
 | Decision supported | D-030 |
 | Access info | 2026-10-26 |
+
+---
+
+# Phase 6B — functional robustness validation
+
+Sections 34 – 41 cover Phase 6B. Pre-specification: [`functional_robustness_plan.md`](functional_robustness_plan.md) (frozen
+2026-10-26T07:36:28Z; outcome in §11). Decisions D-033 – D-043. All DOIs below were checked against the Crossref REST API on
+2026-10-26. Full texts or abstracts were read on that date via Europe PMC or the publisher page, as stated per entry. A source is
+cited only for what it actually reports or performs.
+
+## 34. Correlation-adjusted competitive gene-set test — limma `camera`
+
+| Field | Content |
+|---|---|
+| Process | Validation of the Phase 6 fgsea calls with a test that accounts for inter-gene correlation (`scripts/R/11_functional_camera.R`, `12_functional_method_comparison.R`; Tasks 3 – 6) |
+| Software + version | limma 3.66.0 (Bioconductor 3.22, bioconda) |
+| Parameters | `camera(v, index, design, contrast = 2, inter.gene.cor = NA, allow.neg.cor = FALSE, use.ranks = FALSE, trend.var = FALSE, sort = FALSE)` (primary); same call with `inter.gene.cor = 0.01` (secondary, descriptive); BH within collection; FDR < 0.05; indices from the Phase 6 GO sets via `ids2indices` |
+| Methodological rationale | CAMERA inflates the variance of the set statistic by the variance inflation factor 1 + (m − 1)ρ̄, estimated from the data. A gene-permutation (preranked) null ignores inter-gene correlation. Goeman & Bühlmann (2007) distinguish tests of a set against the rest of the genes from tests of each set on its own. They show that models taking genes as sampling units rely on an "unrealistic independence assumption", so their p-values "can be wildly anti-conservative". `?camera`: with `inter.gene.cor = NA`, camera "gives rigorous error rate control for all sample sizes and all gene sets"; the default 0.01 is "a useful compromise between strict error rate control and interpretable gene set rankings". The strict mode was fixed as primary before any result. Plant precedent (indirect): Liu et al. (2022) used CAMERA inside the GeneBridge G-MAD module-association method on cross-species expression compendia that include tomato. That is not a two-group validation |
+| Official technical documentation | limma 3.66.0 reference manual (`?camera`, `?ids2indices`); limma User's Guide (Bioconductor 3.22) |
+| Primary scientific reference | Wu & Smyth (2012); Goeman & Bühlmann (2007); Liu et al. (2022) (indirect precedent) |
+| DOI | 10.1093/nar/gks461; 10.1093/bioinformatics/btm051; 10.1093/hr/uhac251 |
+| Provisional APA 7 reference | Wu, D., & Smyth, G. K. (2012). See §29. <br> Goeman, J. J., & Bühlmann, P. (2007). Analyzing gene expression data in terms of gene sets: Methodological issues. *Bioinformatics, 23*(8), 980–987. https://doi.org/10.1093/bioinformatics/btm051 <br> Liu, M., Guo, C., Xie, K., Chen, K., Chen, J., Wang, Y., & Wang, X. (2023). A cross-species co-functional gene network underlying leaf senescence. *Horticulture Research, 10*(1), uhac251. https://doi.org/10.1093/hr/uhac251 (published online 2022-11-10) |
+| Decision supported | D-034, D-035 |
+| Access info | Liu et al.: full text PMC9832971 (Europe PMC), 2026-10-26 (Methods, "GeneBridge analysis"). Goeman & Bühlmann: abstract via Europe PMC (PMID 17303618). Wu & Smyth: as §29 |
+
+## 35. Expression model for CAMERA — voom, limma, edgeR TMM
+
+| Field | Content |
+|---|---|
+| Process | Independent expression model on the same counts (Task 4) |
+| Software + version | limma 3.66.0 (`voom`, `lmFit`, `eBayes`); edgeR 4.8.2 (`DGEList`, `calcNormFactors`, `filterByExpr` diagnostic only); statmod 1.5.2 |
+| Parameters | 18,238-gene universe (no re-filtering); TMM; `voom(y, design)` with `design = model.matrix(~ condition)`, reference STV_free; coefficient 2; Spearman ρ(limma moderated t, DESeq2 Wald) reported, ≤ 0 = STOP |
+| Methodological rationale | voom estimates the mean–variance trend of log-CPM and passes observation weights to limma (Law et al. 2014). TMM corrects composition (Robinson & Oshlack 2010). The RNAseq123 workflow shows `camera()` on a voom object with a design and contrast (Law et al. 2016). edgeR v4 is the current release line (Chen et al. 2025) |
+| Official technical documentation | limma 3.66.0 `?voom`; edgeR 4.8.2 `?calcNormFactors`, `?filterByExpr`; RNAseq123 Bioconductor workflow |
+| Primary scientific reference | Law et al. (2014); Ritchie et al. (2015); Robinson & Oshlack (2010); Law et al. (2016); Chen et al. (2025) |
+| DOI | 10.1186/gb-2014-15-2-r29; 10.1093/nar/gkv007; 10.1186/gb-2010-11-3-r25; 10.12688/f1000research.9005.3; 10.1093/nar/gkaf018 |
+| Provisional APA 7 reference | Law, C. W., Chen, Y., Shi, W., & Smyth, G. K. (2014). voom: Precision weights unlock linear model analysis tools for RNA-seq read counts. *Genome Biology, 15*(2), R29. https://doi.org/10.1186/gb-2014-15-2-r29 <br> Ritchie, M. E., Phipson, B., Wu, D., Hu, Y., Law, C. W., Shi, W., & Smyth, G. K. (2015). limma powers differential expression analyses for RNA-sequencing and microarray studies. *Nucleic Acids Research, 43*(7), e47. https://doi.org/10.1093/nar/gkv007 <br> Robinson, M. D., & Oshlack, A. (2010). A scaling normalization method for differential expression analysis of RNA-seq data. *Genome Biology, 11*(3), R25. https://doi.org/10.1186/gb-2010-11-3-r25 <br> Law, C. W., Alhamdoosh, M., Su, S., Dong, X., Tian, L., Smyth, G. K., & Ritchie, M. E. (2018). RNA-seq analysis is easy as 1-2-3 with limma, Glimma and edgeR (Version 3). *F1000Research, 5*, 1408. https://doi.org/10.12688/f1000research.9005.3 <br> Chen, Y., Chen, L., Lun, A. T. L., Baldoni, P. L., & Smyth, G. K. (2025). edgeR v4: Powerful differential analysis of sequencing data with expanded functionality and improved support for small counts and larger datasets. *Nucleic Acids Research, 53*(2), gkaf018. https://doi.org/10.1093/nar/gkaf018 |
+| Decision supported | D-034 |
+| Access info | 2026-10-26 (package help pages from the installed versions; Crossref metadata) |
+
+## 36. Counts for limma-voom from Salmon — tximport `lengthScaledTPM`
+
+| Field | Content |
+|---|---|
+| Process | Re-import of the same six `quant.sf` files for the voom model (`scripts/R/11_functional_camera.R`); the Phase 3 import (`countsFromAbundance = "no"` + length offsets for DESeq2) is unchanged |
+| Software + version | tximport 1.38.2 |
+| Parameters | `tximport(files, type = "salmon", tx2gene = reference/ITAG4.0_tx2gene.tsv, countsFromAbundance = "lengthScaledTPM")`; `quant.sf` SHA-256 checked against `results/quantification/quant_sf_sha256.tsv` before import |
+| Methodological rationale | The tximport vignette (limma-voom section) recommends scaled counts from abundances, because limma-voom does not use the offset matrix. Soneson et al. (2015) show that length-scaled TPM or offsets correct for differential transcript length |
+| Official technical documentation | tximport 1.38.2 vignette, "limma-voom" section |
+| Primary scientific reference | Soneson, Love & Robinson (2015) |
+| DOI | 10.12688/f1000research.7563.2 |
+| Provisional APA 7 reference | Soneson, C., Love, M. I., & Robinson, M. D. (2016). Differential analyses for RNA-seq: Transcript-level estimates improve gene-level inferences (Version 2). *F1000Research, 4*, 1521. https://doi.org/10.12688/f1000research.7563.2 |
+| Decision supported | D-034 |
+| Access info | 2026-10-26 |
+
+## 37. Cook's-filtered genes in the ranking — inclusion sensitivity
+
+| Field | Content |
+|---|---|
+| Process | Final D-023 rule and its sensitivity analysis (`scripts/R/10_functional_cooks_sensitivity.R`; [`cooks_gsea_decision.md`](cooks_gsea_decision.md)) |
+| Software + version | DESeq2 1.50.2 (stored fit), fgsea 1.36.2 |
+| Parameters | Primary: the Phase 6 ranking (18,238 genes). Sensitivity: all 18,277 genes with a finite Wald statistic; gene sets rebuilt with the Phase 6 rules and checked for identity; same fgsea call and seed |
+| Methodological rationale | DESeq2 keeps the Wald statistic but sets p/padj to NA for Cook's outliers ("Approach to count outliers"). Love et al. (2014) advise excluding the whole gene in small experiments. Cook (1977) defines case-deletion influence. No method paper on Cook's outliers in preranked GSEA was found, so the evidence is ambiguous and the primary choice was kept, with a labelled sensitivity run |
+| Official technical documentation | DESeq2 1.50.2 vignette; fgsea 1.36.2 source (`preparePathwaysAndStats`) |
+| Primary scientific reference | Cook (1977); Love et al. (2014); Kelsey et al. (2025) (TE-Seq, implicit inclusion in a public workflow) |
+| DOI | 10.1080/00401706.1977.10489493 (alias 10.2307/1268249); 10.1186/s13059-014-0550-8; 10.1186/s13100-025-00381-w |
+| Provisional APA 7 reference | Cook, R. D. (1977). Detection of influential observation in linear regression. *Technometrics, 19*(1), 15–18. https://doi.org/10.1080/00401706.1977.10489493 <br> Love et al. (2014): see §15. Kelsey et al. (2025): see §25 |
+| Decision supported | D-023, D-033 |
+| Access info | 2026-10-26 |
+
+## 38. Replicate consistency and leave-one-sample-out at the pathway level (diagnostics)
+
+| Field | Content |
+|---|---|
+| Process | Per-sample leading-edge scores (`scripts/R/13_functional_replicate_consistency.R`); six reduced DESeq2 fits + fgsea (`scripts/R/14_functional_loo_sensitivity.R`) |
+| Software + version | DESeq2 1.50.2 (blind VST from the stored fit; reduced refits), fgsea 1.36.2 |
+| Parameters | As in plan §5 – §6 (z-scored blind VST; classes from P and r₁; LOO refits with genes fixed to the 18,277 tested, `minReplicatesForReplace = 7`, same fgsea call) |
+| Methodological rationale | Leave-one-out is case deletion applied at the sample level (Cook 1977); DESeq2's per-gene Cook's distance measures the same kind of influence (Love et al. 2014). Schurch et al. (2016) assess the stability of DE results by subsampling replicates (gene level). **No pathway-level leave-one-out method paper was found**, so the analysis is a labelled sensitivity diagnostic. It is never used to remove a sample (D-022) |
+| Official technical documentation | DESeq2 1.50.2 vignette ("Approach to count outliers": outlier flagging needs ≥ 3 replicates) |
+| Primary scientific reference | Cook (1977); Love et al. (2014); Schurch et al. (2016) |
+| DOI | 10.1080/00401706.1977.10489493; 10.1186/s13059-014-0550-8; 10.1261/rna.053959.115 |
+| Provisional APA 7 reference | See §37, §15, §19 |
+| Decision supported | D-036, D-037 |
+| Access info | 2026-10-26 |
+
+## 39. Sequence similarity search — BLAST+
+
+| Field | Content |
+|---|---|
+| Process | Organelle similarity of ITAG4.0 genes (`scripts/bash/ch00_organelle_blast.sh`; [`ch00_functional_investigation.md`](ch00_functional_investigation.md)) |
+| Software + version | BLAST+ 2.17.0+ (`blastn`, `blastp`, `makeblastdb`) from the pre-existing conda env `rachis-qiime2-2026.4` |
+| Parameters | blastn megablast, e-value 1e-20, `-max_target_seqs 2 -max_hsps 1`; blastp e-value 1e-10, `-max_target_seqs 1 -max_hsps 1`; tabular output with `pident`, `qcovs`. Known limitation: `-max_hsps 1` under-reports coverage for spliced genes (plan §11.3) |
+| Methodological rationale | Direct test of whether ch00 gene models are (near-)identical to organelle sequences |
+| Official technical documentation | BLAST+ command-line user manual (NCBI Bookshelf NBK279690) |
+| Primary scientific reference | Camacho et al. (2009) |
+| DOI | 10.1186/1471-2105-10-421 |
+| Provisional APA 7 reference | Camacho, C., Coulouris, G., Avagyan, V., Ma, N., Papadopoulos, J., Bealer, K., & Madden, T. L. (2009). BLAST+: Architecture and applications. *BMC Bioinformatics, 10*, 421. https://doi.org/10.1186/1471-2105-10-421 |
+| Decision supported | D-038 |
+| Access info | 2026-10-26 |
+
+## 40. Organelle references and the SL4.0 unplaced sequence (ch00)
+
+| Field | Content |
+|---|---|
+| Process | Organelle reference download (`scripts/bash/download_organelle_reference.sh`) and interpretation of SL4.0ch00 |
+| Software + version | NCBI E-utilities `efetch` (`db=nuccore`, `rettype=fasta` and `fasta_cds_aa`); records **NC_007898.3** (*S. lycopersicum* chloroplast, complete genome; 87 CDS proteins) and **NC_035963.1** (*S. lycopersicum* TGRC:LA1421 mitochondrion, complete genome; 39 CDS proteins); SGN `build_4.00/ReleaseNotes.txt` |
+| Parameters | SHA-256, size, first header and retrieval time per file: `results/functional_robustness/ch00/organelle_reference_manifest.tsv` |
+| Methodological rationale | The SL4.0 FASTA contains no organelle genome. The SGN release notes describe ch00 as unplaced contigs, and earlier builds separated or removed organellar contigs (quotes in [`ch00_functional_investigation.md`](ch00_functional_investigation.md) §1) |
+| Official technical documentation | NCBI RefSeq records <https://www.ncbi.nlm.nih.gov/nuccore/NC_007898.3>, <https://www.ncbi.nlm.nih.gov/nuccore/NC_035963.1>; SGN <https://solgenomics.net/ftp/tomato_genome/assembly/build_4.00/ReleaseNotes.txt> |
+| Primary scientific reference | Kahlau et al. (2006) (tomato plastome sequence). No publication is cited for NC_035963.1; the RefSeq record is cited as a data source |
+| DOI | 10.1007/s00239-005-0254-5 |
+| Provisional APA 7 reference | Kahlau, S., Aspinall, S., Gray, J. C., & Bock, R. (2006). Sequence of the tomato chloroplast DNA and evolutionary comparison of solanaceous plastid genomes. *Journal of Molecular Evolution, 63*(2), 194–207. https://doi.org/10.1007/s00239-005-0254-5 |
+| Decision supported | D-038 |
+| Access info | Records and release notes retrieved 2026-10-26 (UTC times in the manifests) |
+
+## 41. Literature used for plausibility only (Task 10 – 11)
+
+| Field | Content |
+|---|---|
+| Process | Comparison with prior analyses of GSE137303 and relevance table ([`biological_comparison_prior_studies.md`](biological_comparison_prior_studies.md); `results_by_process.md` Phase 6B evidence table) |
+| Software + version | — |
+| Parameters | Priority: STV studies > tomato–virus transcriptomics > persistent/endornavirus-like viruses > broad plant–virus (plan §8). Each source is used only for what it reports. No source is used to change a rule or class |
+| Methodological rationale | STV: Sabanadzovic et al. (2009) describe the virus (dsRNA; seed-transmitted, not mechanically or graft-transmitted). Fukuhara et al. (2020) and Badeli et al. (2026) analyse the same reads (§1, §24). Persistent viruses: Roossinck (2010), review of persistent vs acute lifestyles; Takahashi et al. (2019), review of latent infections; Khankhum et al. (2016), data paper, 3 vs 3 bean leaf RNA-seq with edgeR, 132 DEGs, Blast2GO distribution (not an enrichment test). Broad plant–virus: Whitham et al. (2003), Arabidopsis microarrays after five acute RNA viruses. Tomato–virus transcriptomics: no source cited; two targeted Europe PMC queries found no open-access study with a tomato host, a virus-only design and a leaf transcriptome |
+| Official technical documentation | — |
+| Primary scientific reference | Sabanadzovic et al. (2009); Roossinck (2010); Takahashi et al. (2019); Khankhum et al. (2016); Whitham et al. (2003) |
+| DOI | 10.1016/j.virusres.2008.11.018; 10.1098/rstb.2010.0057; 10.3389/fmicb.2019.02764; 10.3389/fmicb.2016.01905; 10.1046/j.1365-313x.2003.01625.x |
+| Provisional APA 7 reference | Sabanadzovic, S., Valverde, R. A., Brown, J. K., Martin, R. R., & Tzanetakis, I. E. (2009). Southern tomato virus: The link between the families *Totiviridae* and *Partitiviridae*. *Virus Research, 140*(1–2), 130–137. https://doi.org/10.1016/j.virusres.2008.11.018 <br> Roossinck, M. J. (2010). Lifestyles of plant viruses. *Philosophical Transactions of the Royal Society B: Biological Sciences, 365*(1548), 1899–1905. https://doi.org/10.1098/rstb.2010.0057 <br> Takahashi, H., Fukuhara, T., Kitazawa, H., & Kormelink, R. (2019). Virus latency and the impact on plants. *Frontiers in Microbiology, 10*, 2764. https://doi.org/10.3389/fmicb.2019.02764 <br> Khankhum, S., Sela, N., Osorno, J. M., & Valverde, R. A. (2016). RNAseq analysis of endornavirus-infected vs. endornavirus-free common bean (*Phaseolus vulgaris*) cultivar Black Turtle Soup. *Frontiers in Microbiology, 7*, 1905. https://doi.org/10.3389/fmicb.2016.01905 <br> Whitham, S. A., Quan, S., Chang, H.-S., Cooper, B., Estes, B., Zhu, T., Wang, X., & Hou, Y.-M. (2003). Diverse RNA viruses elicit the expression of common sets of genes in susceptible *Arabidopsis thaliana* plants. *The Plant Journal, 33*(2), 271–283. https://doi.org/10.1046/j.1365-313x.2003.01625.x |
+| Decision supported | Task 10 – 11 documentation; no decision depends on these sources |
+| Access info | 2026-10-26: abstracts via Europe PMC (Sabanadzovic, Roossinck, Takahashi, Whitham); full text PMC5126043 (Khankhum); Fukuhara et al. abstract via PubMed 31620899 (full text not accessible); Badeli et al. HTML full text |

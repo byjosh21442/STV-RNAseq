@@ -1,0 +1,9 @@
+location	organelle_class	genes	tested	ranked	in_any_significant_leading_edge	median_baseMean_ranked
+SL4.0ch00	mitochondrion-type near-identical	115	3	3	1	14
+SL4.0ch00	no close organelle similarity	191	5	5	1	17.2
+SL4.0ch00	organelle-similar, diverged	136	20	20	8	29.9
+SL4.0ch00	plastid-type near-identical	71	19	19	5	146.7
+SL4.0ch01-12	mitochondrion-type near-identical	32	0	0	0	NA
+SL4.0ch01-12	no close organelle similarity	33050	18223	18184	2840	201.1
+SL4.0ch01-12	organelle-similar, diverged	448	4	4	2	90.9
+SL4.0ch01-12	plastid-type near-identical	32	3	3	1	9.1

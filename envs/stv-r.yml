@@ -1,5 +1,5 @@
 # R/Bioconductor environment for STV_GSE137303 (Phase 3: tximport import; Phase 4: DESeq2 differential expression;
-# Phase 5: sample-structure diagnostics; Phase 6: preranked GSEA on GO).
+# Phase 5: sample-structure diagnostics; Phase 6: preranked GSEA on GO; Phase 6B: CAMERA validation).
 # Create:  CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-r.yml
 # Exact resolved packages: envs/stv-r.linux-64.lock.txt
 # Kept separate from stv-rnaseq so R/Bioconductor pins never constrain the command-line tools.
@@ -21,3 +21,5 @@ dependencies:
   - r-rrcov=1.7_7                 # Phase 5: robust PCA (PcaGrid/PcaHubert) outlier classification, Chen et al. 2020
   - bioconductor-fgsea=1.36.2     # Phase 6: preranked GSEA (fgseaMultilevel), Bioconductor 3.22 build
   - r-ontologyindex=2.12          # Phase 6: GO OBO parsing and is_a/part_of propagation
+  - bioconductor-limma=3.66.0     # Phase 6B: voom + camera (correlation-adjusted competitive gene-set test), D-034
+  - bioconductor-edger=4.8.2      # Phase 6B: DGEList + TMM normalization for voom, D-034 (statmod resolved in the lock)

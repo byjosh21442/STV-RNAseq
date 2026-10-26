@@ -12,6 +12,14 @@ Which leaf genes of tomato cv. M82 differ in expression between plants infected 
   - negatively: e.g. defence/stress-response, endoplasmic reticulum.
 - These are coordinated small shifts across many genes, not differentially expressed genes. See [docs/functional_analysis_plan.md](docs/functional_analysis_plan.md).
 
+**Robustness validation (Phase 6B):** pre-specified checks of the Phase 6 signals were run.
+- The signals are robust to the Cook's ranking choice and mostly consistent across replicates.
+- **None is significant under CAMERA with estimated inter-gene correlation** (same directions).
+- ATP-synthase terms depend on organelle-identical genes on the unplaced SL4.0ch00.
+- Every theme is therefore classified **EXPLORATORY**: a hypothesis, not a finding.
+
+See [docs/functional_robustness_plan.md](docs/functional_robustness_plan.md) §11 and [docs/biological_comparison_prior_studies.md](docs/biological_comparison_prior_studies.md).
+
 ## Dataset
 
 | | |
@@ -52,7 +60,8 @@ SGN SL4.0 + ITAG4.0 (SHA-256 manifest) → validation                [Phase 3, d
 → tx2gene (ITAG4.0 GFF) → tximport (gene level, validated)         [Phase 3, done]
 → DESeq2 (~ condition, padj < 0.05, apeglm shrinkage)               [Phase 4, done]
 → sample-structure / outlier diagnostics, primary analysis unchanged [Phase 5, done]
-→ Wald-statistic ranking → GO (PLAZA 5.0, ITAG4.0) → fgsea preranked GSEA [Phase 6, done; awaiting owner review]
+→ Wald-statistic ranking → GO (PLAZA 5.0, ITAG4.0) → fgsea preranked GSEA [Phase 6, done]
+→ robustness validation: CAMERA, Cook's, replicate, leave-one-out, ch00 checks [Phase 6B, done]
 → MapMan/Mercator4 inputs (manual web step pending); agriGO assessed, not used
 ```
 
@@ -60,6 +69,7 @@ SGN SL4.0 + ITAG4.0 (SHA-256 manifest) → validation                [Phase 3, d
 - **Software:** pinned conda environments with lock files: `stv-rnaseq` (FastQC 0.13.0, MultiQC 1.35, Salmon 2.7.0, SeqKit 2.14.0, OpenJDK 21) and `stv-r` (R 4.5.3, tximport 1.38.2, DESeq2 1.50.2, apeglm 1.32.0; plotting: ggplot2, ggrepel, pheatmap, RColorBrewer).
 - Phase 5 added `rrcov` 1.7-7 to `stv-r` for the robust-PCA diagnostic.
 - Phase 6 added `fgsea` 1.36.2 and `ontologyIndex` 2.12 to `stv-r`.
+- Phase 6B added `limma` 3.66.0 and `edgeR` 4.8.2 (+ `statmod`) to `stv-r`. BLAST+ 2.17.0+ was used read-only from an existing environment.
 - Details: [docs/nextflow_pipeline.md](docs/nextflow_pipeline.md), [docs/software_versions.md](docs/software_versions.md), [docs/methods_references.md](docs/methods_references.md).
 
 ## Repository structure
@@ -72,6 +82,8 @@ scripts/R/         01_tximport_import.R (validation + gene-level import), 02_des
                    03_sample_structure_diagnostics.R, 04_geo_historical_structure_check.R (Phase 5 diagnostics)
                    05_functional_ranking_annotation.R, 06_functional_gsea.R, 07_mapman_mercator_prep.R,
                    08_functional_posthoc_descriptives.R (Phase 6)
+                   09 – 16 functional robustness scripts + functional_robustness_helpers.R (Phase 6B);
+                   17_prior_study_locus_lookup.R, 18_functional_ch00_posthoc_identity_diagnostic.R (Phase 6B, post-hoc)
 envs/              stv-rnaseq.yml, stv-r.yml + linux-64 lock files
 data/metadata/     samples_metadata.tsv + raw source records (sources/)
 data/raw/          ENA FASTQ (git-ignored)
@@ -83,9 +95,12 @@ results/           qc/*.tsv and quantification/*.tsv (tracked summaries); deseq2
                    qc/sample_structure/, qc/stv_signal/*.tsv (tracked Phase 5 diagnostics)
                    functional/ (Phase 6: ranking, annotation, go_gsea, plant_reactome_gsea, mapman, agrigo,
                    prespecification); functional/annotation/go_gene_sets.rds git-ignored
+                   functional_robustness/ (Phase 6B: prespecification, leading_edge, cooks_sensitivity, camera,
+                   comparison, replicate_consistency, loo, ch00, themes, prior_studies)
 figures/           deseq2/ PNG figures
                    sample_structure/ PNG figures (Phase 5)
                    functional/ PNG figures and enrichment_curves/ (Phase 6)
+                   functional_robustness/ PNG figures F1 – F5 (Phase 6B)
 docs/              audits, decisions, reference validation, Salmon/tximport reports, methods references, run log
 ```
 
@@ -124,6 +139,12 @@ conda activate stv-r && Rscript scripts/R/03_sample_structure_diagnostics.R && R
 bash scripts/bash/download_functional_annotation.sh
 Rscript scripts/R/05_functional_ranking_annotation.R && Rscript scripts/R/06_functional_gsea.R
 Rscript scripts/R/07_mapman_mercator_prep.R && Rscript scripts/R/08_functional_posthoc_descriptives.R
+# robustness validation (Phase 6B); every script checks the frozen pre-specification in results/functional_robustness/prespecification/
+for s in 09_functional_leading_edge_summary 10_functional_cooks_sensitivity 11_functional_camera 12_functional_method_comparison \
+         13_functional_replicate_consistency; do Rscript scripts/R/$s.R; done
+bash scripts/bash/download_organelle_reference.sh && bash scripts/bash/ch00_organelle_blast.sh   # BLAST+ from an existing env
+for s in 15_functional_ch00_investigation 14_functional_loo_sensitivity 16_functional_robustness_figures_themes \
+         17_prior_study_locus_lookup 18_functional_ch00_posthoc_identity_diagnostic; do Rscript scripts/R/$s.R; done
 ```
 
 Provenance:
@@ -144,4 +165,5 @@ Provenance:
 | tx2gene + tximport import check (final run) | Done; 33,976 genes × 6 samples, totals = Salmon — [docs/tximport_preparation.md](docs/tximport_preparation.md) |
 | DESeq2 primary analysis (D-013 – D-020) | Done. 18,277 genes tested after the prespecified filter; **0 genes with padj < 0.05; 0 genes with padj < 0.05 and \|log2FC\| ≥ 1**. No statistically significant differential expression was detected under the prespecified DESeq2 model and FDR threshold in this six-sample dataset. Limited power with n = 3 per condition — [docs/results_by_process.md](docs/results_by_process.md) |
 | Sample-structure diagnostics (Phase 5) | Done. STV_free_rep1 is consistently separated in expression-space diagnostics, but no independent technical failure or documented experimental covariate justifies its removal; STV labels supported by STV reads; all six samples kept (D-022) — [docs/sample_structure_investigation.md](docs/sample_structure_investigation.md) |
-| Functional analysis (Phase 6) | Done, **awaiting owner review (not committed)**. Pre-specified preranked GSEA (fgsea 1.36.2) on the DESeq2 Wald ranking (18,238 genes) with PLAZA 5.0 GO for ITAG4.0: significant sets (padj < 0.05) BP 120, MF 51, CC 44. Plant Reactome not run (projected; 3.4 % coverage). MapMan/Mercator4 inputs prepared (manual web step pending). agriGO not suitable (conclusion C). DEG thresholds are not relaxed and nominal p-values are not used for gene lists — [docs/functional_analysis_plan.md](docs/functional_analysis_plan.md) |
+| Functional analysis (Phase 6) | Done. Pre-specified preranked GSEA (fgsea 1.36.2) on the DESeq2 Wald ranking (18,238 genes) with PLAZA 5.0 GO for ITAG4.0: significant sets (padj < 0.05) BP 120, MF 51, CC 44. Plant Reactome not run (projected; 3.4 % coverage). MapMan/Mercator4 inputs prepared (manual web step pending). agriGO not suitable (conclusion C). DEG thresholds are not relaxed and nominal p-values are not used for gene lists — [docs/functional_analysis_plan.md](docs/functional_analysis_plan.md) |
+| Functional robustness validation (Phase 6B) | Done; no STOP condition. CAMERA (estimated correlation) 0 significant sets → Tier 1 = Tier 2 = 0, Tier 3 = 210, Tier 4 = 5. Cook's-stable 210/215. Replicate classes: 144 broadly / 69 partially / 2 ambiguous; 0 driven by STV_free_rep1. Leave-one-out maximum sample dependence 47.7 %. ch00-sensitive ≤ 12.5 %. **All themes EXPLORATORY**. Phase 6 outputs byte-identical — [docs/functional_robustness_plan.md](docs/functional_robustness_plan.md) §11, [docs/ch00_functional_investigation.md](docs/ch00_functional_investigation.md), [docs/biological_comparison_prior_studies.md](docs/biological_comparison_prior_studies.md) |

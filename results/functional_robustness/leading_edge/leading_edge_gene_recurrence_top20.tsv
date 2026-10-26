@@ -1,0 +1,21 @@
+gene_id	description	n_significant_sets
+Solyc05g050500.1	ATP synthase delta chain chloroplastic-like (AHRD V3.3 *** A0A2K3N7F4_TRIPR)	49
+Solyc02g080540.1	ATP synthase gamma chain, chloroplastic (AHRD V3.3 *** A0A2G3D743_CAPCH)	46
+Solyc04g007550.4	ATP synthase subunit beta (AHRD V3.3 *** A0A2G2WS30_CAPBA)	36
+Solyc00g500064.1	Ycf15 (AHRD V3.3 *-* A0A346JLD3_9ASTE)	34
+Solyc00g500140.1	ATP synthase epsilon chain, chloroplastic (AHRD V3.3 *** A0A1U8QCD5_CAPAN)	34
+Solyc00g500323.1	ATP synthase subunit alpha, chloroplastic (AHRD V3.3 *** I6N942_DATST)	34
+Solyc00g500332.1	ATP synthase subunit alpha, chloroplastic (AHRD V3.3 *** I6N942_DATST)	34
+Solyc05g008460.4	ATP synthase subunit beta (AHRD V3.3 *** A0A2G2VK08_CAPBA)	34
+Solyc00g500322.1	ATP synthase subunit b, chloroplastic (AHRD V3.3 *** I6N943_DATST)	31
+Solyc06g065990.1	ATP synthase subunit b', chloroplastic (AHRD V3.3 *** A0A1U8GUM8_CAPAN)	31
+Solyc06g066000.3	ATP synthase subunit b', chloroplastic (AHRD V3.3 *** A0A1U8GUM8_CAPAN)	31
+Solyc07g065900.3	Fructose-bisphosphate aldolase (AHRD V3.3 *** A0A200Q3T9_9MAGN)	25
+Solyc03g110960.3	Nucleoside diphosphate kinase (AHRD V3.3 *** A0A1U8FXC0_CAPAN)	24
+Solyc06g071960.4	Nucleoside diphosphate kinase (AHRD V3.3 *** A0A2G2WM92_CAPBA)	24
+Solyc08g082430.4	Nucleoside diphosphate kinase (AHRD V3.3 *** A0A2G3DB32_CAPCH)	24
+Solyc10g079500.2	Inosine-5'-monophosphate dehydrogenase (AHRD V3.3 *** A0A2G2VW93_CAPBA)	24
+Solyc01g111120.4	Triosephosphate isomerase (AHRD V3.3 *** A0A200Q3A8_9MAGN)	23
+Solyc08g067320.3	Chlorophyll a-b binding protein, chloroplastic (AHRD V3.3 *-* A0A2G3D4H8_CAPCH)	23
+Solyc09g014520.3	Chlorophyll a-b binding protein, chloroplastic (AHRD V3.3 *** A0A2G3BKI1_CAPCH)	23
+Solyc10g054870.3	Triosephosphate isomerase (AHRD V3.3 *** B6UG30_MAIZE)	23

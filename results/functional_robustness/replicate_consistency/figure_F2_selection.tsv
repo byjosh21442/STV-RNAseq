@@ -1,0 +1,7 @@
+collection	go_id	term_name	tier	selection	classification
+BP	GO:0042254	ribosome biogenesis	Tier 3	diagnostic example: strongest fgsea-only set	partially consistent
+BP	GO:0006952	defense response	Tier 3	diagnostic example: strongest fgsea-only set	broadly condition-consistent
+MF	GO:0003735	structural constituent of ribosome	Tier 3	diagnostic example: strongest fgsea-only set	partially consistent
+MF	GO:0005198	structural molecule activity	Tier 3	diagnostic example: strongest fgsea-only set	partially consistent
+CC	GO:0005840	ribosome	Tier 3	diagnostic example: strongest fgsea-only set	partially consistent
+CC	GO:0044391	ribosomal subunit	Tier 3	diagnostic example: strongest fgsea-only set	partially consistent

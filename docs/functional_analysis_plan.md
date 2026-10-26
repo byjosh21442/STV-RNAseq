@@ -248,3 +248,21 @@ Limits that apply to every significant set:
 5. **SL4.0ch00 plastid-type genes** in several leading edges (§8.3).
 
 Recommended next checkpoint (owner decision): a descriptive per-replicate check of the leading-edge genes of the top-ranked sets, to see whether the shifts are consistent across samples. It would be a diagnostic like Phase 5 and would not change the primary analysis. Optionally, a correlation-aware competitive test could be added as a pre-specified sensitivity analysis.
+
+### 8.5 Follow-up: Phase 6B validation (added 2026-10-26; §1 – §8.4 unchanged)
+
+Both recommended checks, and more, were run in Phase 6B under a separate frozen pre-specification
+([functional_robustness_plan.md](functional_robustness_plan.md); outcome §11):
+- per-replicate consistency;
+- CAMERA with estimated inter-gene correlation;
+- Cook's inclusion;
+- leave-one-sample-out;
+- the SL4.0ch00 organelle check.
+
+The Phase 6 tables above are byte-identical after Phase 6B. Results:
+- CAMERA finds 0 significant sets, so all 215 fgsea-significant sets are Tier 3 or 4 (method-dependent).
+- No set is driven mainly by STV_free_rep1.
+- The ATP-synthase / proton-transport sets depend on organelle-identical ch00 gene models.
+- Every theme is **EXPLORATORY**.
+
+The Phase 6 wording above ("positively / negatively enriched in the infected-vs-free ranking") remains correct. It must be read together with this classification.

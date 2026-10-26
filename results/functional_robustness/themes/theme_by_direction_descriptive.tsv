@@ -1,0 +1,15 @@
+theme	direction	sets	tier1	tier2	has_tier1	broadly_ge_50pct_tier12	no_tier12_strongly_free_rep1	loo_free_rep1_dependent_le_25pct	tier1_not_ch00_sensitive	theme_classification
+ATP synthase / proton transport	positive	5	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Carbohydrate binding / cell wall	negative	2	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Carbohydrate binding / cell wall	positive	2	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Defence / biotic response	negative	8	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Endoplasmic reticulum / protein folding	negative	4	0	0	FALSE	FALSE	TRUE	FALSE	FALSE	EXPLORATORY
+Glutathione / detoxification	negative	3	0	0	FALSE	FALSE	TRUE	FALSE	FALSE	EXPLORATORY
+Heme / oxidoreductase	negative	6	0	0	FALSE	FALSE	TRUE	FALSE	FALSE	EXPLORATORY
+Heme / oxidoreductase	positive	5	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Hormone signalling	negative	5	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Other (no theme regex matched)	negative	48	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Other (no theme regex matched)	positive	65	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Photosynthesis / plastid / thylakoid	positive	25	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Ribosome / translation / RNA processing	positive	34	0	0	FALSE	FALSE	TRUE	TRUE	FALSE	EXPLORATORY
+Water deprivation / abiotic stress	negative	3	0	0	FALSE	FALSE	TRUE	FALSE	FALSE	EXPLORATORY

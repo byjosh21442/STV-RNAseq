@@ -1,0 +1,7 @@
+run	dropped_sample	samples_used	genes_tested	genes_ranked	genes_pvalue_NA	genes_padj_lt_0.05	spearman_wald_vs_primary	material_warnings_BP	sets_tested_BP	material_warnings_MF	sets_tested_MF	material_warnings_CC	sets_tested_CC
+drop_STV_free_rep1	STV_free_rep1	5	18277	18275	2	2	0.5572	0	952	0	459	0	237
+drop_STV_free_rep2	STV_free_rep2	5	18277	18275	2	0	0.7849	0	952	0	459	0	237
+drop_STV_free_rep3	STV_free_rep3	5	18277	18275	2	11	0.8819	0	952	0	459	0	237
+drop_STV_infected_rep1	STV_infected_rep1	5	18277	18274	3	0	0.7676	0	953	0	459	0	237
+drop_STV_infected_rep2	STV_infected_rep2	5	18277	18274	3	0	0.7926	0	953	0	459	0	237
+drop_STV_infected_rep3	STV_infected_rep3	5	18277	18274	3	0	0.8455	0	953	0	459	0	237

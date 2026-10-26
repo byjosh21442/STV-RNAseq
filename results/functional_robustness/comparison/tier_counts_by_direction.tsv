@@ -1,0 +1,9 @@
+collection	tier	fgsea_direction	N
+BP	Tier 3	negative	43
+BP	Tier 3	positive	72
+BP	Tier 4	negative	2
+BP	Tier 4	positive	3
+CC	Tier 3	negative	4
+CC	Tier 3	positive	40
+MF	Tier 3	negative	30
+MF	Tier 3	positive	21

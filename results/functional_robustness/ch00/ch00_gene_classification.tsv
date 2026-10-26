@@ -1,0 +1,514 @@
+gene_id	chromosome	start	end	strand	best_hit	organelle	pident	aln_length	qlen	qcovs	organelle_class	baseMean	stat	padj	padj_NA_reason	description	tested	ranked	n_significant_sets_in_leading_edge	on_ch00	blastp_organelle_gene	blastp_organelle_protein	blastp_pident	blastp_query_cov_pct
+Solyc00g500064.1	SL4.0ch00	1512915	1514411	-	NC_007898.3	plastid	100	1497	1497	100	plastid-type near-identical	697.892493520607	0.956469636669128	0.99990663146592		Ycf15 (AHRD V3.3 *-* A0A346JLD3_9ASTE)	TRUE	TRUE	34	TRUE	atpB	ATP synthase CF1 beta subunit	100	99
+Solyc00g500140.1	SL4.0ch00	2541421	2541822	+	NC_007898.3	plastid	99.254	402	402	100	plastid-type near-identical	269.611054024218	1.20640173025606	0.99990663146592		ATP synthase epsilon chain, chloroplastic (AHRD V3.3 *** A0A1U8QCD5_CAPAN)	TRUE	TRUE	34	TRUE	atpE	ATP synthase CF1 epsilon subunit	97.744	99
+Solyc00g500323.1	SL4.0ch00	7330250	7331868	+	NC_007898.3	plastid	100	1619	1619	100	plastid-type near-identical	436.699491247062	1.85729135289736	0.99990663146592		ATP synthase subunit alpha, chloroplastic (AHRD V3.3 *** I6N942_DATST)	TRUE	TRUE	34	TRUE	atpA	ATP synthase CF1 alpha subunit	100	99
+Solyc00g500332.1	SL4.0ch00	7377666	7379283	-	NC_007898.3	plastid	100	1618	1618	100	plastid-type near-identical	340.592361117254	1.06333402827876	0.99990663146592		ATP synthase subunit alpha, chloroplastic (AHRD V3.3 *** I6N942_DATST)	TRUE	TRUE	34	TRUE	atpA	ATP synthase CF1 alpha subunit	100	99
+Solyc00g500322.1	SL4.0ch00	7328954	7330194	+	NC_007898.3	plastid	100	396	510	78	organelle-similar, diverged	151.563923832246	0.919393973655644	0.99990663146592		ATP synthase subunit b, chloroplastic (AHRD V3.3 *** I6N943_DATST)	TRUE	TRUE	31	TRUE	atpF	ATP synthase CF0 subunit I	91.848	99
+Solyc00g500321.1	SL4.0ch00	7328310	7328711	+	NC_007898.3	plastid	100	151	225	67	organelle-similar, diverged	34.7476868480445	0.572125695233979	0.99990663146592		ATP synthase subunit b, chloroplastic (AHRD V3.3 *** I6N943_DATST)	TRUE	TRUE	9	TRUE	atpH	ATP synthase CF0 subunit III	90	80
+Solyc00g500335.1	SL4.0ch00	7382381	7383125	-	NC_007898.3	plastid	100	411	693	59	organelle-similar, diverged	28.4553764171408	0.522284538414255	0.99990663146592		ATP synthase subunit a, chloroplastic (AHRD V3.3 *** J7H3L4_CAPAN)	TRUE	TRUE	8	TRUE	atpI	ATP synthase CF0 subunit IV	88.492	99
+Solyc00g500212.1	SL4.0ch00	3860838	3861660	-	NC_007898.3	plastid	100	823	823	100	plastid-type near-identical	10.1709273158722	0.530110044701465	0.99990663146592		30S ribosomal protein S4, chloroplastic (AHRD V3.3 *** I6N958_DATST)	TRUE	TRUE	6	TRUE	rps4	ribosomal protein S4	100	98
+Solyc00g500021.1	SL4.0ch00	1369394	1369774	-	NC_007898.3	plastid	98.795	249	324	77	organelle-similar, diverged	123.734094624846	0.336592288863434	0.99990663146592		Cytochrome b559 subunit alpha (AHRD V3.3 *** S8D1L1_9LAMI)	TRUE	TRUE	5	TRUE	psbE	photosystem II cytochrome b559 alpha subunit	98.765	75
+Solyc00g500049.1	SL4.0ch00	1466128	1466785	+	NC_007898.3	plastid	100	175	294	60	organelle-similar, diverged	47.6785145301289	0.451101216408695	0.99990663146592		Photosystem II reaction center protein K (AHRD V3.3 *** A0A1U8QD48_CAPAN)	TRUE	TRUE	5	TRUE	psbK	photosystem II protein K	98.305	60
+Solyc00g500020.1	SL4.0ch00	1366069	1367940	+	NC_007898.3	plastid	100	837	1305	64	organelle-similar, diverged	36.0986339348195	0.540977632584511	0.99990663146592		Cytochrome f (AHRD V3.3 *** A0A2G3ALJ3_CAPAN)	TRUE	TRUE	4	TRUE	petA	cytochrome f	100	64
+Solyc00g500358.1	SL4.0ch00	8041191	8042726	+	NC_035963.1	mitochondrion	100	1536	1536	100	mitochondrion-type near-identical	18.541905528225	0.354268367777088	0.99990663146592		ATP synthase subunit alpha (AHRD V3.3 *** A0A2H4NB27_SOLLC)	TRUE	TRUE	3	TRUE	atp1	ATP synthase subunit 1	100	99
+Solyc00g500023.1	SL4.0ch00	1374595	1377031	-	NC_007898.3	plastid	100	603	1023	59	organelle-similar, diverged	31.4403257509225	1.30636512783156	0.99990663146592		ATP-dependent Clp protease proteolytic subunit (AHRD V3.3 *** CLPP_SOLTU)	TRUE	TRUE	1	TRUE	clpP	clp protease proteolytic subunit	99.359	99
+Solyc00g500054.1	SL4.0ch00	1492125	1494555	+	NC_007898.3	plastid	100	1360	2331	58	organelle-similar, diverged	256.113261317435	-0.785419318235186	0.99990663146592		Photosystem II CP43 reaction center protein (AHRD V3.3 *** A0A078EKT7_BRANA)	TRUE	TRUE	1	TRUE	psbC	photosystem II CP43 chlorophyll apoprotein	97.436	60
+Solyc00g500353.1	SL4.0ch00	7792148	7794788	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	123.29246130994	-0.805353412820633	0.99990663146592		Phenylalanine ammonia-lyase (AHRD V3.3 *** A0A2G2VZP0_CAPBA)	TRUE	TRUE	1	TRUE	NA	NA	NA	NA
+Solyc00g028960.1	SL4.0ch00	5438954	5439265	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	14.7035012861868	0.573547596034651	0.99990663146592		monothiol glutaredoxin-S1-like (AHRD V3.3 *** A0A1U7WLZ4_NICSY)	TRUE	TRUE	0	TRUE	NA	NA	NA	NA
+Solyc00g277510.1	SL4.0ch00	1459942	1460142	-	NC_007898.3	plastid	100	201	201	100	plastid-type near-identical	146.657462923684	-1.57193407387059	0.99990663146592		Photosystem II protein D1 (AHRD V3.3 *-* A0A1U8QBZ9_CAPAN)	TRUE	TRUE	0	TRUE	psbA	photosystem II protein D1	100	100
+Solyc00g500022.1	SL4.0ch00	1372575	1373384	+	NC_007898.3	plastid	100	810	810	100	plastid-type near-identical	34.6496797297696	0.163801122428065	0.99990663146592		30S ribosomal protein S18, chloroplastic (AHRD V3.3 *** A0A1U8QD82_CAPAN)	TRUE	TRUE	0	TRUE	rps18	ribosomal protein S18	100	99
+Solyc00g500024.1	SL4.0ch00	1377421	1378947	+	NC_007898.3	plastid	100	1527	1527	100	plastid-type near-identical	148.759521539295	-0.0564902884060235	0.99990663146592		Photosystem II CP47 reaction center protein (AHRD V3.3 *** A0A1U8QCF6_CAPAN)	TRUE	TRUE	0	TRUE	psbB	photosystem II CP47 chlorophyll apoprotein	100	99
+Solyc00g500027.1	SL4.0ch00	1380618	1381319	+	NC_007898.3	plastid	100	702	702	100	plastid-type near-identical	39.7077412249024	-0.0619298427048988	0.99990663146592		Cytochrome b6 (AHRD V3.3 *** A0A125RTD6_9ASTR)	TRUE	TRUE	0	TRUE	petB	cytochrome b6	99.07	92
+Solyc00g500028.1	SL4.0ch00	1382210	1382734	+	NC_007898.3	plastid	100	348	450	77	organelle-similar, diverged	13.0414098518052	0.12223823967649	0.99990663146592		Cytochrome b6-f complex subunit 4 (AHRD V3.3 *** A0A2G2XBM1_CAPBA)	TRUE	TRUE	0	TRUE	petD	cytochrome b6/f complex subunit IV	84.177	89
+Solyc00g500031.1	SL4.0ch00	1384961	1385901	-	NC_007898.3	plastid	100	413	771	54	organelle-similar, diverged	11.1714068550425	-0.3342356922379	0.99990663146592		50S ribosomal protein L14, chloroplastic (AHRD V3.3 *** I6N992_DATST)	TRUE	TRUE	0	TRUE	rps8	ribosomal protein S8	100	52
+Solyc00g500034.1	SL4.0ch00	1387611	1388719	-	NC_007898.3	plastid	100	625	1059	59	organelle-similar, diverged	14.8172821964573	0.251207829837241	0.99990663146592		30S ribosomal protein S3, chloroplastic (AHRD V3.3 *** I6N994_DATST)	TRUE	TRUE	0	TRUE	rps3	ribosomal protein S3	100	59
+Solyc00g500037.1	SL4.0ch00	1391276	1398112	+	NC_007898.3	plastid	99.973	3728	6624	56	organelle-similar, diverged	18.1531907485543	-0.139718210594303	0.99990663146592		Protein Ycf2 (AHRD V3.3 *** A0A1Z1GA65_LITCN)	TRUE	TRUE	0	TRUE	ycf2	hypothetical chloroplast RF2	97.58	58
+Solyc00g500042.1	SL4.0ch00	1428175	1431271	-	NC_007898.3	plastid	99.968	3097	3097	100	plastid-type near-identical	9.91853226601866	-0.0661895671138892	0.99990663146592		Protein TIC 214 (AHRD V3.3 *** TI214_SOLTU)	TRUE	TRUE	0	TRUE	ycf1	hypothetical chloroplast RF1	99.896	99
+Solyc00g500047.1	SL4.0ch00	1456896	1458386	+	NC_007898.3	plastid	100	447	885	51	organelle-similar, diverged	273.924949214711	-0.0235651324391265	0.99990663146592		50S ribosomal protein L2, chloroplastic (AHRD V3.3 *** A0A1C8V6E3_9ROSI)	TRUE	TRUE	0	TRUE	rpl2	ribosomal protein L2	93.197	99
+Solyc00g500048.1	SL4.0ch00	1460668	1462197	-	NC_007898.3	plastid	100	845	1356	62	organelle-similar, diverged	32.3365446059004	1.1533359581208	0.99990663146592		Maturase K (AHRD V3.3 *** A0A2G3DGH8_CAPCH)	TRUE	TRUE	0	TRUE	matK	maturase K	100	62
+Solyc00g500051.1	SL4.0ch00	1473386	1475037	-	NC_007898.3	plastid	100	624	1101	57	organelle-similar, diverged	20.5521533731638	-0.858807675277676	0.99990663146592		30S ribosomal protein S2, chloroplastic (AHRD V3.3 *** I6N946_DATST)	TRUE	TRUE	0	TRUE	rps2	ribosomal protein S2	100	57
+Solyc00g500052.1	SL4.0ch00	1475301	1482402	-	NC_007898.3	plastid	100	1854	4974	37	no close organelle similarity	14.09578341663	0.0826582757499211	0.99990663146592		DNA-directed RNA polymerase subunit beta'' (AHRD V3.3 *-* A0A1U8QCC7_CAPAN)	TRUE	TRUE	0	TRUE	rpoC2	RNA polymerase beta' subunit	85.127	53
+Solyc00g500055.1	SL4.0ch00	1496023	1496540	-	NC_007898.3	plastid	100	326	378	86	plastid-type near-identical	32.3282366874882	-0.0741177475019245	0.99990663146592		30S ribosomal protein S14, chloroplastic (AHRD V3.3 *-* A0A2G2X601_CAPBA)	TRUE	TRUE	0	TRUE	rps14	ribosomal protein S14	100	79
+Solyc00g500056.1	SL4.0ch00	1496632	1498836	-	NC_007898.3	plastid	100	2205	2205	100	plastid-type near-identical	203.498861969418	-0.607755119957759	0.99990663146592		DNA-directed RNA polymerase subunit alpha (AHRD V3.3 *-* A0A1U8QD90_CAPAN)	TRUE	TRUE	0	TRUE	psaB	photosystem I P700 apoprotein A2	100	99
+Solyc00g500057.1	SL4.0ch00	1498862	1501114	-	NC_007898.3	plastid	99.931	1447	1962	74	organelle-similar, diverged	171.218061108956	-0.300754572364975	0.99990663146592		Photosystem I P700 chlorophyll a apoprotein A1 (AHRD V3.3 *** K4EPK3_DATST)	TRUE	TRUE	0	TRUE	psaA	photosystem I P700 apoprotein A1	97.41	76
+Solyc00g500061.1	SL4.0ch00	1508614	1509090	-	NC_007898.3	plastid	100	477	477	100	plastid-type near-identical	11.3786071094787	-0.133426606218823	0.99990663146592		Photosystem I assembly protein Ycf4 (AHRD V3.3 *** K4EQH2_DATST)	TRUE	TRUE	0	TRUE	ndhJ	NADH-plastoquinone oxidoreductase subunit J	100	99
+Solyc00g500062.1	SL4.0ch00	1509196	1509960	-	NC_007898.3	plastid	100	765	765	100	plastid-type near-identical	30.4429693763771	0.562224176532175	0.99990663146592		NAD(P)H-quinone oxidoreductase subunit K, chloroplastic (AHRD V3.3 *** A0A1U8QCE3_CAPAN)	TRUE	TRUE	0	TRUE	ndhK	NADH-plastoquinone oxidoreductase subunit K	100	99
+Solyc00g500063.1	SL4.0ch00	1512451	1516659	+	NC_007898.3	plastid	100	3658	4149	88	plastid-type near-identical	992.39596458913	-0.89232518764759	0.99990663146592		Ribulose bisphosphate carboxylase large chain (AHRD V3.3 *** A0A2G2Z7Q2_CAPAN)	TRUE	TRUE	0	TRUE	rbcL	ribulose-1,5-bisphosphate carboxylase/oxygenase large subunit	95.597	98
+Solyc00g500086.1	SL4.0ch00	1579653	1581877	-	NC_007898.3	plastid	99.643	560	1071	52	organelle-similar, diverged	22.19508983108	-0.0576337684972728	0.99990663146592		Photosystem I assembly protein Ycf3 (AHRD V3.3 *** A0A140F954_9LAMI)	TRUE	TRUE	0	TRUE	ndhA	NADH-plastoquinone oxidoreductase subunit 1	98.072	99
+Solyc00g500087.1	SL4.0ch00	1581879	1583504	-	NC_007898.3	plastid	100	1626	1626	100	plastid-type near-identical	15.6966680188507	-0.18009642888458	0.99990663146592		NAD(P)H-quinone oxidoreductase subunit H, chloroplastic (AHRD V3.3 *** A0A1U8QCJ3_CAPAN)	TRUE	TRUE	0	TRUE	ndhH	NADH-plastoquinone oxidoreductase subunit 7	100	99
+Solyc00g500095.1	SL4.0ch00	1898065	1899888	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	39.5182688604655	-0.373438154946422	0.99990663146592		Phenylalanine ammonia-lyase (AHRD V3.3 *** A0A2G2VZP0_CAPBA)	TRUE	TRUE	0	TRUE	NA	NA	NA	NA
+Solyc00g500130.1	SL4.0ch00	2499170	2500231	-	NC_007898.3	plastid	100	1062	1062	100	plastid-type near-identical	1097.74905465818	-1.01246938502165	0.99990663146592		Photosystem II protein D1 (AHRD V3.3 *** A0A1U8QBZ9_CAPAN)	TRUE	TRUE	0	TRUE	psbA	photosystem II protein D1	100	99
+Solyc00g500146.1	SL4.0ch00	2562283	2562955	+	NC_007898.3	plastid	99.257	673	673	100	plastid-type near-identical	14.6838214342589	0.852249622057853	0.99990663146592		NAD(P)H-quinone oxidoreductase subunit 2, chloroplastic (AHRD V3.3 *-* J7H400_CAPAN)	TRUE	TRUE	0	TRUE	ndhB	NADH-plastoquinone oxidoreductase subunit 2	98.095	99
+Solyc00g500182.1	SL4.0ch00	3684590	3685773	+	NC_035963.1	mitochondrion	100	1184	1184	100	mitochondrion-type near-identical	14.0180814593414	0.215564956680328	0.99990663146592		Transmembrane protein (AHRD V3.3 *-* A0A1P8B2M8_ARATH)	TRUE	TRUE	0	TRUE	NA	NA	NA	NA
+Solyc00g500196.1	SL4.0ch00	3788808	3794880	-	NC_007898.3	plastid	100	1112	1313	85	plastid-type near-identical	1275.97641632619	-0.838851224931841	0.99990663146592		Protein TIC 214 (AHRD V3.3 *** K4EQH9_DATST)	TRUE	TRUE	0	TRUE	ycf1	hypothetical chloroplast RF1	98.656	87
+Solyc00g500228.1	SL4.0ch00	4488679	4492426	+	NC_035963.1	mitochondrion	100	1073	1842	58	organelle-similar, diverged	12.4547589849418	-0.159717236189057	0.99990663146592		Ribosomal protein L2 (AHRD V3.3 *** A0A290WL33_SOLLC)	TRUE	TRUE	0	TRUE	rpl2	ribosomal protein L2	99.701	99
+Solyc00g500243.1	SL4.0ch00	5150786	5152183	-	NC_035963.1	mitochondrion	100	1398	1398	100	mitochondrion-type near-identical	12.9108522006567	0.0815081692748	0.99990663146592		Cytochrome c oxidase subunit 2 (AHRD V3.3 *-* A0A0C5B2A3_HYONI)	TRUE	TRUE	0	TRUE	NA	NA	NA	NA
+Solyc00g500250.1	SL4.0ch00	5499555	5502705	-	NC_035963.1	mitochondrion	100	1868	2376	79	organelle-similar, diverged	9.00992979979036	0.235345012386432	0.99990663146592		Cytochrome c oxidase subunit 1 (AHRD V3.3 *** A0A2G2YXI2_CAPAN)	TRUE	TRUE	0	TRUE	cox1	cytochrome c oxidase subunit 1	100	99
+Solyc00g500268.1	SL4.0ch00	6272999	6283350	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	17.192057313876	-0.893794441975044	0.99990663146592		Unknown protein	TRUE	TRUE	0	TRUE	NA	NA	NA	NA
+Solyc00g500293.1	SL4.0ch00	6878944	6879601	-	NC_007898.3	plastid	100	174	345	50	organelle-similar, diverged	17.3134668245345	0.0991091560502882	0.99990663146592		Photosystem II reaction center protein K (AHRD V3.3 *** A0A1U8QD48_CAPAN)	TRUE	TRUE	0	TRUE	psbK	photosystem II protein K	100	50
+Solyc00g005280.1	SL4.0ch00	1075280	1075782	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g006650.1	SL4.0ch00	8739397	8751155	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g007330.1	SL4.0ch00	2379604	2380807	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g007340.1	SL4.0ch00	2388674	2389042	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g007350.1	SL4.0ch00	2416399	2417840	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g007450.1	SL4.0ch00	5306617	5307486	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g007920.1	SL4.0ch00	9265121	9265617	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g007930.1	SL4.0ch00	9276887	9277476	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g007940.1	SL4.0ch00	9271932	9273315	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g011560.1	SL4.0ch00	1943916	1946994	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g011660.1	SL4.0ch00	1823254	1824543	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g011670.1	SL4.0ch00	1818916	1819098	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g012540.1	SL4.0ch00	7262590	7264321	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g013100.1	SL4.0ch00	3045077	3045313	+	NC_035963.1	mitochondrion	100	237	237	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g013110.1	SL4.0ch00	3045980	3046246	-	NC_035963.1	mitochondrion	100	267	267	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g013170.1	SL4.0ch00	3069443	3069652	+	NC_035963.1	mitochondrion	99.524	210	210	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g013180.1	SL4.0ch00	3070183	3071529	-	NC_035963.1	mitochondrion	100	430	531	81	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	98.582	80
+Solyc00g014290.1	SL4.0ch00	1037013	1037559	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g014790.2	SL4.0ch00	3716363	3718878	-	NC_035963.1	mitochondrion	100	546	848	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g014800.1	SL4.0ch00	3715868	3716359	+	NC_035963.1	mitochondrion	100	492	492	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g014810.1	SL4.0ch00	3713896	3714060	+	NC_035963.1	mitochondrion	100	165	165	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g014850.1	SL4.0ch00	3702464	3702775	+	NC_035963.1	mitochondrion	100	312	312	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g014860.1	SL4.0ch00	3701542	3701851	+	NC_035963.1	mitochondrion	100	190	237	80	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g015600.1	SL4.0ch00	2173684	2173839	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g016590.1	SL4.0ch00	5395725	5396993	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g019730.1	SL4.0ch00	3094526	3094960	+	NC_035963.1	mitochondrion	100	435	435	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cox3	cytochrome c oxidase subunit 3	100	100
+Solyc00g019750.1	SL4.0ch00	3092088	3092288	+	NC_035963.1	mitochondrion	100	201	201	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g019950.1	SL4.0ch00	5073987	5074538	+	NC_035963.1	mitochondrion	100	552	552	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad9	NADH dehydrogenase subunit 9	100	99
+Solyc00g019970.2	SL4.0ch00	5072673	5073664	-	NC_035963.1	mitochondrion	100	528	911	58	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g019980.2	SL4.0ch00	5069419	5070648	-	NC_035963.1	mitochondrion	100	606	869	70	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g019990.1	SL4.0ch00	5068988	5069203	-	NC_035963.1	mitochondrion	100	216	216	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g020000.1	SL4.0ch00	5067436	5067609	-	NC_035963.1	mitochondrion	100	174	174	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g020010.1	SL4.0ch00	5066942	5067169	+	NC_035963.1	mitochondrion	100	228	228	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g020020.2	SL4.0ch00	5065489	5066572	-	NC_035963.1	mitochondrion	100	487	859	57	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g020030.1	SL4.0ch00	5065433	5065633	+	NC_035963.1	mitochondrion	100	201	201	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g020040.1	SL4.0ch00	5063652	5064272	-	NC_035963.1	mitochondrion	100	621	621	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmB	cytochrome c maturation protein CcmB	100	99
+Solyc00g021630.1	SL4.0ch00	5525147	5525800	+	NC_035963.1	mitochondrion	100	654	654	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad6	NADH dehydrogenase subunit 6	100	99
+Solyc00g021640.2	SL4.0ch00	5522265	5524452	+	NC_035963.1	mitochondrion	100	1204	1504	80	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps4	ribosomal protein S4	100	85
+Solyc00g021650.1	SL4.0ch00	5520935	5521165	-	NC_035963.1	mitochondrion	100	231	231	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g021660.1	SL4.0ch00	3764643	3765962	+	NC_035963.1	mitochondrion	100	194	225	86	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g022070.1	SL4.0ch00	2038938	2039175	+	NC_035963.1	mitochondrion	100	135	153	88	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g022080.1	SL4.0ch00	2040675	2040887	-	NC_035963.1	mitochondrion	100	213	213	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g022090.1	SL4.0ch00	2043550	2043903	-	NC_035963.1	mitochondrion	100	354	354	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g022100.1	SL4.0ch00	2044109	2044588	-	NC_035963.1	mitochondrion	100	480	480	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl10	ribosomal protein L10	100	99
+Solyc00g023570.1	SL4.0ch00	3697503	3697832	+	NC_035963.1	mitochondrion	100	330	330	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g023580.1	SL4.0ch00	3697005	3697262	-	NC_035963.1	mitochondrion	100	258	258	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g023590.2	SL4.0ch00	3692134	3694833	-	NC_035963.1	mitochondrion	100	629	1058	59	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g023600.1	SL4.0ch00	3690578	3690838	-	NC_035963.1	mitochondrion	100	261	261	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g023700.2	SL4.0ch00	3735479	3736452	+	NC_035963.1	mitochondrion	100	337	597	56	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g023710.1	SL4.0ch00	3737340	3738041	-	NC_035963.1	mitochondrion	100	702	702	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g025290.1	SL4.0ch00	5060057	5060542	-	NC_035963.1	mitochondrion	100	486	486	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g025300.1	SL4.0ch00	5059172	5059333	+	NC_035963.1	mitochondrion	100	162	162	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g025400.2	SL4.0ch00	2030916	2032369	+	NC_035963.1	mitochondrion	100	541	721	75	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g032030.1	SL4.0ch00	7788611	7789039	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g036520.1	SL4.0ch00	4414466	4415023	-	NC_035963.1	mitochondrion	100	558	558	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g036530.1	SL4.0ch00	5147285	5147440	-	NC_035963.1	mitochondrion	100	156	156	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g047180.1	SL4.0ch00	4441826	4442083	-	NC_035963.1	mitochondrion	100	258	258	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g047190.1	SL4.0ch00	4443200	4443517	+	NC_035963.1	mitochondrion	100	318	318	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g047200.1	SL4.0ch00	4445278	4445511	-	NC_035963.1	mitochondrion	100	234	234	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cob	apocytochrome b	100	99
+Solyc00g049210.1	SL4.0ch00	3741110	3742879	-	NC_035963.1	mitochondrion	100	1770	1770	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmFN	cytochrome c maturation protein CcmFN	100	99
+Solyc00g049220.1	SL4.0ch00	3742936	3743142	+	NC_035963.1	mitochondrion	100	207	207	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g052430.2	SL4.0ch00	6436629	6438756	-	NC_035963.1	mitochondrion	100	648	1180	55	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmFc	cytochrome c maturation protein CcmFC	100	99
+Solyc00g052530.2	SL4.0ch00	4417438	4418639	-	NC_035963.1	mitochondrion	100	282	392	72	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g052540.1	SL4.0ch00	4416054	4416725	+	NC_035963.1	mitochondrion	100	269	321	84	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g069880.2	SL4.0ch00	3024713	3028149	-	NC_035963.1	mitochondrion	100	443	829	53	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g072800.2	SL4.0ch00	2058969	2059594	-	NC_035963.1	mitochondrion	100	626	626	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g076250.1	SL4.0ch00	7796257	7797059	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g094520.1	SL4.0ch00	3729198	3729383	+	NC_035963.1	mitochondrion	100	186	186	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g094530.1	SL4.0ch00	3728169	3728558	+	NC_035963.1	mitochondrion	100	390	390	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhA	NADH-plastoquinone oxidoreductase subunit 1	37.209	99
+Solyc00g094540.1	SL4.0ch00	3727644	3727973	-	NC_035963.1	mitochondrion	100	330	330	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g094550.1	SL4.0ch00	3726482	3726715	+	NC_035963.1	mitochondrion	100	234	234	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g112190.2	SL4.0ch00	2989427	2990736	-	NC_035963.1	mitochondrion	100	787	1224	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g118680.2	SL4.0ch00	3687292	3689223	-	NC_035963.1	mitochondrion	100	262	470	56	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g118690.1	SL4.0ch00	3689126	3689386	+	NC_035963.1	mitochondrion	100	261	261	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhA	NADH-plastoquinone oxidoreductase subunit 1	66.667	38
+Solyc00g125980.1	SL4.0ch00	3055480	3055683	-	NC_035963.1	mitochondrion	100	204	204	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g125990.1	SL4.0ch00	3054457	3055101	-	NC_035963.1	mitochondrion	100	645	645	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhB	NADH-plastoquinone oxidoreductase subunit 2	40.838	87
+Solyc00g126000.1	SL4.0ch00	3054202	3054354	-	NC_035963.1	mitochondrion	100	153	153	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g126010.1	SL4.0ch00	3053864	3054037	-	NC_035963.1	mitochondrion	100	174	174	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g142160.1	SL4.0ch00	2081475	2081793	-	NC_035963.1	mitochondrion	100	319	319	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g142170.2	SL4.0ch00	2081817	2083225	-	NC_035963.1	mitochondrion	100	520	1046	50	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g153980.1	SL4.0ch00	2004907	2005074	+	NC_035963.1	mitochondrion	100	168	168	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g164580.1	SL4.0ch00	2015956	2017111	+	NC_035963.1	mitochondrion	100	199	534	37	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g180440.1	SL4.0ch00	1373658	1373909	-	NC_007898.3	plastid	100	252	252	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl20	ribosomal protein L20	100	100
+Solyc00g181240.1	SL4.0ch00	5529272	5529451	-	NC_035963.1	mitochondrion	100	180	180	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g181250.2	SL4.0ch00	5529549	5530393	+	NC_035963.1	mitochondrion	99.844	640	794	81	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g198360.1	SL4.0ch00	4294034	4294903	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g210860.1	SL4.0ch00	2026594	2026854	+	NC_035963.1	mitochondrion	100	261	261	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g230060.1	SL4.0ch00	5051694	5052660	-	NC_035963.1	mitochondrion	100	558	840	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g230070.1	SL4.0ch00	5051295	5051558	+	NC_035963.1	mitochondrion	100	264	264	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbC	photosystem II CP43 chlorophyll apoprotein	95.402	99
+Solyc00g230080.1	SL4.0ch00	3013752	3014108	-	NC_035963.1	mitochondrion	100	357	357	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbD	photosystem II protein D2	96.61	99
+Solyc00g244280.1	SL4.0ch00	3058214	3058396	+	NC_035963.1	mitochondrion	100	183	183	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g244290.1	SL4.0ch00	3057501	3057992	-	NC_035963.1	mitochondrion	100	492	492	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g244300.1	SL4.0ch00	3057175	3057432	-	NC_035963.1	mitochondrion	100	258	258	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g254910.1	SL4.0ch00	3943525	3944310	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g266110.1	SL4.0ch00	3940658	3940954	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g281110.1	SL4.0ch00	2075335	2075703	-	NC_035963.1	mitochondrion	100	369	369	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g284510.1	SL4.0ch00	8312630	8314215	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g308530.1	SL4.0ch00	8309391	8310778	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g309530.1	SL4.0ch00	2008312	2008598	+	NC_035963.1	mitochondrion	99.057	106	159	67	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g316530.1	SL4.0ch00	3020571	3020807	+	NC_035963.1	mitochondrion	100	237	237	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g320430.1	SL4.0ch00	3077625	3077804	+	NC_035963.1	mitochondrion	100	180	180	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g322630.1	SL4.0ch00	3881527	3881823	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500001.1	SL4.0ch00	93750	94430	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500002.1	SL4.0ch00	305442	306257	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500003.1	SL4.0ch00	311496	382066	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500004.1	SL4.0ch00	417592	418482	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500005.1	SL4.0ch00	478389	478640	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500006.1	SL4.0ch00	481288	483182	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500007.1	SL4.0ch00	497941	498614	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500008.1	SL4.0ch00	531008	531682	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500009.1	SL4.0ch00	531761	537711	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500010.1	SL4.0ch00	544694	545489	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500011.1	SL4.0ch00	549361	586470	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500012.1	SL4.0ch00	584354	596916	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500013.1	SL4.0ch00	589339	596916	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500014.1	SL4.0ch00	628120	644283	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500015.1	SL4.0ch00	701546	719208	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500016.1	SL4.0ch00	914971	916182	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500017.1	SL4.0ch00	994894	998273	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500018.1	SL4.0ch00	1000060	1003182	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500019.1	SL4.0ch00	1361849	1365340	+	NC_007898.3	plastid	100	290	372	78	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf4	photosystem I assembly protein ycf4	100	77
+Solyc00g500025.1	SL4.0ch00	1379543	1381059	-	NC_007898.3	plastid	100	191	195	98	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500026.1	SL4.0ch00	1379574	1380279	+	NC_007898.3	plastid	100	154	207	74	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbH	photosystem II phosphoprotein	100	74
+Solyc00g500029.1	SL4.0ch00	1383462	1383939	-	NC_007898.3	plastid	100	249	273	91	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpoA	RNA polymerase alpha subunit	100	91
+Solyc00g500030.1	SL4.0ch00	1384005	1384421	-	NC_007898.3	plastid	100	417	417	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps11	ribosomal protein S11	100	99
+Solyc00g500032.1	SL4.0ch00	1386027	1386383	-	NC_007898.3	plastid	100	357	357	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl16	ribosomal protein L16	100	99
+Solyc00g500033.1	SL4.0ch00	1386985	1389637	+	NC_007898.3	plastid	99.713	348	507	69	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500035.1	SL4.0ch00	1389118	1389546	-	NC_007898.3	plastid	100	429	429	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	100	99
+Solyc00g500036.1	SL4.0ch00	1390207	1390608	-	NC_007898.3	plastid	100	402	402	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	99.237	98
+Solyc00g500038.1	SL4.0ch00	1398302	1399583	+	NC_007898.3	plastid	100	138	216	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf15	hypothetical chloroplast RF15	97.872	65
+Solyc00g500039.1	SL4.0ch00	1404089	1405507	-	NC_007898.3	plastid	98.81	336	501	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500040.1	SL4.0ch00	1413493	1414591	+	NC_007898.3	plastid	100	439	567	77	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	96.599	76
+Solyc00g500041.1	SL4.0ch00	1424193	1426417	-	NC_007898.3	plastid	100	563	1092	52	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhA	NADH-plastoquinone oxidoreductase subunit 1	98.898	99
+Solyc00g500043.1	SL4.0ch00	1432066	1434052	-	NC_007898.3	plastid	100	1816	1848	98	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	100	98
+Solyc00g500044.1	SL4.0ch00	1441997	1443415	+	NC_007898.3	plastid	98.81	336	501	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500045.1	SL4.0ch00	1447921	1449202	-	NC_007898.3	plastid	100	138	216	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf15	hypothetical chloroplast RF15	97.872	65
+Solyc00g500046.1	SL4.0ch00	1449392	1456228	-	NC_007898.3	plastid	99.973	3728	6624	56	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	97.58	58
+Solyc00g500050.1	SL4.0ch00	1468765	1470288	-	NC_007898.3	plastid	100	1524	1524	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atpA	ATP synthase CF1 alpha subunit	100	99
+Solyc00g500053.1	SL4.0ch00	1482429	1483103	-	NC_007898.3	plastid	100	675	675	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpoB	RNA polymerase beta subunit	100	99
+Solyc00g500058.1	SL4.0ch00	1501873	1503003	-	NC_007898.3	plastid	99.149	235	390	60	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf3	photosystem I assembly protein ycf3	87.597	99
+Solyc00g500059.1	SL4.0ch00	1503415	1503858	-	NC_007898.3	plastid	100	135	258	52	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf3	photosystem I assembly protein ycf3	91.304	53
+Solyc00g500060.1	SL4.0ch00	1504953	1506082	-	NC_007898.3	plastid	100	1130	1130	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps4	ribosomal protein S4	100	72
+Solyc00g500065.1	SL4.0ch00	1517470	1519799	+	NC_007898.3	plastid	100	1109	1176	94	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	accD	acetyl-CoA carboxylase carboxyltransferase beta subunit	96.41	99
+Solyc00g500066.1	SL4.0ch00	1520244	1520798	+	NC_007898.3	plastid	99.659	293	348	84	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf4	photosystem I assembly protein ycf4	95.098	88
+Solyc00g500067.1	SL4.0ch00	1521528	1523399	+	NC_007898.3	plastid	100	837	1305	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	petA	cytochrome f	100	64
+Solyc00g500068.1	SL4.0ch00	1524854	1525234	-	NC_007898.3	plastid	98.795	249	324	77	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbE	photosystem II cytochrome b559 alpha subunit	98.765	75
+Solyc00g500069.1	SL4.0ch00	1529733	1530292	-	NC_035963.1	mitochondrion	100	110	189	58	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps12	ribosomal protein S12	95	63
+Solyc00g500070.1	SL4.0ch00	1530401	1531488	-	NC_007898.3	plastid	100	209	402	52	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	clpP	clp protease proteolytic subunit	85.256	99
+Solyc00g500071.1	SL4.0ch00	1532881	1534407	+	NC_007898.3	plastid	100	1527	1527	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbB	photosystem II CP47 chlorophyll apoprotein	100	99
+Solyc00g500072.1	SL4.0ch00	1535034	1535739	+	NC_007898.3	plastid	100	154	207	74	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbH	photosystem II phosphoprotein	100	74
+Solyc00g500073.1	SL4.0ch00	1536348	1538194	+	NC_007898.3	plastid	100	415	759	55	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	petB	cytochrome b6	100	55
+Solyc00g500074.1	SL4.0ch00	1538922	1539399	-	NC_007898.3	plastid	100	249	273	91	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpoA	RNA polymerase alpha subunit	100	91
+Solyc00g500075.1	SL4.0ch00	1539465	1539881	-	NC_007898.3	plastid	100	417	417	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps11	ribosomal protein S11	100	99
+Solyc00g500076.1	SL4.0ch00	1540421	1541361	-	NC_007898.3	plastid	100	413	771	54	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps8	ribosomal protein S8	100	52
+Solyc00g500077.1	SL4.0ch00	1541487	1541843	-	NC_007898.3	plastid	100	357	357	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl16	ribosomal protein L16	100	99
+Solyc00g500078.1	SL4.0ch00	1542445	1545097	+	NC_007898.3	plastid	99.713	348	507	69	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500079.1	SL4.0ch00	1544578	1545006	-	NC_007898.3	plastid	100	429	429	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	100	99
+Solyc00g500080.1	SL4.0ch00	1545667	1546068	-	NC_007898.3	plastid	100	402	402	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	99.237	98
+Solyc00g500081.1	SL4.0ch00	1546736	1553572	+	NC_007898.3	plastid	99.973	3728	6624	56	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	97.58	58
+Solyc00g500082.1	SL4.0ch00	1553762	1555043	+	NC_007898.3	plastid	100	138	216	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf15	hypothetical chloroplast RF15	97.872	65
+Solyc00g500083.1	SL4.0ch00	1559549	1560967	-	NC_007898.3	plastid	98.81	336	501	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500084.1	SL4.0ch00	1568873	1570091	+	NC_007898.3	plastid	100	1219	1219	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	100	98
+Solyc00g500085.1	SL4.0ch00	1574311	1574847	+	NC_007898.3	plastid	100	537	537	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccsA	cytochrome c heme attachment protein	100	100
+Solyc00g500088.1	SL4.0ch00	1585979	1588983	-	NC_007898.3	plastid	100	3005	3005	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	100	100
+Solyc00g500089.1	SL4.0ch00	1594779	1641496	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500090.1	SL4.0ch00	1658262	1678276	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500091.1	SL4.0ch00	1783250	1786029	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500092.1	SL4.0ch00	1864957	1866371	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500093.1	SL4.0ch00	1874674	1876539	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500094.1	SL4.0ch00	1893216	1896409	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500096.1	SL4.0ch00	1902559	1905702	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500097.1	SL4.0ch00	1951775	1952656	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500098.1	SL4.0ch00	1972423	1973505	-	NC_035963.1	mitochondrion	100	1083	1083	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhF	NADH-plastoquinone oxidoreductase subunit 5	46.933	88
+Solyc00g500099.1	SL4.0ch00	1974917	1975405	-	NC_035963.1	mitochondrion	100	489	489	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500100.1	SL4.0ch00	1997082	1998909	+	NC_035963.1	mitochondrion	100	1412	1797	79	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps3	ribosomal protein S3	100	79
+Solyc00g500101.1	SL4.0ch00	1999162	1999569	+	NC_035963.1	mitochondrion	100	408	408	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500102.1	SL4.0ch00	2001243	2001914	+	NC_035963.1	mitochondrion	100	672	672	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500103.1	SL4.0ch00	2044785	2047787	-	NC_035963.1	mitochondrion	99.828	581	861	67	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	95.956	91
+Solyc00g500104.1	SL4.0ch00	2062209	2063000	-	NC_035963.1	mitochondrion	100	792	792	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500105.1	SL4.0ch00	2070087	2071198	+	NC_035963.1	mitochondrion	100	1112	1112	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500106.1	SL4.0ch00	2071557	2072368	-	NC_035963.1	mitochondrion	100	149	483	31	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500107.1	SL4.0ch00	2072639	2073312	-	NC_035963.1	mitochondrion	100	262	489	54	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500108.1	SL4.0ch00	2073351	2073587	-	NC_035963.1	mitochondrion	100	105	183	57	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500109.1	SL4.0ch00	2075757	2076343	-	NC_035963.1	mitochondrion	100	193	303	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500110.1	SL4.0ch00	2076634	2077746	-	NC_035963.1	mitochondrion	99.31	145	510	28	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500111.1	SL4.0ch00	2077853	2078926	-	NC_035963.1	mitochondrion	100	228	453	50	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500112.1	SL4.0ch00	2079839	2080260	-	NC_035963.1	mitochondrion	100	347	369	94	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500113.1	SL4.0ch00	2091092	2092111	-	NC_035963.1	mitochondrion	98.577	281	414	68	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps13	ribosomal protein S13	97.872	68
+Solyc00g500114.1	SL4.0ch00	2093095	2093769	-	NC_035963.1	mitochondrion	97.126	522	615	84	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500115.1	SL4.0ch00	2104898	2105455	-	NC_035963.1	mitochondrion	98.925	558	558	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad3	NADH dehydrogenase subunit 3	99.153	91
+Solyc00g500116.1	SL4.0ch00	2105616	2106104	-	NC_035963.1	mitochondrion	99.387	489	489	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500117.1	SL4.0ch00	2127754	2129577	+	NC_035963.1	mitochondrion	100	845	1755	48	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps3	ribosomal protein S3	97.028	78
+Solyc00g500118.1	SL4.0ch00	2129830	2130237	+	NC_035963.1	mitochondrion	100	408	408	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500119.1	SL4.0ch00	2131909	2132580	+	NC_035963.1	mitochondrion	100	672	672	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500120.1	SL4.0ch00	2136189	2136452	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500121.1	SL4.0ch00	2139483	2140481	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500122.1	SL4.0ch00	2187524	2191157	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500123.1	SL4.0ch00	2464282	2466506	-	NC_007898.3	plastid	99.643	560	1071	52	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhA	NADH-plastoquinone oxidoreductase subunit 1	98.072	99
+Solyc00g500124.1	SL4.0ch00	2466508	2468136	-	NC_007898.3	plastid	100	1629	1629	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhH	NADH-plastoquinone oxidoreductase subunit 7	100	99
+Solyc00g500125.1	SL4.0ch00	2468466	2472134	-	NC_007898.3	plastid	99.962	2621	3519	74	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	95.827	99
+Solyc00g500126.1	SL4.0ch00	2472155	2474141	-	NC_007898.3	plastid	100	1816	1848	98	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	100	98
+Solyc00g500127.1	SL4.0ch00	2488010	2489291	-	NC_007898.3	plastid	100	138	216	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf15	hypothetical chloroplast RF15	97.872	65
+Solyc00g500128.1	SL4.0ch00	2489481	2496317	-	NC_007898.3	plastid	99.973	3728	6624	56	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	97.58	58
+Solyc00g500129.1	SL4.0ch00	2497956	2498732	-	NC_007898.3	plastid	99.713	348	531	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500131.1	SL4.0ch00	2500757	2502286	-	NC_007898.3	plastid	100	845	1356	62	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	matK	maturase K	100	62
+Solyc00g500132.1	SL4.0ch00	2506214	2506871	+	NC_007898.3	plastid	100	175	294	60	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbK	photosystem II protein K	98.305	60
+Solyc00g500133.1	SL4.0ch00	2508851	2510374	-	NC_007898.3	plastid	100	1524	1524	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atpA	ATP synthase CF1 alpha subunit	100	99
+Solyc00g500134.1	SL4.0ch00	2513472	2515162	-	NC_007898.3	plastid	100	663	1140	58	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps2	ribosomal protein S2	100	58
+Solyc00g500135.1	SL4.0ch00	2515388	2522489	-	NC_007898.3	plastid	100	1854	4974	37	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpoC2	RNA polymerase beta' subunit	85.127	53
+Solyc00g500136.1	SL4.0ch00	2532212	2534642	+	NC_007898.3	plastid	100	1360	2331	58	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbC	photosystem II CP43 chlorophyll apoprotein	97.436	60
+Solyc00g500137.1	SL4.0ch00	2536110	2536627	-	NC_007898.3	plastid	100	326	378	86	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps14	ribosomal protein S14	100	79
+Solyc00g500138.1	SL4.0ch00	2536719	2538923	-	NC_007898.3	plastid	100	2205	2205	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psaB	photosystem I P700 apoprotein A2	100	99
+Solyc00g500139.1	SL4.0ch00	2538949	2540940	-	NC_007898.3	plastid	99.862	1447	1701	85	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psaA	photosystem I P700 apoprotein A1	97.211	88
+Solyc00g500141.1	SL4.0ch00	2543950	2544711	+	NC_007898.3	plastid	98.347	363	432	84	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhK	NADH-plastoquinone oxidoreductase subunit K	95.763	82
+Solyc00g500142.1	SL4.0ch00	2545227	2545703	+	NC_007898.3	plastid	99.01	404	414	98	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhJ	NADH-plastoquinone oxidoreductase subunit J	97.744	96
+Solyc00g500143.1	SL4.0ch00	2547836	2549412	+	NC_007898.3	plastid	98.863	1583	1577	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps4	ribosomal protein S4	97.015	72
+Solyc00g500144.1	SL4.0ch00	2550432	2550873	+	NC_007898.3	plastid	100	135	258	52	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf3	photosystem I assembly protein ycf3	91.304	53
+Solyc00g500145.1	SL4.0ch00	2551285	2552415	+	NC_007898.3	plastid	98.246	228	306	75	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf3	photosystem I assembly protein ycf3	76.19	99
+Solyc00g500147.1	SL4.0ch00	2564107	2566997	-	NC_007898.3	plastid	96.078	1428	2730	51	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	90.862	99
+Solyc00g500148.1	SL4.0ch00	2567048	2568269	-	NC_007898.3	plastid	97.455	786	1002	77	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	89.683	75
+Solyc00g500149.1	SL4.0ch00	2568289	2570392	-	NC_007898.3	plastid	98.551	1380	1683	82	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	95.708	83
+Solyc00g500150.1	SL4.0ch00	2571552	2571953	+	NC_007898.3	plastid	98.953	191	333	57	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	80.153	97
+Solyc00g500151.1	SL4.0ch00	2572525	2575171	-	NC_007898.3	plastid	98.276	348	468	74	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500152.1	SL4.0ch00	2572616	2573044	+	NC_007898.3	plastid	98.834	429	429	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	97.887	99
+Solyc00g500153.1	SL4.0ch00	2574176	2574502	+	NC_007898.3	plastid	92.775	346	327	99	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps3	ribosomal protein S3	89.565	99
+Solyc00g500154.1	SL4.0ch00	2575750	2576105	+	NC_007898.3	plastid	96.078	357	348	100	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl16	ribosomal protein L16	94.068	99
+Solyc00g500155.1	SL4.0ch00	2576229	2576597	+	NC_007898.3	plastid	98.645	369	369	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl14	ribosomal protein L14	95.902	99
+Solyc00g500156.1	SL4.0ch00	2577574	2577990	+	NC_007898.3	plastid	98.082	417	417	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps11	ribosomal protein S11	95.652	99
+Solyc00g500157.1	SL4.0ch00	2578056	2578855	+	NC_007898.3	plastid	99.272	412	759	54	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpoA	RNA polymerase alpha subunit	92.105	99
+Solyc00g500158.1	SL4.0ch00	2579259	2579783	-	NC_007898.3	plastid	99.429	525	525	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	petD	cytochrome b6/f complex subunit IV	99.367	90
+Solyc00g500159.1	SL4.0ch00	2715948	2719757	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500160.1	SL4.0ch00	2787033	2787847	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500161.1	SL4.0ch00	2855295	2887184	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500162.1	SL4.0ch00	2893186	2893646	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500163.1	SL4.0ch00	2896826	2924570	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500164.1	SL4.0ch00	2948141	2962600	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500165.1	SL4.0ch00	2977069	2977764	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500166.1	SL4.0ch00	3009833	3010968	-	NC_035963.1	mitochondrion	100	165	435	38	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500167.1	SL4.0ch00	3011082	3012921	+	NC_035963.1	mitochondrion	99.325	593	1098	54	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmFc	cytochrome c maturation protein CcmFC	100	10
+Solyc00g500168.1	SL4.0ch00	3033769	3034608	-	NC_035963.1	mitochondrion	100	840	840	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	mttB	SecY-independent transporter protein	100	99
+Solyc00g500169.1	SL4.0ch00	3063538	3065389	-	NC_035963.1	mitochondrion	100	1852	1852	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhF	NADH-plastoquinone oxidoreductase subunit 5	45.38	90
+Solyc00g500170.1	SL4.0ch00	3066659	3067566	-	NC_035963.1	mitochondrion	99.618	262	447	59	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500171.1	SL4.0ch00	3073664	3074179	-	NC_035963.1	mitochondrion	100	516	516	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	100	83
+Solyc00g500172.1	SL4.0ch00	3075612	3076169	-	NC_035963.1	mitochondrion	100	558	558	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	100	82
+Solyc00g500173.1	SL4.0ch00	3085457	3086151	-	NC_035963.1	mitochondrion	99.281	695	695	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atp4	ATP synthase subunit 4	98.485	99
+Solyc00g500174.1	SL4.0ch00	3129847	3158600	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500175.1	SL4.0ch00	3220336	3237694	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500176.1	SL4.0ch00	3312181	3313737	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500177.1	SL4.0ch00	3480316	3484090	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500178.1	SL4.0ch00	3520842	3522157	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500179.1	SL4.0ch00	3538808	3617506	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500180.1	SL4.0ch00	3651567	3665215	+	NC_035963.1	mitochondrion	100	61	348	18	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500181.1	SL4.0ch00	3676208	3678267	-	NC_035963.1	mitochondrion	100	1237	1953	63	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500183.1	SL4.0ch00	3704165	3706096	+	NC_035963.1	mitochondrion	100	169	306	55	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad7	NADH dehydrogenase subunit 7	90.909	54
+Solyc00g500184.1	SL4.0ch00	3706763	3707940	+	NC_035963.1	mitochondrion	100	699	1014	69	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad7	NADH dehydrogenase subunit 7	89.299	80
+Solyc00g500185.1	SL4.0ch00	3708705	3710247	+	NC_035963.1	mitochondrion	100	387	819	47	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad7	NADH dehydrogenase subunit 7	62.914	55
+Solyc00g500186.1	SL4.0ch00	3745513	3747009	-	NC_035963.1	mitochondrion	100	1497	1497	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cox1	cytochrome c oxidase subunit 1	100	99
+Solyc00g500187.1	SL4.0ch00	3749487	3751765	-	NC_035963.1	mitochondrion	100	397	909	44	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	100	43
+Solyc00g500188.1	SL4.0ch00	3754843	3755358	-	NC_035963.1	mitochondrion	100	516	516	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	100	83
+Solyc00g500189.1	SL4.0ch00	3756791	3757348	-	NC_035963.1	mitochondrion	100	558	558	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	100	82
+Solyc00g500190.1	SL4.0ch00	3767429	3770395	+	NC_007898.3	plastid	100	308	621	50	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	100	49
+Solyc00g500191.1	SL4.0ch00	3770397	3771752	+	NC_007898.3	plastid	100	1356	1356	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	100	100
+Solyc00g500192.1	SL4.0ch00	3775348	3776977	+	NC_007898.3	plastid	100	1630	1630	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhH	NADH-plastoquinone oxidoreductase subunit 7	100	99
+Solyc00g500193.1	SL4.0ch00	3776979	3779203	+	NC_007898.3	plastid	99.643	560	1071	52	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhA	NADH-plastoquinone oxidoreductase subunit 1	98.072	99
+Solyc00g500194.1	SL4.0ch00	3783896	3784749	-	NC_007898.3	plastid	100	124	243	51	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccsA	cytochrome c heme attachment protein	100	51
+Solyc00g500195.1	SL4.0ch00	3787465	3789905	+	NC_007898.3	plastid	100	1323	1425	93	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhF	NADH-plastoquinone oxidoreductase subunit 5	100	93
+Solyc00g500197.1	SL4.0ch00	3803813	3805094	-	NC_007898.3	plastid	100	138	216	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf15	hypothetical chloroplast RF15	97.872	65
+Solyc00g500198.1	SL4.0ch00	3805284	3812120	-	NC_007898.3	plastid	99.973	3728	6624	56	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	97.58	58
+Solyc00g500199.1	SL4.0ch00	3813759	3814535	-	NC_007898.3	plastid	99.713	348	531	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500200.1	SL4.0ch00	3814973	3816034	-	NC_007898.3	plastid	100	1062	1062	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbA	photosystem II protein D1	100	99
+Solyc00g500201.1	SL4.0ch00	3816560	3818089	-	NC_007898.3	plastid	100	845	1356	62	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	matK	maturase K	100	62
+Solyc00g500202.1	SL4.0ch00	3822020	3822677	+	NC_007898.3	plastid	100	175	294	60	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbK	photosystem II protein K	98.305	60
+Solyc00g500203.1	SL4.0ch00	3824657	3826180	-	NC_007898.3	plastid	100	1524	1524	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atpA	ATP synthase CF1 alpha subunit	100	99
+Solyc00g500204.1	SL4.0ch00	3829278	3830968	-	NC_007898.3	plastid	100	663	1140	58	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps2	ribosomal protein S2	100	58
+Solyc00g500205.1	SL4.0ch00	3831194	3838295	-	NC_007898.3	plastid	100	1854	4974	37	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpoC2	RNA polymerase beta' subunit	85.127	53
+Solyc00g500206.1	SL4.0ch00	3848018	3850448	+	NC_007898.3	plastid	100	1360	2331	58	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbC	photosystem II CP43 chlorophyll apoprotein	97.436	60
+Solyc00g500207.1	SL4.0ch00	3851915	3852432	-	NC_007898.3	plastid	100	326	378	86	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps14	ribosomal protein S14	100	79
+Solyc00g500208.1	SL4.0ch00	3852524	3854728	-	NC_007898.3	plastid	100	2205	2205	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psaB	photosystem I P700 apoprotein A2	100	99
+Solyc00g500209.1	SL4.0ch00	3854754	3857006	-	NC_007898.3	plastid	99.931	1447	1962	74	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psaA	photosystem I P700 apoprotein A1	97.41	76
+Solyc00g500210.1	SL4.0ch00	3857765	3858895	-	NC_007898.3	plastid	99.149	235	390	60	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf3	photosystem I assembly protein ycf3	87.597	99
+Solyc00g500211.1	SL4.0ch00	3859307	3859750	-	NC_007898.3	plastid	100	135	258	52	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf3	photosystem I assembly protein ycf3	91.304	53
+Solyc00g500213.1	SL4.0ch00	3869025	3869646	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500214.1	SL4.0ch00	3869683	3871838	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500215.1	SL4.0ch00	3888284	3892889	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500216.1	SL4.0ch00	3903540	3905605	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500217.1	SL4.0ch00	3926856	3927526	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500218.1	SL4.0ch00	3928777	3931680	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500219.1	SL4.0ch00	3964601	3965757	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500220.1	SL4.0ch00	4000231	4005112	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500221.1	SL4.0ch00	4006068	4007011	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500222.1	SL4.0ch00	4007108	4007767	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500223.1	SL4.0ch00	4351078	4353937	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500224.1	SL4.0ch00	4418688	4420952	-	NC_035963.1	mitochondrion	99.296	852	1797	47	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmFc	cytochrome c maturation protein CcmFC	89.922	42
+Solyc00g500225.1	SL4.0ch00	4463995	4464591	-	NC_035963.1	mitochondrion	100	263	303	87	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad3	NADH dehydrogenase subunit 3	98.851	86
+Solyc00g500226.1	SL4.0ch00	4465449	4467796	-	NC_035963.1	mitochondrion	99.852	676	1281	53	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500227.1	SL4.0ch00	4472979	4475038	+	NC_035963.1	mitochondrion	100	1237	1863	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500229.1	SL4.0ch00	4511808	4511970	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500230.1	SL4.0ch00	4512109	4517780	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500231.1	SL4.0ch00	4537857	4543073	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500232.1	SL4.0ch00	4589812	4590649	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500233.1	SL4.0ch00	4718474	4723843	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500234.1	SL4.0ch00	4936041	4944981	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500235.1	SL4.0ch00	4986640	4992714	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500236.1	SL4.0ch00	4996087	5023438	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500237.1	SL4.0ch00	5030385	5031223	+	NC_035963.1	mitochondrion	99.8	500	615	81	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	mttB	SecY-independent transporter protein	75.369	96
+Solyc00g500238.1	SL4.0ch00	5062854	5063440	+	NC_035963.1	mitochondrion	100	172	354	49	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500239.1	SL4.0ch00	5102049	5102753	+	NC_035963.1	mitochondrion	100	705	705	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	94.667	96
+Solyc00g500240.1	SL4.0ch00	5113129	5114311	+	NC_035963.1	mitochondrion	100	590	966	61	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cob	apocytochrome b	81.425	99
+Solyc00g500241.1	SL4.0ch00	5138634	5140899	+	NC_035963.1	mitochondrion	100	852	1803	47	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmFc	cytochrome c maturation protein CcmFC	100	43
+Solyc00g500242.1	SL4.0ch00	5149819	5150571	-	NC_035963.1	mitochondrion	100	753	753	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmC	cytochrome c maturation protein CcmC	100	99
+Solyc00g500244.1	SL4.0ch00	5153132	5153539	-	NC_035963.1	mitochondrion	100	408	408	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500245.1	SL4.0ch00	5153788	5157253	-	NC_035963.1	mitochondrion	100	1356	2028	67	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps3	ribosomal protein S3	97.441	69
+Solyc00g500246.1	SL4.0ch00	5231859	5238957	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500247.1	SL4.0ch00	5457174	5459116	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500248.1	SL4.0ch00	5474685	5481317	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500249.1	SL4.0ch00	5495164	5497083	-	NC_035963.1	mitochondrion	99.927	1365	1827	75	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmFN	cytochrome c maturation protein CcmFN	94.737	92
+Solyc00g500251.1	SL4.0ch00	5503541	5505819	-	NC_035963.1	mitochondrion	100	397	909	44	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	100	43
+Solyc00g500252.1	SL4.0ch00	5508897	5509412	-	NC_035963.1	mitochondrion	100	516	516	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	100	83
+Solyc00g500253.1	SL4.0ch00	5510845	5511402	-	NC_035963.1	mitochondrion	100	558	558	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad4	NADH dehydrogenase subunit 4	100	82
+Solyc00g500254.1	SL4.0ch00	5527933	5528372	-	NC_035963.1	mitochondrion	99.634	273	369	74	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl20	ribosomal protein L20	79.032	50
+Solyc00g500255.1	SL4.0ch00	5536705	5537184	+	NC_035963.1	mitochondrion	100	480	480	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500256.1	SL4.0ch00	5538238	5540377	+	NC_035963.1	mitochondrion	100	345	828	42	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500257.1	SL4.0ch00	5547194	5548799	-	NC_035963.1	mitochondrion	100	1606	1606	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500258.1	SL4.0ch00	5740167	5740917	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500259.1	SL4.0ch00	5838346	5850670	+	NC_035963.1	mitochondrion	100	191	1044	18	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500260.1	SL4.0ch00	5872091	5879508	-	NC_035963.1	mitochondrion	100	973	2790	35	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cob	apocytochrome b	99.387	35
+Solyc00g500261.1	SL4.0ch00	5890653	5891204	-	NC_035963.1	mitochondrion	100	552	552	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad3	NADH dehydrogenase subunit 3	100	90
+Solyc00g500262.1	SL4.0ch00	5892264	5894611	-	NC_035963.1	mitochondrion	99.852	676	1281	53	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500263.1	SL4.0ch00	5899398	5901261	+	NC_035963.1	mitochondrion	100	1864	1864	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500264.1	SL4.0ch00	6072885	6118363	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500265.1	SL4.0ch00	6093116	6093497	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500266.1	SL4.0ch00	6098331	6105911	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500267.1	SL4.0ch00	6150279	6157947	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500269.1	SL4.0ch00	6324020	6341295	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500270.1	SL4.0ch00	6341414	6343438	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500271.1	SL4.0ch00	6397350	6398432	-	NC_035963.1	mitochondrion	100	1083	1083	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhF	NADH-plastoquinone oxidoreductase subunit 5	46.933	88
+Solyc00g500272.1	SL4.0ch00	6399844	6400332	-	NC_035963.1	mitochondrion	100	489	489	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500273.1	SL4.0ch00	6420357	6420697	+	NC_035963.1	mitochondrion	100	341	341	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps19	ribosomal protein S19	100	94
+Solyc00g500274.1	SL4.0ch00	6422007	6423834	+	NC_035963.1	mitochondrion	100	1412	1797	79	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps3	ribosomal protein S3	100	79
+Solyc00g500275.1	SL4.0ch00	6424087	6424494	+	NC_035963.1	mitochondrion	100	408	408	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500276.1	SL4.0ch00	6426168	6426839	+	NC_035963.1	mitochondrion	100	672	672	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500277.1	SL4.0ch00	6427054	6427806	+	NC_035963.1	mitochondrion	100	753	753	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmC	cytochrome c maturation protein CcmC	100	99
+Solyc00g500278.1	SL4.0ch00	6451543	6453529	+	NC_007898.3	plastid	100	1816	1848	98	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	100	98
+Solyc00g500279.1	SL4.0ch00	6453550	6454382	+	NC_007898.3	plastid	99.425	174	342	51	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	98.276	51
+Solyc00g500280.1	SL4.0ch00	6457994	6459175	+	NC_007898.3	plastid	99.838	616	966	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhH	NADH-plastoquinone oxidoreductase subunit 7	99.029	64
+Solyc00g500281.1	SL4.0ch00	6475315	6476082	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500282.1	SL4.0ch00	6501940	6533300	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500283.1	SL4.0ch00	6518936	6548871	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500284.1	SL4.0ch00	6655184	6656548	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500285.1	SL4.0ch00	6656990	6657973	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500286.1	SL4.0ch00	6695051	6695836	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500287.1	SL4.0ch00	6695868	6698863	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500288.1	SL4.0ch00	6827316	6831899	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500289.1	SL4.0ch00	6847341	6851528	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500290.1	SL4.0ch00	6863061	6870289	+	NC_007898.3	plastid	99.845	5797	6483	89	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpoC2	RNA polymerase beta' subunit	99.777	100
+Solyc00g500291.1	SL4.0ch00	6870653	6872343	+	NC_007898.3	plastid	100	663	1140	58	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps2	ribosomal protein S2	100	58
+Solyc00g500292.1	SL4.0ch00	6875441	6876964	+	NC_007898.3	plastid	100	1524	1524	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atpA	ATP synthase CF1 alpha subunit	100	99
+Solyc00g500294.1	SL4.0ch00	6879737	6885831	-	NC_007898.3	plastid	100	253	1242	20	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500295.1	SL4.0ch00	6883532	6885061	+	NC_007898.3	plastid	100	845	1356	62	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	matK	maturase K	100	62
+Solyc00g500296.1	SL4.0ch00	6885587	6886648	+	NC_007898.3	plastid	100	1062	1062	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbA	photosystem II protein D1	100	99
+Solyc00g500297.1	SL4.0ch00	6887343	6887771	-	NC_007898.3	plastid	100	429	429	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	100	99
+Solyc00g500298.1	SL4.0ch00	6888432	6888833	-	NC_007898.3	plastid	100	402	402	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl2	ribosomal protein L2	99.237	98
+Solyc00g500299.1	SL4.0ch00	6893327	6899371	-	NC_007898.3	plastid	100	414	909	46	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhB	NADH-plastoquinone oxidoreductase subunit 2	96.503	47
+Solyc00g500300.1	SL4.0ch00	6896527	6897808	+	NC_007898.3	plastid	100	138	216	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf15	hypothetical chloroplast RF15	97.872	65
+Solyc00g500301.1	SL4.0ch00	6902314	6903732	-	NC_007898.3	plastid	98.81	336	501	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500302.1	SL4.0ch00	6934274	6934968	-	NC_035963.1	mitochondrion	100	695	695	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atp4	ATP synthase subunit 4	100	99
+Solyc00g500303.1	SL4.0ch00	6943349	6944146	+	NC_035963.1	mitochondrion	100	798	798	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cox3	cytochrome c oxidase subunit 3	100	99
+Solyc00g500304.1	SL4.0ch00	6949035	6949742	+	NC_035963.1	mitochondrion	100	708	708	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	94.69	96
+Solyc00g500305.1	SL4.0ch00	6964865	6976032	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500306.1	SL4.0ch00	6976692	6982452	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500307.1	SL4.0ch00	6985225	6986167	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500308.1	SL4.0ch00	6991029	6997138	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500309.1	SL4.0ch00	7069853	7071680	+	NC_035963.1	mitochondrion	97.45	1412	1773	78	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps3	ribosomal protein S3	97.028	78
+Solyc00g500310.1	SL4.0ch00	7071933	7072340	+	NC_035963.1	mitochondrion	99.755	408	408	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500311.1	SL4.0ch00	7073776	7075802	+	NC_035963.1	mitochondrion	99.103	1673	2027	83	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500312.1	SL4.0ch00	7079233	7083444	-	NC_035963.1	mitochondrion	99.794	973	2463	40	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cob	apocytochrome b	99.08	40
+Solyc00g500313.1	SL4.0ch00	7210988	7211173	-	NC_035963.1	mitochondrion	100	186	186	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500314.1	SL4.0ch00	7211309	7212208	-	NC_035963.1	mitochondrion	100	585	789	74	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhB	NADH-plastoquinone oxidoreductase subunit 2	37.557	83
+Solyc00g500315.1	SL4.0ch00	7212217	7212907	-	NC_035963.1	mitochondrion	98.077	364	525	68	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500316.1	SL4.0ch00	7214608	7216342	-	NC_035963.1	mitochondrion	99.807	519	693	75	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500317.1	SL4.0ch00	7221272	7222354	-	NC_035963.1	mitochondrion	100	1083	1083	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ndhF	NADH-plastoquinone oxidoreductase subunit 5	46.933	88
+Solyc00g500318.1	SL4.0ch00	7223766	7224254	-	NC_035963.1	mitochondrion	100	489	489	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500319.1	SL4.0ch00	7319835	7325236	+	NC_007898.3	plastid	100	1854	4353	43	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpoC2	RNA polymerase beta' subunit	85.127	61
+Solyc00g500320.1	SL4.0ch00	7325462	7327152	+	NC_007898.3	plastid	100	663	1140	58	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps2	ribosomal protein S2	100	58
+Solyc00g500324.1	SL4.0ch00	7339547	7343102	-	NC_007898.3	plastid	99.888	3558	3556	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf1	hypothetical chloroplast RF1	99.155	98
+Solyc00g500325.1	SL4.0ch00	7350993	7352411	+	NC_007898.3	plastid	98.81	336	501	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500326.1	SL4.0ch00	7356917	7358198	-	NC_007898.3	plastid	100	138	216	64	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf15	hypothetical chloroplast RF15	97.872	65
+Solyc00g500327.1	SL4.0ch00	7358388	7365224	-	NC_007898.3	plastid	99.973	3728	6624	56	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ycf2	hypothetical chloroplast RF2	97.58	58
+Solyc00g500328.1	SL4.0ch00	7366863	7367639	-	NC_007898.3	plastid	100	341	423	81	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500329.1	SL4.0ch00	7368077	7369138	-	NC_007898.3	plastid	100	1062	1062	100	plastid-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbA	photosystem II protein D1	100	99
+Solyc00g500330.1	SL4.0ch00	7369664	7371193	-	NC_007898.3	plastid	100	845	1356	62	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	matK	maturase K	100	62
+Solyc00g500331.1	SL4.0ch00	7375123	7375780	+	NC_007898.3	plastid	100	175	294	60	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	psbK	photosystem II protein K	98.305	60
+Solyc00g500333.1	SL4.0ch00	7379340	7380579	-	NC_007898.3	plastid	99.738	382	495	77	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atpF	ATP synthase CF0 subunit I	83.152	99
+Solyc00g500334.1	SL4.0ch00	7380822	7381223	-	NC_007898.3	plastid	100	151	225	67	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atpH	ATP synthase CF0 subunit III	90	80
+Solyc00g500336.1	SL4.0ch00	7432879	7433631	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500337.1	SL4.0ch00	7446097	7446892	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500338.1	SL4.0ch00	7469165	7471116	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500339.1	SL4.0ch00	7515789	7525561	+	NC_035963.1	mitochondrion	100	243	1173	21	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500340.1	SL4.0ch00	7525833	7526419	-	NC_035963.1	mitochondrion	100	172	354	49	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500341.1	SL4.0ch00	7526750	7527630	+	NC_035963.1	mitochondrion	98.985	197	501	39	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500342.1	SL4.0ch00	7527654	7528562	-	NC_035963.1	mitochondrion	99.504	403	561	72	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500343.1	SL4.0ch00	7528846	7529289	+	NC_035963.1	mitochondrion	100	444	444	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500344.1	SL4.0ch00	7533515	7533793	-	NC_035963.1	mitochondrion	91.398	279	255	100	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500345.1	SL4.0ch00	7538034	7541500	-	NC_035963.1	mitochondrion	99.864	1467	2409	61	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	atp1	ATP synthase subunit 1	100	61
+Solyc00g500346.1	SL4.0ch00	7558050	7558889	-	NC_035963.1	mitochondrion	100	840	840	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	mttB	SecY-independent transporter protein	100	99
+Solyc00g500347.1	SL4.0ch00	7621051	7621518	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500348.1	SL4.0ch00	7657074	7658993	-	NC_035963.1	mitochondrion	99.927	1365	1827	75	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	ccmFN	cytochrome c maturation protein CcmFN	94.737	92
+Solyc00g500349.1	SL4.0ch00	7661477	7662973	-	NC_035963.1	mitochondrion	100	1497	1497	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cox1	cytochrome c oxidase subunit 1	100	99
+Solyc00g500350.1	SL4.0ch00	7678241	7680300	-	NC_035963.1	mitochondrion	100	1237	1863	66	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500351.1	SL4.0ch00	7684493	7689166	+	NC_035963.1	mitochondrion	100	606	2178	28	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rps13	ribosomal protein S13	100	15
+Solyc00g500352.1	SL4.0ch00	7702104	7702834	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500354.1	SL4.0ch00	7800835	7801630	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500355.1	SL4.0ch00	7972934	7978840	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500356.1	SL4.0ch00	7997240	8011815	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500357.1	SL4.0ch00	8023802	8024641	+	NC_035963.1	mitochondrion	100	840	840	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	mttB	SecY-independent transporter protein	100	99
+Solyc00g500359.1	SL4.0ch00	8042987	8043394	+	NC_035963.1	mitochondrion	100	408	408	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500360.1	SL4.0ch00	8045068	8045739	+	NC_035963.1	mitochondrion	100	672	672	100	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500361.1	SL4.0ch00	8070651	8071690	+	NC_035963.1	mitochondrion	99.794	485	867	56	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	nad3	NADH dehydrogenase subunit 3	99.153	41
+Solyc00g500362.1	SL4.0ch00	8085726	8087102	+	NC_035963.1	mitochondrion	100	603	1185	51	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	rpl5	ribosomal protein L5	100	46
+Solyc00g500363.1	SL4.0ch00	8087104	8087411	+	NC_035963.1	mitochondrion	99.531	213	243	88	mitochondrion-type near-identical	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500364.1	SL4.0ch00	8088757	8089938	+	NC_035963.1	mitochondrion	100	590	966	61	organelle-similar, diverged	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	cob	apocytochrome b	81.425	99
+Solyc00g500365.1	SL4.0ch00	8371896	8390021	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500366.1	SL4.0ch00	8445497	8449160	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500367.1	SL4.0ch00	8465313	8470735	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500368.1	SL4.0ch00	8476400	8481146	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500369.1	SL4.0ch00	8481234	8489347	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500370.1	SL4.0ch00	8493114	8494031	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500371.1	SL4.0ch00	8498304	8499216	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500372.1	SL4.0ch00	8515501	8516616	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500373.1	SL4.0ch00	8612096	8614158	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500374.1	SL4.0ch00	8651685	8656070	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500375.1	SL4.0ch00	8663826	8672871	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500376.1	SL4.0ch00	8788406	8792192	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500377.1	SL4.0ch00	8815889	8817757	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500378.1	SL4.0ch00	8859557	8860080	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500379.1	SL4.0ch00	8907535	8922087	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500380.1	SL4.0ch00	8911340	8911540	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500381.1	SL4.0ch00	8911640	8935518	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500382.1	SL4.0ch00	9020166	9032500	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500383.1	SL4.0ch00	9036490	9036969	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500384.1	SL4.0ch00	9049743	9074437	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500385.1	SL4.0ch00	9049949	9057592	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500386.1	SL4.0ch00	9064630	9065624	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500387.1	SL4.0ch00	9065894	9066737	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500388.1	SL4.0ch00	9079083	9080047	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500389.1	SL4.0ch00	9111103	9112323	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500390.1	SL4.0ch00	9136939	9137519	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500391.1	SL4.0ch00	9137689	9138161	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500392.1	SL4.0ch00	9148577	9149199	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500393.1	SL4.0ch00	9155251	9155532	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500394.1	SL4.0ch00	9163194	9169787	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500395.1	SL4.0ch00	9170082	9181257	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500396.1	SL4.0ch00	9176882	9181257	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500397.1	SL4.0ch00	9202722	9207365	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500398.1	SL4.0ch00	9210414	9230266	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500399.1	SL4.0ch00	9236845	9237250	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500400.1	SL4.0ch00	9239428	9239799	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500401.1	SL4.0ch00	9248706	9249129	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500402.1	SL4.0ch00	9253917	9254395	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500403.1	SL4.0ch00	9255055	9255504	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500404.1	SL4.0ch00	9361781	9372198	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500405.1	SL4.0ch00	9384708	9385325	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500406.1	SL4.0ch00	9385352	9387880	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500407.1	SL4.0ch00	9446249	9451116	-	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500408.1	SL4.0ch00	9612002	9614214	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
+Solyc00g500409.1	SL4.0ch00	9631687	9632458	+	NA	NA	NA	NA	NA	NA	no close organelle similarity	NA	NA	NA	NA	NA	FALSE	FALSE	0	TRUE	NA	NA	NA	NA
