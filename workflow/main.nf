@@ -28,6 +28,8 @@ params {
     // so the Salmon defaults are kept and passed explicitly (docs/salmon_quantification.md).
     salmon_fld_mean: Integer = 250
     salmon_fld_sd: Integer = 25
+    // salmon quant --gcBias (D-012; recommended by the DESeq2 vignette). --seqBias is not used.
+    salmon_gc_bias: Boolean = true
 
     multiqc_title: String = 'STV_GSE137303 raw FASTQ QC'
 

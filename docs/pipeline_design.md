@@ -26,7 +26,7 @@ Status: **design proposal; quantification strategy requires human approval.** No
 
 - Samplesheet with `strandedness` that may be `auto`; nf-core infers it by sub-sampling 1 M reads and running Salmon, calling *forward/reverse* at ≥ 0.8 of fragments and *unstranded* when forward/reverse differ by < 0.1, otherwise *undetermined* (possible gDNA contamination).
 - Salmon with a **decoy-aware index built from the genome** is the default recommendation when a genome FASTA is supplied.
-- Salmon `--seqBias`/`--gcBias` are not on by default in nf-core; DESeq2 docs recommend `--gcBias` unless the data are known not to need it. Whether `--gcBias` is appropriate for **single-end** data: TO BE VERIFIED against Salmon behaviour before use. **Phase 3: no bias flags used (nf-core default); recorded as owner decision D-012.**
+- Salmon `--seqBias`/`--gcBias` are not on by default in nf-core; DESeq2 docs recommend `--gcBias` unless the data are known not to need it. Whether `--gcBias` is appropriate for **single-end** data: TO BE VERIFIED against Salmon behaviour before use. **Phase 3: the exploratory `-l A` run used no bias flags (nf-core default). The final run uses `--gcBias` (D-012, approved): Salmon 2.7.0 ran it on single-end data without warnings, and `--seqBias` is not used.**
 - Since nf-core/rnaseq v3.0, **featureCounts is no longer used for quantification** (only biotype QC), citing Zhao et al. 2015 and Soneson et al. 2015; HISAT2 runs produce no quantification there.
 - STAR needs "typically around 38GB" RAM for human GRCh37 (nf-core docs); HISAT2 is the documented low-memory alternative.
 - Trimming (Trim Galore!/fastp) is on by default in nf-core; **we will not adopt this default** (project rule: trim only if QC justifies it).

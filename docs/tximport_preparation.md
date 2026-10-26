@@ -1,6 +1,6 @@
 # tx2gene and tximport preparation (Phase 3)
 
-Status: the import is **prepared and validated**. No differential-expression analysis, filtering, thresholds, contrasts, interpretation or enrichment has been run.
+Status: the import of the **final Salmon quantification (explicit `-l SR` + `--gcBias`)** is prepared and validated. No differential-expression analysis, filtering, thresholds, contrasts, interpretation or enrichment has been run.
 
 ## 1. tx2gene
 
@@ -17,6 +17,8 @@ Script: [`scripts/bash/build_tx2gene.sh`](../scripts/bash/build_tx2gene.sh) → 
 | `quant.sf` names (33,976) missing from tx2gene | **0** (exact string match) |
 | tx2gene IDs absent from `quant.sf` | 99, all of them the duplicates collapsed by `salmon index` (`duplicate_clusters.tsv`); unexplained: **0** |
 | Same transcript set and order in all six `quant.sf` | yes |
+
+Re-validated against the final run: same index, so the same 33,976 names and 0 mismatches. Only the sample order recorded in the validation table changed.
 
 ## 2. R environment `stv-r`
 
@@ -37,19 +39,25 @@ Exact lock (139 packages): [`envs/stv-r.linux-64.lock.txt`](../envs/stv-r.linux-
 
 1. reads the workflow's sample index `results/quantification/salmon/samples.csv` and `config/samplesheet.csv` and checks that the sample IDs, conditions and the 3 + 3 design agree;
 2. discovers the six `quant.sf` files and checks that their directories match the workflow index;
-3. validates tx2gene against the `quant.sf` names;
-4. runs `tximport(files, type = "salmon", tx2gene = tx2gene)` with defaults (`countsFromAbundance = "no"`, i.e. estimated counts + abundance-weighted average transcript length, which `DESeqDataSetFromTximport()` converts to an offset, per the tximport and DESeq2 vignettes);
-5. writes [`results/quantification/tximport_validation.tsv`](../results/quantification/tximport_validation.tsv) and [`tximport_sessionInfo.txt`](../results/quantification/tximport_sessionInfo.txt); it stops on any failed check.
+3. reads each `aux_info/meta_info.json` and checks that library type (applied = requested), `gc_bias_correct`, `seq_bias_correct` and Salmon version are identical across samples;
+4. validates tx2gene against the `quant.sf` names;
+5. runs `tximport(files, type = "salmon", tx2gene = tx2gene)` with defaults (`countsFromAbundance = "no"`, i.e. estimated counts + abundance-weighted average transcript length, which `DESeqDataSetFromTximport()` converts to an offset, per the tximport and DESeq2 vignettes);
+6. writes [`results/quantification/tximport_validation.tsv`](../results/quantification/tximport_validation.tsv) and [`tximport_sessionInfo.txt`](../results/quantification/tximport_sessionInfo.txt); it stops on any failed check.
 
-Result (all checks OK):
+Result on the **final** quantification (all checks OK):
 
-| Check | Value |
-|---|---|
-| Samples / per condition | 6 / STV_free = 3, STV_infected = 3 |
-| `quant.sf` found and matching the workflow index | 6/6 |
-| Gene matrix dimension | **33,976 genes × 6 samples** (= genes whose transcript is in `quant.sf`) |
-| Gene-level totals vs Salmon `NumReads` totals | identical (max relative difference 0) |
-| NA counts / non-positive lengths | 0 / 0 |
-| Genes with zero counts in all six samples | 9,796 (reported only; no filtering applied) |
+| Check | Final (`SR + --gcBias`) | Exploratory (`-l A`, archived table) |
+|---|---|---|
+| Samples / per condition | 6 / STV_free = 3, STV_infected = 3 | same |
+| `quant.sf` found and matching the workflow index | 6/6 | 6/6 |
+| Library type requested / applied | SR / SR | A / SR |
+| GC bias / sequence bias correction | yes / no | no / no |
+| Gene matrix dimension | **33,976 genes × 6 samples** | 33,976 × 6 |
+| Gene-level totals = Salmon `NumReads` totals = `num_mapped` | 15,902,183; 14,698,030; 12,871,350; 17,121,521; 15,217,015; 17,871,112 (rep1–3 free, rep1–3 infected) | identical |
+| Max relative difference gene vs Salmon totals | 0 | 0 |
+| NA counts / non-positive lengths | 0 / 0 | 0 / 0 |
+| Genes with zero counts in all six samples | 9,808 (reported only; no filtering applied) | 9,796 |
 
-The script deliberately stops before `DESeqDataSetFromTximport()`. The DESeq2 design (proposed earlier: `~ condition`, with `STV_free` as reference level), any pre-filtering, the significance threshold, the LFC threshold/shrinkage method and the library-type choice (D-010) all require owner approval.
+The exploratory validation table is kept as [`results/quantification/tximport_validation_libA_exploratory.tsv`](../results/quantification/tximport_validation_libA_exploratory.tsv) (renamed with `git mv`, content unchanged).
+
+The script deliberately stops before `DESeqDataSetFromTximport()`. The DESeq2 design (proposed earlier: `~ condition`, with `STV_free` as reference level), any pre-filtering, the significance threshold and the LFC threshold/shrinkage method all require owner approval. For pre-filtering, note the 3,149 very low-count transcripts whose GC-bias adjustment differs between samples (`docs/salmon_quantification.md` §7).

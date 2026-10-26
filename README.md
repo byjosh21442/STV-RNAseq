@@ -29,7 +29,7 @@ Verified metadata: [data/metadata/samples_metadata.tsv](data/metadata/samples_me
 | | Original study (GEO record) | This reanalysis |
 |---|---|---|
 | Genome / annotation | **SL2.50 / ITAG2.4-era analysis** (GEO text); the published count table is keyed by NCBI RefSeq Annotation Release 102 on SL2.50 ([docs/geo_counts_audit.md](docs/geo_counts_audit.md)) | **SGN SL4.0 genome + ITAG4.0 annotation** (D-001) |
-| Read processing | TopHat/Bowtie2 alignment; Cuffnorm FPKM / normalized counts | Raw ENA FASTQ → FastQC/MultiQC → **Salmon** (selective alignment, decoy-aware index) → **tximport** → **DESeq2** (next phase) |
+| Read processing | TopHat/Bowtie2 alignment; Cuffnorm FPKM / normalized counts | Raw ENA FASTQ → FastQC/MultiQC → **Salmon** (selective alignment, decoy-aware index, `-l SR`, `--gcBias`) → **tximport** → **DESeq2** (next phase) |
 | Strandedness | Not stated | Measured: all six libraries `SR` (reverse-stranded single-end) |
 | Use of the authors' table | — | Audit/cross-check only; never DESeq2 input (normalized values, D-005) |
 
@@ -41,7 +41,8 @@ The reanalysis does not attempt to reproduce the authors' numbers gene by gene. 
 ENA FASTQ (MD5) → sanity checks (SeqKit) → FastQC → MultiQC        [Phase 2, done]
 SGN SL4.0 + ITAG4.0 (SHA-256 manifest) → validation                [Phase 3, done]
 → Salmon 2.7.0 index (ITAG4.0 cDNA + full SL4.0 genome decoys)
-→ Salmon quant (-l A, SE fragment-length prior 250/25) ×6 → QC     [Phase 3, done]
+→ exploratory Salmon quant (-l A) → orientation SR in 6/6          [Phase 3, done; archived for audit]
+→ FINAL Salmon quant (-l SR, --gcBias, SE fragment-length prior 250/25) ×6 → QC   [Phase 3, done]
 → tx2gene (ITAG4.0 GFF) → tximport (gene level, validated)         [Phase 3, done]
 → DESeq2 → functional analysis                                     [pending owner decisions]
 ```
@@ -85,10 +86,12 @@ nextflow run workflow/main.nf -resume && bash scripts/bash/summarize_fastqc.sh
 
 # reference, index and quantification (Phase 3)
 bash scripts/bash/download_reference.sh && bash scripts/bash/validate_reference.sh
+# builds the index once and quantifies with the samplesheet strandedness (reverse -> -l SR) and --gcBias (default)
 nextflow run workflow/main.nf -resume --run_quant true \
   --transcript_fasta reference/SGN/ITAG4.0/ITAG4.0_cDNA.fasta \
   --genome_fasta reference/SGN/SL4.0/S_lycopersicum_chromosomes.4.00.fa.gz \
-  --multiqc_title 'STV_GSE137303 QC + Salmon (SL4.0 / ITAG4.0)' --multiqc_dir qc/multiqc_salmon
+  --multiqc_title 'STV_GSE137303 QC + Salmon final (SL4.0 / ITAG4.0, SR, gcBias)' --multiqc_dir qc/multiqc_salmon
+# later re-runs: --salmon_index results/genome/index/salmon_index (exploratory settings: --salmon_libtype A --salmon_gc_bias false)
 bash scripts/bash/summarize_salmon.sh && bash scripts/bash/build_tx2gene.sh
 conda activate stv-r && Rscript scripts/R/01_tximport_import.R
 ```
@@ -96,6 +99,7 @@ conda activate stv-r && Rscript scripts/R/01_tximport_import.R
 Provenance:
 - SHA-256 for every reference file: `reference/reference_manifest.tsv`.
 - ENA MD5 for every FASTQ: `results/qc/raw_fastq_checksums.tsv`.
+- SHA-256 of every `quant.sf` (exploratory, check and final runs): `results/quantification/quant_sf_sha256.tsv`.
 - Nextflow trace/report: `results/pipeline_info/`.
 - Every executed step: [docs/run_log.md](docs/run_log.md).
 - Remote metadata can change; the copies used are committed in `data/metadata/sources/`.
@@ -106,6 +110,6 @@ Provenance:
 |---|---|
 | Raw FASTQ download + MD5, sanity checks, FastQC/MultiQC | Done; QC conclusion A, no trimming (D-009) — [docs/raw_qc_assessment.md](docs/raw_qc_assessment.md) |
 | Reference SL4.0 + ITAG4.0: download, manifest, validation | Done; no material inconsistency — [docs/reference_validation.md](docs/reference_validation.md) |
-| Salmon decoy-aware index + quantification (6 samples) | Done; mapping 87.95–90.26 %, all `SR`, no Salmon diagnostics — [docs/salmon_quantification.md](docs/salmon_quantification.md) |
-| tx2gene + tximport import check | Done; 33,976 genes × 6 samples — [docs/tximport_preparation.md](docs/tximport_preparation.md) |
-| DESeq2, thresholds, contrasts, interpretation, enrichment | **Not started**. Open owner decisions: D-010 (final library type `A` vs explicit `SR`), D-012 (Salmon bias correction), DESeq2 design/thresholds — [docs/decisions.md](docs/decisions.md) |
+| Salmon decoy-aware index + quantification (6 samples) | Done. Exploratory `-l A` run measured `SR` in 6/6 (archived). **Final run: explicit `-l SR` + `--gcBias`** (D-010, D-012); mapping 87.95–90.26 % (identical in both runs), no Salmon diagnostics — [docs/salmon_quantification.md](docs/salmon_quantification.md) |
+| tx2gene + tximport import check (final run) | Done; 33,976 genes × 6 samples, totals = Salmon — [docs/tximport_preparation.md](docs/tximport_preparation.md) |
+| DESeq2, thresholds, contrasts, interpretation, enrichment | **Not started**. Open owner decisions: DESeq2 design/reference level, pre-filtering, significance and LFC thresholds — [docs/decisions.md](docs/decisions.md) |

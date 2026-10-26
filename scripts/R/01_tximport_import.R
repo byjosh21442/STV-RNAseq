@@ -35,6 +35,18 @@ add("quant_sf_found", sum(file.exists(files)), all(file.exists(files)))
 same_dir <- normalizePath(dirname(files)) == normalizePath(wf$quant_dir)
 add("quant_dir_matches_workflow_index", all(same_dir), all(same_dir))
 
+# --- Salmon run settings recorded in meta_info.json --------------------------------------------------------
+meta <- lapply(file.path(dirname(files), "aux_info", "meta_info.json"), jsonlite::fromJSON)
+applied <- vapply(meta, function(m) paste(m$library_types, collapse = "+"), character(1))
+add("salmon_library_type_applied", unique(applied),
+    length(unique(applied)) == 1 && all(applied == wf$libtype | wf$libtype == "A"))
+gc_bias <- vapply(meta, function(m) isTRUE(m$gc_bias_correct), logical(1))
+add("salmon_gc_bias_correct", unique(gc_bias), length(unique(gc_bias)) == 1)
+seq_bias <- vapply(meta, function(m) isTRUE(m$seq_bias_correct), logical(1))
+add("salmon_seq_bias_correct", unique(seq_bias), length(unique(seq_bias)) == 1)
+add("salmon_version", unique(vapply(meta, `[[`, character(1), "salmon_version")),
+    length(unique(vapply(meta, `[[`, character(1), "salmon_version"))) == 1)
+
 # --- tx2gene -----------------------------------------------------------------------------------------------
 tx2gene <- read.delim(tx2gene_tsv, stringsAsFactors = FALSE)
 add("tx2gene_columns", names(tx2gene), identical(names(tx2gene), c("TXNAME", "GENEID")))

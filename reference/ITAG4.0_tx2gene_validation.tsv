@@ -14,8 +14,8 @@ quant_sf_names_not_in_tx2gene	0	OK	exact string match; no version stripping
 tx2gene_names_not_in_quant_sf	99	OK	must equal transcripts collapsed as duplicates by salmon index
 unexplained_tx2gene_names_absent_from_quant_sf	0	OK	
 quant_sf_names_identical_to_first:STV_free_rep1	True	OK	
-quant_sf_names_identical_to_first:STV_infected_rep3	True	OK	
-quant_sf_names_identical_to_first:STV_free_rep3	True	OK	
-quant_sf_names_identical_to_first:STV_infected_rep1	True	OK	
-quant_sf_names_identical_to_first:STV_free_rep2	True	OK	
 quant_sf_names_identical_to_first:STV_infected_rep2	True	OK	
+quant_sf_names_identical_to_first:STV_free_rep2	True	OK	
+quant_sf_names_identical_to_first:STV_infected_rep1	True	OK	
+quant_sf_names_identical_to_first:STV_free_rep3	True	OK	
+quant_sf_names_identical_to_first:STV_infected_rep3	True	OK	

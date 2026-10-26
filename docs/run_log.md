@@ -143,7 +143,37 @@ Owner approvals at the start of Phase 3: D-001 = SL4.0 + ITAG4.0 (ITAG4.1 consid
     - Ignore rules confirmed for `reference/SGN/`, `results/genome/`, `results/quantification/salmon/`, `results/qc/multiqc_salmon/`, `logs/`, `data/raw/`, `work/`.
     - Non-secret personal data already in history: the GEO contact e-mail inside the archived SOFT record, local paths with the user name in audit docs and in `sessionInfo`, and the repo-local commit e-mail. Left as is.
 53. GitHub: `gh` 2.102.0 is installed and authenticated on Windows (account `byjosh21442`, keyring) and absent in WSL. Remote creation and push follow in the commit/push step (hash and verification in the Phase 3 report).
+54. `gh repo create STV-RNAseq --public --description "…"` (no README/.gitignore/license). `origin` changed from the Windows copy to `https://github.com/byjosh21442/STV-RNAseq.git`. `git push -u origin main` used Windows `gh.exe` as a one-off credential helper; nothing was stored in the repo config. Commit `a1ec6ae`; remote `main` = local HEAD.
+
+## 3H — final quantification (owner approvals D-010: explicit `SR`; D-012: `--gcBias`, no `--seqBias`)
+
+55. Configuration:
+    - `build_samples_metadata.sh` now writes the measured strandedness (`reverse`, documented as the only non-record value). Re-run: `config/samplesheet.csv` and `data/metadata/samples_metadata.tsv` changed only in the strandedness column; the cross-source checks were still OK.
+    - New typed param `salmon_gc_bias = true` adds `--gcBias` through `ext.args`.
+    - `summarize_salmon.sh` takes `[salmon_dir] [suffix]` and reports the bias flags.
+    - `01_tximport_import.R` checks the library type, bias flags and Salmon version from `meta_info.json`.
+    - `nextflow lint` → no errors.
+56. Archive (no deletion):
+    - `results/quantification/salmon/` → `results/quantification/archive/salmon_libA_exploratory/`. Its `samples.csv` paths were rewritten to the archive location; the original is kept as `samples.original_paths.csv`. `quant.sf` SHA-256 values are unchanged from `a1ec6ae`.
+    - `results/qc/multiqc_salmon/` → `results/qc/multiqc_salmon_libA_exploratory/`.
+    - `tximport_validation.tsv` → `tximport_validation_libA_exploratory.tsv` (`git mv`).
+    - The `/tmp` SR-without-GC check run was copied to `results/quantification/archive/salmon_SR_noGC_check/`.
+57. `nextflow run workflow/main.nf -resume --run_quant true --salmon_index results/genome/index/salmon_index --multiqc_title '… final …' --multiqc_dir qc/multiqc_salmon` (run `sleepy_mcclintock`, 2 min 25 s, exit 0). Log: `logs/phase3_final_salmon_run.log`.
+    - Rendered command per sample: `--libType SR … --fldMean 250 --fldSD 25 --gcBias`.
+    - `SALMON_QUANT` ×6: 27–29 s each, 2.4 GB peak RSS, 0 warnings/errors.
+    - FastQC re-ran because the sample metadata map (strandedness) is part of its input hash.
+58. `bash scripts/bash/summarize_salmon.sh` (final): requested = detected = applied `SR` and `gc_bias_correct=true` in 6/6; mapping 87.95–90.26 %; no diagnostics; `ISSUES: none`.
+59. `bash scripts/bash/summarize_salmon.sh results/quantification/archive/salmon_libA_exploratory _libA_exploratory`: the regenerated exploratory tables equal the tables committed in `a1ec6ae`, apart from the 2 new bias columns.
+60. Comparisons (`compare_salmon_runs.sh`):
+    - Exploratory vs final: identical mapping counts; 1,468–1,593 transcripts change `NumReads`; ~20k effective lengths change; log-scale Pearson 0.99915–0.99929.
+    - SR-without-GC vs final: 1,424–1,562 transcripts change.
+    - Effective-length checks: consistent shift across samples (median final/exploratory ratio 0.277–0.285). The 3,149 transcripts adjusted in only some samples carry 0.047 % of reads.
+    - DESeq2 1.50.2 source checked: `avgTxLength` is divided by the per-gene geometric mean before use as a normalization factor.
+    - `results/quantification/quant_sf_sha256.tsv` written for all three runs.
+61. `bash scripts/bash/build_tx2gene.sh`: OK against the final `quant.sf`; tx2gene unchanged (only the sample order in the validation table changed).
+62. `Rscript scripts/R/01_tximport_import.R` (stv-r) on the final run: all checks OK. 33,976 genes × 6; gene totals = Salmon totals (15,902,183; 14,698,030; 12,871,350; 17,121,521; 15,217,015; 17,871,112); 9,808 genes with zero counts in all samples. No DESeq2 call.
+63. Love, Hogenesch & Irizarry (2016), DOI 10.1038/nbt.3682, verified via Crossref. Docs updated: `salmon_quantification.md`, `tximport_preparation.md`, `decisions.md` (D-004 completed, D-010/D-012 approved), `methods_references.md`, `nextflow_pipeline.md`, `pipeline_design.md`, `samplesheet_schema.md`, `README.md`.
 
 ## Phase 3 — not executed (stop conditions)
 
-DESeq2 object construction or testing, filtering, DEG thresholds, contrasts, biological interpretation, functional enrichment, re-quantification with explicit `SR` (D-010), bias correction (D-012).
+DESeq2 object construction or testing, filtering, DEG thresholds, contrasts, biological interpretation, functional enrichment, `--seqBias`.

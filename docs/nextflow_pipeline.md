@@ -2,7 +2,7 @@
 
 Small DSL2 workflow for this six-sample, **single-end** dataset. Architecture modelled on nf-core/rnaseq 3.27.0 and the Nextflow RNAseq training (sources: `docs/pipeline_sources.md`); it is not a copy of nf-core/rnaseq.
 
-Status (Phase 3): samplesheet validation, FastQC, MultiQC, the decoy-aware **Salmon index (SL4.0 + ITAG4.0) and Salmon quantification of all six samples have run** on real data (run `exotic_ardinghelli`, 5 min 59 s; `docs/salmon_quantification.md`). Phase 2 raw QC: `docs/raw_qc_assessment.md`.
+Status (Phase 3): samplesheet validation, FastQC, MultiQC, the decoy-aware **Salmon index (SL4.0 + ITAG4.0)** and two Salmon quantifications have run on real data: exploratory `-l A` (`exotic_ardinghelli`, archived) and **final `-l SR` + `--gcBias`** (`sleepy_mcclintock`, 2 min 25 s). Details: `docs/salmon_quantification.md`. Phase 2 raw QC: `docs/raw_qc_assessment.md`.
 
 ## Diagram
 
@@ -50,15 +50,16 @@ nextflow run workflow/main.nf -resume
 bash workflow/tests/stub/make_fixtures.sh
 nextflow run workflow/main.nf -profile test_stub -stub -w work/stub -output-dir /tmp/stv_stub
 
-# Phase 3: decoy-aware index + quantification (approved reference D-001)
+# Phase 3: decoy-aware index (approved reference D-001); with the current samplesheet this also runs the final quantification
 nextflow run workflow/main.nf -resume --run_quant true \
   --transcript_fasta reference/SGN/ITAG4.0/ITAG4.0_cDNA.fasta \
-  --genome_fasta reference/SGN/SL4.0/S_lycopersicum_chromosomes.4.00.fa.gz \
-  --multiqc_title 'STV_GSE137303 QC + Salmon (SL4.0 / ITAG4.0)' --multiqc_dir qc/multiqc_salmon
+  --genome_fasta reference/SGN/SL4.0/S_lycopersicum_chromosomes.4.00.fa.gz
 
-# Re-quantify with the published index (e.g. explicit library type, D-010)
-# nextflow run workflow/main.nf -resume --run_quant true \
-#   --salmon_index results/genome/index/salmon_index --salmon_libtype SR
+# Phase 3 FINAL quantification with the published index (what was run): -l SR from the samplesheet, --gcBias default
+nextflow run workflow/main.nf -resume --run_quant true --salmon_index results/genome/index/salmon_index \
+  --multiqc_title 'STV_GSE137303 QC + Salmon final (SL4.0 / ITAG4.0, SR, gcBias)' --multiqc_dir qc/multiqc_salmon
+
+# Exploratory settings (audit only): --salmon_libtype A --salmon_gc_bias false
 ```
 
 ## Parameters (`params` block in `main.nf`)
@@ -73,6 +74,7 @@ nextflow run workflow/main.nf -resume --run_quant true \
 | `salmon_libtype` | `''` | Global override (e.g. `A`, `SR`); empty = per-sample mapping `auto→A, unstranded→U, forward→SF, reverse→SR` |
 | `salmon_kmer` | `31` | `salmon index -k` |
 | `salmon_fld_mean` / `salmon_fld_sd` | `250` / `25` | Single-end fragment-length distribution for `salmon quant` (D-011) |
+| `salmon_gc_bias` | `true` | Adds `--gcBias` to `salmon quant` (D-012); `--seqBias` is not exposed |
 | `multiqc_title` | `STV_GSE137303 raw FASTQ QC` | Report title |
 | `fastqc_dir`, `multiqc_dir`, `salmon_dir`, `salmon_index_dir`, `pipeline_info_dir` | `qc/fastqc_raw`, `qc/multiqc_raw`, `quantification/salmon`, `genome/index`, `pipeline_info` | Publish paths under `outputDir` (`results/`) |
 
@@ -87,8 +89,8 @@ Before any task is submitted, `readSamplesheet()` checks required columns, uniqu
 | Output | Path | Git |
 |---|---|---|
 | FastQC HTML + ZIP | `results/qc/fastqc_raw/<sample>_fastqc.{html,zip}` | ignored |
-| MultiQC | `results/qc/multiqc_raw/` (Phase 2 raw QC) and `results/qc/multiqc_salmon/` (Phase 3, FastQC + Salmon) | ignored (regenerable); small TSV summaries in `results/qc/*.tsv` are tracked |
-| Salmon | `results/quantification/salmon/<sample>/` + `samples.csv` index | ignored; QC summaries `results/quantification/*.tsv` tracked |
+| MultiQC | `results/qc/multiqc_raw/` (Phase 2 raw QC), `results/qc/multiqc_salmon/` (final run) and `results/qc/multiqc_salmon_libA_exploratory/` (moved by hand) | ignored (regenerable); small TSV summaries in `results/qc/*.tsv` are tracked |
+| Salmon | `results/quantification/salmon/<sample>/` + `samples.csv` index (final run). Archived by hand: `results/quantification/archive/salmon_libA_exploratory/`, `.../salmon_SR_noGC_check/` | ignored; QC summaries `results/quantification/*.tsv` tracked |
 | Salmon index | `results/genome/index/salmon_index/` (2.1 GB), `decoys.txt`, `salmon_index.log` | ignored |
 | Run reports | `results/pipeline_info/` (report, timeline, trace, `software_versions.tsv`) | ignored |
 
@@ -96,7 +98,10 @@ Before any task is submitted, `readSamplesheet()` checks required columns, uniqu
 
 `executor.cpus = 12`, `executor.memory = 12 GB`, `process.resourceLimits = [cpus: 12, memory: 12 GB]`; labels: `process_single` 1 CPU / 2 GB, `process_low` 1 CPU / 1 GB (FastQC; `--memory` = 80 % of task memory), `process_medium` 6 CPU / 6 GB (Salmon quant), `process_high` 8 CPU / 12 GB (Salmon index). `errorStrategy = 'terminate'`.
 
-Measured in Phase 3 (Nextflow trace): `SALMON_INDEX` 3 min 29 s, peak RSS 4.7 GB (with `--ramLimit 6`); `SALMON_QUANT` 20–26 s per sample, peak RSS 2.2–2.3 GB, two tasks in parallel; FastQC 54–73 s, 0.32–0.34 GB.
+Measured in Phase 3 (Nextflow trace):
+- `SALMON_INDEX`: 3 min 29 s, peak RSS 4.7 GB (with `--ramLimit 6`).
+- `SALMON_QUANT`, two tasks in parallel: 20–26 s per sample and 2.2–2.3 GB peak RSS for `-l A`; 27–29 s and 2.4 GB for `-l SR --gcBias`.
+- FastQC: 54–73 s, 0.32–0.34 GB.
 
 ## Differences from nf-core/rnaseq (and why)
 
@@ -105,7 +110,7 @@ Measured in Phase 3 (Nextflow trace): `SALMON_INDEX` 3 min 29 s, peak RSS 4.7 GB
 | Many steps: fq lint, trimming (Trim Galore/fastp default), rRNA removal, STAR/HISAT2, RSeQC, Qualimap, dupRadar, BBSplit, contamination screening… | FASTQC → (SALMON_INDEX → SALMON_QUANT) → MULTIQC | Six samples, two-week project; approved architecture D-002; no trimming without justification (D-003) |
 | Paired- and single-end | Single-end only; PAIRED rows rejected | Verified dataset layout; explicit failure is safer than silent support |
 | nf-schema plugin + JSON schema for samplesheet/params | Plain Nextflow functions + typed `params` block | No plugin download; enough for 6 rows |
-| `strandedness=auto` → Salmon on 1 M subsampled reads, then thresholds 0.8 / 0.1, then quantification with the inferred type | `auto` → Salmon `-l A` on all reads; `lib_format_counts.json` of all six inspected (D-004: SR in 6/6); whether to re-run with explicit `SR` is D-010 | Simpler; inspection is a human decision step |
+| `strandedness=auto` → Salmon on 1 M subsampled reads, then thresholds 0.8 / 0.1, then quantification with the inferred type | `auto` → Salmon `-l A` on all reads; `lib_format_counts.json` of all six inspected (D-004: SR in 6/6); final quantification with explicit `SR` from `strandedness=reverse` (D-010) | Simpler; inspection is a human decision step |
 | Containers / per-module conda envs | One pinned conda env on PATH (`stv-rnaseq`); same tool versions as nf-core modules | Docker not available in WSL; single lockable env |
 | `publishDir` via `conf/modules.config` | Workflow `output {}` block | Nextflow docs: workflow outputs are intended to replace `publishDir` |
 | tximport/DESeq2 QC inside the pipeline | Done in R scripts (`scripts/R/`, env `stv-r`) | Keeps statistics outside the workflow; easier to review |

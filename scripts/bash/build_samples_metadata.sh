@@ -9,6 +9,9 @@ ENA="$SRC/PRJNA565137_ena_read_run.tsv"
 RUNINFO="$SRC/PRJNA565137_sra_runinfo.csv"
 OUT_TSV="data/metadata/samples_metadata.tsv"
 OUT_CSV="config/samplesheet.csv"
+# Only value not taken from the records: measured with Salmon -l A (SR in 6/6 libraries; D-004, D-010).
+STRANDEDNESS="reverse"
+STRANDEDNESS_NOTE="reverse (measured: Salmon -l A detected SR in 6/6; D-004/D-010)"
 mkdir -p config
 
 # 1) GEO sample-level fields, keyed by GSM
@@ -34,7 +37,7 @@ run_tmp="$(mktemp)"
 awk -F',' 'NR==1 { for(i=1;i<=NF;i++) h[$i]=i; next } { print $h["Run"] "\t" $h["size_MB"] "\t" $h["avgLength"] }' "$RUNINFO" > "$run_tmp"
 
 # 3) Join on GSM (ENA sample_alias == GEO GSM) and write the metadata table
-awk -F'\t' -v OFS='\t' '
+awk -F'\t' -v OFS='\t' -v strand_note="$STRANDEDNESS_NOTE" '
   FNR==NR && FILENAME==ARGV[1] { geo[$1]=$0; next }
   FILENAME==ARGV[2] { size[$1]=$2; avglen[$1]=$3; next }
   FNR==1 { for(i=1;i<=NF;i++) h[$i]=i
@@ -51,7 +54,7 @@ awk -F'\t' -v OFS='\t' '
           $h["secondary_study_accession"], $h["study_accession"], $h["scientific_name"], $h["tax_id"], g[5], g[6], g[7], g[8],
           $h["library_strategy"], $h["library_source"], $h["library_selection"], $h["library_layout"], $h["instrument_model"],
           $h["read_count"], $h["base_count"], avglen[$h["run_accession"]], $h["fastq_bytes"], $h["fastq_md5"], $h["fastq_ftp"],
-          size[$h["run_accession"]], g[9], "UNKNOWN_TO_BE_VERIFIED", g[12],
+          size[$h["run_accession"]], g[9], strand_note, g[12],
           "GEO:" gsm ";ENA:" $h["run_accession"] ";NCBI_SRA:" $h["run_accession"] }
 ' "$geo_tmp" "$run_tmp" "$ENA" | { IFS= read -r header; echo "$header"; sort -t$'\t' -k2,2 -k3,3n; } > "$OUT_TSV"
 
@@ -67,11 +70,11 @@ diff "$geo_tmp.chk3" "$geo_tmp.chk4" || { echo "ERROR: ENA vs GEO SOFT mismatch"
 echo "OK: GSM/SRX/BioSample == GEO SOFT"
 
 # 4) Samplesheet: accession fields + fastq_1 = local ENA file name under data/raw/ (written by download_fastq.sh)
-awk -F'\t' -v OFS=',' 'NR==1 { for(i=1;i<=NF;i++) h[$i]=i
+awk -F'\t' -v OFS=',' -v strand="$STRANDEDNESS" 'NR==1 { for(i=1;i<=NF;i++) h[$i]=i
     print "sample","condition","replicate","geo_gsm","run_accession","library_layout","read_length","strandedness","ena_fastq_ftp","ena_fastq_md5","fastq_1"; next }
   { n = split($h["ena_fastq_ftp"], parts, "/")
     print $h["sample_id"], $h["condition"], $h["replicate"], $h["geo_gsm"], $h["sra_run"], $h["library_layout"], $h["avg_read_length"],
-          "auto", $h["ena_fastq_ftp"], $h["ena_fastq_md5"], "data/raw/" parts[n] }' "$OUT_TSV" > "$OUT_CSV"
+          strand, $h["ena_fastq_ftp"], $h["ena_fastq_md5"], "data/raw/" parts[n] }' "$OUT_TSV" > "$OUT_CSV"
 
 rm -f "$geo_tmp" "$geo_tmp".chk* "$run_tmp"
 column -t -s$'\t' < <(cut -f1-4,10,22,24,26,27 "$OUT_TSV")

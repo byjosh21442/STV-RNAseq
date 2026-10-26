@@ -1,18 +1,21 @@
 #!/usr/bin/env bash
-# Summarize Salmon quantification QC for all samples in results/quantification/salmon/samples.csv:
-# meta_info.json, lib_format_counts.json and quant.sf -> results/quantification/salmon_qc_summary.tsv
-# and results/quantification/salmon_libformat_summary.tsv. Prints consistency checks (no biological claims).
-# Usage (project root): bash scripts/bash/summarize_salmon.sh
+# Summarize Salmon quantification QC for all samples in <salmon_dir>/samples.csv:
+# meta_info.json, lib_format_counts.json and quant.sf -> results/quantification/salmon_qc_summary<suffix>.tsv
+# and results/quantification/salmon_libformat_summary<suffix>.tsv. Prints consistency checks (no biological claims).
+# Usage (project root): bash scripts/bash/summarize_salmon.sh [salmon_dir] [suffix]
+#   defaults: results/quantification/salmon (final run), no suffix
+#   exploratory -l A run: bash scripts/bash/summarize_salmon.sh results/quantification/archive/salmon_libA_exploratory _libA_exploratory
 set -euo pipefail
 
-python3 - <<'PY'
+python3 - "${1:-results/quantification/salmon}" "${2:-}" <<'PY'
 import csv, json, os, statistics, sys
 
-samples_csv = "results/quantification/salmon/samples.csv"
+salmon_dir, suffix = sys.argv[1], sys.argv[2]
+samples_csv = os.path.join(salmon_dir, "samples.csv")
 sanity = "results/qc/raw_fastq_sanity.tsv"
 sheet = "config/samplesheet.csv"
-out_qc = "results/quantification/salmon_qc_summary.tsv"
-out_lf = "results/quantification/salmon_libformat_summary.tsv"
+out_qc = f"results/quantification/salmon_qc_summary{suffix}.tsv"
+out_lf = f"results/quantification/salmon_libformat_summary{suffix}.tsv"
 
 raw = {r["sample"]: r for r in csv.DictReader(open(sanity), delimiter="\t")}
 srr = {r["sample"]: r["run_accession"] for r in csv.DictReader(open(sheet))}
@@ -22,14 +25,15 @@ qc_cols = ["sample", "condition", "replicate", "run_accession", "raw_reads", "nu
            "num_mapped", "percent_mapped", "num_decoy_fragments", "pct_decoy_of_processed", "libtype_requested",
            "detected_library_type", "library_type_applied", "quant_sf_transcripts", "transcripts_numreads_gt0",
            "sum_numreads", "frag_length_mean", "frag_length_sd", "frag_length_source", "mapping_type",
-           "num_valid_targets", "num_decoy_targets", "salmon_version", "diagnostics"]
+           "num_valid_targets", "num_decoy_targets", "seq_bias_correct", "gc_bias_correct", "salmon_version", "diagnostics"]
 lf_cols = ["sample", "expected_format", "compatible_fragment_ratio", "num_compatible_fragments",
            "num_incompatible_fragments", "num_assigned_fragments", "strand_mapping_bias", "SF", "SR", "U",
            "num_frags_with_concordant_consistent_mappings", "num_frags_with_inconsistent_or_orphan_mappings"]
 qc_rows, lf_rows, issues = [], [], []
 
 for s in samples:
-    d = s["quant_dir"]
+    # samples.csv quant_dir is absolute at publish time; resolve under salmon_dir so archived runs stay readable.
+    d = os.path.join(salmon_dir, s["sample"])
     meta = json.load(open(os.path.join(d, "aux_info", "meta_info.json")))
     lf = json.load(open(os.path.join(d, "lib_format_counts.json")))
     n_tx = n_pos = 0; total = 0.0
@@ -52,6 +56,7 @@ for s in samples:
         "frag_length_mean": meta.get("frag_length_mean"), "frag_length_sd": meta.get("frag_length_sd"),
         "frag_length_source": meta.get("frag_length_source", "NA"), "mapping_type": meta.get("mapping_type"),
         "num_valid_targets": meta.get("num_valid_targets"), "num_decoy_targets": meta.get("num_decoy_targets"),
+        "seq_bias_correct": meta.get("seq_bias_correct"), "gc_bias_correct": meta.get("gc_bias_correct"),
         "salmon_version": meta["salmon_version"], "diagnostics": diags})
     lf_rows.append({k: lf.get(k, "NA") for k in lf_cols if k != "sample"} | {"sample": s["sample"]})
 
@@ -65,7 +70,8 @@ for path, cols, rows in ((out_qc, qc_cols, qc_rows), (out_lf, lf_cols, lf_rows))
 
 # Consistency checks (technical only)
 if len(qc_rows) != 6: issues.append(f"expected 6 samples, found {len(qc_rows)}")
-for key in ("detected_library_type", "library_type_applied", "salmon_version", "quant_sf_transcripts", "num_valid_targets", "num_decoy_targets"):
+for key in ("libtype_requested", "detected_library_type", "library_type_applied", "seq_bias_correct", "gc_bias_correct",
+            "salmon_version", "quant_sf_transcripts", "num_valid_targets", "num_decoy_targets"):
     vals = {str(r[key]) for r in qc_rows}
     print(f"check {key}: {sorted(vals)}")
     if len(vals) != 1: issues.append(f"{key} differs between samples: {sorted(vals)}")

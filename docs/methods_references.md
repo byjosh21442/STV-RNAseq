@@ -177,16 +177,16 @@ Note: Hosmani et al. (2019) is a preprint (not peer reviewed at the time of acce
 
 | Field | Content |
 |---|---|
-| Process | Transcript quantification of the six SE samples, library-type detection |
+| Process | Transcript quantification of the six SE samples. **12a. Exploratory run** (library-type inference, archived) and **12b. Final run** (used downstream). |
 | Software + version | Salmon 2.7.0 |
-| Parameters | `--libType A -r <fastq> --fldMean 250 --fldSD 25 --threads 6`; selective alignment; deterministic mode; no bias flags |
-| Methodological rationale | `-l A` measures strandedness (undocumented); SE fragment length unobservable, so explicit default prior (SRA `InsertSize = 0`) |
-| Official technical documentation | <https://combine-lab.github.io/salmon/guides/library-types/>; <https://combine-lab.github.io/salmon/guides/mapping-modes/>; <https://combine-lab.github.io/salmon/reference/output-formats/> (`lib_format_counts.json`, `meta_info.json`) |
-| Primary scientific reference | Patro et al. (2017) |
-| DOI | 10.1038/nmeth.4197 |
-| Provisional APA 7 reference | See §11 |
-| Decision supported | D-004 (outcome SR in 6/6), D-010 (A vs SR, open), D-011 (SE fragment length), D-012 (bias flags, open) |
-| Access info | 2026-10-25 |
+| Parameters | 12a exploratory: `--libType A -r <fastq> --fldMean 250 --fldSD 25 --threads 6`, no bias flags (run `exotic_ardinghelli`). 12b **final**: `--libType SR -r <fastq> --fldMean 250 --fldSD 25 --gcBias --threads 6` (run `sleepy_mcclintock`). Both: selective alignment, decoy-aware index, deterministic mode. |
+| Methodological rationale | `-l A` measured the undocumented strandedness (SR in 6/6); the final run fixes `SR` explicitly. `--gcBias` follows the DESeq2 vignette recommendation in the absence of evidence that it is unnecessary; `--seqBias` not used. SE fragment length is not observable, so the explicit default prior is used (SRA `InsertSize = 0`). |
+| Official technical documentation | <https://combine-lab.github.io/salmon/guides/library-types/>; <https://combine-lab.github.io/salmon/guides/mapping-modes/>; <https://combine-lab.github.io/salmon/reference/cli/> (`--gcBias`); <https://combine-lab.github.io/salmon/reference/output-formats/> (`lib_format_counts.json`, `meta_info.json`); `--gcBias` recommendation: DESeq2 vignette 3.22 (§15) |
+| Primary scientific reference | Patro et al. (2017); Love, Hogenesch & Irizarry (2016) for fragment GC-bias modelling |
+| DOI | 10.1038/nmeth.4197; 10.1038/nbt.3682 |
+| Provisional APA 7 reference | See §11 for Patro et al. (2017). <br> Love, M. I., Hogenesch, J. B., & Irizarry, R. A. (2016). Modeling of RNA-seq fragment sequence bias reduces systematic errors in transcript abundance estimation. *Nature Biotechnology, 34*(12), 1287–1291. https://doi.org/10.1038/nbt.3682 |
+| Decision supported | D-004 (SR in 6/6), D-010 (explicit SR, approved), D-011 (SE fragment length), D-012 (`--gcBias` on, `--seqBias` off, approved) |
+| Access info | 2026-10-25 (Crossref check of 10.1038/nbt.3682: 2026-10-25) |
 
 ## 13. Transcript-to-gene mapping (tx2gene)
 
@@ -209,8 +209,8 @@ Note: Hosmani et al. (2019) is a preprint (not peer reviewed at the time of acce
 |---|---|
 | Process | Gene-level summarization of Salmon estimates with average-transcript-length offset |
 | Software + version | tximport 1.38.2 (Bioconductor 3.22, bioconda); R 4.5.3 (env `stv-r`) |
-| Parameters | `tximport(files, type = "salmon", tx2gene)`; `countsFromAbundance = "no"`; `ignoreTxVersion = FALSE` |
-| Methodological rationale | Recommended Salmon→DESeq2 path; corrects for changes in average transcript length across samples |
+| Parameters | `tximport(files, type = "salmon", tx2gene)` on the **final** Salmon run (`results/quantification/salmon`, SR + `--gcBias`); `countsFromAbundance = "no"`; `ignoreTxVersion = FALSE`. The exploratory `-l A` import check is archived (`tximport_validation_libA_exploratory.tsv`). |
+| Methodological rationale | Recommended Salmon→DESeq2 path; corrects for changes in average transcript length across samples (here including the sample-specific GC-bias effective lengths) |
 | Official technical documentation | <https://bioconductor.org/packages/3.22/bioc/vignettes/tximport/inst/doc/tximport.html>; package page <https://bioconductor.org/packages/3.22/bioc/html/tximport.html> |
 | Primary scientific reference | Soneson et al. (2015) (citation given by the package; version 2 of the article, 10.12688/f1000research.7563.2, also exists) |
 | DOI | 10.12688/f1000research.7563.1 |
@@ -230,7 +230,7 @@ Note: Hosmani et al. (2019) is a preprint (not peer reviewed at the time of acce
 | Primary scientific reference | Love et al. (2014) |
 | DOI | 10.1186/s13059-014-0550-8 |
 | Provisional APA 7 reference | Love, M. I., Huber, W., & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology, 15*(12), 550. https://doi.org/10.1186/s13059-014-0550-8 |
-| Decision supported | D-002; D-005 (DESeq2 requires un-normalized counts → GEO table excluded); D-012 (vignette recommends Salmon `--gcBias` unless data are known not to need it) |
+| Decision supported | D-002; D-005 (DESeq2 requires un-normalized counts → GEO table excluded); D-012 (vignette recommends Salmon `--gcBias` unless data are known not to need it → adopted) |
 | Access info | 2026-10-25 |
 
 ## 16. Statistical environment — R

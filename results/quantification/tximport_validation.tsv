@@ -3,9 +3,13 @@ samples_in_workflow_index	6	OK
 sample_ids_match_samplesheet	TRUE	OK
 condition_matches_workflow_index	TRUE	OK
 samples_per_condition	STV_free=3,STV_infected=3	OK
-libtype_requested	A	OK
+libtype_requested	SR	OK
 quant_sf_found	6	OK
 quant_dir_matches_workflow_index	TRUE	OK
+salmon_library_type_applied	SR	OK
+salmon_gc_bias_correct	TRUE	OK
+salmon_seq_bias_correct	FALSE	OK
+salmon_version	2.7.0	OK
 tx2gene_columns	TXNAME,GENEID	OK
 tx2gene_rows	34075	OK
 tx2gene_duplicated_TXNAME	0	OK
@@ -22,4 +26,4 @@ NA_counts	0	OK
 NA_or_nonpositive_length	0	OK
 max_relative_diff_gene_vs_salmon_total	0	OK
 gene_count_totals	15902183,14698030,12871350,17121521,15217015,17871112	OK
-genes_zero_in_all_samples	9796	OK
+genes_zero_in_all_samples	9808	OK
