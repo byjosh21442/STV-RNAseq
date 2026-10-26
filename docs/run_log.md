@@ -599,3 +599,18 @@ live outside the repository and are not committed. Every reported number comes f
      current-release `camera` help could not be retrieved (code.bioconductor.org TLS certificate expired; not bypassed).
 138. **Not executed:** Salmon, tximport, DESeq2, apeglm, fgsea, CAMERA, LOO, Cook's analysis, ch00 exclusion, any
      enrichment, Mercator4, MapMan.
+
+## Phase 7 closure (2026-10-26; owner approvals; F4 reproducibility)
+
+139. **Owner approvals and F4 fix.**
+    - Owner approved as final: D-049 descriptors and cut points; ATP synthase UNSUPPORTED — technically sensitive; ER
+      EXPLORATORY — strongly sample-sensitive. Recorded in `decisions.md` and `biological_integration.md` §2.2 – §2.3.
+    - `scripts/R/22_phase7_figures.R`: `fig_seed <- 20261025L` (project seed, as in scripts 02, 03 and 06). F4 now uses
+      `position_jitter(width = 0, height = 0.15, seed = fig_seed)` (replacing the unseeded `geom_jitter`) and
+      `geom_text_repel(..., seed = fig_seed)`. Data, labels, axes and dimensions unchanged.
+    - Hash test: script 22 run twice on identical inputs (input SHA-256 identical before and after; logs
+      `logs/phase7_22_phase7_figures_f4test_run1.log` / `_run2.log`, exit 0). F4 SHA-256 run 1 =
+      run 2 = `4a89c02baaa18707651e781555ae36b5fa73fb8644e9360092d1c66d00bb93f3` (337,015 B). F1, F2 and F3 stayed
+      identical to the committed files. Only the jitter positions of F4 differ from the earlier, unseeded version.
+140. **Phase 7 closed** (owner). **Not executed:** FastQC, MultiQC, Salmon, tximport, DESeq2, apeglm, fgsea, CAMERA, LOO,
+     Cook's diagnostics, ch00 / organelle sensitivity, GO redundancy, any enrichment, Mercator4, MapMan.

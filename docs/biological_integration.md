@@ -1,6 +1,7 @@
 # Biological integration: evidence matrix by theme (Phase 7)
 
-Status: Phase 7, 2026-10-26; classification revised the same day under the owner's D-045 decision (§2). This phase
+Status: Phase 7, 2026-10-26; classification revised the same day under the owner's D-045 decision (§2) and approved as
+final by the owner; **Phase 7 is closed**. This phase
 integrates **frozen** results. It runs no new test of significance and no new DESeq2, fgsea or CAMERA run, and it does not
 change any threshold or sample. Machine-readable version:
 `results/biological_integration/theme_evidence_matrix.tsv`. Interpretation: [phase7_biological_interpretation.md](phase7_biological_interpretation.md).
@@ -70,9 +71,15 @@ Disclosure and limits:
   same-condition sample keeps it supported.
 - The counts behind every label are in the matrix (`robustness_basis`).
 
+**Owner approval (final, 2026-10-26; D-049).** The descriptors and their cut points are approved as implemented and are not
+to be tuned further. The labels are descriptive. The thresholds are project conventions defined post hoc. They are not
+inferential thresholds, they do not determine statistical significance, and they do not override DESeq2 or CAMERA.
+Borderline classifications such as defence and cell wall are accepted because the underlying quantitative diagnostics stay
+visible in the matrix.
+
 ### 2.3 Explicit reviews: ATP synthase and endoplasmic reticulum
 
-**ATP synthase / proton transport: UNSUPPORTED (retained), technically sensitive.**
+**ATP synthase / proton transport: UNSUPPORTED — technically sensitive (final, owner-approved 2026-10-26).**
 - *Question.* Does the existing evidence show only technical sensitivity, or that the apparent pattern is primarily
   explained by organelle-identical / ch00 features?
 - *Evidence (frozen D-038 / D-043 tables).*
@@ -86,10 +93,10 @@ Disclosure and limits:
 - *Decision.* Removing about five features from sets of 22 – 59 genes removes the fgsea signal of every
   ATP-synthase-specific set under both rules. This is more than sensitivity: the apparent pattern is carried primarily by
   the organelle-identical feature class. UNSUPPORTED is kept, now by explicit review rather than by the superseded rule U1.
-- *Scope.* This does not show that organellar ATP-synthase transcripts are unchanged. Sequence identity is not genomic
-  origin, the library is poly(A)-selected, and no organelle-aware re-quantification was run (D-044, owner decision).
+- *Scope.* This does not show that organellar ATP-synthase transcripts are unchanged. Sequence identity does not establish
+  genomic origin, the library is poly(A)-selected, and no organelle-aware re-quantification was run (D-044, owner decision).
 
-**Endoplasmic reticulum: EXPLORATORY, strongly sample-sensitive.**
+**Endoplasmic reticulum: EXPLORATORY — strongly sample-sensitive (final, owner-approved 2026-10-26).**
 - *Question.* Is the pattern merely strongly sample-sensitive, or do the replicate diagnostics leave insufficient evidence
   for a meaningful group-level pattern?
 - *Evidence for a group-level pattern.*
@@ -416,7 +423,7 @@ effect. No module is significant under CAMERA.
 | F1 `F1_integrated_evidence_overview.png` | Ten themes × evidence layers (fgsea, CAMERA, replicate, LOO, Cook's, ch00, literature), then evidence status and robustness descriptor in separate columns | CAMERA cells are grey ("not significant"); fgsea cells use a neutral colour; the robustness palette is separate from the status palette. Regenerated for the D-045 revision |
 | F2 `F2_fgsea_vs_camera.png` | −log10 fgsea padj vs −log10 CAMERA FDR on identical axes | All points lie on the floor (CAMERA FDR ≥ 0.997); direction agreement 215/215 |
 | F3 `F3_theme_summary.png` | Direction, evidence status, robustness descriptor and main caveat (`primary_caveat`) per theme | Directions are rank-level shifts. Regenerated for the D-045 revision |
-| F4 `F4_ethylene_case_study.png` | Gene-level Wald statistics vs pathway-level NES | Shows the gene-level null beside the pathway tendency. Point jitter and label placement are unseeded, so a re-run changes the PNG bytes but not the content; the committed file was kept |
+| F4 `F4_ethylene_case_study.png` | Gene-level Wald statistics vs pathway-level NES | Shows the gene-level null beside the pathway tendency. Point jitter and `ggrepel` label placement use the project seed `20261025` (D-050); two regenerations from identical inputs gave the same SHA-256 (`run_log.md` entry 139) |
 | F5 `F5_go_redundancy_heatmap.png`, F5b `F5b_go_modules_overview.png` | Leading-edge Jaccard heatmap; module composition | Descriptive only |
 
 ## 8. Outputs and reproducibility

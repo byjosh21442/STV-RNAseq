@@ -9,6 +9,8 @@ options(warn = 1)
 out <- "results/biological_integration"; fig <- "figures/biological_integration"
 dir.create(fig, showWarnings = FALSE, recursive = TRUE)
 rd <- function(f) fread(file.path(out, f), sep = "\t", quote = "")
+# Project seed (as in scripts 02, 03, 06): fixes the F4 point jitter and ggrepel label placement.
+fig_seed <- 20261025L
 m <- rd("theme_evidence_matrix.tsv"); s <- rd("theme_set_level_evidence.tsv")
 eth <- rd("ethylene_case_study.tsv"); es <- rd("ethylene_go_sets.tsv")
 themes10 <- m$theme
@@ -119,9 +121,11 @@ eth[, lab := fcase(gene_id == "Solyc07g049530.3", sprintf("Solyc07g049530.3 ACO1
                    gene_id == "Solyc12g009240.1", sprintf("Solyc12g009240.1 ERF (ITAG4.0);\n'PR-protein' in Badeli 2026 (padj %.2f)", padj),
                    default = NA_character_)]
 p4a <- ggplot(eth, aes(stat, cat)) + geom_vline(xintercept = 0, colour = "grey50") +
-  geom_jitter(data = eth[is.na(lab)], height = 0.15, width = 0, size = 1.4, alpha = 0.6, colour = "grey30") +
+  geom_point(data = eth[is.na(lab)], position = position_jitter(width = 0, height = 0.15, seed = fig_seed),
+             size = 1.4, alpha = 0.6, colour = "grey30") +
   geom_point(data = eth[!is.na(lab)], colour = "#d6604d", size = 2.4) +
-  geom_text_repel(data = eth[!is.na(lab)], aes(label = lab), size = 2.4, min.segment.length = 0, nudge_y = 0.35, lineheight = 0.85) +
+  geom_text_repel(data = eth[!is.na(lab)], aes(label = lab), size = 2.4, min.segment.length = 0, nudge_y = 0.35, lineheight = 0.85,
+                  seed = fig_seed) +
   labs(x = "DESeq2 Wald statistic (STV-infected vs STV-free)", y = NULL,
        title = "A. Gene level: no ethylene-related gene at padj < 0.05",
        subtitle = sprintf("%d tested ethylene-related genes; %d with negative statistic; minimum padj %.3f", nrow(eth), sum(eth$stat < 0), min(eth$padj, na.rm = TRUE))) +
