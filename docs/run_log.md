@@ -97,3 +97,53 @@ All commands below ran in WSL Ubuntu in `~/projects/STV_GSE137303` (launched fro
 ## Phase 2 — not executed (stop conditions)
 
 Reference download, Salmon index, Salmon on real reads, tximport, DESeq2, trimming/filtering, DEG thresholds, biological interpretation, GitHub push.
+
+# Phase 3 — reference, Salmon quantification, tximport preparation, publication
+
+Owner approvals at the start of Phase 3: D-001 = SL4.0 + ITAG4.0 (ITAG4.1 considered, not selected), D-009 (no trimming). Times are local (UTC−6); the reference manifest records UTC dates (2026-10-26).
+
+## 3A — reference acquisition
+
+38. SGN listings inspected (`assembly/build_4.00/`, `annotation/ITAG4.0_release/`): no checksum files are published.
+39. `bash scripts/bash/download_reference.sh` (111 s, exit 0): 9 files, 335 MB, sizes = server `Content-Length`, `gzip -t` OK, SHA-256 → `reference/reference_manifest.tsv`. CDS, lncRNA and repeat GFFs were deliberately not downloaded.
+
+## 3B — reference validation
+
+40. Format inspection: cDNA headers = GFF mRNA `Name`; GFF `ID` = `gene:`/`mRNA:` + Name; genome `SL4.0ch00`–`12`.
+41. `bash scripts/bash/validate_reference.sh`, first run: exit 1. My strict `Solyc##g######.v(.t)` name pattern flagged 15 genes with an extra version level. Inspection showed these are genuine upstream names (e.g. `Solyc01g008710.5.1`), unique and consistent with the cDNA. The check was refined (unparseable names and multi-model loci stay material; the extra version level became a NOTE). Re-run: exit 0, no material inconsistency (`docs/reference_validation.md`). `ITAG4.0_goterms.txt` version mismatches were recorded as a NOTE (GO not used now).
+
+## 3C — Salmon documentation and workflow update
+
+42. `salmon index --help`, `salmon quant --help` (2.7.0); Salmon 2.x docs, MIGRATION.md and release notes v2.7.0 read; SRA RunInfo checked for insert size (`InsertSize = 0` for all runs).
+43. Workflow changes: `SALMON_INDEX` emits and publishes `decoys.txt` + `salmon_index.log` (tee with `pipefail`) and the index under `results/genome/index/`; typed params `salmon_kmer`, `salmon_fld_mean`, `salmon_fld_sd`, `salmon_index_dir`; `ext.args` for index (`-k 31 --ramLimit 6`) and quant (`--fldMean 250 --fldSD 25`). `nextflow lint workflow/` → 8 files, no errors; stub test (`irreverent_monod`) → exit 0, index/decoys/log published.
+
+## 3D — index + quantification
+
+44. `nextflow run workflow/main.nf -resume --run_quant true --transcript_fasta … --genome_fasta … --multiqc_title 'STV_GSE137303 QC + Salmon (SL4.0 / ITAG4.0)' --multiqc_dir qc/multiqc_salmon` (run `exotic_ardinghelli`, 5 min 59 s, exit 0). FastQC re-ran because `-resume` picks the latest session, which was the stub test; outputs are identical in content to Phase 2 and the Phase 2 MultiQC report was not overwritten. `SALMON_INDEX` 3 min 29 s, peak RSS 4.7 GB, 0 warnings, 99 duplicates collapsed, 19 poly-A tails clipped. `SALMON_QUANT` ×6: 20–26 s each, peak RSS 2.2–2.3 GB, 0 warnings. Log: `logs/phase3_salmon_run.log` (git-ignored).
+45. `bash scripts/bash/summarize_salmon.sh` → `results/quantification/salmon_qc_summary.tsv`, `salmon_libformat_summary.tsv`: all six `SR`, mapping 87.95–90.26 %, compatible ratio ≥ 0.9924, no diagnostics, `ISSUES: none`.
+46. Library-type check: `--salmon_index results/genome/index/salmon_index --salmon_libtype SR -output-dir /tmp/stv_sr_check` (run `sick_archimedes`, 1 min 7 s; `results/` untouched). Outputs differ from `-l A` for 621–774 transcripts per sample with identical mapping counts. A direct `salmon quant -l A` rerun of STV_free_rep1 with 6 and 3 threads was byte-identical to the pipeline output (deterministic). Opposite-strand-overlap test: no enrichment. `bash scripts/bash/compare_salmon_runs.sh … results/quantification/libtype_A_vs_SR_comparison.tsv`. Logged as D-010 (owner decision).
+
+## 3E — tx2gene and R environment
+
+47. `bash scripts/bash/build_tx2gene.sh` → `reference/ITAG4.0_tx2gene.tsv` (34,075 rows); validation vs cDNA, index duplicates and all six `quant.sf`: exit 0 (0 unexplained mismatches; 99 absent IDs = collapsed duplicates).
+48. `conda search` for DESeq2/tximport/r-base (bioconda newest: DESeq2 1.50.2, tximport 1.38.2, R 4.5). `CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-r.yml` (180 s) → R 4.5.3, tximport 1.38.2, DESeq2 1.50.2; lock `envs/stv-r.linux-64.lock.txt` (139 packages). Global `channel_priority` stayed `flexible`; `rachis-qiime2-2026.4` untouched.
+49. `Rscript scripts/R/01_tximport_import.R` (env `stv-r`): all checks OK, gene matrix 33,976 × 6, totals = Salmon totals → `results/quantification/tximport_validation.tsv`, `tximport_sessionInfo.txt`. No DESeq2 call.
+
+## 3F — references and documentation
+
+50. DOIs verified via the Crossref API (14 + 2 articles/preprints) and DataCite (nf-core/rnaseq concept DOI); original study metadata via NCBI E-utilities (PMID 31620899 → Fukuhara et al. 2020, *Arch Virol*). Versioned Bioconductor 3.22 vignettes, ENA download docs and SeqKit docs checked.
+51. New docs: `docs/reference_validation.md`, `docs/salmon_quantification.md`, `docs/tximport_preparation.md`, `docs/methods_references.md`, `reference/README.md`. Updated: `decisions.md` (D-001/D-009 approved, D-004 outcome, D-010–D-012), `reference_decision.md`, `pipeline_design.md`, `pipeline_sources.md`, `software_versions.md`, `nextflow_pipeline.md`, `README.md` (rewritten).
+
+## 3G — publication audit
+
+52. Pre-commit audit:
+    - 34 paths to add/modify; largest new file `reference/ITAG4.0_tx2gene.tsv` (1.2 MB); only other tracked file > 1 MB is the Phase 1 GEO table (1.3 MB).
+    - No FASTQ/FASTA/GFF/BAM/index/`work/` paths are tracked.
+    - Secret-pattern scan (tokens, keys, passwords): no hits.
+    - Ignore rules confirmed for `reference/SGN/`, `results/genome/`, `results/quantification/salmon/`, `results/qc/multiqc_salmon/`, `logs/`, `data/raw/`, `work/`.
+    - Non-secret personal data already in history: the GEO contact e-mail inside the archived SOFT record, local paths with the user name in audit docs and in `sessionInfo`, and the repo-local commit e-mail. Left as is.
+53. GitHub: `gh` 2.102.0 is installed and authenticated on Windows (account `byjosh21442`, keyring) and absent in WSL. Remote creation and push follow in the commit/push step (hash and verification in the Phase 3 report).
+
+## Phase 3 — not executed (stop conditions)
+
+DESeq2 object construction or testing, filtering, DEG thresholds, contrasts, biological interpretation, functional enrichment, re-quantification with explicit `SR` (D-010), bias correction (D-012).

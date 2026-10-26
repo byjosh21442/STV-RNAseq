@@ -1,95 +1,111 @@
-# STV_GSE137303 — tomato leaf RNA-seq re-analysis (Southern tomato virus)
+# STV-RNAseq — reanalysis of GSE137303 (tomato M82 leaves, Southern tomato virus)
 
-## Objective
+Reproducible RNA-seq reanalysis of the transcriptomic response of *Solanum lycopersicum* M82 to Southern tomato virus (STV) infection.
 
-Re-analyse public RNA-seq data from *Solanum lycopersicum* cv. M82 leaves, STV-free vs STV-infected, to obtain a reproducible differential-expression result (DESeq2) and plant-specific functional analysis. University project, ~2 weeks; robustness and simplicity over complexity.
+## Biological question
+
+Which leaf genes of tomato cv. M82 differ in expression between plants infected with Southern tomato virus (STV) and STV-free plants? STV is a double-stranded RNA virus of the genus *Amalgavirus*. This repository re-quantifies the public raw reads with a current reference and a current, documented workflow. **No differential-expression result exists yet**, and no biological conclusion is drawn here.
 
 ## Dataset
 
 | | |
 |---|---|
-| GEO | [GSE137303](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE137303) (PubMed 31620899) |
-| BioProject / SRA study | PRJNA565137 / SRP221436 |
-| Samples | 6 (GSM4074979–GSM4074984), one SRA run each (SRR10102791–SRR10102796) |
-| Library | Illumina HiSeq 2500, **single-end 75 nt**, "TruSeq stranded mRNA" kit (read orientation not documented) |
-| Raw data size | 104.6 M reads; 5.7 GB `fastq.gz` at ENA |
+| GEO series | [GSE137303](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE137303) |
+| Publication | Fukuhara, Tabara, Koiwa & Takahashi (2020), *Archives of Virology* 165, 11–20, [doi:10.1007/s00705-019-04436-1](https://doi.org/10.1007/s00705-019-04436-1) (PubMed 31620899) |
+| BioProject / SRA | PRJNA565137 / SRP221436; runs SRR10102791–SRR10102796 |
+| Material | Leaves of *S. lycopersicum* cv. M82 — **3 STV-free vs 3 STV-infected** biological replicates |
+| Sequencing | Illumina HiSeq 2500, **single-end 75 nt**, "TruSeq stranded mRNA" kit; 104.6 M reads in total |
+| Raw-data source used here | ENA `fastq.gz` (5.7 GB), MD5-verified against ENA (6/6 PASS) |
 
-Verified sample table: [data/metadata/samples_metadata.tsv](data/metadata/samples_metadata.tsv) · audit: [docs/dataset_audit.md](docs/dataset_audit.md).
-
-## Experimental design
-
-| Condition | Replicates | sample_id |
+| Condition | sample_id | Run |
 |---|---|---|
-| STV_free (intended reference level) | 3 | STV_free_rep1–3 |
-| STV_infected | 3 | STV_infected_rep1–3 |
+| STV_free | STV_free_rep1–3 | SRR10102791–93 |
+| STV_infected | STV_infected_rep1–3 | SRR10102794–96 |
 
-## Intended workflow (D-002 approved; D-001 reference pending — see [docs/decisions.md](docs/decisions.md))
+Verified metadata: [data/metadata/samples_metadata.tsv](data/metadata/samples_metadata.tsv); audit: [docs/dataset_audit.md](docs/dataset_audit.md).
+
+## Original study vs this reanalysis
+
+| | Original study (GEO record) | This reanalysis |
+|---|---|---|
+| Genome / annotation | **SL2.50 / ITAG2.4-era analysis** (GEO text); the published count table is keyed by NCBI RefSeq Annotation Release 102 on SL2.50 ([docs/geo_counts_audit.md](docs/geo_counts_audit.md)) | **SGN SL4.0 genome + ITAG4.0 annotation** (D-001) |
+| Read processing | TopHat/Bowtie2 alignment; Cuffnorm FPKM / normalized counts | Raw ENA FASTQ → FastQC/MultiQC → **Salmon** (selective alignment, decoy-aware index) → **tximport** → **DESeq2** (next phase) |
+| Strandedness | Not stated | Measured: all six libraries `SR` (reverse-stranded single-end) |
+| Use of the authors' table | — | Audit/cross-check only; never DESeq2 input (normalized values, D-005) |
+
+The reanalysis does not attempt to reproduce the authors' numbers gene by gene. It produces an independent, documented quantification on the current tomato reference.
+
+## Workflow
 
 ```text
-ENA FASTQ (MD5-checked) → FastQC → MultiQC → [trimming only if QC justifies — not needed so far]
-→ Salmon (decoy-aware index) → tximport → DESeq2 → plant functional analysis
+ENA FASTQ (MD5) → sanity checks (SeqKit) → FastQC → MultiQC        [Phase 2, done]
+SGN SL4.0 + ITAG4.0 (SHA-256 manifest) → validation                [Phase 3, done]
+→ Salmon 2.7.0 index (ITAG4.0 cDNA + full SL4.0 genome decoys)
+→ Salmon quant (-l A, SE fragment-length prior 250/25) ×6 → QC     [Phase 3, done]
+→ tx2gene (ITAG4.0 GFF) → tximport (gene level, validated)         [Phase 3, done]
+→ DESeq2 → functional analysis                                     [pending owner decisions]
 ```
 
-Nextflow (`workflow/`) automates FASTQ → QC → quantification; tximport/DESeq2/functional analysis will run as R scripts.
+- **Architecture:** a small Nextflow DSL2 workflow (`workflow/`, strict syntax, Nextflow 26.10.3) modelled on nf-core/rnaseq 3.27.0 (FastQC, Salmon index/quant, MultiQC modules; same tool versions). It is not a copy of nf-core/rnaseq. Statistics run outside the workflow as R scripts (`scripts/R/`).
+- **Software:** pinned conda environments with lock files: `stv-rnaseq` (FastQC 0.13.0, MultiQC 1.35, Salmon 2.7.0, SeqKit 2.14.0, OpenJDK 21) and `stv-r` (R 4.5.3, tximport 1.38.2, DESeq2 1.50.2).
+- Details: [docs/nextflow_pipeline.md](docs/nextflow_pipeline.md), [docs/software_versions.md](docs/software_versions.md), [docs/methods_references.md](docs/methods_references.md).
 
-## Working location
-
-Active copy: **`~/projects/STV_GSE137303`** on the WSL filesystem (D-006). Activate the tools with `conda activate stv-rnaseq` ([docs/software_versions.md](docs/software_versions.md)).
-
-## Directory structure
+## Repository structure
 
 ```text
-config/            samplesheet.csv (generated; accessions + fastq_1)
-workflow/          Nextflow DSL2 pipeline: main.nf, modules/, nextflow.config, bootstrap/, tests/stub/
-scripts/bash/      audit, metadata, download, sanity-check, FastQC-summary, Nextflow-install scripts
-scripts/R/         tximport / DESeq2 / functional analysis (later)
-envs/              stv-rnaseq.yml (pinned) + linux-64 lock file
+config/            samplesheet.csv (accessions, condition, strandedness, fastq_1)
+workflow/          Nextflow pipeline: main.nf, modules/, nextflow.config, bootstrap/, tests/stub/
+scripts/bash/      metadata, download, sanity, QC/Salmon summaries, reference download/validation, tx2gene
+scripts/R/         01_tximport_import.R (validation + gene-level import; no DE)
+envs/              stv-rnaseq.yml, stv-r.yml + linux-64 lock files
 data/metadata/     samples_metadata.tsv + raw source records (sources/)
-data/raw/          six ENA FASTQ.gz, MD5-validated (git-ignored)
-data/processed/    original_geo/GSE137303_count.txt.gz (authors' table, audit only)
-reference/         genome/annotation/indexes (git-ignored; nothing downloaded — D-001)
-results/           qc/ (checksum, sanity and QC summary TSVs tracked; FastQC/MultiQC reports ignored),
-                   quantification/, deseq2/, functional/, pipeline_info/
-figures/           final figures (later)
-docs/              audits, design, sources, decisions, validation, QC assessment, run log
+data/raw/          ENA FASTQ (git-ignored)
+data/processed/    original_geo/ authors' count table (audit only)
+reference/         reference_manifest.tsv, reference_validation.tsv, ITAG4.0_tx2gene*.tsv (tracked);
+                   SGN/ downloads (git-ignored)
+results/           qc/*.tsv and quantification/*.tsv (tracked summaries);
+                   FastQC/MultiQC reports, Salmon outputs, index, pipeline_info (git-ignored)
+docs/              audits, decisions, reference validation, Salmon/tximport reports, methods references, run log
 ```
 
-## Current status (Phase 2, 2026-10-25)
+## Reproducibility
 
-- Phase 1: environment/dataset/GEO-table audits, reference and pipeline research.
-- Phase 2 done: WSL-native clone; `stv-rnaseq` env (FastQC 0.13.0, MultiQC 1.35, Salmon 2.7.0, SeqKit, pigz, OpenJDK 21) + Nextflow 26.10.3; bootstrap and `-resume` validated; six FASTQ downloaded from ENA (5.72 GB) with **6/6 MD5 PASS**; sanity checks 6/6 PASS (read counts = ENA, all 75 nt); raw FastQC + MultiQC via the workflow; QC conclusion **A — no preprocessing appears necessary** ([docs/raw_qc_assessment.md](docs/raw_qc_assessment.md)).
-- Not done (stop conditions): reference download, Salmon index/quantification, tximport, DESeq2, trimming, interpretation.
-- Blocking: reference version **D-001**. To confirm: **D-009** (no trimming).
-
-## Reproduce
-
-Phase 1 (any bash with `curl`, `awk`, `zcat`):
+Everything runs in WSL2/Linux from the project root. Large inputs and outputs are re-created by scripts, never committed.
 
 ```bash
-bash scripts/bash/env_audit.sh                      # read-only environment report
-bash scripts/bash/fetch_metadata.sh                 # GEO / NCBI SRA / ENA records -> data/metadata/sources/
-bash scripts/bash/build_samples_metadata.sh         # samples_metadata.tsv + config/samplesheet.csv (+ cross-source checks)
-bash scripts/bash/fetch_geo_counts.sh               # 1.3 MB GEO supplementary table + structure summary
-bash scripts/bash/verify_geo_counts_annotation.sh   # streams NCBI SL2.50 GFF (8 MB, not saved) and matches IDs
-```
-
-Remote records can change over time; the copies used for this phase are committed in `data/metadata/sources/`.
-
-Phase 2 (WSL, project root):
-
-```bash
+# environments
 CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-rnaseq.yml   # or: conda create -n stv-rnaseq --file envs/stv-rnaseq.linux-64.lock.txt
+CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-r.yml        # or: conda create -n stv-r --file envs/stv-r.linux-64.lock.txt
 conda activate stv-rnaseq
 bash scripts/bash/install_nextflow.sh && conda deactivate && conda activate stv-rnaseq
-nextflow run workflow/bootstrap/main.nf -w work/bootstrap && nextflow run workflow/bootstrap/main.nf -w work/bootstrap -resume
-bash scripts/bash/download_fastq.sh        # ENA download, resume, size+MD5 validation
-bash scripts/bash/check_raw_fastq.sh       # gzip/structure/length/read-count checks
-nextflow run workflow/main.nf -resume      # FastQC + MultiQC (Salmon off)
-bash scripts/bash/summarize_fastqc.sh      # results/qc/raw_qc_summary.tsv
+
+# raw data and QC (Phase 2)
+bash scripts/bash/download_fastq.sh && bash scripts/bash/check_raw_fastq.sh
+nextflow run workflow/main.nf -resume && bash scripts/bash/summarize_fastqc.sh
+
+# reference, index and quantification (Phase 3)
+bash scripts/bash/download_reference.sh && bash scripts/bash/validate_reference.sh
+nextflow run workflow/main.nf -resume --run_quant true \
+  --transcript_fasta reference/SGN/ITAG4.0/ITAG4.0_cDNA.fasta \
+  --genome_fasta reference/SGN/SL4.0/S_lycopersicum_chromosomes.4.00.fa.gz \
+  --multiqc_title 'STV_GSE137303 QC + Salmon (SL4.0 / ITAG4.0)' --multiqc_dir qc/multiqc_salmon
+bash scripts/bash/summarize_salmon.sh && bash scripts/bash/build_tx2gene.sh
+conda activate stv-r && Rscript scripts/R/01_tximport_import.R
 ```
 
-## Next steps
+Provenance:
+- SHA-256 for every reference file: `reference/reference_manifest.tsv`.
+- ENA MD5 for every FASTQ: `results/qc/raw_fastq_checksums.tsv`.
+- Nextflow trace/report: `results/pipeline_info/`.
+- Every executed step: [docs/run_log.md](docs/run_log.md).
+- Remote metadata can change; the copies used are committed in `data/metadata/sources/`.
 
-1. Decide **D-001** (reference: SL4.0+ITAG4.1 recommended; alternatives SL2.50+ITAG2.4 / SL2.50+NCBI R102) and confirm **D-009** (no trimming).
-2. After D-001: download the approved genome + transcript FASTA + annotation into `reference/`, build the decoy-aware Salmon index (`--run_quant true`), run Salmon with `-l A`, inspect `lib_format_counts.json` of all six samples (D-004).
-3. Then tximport → DESeq2 in `scripts/R/` (design and thresholds need approval).
+## Status (Phase 3, 2026-10-25)
+
+| Step | Status |
+|---|---|
+| Raw FASTQ download + MD5, sanity checks, FastQC/MultiQC | Done; QC conclusion A, no trimming (D-009) — [docs/raw_qc_assessment.md](docs/raw_qc_assessment.md) |
+| Reference SL4.0 + ITAG4.0: download, manifest, validation | Done; no material inconsistency — [docs/reference_validation.md](docs/reference_validation.md) |
+| Salmon decoy-aware index + quantification (6 samples) | Done; mapping 87.95–90.26 %, all `SR`, no Salmon diagnostics — [docs/salmon_quantification.md](docs/salmon_quantification.md) |
+| tx2gene + tximport import check | Done; 33,976 genes × 6 samples — [docs/tximport_preparation.md](docs/tximport_preparation.md) |
+| DESeq2, thresholds, contrasts, interpretation, enrichment | **Not started**. Open owner decisions: D-010 (final library type `A` vs explicit `SR`), D-012 (Salmon bias correction), DESeq2 design/thresholds — [docs/decisions.md](docs/decisions.md) |

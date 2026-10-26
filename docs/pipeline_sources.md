@@ -1,6 +1,6 @@
 # Pipeline reference sources
 
-All accessed **2026-10-25**. These are the authoritative references used to design and implement `workflow/`. Where our implementation differs, the reason is recorded in `docs/nextflow_pipeline.md` ("Differences from nf-core/rnaseq").
+All accessed **2026-10-25** (local time, UTC−6). These are the authoritative references used to design and implement `workflow/`. Where our implementation differs, the reason is recorded in `docs/nextflow_pipeline.md` ("Differences from nf-core/rnaseq"). Per-process technical documentation **and** scientific literature (DOIs, APA 7) are consolidated in [`docs/methods_references.md`](methods_references.md); this file remains the design-phase URL list.
 
 ## 1. nf-core/rnaseq (principal architecture reference — read, not run)
 
@@ -36,15 +36,26 @@ All accessed **2026-10-25**. These are the authoritative references used to desi
 | Salmon docs ("latest", page labelled 1.12.0) | <https://salmon.readthedocs.io/en/latest/salmon.html> | Decoy-aware index, `-l` before `-r`, single-end `--fldMean/--fldSD`, `-l A` |
 | Library types | <https://salmon.readthedocs.io/en/latest/library_type.html> | Single-end types `U`, `SF`, `SR` |
 | Releases | <https://github.com/COMBINE-lab/salmon/releases> | Latest release v2.8.0 (2026-09-25); nf-core pins 2.7.0 |
+| Salmon 2.x documentation (Phase 3) | <https://combine-lab.github.io/salmon> (quick start, library types, mapping modes, CLI, output formats) | Decoy-aware index (`-d`, decoys last), selective alignment default, `lib_format_counts.json`/`meta_info.json` fields incl. `diagnostics`, deterministic mode |
+| Migration guide C++ → 2.x | <https://github.com/COMBINE-lab/salmon/blob/master/MIGRATION.md> | Index must be rebuilt; `quant.sf` unchanged for tximport; removed/ignored options |
+| Release v2.7.0 notes | <https://github.com/COMBINE-lab/salmon/releases/tag/v2.7.0> | Index format v2; no CLI changes; results byte-identical to 2.6.0 |
 
-Note: the readthedocs "latest" page still reports 1.12.0 while bioconda/GitHub ship 2.x. Before any real quantification, options must be re-checked against `salmon quant --help` of the installed 2.7.0.
+Note: the readthedocs "latest" page still reports 1.12.0 while bioconda/GitHub ship 2.x. Resolved in Phase 3: options were checked against `salmon index --help` / `salmon quant --help` of the installed 2.7.0 and the 2.x docs above (`docs/salmon_quantification.md` §1).
 
-## 4. tximport and DESeq2 (later phases)
+## 4. tximport and DESeq2
 
 | What | URL | Used for |
 |---|---|---|
 | tximport vignette (1.40.0, Bioconductor 3.23) | <https://bioconductor.org/packages/release/bioc/vignettes/tximport/inst/doc/tximport.html> | `tximport(files, type = "salmon", tx2gene)`; workflow publishes `quantification/salmon/samples.csv` index for it |
 | DESeq2 vignette (1.52.0) | <https://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html> | Salmon → tximport → `DESeqDataSetFromTximport` is the recommended path |
+| Version-matched vignettes actually installed (Phase 3: tximport 1.38.2, DESeq2 1.50.2, Bioconductor 3.22 — newest on bioconda) | <https://bioconductor.org/packages/3.22/bioc/vignettes/tximport/inst/doc/tximport.html>, <https://bioconductor.org/packages/3.22/bioc/vignettes/DESeq2/inst/doc/DESeq2.html> | tx2gene format, `countsFromAbundance = "no"` + offset, `--gcBias` recommendation |
+
+## 4b. Reference data (Phase 3)
+
+| What | URL | Used for |
+|---|---|---|
+| SGN SL4.0 assembly | <https://solgenomics.net/ftp/tomato_genome/assembly/build_4.00/> | Genome FASTA (decoys), release notes |
+| SGN ITAG4.0 release | <https://solgenomics.net/ftp/tomato_genome/annotation/ITAG4.0_release/> | cDNA FASTA, gene-model GFF, proteins, descriptions, GO terms |
 
 ## 5. QC tools
 

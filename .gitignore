@@ -25,6 +25,10 @@ data/raw/*
 reference/*
 !reference/.gitkeep
 !reference/README.md
+!reference/reference_manifest.tsv
+!reference/reference_validation.tsv
+!reference/ITAG4.0_tx2gene.tsv
+!reference/ITAG4.0_tx2gene_validation.tsv
 *.fa
 *.fa.gz
 *.fasta
@@ -52,9 +56,11 @@ results/pipeline_info/
 # --- Large / regenerable results (small final tables and figures stay tracked) ---
 results/qc/fastqc_raw/
 results/qc/multiqc_raw/
+results/qc/multiqc_salmon/
 results/qc/**/*_data/
 results/quantification/salmon/
 results/quantification/**/aux_info/
+results/genome/
 results/nextflow_validation/
 *.rds
 *.RData
@@ -74,6 +80,7 @@ __pycache__/
 *.sif
 *.img
 
+logs/
 # --- Temporary / OS / editor files ---
 tmp/
 *.tmp

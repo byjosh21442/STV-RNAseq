@@ -1,0 +1,44 @@
+metric	value	status	note
+gff_feature_types	CDS=153474; exon=161508; five_prime_UTR=21452; gene=34075; mRNA=34075; three_prime_UTR=22835	OK	
+genes	34075	OK	
+transcripts_mRNA	34075	OK	
+duplicate_gene_IDs	0	OK	
+duplicate_mRNA_IDs	0	OK	
+duplicate_gene_Names	0	OK	
+duplicate_mRNA_Names	0	OK	
+names_not_Solyc_locus_plus_versions	0	OK	
+gene_Names_with_extra_version_level	15	NOTE	upstream naming kept as published (unique, parent-consistent, identical in cDNA): Solyc01g008710.5.1,Solyc01g090260.5.1,Solyc01g099150.5.1,Solyc01g100030.5.1,Solyc01g102380.5.1,Solyc01g110440.5.1,Solyc02g076980.5.1,Solyc02g085180.5.1,Solyc03g093120.5.1,Solyc06g007130.5.1,Solyc06g051630.5.1,Solyc08g075540.5.1,Solyc09g010090.5.1,Solyc09g010800.5.1,Solyc09g011640.5.1
+mRNA_Names_with_extra_version_level	15	NOTE	e.g. Solyc01g008710.5.1.1,Solyc01g090260.5.1.1,Solyc01g099150.5.1.1
+loci_with_multiple_gene_models	0	OK	
+ID_equals_type_prefix_plus_Name	True	OK	gene:<Name> / mRNA:<Name>; tx2gene uses the Name attributes (no string surgery)
+mRNA_with_missing_parent_gene	0	OK	
+mRNA_with_multiple_parents	0	OK	
+genes_without_mRNA	0	OK	
+transcripts_per_gene_distribution	1tx=34075	OK	
+mRNA_Name_not_prefixed_by_gene_Name	0	OK	
+mRNA_seqid_or_strand_differs_from_gene	0	OK	
+features_with_start_gt_end	0	OK	
+genome_sequences	13	OK	
+genome_names	SL4.0ch00,SL4.0ch01,SL4.0ch02,SL4.0ch03,SL4.0ch04,SL4.0ch05,SL4.0ch06,SL4.0ch07,SL4.0ch08,SL4.0ch09,SL4.0ch10,SL4.0ch11,SL4.0ch12	OK	
+genome_total_bp	782520033	OK	
+genome_headers_with_trailing_whitespace	8	OK	cosmetic; Salmon and decoys.txt use the first whitespace-delimited token
+duplicate_genome_names	0	OK	
+GFF_seqids_missing_in_genome	0	OK	
+sequence_region_length_mismatches	0	OK	
+GFF_sequence_region_pragma_missing_space	yes	OK	'##sequence-regionSL4.0ch00' (upstream formatting; parsed correctly)
+mRNA_beyond_sequence_end	0	OK	
+cDNA_records	34075	OK	
+duplicate_cDNA_IDs	0	OK	
+cDNA_IDs_not_in_GFF_mRNA_Names	0	OK	
+GFF_mRNA_Names_not_in_cDNA	0	OK	
+cDNA_length_ne_sum_of_GFF_exons	0	OK	first: 
+cDNA_length_min_median_max	41/1086/22821	OK	
+protein_records	34075	OK	
+protein_IDs_not_in_mRNA_Names	0	OK	
+description_rows	34075	OK	
+description_IDs_not_gene_Names	0	OK	
+goterm_rows	33562	OK	
+goterm_rows_with_GO_terms	5845	OK	
+goterm_IDs_not_gene_Names	21962	NOTE	not used in Phase 3; must be reconciled before any GO analysis
+goterm_IDs_locus_in_GFF_other_version	21311	OK	
+goterm_IDs_with_GO_terms_matching_gene_Names	1458	OK	

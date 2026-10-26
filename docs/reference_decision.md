@@ -1,6 +1,8 @@
 # Reference decision — tomato genome and annotation
 
-Status: **research complete, decision pending (BLOCKING)**. Nothing large was downloaded; only directory listings, README files and streamed file headers were read (retrieved 2026-10-25).
+Status: **APPROVED 2026-10-25 — SGN SL4.0 genome + ITAG4.0 annotation, full genome as Salmon decoys (D-001).** The research below (retrieved 2026-10-25) recommended ITAG4.1. The owner considered it and selected **ITAG4.0**, the annotation released together with SL4.0 build 4.00 (both 2019-09-06). Download, provenance and validation: `docs/reference_validation.md`.
+
+Original research status line: research complete, decision pending. Nothing large was downloaded at that stage; only directory listings, README files and streamed file headers were read.
 
 ## Verified facts
 
@@ -71,3 +73,10 @@ Rationale:
 Fallbacks: choose **A2** if the course requires gene-by-gene reproduction of the authors' table; choose **A** if the instructor requires literally "SL2.50 + ITAG2.4" as stated in GEO.
 
 Researcher must approve one of: **B (recommended) / A / A2**, and also confirm the use of the full SL4.0 genome as Salmon decoys (≈0.8 Gb; see RAM note in `pipeline_design.md`).
+
+## Outcome (2026-10-25)
+
+- Approved: **SL4.0 + ITAG4.0** (a variant of option B with the earlier annotation release), full-genome decoys. ITAG4.1 was not selected.
+- Points left open above, now answered for ITAG4.0: **1 transcript per gene** (34,075 genes = 34,075 mRNAs, so no isoform-level information). Identifiers are SGN Solyc `Name`s; GFF `ID`s carry `gene:`/`mRNA:` prefixes, and sequence names are `SL4.0ch00`–`12`.
+- Measured RAM for the full-decoy index: 4.7 GB peak (`docs/salmon_quantification.md`).
+- Consequences carried forward: `ITAG4.0_goterms.txt` uses gene versions inconsistent with the GFF for 21,311 IDs. This must be reconciled before GO analysis (`docs/reference_validation.md` §2).

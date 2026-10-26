@@ -1,0 +1,7 @@
+sample	quant_sf_md5_identical	num_mapped_A	num_mapped_B	num_eq_classes_A	num_eq_classes_B	transcripts	transcripts_numreads_diff_gt_0.001	max_abs_numreads_diff	effective_length_diffs	pearson_log1p_numreads
+STV_free_rep1	NO	15902183	15902183	26308	26166	33976	621	634.976	0	0.999694
+STV_free_rep2	NO	14698030	14698030	26026	25880	33976	720	985.438	0	0.999721
+STV_free_rep3	NO	12871350	12871350	26006	25864	33976	680	1376.987	0	0.999645
+STV_infected_rep1	NO	17121521	17121521	26310	26167	33976	690	1017.591	0	0.999670
+STV_infected_rep2	NO	15217015	15217015	25852	25709	33976	661	1044.872	0	0.999680
+STV_infected_rep3	NO	17871112	17871112	26960	26796	33976	774	2218.899	0	0.999588

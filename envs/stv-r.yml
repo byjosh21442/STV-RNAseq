@@ -1,0 +1,14 @@
+# R/Bioconductor environment for STV_GSE137303 (Phase 3: tximport import preparation; DESeq2 installed, not run).
+# Create:  CONDA_CHANNEL_PRIORITY=strict conda env create -f envs/stv-r.yml
+# Exact resolved packages: envs/stv-r.linux-64.lock.txt
+# Kept separate from stv-rnaseq so R/Bioconductor pins never constrain the command-line tools.
+name: stv-r
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - r-base=4.5                    # bioconda Bioconductor 3.22 builds target R 4.5
+  - bioconductor-tximport=1.38.2  # newest bioconda build (Bioconductor 3.22)
+  - bioconductor-deseq2=1.50.2    # newest bioconda build (Bioconductor 3.22)
+  - r-jsonlite                    # tximport reads Salmon aux_info JSON

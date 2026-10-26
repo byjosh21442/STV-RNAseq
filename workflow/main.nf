@@ -1,7 +1,7 @@
 #!/usr/bin/env nextflow
 // STV_GSE137303 single-end RNA-seq workflow: samplesheet -> FastQC -> [Salmon] -> MultiQC.
 // Architecture follows nf-core/rnaseq (FASTQC, SALMON_INDEX/QUANT, MULTIQC modules) at a much smaller scale.
-// Salmon is disabled unless --run_quant true AND a reference is supplied (reference decision D-001 pending).
+// Salmon runs only with --run_quant true and a reference (approved: SGN SL4.0 genome decoys + ITAG4.0 cDNA, D-001).
 
 include { FASTQC       } from './modules/fastqc'
 include { SALMON_INDEX } from './modules/salmon_index'
@@ -21,6 +21,13 @@ params {
     genome_fasta: String = ''
     // Overrides the per-sample strandedness mapping (e.g. 'A', 'SR'); empty = use samplesheet.
     salmon_libtype: String = ''
+    // salmon index -k (Salmon default; docs: k = 31 works well for reads >= 75 bp).
+    salmon_kmer: Integer = 31
+    // Single-end reads carry no fragment-length information: Salmon uses these as the fragment-length
+    // distribution for effective lengths. Library fragment length is not reported (SRA InsertSize = 0),
+    // so the Salmon defaults are kept and passed explicitly (docs/salmon_quantification.md).
+    salmon_fld_mean: Integer = 250
+    salmon_fld_sd: Integer = 25
 
     multiqc_title: String = 'STV_GSE137303 raw FASTQ QC'
 
@@ -28,6 +35,7 @@ params {
     fastqc_dir: String = 'qc/fastqc_raw'
     multiqc_dir: String = 'qc/multiqc_raw'
     salmon_dir: String = 'quantification/salmon'
+    salmon_index_dir: String = 'genome/index'
     pipeline_info_dir: String = 'pipeline_info'
 }
 
@@ -44,15 +52,17 @@ workflow {
     ch_multiqc = FASTQC.out.zip.map { _meta, zip -> zip }
 
     ch_salmon = channel.empty()
+    ch_index_files = channel.empty()
     if (params.run_quant) {
         if (!params.salmon_index && !params.transcript_fasta) {
-            error("--run_quant true requires --salmon_index or --transcript_fasta (reference decision D-001 must be approved first)")
+            error("--run_quant true requires --salmon_index or --transcript_fasta")
         }
         def ch_index = params.salmon_index ? channel.value(resolvePath(params.salmon_index, root_dir)) : null
         if (!params.salmon_index) {
             def decoys = params.genome_fasta ? resolvePath(params.genome_fasta, root_dir) : []
             SALMON_INDEX(resolvePath(params.transcript_fasta, root_dir), decoys)
             ch_index = SALMON_INDEX.out.index
+            ch_index_files = SALMON_INDEX.out.index.mix(SALMON_INDEX.out.decoys, SALMON_INDEX.out.log)
         }
         def ch_quant_in = ch_reads.map { meta, fastq ->
             tuple(meta + [libtype: params.salmon_libtype ?: salmonLibtype(meta.strandedness)], fastq)
@@ -75,6 +85,7 @@ workflow {
     salmon = ch_salmon.map { meta, dir ->
         [sample: meta.id, condition: meta.condition, replicate: meta.replicate, libtype: meta.libtype, quant_dir: dir]
     }
+    salmon_index = ch_index_files
     versions = ch_versions
 }
 
@@ -91,6 +102,9 @@ output {
             path "${params.salmon_dir}/samples.csv"
             header true
         }
+    }
+    salmon_index {
+        path params.salmon_index_dir
     }
     versions {
         path params.pipeline_info_dir

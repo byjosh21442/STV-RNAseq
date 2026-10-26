@@ -1,0 +1,21 @@
+metric	value	status	note
+tx2gene_rows	34075	OK	
+tx2gene_unique_transcripts	34075	OK	
+tx2gene_unique_genes	34075	OK	
+transcripts_mapped_to_more_than_one_gene	0	OK	
+transcript_name_starts_with_gene_name	34075	OK	
+cDNA_ids_missing_from_tx2gene	0	OK	
+tx2gene_ids_missing_from_cDNA	0	OK	
+index_duplicate_clusters_file	results/genome/index/salmon_index/duplicate_clusters.tsv	OK	
+index_collapsed_duplicate_transcripts	99	OK	
+samples_in_samples_csv	6	OK	
+quant_sf_rows	33976	OK	
+quant_sf_names_not_in_tx2gene	0	OK	exact string match; no version stripping
+tx2gene_names_not_in_quant_sf	99	OK	must equal transcripts collapsed as duplicates by salmon index
+unexplained_tx2gene_names_absent_from_quant_sf	0	OK	
+quant_sf_names_identical_to_first:STV_free_rep1	True	OK	
+quant_sf_names_identical_to_first:STV_infected_rep3	True	OK	
+quant_sf_names_identical_to_first:STV_free_rep3	True	OK	
+quant_sf_names_identical_to_first:STV_infected_rep1	True	OK	
+quant_sf_names_identical_to_first:STV_free_rep2	True	OK	
+quant_sf_names_identical_to_first:STV_infected_rep2	True	OK	

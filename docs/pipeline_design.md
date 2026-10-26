@@ -19,14 +19,14 @@ Status: **design proposal; quantification strategy requires human approval.** No
 
 - 6 samples, 1 run each, **single-end 75 nt**, 14–20 M reads/sample, 5.7 GB of `fastq.gz` in total (`dataset_audit.md`).
 - Strandedness **not documented** → must be measured, not assumed.
-- Single-end: Salmon cannot estimate the fragment-length distribution; effective lengths use `--fldMean/--fldSD` (Salmon docs). True fragment length is UNKNOWN → keep Salmon defaults and document it as a limitation.
+- Single-end: Salmon cannot estimate the fragment-length distribution; effective lengths use `--fldMean/--fldSD` (Salmon docs). True fragment length is UNKNOWN → keep Salmon defaults and document it as a limitation. **Implemented in Phase 3 (D-011): `--fldMean 250 --fldSD 25` passed explicitly; SRA `InsertSize = 0`.**
 - Salmon docs: k = 31 "seems to work well for reads of 75bp or longer" → default k is acceptable for 75 nt; consider a smaller k only if mapping rates are unexpectedly low.
 
 ## What we take from nf-core/rnaseq (architecture reference only, not run)
 
 - Samplesheet with `strandedness` that may be `auto`; nf-core infers it by sub-sampling 1 M reads and running Salmon, calling *forward/reverse* at ≥ 0.8 of fragments and *unstranded* when forward/reverse differ by < 0.1, otherwise *undetermined* (possible gDNA contamination).
 - Salmon with a **decoy-aware index built from the genome** is the default recommendation when a genome FASTA is supplied.
-- Salmon `--seqBias`/`--gcBias` are not on by default in nf-core; DESeq2 docs recommend `--gcBias` unless the data are known not to need it. Whether `--gcBias` is appropriate for **single-end** data: TO BE VERIFIED against Salmon behaviour before use.
+- Salmon `--seqBias`/`--gcBias` are not on by default in nf-core; DESeq2 docs recommend `--gcBias` unless the data are known not to need it. Whether `--gcBias` is appropriate for **single-end** data: TO BE VERIFIED against Salmon behaviour before use. **Phase 3: no bias flags used (nf-core default); recorded as owner decision D-012.**
 - Since nf-core/rnaseq v3.0, **featureCounts is no longer used for quantification** (only biotype QC), citing Zhao et al. 2015 and Soneson et al. 2015; HISAT2 runs produce no quantification there.
 - STAR needs "typically around 38GB" RAM for human GRCh37 (nf-core docs); HISAT2 is the documented low-memory alternative.
 - Trimming (Trim Galore!/fastp) is on by default in nf-core; **we will not adopt this default** (project rule: trim only if QC justifies it).
