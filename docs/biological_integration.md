@@ -1,7 +1,8 @@
 # Biological integration: evidence matrix by theme (Phase 7)
 
-Status: Phase 7, 2026-10-26. This phase integrates **frozen** results. It runs no new test of significance and no new
-DESeq2, fgsea or CAMERA run, and it does not change any threshold or sample. Machine-readable version:
+Status: Phase 7, 2026-10-26; classification revised the same day under the owner's D-045 decision (§2). This phase
+integrates **frozen** results. It runs no new test of significance and no new DESeq2, fgsea or CAMERA run, and it does not
+change any threshold or sample. Machine-readable version:
 `results/biological_integration/theme_evidence_matrix.tsv`. Interpretation: [phase7_biological_interpretation.md](phase7_biological_interpretation.md).
 Literature: [literature_biological_context.md](literature_biological_context.md).
 
@@ -17,27 +18,134 @@ Literature: [literature_biological_context.md](literature_biological_context.md)
 
 L2 never overrides L1. Every theme below is built from L2 sets and then weighed against L3 and L4.
 
-## 2. Classification rules (Phase 7)
+## 2. Classification framework (D-045, revised by the owner)
 
-The Phase 6B classes (D-039) already require Tier 1 or Tier 2 sets for ROBUST or SUPPORTED WITH CAUTION. CAMERA found no
-significant set, so no theme can reach those classes. All ten themes start as **EXPLORATORY**. Phase 7 adds one lower class
-and can only keep or lower a class, never raise it.
+Every statement keeps three levels apart:
+- **Inferential.** DESeq2 at gene level (0 of 18,277 genes at padj < 0.05) and CAMERA at set level (0 of 215 sets at
+  FDR < 0.05). None of the functional themes received correlation-aware FDR support.
+- **Exploratory.** fgsea on the frozen DESeq2 Wald ranking (215 GO sets at padj < 0.05). These are coordinated
+  rank-level tendencies.
+- **Robustness.** Replicate consistency (D-036), leave-one-sample-out (LOO, D-037), Cook's ranking choice (D-033) and the
+  ch00 / organelle-identical diagnostics (D-038, D-043, D-044). They describe how strongly each tendency depends on single
+  samples or on feature composition. They are not significance tests.
 
-**UNSUPPORTED** applies if any of the following holds:
-- **U1 (reference / feature composition).** ≥ 50 % of the theme's sets are ch00-sensitive in **both** the pre-specified
-  and the post-hoc exclusion runs (D-038, D-043).
-- **U2 (single-sample dependence).** ≥ 50 % of the theme's sets depend on the **same** sample in LOO (D-037: supported
-  when each other same-condition sample is dropped, lost when this one is dropped) **and** < 50 % of its sets are
-  "broadly condition-consistent" in the replicate diagnostic (D-036).
-- **U3 (cross-method contradiction).** ≥ 50 % of the theme's sets are Tier 4 (opposed or discordant).
+Each theme therefore has two separate labels: an **evidence status** and a descriptive **robustness descriptor**.
 
-**Disclosure.**
-- These rules were written after the Phase 6B summaries were known (ch00 counts and STV_free_rep1 dependence per theme).
-- U2 was first coded with LOO alone. That version is kept in the matrix as `rule_U2_v1_loo_only`. It would also have
-  classed **Defence** (4/8 sets dependent on STV_free_rep2) and **Cell wall / carbohydrate** (2/4) as UNSUPPORTED.
-- U2 was revised before writing any interpretation, so that no single diagnostic decides a class, as the Phase 7
-  instruction requires. Under the revised rule both themes remain EXPLORATORY with an explicit boundary caveat.
-- The owner may prefer the stricter first version: **owner decision**, D-045.
+### 2.1 Evidence status (dimension 1)
+
+| Status | Meaning in this project | Themes |
+|---|---|---|
+| ROBUST | Convincing support from several internal analyses, including inferential validation (CAMERA-supported Tier 1 sets; D-035, D-039) | none |
+| SUPPORTED WITH CAUTION | Meaningful inferential support (Tier 1 or 2), with substantial limitations | none |
+| EXPLORATORY | A biologically interpretable fgsea pattern in the frozen results that lacks independent inferential validation | 9 |
+| UNSUPPORTED | Only after an explicit review shows that the pattern itself lacks adequate support, is contradicted by stronger evidence, or arises primarily from a technical feature class. **Never** because a fixed share of LOO, ch00 or other diagnostics fails | 1 (ATP synthase, §2.3) |
+
+CAMERA supports no set (Tier 1 = Tier 2 = 0), so no theme can be ROBUST or SUPPORTED WITH CAUTION.
+
+### 2.2 Robustness descriptor (dimension 2; descriptive only)
+
+The descriptor summarizes the frozen diagnostics of each theme:
+- B = share of sets "broadly condition-consistent" (D-036);
+- M = largest share of sets that depend on the same sample in LOO;
+- A = share of sets that depend on at least one sample in LOO;
+- the number of sets that are ch00-sensitive in both exclusion runs.
+
+Labels are assigned in this order:
+1. **technically sensitive**: at least half of the sets lose fgsea support without the organelle-identical features in
+   both exclusion runs;
+2. **strongly sample-sensitive**: M > 50 % and B < 50 %;
+3. **mixed robustness**: 50 % ≤ B < 75 % (components of the theme differ in robustness);
+4. **moderately sample-sensitive**: M ≥ 50 % or A > 50 %;
+5. **relatively stable**: otherwise (B ≥ 75 %, M < 50 %, A ≤ 50 %).
+
+Disclosure and limits:
+- The labels were defined after all diagnostics were known. The cut points are labelling conventions; they are the colour
+  bands already used in figure F1. They are **not** statistical boundaries, and a descriptor never changes an evidence
+  status.
+- Themes have 3 – 34 sets, so one set can move a theme across a cut. Boundary cases: defence and cell wall (M exactly
+  50 %), glutathione (A = 2/3 with 3 sets) and hormone (A = 2/5).
+- With three replicates per group, each LOO refit keeps only two replicates in one group. Gene-level sensitivity is
+  already low with three replicates (Schurch et al. 2016), so some loss of fgsea support in five-sample refits is expected
+  and is not by itself evidence of an artefact. D-037 counts a set as dependent on a sample only when dropping either other
+  same-condition sample keeps it supported.
+- The counts behind every label are in the matrix (`robustness_basis`).
+
+### 2.3 Explicit reviews: ATP synthase and endoplasmic reticulum
+
+**ATP synthase / proton transport: UNSUPPORTED (retained), technically sensitive.**
+- *Question.* Does the existing evidence show only technical sensitivity, or that the apparent pattern is primarily
+  explained by organelle-identical / ch00 features?
+- *Evidence (frozen D-038 / D-043 tables).*
+  - Four of the five sets are ATP-synthase-specific: GO:0006754, GO:0045259, GO:0016469 and GO:0046933 (22 – 59 genes).
+  - Organelle-identical features are 4 – 8 of their 7 – 24 leading-edge genes (33 – 57 %).
+  - Removing the 5 pre-specified features per set lowers NES from 1.61 – 1.88 to 1.18 – 1.38 (padj 0.29 – 0.60). The
+    post-hoc rule (5 – 8 features) gives 1.08 – 1.31 (padj 0.38 – 0.72). NES falls by 21 – 37 %, and none of the four sets
+    remains fgsea-significant under either rule.
+  - The fifth set, "ATP metabolic process" (GO:0046034; 99 genes), is not ch00-sensitive (NES 1.81 → 1.65 / 1.58;
+    padj 0.016 / 0.042). It is a broad metabolic term and does not carry the ATP-synthase-specific pattern.
+- *Decision.* Removing about five features from sets of 22 – 59 genes removes the fgsea signal of every
+  ATP-synthase-specific set under both rules. This is more than sensitivity: the apparent pattern is carried primarily by
+  the organelle-identical feature class. UNSUPPORTED is kept, now by explicit review rather than by the superseded rule U1.
+- *Scope.* This does not show that organellar ATP-synthase transcripts are unchanged. Sequence identity is not genomic
+  origin, the library is poly(A)-selected, and no organelle-aware re-quantification was run (D-044, owner decision).
+
+**Endoplasmic reticulum: EXPLORATORY, strongly sample-sensitive.**
+- *Question.* Is the pattern merely strongly sample-sensitive, or do the replicate diagnostics leave insufficient evidence
+  for a meaningful group-level pattern?
+- *Evidence for a group-level pattern.*
+  - All four sets have all 9 infected–free sample pairs in the expected direction (P = 9/9).
+  - Without STV_free_rep1, about half of the infected–free difference remains (r₁ 0.48 – 0.50).
+  - No set is in the "strongly influenced by STV_free_rep1" class (r₁ < 0.25, D-036).
+  - CAMERA direction agrees in 4/4 sets.
+- *Sensitivity.*
+  - All four sets lose fgsea support when STV_free_rep1 is left out (they stay supported when STV_free_rep2 or STV_free_rep3
+    is left out).
+  - Three of the four also lose it without STV_infected_rep2.
+  - Only 1/4 is broadly replicate-consistent; 3/4 are partially consistent.
+  - Three of the four sets are near-duplicates (272 – 274 genes; leading edges of 101 – 102 genes), so the theme is
+    effectively two signals (module N07).
+- *Decision.* The diagnostics show a consistent group-level direction whose size depends strongly on the outlier sample.
+  They do not show that the pattern is absent, contradicted or technical. The theme is therefore EXPLORATORY and strongly
+  sample-sensitive; it is the weakest of the exploratory themes. Its leading edge consists of sterol and phospholipid
+  enzymes, so "protein folding" is not supported by the content.
+
+### 2.4 History of D-045 (preserved)
+
+| Version | Defined | Rules (UNSUPPORTED if any holds) | Rationale | Results already visible | Classes |
+|---|---|---|---|---|---|
+| v1, first coded | 2026-10-26, about 16:30 UTC, in `20_biological_integration.R` before its first successful output | U1: ≥ 50 % of sets ch00-sensitive in the pre-specified run. U2 v1: ≥ 50 % of sets depend on the same sample in LOO. U3: ≥ 50 % Tier 4 | Conservative, project-defined screen: a theme whose fgsea support rests mostly on one sample, on the ch00 feature class or on contradictory methods should not be read as a finding | All Phase 6B outputs and summaries (ch00 counts, LOO dependence by collection and on STV_free_rep1); the theme-level LOO shares were first seen in the v1 output | UNSUPPORTED: ribosome, ATP synthase, defence, ER, cell wall. EXPLORATORY: the other 5 |
+| v2, Phase 7 (post hoc) | About 16:33 UTC the same day, after the v1 matrix had been viewed and before any interpretation was written | U1: ≥ 50 % in **both** exclusion runs. U2 v2: U2 v1 **and** < 50 % of sets broadly replicate-consistent. U3 unchanged | The Phase 7 instruction not to treat any single diagnostic as definitive | The v1 theme matrix, including the classes above | UNSUPPORTED: ribosome, ER, ATP synthase. EXPLORATORY: the other 7. Committed in `d29a849`; owner review requested |
+| Owner revision | 2026-10-26, after external methodological review | No automatic rule. Evidence status from inferential evidence; UNSUPPORTED only by explicit review (§2.3); diagnostics give a descriptive robustness descriptor (§2.2) | Neither U2 version has an external basis as an inferential threshold, and robustness diagnostics are not significance tests | Everything above | §2.5 |
+
+Notes:
+- U2 v1 was a conservative project-defined rule. U2 v2 was introduced post hoc during Phase 7.
+- Neither has a validated external basis as a formal inferential threshold. No pathway-level leave-one-out method paper
+  was found in Phase 6B (`methods_references.md` §38), and 50 % is a project convention. The same applies to the 50 %
+  cut points of U1 and U3.
+- The methodological review that motivated separating inferential evidence from robustness diagnostics is documented in
+  `methods_references.md` §47.
+- The flags `rule_U1_v1_prespecified_only`, `rule_U1_ch00`, `rule_U2_v1_loo_only`, `rule_U2_single_sample` and
+  `rule_U3_tier4`, and the classes `superseded_phase7_class_v1` and `superseded_phase7_class_v2`, stay in the matrix as
+  history. They are not applied.
+
+### 2.5 Classification under the revised D-045
+
+| Theme | v1 class | v2 class | Evidence status | Robustness descriptor |
+|---|---|---|---|---|
+| Ribosome / translation | UNSUPPORTED | UNSUPPORTED | EXPLORATORY | strongly sample-sensitive |
+| Photosynthesis / plastid | EXPLORATORY | EXPLORATORY | EXPLORATORY | mixed robustness |
+| ATP synthase / proton transport | UNSUPPORTED | UNSUPPORTED | **UNSUPPORTED** (explicit review) | technically sensitive |
+| Defence response | UNSUPPORTED | EXPLORATORY | EXPLORATORY | moderately sample-sensitive |
+| Hormone / ethylene | EXPLORATORY | EXPLORATORY | EXPLORATORY | relatively stable |
+| Endoplasmic reticulum | UNSUPPORTED | UNSUPPORTED | EXPLORATORY | strongly sample-sensitive |
+| Heme / oxidoreductase | EXPLORATORY | EXPLORATORY | EXPLORATORY | moderately sample-sensitive |
+| Glutathione | EXPLORATORY | EXPLORATORY | EXPLORATORY | moderately sample-sensitive |
+| Water / abiotic stress | EXPLORATORY | EXPLORATORY | EXPLORATORY | relatively stable |
+| Cell wall / carbohydrate | UNSUPPORTED | EXPLORATORY | EXPLORATORY | moderately sample-sensitive |
+
+The revision changes the role of LOO, not the data, and it does not rescue any pathway. No theme gained inferential support:
+ribosome / translation and ER move from UNSUPPORTED to EXPLORATORY only because sample dependence is now described rather
+than used as a rejection threshold.
 
 ## 3. Integrated evidence matrix
 
@@ -54,23 +162,25 @@ Common to all ten themes:
 - No set is significant under CAMERA.
 - CAMERA direction agrees with fgsea for every set.
 
-| Theme | Sets (BP/MF/CC) | Direction | NES range | Min fgsea padj | CAMERA min FDR | LE genes (min gene padj) | Rep. b/p/a | LOO max (sample); free_rep1 | Cook's not retained | ch00 pre/post; org. LE | Phase 7 class |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| Ribosome / translation | 34 (15/8/11) | + 34 | 1.41 – 2.92 | 5.0 × 10⁻³⁰ | 0.997 | 569 (1.00) | 0/32/2 | **76 % (STV_infected_rep1)**; 6 | 0 | 0/1; 0.2 % | **UNSUPPORTED** (U2) |
-| Photosynthesis / plastid | 25 (8/0/17) | + 25 | 1.59 – 2.44 | 4.2 × 10⁻¹¹ | 0.997 | 290 (1.00) | 15/10/0 | 32 % (STV_free_rep2; also 32 % STV_infected_rep1); 1 | 1 | 0/0; 1.1 % | EXPLORATORY |
-| ATP synthase / proton transport | 5 (2/1/2) | + 5 | 1.61 – 1.88 | 3.3 × 10⁻³ | 0.997 | 60 (1.00) | 5/0/0 | 60 % (STV_free_rep2); 0 | 0 | **4/4; 28.6 %** | **UNSUPPORTED** (U1) |
-| Defence response | 8 (8/0/0) | − 8 | −1.99 – −1.75 | 1.2 × 10⁻⁸ | 0.999 | 150 (0.193) | 7/1/0 | 50 % (STV_free_rep2; also 50 % STV_infected_rep1); 1 | 0 | 0/0; 0 | EXPLORATORY (boundary caveat) |
-| Hormone / ethylene | 5 (5/0/0) | − 5 | −2.02 – −1.69 | 4.0 × 10⁻³ | 0.999 | 45 (1.00) | 4/1/0 | 20 %; 1 | 0 | 1/0; 0 | EXPLORATORY (1 Tier 4 set) |
-| Endoplasmic reticulum | 4 (0/0/4) | − 4 | −1.57 – −1.49 | 1.9 × 10⁻⁴ | 0.997 | 188 (1.00) | 1/3/0 | **100 % (STV_free_rep1)**; 4 | 0 | 0/0; 0 | **UNSUPPORTED** (U2) |
-| Heme / oxidoreductase | 11 (2/8/1) | + 5 / − 6 | −1.83 – 1.95 | 3.0 × 10⁻⁴ | 0.997 | 196 (0.297) | 9/2/0 | 36 % (STV_free_rep1); 4 | 0 | 1/0; 0.7 % | EXPLORATORY |
-| Glutathione | 3 (2/1/0) | − 3 | −1.95 – −1.60 | 1.4 × 10⁻³ | 0.998 | 56 (1.00) | 3/0/0 | 33 %; 1 | 1 | 0/0; 0 | EXPLORATORY |
-| Water / abiotic stress | 3 (3/0/0) | − 3 | −2.17 – −1.62 | 1.6 × 10⁻⁶ | 0.999 | 124 (1.00) | 3/0/0 | 33 %; 1 | 0 | 0/0; 0 | EXPLORATORY |
-| Cell wall / carbohydrate | 4 (2/2/0) | + 2 / − 2 | −1.87 – 1.63 | 1.7 × 10⁻⁴ | 0.998 | 136 (0.297) | 4/0/0 | 50 % (STV_free_rep2); 0 | 1 | 1/1; 0 | EXPLORATORY (boundary caveat) |
+| Theme | Sets (BP/MF/CC) | Direction | NES range | Min fgsea padj | CAMERA min FDR | LE genes (min gene padj) | Rep. b/p/a | LOO max (sample); free_rep1 | Cook's not retained | ch00 pre/post; org. LE | Evidence status | Robustness descriptor |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Ribosome / translation | 34 (15/8/11) | + 34 | 1.41 – 2.92 | 5.0 × 10⁻³⁰ | 0.997 | 569 (1.00) | 0/32/2 | **76 % (STV_infected_rep1)**; 6 | 0 | 0/1; 0.2 % | EXPLORATORY | strongly sample-sensitive |
+| Photosynthesis / plastid | 25 (8/0/17) | + 25 | 1.59 – 2.44 | 4.2 × 10⁻¹¹ | 0.997 | 290 (1.00) | 15/10/0 | 32 % (STV_free_rep2; also 32 % STV_infected_rep1); 1 | 1 | 0/0; 1.1 % | EXPLORATORY | mixed robustness |
+| ATP synthase / proton transport | 5 (2/1/2) | + 5 | 1.61 – 1.88 | 3.3 × 10⁻³ | 0.997 | 60 (1.00) | 5/0/0 | 60 % (STV_free_rep2); 0 | 0 | **4/4; 28.6 %** | **UNSUPPORTED** (explicit review, §2.3) | technically sensitive |
+| Defence response | 8 (8/0/0) | − 8 | −1.99 – −1.75 | 1.2 × 10⁻⁸ | 0.999 | 150 (0.193) | 7/1/0 | 50 % (STV_free_rep2; also 50 % STV_infected_rep1); 1 | 0 | 0/0; 0 | EXPLORATORY | moderately sample-sensitive |
+| Hormone / ethylene | 5 (5/0/0) | − 5 | −2.02 – −1.69 | 4.0 × 10⁻³ | 0.999 | 45 (1.00) | 4/1/0 | 20 %; 1 | 0 | 1/0; 0 | EXPLORATORY (1 Tier 4 set) | relatively stable |
+| Endoplasmic reticulum | 4 (0/0/4) | − 4 | −1.57 – −1.49 | 1.9 × 10⁻⁴ | 0.997 | 188 (1.00) | 1/3/0 | **100 % (STV_free_rep1)**; 4 | 0 | 0/0; 0 | EXPLORATORY (explicit review, §2.3) | strongly sample-sensitive |
+| Heme / oxidoreductase | 11 (2/8/1) | + 5 / − 6 | −1.83 – 1.95 | 3.0 × 10⁻⁴ | 0.997 | 196 (0.297) | 9/2/0 | 36 % (STV_free_rep1); 4 | 0 | 1/0; 0.7 % | EXPLORATORY | moderately sample-sensitive |
+| Glutathione | 3 (2/1/0) | − 3 | −1.95 – −1.60 | 1.4 × 10⁻³ | 0.998 | 56 (1.00) | 3/0/0 | 33 %; 1 | 1 | 0/0; 0 | EXPLORATORY | moderately sample-sensitive |
+| Water / abiotic stress | 3 (3/0/0) | − 3 | −2.17 – −1.62 | 1.6 × 10⁻⁶ | 0.999 | 124 (1.00) | 3/0/0 | 33 %; 1 | 0 | 0/0; 0 | EXPLORATORY | relatively stable |
+| Cell wall / carbohydrate | 4 (2/2/0) | + 2 / − 2 | −1.87 – 1.63 | 1.7 × 10⁻⁴ | 0.998 | 136 (0.297) | 4/0/0 | 50 % (STV_free_rep2); 0 | 1 | 1/1; 0 | EXPLORATORY | moderately sample-sensitive |
 
 The full matrix (`theme_evidence_matrix.tsv`) also contains:
 - all GO IDs, the top three terms, fgsea medians and CAMERA up/down counts;
 - the descriptive count of sets at FDR < 0.05 in the secondary CAMERA run with `inter.gene.cor = 0.01`. This run is not
   used for any class (D-034);
+- the LOO dependence by sample, `evidence_status_basis`, `robustness_basis` and `primary_caveat`;
+- the superseded D-045 flags and classes (§2.4);
 - the five representative leading-edge genes, the STV and tomato–virus literature, the interpretation and the caveats.
 
 Representative genes are chosen by a fixed rule: most theme sets in whose leading edge the gene appears, then |Wald
@@ -83,7 +193,7 @@ descriptive GO modules in §6.
 
 ## 4. Theme by theme
 
-### 4.1 Ribosome / translation (Task 9): UNSUPPORTED
+### 4.1 Ribosome / translation (Task 9): EXPLORATORY, strongly sample-sensitive
 
 - **What the sets show.** 34 sets rank higher in STV-infected leaves. Composition:
   - 12 ribosome-structure sets (cytosolic and organellar);
@@ -101,14 +211,16 @@ descriptive GO modules in §6.
 
   The top genes are ribosomal proteins with Wald statistics of 0.4 – 1.1: many small shifts. No gene is close to
   significance (all gene padj = 1.00).
-- **Why the theme is unsupported.**
-  - CAMERA FDR ≥ 0.997 in all 34 sets.
+- **Why the evidence is weak.**
+  - Inferential: CAMERA FDR ≥ 0.997 in all 34 sets.
   - These sets carry the strongest inter-gene correlation of all themes (median estimated correlation 0.43; median VIF
     36.6). This is exactly the situation in which a gene-permutation null overstates significance.
-  - **No** set is broadly replicate-consistent (0/34; 32 partially, 2 ambiguous).
+  - Robustness: **no** set is broadly replicate-consistent (0/34; 32 partially, 2 ambiguous).
   - 26 of 34 sets depend on **STV_infected_rep1** in LOO (29/34 lost when it is dropped; 33/34 retained when
     STV_infected_rep2 is dropped). Phase 6B documented the dependence at collection level (CC 47.7 %). Phase 7 shows that
     it is concentrated in this theme.
+  - Under the revised D-045 this concentration is described (strongly sample-sensitive) and no longer used as a rejection
+    threshold. The tendency stays exploratory, and it is the least robust of the larger themes.
 - **Biological plausibility.**
   - A higher transcript rank of ribosomal genes is not evidence of more ribosomes or more protein synthesis. STV is not
     shown to affect host translation.
@@ -117,7 +229,7 @@ descriptive GO modules in §6.
     genes in Arabidopsis (Zorzatto et al. 2015).
   - Neither study concerns a persistent virus, and neither is comparable with this dataset.
 
-### 4.2 Photosynthesis / plastid (Task 10): EXPLORATORY
+### 4.2 Photosynthesis / plastid (Task 10): EXPLORATORY, mixed robustness
 
 - **Pattern.** 25 sets rank higher in STV-infected leaves:
   - plastid envelope, thylakoid and photosynthetic membrane;
@@ -138,9 +250,11 @@ descriptive GO modules in §6.
 - **Literature.** Acute tomato viruses lower photosynthesis-gene expression (PepMV, TYLCTHV, TSWV) and damage chloroplasts
   (ToCV). This dataset shows the opposite rank direction, which is not comparable. STV causes no leaf ultrastructural
   change (Elvira-González et al. 2020).
-- **Verdict.** An exploratory, directionally consistent tendency. It is not a demonstrated change in photosynthesis.
+- **Verdict.** An exploratory, directionally consistent tendency with mixed robustness: the plastid-envelope component is
+  broadly replicate-consistent, while the core photosynthesis component depends on STV_infected_rep1. It is not a
+  demonstrated change in photosynthesis.
 
-### 4.3 ATP synthase / proton transport (Task 11): UNSUPPORTED
+### 4.3 ATP synthase / proton transport (Task 11): UNSUPPORTED, technically sensitive
 
 - 5 sets rank higher in STV-infected leaves.
 - Organelle-identical features fill **28.6 %** of their leading-edge slots, and all 5 sets contain them.
@@ -149,16 +263,18 @@ descriptive GO modules in §6.
   this caveat: 17/19 sets are ch00-sensitive and all 19 contain organelle-identical leading-edge genes.
 - **This theme is sensitive to reference / feature composition** (D-038, D-044). It is not used as biological evidence for
   STV. "Organelle-identical feature class" describes sequence identity only. It does not establish organellar origin.
+- The explicit D-045 review (§2.3) shows that the apparent pattern is carried primarily by this feature class: without it,
+  none of the four ATP-synthase-specific sets remains fgsea-significant (NES falls by 21 – 37 %).
 
 ### 4.4 Defence and stress cluster (Task 12)
 
-| Theme | Direction | Rep. broadly | LOO max | Representative leading-edge genes | Class |
+| Theme | Direction | Rep. broadly | LOO max | Representative leading-edge genes | Status; robustness |
 |---|---|---|---|---|---|
-| Defence response | − 8/8 | 7/8 | 50 % STV_free_rep2 (and 50 % STV_infected_rep1) | allene oxide cyclase, NB-ARC, EIX receptor 1, acidic chitinase, NIM1-like 2 | EXPLORATORY (boundary) |
-| Water / abiotic stress | − 3/3 | 3/3 | 33 % | catalase, WRKY6, WRKY39, WRKY42, WRKY33 | EXPLORATORY |
-| Glutathione | − 3/3 | 3/3 | 33 % | glutathione S-transferases | EXPLORATORY |
-| Heme / oxidoreductase | 5 up / 6 down | 9/11 | 36 % STV_free_rep1 | cytochrome P450s, allene oxide synthase | EXPLORATORY |
-| Cell wall / carbohydrate | 2 up / 2 down | 4/4 | 50 % STV_free_rep2 | wall-associated receptor kinases, LRK10-like | EXPLORATORY (boundary) |
+| Defence response | − 8/8 | 7/8 | 50 % STV_free_rep2 (and 50 % STV_infected_rep1) | allene oxide cyclase, NB-ARC, EIX receptor 1, acidic chitinase, NIM1-like 2 | EXPLORATORY; moderately sample-sensitive |
+| Water / abiotic stress | − 3/3 | 3/3 | 33 % | catalase, WRKY6, WRKY39, WRKY42, WRKY33 | EXPLORATORY; relatively stable |
+| Glutathione | − 3/3 | 3/3 | 33 % | glutathione S-transferases | EXPLORATORY; moderately sample-sensitive |
+| Heme / oxidoreductase | 5 up / 6 down | 9/11 | 36 % STV_free_rep1 | cytochrome P450s, allene oxide synthase | EXPLORATORY; moderately sample-sensitive |
+| Cell wall / carbohydrate | 2 up / 2 down | 4/4 | 50 % STV_free_rep2 | wall-associated receptor kinases, LRK10-like | EXPLORATORY; moderately sample-sensitive |
 
 - **Not independent signals.** Leading-edge Jaccard between themes (`theme_le_overlap.tsv`):
   - glutathione–water 0.17 (26 shared genes; overlap coefficient 0.46);
@@ -178,11 +294,11 @@ descriptive GO modules in §6.
   - No leading-edge gene is significant (minimum padj 0.193, Solyc12g009240.1).
   - The cell-wall and heme themes have no coherent direction.
 
-### 4.5 Hormone / ethylene (Task 8): EXPLORATORY
+### 4.5 Hormone / ethylene (Task 8): EXPLORATORY, relatively stable
 
 See §5.
 
-### 4.6 Endoplasmic reticulum (Task 13): UNSUPPORTED
+### 4.6 Endoplasmic reticulum (Task 13): EXPLORATORY, strongly sample-sensitive
 
 - 4 CC sets rank lower in STV-infected leaves: ER, ER subcompartment, ER membrane, and the nuclear outer membrane–ER
   network.
@@ -194,7 +310,10 @@ See §5.
   emopamil-binding protein, Δ14-sterol reductase, phosphatidylserine synthase), not folding chaperones. "ER / protein
   folding" overstates the content.
 - **Verdict.** STV_free_rep1 is the documented outlier sample (Phase 5, D-022). It is kept in every primary analysis; this
-  classification removes nothing. The theme is **UNSUPPORTED**: the fgsea significance alone does not justify keeping it.
+  classification removes nothing. The first Phase 7 rules (v1 and v2) classed the theme UNSUPPORTED. Under the revised
+  D-045 it is **EXPLORATORY and strongly sample-sensitive** (explicit review in §2.3): the group-level direction is
+  consistent across all sample pairs, but its size and fgsea support depend strongly on STV_free_rep1. It is the weakest of
+  the exploratory themes.
 
 ### 4.7 Remaining themes
 
@@ -294,10 +413,10 @@ effect. No module is significant under CAMERA.
 
 | Figure | Content | Note |
 |---|---|---|
-| F1 `F1_integrated_evidence_overview.png` | Ten themes × evidence layers (fgsea, CAMERA, replicate, LOO, Cook's, ch00, literature, class) | CAMERA cells are grey ("not significant"); fgsea cells use a neutral colour |
+| F1 `F1_integrated_evidence_overview.png` | Ten themes × evidence layers (fgsea, CAMERA, replicate, LOO, Cook's, ch00, literature), then evidence status and robustness descriptor in separate columns | CAMERA cells are grey ("not significant"); fgsea cells use a neutral colour; the robustness palette is separate from the status palette. Regenerated for the D-045 revision |
 | F2 `F2_fgsea_vs_camera.png` | −log10 fgsea padj vs −log10 CAMERA FDR on identical axes | All points lie on the floor (CAMERA FDR ≥ 0.997); direction agreement 215/215 |
-| F3 `F3_theme_summary.png` | Direction, Phase 7 class and main caveat per theme | Directions are rank-level shifts |
-| F4 `F4_ethylene_case_study.png` | Gene-level Wald statistics vs pathway-level NES | Shows the gene-level null beside the pathway tendency |
+| F3 `F3_theme_summary.png` | Direction, evidence status, robustness descriptor and main caveat (`primary_caveat`) per theme | Directions are rank-level shifts. Regenerated for the D-045 revision |
+| F4 `F4_ethylene_case_study.png` | Gene-level Wald statistics vs pathway-level NES | Shows the gene-level null beside the pathway tendency. Point jitter and label placement are unseeded, so a re-run changes the PNG bytes but not the content; the committed file was kept |
 | F5 `F5_go_redundancy_heatmap.png`, F5b `F5b_go_modules_overview.png` | Leading-edge Jaccard heatmap; module composition | Descriptive only |
 
 ## 8. Outputs and reproducibility
@@ -313,3 +432,7 @@ effect. No module is significant under CAMERA.
 Run order: 20 → 21 → 22 (env `stv-r`). Inputs are frozen Phase 4 – 6B and D-044 outputs. Git-ignored inputs:
 - `go_gene_sets.rds` and `deseq2_objects.rds` (regenerable; SHA-256 in `reproducibility_audit.md`);
 - the GO OBO file (SHA-256 in `annotation_sources_manifest.tsv`).
+
+D-045 revision (2026-10-26): scripts 20 and 22 were re-run on the unchanged inputs. Only `theme_evidence_matrix.tsv`, F1
+and F3 changed. All other outputs of script 20, F2 and every quantitative column of the matrix are byte-identical (`run_log.md`
+entry 136).

@@ -566,3 +566,36 @@ live outside the repository and are not committed. Every reported number comes f
       43 – 48), `software_versions.md`, `README.md`, this log.
 134. **Not executed:** Salmon, tximport, DESeq2, fgsea, CAMERA, gene-exclusion fgsea (owner: not justified), Mercator4 /
      MapMan, clean-clone reproducibility audit.
+135. **Phase 7 commit.** `d29a849f8481ac495cc48666087b394614da587c` "Phase 7: integrated biological interpretation"
+     (43 files; largest 529,969 B). Pushed; `git ls-remote` = local HEAD = `origin/main`; working tree clean.
+
+## D-045 revision (2026-10-26; owner decision REVISE; no new analysis)
+
+136. **Classification framework revised; scripts 20 and 22 re-run on unchanged inputs.**
+    - Owner decision: neither U2 v1 nor U2 v2 converts a theme to UNSUPPORTED. Evidence status comes from inferential
+      evidence; robustness diagnostics give a separate descriptive descriptor (D-045 revision, D-049).
+    - History reconstructed from the session record: v1 coded about 16:30 UTC and run once (UNSUPPORTED: ribosome, ATP
+      synthase, defence, ER, cell wall); v2 coded about 16:33 UTC after the v1 matrix was viewed (UNSUPPORTED: ribosome, ER,
+      ATP synthase); v2 committed in `d29a849`. Both stay in the matrix as flags and superseded classes.
+    - `scripts/R/20_biological_integration.R`: new columns `evidence_status`, `evidence_status_basis`,
+      `robustness_descriptor`, `robustness_basis`, `loo_dependent_sets_by_sample`, `rule_U1_v1_prespecified_only`,
+      `superseded_phase7_class_v1`; `phase7_class` / `phase7_class_reason` renamed `superseded_phase7_class_v2` /
+      `_v2_reason` (values unchanged). `curated_theme_literature.tsv`: `primary_caveat` added; U2 wording removed from
+      the interpretation / caveat text.
+    - Re-run of script 20 (exit 0): only `theme_evidence_matrix.tsv` changed. 52 of its 54 earlier columns are identical
+      (the renamed class columns included); the other two are the interpretation and caveat text. All other script 20
+      outputs, including `sessionInfo_20.txt`, are byte-identical.
+    - Re-run of script 22 (exit 0): F1 and F3 changed as intended; F2 byte-identical. F4 bytes changed only because its
+      point jitter and `ggrepel` label placement are unseeded; the committed F4 was restored with `git checkout` (content
+      unchanged; reproducibility note in `biological_integration.md` §7).
+    - Result: 9 EXPLORATORY, 1 UNSUPPORTED (ATP synthase, explicit review). Robustness: ribosome/translation and ER strongly
+      sample-sensitive; photosynthesis/plastid mixed; ATP synthase technically sensitive; defence, heme, glutathione and
+      cell wall moderately sample-sensitive; hormone/ethylene and water/abiotic stress relatively stable.
+    - An inline `wsl.exe bash -c` loop lost its quoting in PowerShell (`$f` expanded by PowerShell) and created an empty
+      junk file in the repo root; it was removed before any staging. Syncs were then run from a script file.
+137. **Methodological sources** (`methods_references.md` §47). Europe PMC abstracts and full texts (Schurch et al. 2016;
+     Wu & Smyth 2012; Maciejewski 2014; Geistlinger et al. 2021), abstracts (Goeman & Bühlmann 2007; Tamayo et al. 2016;
+     Gatti et al. 2010), GSEA User Guide HTML, installed limma 3.66.0 `?camera`; Crossref metadata for all seven DOIs. The
+     current-release `camera` help could not be retrieved (code.bioconductor.org TLS certificate expired; not bypassed).
+138. **Not executed:** Salmon, tximport, DESeq2, apeglm, fgsea, CAMERA, LOO, Cook's analysis, ch00 exclusion, any
+     enrichment, Mercator4, MapMan.

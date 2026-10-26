@@ -55,8 +55,10 @@ These come only from exploratory, fgsea-only evidence (no CAMERA support, no gen
   one partly shared tendency, not independent signals.
 - **H3.** Plastid / photosynthesis-related sets rank higher, independently of the organelle-identical feature class.
 
-The ribosome / translation, ER and ATP-synthase signals are **not** carried forward as hypotheses (UNSUPPORTED;
-[biological_integration.md](biological_integration.md) §4).
+The ribosome / translation and ER tendencies are EXPLORATORY but strongly sample-sensitive (each concentrated on one
+sample), so they are not listed as hypotheses here. The ATP-synthase signal is UNSUPPORTED (carried primarily by the
+organelle-identical feature class). Classification: D-045 as revised by the owner
+([biological_integration.md](biological_integration.md) §2 and §4).
 
 ## 3. Source table (Task 4)
 

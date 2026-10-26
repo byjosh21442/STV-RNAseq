@@ -1,9 +1,11 @@
 #!/usr/bin/env Rscript
 # STV_GSE137303 - Phase 7 (Tasks 2, 3, 8 - 13): integrated evidence matrix and theme deep dives.
 # Descriptive integration of FROZEN outputs only: no new test, no new threshold for significance, no re-run of DESeq2, fgsea
-# or CAMERA. The Phase 7 classification rules are declared in docs/biological_integration.md section 2; they can only keep
-# or lower the Phase 6B class (D-039), never raise it. The only new computation on expression values is a descriptive
-# per-gene replicate pattern for the ethylene case study (blind VST from deseq2_objects.rds, as in D-036; no p-values).
+# or CAMERA. Classification follows D-045 as revised by the owner (docs/biological_integration.md section 2): evidence status
+# from inferential evidence (DESeq2, CAMERA), UNSUPPORTED only by explicit review, and a separate descriptive robustness
+# descriptor. The superseded U1 - U3 rules (versions 1 and 2) are kept as historical columns and are not applied.
+# The only new computation on expression values is a descriptive per-gene replicate pattern for the ethylene case study
+# (blind VST from deseq2_objects.rds, as in D-036; no p-values).
 # Usage (project root, env stv-r): Rscript scripts/R/20_biological_integration.R
 # Inputs : results/functional_robustness/{themes,comparison,replicate_consistency,loo,ch00,cooks_sensitivity,prior_studies}/,
 #          results/organelle_assessment/{set_level_organelle_identical_leading_edge,gene_organelle_classification_corrected}.tsv,
@@ -31,6 +33,7 @@ cmp <- rbindlist(lapply(c("BP", "MF", "CC"), function(k) rd(file.path(fr, "compa
 rc  <- rd(file.path(fr, "replicate_consistency/replicate_consistency_all_significant_sets.tsv"))
 loo <- rd(file.path(fr, "loo/loo_dependence_by_set.tsv"))
 ph  <- rd(file.path(fr, "ch00/posthoc_identity98_vs_primary.tsv"))[significant_fdr05 == TRUE]
+chp <- rd(file.path(fr, "ch00/ch00_sensitivity_vs_primary.tsv"))[significant_fdr05 == TRUE]
 org <- rd("results/organelle_assessment/set_level_organelle_identical_leading_edge.tsv")
 le  <- rd("results/functional/go_gsea/leading_edge_significant_sets_long.tsv")
 res <- rd("results/deseq2/deseq2_results_all.tsv")
@@ -53,7 +56,8 @@ setnames(s, samples, paste0("loo_status_drop_", samples))
 s <- merge(s, ph[, .(collection, go_id = go_id, ch00_sensitive_posthoc = ch00_sensitive)], by = c("collection", "go_id"), all.x = TRUE)
 s <- merge(s, org[, .(collection, go_id, le_genes_org = le_genes, le_org_identical = le_org_near_or_partial)],
            by = c("collection", "go_id"), all.x = TRUE)
-stopifnot(nrow(s) == 215, !anyNA(s$tier), !anyNA(s$replicate_class), !anyNA(s[[dep_cols[1]]]), !anyNA(s$ch00_sensitive_posthoc))
+stopifnot(nrow(s) == 215, !anyNA(s$tier), !anyNA(s$replicate_class), !anyNA(s[[dep_cols[1]]]), !anyNA(s$ch00_sensitive_posthoc),
+          !any(s$cooks_status == "lost"))
 s[, n_samples_dependent := rowSums(.SD), .SDcols = dep_cols]
 setorder(s, theme, collection, padj_fgsea)
 fwt(s, "theme_set_level_evidence.tsv")
@@ -103,6 +107,8 @@ mat <- rbindlist(lapply(themes10, function(th) {
     loo_dependent_STV_free_rep1 = sum(x$dependent_on_STV_free_rep1),
     loo_max_single_sample_share = round(max(dep_share), 3),
     loo_max_sample = sub("dependent_on_", "", names(dep_share)[which.max(dep_share)]),
+    loo_dependent_sets_by_sample = {d <- sort(colSums(x[, dep_cols, with = FALSE]), decreasing = TRUE); d <- d[d > 0]
+                                    if (length(d)) paste0(sub("dependent_on_", "", names(d)), " ", d, collapse = "; ") else "none"},
     cooks_not_retained = sum(x$cooks_status != "retained"),
     ch00_sensitive_prespecified = sum(x$ch00_sensitive_prespecified), ch00_sensitive_posthoc = sum(x$ch00_sensitive_posthoc),
     sets_with_org_identical_le_gene = sum(x$le_org_identical > 0),
@@ -111,20 +117,57 @@ mat <- rbindlist(lapply(themes10, function(th) {
     phase6b_class = "EXPLORATORY")
 }))
 mat <- merge(mat, lit, by = "theme", sort = FALSE)
-mat[, `:=`(rule_U1_ch00 = ch00_sensitive_prespecified / n_sets >= 0.5 & ch00_sensitive_posthoc / n_sets >= 0.5,
+# Superseded D-045 rules, kept as history (section 2.4): v1 = first coded (U1 pre-specified run only, U2 LOO only);
+# v2 = Phase 7 commit d29a849 (U1 both runs, U2 LOO and weak replicate consistency). Neither is applied any more.
+mat[, `:=`(rule_U1_v1_prespecified_only = ch00_sensitive_prespecified / n_sets >= 0.5,
+           rule_U1_ch00 = ch00_sensitive_prespecified / n_sets >= 0.5 & ch00_sensitive_posthoc / n_sets >= 0.5,
            rule_U2_v1_loo_only = loo_max_single_sample_share >= 0.5,
            rule_U2_single_sample = loo_max_single_sample_share >= 0.5 & replicate_broadly / n_sets < 0.5,
            rule_U3_tier4 = tier4 / n_sets >= 0.5)]
-# U2 as first coded (LOO alone) is kept as rule_U2_v1_loo_only for transparency; the applied U2 also requires weak replicate
-# consistency, so that no single diagnostic is decisive (docs/biological_integration.md section 2).
-mat[, phase7_class := fifelse(rule_U1_ch00 | rule_U2_single_sample | rule_U3_tier4, "UNSUPPORTED", phase6b_class)]
-mat[, phase7_class_reason := fcase(
+mat[, superseded_phase7_class_v1 := fifelse(rule_U1_v1_prespecified_only | rule_U2_v1_loo_only | rule_U3_tier4, "UNSUPPORTED", phase6b_class)]
+mat[, superseded_phase7_class_v2 := fifelse(rule_U1_ch00 | rule_U2_single_sample | rule_U3_tier4, "UNSUPPORTED", phase6b_class)]
+mat[, superseded_phase7_class_v2_reason := fcase(
   rule_U1_ch00, paste0("U1: ", ch00_sensitive_prespecified, "/", n_sets, " sets ch00-sensitive (pre-specified) and ", ch00_sensitive_posthoc, "/", n_sets, " (post-hoc): reference/feature composition"),
   rule_U2_single_sample, paste0("U2: ", round(100 * loo_max_single_sample_share), " % of sets dependent on ", loo_max_sample, " in LOO and only ", replicate_broadly, "/", n_sets, " broadly replicate-consistent"),
   rule_U3_tier4, paste0("U3: ", tier4, "/", n_sets, " sets Tier 4"),
   rule_U2_v1_loo_only, paste0("EXPLORATORY with caveat: ", round(100 * loo_max_single_sample_share), " % of sets dependent on ", loo_max_sample, " in LOO (boundary), but ", replicate_broadly, "/", n_sets, " broadly replicate-consistent"),
   default = "fgsea-only (Tier 3); direction concordant with CAMERA; no CAMERA-significant set; no ROBUST/SUPPORTED route without Tier 1/2")]
 stopifnot(all(mat$tier1_or_2 == 0), all(mat$camera_sets_FDR_lt_0.05 == 0), all(mat$le_genes_padj_lt_0.05 == 0))
+
+# D-045 as revised by the owner. Evidence status: without Tier 1/2 sets (CAMERA support) no theme can be ROBUST or SUPPORTED
+# WITH CAUTION; UNSUPPORTED only after an explicit review showing that the pattern itself lacks support or arises primarily
+# from a technical feature class (section 2.3), never from a fixed share of LOO, ch00 or other robustness diagnostics.
+d045_unsupported <- "ATP synthase / proton transport"
+rng <- function(x, d = 2) paste0(fmt(min(x), d), " - ", fmt(max(x), d))
+cx <- merge(chp[, .(collection, go_id, NES, NES_pre = NES_s, padj_pre = padj_s, ch_pre = ch00_sensitive)],
+            ph[, .(collection, go_id, NES_post = NES_s, padj_post = padj_s, ch_post = ch00_sensitive)], by = c("collection", "go_id"))
+cx <- merge(cx, tm[, .(collection, go_id, theme)], by = c("collection", "go_id"))
+cx_txt <- cx[ch_pre & ch_post, .(txt = paste0(.N, " sets lose fgsea support without the organelle-identical features in both exclusion runs: NES ",
+                                              rng(NES), " -> ", rng(NES_pre), " (pre-specified; padj ", rng(padj_pre), ") and ", rng(NES_post),
+                                              " (post-hoc; padj ", rng(padj_post), ")")), by = theme]
+keep_txt <- s[!(ch00_sensitive_prespecified & ch00_sensitive_posthoc), .(txt = paste0(go_id, " ", term_name, collapse = "; ")), by = theme]
+mat[, evidence_status := fifelse(theme %in% d045_unsupported, "UNSUPPORTED", "EXPLORATORY")]
+mat[, evidence_status_basis := paste0("Inferential: CAMERA ", camera_sets_FDR_lt_0.05, "/", n_sets, " sets at FDR < 0.05 (minimum FDR ", camera_FDR_min,
+                                      "); ", le_genes_padj_lt_0.05, " leading-edge genes at padj < 0.05. Exploratory: ", n_sets,
+                                      " fgsea sets at padj < 0.05 (Tier 3: ", tier3, "; Tier 4: ", tier4, "); CAMERA direction concordant ",
+                                      camera_direction_concordant, "/", n_sets, ".")]
+mat[theme %in% d045_unsupported, evidence_status_basis := paste0(
+  evidence_status_basis, " Explicit review: the pattern is carried primarily by the organelle-identical feature class; ",
+  cx_txt$txt[match(theme, cx_txt$theme)], ". Not ch00-sensitive: ", keep_txt$txt[match(theme, keep_txt$theme)], " (broader term).")]
+# Robustness descriptor: a descriptive label only (not a significance category; it never changes evidence_status). The cut
+# points are labelling conventions matching the F1 colour bands; the counts behind each label are in robustness_basis.
+mat[, robustness_descriptor := fcase(
+  rule_U1_ch00, "technically sensitive",
+  loo_max_single_sample_share > 0.5 & replicate_broadly / n_sets < 0.5, "strongly sample-sensitive",
+  replicate_broadly / n_sets < 0.75, "mixed robustness",
+  loo_max_single_sample_share >= 0.5 | loo_sets_dependent_any_sample / n_sets > 0.5, "moderately sample-sensitive",
+  default = "relatively stable")]
+mat[, robustness_basis := paste0("Replicate consistency (D-036): ", replicate_broadly, "/", n_sets, " broadly, ", replicate_partially, " partially, ",
+                                 replicate_ambiguous, " ambiguous. LOO (D-037): ", loo_sets_dependent_any_sample, "/", n_sets,
+                                 " sets depend on one sample (by sample: ", loo_dependent_sets_by_sample, "). ch00 (D-038, D-043): ",
+                                 ch00_sensitive_prespecified, "/", n_sets, " sets sensitive (pre-specified), ", ch00_sensitive_posthoc, "/", n_sets,
+                                 " (post-hoc); organelle-identical leading-edge slots ", round(100 * le_slot_share_org_identical, 1),
+                                 " %. Cook's ranking (D-033): ", n_sets - cooks_not_retained, "/", n_sets, " retained, 0 lost.")]
 mat[, theme := factor(theme, levels = themes10)]; setorder(mat, theme)
 fwt(mat, "theme_evidence_matrix.tsv")
 
@@ -226,7 +269,8 @@ fwt(ps, "photosynthesis_sets_organelle_check.tsv")
 writeLines(capture.output(sessionInfo()), file.path(out, "sessionInfo_20.txt"))
 cat("\n== matrix\n"); print(mat[, .(theme, n_sets, fgsea_direction, NES_min, NES_max, camera_direction_concordant, tier4, replicate_broadly,
                                    loo_dependent_STV_free_rep1, loo_max_single_sample_share, loo_max_sample, ch00_sensitive_prespecified,
-                                   le_slot_share_org_identical, phase7_class)])
+                                   le_slot_share_org_identical, superseded_phase7_class_v1, superseded_phase7_class_v2, evidence_status,
+                                   robustness_descriptor)])
 cat("\n== ethylene genes by category\n"); print(eth[, .N, by = desc_category])
 cat("\n== ribosome LE composition\n"); print(fread(file.path(out, "ribosome_le_gene_composition.tsv")))
 cat("\n== top theme LE overlaps\n"); print(head(ov, 12))

@@ -1,6 +1,7 @@
 # Phase 7 — Biological interpretation (STV infection, tomato M82 leaves)
 
-Status: Phase 7, 2026-10-26. This is observational transcriptomic evidence from 3 STV-free and 3 STV-infected plants.
+Status: Phase 7, 2026-10-26; theme classification revised the same day under the owner's D-045 decision. This is
+observational transcriptomic evidence from 3 STV-free and 3 STV-infected plants.
 Supporting documents:
 - [biological_integration.md](biological_integration.md) (evidence matrix, theme detail, ethylene case study, GO redundancy);
 - [literature_biological_context.md](literature_biological_context.md) (STV biology, sources, comparisons with earlier
@@ -8,6 +9,13 @@ Supporting documents:
 
 **Question.** What transcriptomic differences, if any, can be defensibly associated with STV infection in M82 tomato
 leaves? Which apparent patterns remain exploratory because of statistical, replicate-level or methodological uncertainty?
+
+**Three levels of evidence (kept apart throughout; D-045 as revised by the owner).**
+- *Inferential:* no gene is significant at padj < 0.05, and none of the functional themes received correlation-aware FDR
+  support in CAMERA.
+- *Exploratory:* several coordinated rank-level tendencies were observed by fgsea.
+- *Robustness:* these tendencies differed in their sensitivity to individual samples and to technical feature composition.
+  Replicate, leave-one-out, Cook's and ch00 diagnostics describe this sensitivity; they are not significance tests.
 
 ## 1. Primary finding (gene level)
 
@@ -32,6 +40,8 @@ These patterns do not override the gene-level null result.
 
 ## 3. Robustness (correlation-aware validation and replicate diagnostics)
 
+CAMERA is the inferential check at set level. The other analyses in this section characterize robustness only.
+
 - **CAMERA** (estimated inter-gene correlation) found **0 of 215 sets at FDR < 0.05**. All 215 have the same direction as
   in fgsea. The fgsea patterns are therefore coordinated tendencies whose statistical significance is **method-dependent**
   and did not survive correlation-aware competitive testing. Correlation is highest in the ribosome sets (median VIF 37).
@@ -50,23 +60,26 @@ These patterns do not override the gene-level null result.
 ## 4. Biological themes
 
 No theme is ROBUST or SUPPORTED WITH CAUTION: that would require sets validated by CAMERA (Tier 1 or 2), and there are
-none.
+none. Each theme has an evidence status and, separately, a descriptive robustness descriptor
+([biological_integration.md](biological_integration.md) §2).
 
-| Theme | Direction in STV-infected | Class | Defensible statement |
-|---|---|---|---|
-| Photosynthesis / plastid | higher rank | EXPLORATORY | A plastid / photosynthesis-related directional tendency. It persists conceptually after the ch00 caveat (no ch00-sensitive set; about 1 % organelle-identical leading-edge slots) but is fgsea-only |
-| Defence response | lower rank | EXPLORATORY (boundary caveat) | A defence-related lower-rank tendency, broadly replicate-consistent (7/8). Half the sets depend on STV_free_rep2 in LOO |
-| Hormone / ethylene | lower rank | EXPLORATORY | Lower-ranked ethylene-related sets, the same direction as both earlier analyses of these data. Not significant at gene level (ACO1 padj 0.297) |
-| Glutathione; water / abiotic stress | lower rank | EXPLORATORY | Small themes that overlap the defence signal; not independent |
-| Heme / oxidoreductase; cell wall | mixed | EXPLORATORY | No coherent direction |
-| Ribosome / translation | higher rank | **UNSUPPORTED** | Strongest fgsea signal, but driven mostly by one infected replicate and never broadly consistent |
-| Endoplasmic reticulum | lower rank | **UNSUPPORTED** | All sets depend on the outlier sample STV_free_rep1 |
-| ATP synthase / proton transport | higher rank | **UNSUPPORTED** | Sensitive to reference / feature composition (organelle-identical feature class) |
+| Theme | Direction in STV-infected | Evidence status | Robustness (descriptive) | Defensible statement |
+|---|---|---|---|---|
+| Photosynthesis / plastid | higher rank | EXPLORATORY | mixed robustness | A plastid / photosynthesis-related directional tendency. It persists conceptually after the ch00 caveat (no ch00-sensitive set; about 1 % organelle-identical leading-edge slots) but is fgsea-only. The plastid-envelope sets are broadly replicate-consistent; the core photosynthesis sets depend on STV_infected_rep1 |
+| Defence response | lower rank | EXPLORATORY | moderately sample-sensitive | A defence-related lower-rank tendency, broadly replicate-consistent (7/8). Half the sets depend on STV_free_rep2, and half on STV_infected_rep1, in LOO |
+| Hormone / ethylene | lower rank | EXPLORATORY | relatively stable | Lower-ranked ethylene-related sets, the same direction as both earlier analyses of these data. Not significant at gene level (ACO1 padj 0.297) |
+| Glutathione; water / abiotic stress | lower rank | EXPLORATORY | moderately sample-sensitive; relatively stable | Small themes that overlap the defence signal; not independent |
+| Heme / oxidoreductase; cell wall | mixed | EXPLORATORY | moderately sample-sensitive | No coherent direction |
+| Ribosome / translation | higher rank | EXPLORATORY | **strongly sample-sensitive** | Strongest fgsea signal, but concentrated on one infected replicate (26/34 sets) and never broadly replicate-consistent |
+| Endoplasmic reticulum | lower rank | EXPLORATORY | **strongly sample-sensitive** | Consistent direction across all sample pairs, but all sets depend on the outlier sample STV_free_rep1; the weakest exploratory theme |
+| ATP synthase / proton transport | higher rank | **UNSUPPORTED** | technically sensitive | Carried primarily by the organelle-identical feature class: without it no ATP-synthase-specific set stays fgsea-significant |
 
 Notes:
 - The defence, ethylene, glutathione and water-stress tendencies form one partly overlapping, lower-ranked stress- and
   defence-related pattern. They should be read as one exploratory pattern, not as four findings.
 - A higher rank of ribosomal transcripts says nothing about ribosome amount or protein synthesis.
+- The first Phase 7 rules classed ribosome / translation and ER as UNSUPPORTED on single-sample dependence. Under the
+  revised D-045 this dependence is described, not used as a rejection threshold. Neither theme gained inferential support.
 
 ## 5. Comparison with Fukuhara et al. (2020)
 
@@ -135,8 +148,9 @@ The ethylene direction agrees with both earlier analyses of these data. These te
 but **did not survive correlation-aware validation**. They are biologically plausible but statistically uncertain,
 exploratory hypotheses for an adequately replicated experiment.
 
-The ribosome / translation, ER and ATP-synthase signals are **not supported**: they depend on a single sample or on
-organelle-identical features.
+The ribosome / translation and ER tendencies are also exploratory, but **strongly sample-sensitive**: their fgsea support
+is concentrated on one sample each (STV_infected_rep1 and STV_free_rep1). The ATP-synthase signal is **not supported**: it
+is carried primarily by organelle-identical features.
 
 ## 10. What cannot be concluded
 
